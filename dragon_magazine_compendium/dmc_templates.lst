@@ -1,0 +1,30 @@
+# Templates: Remade
+# Source: The (mostly) Complete Dragon Magazine Compendium (fan compilation of Dragon Magazine 3.0/3.5 content).
+# SOURCEPAGE values refer to page numbers of the compendium PDF.
+# Built for the Bahamut35e game mode (bahamutdragon/pcgen).
+
+###Block: Remade
+Remade	KEY:Remade	VISIBLE:YES	SOURCEPAGE:p.67	LEVELADJUSTMENT:1	ABILITY:Special Ability|AUTOMATIC|Remade
+Remade: Aquatic Prosthesis	KEY:Remade ~ Aquatic Prosthesis	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	MOVE:Swim,10	ABILITY:Special Ability|AUTOMATIC|Remade ~ Aquatic Prosthesis
+Remade: Armored Integument	KEY:Remade ~ Armored Integument	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK	ABILITY:Special Ability|AUTOMATIC|Remade ~ Armored Integument
+Remade: Consummate Eyes	KEY:Remade ~ Consummate Eyes	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	BONUS:SKILL|Search,Spot|4|TYPE=Racial	ABILITY:Special Ability|AUTOMATIC|Remade ~ Consummate Eyes
+Remade: Metaclockwork	KEY:Remade ~ Metaclockwork	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	ABILITY:Special Ability|AUTOMATIC|Remade ~ Metaclockwork
+Remade: Night Vision	KEY:Remade ~ Night Vision	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	BONUS:VAR|DarkvisionRange|60	ABILITY:Special Ability|AUTOMATIC|Remade ~ Night Vision
+Remade: Olfactory Enhancers	KEY:Remade ~ Olfactory Enhancers	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	BONUS:VAR|ScentRange|30|TYPE=Base	ABILITY:Special Ability|AUTOMATIC|Scent	ABILITY:Special Ability|AUTOMATIC|Remade ~ Olfactory Enhancers
+Remade: Spring-Loaded Jumper	KEY:Remade ~ Spring-Loaded Jumper	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	BONUS:SKILL|Balance,Jump|4	ABILITY:Special Ability|AUTOMATIC|Remade ~ Spring-Loaded Jumper
+Remade: Supernumerary Arms	KEY:Remade ~ Supernumerary Arms	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	BONUS:SKILL|Climb|2	ABILITY:Special Ability|AUTOMATIC|Remade ~ Supernumerary Arms
+Remade: Supernumerary Legs	KEY:Remade ~ Supernumerary Legs	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	BONUS:MOVEADD|TYPE.Walk|5	ABILITY:Special Ability|AUTOMATIC|Remade ~ Supernumerary Legs
+Remade: Unnatural Weapon	KEY:Remade ~ Unnatural Weapon	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	NATURALATTACKS:Unnatural Weapon,Weapon.Natural.Melee.Slashing,*1,1d4	ABILITY:Special Ability|AUTOMATIC|Remade ~ Unnatural Weapon
+Remade: Wakeful Engine	KEY:Remade ~ Wakeful Engine	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	ABILITY:Special Ability|AUTOMATIC|Remade ~ Wakeful Engine
+Remade: Boiler	KEY:Remade ~ Boiler	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	ABILITY:Special Ability|AUTOMATIC|Remade ~ Boiler
+Remade: Clumsy	KEY:Remade ~ Clumsy	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	BONUS:STAT|DEX|-2	ABILITY:Special Ability|AUTOMATIC|Remade ~ Clumsy
+Remade: Crippled Limb	KEY:Remade ~ Crippled Limb	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	ABILITY:Special Ability|AUTOMATIC|Remade ~ Crippled Limb
+Remade: Dulled Faculties (Listen)	KEY:Remade ~ Dulled Faculties (Listen)	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	BONUS:SKILL|Listen|-4	ABILITY:Special Ability|AUTOMATIC|Remade ~ Dulled Faculties (Listen)
+Remade: Dulled Faculties (Search)	KEY:Remade ~ Dulled Faculties (Search)	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	BONUS:SKILL|Search|-4	ABILITY:Special Ability|AUTOMATIC|Remade ~ Dulled Faculties (Search)
+Remade: Dulled Faculties (Spot)	KEY:Remade ~ Dulled Faculties (Spot)	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	BONUS:SKILL|Spot|-4	ABILITY:Special Ability|AUTOMATIC|Remade ~ Dulled Faculties (Spot)
+Remade: Hideous Deformity	KEY:Remade ~ Hideous Deformity	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	BONUS:SKILL|Diplomacy,Gather Information|-4	ABILITY:Special Ability|AUTOMATIC|Remade ~ Hideous Deformity
+Remade: Malfunctioning Memories	KEY:Remade ~ Malfunctioning Memories	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	ABILITY:Special Ability|AUTOMATIC|Remade ~ Malfunctioning Memories
+Remade: Poor Healing	KEY:Remade ~ Poor Healing	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	ABILITY:Special Ability|AUTOMATIC|Remade ~ Poor Healing
+Remade: Slow	KEY:Remade ~ Slow	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	BONUS:MOVEADD|TYPE.Walk|-10	ABILITY:Special Ability|AUTOMATIC|Remade ~ Slow
+Remade: Stiff Jointed	KEY:Remade ~ Stiff Jointed	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	BONUS:SKILL|Balance,Jump,Tumble|-4	ABILITY:Special Ability|AUTOMATIC|Remade ~ Stiff Jointed
+Remade: Wheels	KEY:Remade ~ Wheels	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	BONUS:SKILL|Swim,Ride|-4	ABILITY:Special Ability|AUTOMATIC|Remade ~ Wheels

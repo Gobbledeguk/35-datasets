@@ -1,0 +1,5 @@
+# Gem Dragon domain psionic class skills (loads only with Expanded Psionics Handbook)
+# Source: The (mostly) Complete Dragon Magazine Compendium - Spells (compendium pp. 1280-1362).
+# DESC ends with the original Dragon/Dungeon Magazine issue and article. SOURCEPAGE = compendium PDF page.
+
+CATEGORY=Domain|Domain Power ~ Gem Dragon.MOD	CSKILL:Autohypnosis|Knowledge (Psionics)|Psicraft

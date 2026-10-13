@@ -1,0 +1,13 @@
+# Prerequisite feats from Oriental Adventures v.3.5 as real checks (loads only with that book)
+# Source: The (mostly) Complete Dragon Magazine Compendium - Feats, Flaws & Styles (compendium pp. 1058-1176).
+# DESC ends with the original Dragon Magazine issue and article. SOURCEPAGE = compendium PDF page.
+# Prerequisites that could not be expressed as PCGen PRE tags are listed in PRETEXT.
+
+CATEGORY=FEAT|Distant Touch.MOD	PREABILITY:1,CATEGORY=FEAT,Pain Touch
+CATEGORY=FEAT|Black Panda Mastery I.MOD	PREABILITY:1,CATEGORY=FEAT,Pain Touch
+CATEGORY=FEAT|Black Panda Mastery II.MOD	PREABILITY:1,CATEGORY=FEAT,Freezing the Lifeblood
+CATEGORY=FEAT|Blue Mountain Mastery I.MOD	PREABILITY:3,CATEGORY=FEAT,Flying Kick,Ki Shout,Roundabout Kick
+CATEGORY=FEAT|Blue Mountain Mastery II.MOD	PREABILITY:1,CATEGORY=FEAT,Great Ki Shout
+CATEGORY=FEAT|Iron Hand Mastery I.MOD	PREABILITY:3,CATEGORY=FEAT,Fists of Iron,Eagle Claw Attack,Roundabout Kick
+CATEGORY=FEAT|Koumajutsu Mastery I.MOD	PREABILITY:1,CATEGORY=FEAT,Choke Hold
+CATEGORY=FEAT|Koumajutsu Mastery II.MOD	PREABILITY:2,CATEGORY=FEAT,Earth's Embrace,Fists of Iron

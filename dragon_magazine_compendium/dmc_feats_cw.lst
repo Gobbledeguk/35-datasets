@@ -1,0 +1,7 @@
+# Prerequisite feats from Complete Warrior as real checks (loads only with that book)
+# Source: The (mostly) Complete Dragon Magazine Compendium - Feats, Flaws & Styles (compendium pp. 1058-1176).
+# DESC ends with the original Dragon Magazine issue and article. SOURCEPAGE = compendium PDF page.
+# Prerequisites that could not be expressed as PCGen PRE tags are listed in PRETEXT.
+
+CATEGORY=FEAT|Black Panda Mastery II.MOD	PREABILITY:1,CATEGORY=FEAT,Extra Stunning
+CATEGORY=FEAT|Temerad Mastery II.MOD	PREABILITY:1,CATEGORY=FEAT,Extra Stunning

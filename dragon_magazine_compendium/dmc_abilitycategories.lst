@@ -1,0 +1,6 @@
+# Ability categories
+# Source: The (mostly) Complete Dragon Magazine Compendium (fan compilation of Dragon Magazine 3.0/3.5 content).
+# SOURCEPAGE values refer to page numbers of the compendium PDF.
+# Built for the Bahamut35e game mode (bahamutdragon/pcgen).
+
+ABILITYCATEGORY:Saurian Shifter Trait	CATEGORY:Special Ability	TYPE:SaurianShifterTrait	VISIBLE:YES	EDITABLE:YES	EDITPOOL:NO	PLURAL:Saurian Shifter Traits	DISPLAYLOCATION:Racial Abilities

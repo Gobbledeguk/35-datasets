@@ -1,0 +1,359 @@
+# Race trait abilities
+# Source: The (mostly) Complete Dragon Magazine Compendium (fan compilation of Dragon Magazine 3.0/3.5 content).
+# SOURCEPAGE values refer to page numbers of the compendium PDF.
+# Built for the Bahamut35e game mode (bahamutdragon/pcgen).
+
+
+###Block: Axani
+Race Traits ~ Axani	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Axani Race Trait
+Native Outsider	KEY:Axani ~ Native Outsider	CATEGORY:Special Ability	TYPE:Axani Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.3	DESC:Axani are native outsiders descended from inhabitants of the planes of law.
+Calm Emotions	KEY:Axani ~ Calm Emotions	CATEGORY:Special Ability	TYPE:Axani Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.3	DESC:Once per day, an axani can use calm emotions as a spell-like ability, as a cleric of its character level.
+Racial Skills	KEY:Axani ~ Racial Skills	CATEGORY:Special Ability	TYPE:Axani Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.3	DESC:+2 racial bonus on Diplomacy and Spot checks.
+
+###Block: Cansin
+Race Traits ~ Cansin	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Cansin Race Trait
+Native Outsider	KEY:Cansin ~ Native Outsider	CATEGORY:Special Ability	TYPE:Cansin Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.3	DESC:Cansin are native outsiders, most often descended from inhabitants of Limbo.
+Entropic Shield	KEY:Cansin ~ Entropic Shield	CATEGORY:Special Ability	TYPE:Cansin Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.3	DESC:Once per day, a cansin can use entropic shield as a spell-like ability, as a cleric of its character level.
+Racial Skills	KEY:Cansin ~ Racial Skills	CATEGORY:Special Ability	TYPE:Cansin Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.3	DESC:+2 racial bonus on Bluff and Search checks.
+
+###Block: Dust Para-Genasi
+Race Traits ~ Dust Para-Genasi	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=DustParaGenasi Race Trait
+Native Outsider	KEY:Dust Para-Genasi ~ Native Outsider	CATEGORY:Special Ability	TYPE:DustParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.4	DESC:Dust Para-Genasis are native outsiders.
+Elemental Resistance	KEY:Dust Para-Genasi ~ Elemental Resistance	CATEGORY:Special Ability	TYPE:DustParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.4	DESC:+%1 racial bonus on saving throws against dust spells and effects (such as dust of dryness or a dust mephit's breath). The bonus starts at +1 and increases by +1 for every five character levels.|1+floor(TL/5)
+Dust Cloud	KEY:Dust Para-Genasi ~ Dust Cloud	CATEGORY:Special Ability	TYPE:DustParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.4	DESC:Once per day (Su), create a 20-foot-radius cloud of dust centered on yourself for 5 minutes. Creatures more than 5 feet apart in the cloud have concealment (20%% miss chance). All other creatures in the cloud must succeed on a Fortitude save (DC 10 + 1/2 level + Cha modifier) or cough, taking -2 on attacks and skill checks until they leave the cloud.
+Clerical Focus	KEY:Dust Para-Genasi ~ Clerical Focus	CATEGORY:Special Ability	TYPE:DustParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.4	DESC:A cleric of this race must worship a deity granting the Air or Earth domain, and must select one of those domains.
+Breathless	KEY:Dust Para-Genasi ~ Breathless	CATEGORY:Special Ability	TYPE:DustParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.4	DESC:(Ex) Does not breathe; immune to drowning, suffocation, and inhaled attacks (such as some poisons).
+
+###Block: Ice Para-Genasi
+Race Traits ~ Ice Para-Genasi	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=IceParaGenasi Race Trait
+Native Outsider	KEY:Ice Para-Genasi ~ Native Outsider	CATEGORY:Special Ability	TYPE:IceParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.4	DESC:Ice Para-Genasis are native outsiders.
+Elemental Resistance	KEY:Ice Para-Genasi ~ Elemental Resistance	CATEGORY:Special Ability	TYPE:IceParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.4	DESC:+%1 racial bonus on saving throws against cold effects. The bonus starts at +1 and increases by +1 for every five character levels.|1+floor(TL/5)
+Chill Metal	KEY:Ice Para-Genasi ~ Chill Metal	CATEGORY:Special Ability	TYPE:IceParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.4	DESC:Once per day, use chill metal as a spell-like ability, as a druid of your character level.
+Clerical Focus	KEY:Ice Para-Genasi ~ Clerical Focus	CATEGORY:Special Ability	TYPE:IceParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.4	DESC:A cleric of this race must worship a deity granting the Air, Cold, or Water domain, and must select one of those domains.
+
+###Block: Magma Para-Genasi
+Race Traits ~ Magma Para-Genasi	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=MagmaParaGenasi Race Trait
+Native Outsider	KEY:Magma Para-Genasi ~ Native Outsider	CATEGORY:Special Ability	TYPE:MagmaParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.5	DESC:Magma Para-Genasis are native outsiders.
+Elemental Resistance	KEY:Magma Para-Genasi ~ Elemental Resistance	CATEGORY:Special Ability	TYPE:MagmaParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.5	DESC:+%1 racial bonus on saving throws against fire spells and effects. The bonus starts at +1 and increases by +1 for every five character levels.|1+floor(TL/5)
+Heat Metal	KEY:Magma Para-Genasi ~ Heat Metal	CATEGORY:Special Ability	TYPE:MagmaParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.5	DESC:Once per day, use heat metal as a spell-like ability, as a sorcerer of your character level.
+Clerical Focus	KEY:Magma Para-Genasi ~ Clerical Focus	CATEGORY:Special Ability	TYPE:MagmaParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.5	DESC:A cleric of this race must worship a deity granting the Earth or Fire domain, and must select one of those domains.
+
+###Block: Ooze Para-Genasi
+Race Traits ~ Ooze Para-Genasi	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=OozeParaGenasi Race Trait
+Native Outsider	KEY:Ooze Para-Genasi ~ Native Outsider	CATEGORY:Special Ability	TYPE:OozeParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.5	DESC:Ooze Para-Genasis are native outsiders.
+Elemental Resistance	KEY:Ooze Para-Genasi ~ Elemental Resistance	CATEGORY:Special Ability	TYPE:OozeParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.5	DESC:+%1 racial bonus on saving throws against acid spells and effects. The bonus starts at +1 and increases by +1 for every five character levels.|1+floor(TL/5)
+Grease	KEY:Ooze Para-Genasi ~ Grease	CATEGORY:Special Ability	TYPE:OozeParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.5	DESC:Once per day, use grease as a spell-like ability, as a sorcerer of your character level.
+Clerical Focus	KEY:Ooze Para-Genasi ~ Clerical Focus	CATEGORY:Special Ability	TYPE:OozeParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.5	DESC:A cleric of this race must worship a deity granting the Earth, Slime, or Water domain, and must select one of those domains.
+
+###Block: Smoke Para-Genasi
+Race Traits ~ Smoke Para-Genasi	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=SmokeParaGenasi Race Trait
+Native Outsider	KEY:Smoke Para-Genasi ~ Native Outsider	CATEGORY:Special Ability	TYPE:SmokeParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.6	DESC:Smoke Para-Genasis are native outsiders.
+Elemental Resistance	KEY:Smoke Para-Genasi ~ Elemental Resistance	CATEGORY:Special Ability	TYPE:SmokeParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.6	DESC:+%1 racial bonus on saving throws against smoke and cloud effects (such as stinking cloud and cloudkill). The bonus starts at +1 and increases by +1 for every five character levels.|1+floor(TL/5)
+Smoke Cloud	KEY:Smoke Para-Genasi ~ Smoke Cloud	CATEGORY:Special Ability	TYPE:SmokeParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.6	DESC:Once per day (Su), create the smoke cloud effect of the pyrotechnics spell without needing a fire source, as a sorcerer of your character level.
+Clerical Focus	KEY:Smoke Para-Genasi ~ Clerical Focus	CATEGORY:Special Ability	TYPE:SmokeParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.6	DESC:A cleric of this race must worship a deity granting the Air or Fire domain, and must select one of those domains.
+
+###Block: Steam Para-Genasi
+Race Traits ~ Steam Para-Genasi	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=SteamParaGenasi Race Trait
+Native Outsider	KEY:Steam Para-Genasi ~ Native Outsider	CATEGORY:Special Ability	TYPE:SteamParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.6	DESC:Steam Para-Genasis are native outsiders.
+Elemental Resistance	KEY:Steam Para-Genasi ~ Elemental Resistance	CATEGORY:Special Ability	TYPE:SteamParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.6	DESC:+%1 racial bonus on saving throws against heat-based (but not fire-based) effects, such as heat metal. The bonus starts at +1 and increases by +1 for every five character levels.|1+floor(TL/5)
+Obscuring Mist	KEY:Steam Para-Genasi ~ Obscuring Mist	CATEGORY:Special Ability	TYPE:SteamParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.6	DESC:Once per day, use obscuring mist as a spell-like ability, as a druid of your character level.
+Clerical Focus	KEY:Steam Para-Genasi ~ Clerical Focus	CATEGORY:Special Ability	TYPE:SteamParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.6	DESC:A cleric of this race must worship a deity granting the Fire or Water domain, and must select one of those domains.
+Keen Eyed	KEY:Steam Para-Genasi ~ Keen Eyed	CATEGORY:Special Ability	TYPE:SteamParaGenasi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.6	DESC:(Ex) Reduce the miss chance from concealment caused by smoke, fog, and similar atmospheric effects by 10%%.
+
+###Block: Mortif
+Race Traits ~ Mortif	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Mortif Race Trait
+Deathtouched	KEY:Mortif ~ Deathtouched	CATEGORY:Special Ability	TYPE:Mortif Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.7	DESC:Mortif are deathtouched humans whose ancestry includes an undead or half-undead creature.
+Racial Skills	KEY:Mortif ~ Racial Skills	CATEGORY:Special Ability	TYPE:Mortif Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.7	DESC:+2 racial bonus on Intimidate and Move Silently checks.
+Chill Touch	KEY:Mortif ~ Chill Touch	CATEGORY:Special Ability	TYPE:Mortif Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.7	DESC:Once per day, use chill touch as a spell-like ability (caster level equals character level, minimum 1st).
+
+###Block: Ghost Elf
+Race Traits ~ Ghost Elf	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=GhostElf Race Trait
+Weapon Proficiency	KEY:Ghost Elf ~ Weapon Proficiency	CATEGORY:Special Ability	TYPE:GhostElf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.8	DESC:Proficient with the short sword and scimitar (but not with bows).
+Ghostly Glow	KEY:Ghost Elf ~ Ghostly Glow	CATEGORY:Special Ability	TYPE:GhostElf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.8	DESC:Sheds light like a candle (5-foot radius). Suppressing it is a free action, but requires a DC 10 Concentration check (free action) each round.
+Keen Senses	KEY:Ghost Elf ~ Keen Senses	CATEGORY:Special Ability	TYPE:GhostElf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.8	DESC:+2 racial bonus on Listen, Search, and Spot checks. Passing within 5 feet of a secret or concealed door entitles a Search check as if actively looking.
+Planar Lore	KEY:Ghost Elf ~ Planar Lore	CATEGORY:Special Ability	TYPE:GhostElf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.8	DESC:Knowledge (the planes) is always a class skill.
+Ethereal Power	KEY:Ghost Elf ~ Ethereal Power	CATEGORY:Special Ability	TYPE:GhostElf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.8	DESC:Once per day, use one ethereal power available at your level or lower (caster level equals character level). 1st: slip binding (+10 enhancement on Escape Artist for 1 min/level, +20 at 5th, +30 at 9th). 4th: see invisibility. 6th: blink. 14th: ethereal jaunt. 18th: ethereal shift (move yourself and carried gear to or from the Ethereal Plane and remain there). Only one power may be used per day; the spell-like listings are shared.
+
+###Block: Bozak (DMC)
+Race Traits ~ Bozak (DMC)	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=BozakDMC Race Trait
+Racial Hit Dice	KEY:Bozak (DMC) ~ Racial Hit Dice	CATEGORY:Special Ability	TYPE:BozakDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.12	DESC:Four dragon Hit Dice (d12): +4 base attack, Fort/Ref/Will +4, skill points 7 x (6 + Int mod), and two feats.
+Spells	KEY:Bozak (DMC) ~ Spells	CATEGORY:Special Ability	TYPE:BozakDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.12	DESC:Casts spells as a 4th-level sorcerer. Sorcerer levels stack with this for spells per day, spells known, and caster level (enter manually).
+Death Throes	KEY:Bozak (DMC) ~ Death Throes	CATEGORY:Special Ability	TYPE:BozakDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.12	DESC:(Su) On death, the bones explode for 1d6 damage in a 10-foot radius (Reflex DC 10 + 1/2 HD + Con mod half). Can only be raised by resurrection, true resurrection, miracle, or wish.
+Glide	KEY:Bozak (DMC) ~ Glide	CATEGORY:Special Ability	TYPE:BozakDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.12	DESC:(Ex) Negates falling damage and can glide horizontally up to four times the vertical distance descended (clumsy maneuverability).
+Inspired by Dragons	KEY:Bozak (DMC) ~ Inspired by Dragons	CATEGORY:Special Ability	TYPE:BozakDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.12	DESC:(Ex) +1 morale bonus on attacks and saves when under the command of a dragon.
+Low Metabolism	KEY:Bozak (DMC) ~ Low Metabolism	CATEGORY:Special Ability	TYPE:BozakDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.12	DESC:(Ex) Needs only one-tenth the food and water of a human.
+Spell Resistance	KEY:Bozak (DMC) ~ Spell Resistance	CATEGORY:Special Ability	TYPE:BozakDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.12	DESC:Spell resistance equal to 14 + class level.
+
+###Block: Tortle (DMC)
+Race Traits ~ Tortle (DMC)	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=TortleDMC Race Trait
+Swimmer	KEY:Tortle (DMC) ~ Swimmer	CATEGORY:Special Ability	TYPE:TortleDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.14	DESC:Swim speed 10 ft. +8 racial bonus on Swim checks to perform special actions or avoid hazards; may always take 10 on Swim and may run while swimming in a straight line.
+Shell	KEY:Tortle (DMC) ~ Shell	CATEGORY:Special Ability	TYPE:TortleDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.14	DESC:+3 natural armor bonus.
+
+###Block: Adu'ja
+Race Traits ~ Adu'ja	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Aduja Race Trait
+Plant Traits	KEY:Adu'ja ~ Plant Traits	CATEGORY:Special Ability	TYPE:Aduja Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.15	DESC:Immune to mind-affecting effects, poison, sleep, paralysis, polymorph, stunning, and critical hits. Does not sleep (spellcasters still rest 8 hours). Unaffected by effects that target only humanoids.
+Woodland Stride	KEY:Adu'ja ~ Woodland Stride	CATEGORY:Special Ability	TYPE:Aduja Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.15	DESC:Has the woodland stride ability of a 2nd-level druid.
+Photosynthesis	KEY:Adu'ja ~ Photosynthesis	CATEGORY:Special Ability	TYPE:Aduja Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.15	DESC:Needs only one-quarter normal rations if allowed 4 hours of direct sunlight per day.
+Photoregeneration	KEY:Adu'ja ~ Photoregeneration	CATEGORY:Special Ability	TYPE:Aduja Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.15	DESC:Resting in sunlight with at least a gallon of water heals twice the character level in hit points per day. Can regrow severed limbs (not heads) in about a month (half with complete bed rest).
+Expressive	KEY:Adu'ja ~ Expressive	CATEGORY:Special Ability	TYPE:Aduja Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.15	DESC:+4 racial bonus on Diplomacy and Perform checks.
+Trusting Nature	KEY:Adu'ja ~ Trusting Nature	CATEGORY:Special Ability	TYPE:Aduja Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.15	DESC:-4 penalty on Bluff and Sense Motive checks.
+Nature Bond	KEY:Adu'ja ~ Nature Bond	CATEGORY:Special Ability	TYPE:Aduja Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.15	DESC:+4 racial bonus on Survival checks; Survival is always a class skill.
+Vulnerability to Fire	KEY:Adu'ja ~ Vulnerability to Fire	CATEGORY:Special Ability	TYPE:Aduja Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.15	DESC:Takes half again as much (+50%%) damage from fire.
+Speak with Plants	KEY:Adu'ja ~ Speak with Plants	CATEGORY:Special Ability	TYPE:Aduja Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.15	DESC:Once per day, speak with plants as a spell-like ability (caster level 1st).
+
+###Block: Gruwaar
+Race Traits ~ Gruwaar	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Gruwaar Race Trait
+Fey	KEY:Gruwaar ~ Fey	CATEGORY:Special Ability	TYPE:Gruwaar Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.17	DESC:Immune to effects that target only humanoids, such as charm person.
+Quadrupedal Run	KEY:Gruwaar ~ Quadrupedal Run	CATEGORY:Special Ability	TYPE:Gruwaar Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.17	DESC:In light or no armor, with a light load and empty hands, can drop to all fours and move at 30 ft.
+Stealthy	KEY:Gruwaar ~ Stealthy	CATEGORY:Special Ability	TYPE:Gruwaar Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.17	DESC:+2 racial bonus on Hide, Move Silently, and Sleight of Hand checks.
+Claws	KEY:Gruwaar ~ Claws	CATEGORY:Special Ability	TYPE:Gruwaar Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.17	DESC:Two claw attacks, 1d3 damage each plus Strength modifier.
+Disguise Self	KEY:Gruwaar ~ Disguise Self	CATEGORY:Special Ability	TYPE:Gruwaar Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.17	DESC:Once per day, disguise self as a spell-like ability (caster level 1st).
+
+###Block: Golmoid
+Race Traits ~ Golmoid	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Golmoid Race Trait
+Unhindered Speed	KEY:Golmoid ~ Unhindered Speed	CATEGORY:Special Ability	TYPE:Golmoid Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.19	DESC:Moves at full speed (30 ft.) even in medium or heavy armor or with a medium or heavy load.
+Stony Skin	KEY:Golmoid ~ Stony Skin	CATEGORY:Special Ability	TYPE:Golmoid Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.19	DESC:+2 natural armor bonus.
+Craftsman	KEY:Golmoid ~ Craftsman	CATEGORY:Special Ability	TYPE:Golmoid Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.19	DESC:+2 racial bonus on all Craft checks.
+Construct Heritage	KEY:Golmoid ~ Construct Heritage	CATEGORY:Special Ability	TYPE:Golmoid Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.19	DESC:+4 racial bonus on saving throws against enchantment spells and effects.
+
+###Block: T'kel
+Race Traits ~ T'kel	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Tkel Race Trait
+Monstrous Humanoid	KEY:T'kel ~ Monstrous Humanoid	CATEGORY:Special Ability	TYPE:Tkel Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.21	DESC:Immune to spells that affect only humanoids, such as charm person.
+Swimmer	KEY:T'kel ~ Swimmer	CATEGORY:Special Ability	TYPE:Tkel Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.21	DESC:Swim speed 20 ft. +8 racial bonus on Swim checks for special actions or hazards; may always take 10 and may run while swimming in a straight line.
+Claws	KEY:T'kel ~ Claws	CATEGORY:Special Ability	TYPE:Tkel Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.21	DESC:Two claw attacks, 1d4 damage each plus Strength modifier.
+
+###Block: Exiled Dwarf
+Race Traits ~ Exiled Dwarf	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=ExiledDwarf Race Trait
+Steady Pace	KEY:Exiled Dwarf ~ Steady Pace	CATEGORY:Special Ability	TYPE:ExiledDwarf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.37	DESC:Speed is never reduced by armor or encumbrance (20 ft.).
+Open Minded	KEY:Exiled Dwarf ~ Open Minded	CATEGORY:Special Ability	TYPE:ExiledDwarf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.37	DESC:One extra feat at 1st level. Exiled dwarves lose darkvision, stonecunning, stability, and the racial bonuses against poison and spells.
+Weapon Familiarity	KEY:Exiled Dwarf ~ Weapon Familiarity	CATEGORY:Special Ability	TYPE:ExiledDwarf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.37	DESC:Dwarven waraxes and dwarven urgroshes are martial weapons.
+Vengeance	KEY:Exiled Dwarf ~ Vengeance	CATEGORY:Special Ability	TYPE:ExiledDwarf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.37	DESC:+2 racial bonus on attack and damage rolls against orcs and goblinoids.
+Giant Fighter	KEY:Exiled Dwarf ~ Giant Fighter	CATEGORY:Special Ability	TYPE:ExiledDwarf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.37	DESC:+6 dodge bonus to Armor Class against monsters of the giant type.
+Stone and Metal Lore	KEY:Exiled Dwarf ~ Stone and Metal Lore	CATEGORY:Special Ability	TYPE:ExiledDwarf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.37	DESC:+2 racial bonus on Appraise and Craft checks related to stone or metal items.
+
+###Block: Declining Elf
+Race Traits ~ Declining Elf	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=DecliningElf Race Trait
+Weapon Proficiency	KEY:Declining Elf ~ Weapon Proficiency	CATEGORY:Special Ability	TYPE:DecliningElf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.37	DESC:Proficient with longsword, rapier, longbow, and shortbow (including composite bows).
+Weapon Focus	KEY:Declining Elf ~ Weapon Focus	CATEGORY:Special Ability	TYPE:DecliningElf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.37	DESC:Gains Weapon Focus with one melee weapon (longsword or rapier) and one ranged weapon (longbow or shortbow).
+Keen Senses	KEY:Declining Elf ~ Keen Senses	CATEGORY:Special Ability	TYPE:DecliningElf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.37	DESC:+2 racial bonus on Listen, Search, and Spot checks; can notice secret doors by passing within 5 feet.
+Faded Heritage	KEY:Declining Elf ~ Faded Heritage	CATEGORY:Special Ability	TYPE:DecliningElf Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.37	DESC:Declining elves lose sleep immunity, the save bonus against enchantments, and trance (must sleep 8 hours). They age as half-elves.
+
+###Block: Techno Gnome
+Race Traits ~ Techno Gnome	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=TechnoGnome Race Trait
+Weapon Familiarity	KEY:Techno Gnome ~ Weapon Familiarity	CATEGORY:Special Ability	TYPE:TechnoGnome Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.38	DESC:Gnome hooked hammers are martial weapons.
+Racial Combat Training	KEY:Techno Gnome ~ Racial Combat Training	CATEGORY:Special Ability	TYPE:TechnoGnome Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.38	DESC:+1 racial bonus on attack rolls against kobolds and goblinoids; +4 dodge bonus to AC against giants.
+Mechanical Genius	KEY:Techno Gnome ~ Mechanical Genius	CATEGORY:Special Ability	TYPE:TechnoGnome Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.38	DESC:+2 racial bonus on Craft, Disable Device, and Open Lock checks. Bonus Alertness feat at 1st level.
+Lost Magic	KEY:Techno Gnome ~ Lost Magic	CATEGORY:Special Ability	TYPE:TechnoGnome Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.38	DESC:Techno gnomes lose the save bonus against illusions, the illusion DC bonus, and all racial spell-like abilities.
+Keen Hearing	KEY:Techno Gnome ~ Keen Hearing	CATEGORY:Special Ability	TYPE:TechnoGnome Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.38	DESC:+2 racial bonus on Listen checks.
+
+###Block: Unsheltered Halfling
+Race Traits ~ Unsheltered Halfling	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=UnshelteredHalfling Race Trait	ABILITY:Special Ability|AUTOMATIC|Unsheltered Halfling ~ Hardened Defenses|PRELEVEL:MIN=3
+Agile	KEY:Unsheltered Halfling ~ Agile	CATEGORY:Special Ability	TYPE:UnshelteredHalfling Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.38	DESC:+2 racial bonus on Climb, Jump, Listen, and Move Silently checks.
+Thrower	KEY:Unsheltered Halfling ~ Thrower	CATEGORY:Special Ability	TYPE:UnshelteredHalfling Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.38	DESC:+1 racial bonus on attack rolls with thrown weapons and slings.
+Self Reliant	KEY:Unsheltered Halfling ~ Self Reliant	CATEGORY:Special Ability	TYPE:UnshelteredHalfling Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.38	DESC:Bonus Dodge feat at 1st level. Unsheltered halflings lose the racial bonus on all saves and the morale bonus against fear.
+Hardened Defenses	KEY:Unsheltered Halfling ~ Hardened Defenses	CATEGORY:Special Ability	TYPE:UnshelteredHalfling Race Trait Gated.Race Trait.SpecialQuality	SOURCEPAGE:p.38	DESC:At 3rd level, choose Great Fortitude, Iron Will, or Lightning Reflexes as a bonus feat.	ADD:ABILITY|FEAT|VIRTUAL|Great Fortitude,Iron Will,Lightning Reflexes
+
+###Block: Complacent Human
+Race Traits ~ Complacent Human	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=ComplacentHuman Race Trait
+Complacency	KEY:Complacent Human ~ Complacency	CATEGORY:Special Ability	TYPE:ComplacentHuman Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.39	DESC:Complacent humans lose the bonus feat at 1st level and the bonus skill points. Instead they apply a +2 racial bonus to one ability score.
+
+###Block: Glimmerfolk
+Race Traits ~ Glimmerfolk	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Glimmerfolk Race Trait
+Pattern Immunity	KEY:Glimmerfolk ~ Pattern Immunity	CATEGORY:Special Ability	TYPE:Glimmerfolk Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.39	DESC:Immune to pattern effects.
+Light Within	KEY:Glimmerfolk ~ Light Within	CATEGORY:Special Ability	TYPE:Glimmerfolk Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.39	DESC:+4 racial bonus on saves against shadow subschool spells and spells with the darkness descriptor.
+Nimlis	KEY:Glimmerfolk ~ Nimlis	CATEGORY:Special Ability	TYPE:Glimmerfolk Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.39	DESC:(Sp) Three small orbiting lights, each glowing like a candle (-2 Hide per active nimli; -6 is applied for three). As a standard action, burn out nimlis to cast: one for dancing lights, daze, or flare; two for color spray or magic missile; all three for mirror image. Burned nimlis return after 8 hours of rest.
+Performer	KEY:Glimmerfolk ~ Performer	CATEGORY:Special Ability	TYPE:Glimmerfolk Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.39	DESC:+2 racial bonus on Perform checks.
+
+###Block: Menta Cyclopean
+Race Traits ~ Menta Cyclopean	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=MentaCyclopean Race Trait
+Single Eye	KEY:Menta Cyclopean ~ Single Eye	CATEGORY:Special Ability	TYPE:MentaCyclopean Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.40	DESC:Lacking depth perception, cyclopeans take -2 on ranged attack rolls, Search checks, and Spot checks.
+Future Sight	KEY:Menta Cyclopean ~ Future Sight	CATEGORY:Special Ability	TYPE:MentaCyclopean Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.40	DESC:(Su) Three times per day, as a full-round action while touching a creature, gain an augury-like glimpse of that creature's future (not your own). No components; once per creature per day.
+
+###Block: Feral-Kind Cyclopean
+Race Traits ~ Feral-Kind Cyclopean	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=FeralKindCyclopean Race Trait
+Single Eye	KEY:Feral-Kind Cyclopean ~ Single Eye	CATEGORY:Special Ability	TYPE:FeralKindCyclopean Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.40	DESC:Lacking depth perception, cyclopeans take -2 on ranged attack rolls, Search checks, and Spot checks.
+Glimpse the Future	KEY:Feral-Kind Cyclopean ~ Glimpse the Future	CATEGORY:Special Ability	TYPE:FeralKindCyclopean Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.40	DESC:(Su) +1 insight bonus on initiative checks and Reflex saves.	BONUS:COMBAT|INITIATIVE|1|TYPE=Insight	BONUS:SAVE|Reflex|1|TYPE=Insight
+
+###Block: Grippli (DMC)
+Race Traits ~ Grippli (DMC)	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=GrippliDMC Race Trait
+Climber	KEY:Grippli (DMC) ~ Climber	CATEGORY:Special Ability	TYPE:GrippliDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.43	DESC:Climb speed 20 ft. and +8 racial bonus on Climb checks.
+Weapon Familiarity	KEY:Grippli (DMC) ~ Weapon Familiarity	CATEGORY:Special Ability	TYPE:GrippliDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.43	DESC:Bolas and nets are martial weapons.
+Insect Hunter	KEY:Grippli (DMC) ~ Insect Hunter	CATEGORY:Special Ability	TYPE:GrippliDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.43	DESC:+1 racial bonus on attack rolls against vermin.
+Predator Avoidance	KEY:Grippli (DMC) ~ Predator Avoidance	CATEGORY:Special Ability	TYPE:GrippliDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.43	DESC:+4 dodge bonus to AC against animals and vermin.
+Toxin Resistance	KEY:Grippli (DMC) ~ Toxin Resistance	CATEGORY:Special Ability	TYPE:GrippliDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.43	DESC:+2 racial bonus on saving throws against poison.
+Leaper	KEY:Grippli (DMC) ~ Leaper	CATEGORY:Special Ability	TYPE:GrippliDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.43	DESC:+4 racial bonus on Jump checks; all Jump checks count as having a running start.
+Quiet	KEY:Grippli (DMC) ~ Quiet	CATEGORY:Special Ability	TYPE:GrippliDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.43	DESC:+2 racial bonus on Move Silently checks.
+Illiterate	KEY:Grippli (DMC) ~ Illiterate	CATEGORY:Special Ability	TYPE:GrippliDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.43	DESC:Cannot read or write (even wizards) until spending 1 skill point to become literate in a starting language.
+
+###Block: Giff
+Race Traits ~ Giff	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Giff Race Trait
+Racial Hit Dice	KEY:Giff ~ Racial Hit Dice	CATEGORY:Special Ability	TYPE:Giff Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.51	DESC:Two monstrous humanoid Hit Dice (2d8): +2 base attack, Fort +0, Ref +3, Will +3, skill points 5 x (2 + Int mod).
+Powerful Build	KEY:Giff ~ Powerful Build	CATEGORY:Special Ability	TYPE:Giff Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.51	DESC:Treated as one size larger for opposed size checks (grapple, bull rush, trip) and size-based special attacks when advantageous; can use weapons sized one category larger without penalty.
+Firearms Training	KEY:Giff ~ Firearms Training	CATEGORY:Special Ability	TYPE:Giff Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.51	DESC:Gains Exotic Weapon Proficiency (firearms) as a bonus feat (firearms are not part of this dataset).
+
+###Block: Scro
+Race Traits ~ Scro	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Scro Race Trait
+Orc Blood	KEY:Scro ~ Orc Blood	CATEGORY:Special Ability	TYPE:Scro Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.54	DESC:Counts as an orc for all race-related effects.
+Elf Hatred	KEY:Scro ~ Elf Hatred	CATEGORY:Special Ability	TYPE:Scro Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.54	DESC:+1 racial bonus on attack rolls against elves (including drow).
+
+###Block: Phanaton
+Race Traits ~ Phanaton	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Phanaton Race Trait
+Forest Awareness	KEY:Phanaton ~ Forest Awareness	CATEGORY:Special Ability	TYPE:Phanaton Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.56	DESC:(Ex) +1 racial bonus on all saving throws in forest locations.
+Gliding	KEY:Phanaton ~ Gliding	CATEGORY:Special Ability	TYPE:Phanaton Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.56	DESC:(Ex) Negates falling damage and glides 20 feet forward per 5 feet of descent at 20 ft. (average); cannot hover or glide with a medium or heavy load.
+Racial Skills	KEY:Phanaton ~ Racial Skills	CATEGORY:Special Ability	TYPE:Phanaton Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.56	DESC:+4 racial bonus on Move Silently (+8 in forests), +2 on Climb, Jump, Listen, and Spot.
+
+###Block: Xvart
+Race Traits ~ Xvart	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Xvart Race Trait
+Speak with Vermin Kin	KEY:Xvart ~ Speak with Vermin Kin	CATEGORY:Special Ability	TYPE:Xvart Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.57	DESC:(Sp) Once per day, speak with bats or rats (including dire forms) for 1 minute, as speak with animals.
+Sneaky	KEY:Xvart ~ Sneaky	CATEGORY:Special Ability	TYPE:Xvart Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.57	DESC:+2 racial bonus on Move Silently checks.
+
+###Block: Norker
+Race Traits ~ Norker	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Norker Race Trait
+Tough Hide	KEY:Norker ~ Tough Hide	CATEGORY:Special Ability	TYPE:Norker Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.58	DESC:+5 natural armor bonus.
+Bite	KEY:Norker ~ Bite	CATEGORY:Special Ability	TYPE:Norker Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.58	DESC:Natural bite attack (1d4).
+Sneaky	KEY:Norker ~ Sneaky	CATEGORY:Special Ability	TYPE:Norker Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.58	DESC:+4 racial bonus on Move Silently checks.
+
+###Block: Azerblood (DMC)
+Race Traits ~ Azerblood (DMC)	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=AzerbloodDMC Race Trait
+Dwarven Blood	KEY:Azerblood (DMC) ~ Dwarven Blood	CATEGORY:Special Ability	TYPE:AzerbloodDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.59	DESC:Counts as a dwarf for all special abilities and effects.
+Weapon Familiarity	KEY:Azerblood (DMC) ~ Weapon Familiarity	CATEGORY:Special Ability	TYPE:AzerbloodDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.59	DESC:Dwarven waraxes and urgroshes are martial weapons.
+Stability	KEY:Azerblood (DMC) ~ Stability	CATEGORY:Special Ability	TYPE:AzerbloodDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.59	DESC:+4 bonus on ability checks to resist bull rush or trip while standing on the ground.
+Hardy	KEY:Azerblood (DMC) ~ Hardy	CATEGORY:Special Ability	TYPE:AzerbloodDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.59	DESC:+2 racial bonus on saves against poison and against spells and spell-like abilities.
+Old Enemies	KEY:Azerblood (DMC) ~ Old Enemies	CATEGORY:Special Ability	TYPE:AzerbloodDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.59	DESC:+1 racial bonus on attacks against fire, magma, and steam mephits and salamanders; +4 dodge bonus to AC against giants.
+Forge Lore	KEY:Azerblood (DMC) ~ Forge Lore	CATEGORY:Special Ability	TYPE:AzerbloodDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.59	DESC:+2 racial bonus on Appraise and Craft checks related to fire, stone, or metal.
+Heat Metal	KEY:Azerblood (DMC) ~ Heat Metal	CATEGORY:Special Ability	TYPE:AzerbloodDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.59	DESC:Once per day, heat metal (caster level equals character level; Charisma-based save).
+Forged	KEY:Azerblood (DMC) ~ Forged	CATEGORY:Special Ability	TYPE:AzerbloodDMC Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.59	DESC:+%1 bonus on saves against heat and fire effects (+1, increasing by 1 every five levels).|1+floor(TL/5)
+
+###Block: Celadrin
+Race Traits ~ Celadrin	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Celadrin Race Trait
+Elven Blood	KEY:Celadrin ~ Elven Blood	CATEGORY:Special Ability	TYPE:Celadrin Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.60	DESC:Counts as an elf for all special abilities and effects.
+Weapon Proficiency	KEY:Celadrin ~ Weapon Proficiency	CATEGORY:Special Ability	TYPE:Celadrin Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.60	DESC:Proficient with longsword, rapier, longbow, and shortbow (including composite bows).
+Keen Senses	KEY:Celadrin ~ Keen Senses	CATEGORY:Special Ability	TYPE:Celadrin Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.60	DESC:+4 racial bonus on Perform (sing), +2 on Listen, Search, and Spot. Notices secret doors by passing within 5 feet.
+Fiery Gaze	KEY:Celadrin ~ Fiery Gaze	CATEGORY:Special Ability	TYPE:Celadrin Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.60	DESC:Once per day, scorching ray (caster level equals class level).
+Melodious Voice	KEY:Celadrin ~ Melodious Voice	CATEGORY:Special Ability	TYPE:Celadrin Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.60	DESC:+%1 racial bonus on Diplomacy checks to influence NPC attitudes and on wild empathy checks (+1, rising to +2 at 5th, +3 at 10th, +4 at 15th, +5 at 20th level). Applied to Diplomacy generally.|min(5,1+floor(TL/5))
+
+###Block: D'hin'ni
+Race Traits ~ D'hin'ni	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Dhinni Race Trait
+Halfling Blood	KEY:D'hin'ni ~ Halfling Blood	CATEGORY:Special Ability	TYPE:Dhinni Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.62	DESC:Counts as a halfling for all special abilities and effects.
+Lucky	KEY:D'hin'ni ~ Lucky	CATEGORY:Special Ability	TYPE:Dhinni Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.62	DESC:+1 racial bonus on all saving throws.
+Thrower	KEY:D'hin'ni ~ Thrower	CATEGORY:Special Ability	TYPE:Dhinni Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.62	DESC:+2 racial bonus on attack rolls with thrown weapons and slings.
+Air Mastery	KEY:D'hin'ni ~ Air Mastery	CATEGORY:Special Ability	TYPE:Dhinni Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.62	DESC:(Ex) Airborne creatures take -1 on attack and damage rolls against you.
+Spell-Like Abilities	KEY:D'hin'ni ~ Spell-Like Abilities	CATEGORY:Special Ability	TYPE:Dhinni Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.62	DESC:Prestidigitation at will; gust of wind, whispering wind, or wind wall once per day (caster level equals character level, Charisma-based saves). All three are listed; use only one per day.
+
+###Block: Worghest
+Race Traits ~ Worghest	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Worghest Race Trait
+Change Shape	KEY:Worghest ~ Change Shape	CATEGORY:Special Ability	TYPE:Worghest Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.63	DESC:Assume the shape of a wolf as a standard action, gaining a bite attack and a base land speed of 50 ft. May take feats that require wild shape.
+Feed	KEY:Worghest ~ Feed	CATEGORY:Special Ability	TYPE:Worghest Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.63	DESC:As a full-round action, devour a slain humanoid, destroying the body (50%% chance that wish, miracle, or true resurrection can still restore it) and gaining the effects of death knell (caster level equals victim's HD).
+Trip	KEY:Worghest ~ Trip	CATEGORY:Special Ability	TYPE:Worghest Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.63	DESC:In wolf form, a successful bite allows a free trip attempt without a touch attack or attack of opportunity.
+Stalker	KEY:Worghest ~ Stalker	CATEGORY:Special Ability	TYPE:Worghest Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.63	DESC:+4 racial bonus on Move Silently checks; Track as a bonus feat.
+
+###Block: Cactacae
+Race Traits ~ Cactacae	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Cactacae Race Trait
+Plant Type	KEY:Cactacae ~ Plant Type	CATEGORY:Special Ability	TYPE:Cactacae Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.64	DESC:Immune to poison, sleep effects, polymorph, paralysis, stunning, and critical hits. Unlike most plants, cactacae sleep and are subject to mind-affecting effects.
+Unhindered Speed	KEY:Cactacae ~ Unhindered Speed	CATEGORY:Special Ability	TYPE:Cactacae Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.64	DESC:Moves at full speed even in medium or heavy armor or with a medium or heavy load.
+Powerful Build	KEY:Cactacae ~ Powerful Build	CATEGORY:Special Ability	TYPE:Cactacae Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.64	DESC:Treated as one size larger for opposed size checks and size-based special attacks when advantageous; can use weapons one size larger without penalty.
+Spines	KEY:Cactacae ~ Spines	CATEGORY:Special Ability	TYPE:Cactacae Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.64	DESC:Deals 1d6 lethal damage (instead of 1d4 nonlethal) when dealing damage with a successful grapple.
+Weapon Familiarity	KEY:Cactacae ~ Weapon Familiarity	CATEGORY:Special Ability	TYPE:Cactacae Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.64	DESC:Rivebows, chakri, and greatcleavers are martial weapons.
+Woodworker	KEY:Cactacae ~ Woodworker	CATEGORY:Special Ability	TYPE:Cactacae Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.64	DESC:+2 racial bonus on Craft checks related to wood.
+
+###Block: Cactacae (Tardy)
+Race Traits ~ Cactacae (Tardy)	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=CactacaeTardy Race Trait
+Plant Type	KEY:Cactacae (Tardy) ~ Plant Type	CATEGORY:Special Ability	TYPE:CactacaeTardy Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.65	DESC:Immune to poison, sleep effects, polymorph, paralysis, stunning, and critical hits. Unlike most plants, cactacae sleep and are subject to mind-affecting effects.
+Unhindered Speed	KEY:Cactacae (Tardy) ~ Unhindered Speed	CATEGORY:Special Ability	TYPE:CactacaeTardy Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.65	DESC:Moves at full speed even in medium or heavy armor or with a medium or heavy load.
+Powerful Build	KEY:Cactacae (Tardy) ~ Powerful Build	CATEGORY:Special Ability	TYPE:CactacaeTardy Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.65	DESC:Treated as one size larger for opposed size checks and size-based special attacks when advantageous; can use weapons one size larger without penalty.
+Spines	KEY:Cactacae (Tardy) ~ Spines	CATEGORY:Special Ability	TYPE:CactacaeTardy Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.65	DESC:Deals 1d6 lethal damage (instead of 1d4 nonlethal) when dealing damage with a successful grapple.
+Weapon Familiarity	KEY:Cactacae (Tardy) ~ Weapon Familiarity	CATEGORY:Special Ability	TYPE:CactacaeTardy Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.65	DESC:Rivebows, chakri, and greatcleavers are martial weapons.
+Woodworker	KEY:Cactacae (Tardy) ~ Woodworker	CATEGORY:Special Ability	TYPE:CactacaeTardy Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.65	DESC:+2 racial bonus on Craft checks related to wood.
+The Tardy	KEY:Cactacae (Tardy) ~ The Tardy	CATEGORY:Special Ability	TYPE:CactacaeTardy Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.65	DESC:Large ge-ain cactacae warped by magic: +5 natural armor, damage reduction 10/bludgeoning or slashing, +3 racial bonus on Listen and Spot checks.
+
+###Block: Khepri
+Race Traits ~ Khepri	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Khepri Race Trait
+Alien Mind	KEY:Khepri ~ Alien Mind	CATEGORY:Special Ability	TYPE:Khepri Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.65	DESC:+2 racial bonus on saves against enchantment (mind-affecting) spells.
+Insectile Eyes	KEY:Khepri ~ Insectile Eyes	CATEGORY:Special Ability	TYPE:Khepri Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.65	DESC:+4 racial bonus on saves to resist gaze attacks.
+Racial Skills	KEY:Khepri ~ Racial Skills	CATEGORY:Special Ability	TYPE:Khepri Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.65	DESC:+2 racial bonus on Intimidate and Spot checks.
+Silent Tongue	KEY:Khepri ~ Silent Tongue	CATEGORY:Special Ability	TYPE:Khepri Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.65	DESC:Khepri cannot speak other languages aloud; they communicate with other races through sign language or writing. Only female khepri are player characters.
+
+###Block: Vodyanoi
+Race Traits ~ Vodyanoi	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Vodyanoi Race Trait
+Swimmer	KEY:Vodyanoi ~ Swimmer	CATEGORY:Special Ability	TYPE:Vodyanoi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.69	DESC:Swim speed 40 ft. +8 racial bonus on Swim checks for special actions or hazards; may always take 10 and may run while swimming in a straight line.
+Illusion Resistance	KEY:Vodyanoi ~ Illusion Resistance	CATEGORY:Special Ability	TYPE:Vodyanoi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.69	DESC:+2 racial bonus on saves against illusion spells and effects.
+Watercraeft	KEY:Vodyanoi ~ Watercraeft	CATEGORY:Special Ability	TYPE:Vodyanoi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.69	DESC:A number of times per day equal to Charisma modifier, affect water as control water or as stone shape (shaping water instead of stone), as a sorcerer of class level. Duration is concentration + 3 rounds.
+School Affinity	KEY:Vodyanoi ~ School Affinity	CATEGORY:Special Ability	TYPE:Vodyanoi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.69	DESC:+1 to the save DC of spells from one chosen category: divination, illusion, conjuration (summoning), or enchantment (charm). Chosen at character creation.
+Racial Skills	KEY:Vodyanoi ~ Racial Skills	CATEGORY:Special Ability	TYPE:Vodyanoi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.69	DESC:+2 racial bonus on Concentration, Jump, and Spellcraft checks. Passing within 5 feet of a water source or permanent spell effect entitles a Search check to notice it.
+Spell-Like Abilities	KEY:Vodyanoi ~ Spell-Like Abilities	CATEGORY:Special Ability	TYPE:Vodyanoi Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.69	DESC:1/day speak with animals (aquatic animals only, 1 minute). With Charisma 10+, also 1/day each jump, longstrider, and mending. Caster level 1st.
+
+###Block: Garuda
+Race Traits ~ Garuda	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Garuda Race Trait
+Racial Hit Dice	KEY:Garuda ~ Racial Hit Dice	CATEGORY:Special Ability	TYPE:Garuda Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.70	DESC:Three humanoid Hit Dice (3d8): +2 base attack, Fort +1, Ref +3, Will +1, skill points 6 x (2 + Int mod), and two feats. Fly speed 40 ft. (average).
+Vertical Strike	KEY:Garuda ~ Vertical Strike	CATEGORY:Special Ability	TYPE:Garuda Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.70	DESC:(Ex) Doubles range increment when firing straight down from at least 30 feet above; a hit gains +2 damage.
+Chaos Resistance	KEY:Garuda ~ Chaos Resistance	CATEGORY:Special Ability	TYPE:Garuda Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.70	DESC:(Ex) +2 racial bonus on saves against effects with the chaos descriptor and from chaotic outsiders.
+Hunter's Eyes	KEY:Garuda ~ Hunter's Eyes	CATEGORY:Special Ability	TYPE:Garuda Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.70	DESC:(Ex) +8 racial bonus on Spot checks made in daylight while flying.
+
+###Block: Exiled Modron
+Race Traits ~ Exiled Modron	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=ExiledModron Race Trait
+Living Construct	KEY:Exiled Modron ~ Living Construct	CATEGORY:Special Ability	TYPE:ExiledModron Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.72	DESC:Exiled modrons are living constructs (see the Living Construct subtype).
+Surprise Vulnerability	KEY:Exiled Modron ~ Surprise Vulnerability	CATEGORY:Special Ability	TYPE:ExiledModron Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.72	DESC:Considered flat-footed until its second turn in any combat it did not initiate (it may still act in the first round).
+Durable Shell	KEY:Exiled Modron ~ Durable Shell	CATEGORY:Special Ability	TYPE:ExiledModron Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.72	DESC:Acid, cold, and fire resistance 2; +2 natural armor bonus.
+Orderly Mind	KEY:Exiled Modron ~ Orderly Mind	CATEGORY:Special Ability	TYPE:ExiledModron Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.72	DESC:+2 racial bonus on saves against illusions and mind-affecting effects; -2 penalty on Charisma-based skill checks against chaotic creatures.
+Alert	KEY:Exiled Modron ~ Alert	CATEGORY:Special Ability	TYPE:ExiledModron Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.72	DESC:+2 racial bonus on Listen and Spot checks.
+Odd Shape	KEY:Exiled Modron ~ Odd Shape	CATEGORY:Special Ability	TYPE:ExiledModron Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.72	DESC:Cannot wear standard armor or clothing; such items must be custom made.
+Favored Class	KEY:Exiled Modron ~ Favored Class	CATEGORY:Special Ability	TYPE:ExiledModron Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.72	DESC:The class in which an exiled modron takes its first level becomes its favored class (PCGen approximates this with the highest-level class).
+
+###Block: Saurian Shifter
+Race Traits ~ Saurian Shifter	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=SaurianShifter Race Trait
+Shifting	KEY:Saurian Shifter ~ Shifting	CATEGORY:Special Ability	TYPE:SaurianShifter Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.46	DESC:(Su) Once per day, as a free action, shift for 3 + Constitution modifier rounds, gaining the benefits of your saurian shifter trait. Shifting is a natural ability, not a curse, and cannot be transmitted. Saurian shifters qualify for shifter feats.
+Reptilian Agility	KEY:Saurian Shifter ~ Reptilian Agility	CATEGORY:Special Ability	TYPE:SaurianShifter Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.46	DESC:+2 racial bonus on Balance, Climb, and Jump checks.
+
+###Block: Umbragen
+Race Traits ~ Umbragen	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Umbragen Race Trait
+Drow Heritage	KEY:Umbragen ~ Drow Heritage	CATEGORY:Special Ability	TYPE:Umbragen Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.48	DESC:Umbragen are drow and have all drow racial traits except as noted: darkvision 120 ft., immunity to sleep, +2 racial bonus on saves against enchantments, spell resistance 11 + class level, light blindness, and +2 on Listen, Search, and Spot (noticing secret doors within 5 feet).
+Shadow Bond	KEY:Umbragen ~ Shadow Bond	CATEGORY:Special Ability	TYPE:Umbragen Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.48	DESC:+2 racial bonus on Hide and Move Silently checks (replaces the drow bonus on saves against spells and spell-like abilities).
+Weapon Proficiency	KEY:Umbragen ~ Weapon Proficiency	CATEGORY:Special Ability	TYPE:Umbragen Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.48	DESC:Proficient with longbow, shortbow, longsword, and rapier (replaces the drow weapon proficiencies).
+Spell-Like Abilities	KEY:Umbragen ~ Spell-Like Abilities	CATEGORY:Special Ability	TYPE:Umbragen Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.48	DESC:1/day dancing lights, darkness, and faerie fire (caster level equals class level).
+Light Blindness	KEY:Umbragen ~ Light Blindness	CATEGORY:Special Ability	TYPE:Umbragen Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.48	DESC:Abrupt exposure to bright light blinds for 1 round; afterward, dazzled while in bright light.
+
+###Block: Insectare
+Race Traits ~ Insectare	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=Insectare Race Trait
+Antenna Rake	KEY:Insectare ~ Antenna Rake	CATEGORY:Special Ability	TYPE:Insectare Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.52	DESC:Two antenna attacks per round, treated as off-hand weapons (1d4 slashing + 1/2 Strength bonus each), or one antenna as an attack action at the normal bonus.
+Chitin Plates	KEY:Insectare ~ Chitin Plates	CATEGORY:Special Ability	TYPE:Insectare Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.52	DESC:+2 natural armor bonus.
+Deceptive	KEY:Insectare ~ Deceptive	CATEGORY:Special Ability	TYPE:Insectare Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.52	DESC:+2 racial bonus on Bluff and Disguise checks.
+Elven Blood	KEY:Insectare ~ Elven Blood	CATEGORY:Special Ability	TYPE:Insectare Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.52	DESC:Counts as an elf for all race-related effects.
+
+###Block: Shared race helpers
+Racial Ability Bonus	KEY:DMC ~ Racial Ability Bonus	CATEGORY:Special Ability	TYPE:Race Trait.SpecialQuality	MULT:YES	STACK:NO	CHOOSE:PCSTAT|ALL	BONUS:STAT|%LIST|2|TYPE=Racial	DESC:+2 racial bonus to a chosen ability score.	SOURCEPAGE:p.31
+
+###Block: Saurian shifter traits (choose one; toggle the 'Saurian Shifting' temporary bonus to apply)
+Saurian Shifting Tracker	CATEGORY:Internal	DEFINE:SaurianShifting|0	TEMPBONUS:PC|VAR|SaurianShifting|1	PRERACE:1,Saurian Shifter
+Beasthide	KEY:Saurian Shifter Trait ~ Beasthide	CATEGORY:Special Ability	TYPE:SaurianShifterTrait.Supernatural.SpecialQuality	SOURCEPAGE:p.48	PRERACE:1,Saurian Shifter	DESC:(Su) +2 Constitution and +2 natural armor bonus while shifting.	ABILITY:Internal|AUTOMATIC|Saurian Shifting Tracker	BONUS:STAT|CON|2|PREVAREQ:SaurianShifting,1	BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK|PREVAREQ:SaurianShifting,1
+Broadwing	KEY:Saurian Shifter Trait ~ Broadwing	CATEGORY:Special Ability	TYPE:SaurianShifterTrait.Supernatural.SpecialQuality	SOURCEPAGE:p.48	PRERACE:1,Saurian Shifter	DESC:(Su) +2 Dexterity while shifting; falls are treated as 40 feet shorter for damage.	ABILITY:Internal|AUTOMATIC|Saurian Shifting Tracker	BONUS:STAT|DEX|2|PREVAREQ:SaurianShifting,1
+Junglerunner	KEY:Saurian Shifter Trait ~ Junglerunner	CATEGORY:Special Ability	TYPE:SaurianShifterTrait.Supernatural.SpecialQuality	SOURCEPAGE:p.48	PRERACE:1,Saurian Shifter	DESC:(Su) +2 Dexterity and +20 ft. base land speed while shifting.	ABILITY:Internal|AUTOMATIC|Saurian Shifting Tracker	BONUS:STAT|DEX|2|PREVAREQ:SaurianShifting,1	BONUS:MOVEADD|TYPE.Walk|20|PREVAREQ:SaurianShifting,1
+Longtooth	KEY:Saurian Shifter Trait ~ Longtooth	CATEGORY:Special Ability	TYPE:SaurianShifterTrait.Supernatural.SpecialQuality	SOURCEPAGE:p.48	PRERACE:1,Saurian Shifter	DESC:(Su) +2 Strength while shifting and a bite attack dealing 1d6 (+1 per four character levels). One bite per round; usable as a secondary attack (-5) while wielding a weapon.	ABILITY:Internal|AUTOMATIC|Saurian Shifting Tracker	BONUS:STAT|STR|2|PREVAREQ:SaurianShifting,1
+Raptorleap	KEY:Saurian Shifter Trait ~ Raptorleap	CATEGORY:Special Ability	TYPE:SaurianShifterTrait.Supernatural.SpecialQuality	SOURCEPAGE:p.48	PRERACE:1,Saurian Shifter	DESC:(Su) +2 Strength and +4 bonus on Jump checks while shifting; all Jump checks count as having a running start.	ABILITY:Internal|AUTOMATIC|Saurian Shifting Tracker	BONUS:STAT|STR|2|PREVAREQ:SaurianShifting,1	BONUS:SKILL|Jump|4|PREVAREQ:SaurianShifting,1
+Razorclaw	KEY:Saurian Shifter Trait ~ Razorclaw	CATEGORY:Special Ability	TYPE:SaurianShifterTrait.Supernatural.SpecialQuality	SOURCEPAGE:p.48	PRERACE:1,Saurian Shifter	DESC:(Su) +2 Strength while shifting and two claws dealing 1d4 (+1 per four character levels) as primary natural weapons; one claw can be used as a light off-hand weapon (-2 on all attacks that round).	ABILITY:Internal|AUTOMATIC|Saurian Shifting Tracker	BONUS:STAT|STR|2|PREVAREQ:SaurianShifting,1
+Widetail	KEY:Saurian Shifter Trait ~ Widetail	CATEGORY:Special Ability	TYPE:SaurianShifterTrait.Supernatural.SpecialQuality	SOURCEPAGE:p.48	PRERACE:1,Saurian Shifter	DESC:(Su) +2 Constitution while shifting and a tail slap dealing 1d6 bludgeoning (+1 per four character levels). One slap per round; usable as a secondary attack (-5) while wielding a weapon.	ABILITY:Internal|AUTOMATIC|Saurian Shifting Tracker	BONUS:STAT|CON|2|PREVAREQ:SaurianShifting,1
+
+###Block: Remade (output abilities)
+Remade	KEY:Remade	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.67	DESC:Inherited template. Body reshaped in the punishment factories of New Crobuzon. Gains enhancements and an equal number of defects, chosen by the DM or rolled; apply them as separate 'Remade:' templates. No construct traits. Level adjustment: base creature +1.
+Aquatic Prosthesis	KEY:Remade ~ Aquatic Prosthesis	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.68	DESC:Remade enhancement. +4 bonus on checks and saves against drowning or poison gas; +10 ft. swim speed (or a 10 ft. swim speed if none).
+Armored Integument	KEY:Remade ~ Armored Integument	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.68	DESC:Remade enhancement. +1 natural armor.
+Consummate Eyes	KEY:Remade ~ Consummate Eyes	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.68	DESC:Remade enhancement. +4 racial bonus on Search and Spot checks.
+Metaclockwork	KEY:Remade ~ Metaclockwork	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.68	DESC:Remade enhancement. A metaclockwork device replicates three 0-level cleric or wizard spells (chosen by the DM), for a combined total of three uses per day.
+Night Vision	KEY:Remade ~ Night Vision	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.68	DESC:Remade enhancement. +60 ft. darkvision (maximum 240 ft.).
+Olfactory Enhancers	KEY:Remade ~ Olfactory Enhancers	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.68	DESC:Remade enhancement. Gains the scent special ability.
+Spring-Loaded Jumper	KEY:Remade ~ Spring-Loaded Jumper	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.68	DESC:Remade enhancement. +4 bonus on Balance and Jump checks.
+Supernumerary Arms	KEY:Remade ~ Supernumerary Arms	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.68	DESC:Remade enhancement. An awkward extra limb: +2 bonus on Climb checks and can hold an item under 5 pounds. Cannot wield weapons or provide extra magic item slots.
+Supernumerary Legs	KEY:Remade ~ Supernumerary Legs	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.68	DESC:Remade enhancement. +5 ft. base speed and +4 bonus on checks to resist bull rush or trip.
+Unnatural Weapon	KEY:Remade ~ Unnatural Weapon	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.68	DESC:Remade enhancement. A permanently attached weapon usable as a natural weapon. Damage by size: Diminutive 1, Tiny 1d2, Small 1d3, Medium 1d4, Large 1d6, Huge 1d8, Gargantuan 2d6, Colossal 3d6. PCGen entry assumes Medium (1d4).
+Wakeful Engine	KEY:Remade ~ Wakeful Engine	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.68	DESC:Remade enhancement. Requires no rest to avoid fatigue or exhaustion (still needs rest to regain spells). Must also take the Boiler defect.
+Boiler	KEY:Remade ~ Boiler	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.69	DESC:Remade defect. A steam boiler needing 2 gp of fuel per day. Out of fuel: immediately fatigued; each further day requires a Fortitude save (DC 14 + 1 per day) or become exhausted. Submersion extinguishes it. Adds 40 lb. of weight.
+Clumsy	KEY:Remade ~ Clumsy	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.69	DESC:Remade defect. -2 Dexterity.
+Crippled Limb	KEY:Remade ~ Crippled Limb	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.69	DESC:Remade defect. One hand or arm is useless: cannot wield weapons with it, use two-handed weapons, or hold items.
+Dulled Faculties (Listen)	KEY:Remade ~ Dulled Faculties (Listen)	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.69	DESC:Remade defect. -4 penalty on Listen checks. (Choose two of the three Dulled Faculties templates.)
+Dulled Faculties (Search)	KEY:Remade ~ Dulled Faculties (Search)	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.69	DESC:Remade defect. -4 penalty on Search checks. (Choose two of the three Dulled Faculties templates.)
+Dulled Faculties (Spot)	KEY:Remade ~ Dulled Faculties (Spot)	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.69	DESC:Remade defect. -4 penalty on Spot checks. (Choose two of the three Dulled Faculties templates.)
+Hideous Deformity	KEY:Remade ~ Hideous Deformity	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.69	DESC:Remade defect. -4 penalty on Diplomacy and Gather Information checks.
+Malfunctioning Memories	KEY:Remade ~ Malfunctioning Memories	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.69	DESC:Remade defect. 25%% chance on each skill check to count only half your ranks (no effect on untrained checks).
+Poor Healing	KEY:Remade ~ Poor Healing	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.69	DESC:Remade defect. Regains only one-quarter the normal hit points from natural healing (minimum 1 per day).
+Slow	KEY:Remade ~ Slow	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.69	DESC:Remade defect. -10 ft. base speed.
+Stiff Jointed	KEY:Remade ~ Stiff Jointed	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.69	DESC:Remade defect. -4 penalty on Balance, Jump, and Tumble checks.
+Wheels	KEY:Remade ~ Wheels	CATEGORY:Special Ability	TYPE:Remade.SpecialQuality	SOURCEPAGE:p.69	DESC:Remade defect. Needs a DC 14 Strength check to move through rough terrain; cannot charge or run on uneven ground; Strength checks to climb stairs (DC 15) or ladders (DC 20) per 10 feet; -4 on Swim and Ride checks.

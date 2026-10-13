@@ -1,0 +1,402 @@
+Dragon Magazine Compendium - PCGen conversion notes (races section, pp. 3-74)
+
+Install: copy this folder to data/35e/paizo/ in a bahamutdragon/pcgen data tree.
+Game mode: Bahamut35e. Requires the core books.
+
+Conditional files (load only when the other book is selected):
+  dmc_races_xph.lst / dmc_abilities_xph.lst  -> Expanded Psionics Handbook (12 Athasian races)
+  dmc_races_ca.lst                           -> Complete Arcane (Umbragen; favored class Warlock)
+  dmc_races_cadv.lst                         -> Complete Adventurer (Insectare; favored class Spellthief)
+
+Name clashes with races already in the repo use a "(DMC)" key and OUTPUTNAME:
+  Bozak, Tortle, Grippli, Azerblood, Mul. Athasian Pterran/Thri-Kreen use an "Athasian" prefix.
+
+Partly or wholly descriptive (DESC only, apply by hand):
+  - Situational save bonuses (para-genasi, azerblood, khepri, modron, etc.)
+  - Bozak 4th-level sorcerer casting; giff firearms proficiency; gythka/chatkcha familiarity
+  - Ghost elf slip binding / ethereal shift; glimmerfolk nimli spells; worghest wolf form
+  - Athasian human's chosen inborn powers; aarakocra Craft (any one) bonus
+  - Exiled modron favored class = first class taken (approximated with HIGHESTLEVELCLASS)
+  - Celadrin Melodious Voice is applied to all Diplomacy
+  - Saurian shifter traits apply while the "Saurian Shifting" temporary bonus is active
+  - Remade: apply "Remade", then one "Remade: <enhancement>" template per enhancement and an
+    equal number of "Remade: <defect>" templates. Unnatural Weapon assumes a Medium creature.
+
+----------------------------------------------------------------------
+Feats, Flaws & Styles (compendium pp. 1058-1176)
+----------------------------------------------------------------------
+dmc_feats.lst         550 feats (incl. 13 fighting-style mastery feats and 4 [Style] feats), CATEGORY:FEAT
+dmc_flaws.lst          80 flaws, built on Unearthed Arcana's flaw rules (TYPE:Flaws, +1 feat each);
+                          loads only when "Unearthed Arcana (Complete)" is selected
+dmc_spelltemplates.lst  7 spell templates (Bloodleach, Champion, ...) granted by their ceremonial feats
+
+- Feat text (flavor, Benefit, Normal, Special, suggested class/race) is carried over from the compendium;
+  DESC ends with the original Dragon Magazine issue and article in [brackets].
+- Prerequisites were converted to PRE tags where possible (stats, BAB, skill ranks, level, class level,
+  race, alignment, deity, spellcasting, feats from the core books or this set, "any X feat").
+  Anything else (class features, regions, feats from other books, ...) is listed in PRETEXT,
+  which PCGen shows but does not enforce.
+- Simple, unconditional bonuses were added automatically (e.g. "+2 bonus on Bluff and Intimidate checks",
+  flaw penalties). Conditional or choice-based effects are text only.
+- Feats whose name already exists elsewhere in the repo got a "(DMC)" KEY (e.g. Bloodthirsty, Agile Tyrant);
+  the two "Horse Nomad" feats are split into "Horse Nomad" (ancestor) and "Horse Nomad (Regional)".
+- Typos in the source were kept in the text; one obvious prerequisite typo (Tumble 55 ranks -> 5) was fixed.
+- The fighting-style overviews (lists of recommended feats) and the summary tables (pp. 1177-1197) were not
+  converted, since they repeat information already on the feats.
+
+----------------------------------------------------------------------
+Arms and Equipment (compendium pp. 1198-1270)
+----------------------------------------------------------------------
+dmc_equip_weapons.lst  127 weapons, ammunition and firearms (+ bullets/rockets/canisters)
+dmc_equip_armor.lst      7 armors (5 suits; gorget and leather collar as anti-strangulation accessories)
+dmc_equip.lst          378 goods: adventuring gear, tools and kits (incl. grimoires, holy symbols), clothing,
+                           mount gear, transport upgrades, siege engines, traps, alchemical items, herbs and
+                           plants, drugs, poisons, firearm attachments, artillery, and 84 power components
+dmc_equipmods.lst       81 equipment modifiers: the special materials and qualities of Table 1-3 (one EQMOD per
+                           armor weight/shield/weapon column), plus disguised dagger, folding bow, modular
+                           weapon, elvencraft bows and steel crossbows
+dmc_profs_weapon.lst / dmc_profs_armor.lst  proficiencies for the new weapons and armor
+
+- Stats come from the compendium's tables; descriptions (with the Dragon/Dungeon issue) from the item text.
+- Weapons and ammunition that already exist in the core books (longbow, glaive, hand crossbow, pistol,
+  musket, bomb, etc.) were skipped; the compendium only lists them for their strangulation statistics or
+  repeats them. Names that exist in other repo books get a "(DMC)" KEY.
+- Ammunition is priced per piece (pack price / quantity), like the PHB's arrows.
+- Weapons listed twice (e.g. bladed crossbow as melee and ranged) are one item with the second mode in SPROP.
+- Material costs "per lb." and "x2" (ceremonial) are noted in SPROP; per-pound costs are not calculated.
+- Not converted: equipment arrays (prepackaged gear lists), the PHB/DMG-based strangulation rules sidebar,
+  and the Table 5-4 "power components for non-magical items" (they are just masterwork versions of PHB items).
+- A few descriptions pick up an image caption from the page (e.g. "A warhammer forged from Byeshk").
+
+----------------------------------------------------------------------
+Magic Items (compendium pp. 1420-1595)
+----------------------------------------------------------------------
+dmc_magic_weapons.lst   65 specific magic weapons, built on their base weapon (PHB or this set)
+dmc_magic_armor.lst     21 specific magic armors and shields, built on their base armor/shield
+dmc_magic_items.lst    561 other items: wondrous items by body slot (amulets, cloaks, rings, rods, staffs,
+                           wands, tools, books, instruments...), grafts, magic face paints, warforged items,
+                           vehicles and vehicle augments, plus specific weapons/armor with no clear base item
+dmc_magic_eqmods.lst    28 weapon/armor special properties (PLUS:n or flat gp cost) and magic poison qualities
+
+- Specific weapons/armor: the base item is detected from the text ("This +2 banded mail..."); the item copies
+  the base item's stats, uses the listed market price as its cost, and gets its enhancement bonus as a
+  BONUS:WEAPON / BONUS:COMBAT. Other special abilities (keen, flaming, etc.) are text only.
+- SPROP shows aura, caster level, body slot, activation and item level; DESC holds the description,
+  rules text, prerequisites, cost to create, lore, and the Dragon/Dungeon issue.
+- Artifacts and relics are typed Artifact (Minor/Major) or Relic; priceless items have COST:0.
+- Body slots map to the usual PCGen item types (Throat=Amulet, Shoulders=Cape, Face=Eyegear, Body=Robe,
+  Torso=Shirt, Arms=Bracer, Hands=Glove, Waist=Belt, Feet=Boot). Item effects are text only; no automatic bonuses.
+- Not converted: the "Magic Item Sets" chapter (Heroes of Might and Magic artifacts described in tables) and the
+  price/level/source index appendices.
+
+----------------------------------------------------------------------
+Vestiges (compendium pp. 1371-1419)
+----------------------------------------------------------------------
+dmc_vestiges.lst         19 vestiges as binder "Vestige" abilities (loads with Tome of Magic)
+dmc_vestiges_spells.lst  their full descriptions as "Bind Vestige ~ X" spell entries (loads with Tome of Magic)
+
+- Built exactly like the repo's Tome of Magic vestiges: a Special Ability of TYPE Vestige gated by
+  BinderMaxVestigeLVL, which adds a "Bind Vestiges" spell entry holding the binding DC, special
+  requirement, manifestation, sign, influence and every granted ability.
+- The 32 vestiges the compendium repeats from Tome of Magic (Amon, Aym, Naberius, ...) are skipped because
+  the Tome of Magic data already has them. Ahazu is included because the repo's Tome of Magic data lacks it.
+- New vestiges: Abysm, Ahazu, Ansitif, Arete, Ashardalon, Astaroth (two different versions), Cabiri, Desharis,
+  The Green Lady, Kas, Primus, The Triad, Vanus, Zceryll, and the epic vestiges Amun-Her Khepeshef, Gaia,
+  Tkhaluuljin and Zuriel.
+- Epic vestiges require BinderMaxVestigeLVL 10, so a normal binder can't select them; adjust if you use
+  epic binding rules.
+- This chapter gives no per-vestige magazine issue, so only the compendium page is listed.
+- Note: the compendium has no deities chapter; this vestige chapter is what was listed earlier as "deities".
+
+----------------------------------------------------------------------
+Spells and Domains (compendium pp. 1280-1362)
+----------------------------------------------------------------------
+dmc_spells.lst                 222 new spells (incl. 2 epic spells) with school, subschool, descriptors,
+                               components, casting time, range, target/area, duration, save and SR
+dmc_domains.lst                23 new cleric domains (Army, Avarice, Beguilement, Charity, Chastity,
+                               Chromatic/Gem/Lung/Metallic Dragon, Emotion, Generosity, Hope, Humility, Hunt,
+                               Hunger, Night, Patience, Radiance, Seduction, Spirit, Temperance, Undead, Zeal)
+dmc_abilities_domains.lst      their granted powers and domain spell lists (PHB-style Domain abilities)
+dmc_abilities_domains_sc.lst   domain spells that come from Spell Compendium (loads only with that book)
+
+- Spells are added to the core class lists (Sor/Wiz, Clr, Drd, Brd, Pal, Rgr, Assassin, Blackguard) and to
+  core or new domains via CLASSES/DOMAINS. Other casters (Initiate of <deity> feats, urban druid, magewright,
+  anti-paladin, Kyuss/Corrupter/Despot domains, deity-specific cleric spells, etc.) are kept as a "Level:" line
+  at the start of the description, since those classes/feats aren't in the loaded data.
+- Spell names that already exist elsewhere in the repo get a "(DMC)" KEY; "X, Greater/Mass/Lesser" spells use
+  the repo's "X (Greater)" key style.
+- Hunger is keyed "Hunger (DMC)" because another book in the repo already has a Hunger domain.
+- Domain spells not found in the core books, this set or Spell Compendium are listed in the domain's text
+  (Detect Emotions, Cannibalize, Faerie Fire Widened).
+- Not converted: the spell-list summary pages (they repeat the spells' Level lines), the "spellbooks" chapter
+  (roleplaying lists of existing spells) and the initiate-feat appendix (initiate feats are Complete Divine).
+
+----------------------------------------------------------------------
+New base classes (compendium pp. 75-708, step 1 of the classes section)
+----------------------------------------------------------------------
+dmc_classes.lst                     14 base classes that don't already exist in the repo:
+                                    Battle Dancer, Death Master, Jester, Mariner, Master, Mountebank, Mystic,
+                                    Nightstalker, Noble, Savant, Sha'ir, Shaman, Sohei, Urban Druid
+dmc_abilities_classes.lst           their class features (one Special Ability per feature, full text)
+dmc_abilitycategories_classes.lst   a "<Class> Class Feature" category per class, plus the Master Focus pool
+
+- Each class has hit die, BAB and save progressions (using the repo's alternate/fractional BAB and save
+  switches), alignment restriction, skill points, class skills, weapon/armor proficiencies, bonus-feat pool
+  increases, and its features granted at the level the class table lists them.
+- Spellcasters (Death Master, Jester, Mystic, Nightstalker, Sha'ir, Shaman, Sohei, Urban Druid) have their
+  spells-per-day and spells-known tables, casting stat and arcane/divine type. Mystic uses the cleric list and
+  Sha'ir the sorcerer/wizard list; the others have their own list, which only contains the new spells in this
+  compendium tagged for that class (urban druid, shaman, sohei). The compendium doesn't reprint the full
+  jester, death master, nightstalker, shaman, sohei or urban druid spell lists, so add those spells yourself.
+  Shaman domain slots (+1/+2), mystic domain spells (+d) and sha'ir domain access are described in the text.
+- Master: class skills come from the chosen focus; pick it from the "Master Focus" pool at 1st (and 7th) level.
+- Mountebank, Mystic, Noble and Sohei are keyed "(DMC)" because other classes with those names exist in the repo
+  (Complete Scoundrel's prestige mountebank, the Dragonlance mystic and noble, the Oriental Adventures sohei).
+- Class features are text only (no automatic AC bonuses, sneak attack dice, unarmed damage, etc.); domains,
+  companions and familiars must be added by hand.
+- Source error kept as printed: the savant table lists "Deceptive attack +5d6" at 18th level.
+- WotC classes reprinted in this section (archivist, beguiler, binder, duskblade, warlock, ...) and core classes
+  are not repeated, because the repo already has them. The class variants (alternate class features) for the
+  core and WotC classes, the prestige classes and the psionic classes are separate later steps.
+
+----------------------------------------------------------------------
+Validation (sanity check)
+----------------------------------------------------------------------
+The whole set was loaded in PCGen 6.08.00 RC10 with the repo's Bahamut35e game mode plus its Core Books,
+Expanded Psionics Handbook, Tome of Magic, Spell Compendium and Unearthed Arcana data, and test characters
+were exported headlessly. Fixes made as a result:
+- The PCC listed the equipment-modifier files as EQMOD: instead of EQUIPMOD:, so they were not loaded. Fixed.
+- About 30 descriptions with unbalanced brackets (from the PDF text) were rejected; all text fields are now balanced.
+- ADD:ABILITY on Complacent Human / Athasian Human used the AUTOMATIC nature, which ADD does not allow; now VIRTUAL.
+- KEYs containing commas or colons (power components, some spells and modifiers) were renamed and every reference
+  updated, since PCGen prohibits those characters in keys.
+- Spell text that had spilled into Spell Resistance / Duration / Saving Throw is moved back into the description;
+  one spell with an empty description is fixed.
+- Warduke's Helm (an artifact helm) is a wondrous item, no longer a longsword.
+After these fixes the DMC files produce no load errors (the remaining errors in the log come from the repo's own
+files, which target a newer PCGen than 6.08). All 14 new base classes, every race, the Remade template and all 550
+feats were placed on test characters and exported. Please still test in the PCGen version you use.
+
+----------------------------------------------------------------------
+Spelling / OCR clean-up of descriptions
+----------------------------------------------------------------------
+A conservative clean-up pass is applied to all DESC, BENEFIT and SPROP text (and spell stat lines):
+- words split by line-break hyphenation are rejoined ("dif- ficult" -> "difficult", "con- structed" ->
+  "constructed"); real compounds keep their hyphen ("full- round" -> "full-round", "5th- level" -> "5th-level");
+- OCR letter "o" for zero in numbers is fixed ("5,ooo gp" -> "5,000 gp", "3o-foot" -> "30-foot", "5o%" -> "50%");
+- about 70 specific misspellings and run-together words are corrected (effefective, immediatley, canot, misslie,
+  amnorsmiths, bull'strength, dominateperson, limitedwish, lggwilv -> Iggwilv, ...);
+- OCR "can he used" -> "can be used", and a few stray page headers are removed.
+In total about 430 corrections. Game terms (warforged, mithral, hexblade, ...) and proper names are left alone, and
+nothing was changed where the right word wasn't certain. Real-word OCR errors (a wrong but valid word) can't be
+found automatically and may remain.
+
+----------------------------------------------------------------------
+Missing equipment descriptions (follow-up)
+----------------------------------------------------------------------
+A check of all equipment and magic item entries against the PDF found descriptions that existed in the PDF but
+were missing or attached to the wrong item. Fixed:
+- Archery Saddle: the box used to cut out the mount-gear table also cut the start of its description.
+- Pages that mix a full-width introduction with two columns were read line-by-line across both columns, so
+  neighbouring descriptions were interleaved (e.g. Mimic Clay / Miner's Milk). These pages are now read band by
+  band; Mimic Clay, Yuan-ti Serpent Bow, Field Gun, Bombard, Wristlancet, Skinshedder, Skinvice and the Grenade
+  Pistol lost text that belonged to other items.
+- Descriptions that sat on the same line as the previous item's magazine reference are split out: Miner's Milk,
+  Urchin Venom, Organ Gun, Bomb Casing, Canister.
+- "Falcon's Hood S and Equipment - Adventuring Gear" -> "Falcon's Hood" (page header in the table row), with its
+  description.
+- Ammunition described only under its launcher now uses that description (bullets -> their gun, rockets ->
+  rocket launcher, atlatl dart/javelin -> atlatl, grapple bolt -> grapple-firing crossbow), and Djinn Fern uses
+  the Djinn Blossom text.
+- Rune of Cure Serious Wounds: its text was split off by the "Runes" sidebar that interrupts it in the PDF.
+Remaining entries without a description have none in the PDF: Chain (5 ft.), Rope and Bola (strangulation-table
+rows only), Bullet (Musket) (the musket is a DMG weapon), and the 83 power components (table rows only; their
+use is in SPROP).
+
+----------------------------------------------------------------------
+Advanced feat syntax (expert feedback)
+----------------------------------------------------------------------
+Leadership feats now use the repo's Leadership support variables (LeadershipScore, LeadershipMaxCohortLvl,
+FollowersLVL1-6 / FollowersLVLnCount) instead of text:
+- "Leadership score N higher than your level" -> PREVARGTEQ:LeadershipScore,TL+N
+  (Assemble the Horde, Class Champion, Close Cohort, Eye for Talent, Fanatical Devotion)
+- Assemble the Horde: +1 score, plus extra 1st-level followers equal to all higher-level followers.
+- Class Champion: +1 score, plus 2 followers of the highest level available.
+- Close Cohort: cohort may be up to your level -1 (instead of -2), still limited by the score table.
+- Eye for Talent, Fanatical Devotion +1; Improved Leadership, Natural Leader +2; Noble Born +2 only if you
+  have Leadership. Noble Born and Recognized Elder also add their class skills, and Recognized Elder its
+  +1 bonus on Diplomacy and Knowledge (history).
+Verified in PCGen 6.08 on a 10th-level fighter (Cha 18): score 17 and 35/3/1/1 followers with Assemble the
+Horde; 3 4th-level followers and a 9th-level cohort cap with Class Champion + Close Cohort.
+
+Other text prerequisites now use the repo's class-feature abilities and variables where they exist:
+familiar, rage/frenzy, bardic music, turn undead, turn or rebuke undead, wild shape, flurry of blows, animal
+companion, special mount, evasion, smite (PREABILITY by ability TYPE); sneak attack +Nd6 (SneakAttackDice),
+favored enemy (FavoredEnemyCount), arcane/divine/any caster level (Caster_Level_Highest__Arcane/__Divine/
+Caster_Level_Highest), and Hit Dice (PREHD). PRETEXT is still used for things the repo doesn't track
+(e.g. curse ability, ki power, mind blade, regions, tribe membership). Fixed source typo "228 HD" -> "28 HD".
+Feat effects that are situational (once per day, against fear, cohort of a given class, ...) stay as text.
+
+----------------------------------------------------------------------
+Advanced feat syntax, part 2 (repo techniques, done in 5 checked chunks)
+----------------------------------------------------------------------
+1. Repeatable feats and metamagic
+   - 20 feats that may be taken more than once now have MULT:YES with STACK:YES + CHOOSE:NOCHOICE (effects stack:
+     Extra Curse, Extra Remove Disease) or STACK:NO + a CHOOSE (each copy applies to something different: favored
+     enemy for Favored Dodge/Intimidate the Enemy/No Threat to Me/Tactical Advantage/Trophy Hunter, spellcasting
+     class, domain, melee weapon, metamagic feat, creature type, or a typed-in choice).
+   - Metamagic slot costs: ADDSPELLLEVEL 1 (Forceful, Slimy), 2 (Radiant), 0 (Alternative Source).
+     Relicguard Spell has no slot cost in the compendium, so none is set.
+2. Choice feats (17): CHOOSE with %LIST bonuses in the repo's style, e.g. Flexible Mind (2 skills -> class skills
+   +1), Dwarflore/Mercantile Background/Cultured Courtier/Born Under a Setting Sun (chosen skill bonuses),
+   Polyglot (chosen language), Diversified Casting/Psiotheurgist (school), Divine Sorcery (domain), Innate Magic
+   (0-level spell). PCGen 6.08 rejects CHOOSE without MULT:YES, so these use MULT:YES + STACK:NO like the repo's
+   Spell Focus/Weapon Focus.
+3. Senses, speed, HP, proficiencies, spell DC, turning, flat bonuses: DarkvisionRange/HasLowlightVision
+   (Deepseer, Orc Blooded, Eyes of the Mage, Superior Vision), MOVEADD (Fire Feet, Initiate of Fharlanghn),
+   HP (Hardy Soul), AUTO:WEAPONPROF (Horse Nomad - the light lance isn't in the core data), BONUS:DC|DESCRIPTOR
+   (Earth Focus), TurnCheckUndead/TurnDamagePlusUndead (Initiate of Pelor), AC/ranged attack (Temerad Mastery II,
+   Eyes of the Mage), class skills (Initiate of Ehlonna).
+4. Situational bonuses: 64 feats and flaws have TEMPBONUS toggles (with TEMPDESC saying when to switch them on),
+   shown on PCGen's Temporary Bonus tab. Bonuses that help allies use ANYPC (Aura of Bravery, Commander, Gang
+   Tactics, Presence of the Mage...). Each was reviewed by hand; effects on enemies, penalty reductions,
+   cumulative or trade-off bonuses stay as text. Permanent bonuses found during the review were added as normal
+   bonuses (Hard to Fool, Raider's Spirit, Breath Control, Mind Over Body for arcane casters).
+5. Bloodline feats: 13 bloodlines add their 9 bonus spells known to the sorcerer (SPELLKNOWN:CLASS|Sorcerer=n),
+   each only once you can cast spells of that level. Draconic Bloodline's 3rd-level "protection from elements"
+   (a 3.0 spell) stays as text. Fixed Anarchic Bloodline's merged prerequisite (familiar is now checked).
+Verified in PCGen 6.08 after each chunk (load with no DMC errors + test characters): feats taken twice show
+"(2x)", choices show on the sheet and apply their bonuses, toggles change nothing until switched on and then
+apply (+2 dodge AC, +10 ft. speed, +4 saves, +2 attack), and a 9th-level sorcerer with Air Bloodline gains
+exactly the 1st-4th level bloodline spells.
+
+----------------------------------------------------------------------
+Feat / description verification
+----------------------------------------------------------------------
+Every feat, flaw and spell template was compared with its own block of PDF text (from its heading to the next).
+- 27 feats were missing entirely because their PDF headings have typos or unusual characters, and are now
+  included: doubled brackets ("[ANCESTOR]]", "[[GENERAL]"), a unicode minus in the name or type
+  ("ANTI-PSIONIC MAGIC", "[RACIAL-DROW]", "[PSI-SPELL]"), a bullet ("KI-RIN") or a heading split over three lines.
+  New: Ally of the Ki-rin, Mercantile Background (Ancestor), Survivor, Twin Sword Style, Plant Bloodline, Water
+  Bloodline (both with their bloodline spells), Anti-Psionic Magic, Arcane Shorthand, Close-Quarter Defense,
+  Two-Weapon Attack of Opportunity, Omen of Flies, Omen of Loss, the 9 Psi-Spell feats (TYPE PsiSpell) and the
+  6 Drow racial feats (TYPE Racial.RacialDrow). Green Heart's "Plant Bloodline" prerequisite is now a real check.
+- Versatile Tyrant had absorbed the Drow section introduction and the first Drow feat; it now ends at its own text.
+  Section headings ("DROW FEATS", ...) now end the preceding feat.
+- BENEFIT keeps the PDF's own order of Benefit / Normal / Note / Special / Sacrifice / Effect sections.
+- Magazine references end at their closing parenthesis (no trailing section titles).
+- When two feats share a name, the general one keeps the plain name; the other gets its type in parentheses
+  (Horse Nomad (Regional), Mercantile Background (Ancestor)).
+Result: all 664 entries match their own PDF block (>= 0.94 word/sequence agreement; the remaining differences are
+the spelling/OCR fixes and prerequisites turned into PRE tags). Loads in PCGen 6.08 with no DMC errors; every feat
+without a choice appears on a test character.
+
+----------------------------------------------------------------------
+Spell format aligned with the repo's Player's Handbook (ph_spells.lst / ph_spells_class.lst)
+----------------------------------------------------------------------
+- Token order follows the PHB: TYPE, SCHOOL, SUBSCHOOL, DESCRIPTOR, COMPS, CASTTIME, RANGE, ITEM, TARGETAREA,
+  DURATION, SAVEINFO, SPELLRES, SOURCEPAGE (then DESC).
+- Class and domain lists moved out of the spell lines into dmc_spells_class.lst as "<spell>.MOD  CLASSES:..
+  DOMAINS:.." lines, like ph_spells_class.lst (loaded after dmc_spells.lst in the PCC).
+- RANGE uses the PHB categories: "Close", "Medium", "Long" (formula text dropped), "Touch", "Personal", or a fixed
+  distance.
+- DURATION uses the PHB formulas: "1 round/level" -> "(CASTERLEVEL) rounds", "10 min./level" ->
+  "(CASTERLEVEL*10) minutes", "(D)" -> "[D]", "(see text)" -> "; see text".
+- SAVEINFO / SPELLRES capitalisation and "see text" notes normalised ("Yes (harmless)", "Will negates; see text").
+- Personal-range spells get SAVEINFO:None and SPELLRES:No, as in the PHB.
+- ITEM:Potion is added to spells that can be brewed into potions (lowest spell level 3rd or less, targets a
+  creature, not personal or an area).
+- Subschools and descriptors are in the right fields (the magazine sometimes wrote "Transmutation (Lawful)" or
+  "[Teleportation]"), using the PHB's spellings (Mind-Affecting, Language-Dependent, See Text). "War" is a
+  Dragon descriptor not used in the PHB and is kept.
+- Fixed: "Area of Effect" target lines are now parsed (Pillar of Sand); "One day/level" durations; .MOD lines
+  for spells whose keys contain commas are renamed with the key (Greater Bestow Curse, Mass Lesser Geas).
+- Per-line SOURCELONG/SOURCESHORT/SOURCELINK are not repeated on each spell (the PHB file does this); the
+  campaign-level source in the PCC covers it, and each DESC ends with the original magazine issue.
+Verified in PCGen 6.08: no DMC load errors; every class and domain list contains exactly the expected DMC spells
+(Wizard/Sorcerer 124, Cleric 70, Druid 45, Bard 31, Paladin 8, Ranger 6, Urban Druid 6, ...).
+
+----------------------------------------------------------------------
+Cleric domains: structure, spells and descriptions checked against the PHB data and the PDF
+----------------------------------------------------------------------
+Structure now matches the repo's Player's Handbook domains:
+- dmc_domains.lst: domain with ABILITY:Domain, DESC (granted power + magazine issue) and its SPELLLEVEL:DOMAIN list.
+- dmc_abilities_domains.lst: Domain ability (power DESC and "Domain Power ~ X" grant switched off by the
+  repo's "Remove Domain Power (X)" choice, exactly like the PHB), "Domain Power ~ X" and "Domain Spells ~ X".
+- Spell side, like ph_spells_class.lst: every domain spell also has a DOMAINS entry in a .MOD line
+  (dmc_spells_class.lst for core and DMC spells; dmc_spells_domains_sc.lst / _bovd.lst load only with Spell
+  Compendium / Book of Vile Darkness). Without these, PCGen's global spell lists only showed 1-4 spells for the new
+  domains; now each lists all nine.
+Fixes:
+- Army had no domain spells (its heading is "Army Domain Spells:" with a colon), and its magazine reference
+  ("Dragon Magazine: #317 ...") was glued onto the power text.
+- The compendium prints the Army and Avarice spell lists under each other's heading (greed spells such as Sticky
+  Fingers and Treasure Scent under Army; Bless, Prayer, Easy March, Heroes' Feast under Avarice). They are
+  swapped back, with a note in each domain's spell description.
+- Hunger: its Book of Vile Darkness spells (1st, 7th, 8th) were lost to the superscript layout; all nine are now
+  listed, with the bracketed core-book alternatives in the description. "Canabilize" in the spell section is
+  corrected to Cannibalize so the domain finds it.
+- Radiance 4th level "Faerie Fire, Widened" uses the core Faerie Fire (cast with Widen Spell; noted).
+  Typo "patter effects" -> "pattern effects".
+- Detect Emotions (Emotion 1st) is not in the compendium or the loaded data; it stays listed in the text.
+Domain power mechanics added where they're simple and unconditional, in the PHB's style: Hunt (Track feat),
+Night (low-light vision), Humility (+1 caster level for divinations, like the PHB Knowledge domain), Beguilement
+(+1 caster level for compulsions), Undead (+2 turning checks); situational powers as TEMPBONUS toggles (Emotion,
+Lung Dragon, Seduction); Gem Dragon's psionic class skills (only with Expanded Psionics Handbook). Others are text.
+Verified in PCGen 6.08: no DMC load errors; every domain power text matches the PDF; clerics with Hunt/Night get
+Track/low-light vision; each new domain's list holds all 9 spells (Emotion 8 without Detect Emotions; Hunger's
+three Book of Vile Darkness spells only when that book is loaded).
+
+----------------------------------------------------------------------
+Ki feats (aligned with Complete Scoundrel / Complete Adventurer in the repo)
+----------------------------------------------------------------------
+The repo's Complete Scoundrel ki feats check ki with a variable (PREVARGTEQ:KiStrikeLvl,1 - the monk's KiStrikeLVL)
+and keep the ki-use effects as text. Our ki feats now do the same:
+- Always loaded: "ki strike (magic)" -> PREVARGTEQ:KiStrikeMagic,1 (Pressure Point Strike); "at least two ki feats"
+  -> PREABILITY:2,CATEGORY=FEAT,TYPE.Ki (Jutsu Focus).
+- Most ki feats are ninja feats (Complete Adventurer). dmc_feats_cadv.lst (loads only with Complete Adventurer)
+  replaces their text prerequisites with the ninja's own variables and abilities:
+  ki power -> PREVARGTEQ:KiPool,1; ki dodge / ghost strike -> the Ninja ~ Ki Dodge / Ninja ~ Ghost Strike abilities;
+  ghost step (invisible) -> PREVARGTEQ:GhostStepTier,1; sudden strike +2d6 -> PREVARGTEQ:SuddenStrikeDice,2.
+  (KiStrikeLvl alone would lock ninjas out of these feats, since ninjas don't have ki strike.)
+  Without Complete Adventurer the text prerequisites remain (there are no ninjas then).
+- Effects that spend daily ki uses stay as text, like Complete Scoundrel's Expanded Ki Pool / Enduring Ki.
+Verified in PCGen 6.08 with Complete Adventurer: a 1st-level ninja qualifies for the ki power feats only; a 6th-level
+ninja also for Ki Smite and the ghost step / ki dodge jutsus; an 8th-level ninja also for the ghost strike feats;
+a fighter for none. Loads without errors with and without Complete Adventurer.
+
+----------------------------------------------------------------------
+Martial-arts prerequisites from Oriental Adventures / Complete Warrior
+----------------------------------------------------------------------
+Several fighting-style and ki feats require feats from Oriental Adventures (in the repo as "Oriental Adventures
+v.3.5"). These are now real checks in dmc_feats_oa.lst, which loads only with that book:
+Pain Touch (Distant Touch, Black Panda Mastery I), Freezing the Lifeblood (Black Panda Mastery II), Flying Kick +
+Ki Shout + Roundabout Kick (Blue Mountain Mastery I), Great Ki Shout (Blue Mountain Mastery II), Fists of Iron +
+Eagle Claw Attack + Roundabout Kick (Iron Hand Mastery I), Choke Hold (Koumajutsu Mastery I), Earth's Embrace +
+Fists of Iron (Koumajutsu Mastery II).
+"Extra Stunning Attacks" (the 3.0 OA name) is the 3.5 feat Extra Stunning in Complete Warrior; dmc_feats_cw.lst adds
+it for Black Panda Mastery II and Temerad Mastery II when Complete Warrior is loaded.
+These files add the checks rather than replacing anything, so a feat can draw on both books; the original text
+prerequisite stays as an explanation (PCGen does not enforce text prerequisites).
+Not in the repo, so still text: Circle Kick, Flying Dragon Kick, Knock-Down, Ten Ox Stomp, Lightning Fists.
+Also fixed two merged prerequisite clauses: Blue Mountain Mastery I now checks Jump 4 ranks and Improved Initiative;
+Five Stars Mastery I checks Jump 9 and Tumble 9 ranks.
+Verified in PCGen 6.08: an 8th-level monk with the other prerequisites qualifies for Black Panda Mastery I only with
+Pain Touch; loads without DMC errors with and without Oriental Adventures / Complete Warrior.
+
+----------------------------------------------------------------------
+Sword & Fist support feats (3e book, converted to 3.5 syntax - no 3e book required)
+----------------------------------------------------------------------
+Three martial-arts style prerequisites only exist in the repo's 3e Sword & Fist data. Following the repo's 3.5
+conventions, they are included in dmc_feats_support.lst (always loaded, source shown as Sword & Fist):
+- Circle Kick (Dex 15, BAB +3, Improved Unarmed Strike) - for Blue Mountain Mastery II
+- Knock-Down (Str 15, BAB +2, Improved Trip; fighter bonus feat, typed like the PHB's Improved Trip) - for
+  Koumajutsu Mastery II. (The 3e file has a typo, "STR=l5" with a letter l, fixed to 15.)
+- Lightning Fists (Dex 15, monk level 4 via the 3.5 MonkLVL variable) - for Temerad Mastery II
+Extra Stunning: the 3.5 version is in Complete Warrior. Like the repo's own PHB loading a Complete Warrior feat
+file with !PRECAMPAIGN, dmc_feats_support_es.lst (Complete Warrior format, MULT/STACK) and its prerequisite checks
+for Black Panda Mastery II and Temerad Mastery II load only when Complete Warrior is NOT loaded; with Complete
+Warrior, its own Extra Stunning is used (dmc_feats_cw.lst).
+Still text: Flying Dragon Kick and Ten Ox Stomp (not in any book in the repo; the compendium only names them).
+Verified in PCGen 6.08: loads without DMC errors with and without Complete Warrior (no duplicate Extra Stunning);
+a 4th-level monk with Dex 15 qualifies for Lightning Fists and Circle Kick, a 3rd-level monk for neither.

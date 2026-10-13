@@ -1,0 +1,7 @@
+# Book of Vile Darkness spells on the new domains (loads only with that book)
+# Source: The (mostly) Complete Dragon Magazine Compendium - Spells (compendium pp. 1280-1362).
+# DESC ends with the original Dragon/Dungeon Magazine issue and article. SOURCEPAGE = compendium PDF page.
+
+Slow Consumption.MOD	DOMAINS:Hunger (DMC)=1
+Steal Life.MOD	DOMAINS:Hunger (DMC)=8
+Whirlwind of Teeth.MOD	DOMAINS:Hunger (DMC)=7

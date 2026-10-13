@@ -1,0 +1,20 @@
+# Ninja ki prerequisites as real checks (loads only with Complete Adventurer)
+# Source: The (mostly) Complete Dragon Magazine Compendium - Feats, Flaws & Styles (compendium pp. 1058-1176).
+# DESC ends with the original Dragon Magazine issue and article. SOURCEPAGE = compendium PDF page.
+# Prerequisites that could not be expressed as PCGen PRE tags are listed in PRETEXT.
+
+CATEGORY=FEAT|Elemental Stalker.MOD	PRE:.CLEAR	PREVARGTEQ:KiPool,1	PRETEXT:sense elements
+CATEGORY=FEAT|Intuitive Trapsmith.MOD	PRE:.CLEAR	PREVARGTEQ:KiPool,1
+CATEGORY=FEAT|One with Earth and Water.MOD	PRE:.CLEAR	PREVARGTEQ:KiPool,1
+CATEGORY=FEAT|Zen Fortitude.MOD	PRE:.CLEAR	PREVARGTEQ:KiPool,1
+CATEGORY=FEAT|Hidden Kingdom Jutsu.MOD	PRE:.CLEAR	PREABILITY:1,CATEGORY=Special Ability,Ninja ~ Ghost Strike
+CATEGORY=FEAT|Karmic Healing.MOD	PRE:.CLEAR	PREVARGTEQ:KiPool,1
+CATEGORY=FEAT|Ki Smite.MOD	PRE:.CLEAR	PREVARGTEQ:KiPool,1	PREVARGTEQ:SuddenStrikeDice,2
+CATEGORY=FEAT|Rabbit Prince Jutsu.MOD	PRE:.CLEAR	PREVARGTEQ:GhostStepTier,1
+CATEGORY=FEAT|Ringing Fist Jutsu.MOD	PRE:.CLEAR	PREABILITY:1,CATEGORY=Special Ability,Ninja ~ Ki Dodge
+CATEGORY=FEAT|River Eel Jutsu.MOD	PRE:.CLEAR	PREABILITY:1,CATEGORY=Special Ability,Ninja ~ Ki Dodge
+CATEGORY=FEAT|Shadow Puppet Jutsu.MOD	PRE:.CLEAR	PREABILITY:1,CATEGORY=Special Ability,Ninja ~ Ki Dodge
+CATEGORY=FEAT|Skill Attunement.MOD	PRE:.CLEAR	PRESTAT:1,WIS=13	PREVARGTEQ:KiPool,1	PREABILITY:1,CATEGORY=Special Ability,Ninja ~ Ghost Strike
+CATEGORY=FEAT|Thousand Faces Jutsu.MOD	PRE:.CLEAR	PREVARGTEQ:GhostStepTier,1
+CATEGORY=FEAT|Wind Oxen Jutsu.MOD	PRE:.CLEAR	PREABILITY:1,CATEGORY=Special Ability,Ninja ~ Ghost Strike
+CATEGORY=FEAT|Wolf's Bite.MOD	PRE:.CLEAR	PREVARGTEQ:KiPool,1
