@@ -400,3 +400,25 @@ Warrior, its own Extra Stunning is used (dmc_feats_cw.lst).
 Still text: Flying Dragon Kick and Ten Ox Stomp (not in any book in the repo; the compendium only names them).
 Verified in PCGen 6.08: loads without DMC errors with and without Complete Warrior (no duplicate Extra Stunning);
 a 4th-level monk with Dex 15 qualifies for Lightning Fists and Circle Kick, a 3rd-level monk for neither.
+
+----------------------------------------------------------------------
+Equipment bonuses that apply when equipped (PHB / DMG conventions)
+----------------------------------------------------------------------
+Following the repo's PHB and DMG items (e.g. Cloak of Resistance BONUS:SAVE|Fortitude,Reflex,Will|1|TYPE=Resistance,
+Amulet of Health BONUS:STAT|CON|2|TYPE=Enhancement, Boots of Elvenkind BONUS:SKILL|Move Silently|5|TYPE=Competence,
+masterwork thieves' tools, Magnifying Glass BONUS:SITUATION|Appraise=Fine detail|2), every "+N bonus" statement in
+the equipment and magic item descriptions was extracted and reviewed by hand (item_bonuses.py):
+- 51 worn or held items get BONUS:STAT / SKILL / SAVE / COMBAT|AC / COMBAT|INITIATIVE that apply while equipped,
+  with their bonus types (enhancement, resistance, luck, sacred, insight, armor, natural armor...). Multi-bonus items
+  carry all their bonuses (Cowl of the Wormgod: +6 Int/Wis/Cha, +5 resistance on saves, +8 armor; Cape of the General:
+  +2 resistance on saves, +2 Cha/Int; Crown of Sorcerous Terror; Robe of Warding; ...). Alignment-limited bonuses use
+  PREALIGN (Obi of the White Lotus Master: lawful; Ronnam's Icon: good).
+- 27 items with conditional skill bonuses use BONUS:SITUATION (shown with the skill, not added to it), e.g. the
+  domain holy symbols, Climbing Boots (wooden or stone surfaces), Archery Saddle, Listening Cone, Keeper's Guide.
+- Self-affecting consumables are toggles (TEMPBONUS): Djinn Blossom perfume, Elixir of Draconic Essence.
+- Left as text: conditional save/AC bonuses (as the DMG does, e.g. Goggles of Minute Seeing), bonuses that depend on a
+  variant or roll (Amulet of Good Fortune, Rod of the Wild, Wyvern's Die), bonuses to mounts or other creatures,
+  temporary activations, and multi-variant consumables (Bloodroot).
+Verified in PCGen 6.08 (same items carried vs equipped): equipped gives Str 16->18, Int/Wis/Cha 10->16 (Cape's +2
+correctly doesn't stack with the Cowl's +6), Defense 12->20, saves +5, initiative +2, Spot +6, Bluff +5; carried
+items change nothing.
