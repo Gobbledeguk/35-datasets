@@ -3,3 +3,5 @@ From 13/10/2026, this contains an attempt at using Claude.ai to convert the Yagm
 I have probably started this all wrong and should start over completely and do this in smaller increments. However, there's a lot of data here and that data is still usable.
 
 Updated conversion notes can be found in the repository.
+
+Please create issues if you find any issues - and I'm sure you will.
