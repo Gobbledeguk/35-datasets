@@ -500,3 +500,103 @@ Deliberate, valid differences:
 - PREMULT:2,[PRESPELLCAST:MEMORIZE=N],[PRESPELLCAST:TYPE=Arcane]: both parts are repo tokens (the DMG Dragon Disciple uses
   PRESPELLCAST:MEMORIZE=N; Knight of the Blue Moon combines them with PREMULT:1).
 Verified: loads in PCGen 6.08 without DMC errors; a Mariner is proficient with bucklers (not heavy shields), cutlass, trident.
+
+----------------------------------------------------------------------
+Method feats: extra wizard bonus feats (Greyhawk, Nexus, Sagacious Method)
+----------------------------------------------------------------------
+"Add the following to the list of feats you may select as a bonus wizard feat" is now automatic, using the repo's own
+pattern from Races of the Wild ("Elf Wizard Feat": a separate category with its own pool, fed by moving the wizard's
+bonus-feat slots out of Pool_WizardFeat):
+- dmc_abilitycategories_feats.lst: "Greyhawk / Nexus / Sagacious Method Wizard Feat" categories = the normal wizard list
+  (TYPE Wizard.Metamagic.ItemCreation + Spell Mastery) plus the feat's additions:
+  Greyhawk: Combat Casting, Greater Spell Focus, Greater Spell Penetration, Magical Aptitude, Spell Focus, Spell Penetration
+  Nexus: Augment Summoning, Fiendsign, Greater Spell Focus, Greater Spell Penetration, Spell Focus, Spell Penetration
+  Sagacious: Eschew Materials, Greater Spell Focus, Greater Spell Penetration, Magical Aptitude, Spell Focus, Spell Penetration
+- dmc_abilities_methods.lst: internal abilities granted by the feats (wizards only) that move all wizard bonus-feat slots
+  (min(WizardLVL/5,4)) into the Method's category. If a character has more than one Method, only one is applied
+  (Greyhawk, then Nexus, then Sagacious) so slots are never moved twice.
+The "four extra spellbook spells per level" stays as text: PCGen does not count spellbook spells (the core wizard's own two
+per level aren't tracked either), and the repo's Collegiate Wizard (Complete Arcane) keeps the same rule as text.
+Verified in PCGen 6.08: 10th-level wizard - without a Method 2 slots in "Wizard Feat" (36 feats); with Greyhawk Method the 2
+slots are in "Greyhawk Method Wizard Feat" (42 feats incl. Combat Casting, Magical Aptitude...); with Nexus Method in the
+Nexus list; a cleric with Greyhawk Method is unaffected.
+
+----------------------------------------------------------------------
+Class bonus-feat lists (fighter, wizard, scout) - all feats checked
+----------------------------------------------------------------------
+Every feat and flaw was searched for text that puts it (or other feats) on a class bonus-feat list:
+- Fighter (repo: "Fighter Feat" category = feats of TYPE Fighter): 64 feats now carry the Fighter type. Newly recognised
+  wordings: "...as a fighter bonus feat", "can take X as one of her bonus feats", "You may take this feat as a fighter bonus
+  feat", and Master of Mockery's typo "lighter bonus feats" (e.g. Beast Strike, Desert Fighter, Shield Snare, Mighty Are
+  Fallen, Disrupting Strike). Aura of Bravery, Stalwart and Improved Aid Another say a fighter may NOT take them (they are
+  for the "thane" variant) and stay off the list.
+- Wizard (repo: "Wizard Feat" = TYPE Wizard/Metamagic/ItemCreation): 13 feats a wizard may take as a bonus feat now have the
+  Wizard type (Arcane Focus, Arcane Focus Item, Arcane Shorthand, Arcane Watchfulness, Body Awareness, Defensive Magic,
+  Focused Specialist, Magical Insight, Potent Dweomercraft, Linked, Excised from the Web of Life, Verminous Graft, Wedded
+  to the Light). Silent Method was a fourth "Method" feat and now works like Greyhawk/Nexus/Sagacious Method.
+- Scout (Complete Adventurer: fixed list "Scout Bonus Feat"): PCGen does not allow extending a category with .MOD (and the
+  repo never does), so - as with the Method feats / Races of the Wild - dmc_abilitycategories_cadv.lst defines
+  "Scout Bonus Feat (DMC)" (Complete Adventurer's list plus Acrobatic Skirmisher, Improved Acrobatic Skirmisher, Hinder,
+  Mounted Fighting, Passive Reconnoiter, Ranged Skirmisher, Scout the Path) and dmc_feats_cadv.lst moves the scout's
+  bonus-feat slots there. Loads only with Complete Adventurer.
+Verified in PCGen 6.08: Fighter Feat list contains the new fighter feats but not Aura of Bravery/Stalwart; Wizard Feat list
+contains Arcane Focus, Magical Insight...; an 8th-level scout's 2 bonus-feat slots are in "Scout Bonus Feat (DMC)" (34
+feats incl. Acrobatic Skirmisher, Scout the Path, Hinder); loads without DMC errors with and without Complete Adventurer.
+
+----------------------------------------------------------------------
+Compatibility of the extended bonus-feat lists with other repo books
+----------------------------------------------------------------------
+All the new categories and slot moves load in PCGen 6.08 without errors. Checking every other repo book that changes the
+wizard's bonus-feat slots found two interactions, now handled:
+- Alternative class features that replace the wizard's bonus feats (Unearthed Arcana: Diviner Bonus Feats, Spell
+  Versatility, Undead Apotheosis...; Complete Champion: Spontaneous Divination, Domain Granted Power) remove
+  "Wizard ~ Bonus Feats". The Method feats now only move slots when the wizard actually has that feature
+  (PREABILITY:1,CATEGORY=Special Ability,Wizard ~ Bonus Feats), so they no longer give traded-away slots back.
+- Racial substitution levels that take one wizard bonus feat (Races of the Wild elf "Wizard ~ Bonus Feat"; Races of Stone
+  "Extended Illusions", "Insidious Illusions") are compensated: dmc_abilities_methods_rw.lst / _rs.lst (loaded only with
+  those books) reduce the Method's move by one for each, so the total number of slots stays correct.
+The scout list needs no such handling: the slot move is attached to the scout's own bonus-feat ability, so alternative
+class features that remove it also remove the move; nothing else in the repo changes the scout's slots.
+Verified in PCGen 6.08 (10th-level wizard with Greyhawk Method): normal 0/2 slots; with Spell Versatility (UA ACF) 0 and 0;
+with the Races of the Wild elf substitution: wizard 0, Greyhawk 1, elf 1 (total 2). Cleric with the feat unaffected; scout 2.
+
+----------------------------------------------------------------------
+dmc_equip.lst: user-edited master and circumstance bonuses in the repo's syntax
+----------------------------------------------------------------------
+dmc_equip.lst is now the user-edited version (power components removed - to be redone; Grimoire items corrected).
+It is no longer regenerated; only bonus tokens are added to it.
+Circumstantial bonuses now follow the repo's own convention for equipment. The repo writes item skill bonuses as
+BONUS:SKILL|<skill>|n|TYPE=<type> (69 items, e.g. Rope, Silk; Moonstone Mask; masterwork artisan's tools; Hammer of the
+Weaponsmith "+10 when forging bladed weapons" -> BONUS:SKILL|Craft (Weaponsmithing)|10|TYPE=Circumstance), keeping the
+situation in the description; BONUS:SITUATION is used only twice. All our BONUS:SITUATION tokens were converted to that form,
+and newly added:
+- Grimoires: Dimensions of Evil (Knowledge (the planes) +2), Dwellings of the Ancients (Knowledge (architecture and
+  engineering) and Decipher Script +2), Slaying Dragons (Knowledge (arcana) +2), The Theory and Application of Force Magic
+  (Knowledge (arcana) and Spellcraft +2) - all circumstance bonuses.
+- Camouflage Clothes (Hide +2 circ.), Holy Symbol (Trickery) (Disguise +1 circ.), Dog Whistle, Rawhide, Training Arm
+  (Handle Animal), Masterwork Controls (Profession (sailor) +2 circ.).
+- Consumables as toggles: Alchemical Silence (Move Silently +2 alchemical), Intuition Vapor (Concentration/Listen/Search
+  +4 alchemical, can be applied to allies).
+Left as text, as in the repo: saves against specific effects (poison, fear, disease, cold...), Strength checks against
+trip/bull rush, bonuses for mounts/animals or for other people, and the Dragonsong Instruments' ability-specific Perform
+bonuses.
+Note: like the repo's tools, these bonuses apply when the item is in the "Equipped" location (not just "Carried").
+Verified in PCGen 6.08: equipped vs carried - Knowledge (arcana) and Spellcraft +2 (grimoire), Hide +2 (camouflage
+clothes), Sleight of Hand +5 (drop sheath); nothing when only carried. Loads without DMC errors.
+
+----------------------------------------------------------------------
+Power components (remade to the user's specification)
+----------------------------------------------------------------------
+dmc_equip_power_components.lst - 129 items, "<Component> - <Creature>", TYPE:Goods.PowerComponent, WT:0, with the user's
+description templates and the Dragon #332 reference:
+- Table 5-1 (p.1261, 25): "...pay <XP> XP worth of XP for casting <Spell>." Permanency sub-rows read "Permanency (Darkvision)" etc.
+- Table 5-2 (p.1263 + first table p.1264, 60): "...pay <XP> XP worth of XP for crafting a <Magic Item>." Under the Potions and
+  Oils / Rings / Rods / Staffs / Wands headings the item is written "Potion of ...", "Ring of ...", "Wand of ..." etc.
+- Table 5-3 (second table p.1264, 26): "...pay <Market Price> worth of Gold Pieces for casting <Spell Name>."
+- Table 5-4 (p.1265, 18; subheadings ignored): "...pay <Market Price> worth of Gold Pieces for crafting a <Item>." (SOURCEPAGE p.1265)
+Footnotes appended after the first sentence: 1 "From the EPIC LEVEL HANDBOOK." (elder treant, anaxim, celestial prismatic dragon,
+winterwight, demilich, force dragon, atropal); 2 the egg-shell text; 3 the adult-dragon-brain text (intelligent magic items).
+Source misprints: egg shells are printed "1,00 gp"; priced 1,000 gp (200 XP x 5, the table's own rule). Prices printed
+without "gp" (10,895; 5,550; 4,000) are gp; Staff of earth and stone keeps the printed 16,100 gp. sp/cp prices become gp
+fractions (4 sp = COST:0.4). Names containing commas get a comma-free KEY (PCGen does not allow commas in keys).
+Verified in PCGen 6.08: loads without DMC errors; components show on a character with their prices.
