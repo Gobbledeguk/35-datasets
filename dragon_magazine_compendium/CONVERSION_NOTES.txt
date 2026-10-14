@@ -469,3 +469,34 @@ Ki, Hex and Bloodline feat types checked against the whole repo (data/35e)
   cannot count UA bloodlines (which are Special Abilities).
 Verified in PCGen 6.08 with Complete Warrior: a 1st-level hexblade qualifies for Curse of Failure, Empower Curse and
 Extra Curse (not Curse of Sloth, which also needs a hex feat); a fighter for none.
+
+----------------------------------------------------------------------
+Spellcasting-style prerequisites (bloodline feats and others)
+----------------------------------------------------------------------
+Reported: Air Bloodline was selectable by a cleric. "Ability to cast arcane spells without preparation" was still text
+(not enforced). It now uses the repo's PRESPELLCAST token: PREMULT:2,[PRESPELLCAST:MEMORIZE=N],[PRESPELLCAST:TYPE=Arcane]
+(both must hold - inside one PRESPELLCAST a comma means "either"). Likewise "ability to prepare and cast arcane spells"
+-> PREMULT:2,[PRESPELLCAST:MEMORIZE=Y],[PRESPELLCAST:TYPE=Arcane], and "ability to prepare spells" -> PRESPELLCAST:MEMORIZE=Y.
+Affects the 15 bloodline feats and e.g. Greyhawk Method, Nexus Method, Sagacious Method, Psiomancer.
+The familiar requirement was already a real check (PREABILITY by the Familiar ability type, shown in PCGen as
+"any Familiar ..."); the PHB familiar abilities (Sorcerer ~ Familiar, Wizard ~ Familiar) carry that type, a cleric has none.
+Verified in PCGen 6.08: Air/Celestial Bloodline - sorcerer yes; cleric, wizard (prepares spells) and bard (no familiar) no.
+Greyhawk Method - wizard yes; cleric, sorcerer, bard no.
+
+----------------------------------------------------------------------
+Syntax comparison with the repository (all files)
+----------------------------------------------------------------------
+Every token we use (99 token names, 434 distinct value structures) was compared structurally with all of data/35e.
+All token names except one are used in the repo. Structures not found verbatim in the repo were checked one by one;
+almost all only differ in names, counts or combinations (longer skill lists, other alignment sets, more spells per
+domain line, formulas). Fixed to match the repo's own forms:
+- "all skills" bonuses on flaws: SKILL|TYPE=Base -> SKILL|ALL (as in BONUS:SKILL|ALL / TEMPBONUS:...|SKILL|ALL).
+- Mariner shield proficiency: AUTO:SHIELDPROF|Buckler -> AUTO:SHIELDPROF|SHIELDTYPE=Buckler.
+- Innate Magic: CHOOSE:SPELLS|ALL[LEVELMAX=0] -> CHOOSE:SPELLS|SPELLTYPE=Arcane[LEVELMAX=0]|SPELLTYPE=Divine[LEVELMAX=0].
+- Base armor TYPE now includes "Container" exactly like the PHB armor.
+Deliberate, valid differences:
+- !PRESTAT ("ability score N or lower", 4 flaws): the repo has no such requirement anywhere; negated PRE tokens
+  (!PREABILITY, !PREAGESET, ...) are standard and used in the repo.
+- PREMULT:2,[PRESPELLCAST:MEMORIZE=N],[PRESPELLCAST:TYPE=Arcane]: both parts are repo tokens (the DMG Dragon Disciple uses
+  PRESPELLCAST:MEMORIZE=N; Knight of the Blue Moon combines them with PREMULT:1).
+Verified: loads in PCGen 6.08 without DMC errors; a Mariner is proficient with bucklers (not heavy shields), cutlass, trident.
