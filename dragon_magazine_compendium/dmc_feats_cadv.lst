@@ -3,9 +3,14 @@
 # DESC ends with the original Dragon Magazine issue and article. SOURCEPAGE = compendium PDF page.
 # Prerequisites that could not be expressed as PCGen PRE tags are listed in PRETEXT.
 
+CATEGORY=FEAT|Hinder.MOD	PRE:.CLEAR	PREABILITY:1,CATEGORY=FEAT,Improved Initiative	PREVARGTEQ:SkirmishDice,2
+CATEGORY=FEAT|Acrobatic Skirmisher.MOD	PRE:.CLEAR	PRESTAT:1,DEX=13	PRESKILL:1,Tumble=5	PREVARGTEQ:SkirmishDice,1
+CATEGORY=FEAT|Improved Acrobatic Skirmisher.MOD	PRE:.CLEAR	PRESTAT:1,DEX=13	PRESKILL:1,Tumble=10	PREABILITY:1,CATEGORY=FEAT,Acrobatic Skirmisher	PREVARGTEQ:SkirmishDice,1
 CATEGORY=FEAT|Elemental Stalker.MOD	PRE:.CLEAR	PREVARGTEQ:KiPool,1	PRETEXT:sense elements
 CATEGORY=FEAT|Intuitive Trapsmith.MOD	PRE:.CLEAR	PREVARGTEQ:KiPool,1
 CATEGORY=FEAT|One with Earth and Water.MOD	PRE:.CLEAR	PREVARGTEQ:KiPool,1
+CATEGORY=FEAT|Ranged Skirmisher.MOD	PRE:.CLEAR	PRESTAT:2,DEX=15,WIS=13	PREABILITY:2,CATEGORY=FEAT,Far Shot,Point Blank Shot	PREVARGTEQ:SkirmishDice,1
+CATEGORY=FEAT|Swift Avenger.MOD	PRE:.CLEAR	PREVARGTEQ:SkirmishDice,1	PRETEXT:Nature sense
 CATEGORY=FEAT|Zen Fortitude.MOD	PRE:.CLEAR	PREVARGTEQ:KiPool,1
 CATEGORY=FEAT|Hidden Kingdom Jutsu.MOD	PRE:.CLEAR	PREABILITY:1,CATEGORY=Special Ability,Ninja ~ Ghost Strike
 CATEGORY=FEAT|Karmic Healing.MOD	PRE:.CLEAR	PREVARGTEQ:KiPool,1

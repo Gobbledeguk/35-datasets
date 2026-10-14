@@ -422,3 +422,50 @@ the equipment and magic item descriptions was extracted and reviewed by hand (it
 Verified in PCGen 6.08 (same items carried vs equipped): equipped gives Str 16->18, Int/Wis/Cha 10->16 (Cape's +2
 correctly doesn't stack with the Cowl's +6), Defense 12->20, saves +5, initiative +2, Spot +6, Bluff +5; carried
 items change nothing.
+
+----------------------------------------------------------------------
+Feat prerequisite audit (racial feats and repo compliance)
+----------------------------------------------------------------------
+Problem reported: Tainted Strike (a drow racial feat) was available to a dwarf. Causes and fixes:
+- "any two racial-drow feats" was not recognised (hyphen) and stayed as unenforced text; it is now
+  PREABILITY:n,CATEGORY=FEAT,TYPE.RacialDrow (Disease Bolt, Disease Shield, Life Tap, Tainted Strike).
+- Racial feats never checked the race. All [RACIAL-DROW] feats now require a drow, written the way the repo's
+  own drow-only feats do it: PREMULT:2,[PRERACE:1,Elf],[PREABILITY:1,CATEGORY=Internal,Elf ~ Drow] (also
+  accepting this set's Umbragen race). Other race requirements are now PRERACE checks too: Lizardfolk (Chameleon
+  Blood, Reptilian Healing), Beholder (5 feats), half-elf/half-orc (Human Blood), dwarf/gnome/halfling (Stubby
+  Fingers), chaotic evil outsider (Mark of Lemoriax).
+- Types: racial feats are typed "Racial" like the repo's racial feats; the extra "RacialDrow" type is only there
+  so the "any N racial-drow feats" requirement can count them.
+Other prerequisites converted to the repo's PRE tokens: size (PRESIZELTEQ:S), age (PREAGESET / !PREAGESET),
+alignment, base saves (PRECHECKBASE), "ability score N or lower" (!PRESTAT), Nth-level spellcasting (PRESPELLTYPE,
+fixing "2ndlevel"-style text), spellbook casters (PRESPELLBOOK:YES), manifesting powers
+(Caster_Level_Highest__Psionic), class levels, rage, sneak attack, wild empathy, darkvision, low-light vision,
+weapon proficiency (PREWEAPONPROF), "any one of the following feats", Two-Weapon Fighting / Weapon Focus (Longbow)
+written without their hyphen/brackets, "two other shifter feats", mutually exclusive flaws (Lightweight vs Obese),
+and skirmish (Complete Adventurer's SkirmishDice, in dmc_feats_cadv.lst). Hit Dice requirements use
+PRELEVEL:MIN like the repo (no PREHD). Fixed the remaining "228 HD" typo (Omen of Crows / Omen of Flies -> 28).
+Token order now matches the repo's feats: CATEGORY, TYPE, prerequisites, DESC, SOURCEPAGE, MULT/STACK/CHOOSE,
+effects, BENEFIT.
+Still text (the repo doesn't track these): class features such as curse, mind blade, chastise spirits, eldritch
+blast; campaign background (tribes, regions, upbringing, oaths); feats from books not in the repo.
+Remaining PRETEXT tokens: 286.
+Verified in PCGen 6.08: a dwarf or non-drow elf with two racial-drow feats qualifies for none of the drow feats; a
+drow with two qualifies for Tainted Strike, Disease Bolt and Life Tap but not Disease Shield (needs three); a drow
+with none only for Damage Mastery. All feats load and export without DMC errors.
+
+----------------------------------------------------------------------
+Ki, Hex and Bloodline feat types checked against the whole repo (data/35e)
+----------------------------------------------------------------------
+- Ki: no feat or ability type "Ki" exists anywhere in the repo (only class names containing "ki"). Kept as this set's
+  type for the compendium's [KI] feats; ki prerequisites use the repo's KiStrikeLVL / KiStrikeMagic (monk) and
+  KiPool etc. (Complete Adventurer ninja) variables.
+- Hex: no "Hex" feat type in the repo. The repo has "Hexblade Feat" (Complete Warrior: the hexblade's bonus feat
+  list, type Hexblade) and "Witch Hex" (a witch class special ability) - different things. Kept "Hex" for the
+  compendium's [HEX] feats. New: their "curse ability" prerequisite is now a real check when Complete Warrior is loaded,
+  using the hexblade's own HexbladesCurseTimes variable (dmc_feats_cw.lst; also for Extra Curse).
+- Bloodline: Unearthed Arcana has a "Bloodline" system (Special Ability category with Celestial, Demon, Dragon,
+  Elemental... bloodlines and bloodline levels). The compendium's bloodline feats are a different, feat-based
+  mechanic, so they keep their own FEAT type "Bloodline"; "any bloodline feat" checks are limited to CATEGORY=FEAT and
+  cannot count UA bloodlines (which are Special Abilities).
+Verified in PCGen 6.08 with Complete Warrior: a 1st-level hexblade qualifies for Curse of Failure, Empower Curse and
+Extra Curse (not Curse of Sloth, which also needs a hex feat); a fighter for none.

@@ -3,5 +3,16 @@
 # DESC ends with the original Dragon Magazine issue and article. SOURCEPAGE = compendium PDF page.
 # Prerequisites that could not be expressed as PCGen PRE tags are listed in PRETEXT.
 
+CATEGORY=FEAT|Curse of Distraction.MOD	PREVARGTEQ:HexbladesCurseTimes,1
+CATEGORY=FEAT|Curse of Failure.MOD	PREVARGTEQ:HexbladesCurseTimes,1
+CATEGORY=FEAT|Curse of Ignorance.MOD	PREVARGTEQ:HexbladesCurseTimes,1
+CATEGORY=FEAT|Curse of Paranoia.MOD	PREVARGTEQ:HexbladesCurseTimes,1
+CATEGORY=FEAT|Curse of Sloth.MOD	PREVARGTEQ:HexbladesCurseTimes,1
+CATEGORY=FEAT|Curse of the Softened Blade.MOD	PREVARGTEQ:HexbladesCurseTimes,1
+CATEGORY=FEAT|Curse of the Stricken.MOD	PREVARGTEQ:HexbladesCurseTimes,1
+CATEGORY=FEAT|Empower Curse.MOD	PREVARGTEQ:HexbladesCurseTimes,1
+CATEGORY=FEAT|Extend Curse.MOD	PREVARGTEQ:HexbladesCurseTimes,1
+CATEGORY=FEAT|Extra Curse.MOD	PREVARGTEQ:HexbladesCurseTimes,1
+CATEGORY=FEAT|Foe of the Unlucky.MOD	PREVARGTEQ:HexbladesCurseTimes,1
 CATEGORY=FEAT|Black Panda Mastery II.MOD	PREABILITY:1,CATEGORY=FEAT,Extra Stunning
 CATEGORY=FEAT|Temerad Mastery II.MOD	PREABILITY:1,CATEGORY=FEAT,Extra Stunning
