@@ -587,16 +587,126 @@ clothes), Sleight of Hand +5 (drop sheath); nothing when only carried. Loads wit
 ----------------------------------------------------------------------
 Power components (remade to the user's specification)
 ----------------------------------------------------------------------
-dmc_equip_power_components.lst - 129 items, "<Component> - <Creature>", TYPE:Goods.PowerComponent, WT:0, with the user's
+dmc_equip_power_components.lst - 134 items, "<Component> - <Creature>", TYPE:Goods.PowerComponent, WT:0, with the user's
 description templates and the Dragon #332 reference:
-- Table 5-1 (p.1261, 25): "...pay <XP> XP worth of XP for casting <Spell>." Permanency sub-rows read "Permanency (Darkvision)" etc.
+- Table 5-1 (p.1261, 30): "...pay <XP> XP worth of XP for casting <Spell>." Permanency sub-rows read "Permanency (Darkvision)" etc.
+  Five rows list two alternatives (a creature and a dragon, each with its own component) and are split into separate items:
+  Atonement (Heart - Eladrin, ghaele / Heart - Dragon (evil, old); Heart - Devil, Ice (gelugon) / Heart - Dragon (good, old)),
+  Awaken (Vital essence - Elder elemental (any) / Tongue - Dragon (green, old)), Limited wish (Rib cage - Devourer /
+  Heart - Dragon (red, very old)), Vision (Faceted eyes - Umber hulk / Brain - Dragon (adult)).
 - Table 5-2 (p.1263 + first table p.1264, 60): "...pay <XP> XP worth of XP for crafting a <Magic Item>." Under the Potions and
   Oils / Rings / Rods / Staffs / Wands headings the item is written "Potion of ...", "Ring of ...", "Wand of ..." etc.
 - Table 5-3 (second table p.1264, 26): "...pay <Market Price> worth of Gold Pieces for casting <Spell Name>."
-- Table 5-4 (p.1265, 18; subheadings ignored): "...pay <Market Price> worth of Gold Pieces for crafting a <Item>." (SOURCEPAGE p.1265)
+- Table 5-4 (p.1265, 18; subheadings ignored): "...pay <Market Price>'s worth of the cost for crafting a <Item> with Craft
+  (<Craft Check>)." (SOURCEPAGE p.1265)
 Footnotes appended after the first sentence: 1 "From the EPIC LEVEL HANDBOOK." (elder treant, anaxim, celestial prismatic dragon,
 winterwight, demilich, force dragon, atropal); 2 the egg-shell text; 3 the adult-dragon-brain text (intelligent magic items).
 Source misprints: egg shells are printed "1,00 gp"; priced 1,000 gp (200 XP x 5, the table's own rule). Prices printed
 without "gp" (10,895; 5,550; 4,000) are gp; Staff of earth and stone keeps the printed 16,100 gp. sp/cp prices become gp
 fractions (4 sp = COST:0.4). Names containing commas get a comma-free KEY (PCGen does not allow commas in keys).
 Verified in PCGen 6.08: loads without DMC errors; components show on a character with their prices.
+
+----------------------------------------------------------------------
+Birth feats (8): bonuses as tags in the repo's syntax
+----------------------------------------------------------------------
+- Skill bonuses: BONUS:SKILL|<skills>|1 (Intimidate; Heal; Sense Motive, Spot; Intimidate, Use Magic Device; Bluff, Gather
+  Information; Balance, Concentration; Hide, Sleight of Hand).
+- Saves: BONUS:SAVE|Fortitude|1 (High Sun), BONUS:SAVE|Will|1 (Rising Sun), as in the PHB's Great Fortitude / Iron Will. The extra
+  +1 against fire / fear effects is a TEMPBONUS toggle (like the other situational feat bonuses in this set; the repo itself
+  keeps such race bonuses as description text).
+- Setting Sun: CSKILL:Concentration (its two chosen Knowledge skills already had BONUS:SKILL|LIST|1).
+- Moon feats: once-per-day spell-like abilities as SPELLS:Innate|TIMES=1|CASTERLEVEL=TL|<spell>,10+TL/2+CHA (the repo's form;
+  no DC for the personal spells Expeditious Retreat and Disguise Self).
+- "If you take this feat, you cannot take any other birth feat": !PREABILITY:1,CATEGORY=FEAT,TYPE=Birth, the same form the repo
+  uses for regional feats (!PREABILITY:1,CATEGORY=FEAT,TYPE=Regional). 1st level only was already PRELEVEL:MAX=1.
+- Source typos corrected in the text: "+a bonus on Will" and "+I bonus" -> +1, "Use Magical Device" -> Use Magic Device,
+  "if you take this at" -> "if you take this feat".
+Verified in PCGen 6.08: with a birth feat a character no longer qualifies for another; High Sun gives Fortitude +1 and
+Intimidate +1; Full Moon gives Intimidate +1 and the Command spell-like ability.
+
+----------------------------------------------------------------------
+General feats clean-up
+----------------------------------------------------------------------
+- Regions / Nation / Clan lines (e.g. Well Traveled: "Regions: Half-elf, lightfoot halfling, Rhennee, ...") were only stored
+  as a prerequisite note; they are now also part of the feat's description, as printed (86 feats).
+- Effects that were only text are now tags, in the repo's forms:
+  granted ranks: Well Traveled (BONUS:SKILLRANK|Knowledge (Local)|2);
+  class skills: Well Read (CSKILL:TYPE=Knowledge), Hymnist and Divine Inspiration (CSKILL:TYPE=Perform), Seafarer
+  (Profession (sailor), Survival), Hypnotic Focus (Autohypnosis - in dmc_feats_xph.lst, loads only with Expanded Psionics);
+  skill/save bonuses: Badge of Bondage (+1 insight Fort/Will, +2 competence Bluff), Border Watch (+2 Spot), Earthcraft,
+  Elflore, Gnomelore, Rhennlere, Noble Warrior, Mark of Lemoriax, Seafarer (+2 Profession (sailor));
+  initiative: Blue Mountain Mastery II; grapple: Koumajutsu Mastery I and II (BONUS:COMBAT|TOHIT.GRAPPLE|2).
+  Situational bonuses as toggles: Natural Dowser, Friend to the Tribe, Tongue of Mougol, Sea Legs, Seafarer (on ships).
+- Not tagged: Border Watch's +5 Profession (soldier) (the repo has no such skill), Bronze Solaris Member's sorcerer-only class
+  skill, Ehlonna's Way's woodland Hide/Survival bonus (its toggle is for a different situation), option-based feats (Celestial
+  Scion houses, Exercises of Arnd rites) and effects on others.
+- Birth feats now use the repo's exclusivity form for regional feats,
+  PREMULT:1,[!PREABILITY:1,CATEGORY=FEAT,TYPE=Birth],[PREABILITY:1,CATEGORY=FEAT,<this feat>], so a character who has one
+  still meets its own prerequisites.
+Verified in PCGen 6.08: Knowledge (local) 2 ranks; Bluff +2, Fort/Will +1; initiative +2; grapple +2; a 1st-level character
+with a birth feat meets its own prerequisites but qualifies for no other birth feat. Loads without DMC errors.
+
+Birth feats: the extra +1 against fire (High Sun) / fear (Rising Sun) is now a circumstance bonus in the repo's syntax,
+BONUS:SAVE|Fortitude|1|TYPE=Circumstance and BONUS:SAVE|Will|1|TYPE=Circumstance (replacing the TEMPBONUS/TEMPDESC toggle);
+the situation stays in the benefit text and PCGen always counts it (Fortitude +2 total with High Sun).
+
+----------------------------------------------------------------------
+Duplicate tokens merged into one expression (repo style)
+----------------------------------------------------------------------
+The final clean-up pass now merges tokens of the same kind into one expression wherever the meaning is guaranteed to be
+identical, as the repo does (e.g. PREABILITY:3,CATEGORY=FEAT,Cleave,Improved Sunder,Power Attack; PRESKILL:2,Knowledge
+(Religion)=4,Spellcraft=4; BONUS:SKILL|Diplomacy,TYPE=Perform|2):
+- PRESKILL / PREABILITY / PRESTAT tokens that each require all their (named) entries -> one token (10 feats, e.g. Astral
+  Tracking: PRESKILL:3,Knowledge (The Planes)=11,Spellcraft=8,Survival=10; Concealed Ambush: PRESKILL:2,Hide=10,Move Silently=10).
+- BONUS:SKILL tokens with the same value and bonus type -> one token (Elflore, Gnomelore, Rhennlere, Techno Gnome, Umbragen).
+Deliberately kept separate:
+- "any <type> feat" requirements (e.g. Arcane Focus Item: Craft Wondrous Item + any metamagic feat). PREABILITY counts matches,
+  so PREABILITY:2,...,Craft Wondrous Item,TYPE.Metamagic would also pass with two metamagic feats and no Craft Wondrous Item.
+  The repo keeps such requirements in separate tokens too.
+- Chosen-skill bonuses (BONUS:SKILL|LIST|n): the repo never combines LIST with other skills (Dwarflore, Mercantile Background,
+  Cultured Courtier).
+- Alternatives ("one of these"), negated (!PRE...) and different-category tokens.
+Verified in PCGen 6.08: Concealed Ambush - Hide 10 alone does not qualify, Hide 10 + Move Silently 10 does; Elflore still
+gives +1 to Knowledge and Spellcraft. Loads without DMC errors.
+
+----------------------------------------------------------------------
+Ancestor feats: situational bonuses as circumstance bonuses
+----------------------------------------------------------------------
+Same convention as the Birth feats (repo syntax: TYPE=Circumstance on a normal bonus, situation kept in the text, always counted;
+Circumstance is a stacking type in Bahamut35e - BONUSSTACKS:...Circumstance...):
+- Ally of the Ki-rin: BONUS:SAVE|Fortitude|4|TYPE=Circumstance (non-magical diseases)
+- Forest Ambusher: BONUS:SKILL|Hide|3|TYPE=Circumstance (in forests)
+- Legendary Tracker: BONUS:SAVE|Fortitude|4|TYPE=Circumstance (nonlethal damage from cold) and
+  BONUS:SKILL|Survival|4|TYPE=Circumstance|PREABILITY:1,CATEGORY=FEAT,Track (tracks covered by fresh snow; replaces the toggle)
+- Mountain Hunter: Escape Artist +4 and grapple +4 (escaping a grapple), attack +1 (vs animals), all TYPE=Circumstance (replaces the toggle)
+- Spellwise: BONUS:SAVE|ALL|2|TYPE=Circumstance (illusions; replaces the toggle)
+- Stalwart Defender: BONUS:SAVE|Reflex|4|TYPE=Circumstance (trample)
+Left as text: Stormheart's dodge bonus on ships and Twin Sword Style's shield bonus (dodge/shield, not circumstance), Stalwart
+Defender's +4 on Strength checks (no tag for ability checks), and rules-only ancestor feats.
+Verified in PCGen 6.08: Fortitude +10 from three stacking circumstance bonuses (Ki-rin 4 + Legendary Tracker 4 + Spellwise 2),
+Reflex/Will +2, Escape Artist +4, grapple +4, melee +1, Survival +4 with Track. Loads without DMC errors.
+
+----------------------------------------------------------------------
+All situational feat and flaw bonuses: TEMPBONUS (consistent rule)
+----------------------------------------------------------------------
+Every situational bonus or penalty in feats and flaws that affects the character's own (or, for auras, allies') saves,
+skills, attacks, damage or AC is now a TEMPBONUS toggle with one TEMPDESC saying when to switch it on - 119 feats/flaws.
+This follows the repo's TEMPBONUS syntax and logic: shown on PCGen's Temporary Bonus tab, counted only while switched on,
+shown in the sheet's Temporary column; several TEMPBONUS tokens on one object share one TEMPDESC (like the repo's Rage);
+TEMPBONUS may carry a prerequisite (Legendary Tracker's Survival bonus requires Track).
+Bonus types: the type stated in the source is kept (dodge, shield, insight, morale, sacred, competence, inherent);
+untyped situational bonuses are TYPE=Circumstance (142 repo TEMPBONUS tokens use that type; circumstance stacks in Bahamut35e).
+This replaces the always-counted circumstance tags on the Birth and Ancestor feats (High/Rising Sun, Ally of the Ki-rin,
+Forest Ambusher, Legendary Tracker, Mountain Hunter, Spellwise, Stalwart Defender).
+Newly expressed: Girded Soul, Pureheart, Grave Friend, Green Heart, Hidden Thoughts, Lawful Discipline, Passive Reconnoiter,
+Last Survivor, Friend of the Earth, Friend of Earth, High Society, Landless Nobility, Tested, Trap Mastery, Voice of the Mage,
+Superior Taste/Touch, Twin Sword Style (shield), Stormheart (dodge), Ehlonna's Way (woodland skills), and the flaws Gullible,
+Grudge Keeper, Warrior of the Phalanx, Bestial Instinct, Short Attention Span, Terrain Specialist, among others.
+Permanent parts found on the way: Pureblooded Suel (+1 Intimidate), Footsteps of the Mage (+2 Balance), Voice of Winds (+2
+Diplomacy/Intimidate when speaking - i.e. always).
+Left as text: penalties on enemies (Fiendsign, Master of Mockery, hexblade curses), level/caster-level checks, Strength and
+other ability checks, confirming criticals, option-based feats (Jinnbond, Tribal Trait, Trophy Hunter, Magical Insight),
+cumulative or trade-off effects (Retribution, Precise Strike), and replacements of an existing bonus (Defensive Expert,
+Tunnel Rat). Equipment keeps the repo's item convention (typed BONUS:SKILL, e.g. Hammer of the Weaponsmith).
+Verified in PCGen 6.08: toggles off - Fortitude +5 (only Born Under a High Sun's permanent +1); switched on - Fortitude +10
+(+1 fire, +4 disease, +2 illusions, -2 Gullible); Reflex/Will unchanged (+2 and -2 cancel). Loads without DMC errors.
