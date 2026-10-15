@@ -767,3 +767,9 @@ variable is not usable: it stays 0 even for paladins.)
 Verified in PCGen 6.08: paladin 6 qualifies for all four Purification feats tested; cleric 5 and a rogue for none.
 Chaos Music (Perform 4 ranks + bardic music) and Darkness Familiar (a familiar) are real checks: a rogue fails them; a bard
 (with the standard bard subclass) and a sorcerer with a familiar pass.
+Bloodline feats re-tested on sorcerers (levels 1, 4, 9, 20): the bonus spells are added only once the sorcerer can cast that
+spell level, and each raises the spells-known allowance by one at that level, so they are true bonus spells (sorcerer 9:
+1st-4th known 6/5/4/3 with Air Bloodline vs 5/4/3/2 without - the PHB table). Fixed: Water Bloodline was missing its 6th-level
+Otiluke's freezing sphere (a page header printed inside its spell list hid it). All bloodlines now add 9 spells except Draconic
+Bloodline (3rd-level "protection from elements" is a 3.0 spell). Fire and Plant Bloodline's lists are unusual (e.g. hypnotism,
+tongues, cloudkill; water breathing, control water) but match the compendium as printed.
