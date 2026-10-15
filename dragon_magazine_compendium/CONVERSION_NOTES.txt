@@ -710,3 +710,60 @@ cumulative or trade-off effects (Retribution, Precise Strike), and replacements 
 Tunnel Rat). Equipment keeps the repo's item convention (typed BONUS:SKILL, e.g. Hammer of the Weaponsmith).
 Verified in PCGen 6.08: toggles off - Fortitude +5 (only Born Under a High Sun's permanent +1); switched on - Fortitude +10
 (+1 fire, +4 disease, +2 illusions, -2 Gullible); Reflex/Will unchanged (+2 and -2 cancel). Loads without DMC errors.
+
+----------------------------------------------------------------------
+Prerequisite audit: text prerequisites are never enforced by PCGen
+----------------------------------------------------------------------
+Reported: Extend Curse and Excised from the Web of Life were available to a Gruwaar rogue. PCGen never enforces PRETEXT, so any
+feat whose requirement is only text is open to everyone. Fixes:
+- Book-dependent checks now live in the base feats instead of book-only .MOD files: the hexblade curse
+  (PREVARGTEQ:HexbladesCurseTimes,1), ninja ki / ki dodge / ghost step / ghost strike / sudden strike and scout skirmish
+  (Complete Adventurer variables and abilities), the Oriental Adventures feats (Pain Touch, Ki Shout, ...), Extra Stunning.
+  Without the book these variables/abilities don't exist, so nobody qualifies (verified: loads without errors either way).
+  dmc_feats_oa.lst / dmc_feats_cw.lst are gone; dmc_feats_cadv.lst only keeps the scout bonus-feat list move.
+- Specific spells/powers: PRESPELL (Excised from the Web of Life: PRESPELL:1,Blight; Betrayal of the Spirit Linked: Animate Dead;
+  Matter Agitation, Control Flames, Control Body, Astral Construct).
+- Repo forms for: wizard specialists (PRESUBCLASS), domains (PREDOMAIN), patron deity (PREDEITY), class skill (PRECSKILL),
+  bardic knowledge / nature sense / poison use / mind blade / shape and throw mind blade / chastise spirits / spirit form /
+  improved flanking / sense elements (PREABILITY), wild shape plant/elemental (DruidWildShapeLVL 12/16), eldritch blast
+  (EldritchBlastDice), +N mind blade (soulknife level), alignments, races, "stat N or lower", "both arcane and divine",
+  "inability to cast spells", Knowledge (any three) 6 ranks, and named feats from any repo book (Hold the Line, Thrall to
+  Demon, Sacrificial Mastery). Harbinger feats require the Mooncalf race.
+- Regions / Nations / Clans: like the repo's regional feats, PREREGION for places and peoples, and race/subrace checks for race
+  entries (e.g. gray elf -> PREMULT:2,[PRERACE:1,Elf],[PREABILITY:1,CATEGORY=Internal,Elf ~ Gray]); "Nation: Any" has none.
+- OCR fixes: "Can 15" -> Con 15, "Base attack bonus +G" -> +6 (inferred), "Dodge. Nimble Flier" -> two feats, "Drow Drow" -> Drow.
+- Five more feats were missing because their type was misread ([PS10NIC], [P510NIC], [PSI0NIC], [METAPS1ONIC]): Align Mind Blade,
+  Cerebremetamagic, Mystic Stability, Silver Mind Blade, Strategic Reassignment. Two-line names fixed: "Initiate" is
+  Faerie Mysteries Initiate, "Linked" is Betrayal of the Spirit Linked.
+Result: a 6th-level Gruwaar rogue qualifies for 85 compendium feats instead of 159. Text-only prerequisites remain only where
+the repo has nothing to check (monster natural attacks, heat attack, energy resistance class ability, story requirements,
+spells/powers with a given descriptor); 97 clauses in total, most of them story/campaign requirements.
+
+Spell-descriptor / school prerequisites (repo forms PRESPELLDESCRIPTOR:<count>,<descriptor>=<min level> and PRESPELLSCHOOL):
+- "Any two spells with the acid / electricity / cold / fire descriptor" -> PRESPELLDESCRIPTOR:2,Acid=0 etc. (Agitated Causticity,
+  Bioelectrical Surge, Solid Freeze, Astral Fire); "ability to cast a spell with the fire (or light) descriptor" ->
+  PRESPELLDESCRIPTOR:1,...; "at least three arcane divination spells" -> PRESPELLSCHOOL:3,Divination=0.
+- Astral Fire's "two fire powers" and Harden Energy's "a force power + a spell with an energy descriptor" combine descriptor
+  checks with a psionic manifester check (PCGen treats powers as spells, so the descriptor count can't tell them apart alone).
+- Dual-Plane Summons: "any summon monster spell" -> PRESPELL:1,Summon Monster I,...,IX.
+Verified in PCGen 6.08 (each prerequisite evaluated separately): a rogue fails both of Agitated Causticity's checks; a 4th-level
+sorcerer knowing acid splash and acid arrow passes the acid-descriptor check but still fails the matter agitation power check.
+Psi-spell feats and sacrifice feats:
+- All nine Psi-Spell feats now require arcane spellcasting and psionic manifesting (PRESPELLTYPE:1,Arcane=0 and
+  PREVARGTEQ:Caster_Level_Highest__Psionic,1), per the compendium: "psi-spell feats require both arcane spell slots and psionic
+  power points". A cleric/psion therefore never qualifies, whatever powers or divine spells he has.
+  Limitation: PRESPELLDESCRIPTOR can't be restricted to arcane spells, so a character who is ALSO an arcane caster could count
+  divine spells of that descriptor.
+- "Ability to prepare and cast <spell>" (Betrayal of the Spirit Linked, Excised from the Web of Life, Verminous Graft) now also
+  requires a caster who prepares spells (PRESPELLCAST:MEMORIZE=Y, alongside the PRESPELL check).
+- Betrayal of the Spirit Linked requires a familiar (its sacrifice is killing and animating your own familiar).
+Verified in PCGen 6.08 (each prerequisite evaluated separately): cleric 5/psion 3 fails the arcane check; wizard 5/psion 3 passes
+arcane and psionic; a rogue fails Betrayal's animate dead and familiar checks; a 7th-level wizard has the familiar.
+Purification feats ("ability to cast remove disease as a spell-like ability": Bane of Decay, Detoxifying Touch, Extra Remove
+Disease, Smite Carrier, Strengthened Resilience, Wholesome Fare): this is now a spell-LIKE ability check instead of PRESPELL
+(PRESPELL also passed for a cleric who can cast the spell): PREMULT:1 of the repo's Paladin ~ Remove Disease, the Spell-Like
+Ability "Remove Disease", the angel / leonal guardinal races, and the Half-Celestial template. (The repo's RemoveDiseaseLVL
+variable is not usable: it stays 0 even for paladins.)
+Verified in PCGen 6.08: paladin 6 qualifies for all four Purification feats tested; cleric 5 and a rogue for none.
+Chaos Music (Perform 4 ranks + bardic music) and Darkness Familiar (a familiar) are real checks: a rogue fails them; a bard
+(with the standard bard subclass) and a sorcerer with a familiar pass.

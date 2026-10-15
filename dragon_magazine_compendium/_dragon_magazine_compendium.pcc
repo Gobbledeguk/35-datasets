@@ -31,8 +31,6 @@ ABILITY:dmc_abilities_methods_rs.lst|PRECAMPAIGN:1,INCLUDES=Races of Stone
 ABILITY:dmc_feats_support_es.lst|!PRECAMPAIGN:1,INCLUDES=Complete Warrior
 ABILITY:dmc_feats_cadv.lst|PRECAMPAIGN:1,INCLUDES=Complete Adventurer
 ABILITY:dmc_feats_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
-ABILITY:dmc_feats_oa.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
-ABILITY:dmc_feats_cw.lst|PRECAMPAIGN:1,INCLUDES=Complete Warrior
 ABILITY:dmc_abilities_classes.lst
 ABILITY:dmc_flaws.lst|PRECAMPAIGN:1,INCLUDES=Unearthed Arcana (Complete)
 ABILITY:dmc_vestiges.lst|PRECAMPAIGN:1,INCLUDES=Tome of Magic
