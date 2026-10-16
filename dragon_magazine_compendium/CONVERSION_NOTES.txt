@@ -773,3 +773,23 @@ spell level, and each raises the spells-known allowance by one at that level, so
 Otiluke's freezing sphere (a page header printed inside its spell list hid it). All bloodlines now add 9 spells except Draconic
 Bloodline (3rd-level "protection from elements" is a 3.0 spell). Fire and Plant Bloodline's lists are unusual (e.g. hypnotism,
 tongues, cloudkill; water breathing, control water) but match the compendium as printed.
+
+----------------------------------------------------------------------
+Vestiges compared with the repo's Tome of Magic vestiges
+----------------------------------------------------------------------
+Structure is identical to tm_abilities.lst / tm_spells.lst: an ability "<level> <Name>" (KEY:Vestige ~ <Name>, OUTPUTNAME:Bind
+Vestige ~ <Name>, CATEGORY:Special Ability, TYPE:Vestige.SpecialQuality, PREVARGTEQ:BinderMaxVestigeLVL,<level>,
+SPELLS:Bind Vestiges|TIMES=1|CASTERLEVEL=1|Bind Vestige ~ <Name>, COST:0, ASPECT:Binding DC|.., ASPECT:Special Requirement|..)
+plus a "spell" (KEY:Bind Vestige ~ <Name>, TYPE:Vestige, RANGE:Personal, TARGETAREA:You, DURATION:24 hours, DESC lines for
+sign, influence and granted abilities). Epic vestiges' binding DC is "--" because the compendium prints "—".
+Added to match the repo's mechanical touches:
+- Granted skill bonuses as BONUS:SITUATION|<skill>=Bound <vestige>|n (as ToM's Leraje and Paimon): Astaroth (both versions),
+  Desharis, Kas, The Triad (Diplomacy, Sense Motive), Vanus. Not tagged: Astaroth's +4 on all Craft checks and the extra
+  bonuses against evil outsiders / evil creatures, The Triad's Psicraft (Expanded Psionics skill), Primus's conditional +1.
+- Scaling values in granted-ability descriptions use formulas as in ToM (e.g. Amon's breath): "DC 10 + 1/2 your effective
+  binder level + your <ability> modifier" -> "DC %1|BinderEffectiveLVL/2+10+CHA", "caster level equals your effective binder
+  level" -> %1|BinderEffectiveLVL, "N feet per effective binder level (maximum M feet)" -> min(N*BinderEffectiveLVL,M),
+  "equal to your effective binder level" -> BinderEffectiveLVL (11 descriptions in 7 vestiges).
+No vestige grants sneak attack (Kas and Gaia only mention it), so nothing like ToM's Malphas was needed.
+Verified in PCGen 6.08: a 7th-level binder (Cha 18) sees Ahazu's Abduction "Will save (DC 17)" and blindsight "35 feet";
+Kas's +4 Bluff registers as the situational bonus "Bound Kas". Loads without DMC errors.
