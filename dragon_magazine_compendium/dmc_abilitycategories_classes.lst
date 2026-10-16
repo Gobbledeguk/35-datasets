@@ -1,19 +1,8 @@
 # Class feature categories
-# Source: The (mostly) Complete Dragon Magazine Compendium - Character Classes (new base classes).
-# SOURCEPAGE = compendium PDF page. Built after the Dragon Magazine 336 class data in bahamutdragon/pcgen.
+# Source: The (mostly) Complete Dragon Magazine Compendium - Character Classes. Rebuilt class by class on the repo's own patterns.
 
-ABILITYCATEGORY:Battle Dancer Class Feature	CATEGORY:Special Ability	TYPE:Battle Dancer Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Death Master Class Feature	CATEGORY:Special Ability	TYPE:Death Master Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Jester Class Feature	CATEGORY:Special Ability	TYPE:Jester Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Mariner Class Feature	CATEGORY:Special Ability	TYPE:Mariner Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
 ABILITYCATEGORY:Master Class Feature	CATEGORY:Special Ability	TYPE:Master Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Mountebank (DMC) Class Feature	CATEGORY:Special Ability	TYPE:Mountebank (DMC) Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Mystic (DMC) Class Feature	CATEGORY:Special Ability	TYPE:Mystic (DMC) Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Nightstalker Class Feature	CATEGORY:Special Ability	TYPE:Nightstalker Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Noble (DMC) Class Feature	CATEGORY:Special Ability	TYPE:Noble (DMC) Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Savant Class Feature	CATEGORY:Special Ability	TYPE:Savant Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Sha'ir Class Feature	CATEGORY:Special Ability	TYPE:Sha'ir Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Shaman Class Feature	CATEGORY:Special Ability	TYPE:Shaman Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Sohei (DMC) Class Feature	CATEGORY:Special Ability	TYPE:Sohei (DMC) Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Urban Druid Class Feature	CATEGORY:Special Ability	TYPE:Urban Druid Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Master Focus	CATEGORY:Special Ability	TYPE:MasterFocus	VISIBLE:YES	EDITABLE:YES	EDITPOOL:NO	PLURAL:Master Foci
+ABILITYCATEGORY:Master Primary Focus	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	CATEGORY:Special Ability	TYPE:MasterPrimaryFocus	PLURAL:Master Primary Focus	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Master Secondary Focus	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	CATEGORY:Special Ability	TYPE:MasterSecondaryFocus	PLURAL:Master Secondary Focus	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Master Knack	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	CATEGORY:Special Ability	TYPE:MasterKnack	PLURAL:Master Knacks	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Master Bonus Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	POOL:Pool_MasterFeat	CATEGORY:FEAT	ABILITYLIST:Acrobatic|Agile|Alertness|Animal Affinity|Athletic|Deceitful|Deft Hands|Diligent|Greater Improvise Weapon|Improvise Weapon|Investigator|Magical Aptitude|Negotiator|Nimble Fingers|Persuasive|Self-Sufficient|Skill Focus|Stealthy	PLURAL:Master Bonus Feats	DISPLAYLOCATION:Feats

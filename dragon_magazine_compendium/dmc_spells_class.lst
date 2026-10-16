@@ -28,7 +28,6 @@ Caustic Disdain.MOD	CLASSES:Cleric,Sorcerer,Wizard=4
 Cavalry Call.MOD	CLASSES:Sorcerer,Wizard=2
 Chalkboard.MOD	CLASSES:Sorcerer,Wizard=0
 Circle of Cold.MOD	CLASSES:Sorcerer,Wizard=4
-Citygate.MOD	CLASSES:Urban Druid=9
 Cloak of Khyber.MOD	CLASSES:Sorcerer,Wizard=3
 Cold of the Grave.MOD	CLASSES:Cleric,Sorcerer,Wizard=2
 Crown of Despair.MOD	CLASSES:Sorcerer,Wizard=7
@@ -81,7 +80,6 @@ Groundsmoke.MOD	CLASSES:Druid,Sorcerer,Wizard=0|Ranger=1
 Guiding Star.MOD	CLASSES:Druid,Sorcerer,Wizard=1
 Harmonic Void (DMC).MOD	CLASSES:Bard=5
 Hextor's Fiery Eyes.MOD	CLASSES:Blackguard=4|Cleric=5
-Honorable Weapon.MOD	CLASSES:Shaman,Sohei (DMC)=2
 Icefane Corpse.MOD	CLASSES:Sorcerer,Wizard=3
 Icy Sphere.MOD	CLASSES:Sorcerer,Wizard=5
 Imbrue.MOD	CLASSES:Sorcerer,Wizard=9
@@ -118,10 +116,6 @@ Pillar of Sand.MOD	CLASSES:Druid,Sorcerer,Wizard=2
 Plague Cloud.MOD	CLASSES:Cleric,Druid=4|Sorcerer,Wizard=5
 Rain of Terror.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=3
 Rainbow.MOD	CLASSES:Cleric=6	DOMAINS:Radiance=6
-Repair Critical Damage (Mass).MOD	CLASSES:Urban Druid=8
-Repair Light Damage (Mass).MOD	CLASSES:Urban Druid=5
-Repair Moderate Damage (Mass).MOD	CLASSES:Urban Druid=6
-Repair Serious Damage (Mass).MOD	CLASSES:Urban Druid=7
 Revenge of the Land.MOD	CLASSES:Druid=5
 Rime.MOD	CLASSES:Sorcerer,Wizard=1
 Rolling Fire.MOD	CLASSES:Druid,Sorcerer,Wizard=3
@@ -162,7 +156,6 @@ Summon Monstrous Horde.MOD	CLASSES:Bard,Cleric,Sorcerer,Wizard=3
 Summon the Pack and Herd.MOD	CLASSES:Druid,Cleric,Sorcerer,Wizard=3
 Sun Fathers Face.MOD	CLASSES:Cleric,Druid,Paladin,Ranger=1
 Sunmace.MOD	CLASSES:Cleric,Druid=2
-Susurrus of the City.MOD	CLASSES:Urban Druid=5
 Swallow.MOD	CLASSES:Sorcerer,Wizard=8
 Teleport Legion.MOD	CLASSES:Sorcerer,Wizard=6
 Temporal Jolt.MOD	CLASSES:Sorcerer,Wizard=4

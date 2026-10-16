@@ -793,3 +793,33 @@ Added to match the repo's mechanical touches:
 No vestige grants sneak attack (Kas and Gaia only mention it), so nothing like ToM's Malphas was needed.
 Verified in PCGen 6.08: a 7th-level binder (Cha 18) sees Ahazu's Abduction "Will save (DC 17)" and blindsight "35 feet";
 Kas's +4 Bluff registers as the situational bonus "Bound Kas". Loads without DMC errors.
+
+======================================================================
+CLASSES - rebuilt from scratch, one class at a time
+======================================================================
+The repo's Dragon Compendium Volume 1 contains only one class (the Force Missile Mage, a prestige class), so there is no repo
+version of any of our base classes to match; the classes are rebuilt on the repo's own patterns instead. The old 14 classes
+were removed; dmc_classes.lst / dmc_abilities_classes.lst / dmc_abilitycategories_classes.lst now contain only the rebuilt
+classes. Spell-list entries for not-yet-rebuilt classes (Urban Druid, Shaman, Sohei) are held back until those are rebuilt.
+Prestige classes (scanned pages without text) are out of scope for now.
+
+MASTER (pp. 345-350) - built by master_build.py
+- Class lines as the PHB Rogue: HD d6, PC.Base.NonCaster, BAB 3/4, good Will, poor Fort/Ref (with the alternate/fractional
+  progression switches), 8 skill points. Class skills come from the chosen focus.
+- Weapon and Armor Proficiency: simple weapons, light armor, shields except tower (PHB Cleric form).
+- Primary Focus (1st): selection category "Master Primary Focus" - Craftsman, Performer, Professional or Sage; each grants its
+  class skills (CSKILL) and a competence bonus on its key skill (Craft / Perform / Profession / Knowledge) of +2, +4 from 7th.
+- Secondary Focus (7th): category "Master Secondary Focus" (cannot repeat the primary): adds its class skills and +2 competence.
+- Knacks (1st, 4th, 7th, 10th, 13th, 16th, 19th): category "Master Knack" (like the PHB Rogue's special abilities); each knack is
+  only available with the matching primary or secondary focus, plus its own prerequisites (skill ranks, earlier knacks,
+  PRELANG:4,ANY for Linguist). Repeatable knacks use MULT/CHOOSE (Word of Mouth, Item of Distinction, Celebrity, Loyal Clientele,
+  Tactical Advantage; Coordinate and Bluster stack). Lore feeds the PHB bardic knowledge variables (stacks with bard levels).
+  Situational knacks are toggles: Inspiration / Greater Inspiration / Coordinate (allies, ANYPC), Fast-Talk, Tactical Advantage.
+- Bonus Feat (2nd, 5th, ..., 20th): feat category "Master Bonus Feat" with a pool variable (like the PHB Fighter's), limited to
+  the 18 listed feats. Improvise Weapon and Greater Improvise Weapon (Races of Krynn) are in dmc_feats_support.lst, because the
+  repo's Dragonlance _feats.lst that defines them is not loaded by any data set.
+- Skill Mastery (10th): reuses the PHB Rogue's Skill Mastery category, 3 + Int choices.
+Verified in PCGen 6.08 (10th-level master, Int 14, Craftsman primary / Sage secondary): BAB +7, base saves 3/3/7; pools: 1 primary,
+1 secondary, 4 knacks, 3 bonus feats, 5 Skill Mastery; Appraise and Spellcraft class skills, Tumble not; Craft 6 ranks = 12
+(+4 competence), Knowledge (history) 4 ranks = 8 (+2); knacks: Item of Distinction, Word of Mouth and Lore available, Item of
+Renown/Fame, Linguist, Tactical Advantage and all Performer/Professional knacks not; bonus feats limited to the list.
