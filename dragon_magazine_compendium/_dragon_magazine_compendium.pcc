@@ -17,28 +17,19 @@ ISOGL:NO
 INFOTEXT:Races, feats, flaws, fighting styles, arms & equipment, base classes, vestiges, spells, domains and magic items from "The (mostly) Complete Dragon Magazine Compendium", a fan compilation of Dragon Magazine 3.0/3.5 content. SOURCEPAGE refers to the compendium PDF. Athasian races need the Expanded Psionics Handbook; Umbragen needs Complete Arcane; Insectare needs Complete Adventurer; flaws need Unearthed Arcana; vestiges need Tome of Magic.
 
 ABILITYCATEGORY:dmc_abilitycategories.lst
-ABILITYCATEGORY:dmc_abilitycategories_classes.lst
-ABILITYCATEGORY:dmc_abilitycategories_feats.lst
 ABILITYCATEGORY:dmc_abilitycategories_cadv.lst|PRECAMPAIGN:1,INCLUDES=Complete Adventurer
 ABILITY:dmc_abilities.lst
 ABILITY:dmc_abilities_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
-ABILITY:dmc_spelltemplates.lst
 ABILITY:dmc_feats.lst
-ABILITY:dmc_feats_support.lst
-ABILITY:dmc_abilities_methods.lst
-ABILITY:dmc_abilities_methods_rw.lst|PRECAMPAIGN:1,INCLUDES=Races of the Wild
-ABILITY:dmc_abilities_methods_rs.lst|PRECAMPAIGN:1,INCLUDES=Races of Stone
-ABILITY:dmc_feats_support_es.lst|!PRECAMPAIGN:1,INCLUDES=Complete Warrior
-ABILITY:dmc_feats_cadv.lst|PRECAMPAIGN:1,INCLUDES=Complete Adventurer
-ABILITY:dmc_feats_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
-ABILITY:dmc_abilities_classes.lst
+ABILITY:dmc_abilities_rw.lst|PRECAMPAIGN:1,INCLUDES=Races of the Wild
+ABILITY:dmc_abilities_rs.lst|PRECAMPAIGN:1,INCLUDES=Races of Stone
+ABILITY:dmc_feats_nocw.lst|!PRECAMPAIGN:1,INCLUDES=Complete Warrior
+ABILITY:dmc_abilities_cadv.lst|PRECAMPAIGN:1,INCLUDES=Complete Adventurer
 ABILITY:dmc_flaws.lst|PRECAMPAIGN:1,INCLUDES=Unearthed Arcana (Complete)
 ABILITY:dmc_vestiges.lst|PRECAMPAIGN:1,INCLUDES=Tome of Magic
 SPELL:dmc_vestiges_spells.lst|PRECAMPAIGN:1,INCLUDES=Tome of Magic
-ABILITY:dmc_abilities_domains.lst
-ABILITY:dmc_abilities_domains_sc.lst|PRECAMPAIGN:1,INCLUDES=Spell Compendium
-ABILITY:dmc_abilities_domains_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
-ABILITY:dmc_abilities_domains_bovd.lst|PRECAMPAIGN:1,INCLUDES=Book of Vile Darkness
+ABILITY:dmc_abilities_sc.lst|PRECAMPAIGN:1,INCLUDES=Spell Compendium
+ABILITY:dmc_abilities_bovd.lst|PRECAMPAIGN:1,INCLUDES=Book of Vile Darkness
 DOMAIN:dmc_domains.lst
 SPELL:dmc_spells.lst
 SPELL:dmc_spells_class.lst
@@ -48,15 +39,11 @@ CLASS:dmc_classes.lst
 LANGUAGE:dmc_languages.lst
 WEAPONPROF:dmc_profs_weapon.lst
 ARMORPROF:dmc_profs_armor.lst
-EQUIPMENT:dmc_equip_weapons.lst
-EQUIPMENT:dmc_equip_armor.lst
+EQUIPMENT:dmc_equip_weapons_armor.lst
 EQUIPMENT:dmc_equip.lst
 EQUIPMENT:dmc_equip_power_components.lst
-EQUIPMENT:dmc_magic_weapons.lst
-EQUIPMENT:dmc_magic_armor.lst
-EQUIPMENT:dmc_magic_items.lst
+EQUIPMENT:dmc_equip_magic.lst
 EQUIPMOD:dmc_equipmods.lst
-EQUIPMOD:dmc_magic_eqmods.lst
 RACE:dmc_races.lst
 RACE:dmc_races_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
 RACE:dmc_races_ca.lst|PRECAMPAIGN:1,INCLUDES=Complete Arcane

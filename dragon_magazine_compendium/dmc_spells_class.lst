@@ -1,8 +1,8 @@
 # Class and domain spell lists (PHB-style .MOD lines; includes core spells on the new domains)
 # Source: The (mostly) Complete Dragon Magazine Compendium - Spells (compendium pp. 1280-1362).
 # DESC ends with the original Dragon/Dungeon Magazine issue and article. SOURCEPAGE = compendium PDF page.
-
 ###BLOCK: MASTER
+
 Aging Touch.MOD	CLASSES:Sorcerer,Wizard=3
 Anamensis.MOD	CLASSES:Bard=3|Sorcerer,Wizard=4
 Animate Instrument (DMC).MOD	CLASSES:Bard=2

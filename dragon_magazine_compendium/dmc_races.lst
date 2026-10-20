@@ -2,8 +2,8 @@
 # Source: The (mostly) Complete Dragon Magazine Compendium (fan compilation of Dragon Magazine 3.0/3.5 content).
 # SOURCEPAGE values refer to page numbers of the compendium PDF.
 # Built for the Bahamut35e game mode (bahamutdragon/pcgen).
-
 ###Block: Races
+
 Axani	SOURCEPAGE:p.3	SIZE:M	MOVE:Walk,30	FACE:5	REACH:5	LEGS:2	HANDS:2	RACETYPE:Outsider	RACESUBTYPE:Native	TYPE:Outsider.PC	BONUS:STAT|INT|2	BONUS:STAT|WIS|2	BONUS:VAR|DarkvisionRange|60|TYPE=Base	FAVCLASS:Monk	AUTO:LANG|Common	LANGBONUS:ALL	LEVELADJUSTMENT:1	BONUS:VAR|ColdResistanceBonus|5	ABILITY:Special Ability|AUTOMATIC|Resistance to Cold	BONUS:VAR|SonicResistanceBonus|5	ABILITY:Special Ability|AUTOMATIC|Resistance to Sonic	SPELLS:Innate|TIMES=1|CASTERLEVEL=TL|Calm Emotions,12+CHA	BONUS:SKILL|Diplomacy,Spot|2|TYPE=Racial	STARTFEATS:1	FACT:HasFirstLevelFeat|True	ABILITY:Internal|AUTOMATIC|Race Traits ~ Axani
 Cansin	SOURCEPAGE:p.3	SIZE:M	MOVE:Walk,30	FACE:5	REACH:5	LEGS:2	HANDS:2	RACETYPE:Outsider	RACESUBTYPE:Native	TYPE:Outsider.PC	BONUS:STAT|INT|2	BONUS:STAT|CHA|2	BONUS:VAR|DarkvisionRange|60|TYPE=Base	FAVCLASS:Sorcerer	AUTO:LANG|Common	LANGBONUS:ALL	LEVELADJUSTMENT:1	BONUS:VAR|AcidResistanceBonus|5	ABILITY:Special Ability|AUTOMATIC|Resistance to Acid	BONUS:VAR|FireResistanceBonus|5	ABILITY:Special Ability|AUTOMATIC|Resistance to Fire	SPELLS:Innate|TIMES=1|CASTERLEVEL=TL|Entropic Shield,11+CHA	BONUS:SKILL|Bluff,Search|2|TYPE=Racial	STARTFEATS:1	FACT:HasFirstLevelFeat|True	ABILITY:Internal|AUTOMATIC|Race Traits ~ Cansin
 Dust Para-Genasi	SOURCEPAGE:p.4	SIZE:M	MOVE:Walk,30	FACE:5	REACH:5	LEGS:2	HANDS:2	RACETYPE:Outsider	RACESUBTYPE:Native	TYPE:Outsider.PC	BONUS:STAT|DEX|4	BONUS:STAT|INT|2	BONUS:STAT|CON|-2	BONUS:STAT|CHA|-2	BONUS:VAR|DarkvisionRange|60|TYPE=Base	FAVCLASS:Rogue	AUTO:LANG|Common	LANGBONUS:ALL	LEVELADJUSTMENT:1	STARTFEATS:1	FACT:HasFirstLevelFeat|True	ABILITY:Internal|AUTOMATIC|Race Traits ~ Dust Para-Genasi

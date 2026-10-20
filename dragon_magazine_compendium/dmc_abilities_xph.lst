@@ -1,10 +1,7 @@
-# Race trait abilities for Athasian races (requires Expanded Psionics Handbook)
-# Source: The (mostly) Complete Dragon Magazine Compendium (fan compilation of Dragon Magazine 3.0/3.5 content).
-# SOURCEPAGE values refer to page numbers of the compendium PDF.
-# Built for the Bahamut35e game mode (bahamutdragon/pcgen).
+# Dragon Magazine Compendium - dmc_abilities_xph.lst
+# (assembled from: dmc_abilities_xph.lst, dmc_abilities_domains_xph.lst, dmc_feats_xph.lst)
 
-
-###Block: Athasian Aarakocra
+###Block: Race trait abilities for Athasian races (requires Expanded Psionics Handbook)
 Race Traits ~ Athasian Aarakocra	CATEGORY:Internal	ABILITY:Special Ability|AUTOMATIC|TYPE=AthasianAarakocra Race Trait
 Inborn Power	KEY:Athasian Aarakocra ~ Inborn Power	CATEGORY:Special Ability	TYPE:AthasianAarakocra Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.23	DESC:Gains 3 extra power points at 1st level and can manifest Elfsight as an inborn power (manifester level equals character level; save DC uses Charisma, or the key ability of a psionic class if higher). If you have a psionic class, add the points to your pool and the power to your powers known.
 Flight	KEY:Athasian Aarakocra ~ Flight	CATEGORY:Special Ability	TYPE:AthasianAarakocra Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.23	DESC:Fly speed 90 ft. (average maneuverability).
@@ -95,3 +92,11 @@ Leap	KEY:Athasian Thri-Kreen ~ Leap	CATEGORY:Special Ability	TYPE:AthasianThriKr
 Weapon Familiarity	KEY:Athasian Thri-Kreen ~ Weapon Familiarity	CATEGORY:Special Ability	TYPE:AthasianThriKreen Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.35	DESC:The gythka and chatkcha are martial weapons for thri-kreen.
 Psi-Like Abilities	KEY:Athasian Thri-Kreen ~ Psi-Like Abilities	CATEGORY:Special Ability	TYPE:AthasianThriKreen Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.35	DESC:3/day chameleon, know direction and location; 1/day greater concealing amorpha, metaphysical claw. Manifester level 1/2 Hit Dice (minimum 1st). 1 bonus power point.
 Desert Camouflage	KEY:Athasian Thri-Kreen ~ Desert Camouflage	CATEGORY:Special Ability	TYPE:AthasianThriKreen Race Trait.Race Trait.SpecialQuality	SOURCEPAGE:p.35	DESC:+4 racial bonus on Hide checks in sandy or arid settings.
+
+
+###Block: Gem Dragon domain psionic class skills (loads only with Expanded Psionics Handbook)
+CATEGORY=Domain|Domain Power ~ Gem Dragon.MOD	CSKILL:Autohypnosis|Knowledge (Psionics)|Psicraft
+
+
+###Block: Feat additions that need Expanded Psionics Handbook skills (loads only with that book)
+CATEGORY=FEAT|Hypnotic Focus.MOD	CSKILL:Autohypnosis
