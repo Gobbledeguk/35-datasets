@@ -1,8 +1,0 @@
-# Extra Stunning (Complete Warrior format) for when Complete Warrior is NOT loaded
-# Source: The (mostly) Complete Dragon Magazine Compendium - Feats, Flaws & Styles (compendium pp. 1058-1176).
-# DESC ends with the original Dragon Magazine issue and article. SOURCEPAGE = compendium PDF page.
-# Prerequisites that could not be expressed as PCGen PRE tags are listed in PRETEXT.
-
-Extra Stunning	CATEGORY:FEAT	TYPE:General	SOURCELONG:Complete Warrior	SOURCESHORT:CW	PREMULT:2,[PREABILITY:1,CATEGORY=FEAT,Stunning Fist],[PRETOTALAB:2]	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	DESC:You gain extra stunning attacks when fighting unarmed. [Called Extra Stunning Attacks in Sword & Fist / Oriental Adventures]	BENEFIT:You gain the ability to make three extra stunning attacks per day. You may take this feat multiple times.
-CATEGORY=FEAT|Black Panda Mastery II.MOD	PREABILITY:1,CATEGORY=FEAT,Extra Stunning
-CATEGORY=FEAT|Temerad Mastery II.MOD	PREABILITY:1,CATEGORY=FEAT,Extra Stunning

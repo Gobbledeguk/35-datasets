@@ -1,5 +1,0 @@
-# Domain spells from Book of Vile Darkness (loads only with that book)
-# Source: The (mostly) Complete Dragon Magazine Compendium - Spells (compendium pp. 1280-1362).
-# DESC ends with the original Dragon/Dungeon Magazine issue and article. SOURCEPAGE = compendium PDF page.
-
-CATEGORY=Domain|Domain Spells ~ Hunger (DMC).MOD	SPELLLEVEL:DOMAIN|Hunger (DMC)=1|Slow Consumption|Hunger (DMC)=7|Whirlwind of Teeth|Hunger (DMC)=8|Steal Life

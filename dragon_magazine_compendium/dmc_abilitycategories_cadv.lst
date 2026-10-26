@@ -1,6 +1,0 @@
-# Scout bonus feat list extended by this set (loads only with Complete Adventurer)
-# Source: The (mostly) Complete Dragon Magazine Compendium - Feats, Flaws & Styles (compendium pp. 1058-1176).
-# DESC ends with the original Dragon Magazine issue and article. SOURCEPAGE = compendium PDF page.
-# Prerequisites that could not be expressed as PCGen PRE tags are listed in PRETEXT.
-
-ABILITYCATEGORY:Scout Bonus Feat (DMC)	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:FEAT	ABILITYLIST:Acrobatic|Agile|Alertness|Athletic|Blind-Fight|Brachiation|Combat Expertise|Danger Sense|Dodge|Endurance|Far Shot|Great Fortitude|Hear the Unseen|Improved Initiative|Improved Swimming|Iron Will|Lightning Reflexes|Mobility|Point Blank Shot|Precise Shot|Quick Draw|Quick Reconnoiter|Rapid Reload|Shot on the Run|Skill Focus|Spring Attack|Track|Acrobatic Skirmisher|Hinder|Improved Acrobatic Skirmisher|Mounted Fighting|Passive Reconnoiter|Ranged Skirmisher|Scout the Path	PLURAL:Scout Bonus Feats	DISPLAYLOCATION:Feats

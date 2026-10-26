@@ -1,8 +1,0 @@
-# Class feature categories
-# Source: The (mostly) Complete Dragon Magazine Compendium - Character Classes. Rebuilt class by class on the repo's own patterns.
-
-ABILITYCATEGORY:Master Class Feature	CATEGORY:Special Ability	TYPE:Master Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Master Primary Focus	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	CATEGORY:Special Ability	TYPE:MasterPrimaryFocus	PLURAL:Master Primary Focus	DISPLAYLOCATION:Class Features
-ABILITYCATEGORY:Master Secondary Focus	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	CATEGORY:Special Ability	TYPE:MasterSecondaryFocus	PLURAL:Master Secondary Focus	DISPLAYLOCATION:Class Features
-ABILITYCATEGORY:Master Knack	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	CATEGORY:Special Ability	TYPE:MasterKnack	PLURAL:Master Knacks	DISPLAYLOCATION:Class Features
-ABILITYCATEGORY:Master Bonus Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	POOL:Pool_MasterFeat	CATEGORY:FEAT	ABILITYLIST:Acrobatic|Agile|Alertness|Animal Affinity|Athletic|Deceitful|Deft Hands|Diligent|Greater Improvise Weapon|Improvise Weapon|Investigator|Magical Aptitude|Negotiator|Nimble Fingers|Persuasive|Self-Sufficient|Skill Focus|Stealthy	PLURAL:Master Bonus Feats	DISPLAYLOCATION:Feats

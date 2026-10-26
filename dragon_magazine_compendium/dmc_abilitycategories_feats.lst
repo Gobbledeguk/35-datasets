@@ -1,9 +1,0 @@
-# Wizard bonus feat lists extended by the Method feats
-# Source: The (mostly) Complete Dragon Magazine Compendium - Feats, Flaws & Styles (compendium pp. 1058-1176).
-# DESC ends with the original Dragon Magazine issue and article. SOURCEPAGE = compendium PDF page.
-# Prerequisites that could not be expressed as PCGen PRE tags are listed in PRETEXT.
-
-ABILITYCATEGORY:Greyhawk Method Wizard Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	POOL:Pool_GreyhawkWizardFeat	CATEGORY:FEAT	TYPE:Wizard.Metamagic.ItemCreation	ABILITYLIST:Spell Mastery|Combat Casting|Greater Spell Focus|Greater Spell Penetration|Magical Aptitude|Spell Focus|Spell Penetration	PLURAL:Wizard Bonus Feats (Greyhawk Method)	DISPLAYLOCATION:Feats
-ABILITYCATEGORY:Nexus Method Wizard Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	POOL:Pool_NexusWizardFeat	CATEGORY:FEAT	TYPE:Wizard.Metamagic.ItemCreation	ABILITYLIST:Spell Mastery|Augment Summoning|Fiendsign|Greater Spell Focus|Greater Spell Penetration|Spell Focus|Spell Penetration	PLURAL:Wizard Bonus Feats (Nexus Method)	DISPLAYLOCATION:Feats
-ABILITYCATEGORY:Silent Method Wizard Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	POOL:Pool_SilentWizardFeat	CATEGORY:FEAT	TYPE:Wizard.Metamagic.ItemCreation	ABILITYLIST:Spell Mastery|Combat Casting|Greater Spell Focus|Greater Spell Penetration|Magical Aptitude|Spell Focus|Spell Penetration	PLURAL:Wizard Bonus Feats (Silent Method)	DISPLAYLOCATION:Feats
-ABILITYCATEGORY:Sagacious Method Wizard Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	POOL:Pool_SagaciousWizardFeat	CATEGORY:FEAT	TYPE:Wizard.Metamagic.ItemCreation	ABILITYLIST:Spell Mastery|Eschew Materials|Greater Spell Focus|Greater Spell Penetration|Magical Aptitude|Spell Focus|Spell Penetration	PLURAL:Wizard Bonus Feats (Sagacious Method)	DISPLAYLOCATION:Feats
