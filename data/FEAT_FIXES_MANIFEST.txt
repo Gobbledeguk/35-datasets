@@ -1,0 +1,120 @@
+BahamutDragon PCGen data – feat review fixes
+Overlay for https://github.com/bahamutdragon/pcgen (base commit d353e9b): unpack in the repository root;
+every file replaces the file of the same path (no new files except where noted).
+
+71 files in 57 book folders:
+
+data/35e/green_ronin/the_psychics_handbook/
+    tph_feats.lst
+data/35e/kenzer_and_co/kalamar/players_guide/
+    kokpg_abilities_feat.lst
+data/35e/paizo/dragon_magazine/338/
+    dm338_abilities_feat.lst
+data/35e/sword_and_sorcery/campaign_setting/ravenloft/ravenloft_players_handbook/
+    rph_feats.lst
+data/35e/valar_project/book_of_erotic_fantasy/
+    boef_classes.lst, boef_equipmods.lst, boef_feats.lst
+data/35e/wizards_of_the_coast/campaign_settings/dragonlance/campaign/
+    dcs_feats.lst
+data/35e/wizards_of_the_coast/campaign_settings/eberron/campaign/
+    ecs_feats.lst
+data/35e/wizards_of_the_coast/campaign_settings/eberron/magic_of_eberron/
+    moe_abilities_feat.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/champions_of_ruin/
+    cr_feats.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/champions_of_valor/
+    cv_feats.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/city_of_splendors_waterdeep/
+    csw_feats.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/magic_of_faerun/
+    mag_feats.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/players_guide_to_faerun/
+    pg_feats.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/races_of_faerun/
+    rac_feats.lst, rac_kits.lst, rac_skills.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/shining_south/
+    shs_feats.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/unapproachable_east/
+    una_feats.lst, una_kits.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/underdark/
+    und_feats.lst
+data/35e/wizards_of_the_coast/campaign_settings/ghostwalk/
+    gw_feats.lst
+data/35e/wizards_of_the_coast/campaign_settings/oriental_adventures/oriental_adventures/
+    oa_abilities.lst
+data/35e/wizards_of_the_coast/core/dungeon_masters_guide/
+    dmg_abilities.lst, dmg_feats.lst
+data/35e/wizards_of_the_coast/core/players_handbook/
+    ph_feats.lst
+data/35e/wizards_of_the_coast/supplement/book_of_exalted_deeds/
+    be_feats.lst
+data/35e/wizards_of_the_coast/supplement/cityscape/
+    ci_abilities.lst, ci_feats.lst
+data/35e/wizards_of_the_coast/supplement/complete_adventurer/
+    cad_feats.lst
+data/35e/wizards_of_the_coast/supplement/complete_arcane/
+    car_feats.lst
+data/35e/wizards_of_the_coast/supplement/complete_champion/
+    cc_feats.lst
+data/35e/wizards_of_the_coast/supplement/complete_divine/
+    cd_feats.lst
+data/35e/wizards_of_the_coast/supplement/complete_mage/
+    cm_feats.lst
+data/35e/wizards_of_the_coast/supplement/complete_psionic/
+    cp_feats.lst
+data/35e/wizards_of_the_coast/supplement/complete_scoundrel/
+    cs_feats.lst
+data/35e/wizards_of_the_coast/supplement/complete_warrior/
+    cw_feats.lst
+data/35e/wizards_of_the_coast/supplement/draconomicon/
+    dr_feats.lst
+data/35e/wizards_of_the_coast/supplement/dragon_magic/
+    dm_abilities_feat.lst
+data/35e/wizards_of_the_coast/supplement/drow_of_the_underdark/
+    dru_feats.lst
+data/35e/wizards_of_the_coast/supplement/dungeon_masters_guide_2/
+    dmg2_feats.lst
+data/35e/wizards_of_the_coast/supplement/dungeonscape/
+    du_abilities.lst, du_feats.lst
+data/35e/wizards_of_the_coast/supplement/epic_level_handbook/
+    el_feats.lst
+data/35e/wizards_of_the_coast/supplement/expanded_psionics_handbook/
+    xph_feats.lst
+data/35e/wizards_of_the_coast/supplement/fiendish_codex_ii/
+    fci_feats.lst
+data/35e/wizards_of_the_coast/supplement/heroes_of_battle/
+    hb_feats.lst
+data/35e/wizards_of_the_coast/supplement/heroes_of_horror/
+    hh_feats.lst
+data/35e/wizards_of_the_coast/supplement/lords_of_madness/
+    lom_abilities.lst, lom_classes.lst, lom_feats.lst
+data/35e/wizards_of_the_coast/supplement/magic_of_incarnum/
+    moi_feats.lst
+data/35e/wizards_of_the_coast/supplement/monster_manual_3/
+    mm3_feats.lst
+data/35e/wizards_of_the_coast/supplement/players_handbook_2/
+    ph2_feats.lst
+data/35e/wizards_of_the_coast/supplement/races_of_destiny/
+    rd_feats.lst
+data/35e/wizards_of_the_coast/supplement/races_of_stone/
+    rs_feats.lst
+data/35e/wizards_of_the_coast/supplement/races_of_the_dragon/
+    rdr_feats.lst
+data/35e/wizards_of_the_coast/supplement/races_of_the_wild/
+    rw_classes.lst, rw_feats.lst
+data/35e/wizards_of_the_coast/supplement/savage_species/
+    ss_feats.lst
+data/35e/wizards_of_the_coast/supplement/stormwrack/
+    sto_feats.lst
+data/35e/wizards_of_the_coast/supplement/tome_of_battle/
+    tob_feats.lst
+data/35e/wizards_of_the_coast/supplement/tome_of_magic/
+    tm_feats.lst
+data/35e/wizards_of_the_coast/supplement/unearthed_arcana/
+    ua_classes.lst, ua_feats.lst
+data/35e/wizards_of_the_coast/supplement/weapons_of_legacy/
+    wl_feats.lst, wl_legacyitem_template.lst
+data/35e/wizards_of_the_coast/web/fey_feature/
+    ff_feats.lst
+data/35e/wizards_of_the_coast/web/the_minds_eye/
+    tme_classes.lst, tme_feats.lst
