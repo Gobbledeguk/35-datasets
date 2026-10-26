@@ -6,4 +6,8 @@ Updated conversion notes can be found in the repository.
 
 Updated the repository to also contain a data folder which houses updated versions of the 35e folders from BahamuthDragon where I'm attempting to align feats to the tagged requirements, making PRETEXT requirements into actual, machine checkable requirements.
 
+BahamutDragon PCGen data – feat review fixes
+Overlay for https://github.com/bahamutdragon/pcgen (base commit d353e9b): unpack in the repository root;
+every file replaces the file of the same path (no new files except where noted).
+
 Please create issues if you find any issues - and I'm sure you will.
