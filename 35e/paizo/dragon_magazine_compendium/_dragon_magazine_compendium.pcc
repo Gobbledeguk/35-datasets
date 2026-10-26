@@ -1,0 +1,56 @@
+CAMPAIGN:Dragon Magazine Compendium (DMC)
+KEY:Dragon Magazine Compendium
+GAMEMODE:35e|Bahamut35e
+PRECAMPAIGN:1,INCLUDESBOOKTYPE=Core35e
+GENRE:Fantasy
+BOOKTYPE:Supplement
+SETTING:Dungeons & Dragons
+TYPE:Paizo.Supplement
+STATUS:ALPHA
+PUBNAMELONG:Paizo
+PUBNAMESHORT:Paizo
+PUBNAMEWEB:http://www.paizo.com
+SOURCELONG:The (mostly) Complete Dragon Magazine Compendium
+SOURCESHORT:DMC
+SOURCEWEB:http://www.paizo.com
+ISOGL:NO
+INFOTEXT:Races, feats, flaws, fighting styles, arms & equipment, base classes, vestiges, spells, domains and magic items from "The (mostly) Complete Dragon Magazine Compendium", a fan compilation of Dragon Magazine 3.0/3.5 content. SOURCEPAGE refers to the compendium PDF. Athasian races need the Expanded Psionics Handbook; Umbragen needs Complete Arcane; Insectare needs Complete Adventurer; flaws need Unearthed Arcana; vestiges need Tome of Magic.
+
+ABILITYCATEGORY:dmc_abilitycategories.lst
+ABILITYCATEGORY:dmc_abilitycategories_cadv.lst|PRECAMPAIGN:1,INCLUDES=Complete Adventurer
+ABILITY:dmc_abilities.lst
+ABILITY:dmc_abilities_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
+ABILITY:dmc_feats.lst
+ABILITY:dmc_abilities_rw.lst|PRECAMPAIGN:1,INCLUDES=Races of the Wild
+ABILITY:dmc_abilities_rs.lst|PRECAMPAIGN:1,INCLUDES=Races of Stone
+ABILITY:dmc_feats_nocw.lst|!PRECAMPAIGN:1,INCLUDES=Complete Warrior
+ABILITY:dmc_abilities_cadv.lst|PRECAMPAIGN:1,INCLUDES=Complete Adventurer
+ABILITY:dmc_flaws.lst|PRECAMPAIGN:1,INCLUDES=Unearthed Arcana (Complete)
+ABILITY:dmc_vestiges.lst|PRECAMPAIGN:1,INCLUDES=Tome of Magic
+SPELL:dmc_vestiges_spells.lst|PRECAMPAIGN:1,INCLUDES=Tome of Magic
+ABILITY:dmc_abilities_sc.lst|PRECAMPAIGN:1,INCLUDES=Spell Compendium
+ABILITY:dmc_abilities_bovd.lst|PRECAMPAIGN:1,INCLUDES=Book of Vile Darkness
+DOMAIN:dmc_domains.lst
+SPELL:dmc_spells.lst
+SPELL:dmc_spells_class.lst
+SPELL:dmc_spells_domains_sc.lst|PRECAMPAIGN:1,INCLUDES=Spell Compendium
+SPELL:dmc_spells_domains_bovd.lst|PRECAMPAIGN:1,INCLUDES=Book of Vile Darkness
+CLASS:dmc_classes.lst
+LANGUAGE:dmc_languages.lst
+WEAPONPROF:dmc_profs_weapon.lst
+ARMORPROF:dmc_profs_armor.lst
+EQUIPMENT:dmc_equip_weapons_armor.lst
+EQUIPMENT:dmc_equip.lst
+EQUIPMENT:dmc_equip_power_components.lst
+EQUIPMENT:dmc_equip_magic.lst
+EQUIPMOD:dmc_equipmods.lst
+RACE:dmc_races.lst
+RACE:dmc_races_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
+RACE:dmc_races_ca.lst|PRECAMPAIGN:1,INCLUDES=Complete Arcane
+RACE:dmc_races_cadv.lst|PRECAMPAIGN:1,INCLUDES=Complete Adventurer
+TEMPLATE:dmc_templates.lst
+
+# ENTRY DATE: 2026-10
+# Built for PCGen Version: 6.04.01
+# MINVER:6.4
+# COMMENTS: Races (pp. 3-74), new base classes (pp. 75-708), Feats, Flaws & Styles (pp. 1058-1176), Arms & Equipment (pp. 1198-1270), Spells & Domains (pp. 1280-1362), Vestiges (pp. 1371-1419) and Magic Items (pp. 1420-1595). Class variants, prestige classes and psionic classes not yet converted.

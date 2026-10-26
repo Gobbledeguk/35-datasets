@@ -1,0 +1,9 @@
+# Domain spells from Spell Compendium (loads only with that book)
+# Source: The (mostly) Complete Dragon Magazine Compendium - Spells (compendium pp. 1280-1362).
+# DESC ends with the original Dragon/Dungeon Magazine issue and article. SOURCEPAGE = compendium PDF page.
+
+CATEGORY=Domain|Domain Spells ~ Avarice.MOD	SPELLLEVEL:DOMAIN|Avarice=1|Sticky Fingers|Avarice=2|Treasure Scent
+CATEGORY=Domain|Domain Spells ~ Chromatic Dragon.MOD	SPELLLEVEL:DOMAIN|Chromatic Dragon=3|Claws of Darkness|Chromatic Dragon=5|Rebuking Breath|Chromatic Dragon=7|Aura of Terror|Chromatic Dragon=8|Stunning Breath (Greater)
+CATEGORY=Domain|Domain Spells ~ Gem Dragon.MOD	SPELLLEVEL:DOMAIN|Gem Dragon=3|Mesmerizing Glare|Gem Dragon=5|Dragonsight|Gem Dragon=6|Probe Thoughts
+CATEGORY=Domain|Domain Spells ~ Lung Dragon.MOD	SPELLLEVEL:DOMAIN|Lung Dragon=3|Sign of Sealing|Lung Dragon=5|Draconic Might|Lung Dragon=6|Sign of Sealing (Greater)
+CATEGORY=Domain|Domain Spells ~ Metallic Dragon.MOD	SPELLLEVEL:DOMAIN|Metallic Dragon=1|Vision of Glory|Metallic Dragon=3|Diamondsteel|Metallic Dragon=7|Ironguard|Metallic Dragon=9|Dragon Ally (Greater)

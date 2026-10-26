@@ -1,0 +1,92 @@
+# Weapon proficiencies for new weapons
+# Source: The (mostly) Complete Dragon Magazine Compendium - Arms and Equipment (compendium pp. 1198-1270).
+# DESC ends with the original Dragon/Dungeon Magazine issue and article. SOURCEPAGE = compendium PDF page.
+
+Hook	TYPE:Simple.Melee.Light
+Poison Ring	TYPE:Simple.Melee.Light
+Sharktooth Gauntlets	TYPE:Simple.Melee.Light
+Chain (5 ft.)	TYPE:Simple.Melee.TwoHanded
+Cord (5 ft.)	TYPE:Simple.Melee.TwoHanded
+Crossbow (Bladed)	TYPE:Simple.Melee.TwoHanded
+Fauchard	TYPE:Simple.Melee.TwoHanded
+Rope	TYPE:Simple.Melee.TwoHanded
+Steel Cable (5 ft.)	TYPE:Simple.Melee.TwoHanded
+Wire (5 ft.)	TYPE:Simple.Melee.TwoHanded
+Crossbow (Double)	TYPE:Simple.Ranged
+Crossbow (Grapple-firing)	TYPE:Simple.Ranged
+Prodd	TYPE:Simple.Ranged
+Cutlass (DMC)	TYPE:Martial.Melee.Light
+Bardiche	TYPE:Martial.Melee.TwoHanded
+Duom	TYPE:Martial.Melee.TwoHanded
+Executioner's Mace	TYPE:Martial.Melee.TwoHanded
+Lucerne Hammer	TYPE:Martial.Melee.TwoHanded
+Naginata	TYPE:Martial.Melee.TwoHanded
+Partisan	TYPE:Martial.Melee.TwoHanded
+Pilum	TYPE:Martial.Melee.Ranged.TwoHanded
+Spetum	TYPE:Martial.Melee.TwoHanded
+Voulge	TYPE:Martial.Melee.TwoHanded
+Handbow	TYPE:Martial.Ranged
+Longbow (Aquatic) (DMC)	TYPE:Martial.Ranged
+Braid Blade	TYPE:Exotic.Melee.Light
+Garrote Ring	TYPE:Exotic.Melee.Light
+Japute	TYPE:Exotic.Melee.Light
+Ribbon Dagger	TYPE:Exotic.Melee.Light
+Shimalo'koa	TYPE:Exotic.Melee.Light
+Spring Dart Boots	TYPE:Exotic.Melee.Ranged.Light
+Stone Handaxe	TYPE:Exotic.Melee.Light
+Wristlancet	TYPE:Exotic.Melee.Light
+Dragonclaw Gauntlet	TYPE:Exotic.Melee.OneHanded
+Flindbar (DMC)	TYPE:Exotic.Melee.OneHanded
+Ghost Spike	TYPE:Exotic.Melee.OneHanded
+Stone Celt	TYPE:Exotic.Melee.OneHanded
+Tiger Hook Sword	TYPE:Exotic.Melee.OneHanded
+Whip-dagger	TYPE:Exotic.Melee.OneHanded
+Ankus	TYPE:Exotic.Melee.TwoHanded
+Awl Pike	TYPE:Exotic.Melee.TwoHanded
+Bec de Corbin	TYPE:Exotic.Melee.TwoHanded
+Bola	TYPE:Exotic.Melee.TwoHanded
+Goad	TYPE:Exotic.Melee.TwoHanded
+Greatcleaver	TYPE:Exotic.Melee.TwoHanded
+Greatspear (DMC)	TYPE:Exotic.Melee.Ranged.TwoHanded
+Gyrspike	TYPE:Exotic.Melee.TwoHanded
+Kaua'koi	TYPE:Exotic.Melee.TwoHanded
+Lochaber Axe	TYPE:Exotic.Melee.TwoHanded
+Longspear (Microlith Barbed)	TYPE:Exotic.Melee.TwoHanded
+Longstaff (DMC)	TYPE:Exotic.Melee.TwoHanded
+Meteor Hammer	TYPE:Exotic.Melee.TwoHanded
+Poleaxe (Heavy) (DMC)	TYPE:Exotic.Melee.TwoHanded
+Ritiik	TYPE:Exotic.Melee.TwoHanded
+Rope Dart	TYPE:Exotic.Melee.TwoHanded
+Sasumata	TYPE:Exotic.Melee.TwoHanded
+Sharrash (Talenta)	TYPE:Exotic.Melee.TwoHanded
+Sodegarami	TYPE:Exotic.Melee.TwoHanded
+Stingbox	TYPE:Exotic.Melee.TwoHanded
+Warpike (Dwarven) (DMC)	TYPE:Exotic.Melee.TwoHanded
+Yuan-ti Serpent Bow	TYPE:Exotic.Melee.TwoHanded
+Atlatl	TYPE:Exotic.Ranged
+Blowgun (Repeating)	TYPE:Exotic.Ranged
+Bone Bow	TYPE:Exotic.Ranged
+Boomerang (Hunting)	TYPE:Exotic.Ranged
+Chakri	TYPE:Exotic.Ranged
+Crossbow (Aquatic)	TYPE:Exotic.Ranged
+Crossbow (Great) (DMC)	TYPE:Exotic.Ranged
+Crossbow (Orz Fishing)	TYPE:Exotic.Ranged
+Double Axehead	TYPE:Exotic.Ranged
+Double Bow (Elven)	TYPE:Exotic.Ranged
+Footbow (DMC)	TYPE:Exotic.Ranged
+Greatbow (DMC)	TYPE:Exotic.Ranged
+Greatbow (Composite) (DMC)	TYPE:Exotic.Ranged
+Icechucker	TYPE:Exotic.Ranged
+Mountain Chain	TYPE:Exotic.Ranged
+Riverbow	TYPE:Exotic.Ranged
+Wing Clip	TYPE:Exotic.Ranged
+Pistol (Dueling)	TYPE:Exotic.Ranged
+Pistol (Grenade)	TYPE:Exotic.Ranged
+Pistol (Hilt)	TYPE:Exotic.Ranged
+Pistol (Holdout)	TYPE:Exotic.Ranged
+Pistol (Spear)	TYPE:Exotic.Ranged
+Blunderbuss (DMC)	TYPE:Exotic.Ranged
+Carbine	TYPE:Exotic.Ranged
+Hand Cannon	TYPE:Exotic.Ranged
+Rifle	TYPE:Exotic.Ranged
+Rocket Launcher	TYPE:Exotic.Ranged
