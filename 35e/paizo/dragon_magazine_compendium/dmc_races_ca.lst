@@ -1,7 +1,0 @@
-# Umbragen (requires Complete Arcane)
-# Source: The (mostly) Complete Dragon Magazine Compendium (fan compilation of Dragon Magazine 3.0/3.5 content).
-# SOURCEPAGE values refer to page numbers of the compendium PDF.
-# Built for the Bahamut35e game mode (bahamutdragon/pcgen).
-###Block: Races
-
-Umbragen	SOURCEPAGE:p.48	SIZE:M	MOVE:Walk,30	FACE:5	REACH:5	LEGS:2	HANDS:2	RACETYPE:Humanoid	RACESUBTYPE:Elf	TYPE:Humanoid.PC	BONUS:STAT|DEX|2	BONUS:STAT|CON|-2	BONUS:STAT|INT|2	BONUS:STAT|CHA|2	BONUS:VAR|DarkvisionRange|120|TYPE=Base	FAVCLASS:Warlock	AUTO:LANG|Elven|Undercommon	LANGBONUS:Common,Draconic,Giant,Terran	LEVELADJUSTMENT:2	ABILITY:Special Ability|AUTOMATIC|Immunity to Sleep	SR:11+TL	AUTO:WEAPONPROF|Longbow|Shortbow|Longsword|Rapier	BONUS:SKILL|Listen,Search,Spot,Hide,Move Silently|2|TYPE=Racial	SPELLS:Innate|TIMES=1|CASTERLEVEL=TL|Dancing Lights,10+CHA	SPELLS:Innate|TIMES=1|CASTERLEVEL=TL|Darkness,12+CHA	SPELLS:Innate|TIMES=1|CASTERLEVEL=TL|Faerie Fire,11+CHA	STARTFEATS:1	FACT:HasFirstLevelFeat|True	ABILITY:Internal|AUTOMATIC|Race Traits ~ Umbragen

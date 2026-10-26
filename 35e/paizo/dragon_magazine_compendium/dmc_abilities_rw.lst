@@ -1,9 +1,0 @@
-# Method feats: slots already used by Races of the Wild wizard substitutions are not moved (loads only with that book)
-# Source: The (mostly) Complete Dragon Magazine Compendium - Feats, Flaws & Styles (compendium pp. 1058-1176).
-# DESC ends with the original Dragon Magazine issue and article. SOURCEPAGE = compendium PDF page.
-# Prerequisites that could not be expressed as PCGen PRE tags are listed in PRETEXT.
-
-CATEGORY=Internal|DMC ~ Greyhawk Method Wizard Feats.MOD	BONUS:VAR|Pool_GreyhawkWizardFeat|-1|PREABILITY:1,CATEGORY=Special Ability,Wizard ~ Bonus Feat	BONUS:VAR|Pool_WizardFeat|1|PREABILITY:1,CATEGORY=Special Ability,Wizard ~ Bonus Feat
-CATEGORY=Internal|DMC ~ Nexus Method Wizard Feats.MOD	BONUS:VAR|Pool_NexusWizardFeat|-1|PREABILITY:1,CATEGORY=Special Ability,Wizard ~ Bonus Feat	BONUS:VAR|Pool_WizardFeat|1|PREABILITY:1,CATEGORY=Special Ability,Wizard ~ Bonus Feat
-CATEGORY=Internal|DMC ~ Silent Method Wizard Feats.MOD	BONUS:VAR|Pool_SilentWizardFeat|-1|PREABILITY:1,CATEGORY=Special Ability,Wizard ~ Bonus Feat	BONUS:VAR|Pool_WizardFeat|1|PREABILITY:1,CATEGORY=Special Ability,Wizard ~ Bonus Feat
-CATEGORY=Internal|DMC ~ Sagacious Method Wizard Feats.MOD	BONUS:VAR|Pool_SagaciousWizardFeat|-1|PREABILITY:1,CATEGORY=Special Ability,Wizard ~ Bonus Feat	BONUS:VAR|Pool_WizardFeat|1|PREABILITY:1,CATEGORY=Special Ability,Wizard ~ Bonus Feat
