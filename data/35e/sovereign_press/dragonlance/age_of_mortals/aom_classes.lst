@@ -1,0 +1,133 @@
+# Age of Mortals — the Mariner as Age of Mortals prints it, and its twelve prestige classes (pp.24-49).
+CLASS:Mariner (Age of Mortals)	HD:8	TYPE:Base.PC	STARTSKILLPTS:6	MAXLEVEL:20	CSKILL:Balance|Climb|TYPE=Craft|Gather Information|Jump|Profession (Sailor)|Speak Language|Spot|Survival|Swim|Tumble|Use Rope	BONUS:COMBAT|BASEAB|classlevel*3/4	BONUS:SAVE|Fort|CL/2+2	BONUS:SAVE|Ref|CL/2+2	BONUS:SAVE|Will|CL/3	AUTO:WEAPONPROF|TYPE=Simple|Cutlass|Net|Scimitar|Trident	AUTO:ARMORPROF|Padded|Leather	DESC:The Age of Mortals mariner (pp.24-27). Legends of the Twins (p.13) revises it as the current version: import that pack for the Mariner the Races of Ansalon options name. Hit Die d8; 6 + Int skill points per level (x4 at 1st); proficient with simple weapons, the cutlass, net, scimitar and trident, and padded and leather armor (no shields).	SOURCEPAGE:p.24-27
+1	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Bonus Feat	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Sailor Lore	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Seamanship +1	BONUS:FEAT|POOL|1
+2	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Dirty Strike +1d4
+4	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Bonus Feat	BONUS:FEAT|POOL|1
+5	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Seamanship +2
+6	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Dirty Strike +2d4
+7	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Bonus Feat	BONUS:FEAT|POOL|1
+9	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Seamanship +3
+10	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Bonus Feat	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Dirty Strike +3d4	BONUS:FEAT|POOL|1
+13	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Bonus Feat	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Seamanship +4	BONUS:FEAT|POOL|1
+14	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Dirty Strike +4d4
+16	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Bonus Feat	BONUS:FEAT|POOL|1
+17	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Seamanship +5
+18	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Dirty Strike +5d4
+19	ABILITY:Mariner (Age of Mortals) Class Feature|AUTOMATIC|Mariner (Age of Mortals) ~ Bonus Feat	BONUS:FEAT|POOL|1
+
+CLASS:Academy Sorcerer	HD:4	TYPE:Prestige.PC	STARTSKILLPTS:2	MAXLEVEL:10	CSKILL:Concentration|TYPE=Craft|Decipher Script|Knowledge (Arcana)|Spellcraft|Use Magic Device	BONUS:COMBAT|BASEAB|classlevel/2	BONUS:SAVE|Fort|CL/3	BONUS:SAVE|Ref|CL/3	BONUS:SAVE|Will|CL/2+2	DESC:Sorcerers of the Academy of Sorcery. Ex-academy sorcerer (p.30): one who harms another student or uses his skills for evil loses Academy resources and cooperative study and cannot advance.	PRETEXT:Any two metamagic or item creation feats	PRETEXT:Able to cast 2nd-level arcane spells without preparation	PRETEXT:Admitted to the Academy of Sorcery or a secondary school of sorcery (DM's approval) and accepted by a mentor	PREALIGN:LG,LN,TN,NG,CG,CN	PRESKILL:1,Spellcraft=8	PRESKILL:1,Knowledge (Arcana)=8	PRESPELLTYPE:1,Arcane=2	SOURCEPAGE:p.27-30
+1	ABILITY:Academy Sorcerer Class Feature|AUTOMATIC|Academy Sorcerer ~ Arcane Thesis	ABILITY:Academy Sorcerer Class Feature|AUTOMATIC|Academy Sorcerer ~ Academy Resources	ADD:SPELLCASTER|Arcane
+2	ABILITY:Academy Sorcerer Class Feature|AUTOMATIC|Academy Sorcerer ~ Cooperative Study +2	ADD:SPELLCASTER|Arcane
+3	ABILITY:Academy Sorcerer Class Feature|AUTOMATIC|Academy Sorcerer ~ Research Breakthrough	ADD:SPELLCASTER|Arcane
+4	ABILITY:Academy Sorcerer Class Feature|AUTOMATIC|Academy Sorcerer ~ Arcane Thesis	ADD:SPELLCASTER|Arcane
+5	ABILITY:Academy Sorcerer Class Feature|AUTOMATIC|Academy Sorcerer ~ Cooperative Study +4	ADD:SPELLCASTER|Arcane
+6	ABILITY:Academy Sorcerer Class Feature|AUTOMATIC|Academy Sorcerer ~ Research Breakthrough	ADD:SPELLCASTER|Arcane
+7	ABILITY:Academy Sorcerer Class Feature|AUTOMATIC|Academy Sorcerer ~ Arcane Thesis	ADD:SPELLCASTER|Arcane
+8	ABILITY:Academy Sorcerer Class Feature|AUTOMATIC|Academy Sorcerer ~ Cooperative Study +6	ADD:SPELLCASTER|Arcane
+9	ABILITY:Academy Sorcerer Class Feature|AUTOMATIC|Academy Sorcerer ~ Research Breakthrough	ADD:SPELLCASTER|Arcane
+10	ABILITY:Academy Sorcerer Class Feature|AUTOMATIC|Academy Sorcerer ~ Arcane Thesis	ADD:SPELLCASTER|Arcane
+
+CLASS:Citadel Mystic	HD:8	TYPE:Prestige.PC	STARTSKILLPTS:2	MAXLEVEL:10	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (Religion)|Sense Motive|Spellcraft	BONUS:COMBAT|BASEAB|classlevel*3/4	BONUS:SAVE|Fort|CL/2+2	BONUS:SAVE|Ref|CL/3	BONUS:SAVE|Will|CL/2+2	DESC:Healers trained at the Citadel of Light. Necromantic restriction: may not cast necromancy, death or evil spells (the Necromancy school or the Evil or Death descriptors, domain spells included). Ex-Citadel mystic (p.31): one who turns evil or betrays the Citadel loses reputation and heart's grace and cannot advance; reputation becomes a penalty with authorities and the leaders of free peoples (Knights of Solamnia included) until restored.	PRETEXT:Able to cast 2nd-level divine spells without preparation, including at least two different Conjuration (healing) spells	PRETEXT:A graduate of the Citadel of Light	PREALIGN:LG,NG,CG	PRECHECKBASE:1,Will=4	PRESKILL:1,Heal=8	PRESKILL:1,Knowledge (Religion)=8	PRESKILL:1,Diplomacy=4	PRESPELLTYPE:1,Divine=2	SOURCEPAGE:p.30-32
+1	ABILITY:Citadel Mystic Class Feature|AUTOMATIC|Citadel Mystic ~ Bonus Domain	ADD:SPELLCASTER|Divine
+2	ABILITY:Citadel Mystic Class Feature|AUTOMATIC|Citadel Mystic ~ Reputation +2	ADD:SPELLCASTER|Divine
+3	ABILITY:Citadel Mystic Class Feature|AUTOMATIC|Citadel Mystic ~ Mystic Secret	ADD:SPELLCASTER|Divine
+4	ABILITY:Citadel Mystic Class Feature|AUTOMATIC|Citadel Mystic ~ Heart's Grace	ADD:SPELLCASTER|Divine
+5	ABILITY:Citadel Mystic Class Feature|AUTOMATIC|Citadel Mystic ~ Mystic Secret	ADD:SPELLCASTER|Divine
+6	ABILITY:Citadel Mystic Class Feature|AUTOMATIC|Citadel Mystic ~ Reputation +4	ADD:SPELLCASTER|Divine
+7	ABILITY:Citadel Mystic Class Feature|AUTOMATIC|Citadel Mystic ~ Mystic Secret	ADD:SPELLCASTER|Divine
+8	ABILITY:Citadel Mystic Class Feature|AUTOMATIC|Citadel Mystic ~ Heart's Grace	ADD:SPELLCASTER|Divine
+9	ABILITY:Citadel Mystic Class Feature|AUTOMATIC|Citadel Mystic ~ Mystic Secret	ADD:SPELLCASTER|Divine
+10	ABILITY:Citadel Mystic Class Feature|AUTOMATIC|Citadel Mystic ~ Reputation +6	ADD:SPELLCASTER|Divine
+
+CLASS:Kender Nightstalker	HD:6	TYPE:Prestige.PC	STARTSKILLPTS:4	MAXLEVEL:10	CSKILL:Balance|Concentration|TYPE=Craft|Diplomacy|Disable Device|Escape Artist|Gather Information|Hide|Listen|Move Silently|Open Lock|TYPE=Profession|Search|Sleight of Hand|Spellcraft|Spot|Survival|Use Magic Device|Use Rope	BONUS:COMBAT|BASEAB|classlevel*3/4	BONUS:SAVE|Fort|CL/3	BONUS:SAVE|Ref|CL/2+2	BONUS:SAVE|Will|CL/2+2	SPELLSTAT:WIS	MEMORIZE:NO	FACT:SpellType|Divine	SPELLLEVEL:CLASS|Kender Nightstalker=1|Cure Light Wounds,Deathwatch,Disrupt Undead,Gentle Repose,Ray of Enfeeblement|Kender Nightstalker=2|Consecrate,Cure Moderate Wounds,Ghoul Touch,Restoration (Lesser)|Kender Nightstalker=3|Cure Serious Wounds,Halt Undead,Speak with Dead,Vampiric Touch|Kender Nightstalker=4|Cure Critical Wounds,Death Ward,Neutralize Poison,Restoration	DESC:Kender who speak with the dead. Spells (p.33): divine and spontaneous from the class's own list, Wisdom-based (minimum Wisdom 10 + spell level; save DC 10 + spell level + Wisdom modifier); a 0 on Table 1-7 means bonus spells only. At 6th, 8th and 10th level a known spell may be swapped for another of the same level, two levels below the highest it can cast. Caster level is half the nightstalker level: the app uses the full level, so halve it at the table. Use Magic Device is an exclusive class skill. Table 1-8's footnote says Charisma where every other line says Wisdom; Wisdom is used here.	PRETEXT:Must have encountered an undead creature with Intelligence 3 or higher	PREALIGN:LG,NG,CG	PRERACE:1,Kender,Half-Kender	PRESKILL:1,Bluff=8	PRESKILL:1,Diplomacy=7	PRESKILL:1,Gather Information=8	PRESKILL:1,Sense Motive=6	PRESKILL:1,Spot=6	PREFEAT:1,Great Fortitude	PREFEAT:1,Iron Will	SOURCEPAGE:p.32-34
+1	ABILITY:Kender Nightstalker Class Feature|AUTOMATIC|Kender Nightstalker ~ Turn Undead	ABILITY:Kender Nightstalker Class Feature|AUTOMATIC|Kender Nightstalker ~ Death Sight	CAST:0,0	KNOWN:0,1
+2	ABILITY:Kender Nightstalker Class Feature|AUTOMATIC|Kender Nightstalker ~ Aura of Innocence	CAST:0,1	KNOWN:0,1
+3	ABILITY:Kender Nightstalker Class Feature|AUTOMATIC|Kender Nightstalker ~ Whispers of the Dead +2	CAST:0,1	KNOWN:0,1
+4	ABILITY:Kender Nightstalker Class Feature|AUTOMATIC|Kender Nightstalker ~ Spirit Companion	CAST:0,2,0	KNOWN:0,1,1
+5	ABILITY:Kender Nightstalker Class Feature|AUTOMATIC|Kender Nightstalker ~ Necromantic Resistance	CAST:0,2,1	KNOWN:0,2,1
+6	ABILITY:Kender Nightstalker Class Feature|AUTOMATIC|Kender Nightstalker ~ Whispers of the Dead +4	CAST:0,2,1,0	KNOWN:0,2,1,1
+7	ABILITY:Kender Nightstalker Class Feature|AUTOMATIC|Kender Nightstalker ~ Spirit Handling	CAST:0,3,2,1	KNOWN:0,2,1,1
+8	ABILITY:Kender Nightstalker Class Feature|AUTOMATIC|Kender Nightstalker ~ Spirit Companion	CAST:0,3,2,1,0	KNOWN:0,3,2,1,1
+9	ABILITY:Kender Nightstalker Class Feature|AUTOMATIC|Kender Nightstalker ~ Whispers of the Dead +6	CAST:0,3,2,2,1	KNOWN:0,3,2,1,1
+10	ABILITY:Kender Nightstalker Class Feature|AUTOMATIC|Kender Nightstalker ~ Spectral Symbiosis	CAST:0,3,3,2,1	KNOWN:0,3,2,2,1
+
+CLASS:Legion Mystic	HD:8	TYPE:Prestige.PC	STARTSKILLPTS:2	MAXLEVEL:5	CSKILL:Bluff|Concentration|TYPE=Craft|Diplomacy|Gather Information|Heal|Knowledge (Religion)|Listen|TYPE=Profession|Search|Sense Motive|Spellcraft|Spot	BONUS:COMBAT|BASEAB|classlevel*3/4	BONUS:SAVE|Fort|CL/2+2	BONUS:SAVE|Ref|CL/3	BONUS:SAVE|Will|CL/2+2	DESC:Mystics of the Legion of Steel. Ex-Legion mystic (p.36): one who turns evil or attacks the Legion, its members or those it protects loses all class abilities and cannot advance until atoned.	PRETEXT:Able to cast 2nd-level divine spells without preparation	PRETEXT:The Legion knowledge class ability	PREALIGN:LG,NG,CG	PRECHECKBASE:1,Will=6	PREFEAT:1,Iron Will	PRESKILL:1,Sense Motive=6	PRESKILL:1,Heal=6	PRESKILL:1,Knowledge (Religion)=6	PRESPELLTYPE:1,Divine=2	SOURCEPAGE:p.34-36
+1	ABILITY:Legion Mystic Class Feature|AUTOMATIC|Legion Mystic ~ Legacy's Courage	ADD:SPELLCASTER|Divine
+2	ABILITY:Legion Mystic Class Feature|AUTOMATIC|Legion Mystic ~ Legacy's Strength	ADD:SPELLCASTER|Divine
+3	ABILITY:Legion Mystic Class Feature|AUTOMATIC|Legion Mystic ~ Legacy's Awareness	ADD:SPELLCASTER|Divine
+4	ABILITY:Legion Mystic Class Feature|AUTOMATIC|Legion Mystic ~ Legacy's Virtue	ADD:SPELLCASTER|Divine
+5	ABILITY:Legion Mystic Class Feature|AUTOMATIC|Legion Mystic ~ Legacy's Justice	ADD:SPELLCASTER|Divine
+
+CLASS:Legion Scout	HD:8	TYPE:Prestige.PC	STARTSKILLPTS:4	MAXLEVEL:5	CSKILL:Bluff|Diplomacy|Disguise|Gather Information|Hide|Jump|TYPE=Knowledge|Listen|TYPE=Profession|Sense Motive|Spot|Survival|Swim	BONUS:COMBAT|BASEAB|classlevel*3/4	BONUS:SAVE|Fort|CL/3	BONUS:SAVE|Ref|CL/2+2	BONUS:SAVE|Will|CL/2+2	DESC:Spies and scouts of the Legion of Steel.	PRETEXT:The Legion knowledge class ability	PREALIGN:LG,NG,CG	PREBAB:6	PRECHECKBASE:1,Reflex=6	PREFEAT:1,Track	PRESKILL:1,Gather Information=10	PRESKILL:1,Bluff=6	PRESKILL:1,Survival=6	SOURCEPAGE:p.36-37
+1	ABILITY:Legion Scout Class Feature|AUTOMATIC|Legion Scout ~ Region Familiarity	ABILITY:Legion Scout Class Feature|AUTOMATIC|Legion Scout ~ Face in the Crowd
+2	ABILITY:Legion Scout Class Feature|AUTOMATIC|Legion Scout ~ Sneak Attack +1d6	ABILITY:Legion Scout Class Feature|AUTOMATIC|Legion Scout ~ Fifth Column
+3	ABILITY:Legion Scout Class Feature|AUTOMATIC|Legion Scout ~ Region Familiarity	ABILITY:Legion Scout Class Feature|AUTOMATIC|Legion Scout ~ Safe Haven
+4	ABILITY:Legion Scout Class Feature|AUTOMATIC|Legion Scout ~ Fly in the Ointment
+5	ABILITY:Legion Scout Class Feature|AUTOMATIC|Legion Scout ~ Region Familiarity	ABILITY:Legion Scout Class Feature|AUTOMATIC|Legion Scout ~ Sneak Attack +2d6
+
+CLASS:Legion Sorcerer	HD:4	TYPE:Prestige.PC	STARTSKILLPTS:4	MAXLEVEL:5	CSKILL:Bluff|Concentration|TYPE=Craft|Decipher Script|Diplomacy|Gather Information|TYPE=Knowledge|Listen|TYPE=Profession|Sense Motive|Spellcraft|Spot	BONUS:COMBAT|BASEAB|classlevel/2	BONUS:SAVE|Fort|CL/3	BONUS:SAVE|Ref|CL/3	BONUS:SAVE|Will|CL/2+2	DESC:Sorcerers of the Legion of Steel.	PRETEXT:Able to cast 2nd-level arcane spells without preparation, including at least three divination spells	PRETEXT:The Legion knowledge class ability	PREALIGN:LG,NG,CG	PRECHECKBASE:1,Will=6	PREFEAT:1,Spell Focus (Divination)	PRESKILL:1,Gather Information=6	PRESKILL:1,Knowledge (Arcana)=6	PRESKILL:1,Spellcraft=6	PRESPELLTYPE:1,Arcane=2	SOURCEPAGE:p.37-38
+1	ABILITY:Legion Sorcerer Class Feature|AUTOMATIC|Legion Sorcerer ~ Share Divination	ADD:SPELLCASTER|Arcane
+2	ABILITY:Legion Sorcerer Class Feature|AUTOMATIC|Legion Sorcerer ~ Canny Spellcraft	ADD:SPELLCASTER|Arcane
+3	ABILITY:Legion Sorcerer Class Feature|AUTOMATIC|Legion Sorcerer ~ Confound Divination	ADD:SPELLCASTER|Arcane
+4	ABILITY:Legion Sorcerer Class Feature|AUTOMATIC|Legion Sorcerer ~ Covert Spellcraft	ADD:SPELLCASTER|Arcane
+5	ABILITY:Legion Sorcerer Class Feature|AUTOMATIC|Legion Sorcerer ~ Counter Divination	ADD:SPELLCASTER|Arcane
+
+CLASS:Master Ambassador	HD:6	TYPE:Prestige.PC	STARTSKILLPTS:6	MAXLEVEL:10	CSKILL:Appraise|Bluff|Decipher Script|Diplomacy|Disguise|Escape Artist|Forgery|Gather Information|Intimidate|TYPE=Knowledge|Listen|Sense Motive|Speak Language|Spot	BONUS:COMBAT|BASEAB|classlevel*3/4	BONUS:SAVE|Fort|CL/3	BONUS:SAVE|Ref|CL/3	BONUS:SAVE|Will|CL/2+2	DESC:Diplomats and envoys of Ansalon's courts. No new proficiencies and no spells.	PRETEXT:Speaks, reads and writes two languages besides Common and his own racial language	PRETEXT:Has held a diplomatic office in which a courtly or political matter was resolved through his efforts	PREALIGN:LG,LN,LE,NG,TN,NE	PRESKILL:1,Bluff=4	PRESKILL:1,Diplomacy=8	PRESKILL:1,Gather Information=4	PRESKILL:1,Knowledge (Nobility and Royalty)=8	PRESKILL:1,Sense Motive=8	SOURCEPAGE:p.38-40
+1	ABILITY:Master Ambassador Class Feature|AUTOMATIC|Master Ambassador ~ Favored Embassy	ABILITY:Master Ambassador Class Feature|AUTOMATIC|Master Ambassador ~ Insightful Acclimation
+2	ABILITY:Master Ambassador Class Feature|AUTOMATIC|Master Ambassador ~ Retinue +1
+3	ABILITY:Master Ambassador Class Feature|AUTOMATIC|Master Ambassador ~ Bonus Language
+4	ABILITY:Master Ambassador Class Feature|AUTOMATIC|Master Ambassador ~ Favored Embassy
+5	ABILITY:Master Ambassador Class Feature|AUTOMATIC|Master Ambassador ~ Retinue +2
+6	ABILITY:Master Ambassador Class Feature|AUTOMATIC|Master Ambassador ~ Bonus Language
+7	ABILITY:Master Ambassador Class Feature|AUTOMATIC|Master Ambassador ~ Favored Embassy
+8	ABILITY:Master Ambassador Class Feature|AUTOMATIC|Master Ambassador ~ Retinue +3
+9	ABILITY:Master Ambassador Class Feature|AUTOMATIC|Master Ambassador ~ Bonus Language
+10	ABILITY:Master Ambassador Class Feature|AUTOMATIC|Master Ambassador ~ Favored Embassy
+
+CLASS:Nomad Shaman	HD:8	TYPE:Prestige.PC	STARTSKILLPTS:4	MAXLEVEL:10	CSKILL:Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Knowledge (Nature)|Knowledge (Religion)|TYPE=Profession|Spellcraft|Swim|Survival	BONUS:COMBAT|BASEAB|classlevel*3/4	BONUS:SAVE|Fort|CL/3	BONUS:SAVE|Ref|CL/3	BONUS:SAVE|Will|CL/2+2	AUTO:ARMORPROF|ARMORTYPE=Light	AUTO:SHIELDPROF|SHIELDTYPE=Shield	DESC:Spirit-talkers of Ansalon's nomad tribes. Proficient with light armor and shields, and with the weapons of her home region: desert (dagger, heavy lance, light lance, scimitar, shortbow, shortspear, whip); forest (blowgun, club, greatclub, handaxe, shortbow, sling, throwing axe); tundra (battleaxe, club, greataxe, handaxe, light crossbow, light pick, shortspear); mountains (battleaxe, blowgun, handaxe, shortbow, shortspear, sickle, throwing axe); plains (club, greatclub, light lance, shortbow, shortspear, spiked chain, whip). Her oaths forbid other weapons and armor heavier than light. A mystic in this class picks new spells from the druid list, and may substitute from it. Ex-nomad shaman (p.43): breaking a taboo loses all class abilities until atoned.	PRETEXT:Raised in a nomad culture and a member of a nomad tribe or clan	PRECHECKBASE:1,Will=4	PREFEAT:1,Alertness	PRESKILL:1,Knowledge (Nature)=8	PRESKILL:1,Knowledge (Religion)=4	PRESKILL:1,Survival=4	PRESPELLTYPE:1,Divine=3	SOURCEPAGE:p.40-43
+1	ABILITY:Nomad Shaman Class Feature|AUTOMATIC|Nomad Shaman ~ Spirit Sight	ABILITY:Nomad Shaman Class Feature|AUTOMATIC|Nomad Shaman ~ Totemic Insight	ADD:SPELLCASTER|Divine
+2	ABILITY:Nomad Shaman Class Feature|AUTOMATIC|Nomad Shaman ~ Turn or Rebuke Spirit	ADD:SPELLCASTER|Divine
+3	ABILITY:Nomad Shaman Class Feature|AUTOMATIC|Nomad Shaman ~ Totemic Insight	ADD:SPELLCASTER|Divine
+4	ABILITY:Nomad Shaman Class Feature|AUTOMATIC|Nomad Shaman ~ Spirit Body 1/day	ADD:SPELLCASTER|Divine
+5	ABILITY:Nomad Shaman Class Feature|AUTOMATIC|Nomad Shaman ~ Totemic Insight	ADD:SPELLCASTER|Divine
+6	ABILITY:Nomad Shaman Class Feature|AUTOMATIC|Nomad Shaman ~ Spirit Body 2/day	ADD:SPELLCASTER|Divine
+7	ABILITY:Nomad Shaman Class Feature|AUTOMATIC|Nomad Shaman ~ Totemic Insight	ADD:SPELLCASTER|Divine
+8	ABILITY:Nomad Shaman Class Feature|AUTOMATIC|Nomad Shaman ~ Spirit Body 3/day	ADD:SPELLCASTER|Divine
+9	ABILITY:Nomad Shaman Class Feature|AUTOMATIC|Nomad Shaman ~ Totemic Insight	ADD:SPELLCASTER|Divine
+10	ABILITY:Nomad Shaman Class Feature|AUTOMATIC|Nomad Shaman ~ Spirit Body 4/day	ADD:SPELLCASTER|Divine
+
+CLASS:Rogue Knight	HD:10	TYPE:Prestige.PC	STARTSKILLPTS:2	MAXLEVEL:10	CSKILL:Bluff|TYPE=Craft|Diplomacy|Disguise|Gather Information|Hide|Intimidate|Knowledge (Nobility and Royalty)|TYPE=Profession|Ride|Sense Motive	BONUS:COMBAT|BASEAB|classlevel	BONUS:SAVE|Fort|CL/2+2	BONUS:SAVE|Ref|CL/3	BONUS:SAVE|Will|CL/3	AUTO:WEAPONPROF|TYPE=Simple|TYPE=Martial	AUTO:ARMORPROF|ARMORTYPE=Light|ARMORTYPE=Medium|ARMORTYPE=Heavy	AUTO:SHIELDPROF|SHIELDTYPE=Shield	DESC:Knights cast out of their orders. Ex-Solamnic and dark knights (Table 1-17, Former Knight Levels, p.44) gain by their former knighthood levels: 1-2 hardhearted (Su, a morale bonus equal to Charisma bonus on saves against fear and despair); 3-4 +2 on Bluff, Listen, Sense Motive, Spot and Survival against members of the former knighthood and +2 initiative against them in combat (Ex); 5-6 fate's hand (Su, Charisma modifier as a morale bonus on all saves, and smite law once a day: + Charisma to attack, +1 damage per rogue knight level against a lawful foe); 7-8 another +2 on those skills and initiative; 9 or more: Solamnic or dark knight prestige levels are traded one for one for rogue knight levels (Rose or Thorn first, then Sword or Skull, then Crown or Lily), and traded levels do not count for these abilities. Honor-Bound is a Dragonlance Campaign Setting feat: turn that book on.	PRETEXT:Martial Weapon Proficiency (any one)	PRETEXT:Was a member of an order of knighthood (such as the Order of the Crown or Order of the Lily), and broke or betrayed an oath as described under Honor-bound and required atonement (completing it is not required)	PREBAB:5	PRECHECKBASE:1,Fortitude=4	PREFEAT:1,Armor Proficiency (Heavy)	PREFEAT:1,Honor-Bound	SOURCEPAGE:p.43-44
+1	ABILITY:Rogue Knight Class Feature|AUTOMATIC|Rogue Knight ~ Honor's Price	ABILITY:Rogue Knight Class Feature|AUTOMATIC|Rogue Knight ~ Desperate Strike +1d6
+3	ABILITY:Rogue Knight Class Feature|AUTOMATIC|Rogue Knight ~ Dire Providence (Lethal Damage to Subdual)
+4	ABILITY:Rogue Knight Class Feature|AUTOMATIC|Rogue Knight ~ Desperate Strike +2d6
+6	ABILITY:Rogue Knight Class Feature|AUTOMATIC|Rogue Knight ~ Dire Providence (Stabilization)
+7	ABILITY:Rogue Knight Class Feature|AUTOMATIC|Rogue Knight ~ Desperate Strike +3d6
+9	ABILITY:Rogue Knight Class Feature|AUTOMATIC|Rogue Knight ~ Dire Providence (Critical Hits)
+10	ABILITY:Rogue Knight Class Feature|AUTOMATIC|Rogue Knight ~ Desperate Strike +4d6
+
+CLASS:Solamnic Auxiliary Mage	HD:4	TYPE:Prestige.PC	STARTSKILLPTS:2	MAXLEVEL:5	CSKILL:Concentration|TYPE=Craft|Diplomacy|Handle Animal|Jump|Knowledge (Arcana)|Knowledge (Nobility and Royalty)|Knowledge (Religion)|TYPE=Profession|Ride|Spellcraft	BONUS:COMBAT|BASEAB|classlevel/2	BONUS:SAVE|Fort|CL/3	BONUS:SAVE|Ref|CL/3	BONUS:SAVE|Will|CL/2+2	DESC:Arcane casters who serve the Knights of Solamnia. Honor-Bound is a Dragonlance Campaign Setting feat: turn that book on.	PRETEXT:Passed the Knight's Trials and was accepted into the Solamnic Auxiliary	PREALIGN:LG	PRESKILL:1,Concentration=8	PRESKILL:1,Knowledge (Nobility and Royalty)=4	PREFEAT:1,Honor-Bound	PREFEAT:1,Iron Will	PRESPELLTYPE:1,Arcane=3	SOURCEPAGE:p.45-46
+1	ABILITY:Solamnic Auxiliary Mage Class Feature|AUTOMATIC|Solamnic Auxiliary Mage ~ Magic of Loyalty	ADD:SPELLCASTER|ANY
+2	ABILITY:Solamnic Auxiliary Mage Class Feature|AUTOMATIC|Solamnic Auxiliary Mage ~ Heroic Initiative +1	ADD:SPELLCASTER|ANY
+3	ABILITY:Solamnic Auxiliary Mage Class Feature|AUTOMATIC|Solamnic Auxiliary Mage ~ Magic of Courage	ADD:SPELLCASTER|ANY
+4	ABILITY:Solamnic Auxiliary Mage Class Feature|AUTOMATIC|Solamnic Auxiliary Mage ~ Heroic Initiative +2	ADD:SPELLCASTER|ANY
+5	ABILITY:Solamnic Auxiliary Mage Class Feature|AUTOMATIC|Solamnic Auxiliary Mage ~ Magic of Justice	ADD:SPELLCASTER|ANY
+
+CLASS:Spellfilch	HD:6	TYPE:Prestige.PC	STARTSKILLPTS:4	MAXLEVEL:10	CSKILL:Appraise|Balance|Bluff|Climb|Concentration|TYPE=Craft|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Gather Information|Hide|Jump|Knowledge (Arcana)|Listen|Move Silently|Open Lock|TYPE=Profession|Search|Sense Motive|Sleight of Hand|Spellcraft|Spot|Swim|Tumble|Use Magic Device|Use Rope	BONUS:COMBAT|BASEAB|classlevel*3/4	BONUS:SAVE|Fort|CL/3	BONUS:SAVE|Ref|CL/2+2	BONUS:SAVE|Will|CL/2+2	AUTO:WEAPONPROF|TYPE=Simple	AUTO:ARMORPROF|ARMORTYPE=Light|ARMORTYPE=Medium	DESC:Thieves of magic. Proficient with simple weapons and light and medium armor, and at 1st level one Small or Tiny exotic weapon of her choice. Decipher Script is an exclusive class skill. Spells: +1 level of her existing class at 1st, 3rd, 5th, 7th and 9th level as Table 1-19 (p.47) prints it; the text on the same page says even-numbered levels, so ask your DM.	PRETEXT:Sneak attack +2d6	PREALIGN:NG,CG,TN,CN,NE,CE	PRECHECKBASE:1,Reflex=5	PRESKILL:1,Bluff=6	PRESKILL:1,Hide=6	PRESKILL:1,Knowledge (Arcana)=6	PRESKILL:1,Spellcraft=6	PREFEAT:1,Silent Spell	PRESPELLTYPE:1,ANY=2	PREVARGTEQ:SneakAttackDice,2	SOURCEPAGE:p.46-48
+1	ABILITY:Spellfilch Class Feature|AUTOMATIC|Spellfilch ~ Exotic Weapon Proficiency	ABILITY:Spellfilch Class Feature|AUTOMATIC|Spellfilch ~ Spellwise (Skills)	ADD:SPELLCASTER|ANY
+2	ABILITY:Spellfilch Class Feature|AUTOMATIC|Spellfilch ~ Signature Spell 1/day
+3	ABILITY:Spellfilch Class Feature|AUTOMATIC|Spellfilch ~ Spellwise (Sneak Attack)	ADD:SPELLCASTER|ANY
+4	ABILITY:Spellfilch Class Feature|AUTOMATIC|Spellfilch ~ Signature Spell 2/day
+5	ABILITY:Spellfilch Class Feature|AUTOMATIC|Spellfilch ~ Spellwise (Evasion)	ADD:SPELLCASTER|ANY
+6	ABILITY:Spellfilch Class Feature|AUTOMATIC|Spellfilch ~ Signature Spell 3/day
+7	ABILITY:Spellfilch Class Feature|AUTOMATIC|Spellfilch ~ Spellwise (Uncanny Dodge)	ADD:SPELLCASTER|ANY
+8	ABILITY:Spellfilch Class Feature|AUTOMATIC|Spellfilch ~ Signature Spell 4/day
+9	ABILITY:Spellfilch Class Feature|AUTOMATIC|Spellfilch ~ Spellwise (Opportunist)	ADD:SPELLCASTER|ANY
+10	ABILITY:Spellfilch Class Feature|AUTOMATIC|Spellfilch ~ Signature Spell 5/day
+
+CLASS:War Mage	HD:4	TYPE:Prestige.PC	STARTSKILLPTS:2	MAXLEVEL:5	CSKILL:Concentration|TYPE=Craft|Heal|TYPE=Knowledge|TYPE=Profession|Spellcraft	BONUS:COMBAT|BASEAB|classlevel/2	BONUS:SAVE|Fort|CL/2+2	BONUS:SAVE|Ref|CL/3	BONUS:SAVE|Will|CL/2+2	DESC:Battlefield spellcasters. Wizards of High Sorcery and Knights of the Thorn may multiclass freely with war mage.	PRETEXT:Weapon Focus (any)	PRESKILL:1,Concentration=8	PRESKILL:1,Spellcraft=8	PREFEAT:1,Combat Casting	PREFEAT:1,Eschew Materials	PRESPELLTYPE:1,Arcane=3	SOURCEPAGE:p.48-49
+1	ABILITY:War Mage Class Feature|AUTOMATIC|War Mage ~ Arcane Aegis (1 ally)	ABILITY:War Mage Class Feature|AUTOMATIC|War Mage ~ Battle Magic +1	ADD:SPELLCASTER|ANY
+2	ABILITY:War Mage Class Feature|AUTOMATIC|War Mage ~ Armored Spellcasting -5%	ABILITY:War Mage Class Feature|AUTOMATIC|War Mage ~ Metamagic	ADD:SPELLCASTER|ANY
+3	ABILITY:War Mage Class Feature|AUTOMATIC|War Mage ~ Arcane Aegis (2 allies)	ABILITY:War Mage Class Feature|AUTOMATIC|War Mage ~ Battle Magic +2	ADD:SPELLCASTER|ANY
+4	ABILITY:War Mage Class Feature|AUTOMATIC|War Mage ~ Armored Spellcasting -10%	ABILITY:War Mage Class Feature|AUTOMATIC|War Mage ~ Metamagic	ADD:SPELLCASTER|ANY
+5	ABILITY:War Mage Class Feature|AUTOMATIC|War Mage ~ Arcane Aegis (3 allies)	ABILITY:War Mage Class Feature|AUTOMATIC|War Mage ~ Battle Magic +3	ADD:SPELLCASTER|ANY
+

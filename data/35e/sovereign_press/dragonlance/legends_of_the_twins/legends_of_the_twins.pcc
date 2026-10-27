@@ -1,0 +1,18 @@
+# Legends of the Twins — importable pack, built by packs/dragonlance/build_legends_of_the_twins.py.
+CAMPAIGN:Legends of the Twins
+KEY:Legends of the Twins
+GAMEMODE:35e
+TYPE:SovereignPress.Dragonlance
+BOOKTYPE:Supplement
+SETTING:Dragonlance
+SOURCELONG:Legends of the Twins
+SOURCESHORT:LotT
+SOURCEDATE:2007
+ISOGL:NO
+
+ABILITY:lott_class_features.lst
+CLASS:lott_classes.lst
+EQUIPMENT:lott_equipment.lst
+ABILITY:lott_feats.lst
+SPELL:lott_spells.lst
+ABILITY:lott_traits.lst

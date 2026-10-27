@@ -1,0 +1,30 @@
+# Legends of the Twins — the Mariner (pp.13-16, the revised class this book says replaces Age of Mortals') and the Knight of the Divine Hammer (pp.16-18).
+CLASS:Mariner	HD:8	TYPE:Base.PC	STARTSKILLPTS:6	MAXLEVEL:20	CSKILL:Balance|Bluff|TYPE=Craft|Climb|Escape Artist|Gather Information|Jump|Knowledge (Local)|Knowledge (Nature)|TYPE=Profession|Speak Language|Spot|Survival|Swim|Tumble|Use Rope	BONUS:COMBAT|BASEAB|classlevel	BONUS:SAVE|Fort|CL/2+2	BONUS:SAVE|Ref|CL/2+2	BONUS:SAVE|Will|CL/3	AUTO:WEAPONPROF|TYPE=Simple|Cutlass|Net|Scimitar|Trident	AUTO:ARMORPROF|ARMORTYPE=Light	AUTO:SHIELDPROF|Buckler	DESC:Sailors and buccaneers of Krynn's seas. Hit Die d8; skill points 6 + Int modifier per level (x4 at 1st); starting steel 5d4 x 10 stl. Proficient with all simple weapons, the cutlass, net, scimitar and trident, light armor and bucklers.	SOURCEPAGE:p.13-16
+1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Bonus Feat	BONUS:FEAT|POOL|1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Sailor Lore	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Seamanship +1
+2	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Dirty Strike +1d4
+4	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Back-to-Back +1
+5	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Bonus Feat	BONUS:FEAT|POOL|1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Seamanship +2
+6	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Dirty Strike +2d4
+8	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Back-to-Back +2
+9	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Seamanship +3
+10	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Bonus Feat	BONUS:FEAT|POOL|1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Dirty Strike +3d4
+12	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Back-to-Back +3
+13	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Seamanship +4
+14	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Dirty Strike +4d4
+15	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Bonus Feat	BONUS:FEAT|POOL|1
+16	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Back-to-Back +4
+17	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Seamanship +5
+18	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Dirty Strike +5d4
+20	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Bonus Feat	BONUS:FEAT|POOL|1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Back-to-Back +5
+
+CLASS:Knight of the Divine Hammer	HD:10	TYPE:Prestige.PC	STARTSKILLPTS:2	MAXLEVEL:10	CSKILL:TYPE=Craft|Diplomacy|Gather Information|Handle Animal|Intimidate|Knowledge (Nobility and Royalty)|Knowledge (Religion)|Ride|Sense Motive	BONUS:COMBAT|BASEAB|classlevel	BONUS:SAVE|Fort|CL/2+2	BONUS:SAVE|Ref|CL/3	BONUS:SAVE|Will|CL/3	AUTO:WEAPONPROF|TYPE=Simple|TYPE=Martial	AUTO:ARMORPROF|ARMORTYPE=Light|ARMORTYPE=Medium|ARMORTYPE=Heavy	AUTO:SHIELDPROF|SHIELDTYPE=Shield|SHIELDTYPE=Tower	DESC:An Istaran knighthood founded under Kingpriest Beldinas. Code of conduct (p.18): pay homage to Paladine daily, seek out and vanquish evil, obey a superior knight, show honor to honorable foes, and be ready to die for the greater good. A knight who grossly violates the code, stops being of a permitted alignment, willfully commits an evil act or takes a level in an arcane spellcasting class loses all special abilities until he atones (atonement; the Lord Marshal or Kingpriest must also accept him back, and an arcane caster must forsake that class's abilities too). Paladins may multiclass freely with this class.	PRETEXT:Served the Hammer as a squire for at least three months, sponsored by another knight, and kept a night's vigil and prayer to Paladine	PREALIGN:LG,LN,NG	PREBAB:5	PRESKILL:1,Handle Animal=2	PRESKILL:1,Knowledge (Religion)=4	PRESKILL:1,Ride=4	PRESKILL:1,Sense Motive=4	PREFEAT:1,Armor Proficiency (Heavy)	PREFEAT:1,Honor-Bound	PREFEAT:1,Negotiator	SOURCEPAGE:p.16-18
+1	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Law of Istar	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Take Him Down
+2	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Favor +1	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Smite Infidel (1st type)
+3	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Coordinate +1
+4	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Smite Infidel (2nd type)	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Valor of Istar
+5	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Favor +2
+6	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Smite Infidel (3rd type)	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Coordinate +2
+7	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Might of Istar
+8	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Favor +3	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Smite Infidel (4th type)
+9	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Coordinate +3
+10	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Smite Infidel (5th type)	ABILITY:Knight of the Divine Hammer Class Feature|AUTOMATIC|Knight of the Divine Hammer ~ Glory of Istar

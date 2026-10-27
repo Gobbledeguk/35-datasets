@@ -1,0 +1,20 @@
+# Age of Mortals — importable pack, built by packs/dragonlance/build_age_of_mortals.py.
+CAMPAIGN:Age of Mortals
+KEY:Age of Mortals
+GAMEMODE:35e
+TYPE:SovereignPress.Dragonlance
+BOOKTYPE:Supplement
+SETTING:Dragonlance
+SOURCELONG:Age of Mortals
+SOURCESHORT:AoM
+SOURCEDATE:2003
+ISOGL:NO
+
+ABILITY:aom_class_features.lst
+CLASS:aom_classes.lst
+DOMAIN:aom_domains.lst
+EQUIPMENT:aom_equipment.lst
+ABILITY:aom_feats.lst
+RACE:aom_races.lst
+SPELL:aom_spells.lst
+TEMPLATE:aom_templates.lst
