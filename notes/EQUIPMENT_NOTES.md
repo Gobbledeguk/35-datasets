@@ -1,0 +1,1071 @@
+# Equipment review – notes
+
+Standard: the Player's Handbook's equipment list (`ph_equip.lst`). All 81 equipment files of the 3.5e and Dark Sun data
+(homebrew excluded) were surveyed; values were already almost entirely in the PHB's forms.
+
+## What was changed (`review_tools/equip_convert.py`)
+- **Token order** (your decision): the PHB's master order, derived from its own lines (consistent, no contradictions):
+  `SORTKEY KEY PROFICIENCY TYPE ALTTYPE CONTAINS NUMPAGES PAGEUSAGE COST WT SLOTS DEFINE ACCHECK CRITMULT CRITRANGE
+  ALTCRITMULT ALTCRITRANGE BASEQTY DAMAGE ALTDAMAGE EQMOD MAXDEX ALTEQMOD WIELD MODS REACH REACHMULT RANGE SIZE SOURCEPAGE
+  QUALITY SPELLFAILURE BONUS SPROP`. Tokens the PHB doesn't use stay right after the token they followed; repeated
+  tokens keep their order. 2,627 lines in 49 files (lines already in order are byte-identical).
+- **Source pages**: bare numbers → `p.N` (994), the Arms and Equipment Guide's "AaEG N" and Tome of Magic's "ToM N" in
+  their own files → `p.N`, typos "p.p.63"/"p153" → `p.63`/`p.153` (1,172 in total). SRD file references
+  ("epicMagicItemsOther.rtf", "MagicItemsI") and web-enhancement references stay – the PHB uses SRD references too.
+- **Weight** ".5" → `0.5` (Races of Ansalon).
+- **Wield category** (your decision) for 9 melee weapons, taken from the same weapon in another book: Dwarven
+  Buckler-axe and Gnome Tortoise Blade (Light, Complete Warrior), Longstaff (TwoHanded, Dragon Magazine Compendium),
+  Gythka, Notbora (TwoHanded, Monster Manual II), Pincer Staff (TwoHanded, Underdark), Dark Sun's Tonfa (Light, Arms and
+  Equipment Guide), Maul (TwoHanded, Complete Warrior) and Gythka.
+- Ranged weapons without `WIELD`/`SIZE` are not gaps: the PHB's own crossbows, javelin, sling and bows have none.
+
+## Verification
+- Converter: every object keeps exactly its tokens apart from the changes above (per-file check).
+- PCGen: all equipment objects dumped from PCGen's model before and after, 10 book sets in both game modes covering
+  every item of all 79 files with items: same objects, 0 unexpected differences, identical load messages.
+
+## Needs the books (listed per file below)
+- empty source page (p.): 715
+- source is not a page number: 129
+- melee weapon without wield category: 65
+- empty cost or weight: 36
+- weapon without damage/critical values: 31
+
+## 35e/paizo/dragon_magazine_compendium/dmc_equip_weapons_armor.lst
+- Atlatl: weapon without DAMAGE
+- Mountain Chain: weapon without DAMAGE
+- Wing Clip: weapon without DAMAGE
+- Pistol (Grenade): weapon without DAMAGE
+- Pistol (Spear): weapon without DAMAGE
+- Rocket Launcher: weapon without DAMAGE
+
+## 35e/skortched_urf_studios/fantasy_firearms/ff_equipment.lst
+- Dwarven Thunderhammer: melee weapon without WIELD (light/one-handed/two-handed)
+- Dwarven Thunderhammer: weapon without DAMAGE/CRITRANGE/CRITMULT
+- Siege Engine: Cannon: weapon without CRITRANGE/CRITMULT
+- Siege Engine: Ship's Cannon: weapon without CRITRANGE/CRITMULT
+- Siege Engine: Dragon Ballista: weapon without CRITRANGE/CRITMULT
+
+## 35e/sword_and_sorcery/campaign_setting/ravenloft/ravenloft_players_handbook/rph_equip.lst
+- Bomb: weapon without CRITRANGE/CRITMULT
+- Smokebomb: weapon without DAMAGE/CRITRANGE/CRITMULT
+
+## 35e/sword_and_sorcery/campaign_setting/world_of_warcraft/core/wow_equip.lst
+- Net: melee weapon without WIELD (light/one-handed/two-handed)
+- Net: weapon without DAMAGE/CRITRANGE/CRITMULT
+
+## 35e/wizards_of_the_coast/campaign_settings/dragonlance/campaign/dcs_equipment.lst
+- Disks of Mishakal: empty source page
+- Statue of E'li: empty source page
+
+## 35e/wizards_of_the_coast/campaign_settings/forgotten_realms/_modules/city_of_the_spider_queen/csq_equip.lst
+- Drow Poison: empty COST
+- Drow Poison: empty WT
+- Amulet of Dark Blessing: empty COST
+- Amulet of Dark Blessing: empty WT
+- Claw of the Revenancer (Minor Artifact): empty COST
+- Claw of the Revenancer (Minor Artifact): empty WT
+- Death Spear (Lesser): empty COST
+- Death Spear (Lesser): empty WT
+- Death Spear (Greater): empty COST
+- Death Spear (Greater): empty WT
+- Drow House Insignia: empty COST
+- Drow House Insignia: empty WT
+- Eyes of the Spider: empty COST
+- Eyes of the Spider: empty WT
+- Fang Scarab: empty COST
+- Fang Scarab: empty WT
+- Fire Elemental Gem: empty COST
+- Fire Elemental Gem: empty WT
+- Hand of Kiaransalee's Glory: empty COST
+- Hand of Kiaransalee's Glory: empty WT
+- Piwafwi (Lesser): empty COST
+- Piwafwi (Lesser): empty WT
+- Piwafwi (Greater): empty COST
+- Piwafwi (Greater): empty WT
+- Ring of See Invisibility: empty COST
+- Ring of See Invisibility: empty WT
+- Ring of Silent Spells (Lesser): empty COST
+- Ring of Silent Spells (Lesser): empty WT
+- Ring of Silent Spells: empty COST
+- Ring of Silent Spells: empty WT
+- Ring of Silent Spells (Greater): empty COST
+- Ring of Silent Spells (Greater): empty WT
+- Robe of Gentle Repose: empty COST
+- Robe of Gentle Repose: empty WT
+- Rod of the Twisted Weave: empty COST
+- Rod of the Twisted Weave: empty WT
+
+## 35e/wizards_of_the_coast/campaign_settings/forgotten_realms/champions_of_valor/cv_equip.lst
+- Glassteel Chain Shirt: empty source page
+- Glassteel Scale Mail: empty source page
+- Glassteel Chainmail: empty source page
+- Glassteel Breastplate: empty source page
+- Glassteel Splint Mail: empty source page
+- Glassteel Banded Mail: empty source page
+- Glassteel Half-Plate: empty source page
+- Glassteel Full Plate: empty source page
+- Glassteel Buckler: empty source page
+- Glassteel Shield (Light/Metal): empty source page
+- Glassteel Shield (Heavy/Metal): empty source page
+- Glassteel Shield (Tower): empty source page
+- Glassteel Barding (Chain Shirt): empty source page
+- Glassteel Barding (Scale Mail): empty source page
+- Glassteel Barding (Chainmail): empty source page
+- Glassteel Barding (Breastplate): empty source page
+- Glassteel Barding (Splint Mail): empty source page
+- Glassteel Barding (Banded Mail): empty source page
+- Glassteel Barding (Half-Plate): empty source page
+- Glassteel Barding (Full Plate): empty source page
+
+## 35e/wizards_of_the_coast/campaign_settings/forgotten_realms/magic_of_faerun/mag_equip.lst
+- Darkberry: empty source page
+- Fairy Dust (1 ounce): empty source page
+- Felsul Flower Oil (1 ounce per Flask): empty source page
+- Fog Rock: empty source page
+- Mule Pollen: empty source page
+- Red Helmthorn Berry: empty source page
+- Shadowtop Torch: empty source page
+- Silverbark Sap (1 ounce): empty source page
+- Sleepweed Pod: empty source page
+- Weirdood: empty source page
+- Cormyrian Greatshield: empty source page
+- Laeral's Spell Shield: empty source page
+- Laeral's Storm Armor: empty source page
+- Shield of Vigilance: empty source page
+- Storm Armor of the Earth's Children: empty source page
+- Arbane's Sword of Agility: empty source page
+- Azureedge: empty source page
+- Blast Sceptre: empty source page
+- Glowstone: empty source page
+- Great Druid's Staff: empty source page
+- Greenstone Amulet: empty source page
+- Rod (Valmaxian): empty source page
+- Shimmaryn: empty source page
+- Crown of Horns: empty source page
+- Naga Crown: empty source page
+- Potion (Oil of Animate Dead): empty source page
+- Potion (Infertility): empty source page
+- Dragon's Draught (Black): empty source page
+- Dragon's Draught (Blue): empty source page
+- Dragon's Draught (Green): empty source page
+- Dragon's Draught (Red): empty source page
+- Dragon's Draught (White): empty source page
+- Dragon's Draught (Brass): empty source page
+- Dragon's Draught (Bronze): empty source page
+- Dragon's Draught (Copper): empty source page
+- Dragon's Draught (Gold): empty source page
+- Dragon's Draught (Silver): empty source page
+- Elixir of Horus-Re: empty source page
+- Moondraught: empty source page
+- Moonfire Salve: empty source page
+- Aribeth's Ring: empty source page
+- Bone Ring: empty source page
+- Commander's Ring: empty source page
+- The Darkhidden: empty source page
+- Ring of Disease Immunity: empty source page
+- Ring of Dragons: empty source page
+- Ring of Might: empty source page
+- Ring of Nine Lives: empty source page
+- Purple Dragon Ring: empty source page
+- Rod (Cats): empty source page
+- Rod (Displacement): empty source page
+- Rod (Mirrors): empty source page
+- Rod (Silence): empty source page
+- Rod (Spiders): empty source page
+- Rod (Surprises): empty source page
+- Rod (Tuning): empty source page
+- Rod (Viscid Globs): empty source page
+- Rod (Whips): empty source page
+- Staff (the Night): empty source page
+- Staff (Open Door): empty source page
+- Staff (Peace): empty source page
+- Staff (Scrivening): empty source page
+- Staff (Skull): empty source page
+- Arrow of Biting: empty source page
+- Banesword: empty source page
+- Berserker Blade (+1): empty source page
+- Berserker Blade (+2): empty source page
+- Blingdenstone Warpick: empty source page
+- Cormanthyrian Elfblade: empty source page
+- Cormyrian Goblinthrasher: empty source page
+- Dagger of Chaos: empty source page
+- Dagger of Defiance: empty source page
+- Gauntlet of the Valorous: empty source page
+- Golden Axe of the Great Rift: empty source page
+- Justice Blade: empty source page
+- Lance of Faerun: empty source page
+- Lit with Danger: empty source page
+- Mace of the Darkchildren: empty source page
+- Namarra: empty source page
+- Nightblade: empty source page
+- One Thousand Broken Dreams: empty source page
+- Prayer of Anger: empty source page
+- Quarterstaff of Battle: empty source page
+- Runehammer (Alhalbrin): empty source page
+- Runehammer (Faerindyl): empty source page
+- Runehammer (Thundaril): empty source page
+- Scimitar of the Fool: empty source page
+- Sembian Guardblade: empty source page
+- Silvermane's Axe: empty source page
+- Singing Sword: empty source page
+- Spectral Dagger: empty source page
+- Spider Fang: empty source page
+- Staff of Mighty Sweeping: empty source page
+- Talosian Shortspear: empty source page
+- Taragarth: empty source page
+- The Fist: empty source page
+- Viper Dagger: empty source page
+- Luiren Shortbow: empty source page
+
+## 35e/wizards_of_the_coast/campaign_settings/forgotten_realms/monsters_of_faerun/mon_equip.lst
+- Silverweave Armor: empty source page
+- Pearl Armor: empty source page
+
+## 35e/wizards_of_the_coast/campaign_settings/forgotten_realms/players_guide_to_faerun/frcs/frcs_equip.lst
+- Agate (Fire): empty source page
+- Crown of Silver: empty source page
+- Fluorspar: empty source page
+- Greenstone: empty source page
+- Hyaline: empty source page
+- Ivory: empty source page
+- Nelvine: empty source page
+- Sanidine: empty source page
+- Violine: empty source page
+- Andar: empty source page
+- Aventurine: empty source page
+- Hydrophane: empty source page
+- Iol: empty source page
+- Orprase: empty source page
+- Phenalope: empty source page
+- Spodumene: empty source page
+- Tchazar: empty source page
+- Angelar's Skin: empty source page
+- Laeral's Tears: empty source page
+- Tourmaline (White): empty source page
+- Tourmaline (Golden): empty source page
+- Tourmaline (Pink): empty source page
+- Tourmaline (Silver pearl): empty source page
+- Corundrum (Black): empty source page
+- Corundrum (Blue): empty source page
+- Opal (Water): empty source page
+- Orl: empty source page
+- Ravenar: empty source page
+- Red Tears: empty source page
+- Sapphire: empty source page
+- Jade (Tomb): empty source page
+- Berijulir: empty source page
+- King's Tears: empty source page
+- Ruby: empty source page
+
+## 35e/wizards_of_the_coast/campaign_settings/forgotten_realms/races_of_faerun/rac_equip.lst
+- Drow Knockout Poison: source "p.??" is not a page
+- Lasso: weapon without DAMAGE/CRITRANGE/CRITMULT
+
+## 35e/wizards_of_the_coast/core/dungeon_masters_guide/dmg_equip.lst
+- Wakizashi: melee weapon without WIELD (light/one-handed/two-handed)
+- Kusari-Gama: melee weapon without WIELD (light/one-handed/two-handed)
+- Pistol: weapon without CRITRANGE
+- Musket: weapon without CRITRANGE
+- Bomb: weapon without CRITRANGE/CRITMULT
+- Smoke Bomb: weapon without DAMAGE/CRITRANGE/CRITMULT
+- Grenade Launcher: weapon without DAMAGE/CRITMULT
+- Coin (Platinum): empty source page
+- Coin (Gold): empty source page
+- Coin (Silver): empty source page
+- Coin (Copper): empty source page
+- Agate (Banded): empty source page
+- Agate (Eye): empty source page
+- Agate (Moss): empty source page
+- Azurite: empty source page
+- Quartz (Blue): empty source page
+- Hematite: empty source page
+- Lapis Lazuli: empty source page
+- Malachite: empty source page
+- Obsidian: empty source page
+- Rhodochrosite: empty source page
+- Tiger Eye: empty source page
+- Turquoise: empty source page
+- Pearl (Freshwater/Irregular): empty source page
+- Bloodstone: empty source page
+- Carnelian: empty source page
+- Chalcedony: empty source page
+- Chrysoprase: empty source page
+- Citrine: empty source page
+- Iolite: empty source page
+- Jasper: empty source page
+- Moonstone: empty source page
+- Onyx: empty source page
+- Peridot: empty source page
+- Rock Crystal (Clear Quartz): empty source page
+- Sard: empty source page
+- Sardonyx: empty source page
+- Quartz (Rose): empty source page
+- Quartz (Smoky): empty source page
+- Quartz (Star Rose): empty source page
+- Zircon: empty source page
+- Amber: empty source page
+- Amethyst: empty source page
+- Chrysoberyl: empty source page
+- Coral: empty source page
+- Garnet (Red): empty source page
+- Garnet (Brown-Green): empty source page
+- Jade: empty source page
+- Jet: empty source page
+- Pearl (White): empty source page
+- Pearl (Golden): empty source page
+- Pearl (Pink): empty source page
+- Pearl (Silver): empty source page
+- Spinel (Red): empty source page
+- Spinel (Red-Brown): empty source page
+- Spinel (Deep Green): empty source page
+- Tourmaline: empty source page
+- Alexandrite: empty source page
+- Aquamarine: empty source page
+- Garnet (Violet): empty source page
+- Pearl (Black): empty source page
+- Spinel (Deep Blue): empty source page
+- Topaz (Golden Yellow): empty source page
+- Emerald: empty source page
+- Opal (White): empty source page
+- Opal (Black): empty source page
+- Opal (Fire): empty source page
+- Sapphire (Blue): empty source page
+- Corundum (Fiery Yellow): empty source page
+- Corundum (Rich Purple): empty source page
+- Star Sapphire (Blue): empty source page
+- Star Sapphire (Black): empty source page
+- Ruby (Star): empty source page
+- Emerald (Clearest Bright Green): empty source page
+- Diamond (Blue-White): empty source page
+- Diamond (Canary): empty source page
+- Diamond (Pink): empty source page
+- Diamond (Brown): empty source page
+- Diamond (Blue): empty source page
+- Jacinth: empty source page
+- Art: empty source page
+- Gem: empty source page
+- Trap (Mechanical): source "RSRD Traps" is not a page
+- Gem (Agate (Banded)): empty source page
+- Gem (Agate (Eye)): empty source page
+- Gem (Agate (Moss)): empty source page
+- Gem (Azurite): empty source page
+- Gem (Quartz (Blue)): empty source page
+- Gem (Hematite): empty source page
+- Gem (Lapis Lazuli): empty source page
+- Gem (Malachite): empty source page
+- Gem (Obsidian): empty source page
+- Gem (Rhodochrosite): empty source page
+- Gem (Tiger Eye): empty source page
+- Gem (Turquoise): empty source page
+- Gem (Pearl (Freshwater/Irregular)): empty source page
+- Gem (Bloodstone): empty source page
+- Gem (Carnelian): empty source page
+- Gem (Chalcedony): empty source page
+- Gem (Chrysoprase): empty source page
+- Gem (Citrine): empty source page
+- Gem (Iolite): empty source page
+- Gem (Jasper): empty source page
+- Gem (Moonstone): empty source page
+- Gem (Onyx): empty source page
+- Gem (Peridot): empty source page
+- Gem (Rock Crystal (Clear Quartz)): empty source page
+- Gem (Sard): empty source page
+- Gem (Sardonyx): empty source page
+- Gem (Quartz (Rose)): empty source page
+- Gem (Quartz (Smoky)): empty source page
+- Gem (Quartz (Star Rose)): empty source page
+- Gem (Zircon): empty source page
+- Gem (Amber): empty source page
+- Gem (Amethyst): empty source page
+- Gem (Chrysoberyl): empty source page
+- Gem (Coral): empty source page
+- Gem (Garnet (Red)): empty source page
+- Gem (Garnet (Brown-Green)): empty source page
+- Gem (Jade): empty source page
+- Gem (Jet): empty source page
+- Gem (Pearl (White)): empty source page
+- Gem (Pearl (Golden)): empty source page
+- Gem (Pearl (Pink)): empty source page
+- Gem (Pearl (Silver)): empty source page
+- Gem (Spinel (Red)): empty source page
+- Gem (Spinel (Red-Brown)): empty source page
+- Gem (Spinel (Deep Green)): empty source page
+- Gem (Tourmaline): empty source page
+- Gem (Alexandrite): empty source page
+- Gem (Aquamarine): empty source page
+- Gem (Garnet (Violet)): empty source page
+- Gem (Pearl (Black)): empty source page
+- Gem (Spinel (Deep Blue)): empty source page
+- Gem (Topaz (Golden Yellow)): empty source page
+- Gem (Emerald): empty source page
+- Gem (Opal (White)): empty source page
+- Gem (Opal (Black)): empty source page
+- Gem (Opal (Fire)): empty source page
+- Gem (Sapphire (Blue)): empty source page
+- Gem (Corundum (Firey Yellow)): empty source page
+- Gem (Corundum (Rich Purple)): empty source page
+- Gem (Star Sapphire (Blue)): empty source page
+- Gem (Star Sapphire (Black)): empty source page
+- Gem (Ruby (Star)): empty source page
+- Gem (Emerald (Clearest Bright Green)): empty source page
+- Gem (Diamond (Blue-White)): empty source page
+- Gem (Diamond (Canary)): empty source page
+- Gem (Diamond (Pink)): empty source page
+- Gem (Diamond (Brown)): empty source page
+- Gem (Diamond (Blue)): empty source page
+- Gem (Jacinth): empty source page
+- Art (Silver Ewer): empty source page
+- Art (Statuette (Carved Bone)): empty source page
+- Art (Statuette (Ivory)): empty source page
+- Art (Bracelet (Small/Gold/Finely Wrought)): empty source page
+- Art (Vestments (Cloth of Gold)): empty source page
+- Art (Mask (Black Velvet with Numerous Citrines)): empty source page
+- Art (Chalice (Silver with Lapis Lazuli Gems): empty source page
+- Art (Tapestry (Large/Wool/Well-Done)): empty source page
+- Art (Mug (Brass with Jade Inlays)): empty source page
+- Art (Comb (Silver with Moonstones)): empty source page
+- Art (Longsword (Silver-Plated with Jet Jewel in Hilt)): empty source page
+- Art (Harp (Carved Exotic Wood with Ivory Inlay and Zircon Gems)): empty source page
+- Art (Idol (Solid Gold 10 lb.)): empty source page
+- Art (Comb (Gold Dragon with Red Garnet Eye)): empty source page
+- Art (Stopper Cork (Gold and Topaz)): empty source page
+- Art (Dagger (Ceremonial Electrum with Star Ruby in the Pommel)): empty source page
+- Art (Eyepatch (Mock Eye of Sapphire and Moonstone)): empty source page
+- Art (Pendant (Fire Opal on Fine Gold Chain)): empty source page
+- Art (Painting (Old Masterpiece)): empty source page
+- Art (Mantle (Embroidered Silk and Velvet with Numerous Moonstones)): empty source page
+- Art (Pendant (Sapphire on Gold Chain)): empty source page
+- Art (Glove (Embroidered and Bejeweled)): empty source page
+- Art (Anklet (Jeweled)): empty source page
+- Art (Music Box (Gold)): empty source page
+- Art (Circlet (Golden with Four Aquamarines)): empty source page
+- Art (Necklace (String of Small Pink Pearls)): empty source page
+- Art (Crown (Jeweled Gold)): empty source page
+- Art (Ring (Jeweled Electrum)): empty source page
+- Art (Ring (Gold and Ruby)): empty source page
+- Art (Cup (Gold Set with Emeralds)): empty source page
+- Ring of Meld into Stone: empty source page
+- Scroll (Protection from Evil/Arcane): source "p.237 (PH 266)" is not a page
+- Wand (Cure Moderate Wounds): source "p.245/216PH" is not a page
+- Periapt of the Night Hag (Heartstone): source "MonstersM-N" is not a page
+- Robe of Stars Shuriken +5: empty source page
+
+## 35e/wizards_of_the_coast/core/monster_manual/mm_equip.lst
+- Giant Rock (Large): weapon without CRITRANGE/CRITMULT
+- Giant Rock (Huge): weapon without CRITRANGE/CRITMULT
+- Giant Rock (Fire Giant): weapon without CRITRANGE/CRITMULT
+- Giant Rock (Stone Giant): weapon without CRITRANGE/CRITMULT
+- Giant Rock (Cloud Giant): weapon without CRITRANGE/CRITMULT
+
+## 35e/wizards_of_the_coast/core/players_handbook/ph_equip.lst
+- Net: melee weapon without WIELD (light/one-handed/two-handed)
+- Net: weapon without DAMAGE/CRITRANGE/CRITMULT
+- Hourglass: empty source page
+
+## 35e/wizards_of_the_coast/supplement/arms_and_equipment/ae_equip.lst
+- Gnome Calculus: weapon without DAMAGE/CRITRANGE/CRITMULT
+- Beetle Buckler: source "P.14" is not a page
+- Dastana: source "P.15" is not a page
+- Stilleto Shield: source "P.17" is not a page
+- Candle Mold: empty source page
+- Bodysuit, Black: empty source page
+- Boots (Smuggler's): empty source page
+- Disarmor: source "AaEg 94" is not a page
+
+## 35e/wizards_of_the_coast/supplement/book_of_exalted_deeds/be_equip.lst
+- Lasso: weapon without DAMAGE/CRITRANGE/CRITMULT
+- Moonblood: empty source page
+- Demondoom: melee weapon without WIELD (light/one-handed/two-handed)
+- Demondoom: weapon without DAMAGE/CRITRANGE/CRITMULT
+- Nightblade of Arvandor: melee weapon without WIELD (light/one-handed/two-handed)
+- Nightblade of Arvandor: weapon without DAMAGE/CRITRANGE/CRITMULT
+
+## 35e/wizards_of_the_coast/supplement/book_of_vile_darkness/bv_equip.lst
+- Torture Device (Branding Iron): empty source page
+- Torture Device (Dagger): empty source page
+- Torture Device (Hot Lead): empty source page
+- Torture Device (Iron Maidem/Low): empty source page
+- Torture Device (Iron Maidem/Medium): empty source page
+- Torture Device (Iron Maidem/Severe): empty source page
+- Torture Device (Iron Maidem/Terminal): empty source page
+- Torture Device (Jaw Breaker): empty source page
+- Torture Device (Needle): empty source page
+- Torture Device (Pillory): empty source page
+- Torture Device (Rack): empty source page
+- Torture Device (Scalpel): empty source page
+- Torture Device (Thumbscrew): empty source page
+- Execution Device (Crucifixion Cross): empty source page
+- Execution Device (Draw and Quarter): empty source page
+- Execution Device (Hanging Rope): empty source page
+- Execution Device (Headsman's Axe): empty source page
+- Feather Powder: empty source page
+- Festering Bomb: empty source page
+- Karras Stone Knife: empty source page
+- Violated Bomb: empty source page
+- Weeping Stone: empty source page
+- Agony: empty source page
+- Beast brain fluid: empty source page
+- Bit of lycanthrope fur or skin: empty source page
+- Bit of ochre jelly or gray ooze: empty source page
+- Chromatic dragon heart: empty source page
+- Demon flesh: empty source page
+- Demon heart: empty source page
+- Devil's heart: empty source page
+- Feather of an intelligent creature: empty source page
+- Humanoid bone: empty source page
+- Humanoid brain: empty source page
+- Humanoid child eye: empty source page
+- Humanoid finger: empty source page
+- humanoid hand: empty source page
+- humanoid heart: empty source page
+- Metallic dragon heart: empty source page
+- Soul (larval form): empty source page
+- Soul (receptacle): empty source page
+- Tongue of creature capable of speech: empty source page
+- Vial (Humanoid blood): empty source page
+- Vrock feather: empty source page
+- Yugoloth brain: empty source page
+- Phase Organ: empty source page
+- Extra Armor: empty source page
+- Tatterdemalion: source "p., pag 53" is not a page
+- Armor of the Dread Emperor: empty source page
+- Fleshshifter Armor: empty source page
+- Grim Defender: empty source page
+- Razor Armor: empty source page
+- Angel Blood: empty source page
+- Angel Rears: empty source page
+- Demon Blood: empty source page
+- Demonstone: empty source page
+- Devil Blood: empty source page
+- Kython Armor: empty source page
+- Midnight Blade: empty source page
+- Midnight Blade (Cursed): empty source page
+- Rhapsody of Pain: empty source page
+- Ring of the Dread Emperor: empty source page
+- Staff of Malice: empty source page
+- Cauldron of Zombie Spewing: empty source page
+- Demonic Graft Machine: empty source page
+- Pain Pit: empty source page
+- Death Rock: empty source page
+- Despoiler of Flesh: empty source page
+- Iron Flask of Tuerny the Merciless: empty source page
+- The Ruby Rod of Asmodeus: empty source page
+- The Wand of Orcus: empty source page
+- Regalia of Evil (Crown of Evil): empty source page
+- Regalia of Good (Scepter of Evil): empty source page
+- Regalia of Good (Orb of Evil): empty source page
+- Drugs (Agony): empty source page
+- Drugs (Baccaran): empty source page
+- Drugs (Devilweed): empty source page
+- Drugs (Luhix): empty source page
+- Drugs (Mordayn Vapor): empty source page
+- Drugs (Mushroon Powder): empty source page
+- Drugs (Redflower Leaves): empty source page
+- Drugs (Sannish): empty source page
+- Drugs (Terran Brandy): empty source page
+- Drugs (Vodare): empty source page
+- Poison (Tiny centipede poison): empty source page
+- Poison (Medium centipede poison): empty source page
+- Poison (Large centipede poison): empty source page
+- Poison (Huge centipede poison): empty source page
+- Poison (Gargantuan centipede poison): empty source page
+- Poison (Colossal centipede poison): empty source page
+- Poison (Tiny scorpion venom): empty source page
+- Poison (Small scorpion venom): empty source page
+- Poison (Medium scorpion venom): empty source page
+- Poison (Huge scorpion venom): empty source page
+- Poison (Gargantuan scorpion venom): empty source page
+- Poison (Colossal scorpion venom): empty source page
+- Poison (Tiny spider venom): empty source page
+- Poison (Small spider venom): empty source page
+- Poison (Large spider venom): empty source page
+- Poison (Huge spider venom): empty source page
+- Poison (Gargantuan spider venom): empty source page
+- Poison (Colossal spider venom): empty source page
+- Poison (Bebilith venom): empty source page
+- Poison (Devilseye): empty source page
+- Poison (Lifebane): empty source page
+- Poison (Eyeblast): empty source page
+- Poison (Balor bile): empty source page
+- Poison (Vilestar): empty source page
+- Poison (Sasson juice): empty source page
+- Poison (Sufferfume): empty source page
+- Poison (Urthanyk): empty source page
+- Poison (Mist of nourn): empty source page
+- Poison (Ishentav): empty source page
+- Poison (Burning angel wings fumes): empty source page
+- Poison (Basilisk breath): empty source page
+- Psychic Poison (Darin-tasith): empty source page
+- Psychic Poison (Karadach): empty source page
+- Psychic Poison (Estadrach): empty source page
+- Psychic Poison (Stradda): empty source page
+- Psychic Poison (Nishita): empty source page
+- Psychic Poison (Vashita): empty source page
+- Psychic Poison (Lanshita): empty source page
+- Psychic Poison (Blue unlyn): empty source page
+- Psychic Poison (Red unlyn): empty source page
+- Psychic Poison (Amber unlyn): empty source page
+- Psychic Poison (Violet unlyn): empty source page
+- Psychic Poison (Black unlyn): empty source page
+- Master Ring: empty source page
+- Ring of Weeping: empty source page
+- Slave Ring: empty source page
+- Ring of Vile Weapon: empty source page
+- Ring of Vile Spell: empty source page
+- Rod (Celestial Bane): empty source page
+- Rod (Harrow): empty source page
+- Rod (Possession): empty source page
+- Flesheater: empty source page
+- Staff (Corruption): empty source page
+- Staff (Darkness): empty source page
+- Staff (Pestilence): empty source page
+- Hell's Heart: empty source page
+- Hell's Heart (20): empty source page
+- Spectral Arrow: empty source page
+- Spectral Arrows (20): empty source page
+- Axe (Rutterkin Double): empty source page
+- Snap-Tong: empty source page
+- Boneblade: empty source page
+- Mouth Launcher: empty source page
+- Mucus Pod: empty source page
+- Angelkiller: empty source page
+- Blackguard's Blade: empty source page
+- Chain of Barriers: empty source page
+- Charnel Reaver: empty source page
+- Harrowheart: empty source page
+- Sacrifical Knife: empty source page
+- Warpsword: empty source page
+- Three-Armed Blade: empty source page
+- Belt of the Dread Emperor: empty source page
+- Collar of Venom: empty source page
+- Collar of Virulent Venom: empty source page
+- Dark Altar Stone: empty source page
+- Elixir of Dark Speech: empty source page
+- Fanatic's Collar: empty source page
+- Flesh Ring of Scorn: empty source page
+- Gem of Psychic Poison: empty source page
+- Heaven's Thorn: empty source page
+- Hook of Dissolution: empty source page
+- Iron Maiden of Preservation: empty source page
+- Maggot Harvester: empty source page
+- Necklace of Demons: empty source page
+- Nipple Clamp of Exquisite Pain: empty source page
+- Oil of the Lamia: empty source page
+- Pain Extractor: empty source page
+- Pipe of Grief: empty source page
+- Piercing Needles of Pain: empty source page
+- Quiver of Lies: empty source page
+- Rack of Irresistible Torture: empty source page
+- Skull of Fear: empty source page
+- Slime Pot: empty source page
+- Spiralburst Bottle: empty source page
+- Symbol of Demogorgon: empty source page
+- Tongue Studs of Hell Breath: empty source page
+- Vasharan Offal Bag: empty source page
+- Vasharan Worm Pod: empty source page
+
+## 35e/wizards_of_the_coast/supplement/cityscape/ci_equip.lst
+- False Paper: source "p.WebEn 21" is not a page
+- Liquid Light: source "p.WebEn 22" is not a page
+- Sewer Mask: source "p.WebEn 22" is not a page
+- Cloak (Weighted): source "p.WebEn 22" is not a page
+- Lute-bow: source "p.WebEn 22" is not a page
+- Swordcane: source "p.WebEn 23" is not a page
+- Bolt of Arrest: source "p.WebEn 24" is not a page
+- Bolt of Arrest (Greater): source "p.WebEn 24" is not a page
+- Duo-Dimensional Jug: source "p.WebEn 24" is not a page
+- Guardian's Lantern: source "p.WebEn 25" is not a page
+
+## 35e/wizards_of_the_coast/supplement/complete_adventurer/cad_equip.lst
+- Barbed Dagger: melee weapon without WIELD (light/one-handed/two-handed)
+- Broadblade Short Sword: melee weapon without WIELD (light/one-handed/two-handed)
+- Quickblade Rapier: melee weapon without WIELD (light/one-handed/two-handed)
+- Longaxe: melee weapon without WIELD (light/one-handed/two-handed)
+- The Spiteful Imp: source "CmpAdv 143" is not a page
+- Crimson Coat of Ilpharzz: source "CmpAdv 142" is not a page
+
+## 35e/wizards_of_the_coast/supplement/complete_arcane/car_equip.lst
+- Crimson Coat of Ilpharaz: empty source page
+- Mithralmist Shirt: empty source page
+- Spiteful Imp: empty source page
+- Grimoire Arcanamacha: empty source page
+- Spellbook (Geometer/Blank): empty source page
+- Spellbook (Tatoo/Hand): empty source page
+- Spellbook (Tatoo/Forearm): empty source page
+- Spellbook (Tatoo/Upperarm): empty source page
+- Spellbook (Tatoo/Chest): empty source page
+- Spellbook (Tatoo/Abdomen): empty source page
+- Spellbook (Tatoo/Upper leg): empty source page
+- Spellbook (Tatoo/Lower leg): empty source page
+- Spellbook (Tatoo/Foot): empty source page
+- Spellbook (Tatoo/Face): empty source page
+- Spellbook (Tatoo/Scalp): empty source page
+- Spellbook (Tatoo/Back upper): empty source page
+- Spellbook (Tatoo/Back lower): empty source page
+- Spellbook (Tatoo/Leg posterior): empty source page
+- Spellbook (Tatoo/Arm posterior): empty source page
+- Spellbook (Token/Slingstone): empty source page
+- Spellbook (Token/Cobblestone): empty source page
+- Spellbook (Token/Rod): empty source page
+- Spellbook (Token/Club): empty source page
+- Spellbook (Token/Staff): empty source page
+- Spellbook (Parchment/Blank): empty source page
+- Spellbook (Paper Linen/Blank): empty source page
+- Spellbook (Vellum/Blank): empty source page
+- Spellbook (Bone/Blank): empty source page
+- Spellbook (Ivory/Blank): empty source page
+- Spellbook (Metal foil/Blank): empty source page
+- Aroma of Curdled Death: empty source page
+- Aroma of Dreams: empty source page
+- Belt of Many Pockets: empty source page
+- Belt of Spell Resistance: empty source page
+- Book of Blood: empty source page
+- Contract of Nepthas: empty source page
+- Dust of Dispersion: empty source page
+- Dyrr's Impervious Vestment: empty source page
+- Musical Instrument (Fochluchan Bandore): empty source page
+- Musical Instrument (Max Fuirmidh Cithern): empty source page
+- Musical Instrument (Doss Lute): empty source page
+- Musical Instrument (Canaith Mandolin): empty source page
+- Musical Instrument (Cli Lyre): empty source page
+- Musical Instrument (Anstruth Harp): empty source page
+- Musical Instrument (Ollamh Harp): empty source page
+- Lenses of Darkness: empty source page
+- Phoenix Helm: empty source page
+- Powder of Black Veil: empty source page
+- Rug of Welcome: empty source page
+- Sending Stones: empty source page
+- Thought Bottle: empty source page
+- Vest of Resistance +1: empty source page
+- Vest of Resistance +2: empty source page
+- Vest of Resistance +3: empty source page
+- Vest of Resistance +4: empty source page
+- Vest of Resistance +5: empty source page
+- Spell Object (Resist Energy): empty source page
+- Spell Object (Nondetection): empty source page
+- Spell Object (Flaming Sphere): empty source page
+- Spell Object (Haste): empty source page
+- Spell Object (Invisibility): empty source page
+- Spell Object (Fly): empty source page
+- Spell Object (Sleet Storm): empty source page
+- Rod (Fury/+1): empty source page
+- Rod (Fury/+2): empty source page
+- Rod (Fury/+3): empty source page
+- Rod (Fury/+4): empty source page
+- Rod (Fury/+5): empty source page
+- Rod (Interference): empty source page
+- Warlock Sceptre: empty source page
+- Rod (Cooperation/Lesser): empty source page
+- Rod (Cooperation): empty source page
+- Rod (Cooperation/Greater): empty source page
+- Rod (Sculpting/Lesser): empty source page
+- Rod (Sculpting): empty source page
+- Rod (Sculpting/Greater): empty source page
+- Rod (Substitution/Lesser): empty source page
+- Rod (Substitution): empty source page
+- Rod (Substitution/Greater): empty source page
+- Rod (Substitution/Lesser/Acid): empty source page
+- Rod (Substitution/Acid): empty source page
+- Rod (Substitution/Greater/Acid): empty source page
+- Rod (Substitution/Lesser/Cold): empty source page
+- Rod (Substitution/Cold): empty source page
+- Rod (Substitution/Greater/Cold): empty source page
+- Rod (Substitution/Lesser/Electricity): empty source page
+- Rod (Substitution/Electricity): empty source page
+- Rod (Substitution/Greater/Electricity): empty source page
+- Rod (Substitution/Lesser/Fire): empty source page
+- Rod (Substitution/Fire): empty source page
+- Rod (Substitution/Greater/Fire): empty source page
+- Staff (Entrapment): empty source page
+- Staff (Ethereal Action): empty source page
+- Staff (Eyes): empty source page
+- Staff (Fiendish Darkness): empty source page
+- Staff (Mastery): empty source page
+- Staff (Night): empty source page
+- Staff (Opening): empty source page
+- Staff (Skulls): empty source page
+- Staff (Transportation): empty source page
+- Staff (Vision): empty source page
+- Spell Object: empty source page
+- Magic Fruit: empty source page
+- Magic Tile: empty source page
+- Skull Talisman: empty source page
+- Gemstone: empty source page
+- Incendiary Powder: empty source page
+- Macrame: empty source page
+- Vellum: empty source page
+
+## 35e/wizards_of_the_coast/supplement/complete_warrior/cw_equip.lst
+- Dart, Blowgun (10): source "G" is not a page
+- Dart, Blowgun: source "G" is not a page
+- Blowgun, Greater: weapon without DAMAGE/CRITRANGE/CRITMULT
+
+## 35e/wizards_of_the_coast/supplement/draconomicon/dr_equip.lst
+- Blade of Dragondoom: empty source page
+- Longspear of Piercing: empty source page
+- Dragonbone Bow (Composite +0/Long): empty source page
+- Dragonbone Bow (Composite +0/Short): empty source page
+- Dragonbone Bow (Composite/Long): empty source page
+- Dragonbone Bow (Composite/Short): empty source page
+- Bow of the Mighty Dragonhunter: empty source page
+- Dragonarmor of Invincibility: empty source page
+- Armor of Dragonshape (Black): empty source page
+- Armor of Dragonshape (Green): empty source page
+- Armor of Dragonshape (White): empty source page
+- Armor of Dragonshape (Blue): empty source page
+- Armor of Dragonshape (Red): empty source page
+- Armor of Dragonshape (Copper): empty source page
+- Armor of Dragonshape (Silver): empty source page
+- Armor of Dragonshape (Bronze): empty source page
+- Armor of Dragonshape (Brass): empty source page
+- Armor of Dragonshape (Gold): empty source page
+- Armor of Mobility: empty source page
+- Bulwark of Antimagic: empty source page
+- Dragondodger Armor: empty source page
+- Dragonrider Armor (Black): empty source page
+- Dragonrider Armor (Green): empty source page
+- Dragonrider Armor (White): empty source page
+- Dragonrider Armor (Blue): empty source page
+- Dragonrider Armor (Red): empty source page
+- Dragonrider Armor (Copper): empty source page
+- Dragonrider Armor (Silver): empty source page
+- Dragonrider Armor (Bronze): empty source page
+- Dragonrider Armor (Brass): empty source page
+- Dragonrider Armor (Gold): empty source page
+- Draught of Chromatic Dragon Breath: source "G" is not a page
+- Draught of Gem Dragon Breath: source "G" is not a page
+- Poison (Dracolich Brew): empty source page
+- Claws of the Ripper: empty source page
+- Ring of Dragon Friendship: empty source page
+- Ring of Dragon Shape: empty source page
+- Rod (Dragon Mastery/Crimson): empty source page
+- Rod (Dragon Mastery/Golden): empty source page
+- Staff (Draconic Power): empty source page
+- Staff (Dragonslayer): empty source page
+- Gemstone of Fortification (Light): empty source page
+- Gemstone of Fortification (Medium): empty source page
+- Gemstone of Fortification (Heavy): empty source page
+- Gorget of Tempest Breath: empty source page
+- Jaws of the Dragon: empty source page
+- Pectoral of Maneuverability: empty source page
+- Pectoral of Maneuverability (Greater): empty source page
+- Dragonhide Mantle (Black): empty source page
+- Dragonhide Mantle (Green): empty source page
+- Dragonhide Mantle (White): empty source page
+- Dragonhide Mantle (Blue): empty source page
+- Dragonhide Mantle (Red): empty source page
+- Dragonhide Mantle (Copper): empty source page
+- Dragonhide Mantle (Silver): empty source page
+- Dragonhide Mantle (Bronze): empty source page
+- Dragonhide Mantle (Brass): empty source page
+- Dragonhide Mantle (Gold): empty source page
+- Boots of Dragonstriding: empty source page
+- Bracers of Dragonhide Armor +1: empty source page
+- Bracers of Dragonhide Armor +2: empty source page
+- Bracers of Dragonhide Armor +3: empty source page
+- Bracers of Dragonhide Armor +4: empty source page
+- Bracers of Dragonhide Armor +5: empty source page
+- Dracolich Phylactery: empty source page
+- Dragon's Eye Amulet: empty source page
+- Dragonfang Gauntlets: empty source page
+- Goggles of Draconic Vision: empty source page
+- Golem Manual (Dragonbone): empty source page
+- Golem Manual (Drakestone): empty source page
+- Golem Manual (Ironwyrm): empty source page
+- Horn of Dragons (Bronze): empty source page
+- Horn of Dragons (Copper): empty source page
+- Horn of Dragons (Green): empty source page
+- Horn of Dragons (Black): empty source page
+- Idol of the Dragon (White/Wyrmling): empty source page
+- Idol of the Dragon (Brass/Wyrmling): empty source page
+- Idol of the Dragon (Black/Very Young): empty source page
+- Idol of the Dragon (Copper/Very Young): empty source page
+- Idol of the Dragon (Green/Young): empty source page
+- Idol of the Dragon (Bronze/Young): empty source page
+- Idol of the Dragon (Blue/Jouvenile): empty source page
+- Idol of the Dragon (Silver/Jouvenile): empty source page
+- Idol of the Dragon (Red/Young Adult): empty source page
+- Idol of the Dragon (Gold/Young Adult): empty source page
+- Mantle of the Silver Wyrm: empty source page
+- Wyrmfang Amulet: empty source page
+- Amulet of Supremacy: empty source page
+- Draco Mystere: empty source page
+
+## 35e/wizards_of_the_coast/supplement/dungeon_masters_guide_2/dmg2_equip.lst
+- Vest of Legends: empty source page
+
+## 35e/wizards_of_the_coast/supplement/lords_of_madness/lom_equipment.lst
+- Dust of Negation: source "P.214" is not a page
+
+## 35e/wizards_of_the_coast/supplement/monster_manual_2/mm2_equip.lst
+- Laboratory (Half Golem): source "MM2" is not a page
+- Bogun: source "MM2" is not a page
+- Bronze Serpent: source "MM2" is not a page
+- Golem (Brass): source "MM2" is not a page
+- Golem (Chain): source "MM2" is not a page
+- Golem (Dragonflesh): source "MM2" is not a page
+- Golem (Jaggernaut): source "MM2" is not a page
+- Golem (Stained Glass): source "MM2" is not a page
+- Dread Guard: source "MM2" is not a page
+- Nimblewright: source "MM2" is not a page
+- Runic Guardian: source "MM2" is not a page
+- Abyssal Maw: source "MM2" is not a page
+- Abyssal Skulker: source "MM2" is not a page
+- Abyssal Ravager: source "MM2" is not a page
+- Jovoc: source "MM2" is not a page
+- Palrethee: source "MM2" is not a page
+- Zovvut: source "MM2" is not a page
+- Jarilith: source "MM2" is not a page
+- Kelvezu: source "MM2" is not a page
+- Advespa: source "MM2" is not a page
+- Amnizu: source "MM2" is not a page
+- Malebranche: source "MM2" is not a page
+- Ice Rune: source "MM2" is not a page
+- Moonstone: source "MM2, pag. 150" is not a page
+- Air Supply: source "MM2" is not a page
+- Frostfire: source "MM2" is not a page
+- Frostfire (Flask): source "MM2" is not a page
+- Breathing Mask: source "MM2" is not a page
+- Cable (Metal/100 Ft.): source "MM2" is not a page
+- Harness: source "MM2" is not a page
+- Kinship Badge: source "MM2" is not a page
+- Cablespool: source "MM2" is not a page
+
+## 35e/wizards_of_the_coast/supplement/monster_manual_2/mm2_equip_arms_and_armor.lst
+- Death Ray: source "MM2" is not a page
+- Pressure Dart: source "MM2" is not a page
+- Spit: source "MM2" is not a page
+- Needles: source "MM2" is not a page
+- Kyuss's Gift: source "MM2" is not a page
+- Notbora: source "MM2" is not a page
+- Gythka: source "MM2" is not a page
+- Chatkcha: source "MM2" is not a page
+- Taklif Arrow: source "MM2" is not a page
+- Dagger: source "MM2" is not a page
+- Dart: source "MM2" is not a page
+- Flail: source "MM2" is not a page
+- Flail (Heavy): source "MM2" is not a page
+- Greatclub: source "MM2" is not a page
+- Greatclub: source "MM2" is not a page
+- Greatsword: source "MM2" is not a page
+- Javelin: source "MM2" is not a page
+- Lance: source "MM2" is not a page
+- Longspear: source "MM2" is not a page
+- Morningstar: source "MM2" is not a page
+- Notbora: source "MM2" is not a page
+- Ranseur: source "MM2" is not a page
+- Scimitar: source "MM2" is not a page
+- Shortspear: source "MM2" is not a page
+- Trident: source "MM2" is not a page
+- Trident: source "MM2" is not a page
+- Longbow (Composite): source "MM2" is not a page
+- Longbow (Composite): source "MM2" is not a page
+- Longbow (Composite): source "MM2" is not a page
+- Longbow (Composite): source "MM2" is not a page
+- Hide: source "MM2" is not a page
+- Studded Leather: source "MM2" is not a page
+- Studded Leather: source "MM2" is not a page
+- Banded Mail: source "MM2" is not a page
+- Shield, Light Metal: source "MM2" is not a page
+
+## 35e/wizards_of_the_coast/supplement/races_of_stone/rs_equip.lst
+- Hammer, Throwing: melee weapon without WIELD (light/one-handed/two-handed)
+- Quickrazor, Gnome: melee weapon without WIELD (light/one-handed/two-handed)
+- Swordcatcher, Gnome: melee weapon without WIELD (light/one-handed/two-handed)
+- Greathammer, Goliath: melee weapon without WIELD (light/one-handed/two-handed)
+- Spear, Dwarven Double: melee weapon without WIELD (light/one-handed/two-handed)
+- Warpike, Dwarven: melee weapon without WIELD (light/one-handed/two-handed)
+
+## 35e/wizards_of_the_coast/supplement/races_of_the_wild/rw_equip.lst
+- Thistledown Padded: source "RotW 168" is not a page
+
+## 35e/wizards_of_the_coast/supplement/savage_species/ss_equipment.lst
+- Barbed Chain: melee weapon without WIELD (light/one-handed/two-handed)
+- Tail Blade: melee weapon without WIELD (light/one-handed/two-handed)
+- Tail Club: melee weapon without WIELD (light/one-handed/two-handed)
+- Chain Lash: melee weapon without WIELD (light/one-handed/two-handed)
+- Salamander Longspear: melee weapon without WIELD (light/one-handed/two-handed)
+- Scissors Sword: melee weapon without WIELD (light/one-handed/two-handed)
+- Sharktooth Staff: melee weapon without WIELD (light/one-handed/two-handed)
+- Snake Chain: melee weapon without WIELD (light/one-handed/two-handed)
+- Chuul Lasher: melee weapon without WIELD (light/one-handed/two-handed)
+
+## 35e/wizards_of_the_coast/web/fey_feature/ff_equip.lst
+- Distillate of Dew: source "Magic of Delight and Despair" is not a page
+- Staff of Disintergration (Perverse): source "Magic of Delight and Despair" is not a page
+- Basket of Delights: source "Magic of Delight and Despair" is not a page
+- Basket of Tainted Delights: source "Magic of Delight and Despair" is not a page
+- Decorative Statue: source "Magic of Delight and Despair" is not a page
+- Figurine of Horrific Power (Beastly Boar): source "Magic of Delight and Despair" is not a page
+- Figurine of Horrific Power (Bronze Griffon): source "Magic of Delight and Despair" is not a page
+- Figurine of Horrific Power (Dark Beauty): source "Magic of Delight and Despair" is not a page
+- Figurine of Horrific Power (Ebony Fly): source "Magic of Delight and Despair" is not a page
+- Figurine of Horrific Power (Golden Lions): source "Magic of Delight and Despair" is not a page
+- Figurine of Horrific Power (Ivory Goats): source "Magic of Delight and Despair" is not a page
+- Figurine of Horrific Power (Marble Elephant): source "Magic of Delight and Despair" is not a page
+- Figurine of Horrific Power (Obsidian Steed): source "Magic of Delight and Despair" is not a page
+- Figurine of Horrific Power (Onyx Dog): source "Magic of Delight and Despair" is not a page
+- Figurine of Horrific Power (Serpentine Owl): source "Magic of Delight and Despair" is not a page
+- Figurine of Horrific Power (Silver Raven): source "Magic of Delight and Despair" is not a page
+- Figurine of Wondrous Power (Beastly Boar): source "Magic of Delight and Despair" is not a page
+- Figurine of Wondrous Power (Dark Beauty): source "Magic of Delight and Despair" is not a page
+- Gem of Darkness: source "Magic of Delight and Despair" is not a page
+- Jewel of Deceit: source "Magic of Delight and Despair" is not a page
+- Laurel Crown: source "Magic of Delight and Despair" is not a page
+- Living Landscape (Greater): source "Magic of Delight and Despair" is not a page
+- Living Landscape (Lesser): source "Magic of Delight and Despair" is not a page
+- M'Ara's Shoes: source "Magic of Delight and Despair" is not a page
+- Mask of the Beast: source "Magic of Delight and Despair" is not a page
+- Tapestry of Travel: source "Magic of Delight and Despair" is not a page
+- Dazling Stone Teardrop Collection (Bracelet): source "Fey Kelir Magics" is not a page
+- Dazling Stone Teardrop Collection (Cloak Fastener): source "Fey Kelir Magics" is not a page
+- Dazling Stone Teardrop Collection (Earrings): source "Fey Kelir Magics" is not a page
+- Dazling Stone Teardrop Collection (Necklace): source "Fey Kelir Magics" is not a page
+- Dazling Stone Teardrop Collection (Pin): source "Fey Kelir Magics" is not a page
+- Gray Portrait: source "Magic of Delight and Despair" is not a page
+- Harp of Shimmering Beauty: source "Fey Kelir Magics" is not a page
+- Kira's Necklace: source "Magic of Delight and Despair" is not a page
+
+## darksun_35e/campaign_setting/dscs_equip.lst
+- Puchik: melee weapon without WIELD (light/one-handed/two-handed)
+- Quabone: melee weapon without WIELD (light/one-handed/two-handed)
+- Great Tonfa: melee weapon without WIELD (light/one-handed/two-handed)
+- Forearm Axe: melee weapon without WIELD (light/one-handed/two-handed)
+- Macahuitl, Small: melee weapon without WIELD (light/one-handed/two-handed)
+- Slodak: melee weapon without WIELD (light/one-handed/two-handed)
+- Tortoise Blade: melee weapon without WIELD (light/one-handed/two-handed)
+- Alak: melee weapon without WIELD (light/one-handed/two-handed)
+- Alhulak: melee weapon without WIELD (light/one-handed/two-handed)
+- Carrikal: melee weapon without WIELD (light/one-handed/two-handed)
+- Impaler: melee weapon without WIELD (light/one-handed/two-handed)
+- Macahuitl: melee weapon without WIELD (light/one-handed/two-handed)
+- Crusher, Fixed: melee weapon without WIELD (light/one-handed/two-handed)
+- Datchi Club: melee weapon without WIELD (light/one-handed/two-handed)
+- Gouge: melee weapon without WIELD (light/one-handed/two-handed)
+- Macahuitl, Great: melee weapon without WIELD (light/one-handed/two-handed)
+- Tkaesali: melee weapon without WIELD (light/one-handed/two-handed)
+- Trikal: melee weapon without WIELD (light/one-handed/two-handed)
+- Bard's Friend: melee weapon without WIELD (light/one-handed/two-handed)
+- Ko: melee weapon without WIELD (light/one-handed/two-handed)
+- Garrote, Bard's: melee weapon without WIELD (light/one-handed/two-handed)
+- Handfork: melee weapon without WIELD (light/one-handed/two-handed)
+- Lajav: melee weapon without WIELD (light/one-handed/two-handed)
+- Singing Stick: melee weapon without WIELD (light/one-handed/two-handed)
+- Talid: melee weapon without WIELD (light/one-handed/two-handed)
+- Widow's Knife: melee weapon without WIELD (light/one-handed/two-handed)
+- Wrist Razor: melee weapon without WIELD (light/one-handed/two-handed)
+- Longblade, Elven: melee weapon without WIELD (light/one-handed/two-handed)
+- Heartpick: melee weapon without WIELD (light/one-handed/two-handed)
+- Master's Whip: melee weapon without WIELD (light/one-handed/two-handed)
+- Cahulak: melee weapon without WIELD (light/one-handed/two-handed)
+- Crusher, Free: melee weapon without WIELD (light/one-handed/two-handed)
+- Dragon's Paw: melee weapon without WIELD (light/one-handed/two-handed)
+- Lotulis: melee weapon without WIELD (light/one-handed/two-handed)
+- Spear, Double-Tipped: melee weapon without WIELD (light/one-handed/two-handed)
+- Thanak: melee weapon without WIELD (light/one-handed/two-handed)
+- Weighted Pike: melee weapon without WIELD (light/one-handed/two-handed)
+- Swatter: melee weapon without WIELD (light/one-handed/two-handed)
+- Mekillot Sap: melee weapon without WIELD (light/one-handed/two-handed)
+- Lasso: weapon without DAMAGE
+

@@ -1,8 +1,9 @@
 BahamutDragon PCGen data – feat review fixes
 Overlay for https://github.com/bahamutdragon/pcgen (base commit d353e9b): unpack in the repository root;
-every file replaces the file of the same path (no new files except where noted).
+files replace the originals of the same path; files that don't exist upstream are new.
+Topic overlays share some files (identical in each); for the complete set use bahamutdragon_all_fixes.zip.
 
-71 files in 57 book folders:
+76 files in 59 book folders:
 
 data/35e/green_ronin/the_psychics_handbook/
     tph_feats.lst
@@ -118,3 +119,7 @@ data/35e/wizards_of_the_coast/web/fey_feature/
     ff_feats.lst
 data/35e/wizards_of_the_coast/web/the_minds_eye/
     tme_classes.lst, tme_feats.lst
+data/darksun_35e/campaign_setting/
+    _dark_sun_campaign_setting.pcc, dscs_abilities.lst, dscs_feats.lst
+data/darksun_35e/terrors_of_athas/
+    dstoa_abilities_races.lst, dstoa_races__other.lst

@@ -1,0 +1,1298 @@
+# Spell, power and maneuver fixes – notes (conversion, Spell Compendium rule, psionic powers, maneuvers, Magic of Eberron)
+
+Arcane and divine spells of 54 books (58 files) converted to the Player's Handbook's spell structure and value syntax.
+Converter: `review_tools/spell_convert.py`; full raw notes: `spell_conversion_notes_raw.md`.
+
+## What was changed
+
+- **Structure** (as `ph_spells.lst` / `ph_spells_class.lst`): definitions without class levels, domains or descriptions; descriptions as `.MOD` lines (one per description); class levels and domains in a new `<file>_class.lst`, loaded right after the spell file (same conditions) by every PCC that loads it. A file's source header becomes per-line source tokens (incl. the date).
+- **Values**: components `V, S, M`; durations as formulas `(CASTERLEVEL) rounds`, `(CASTERLEVEL*10) minutes`, `(CASTERLEVEL/2) rounds`, `[D]`; cast time casing (`Standard Action` → `1 standard action`; full-round and other forms unchanged, as decided); ranges `30 ft.`, `Close/Medium/Long` keywords (expansion text and capitals removed); saves `Fortitude`, `N/A` → `None`; spell resistance `Yes/No/See text`, `N/A` → `No` (PHB: personal spells); types `Arcane.Divine` (comma and order fixed).
+- **Derived** (reliable only): 435 spell types from the casting classes' spell type (`FACT:SpellType` / `SPELLTYPE`; domains count as divine).
+
+## Verification
+
+- Built-in equivalence check per file: every object's content identical before and after, apart from the normalizations.
+- PCGen: every spell dumped (all tokens after .MODs, class and domain levels) from the original and the converted tree, six book sets covering all 54 books: same spells, **0 unexpected differences**, identical load messages (two `.MOD`-of-a-missing-spell messages now reported from the class file).
+
+## Deliberate exceptions
+
+- **1,848 spell definitions (898 spell keys) keep class levels, domains and descriptions inline** – a `.MOD` would change PCGen's behaviour for them: spells defined more than once (PCGen keeps one definition and discards the other's tokens – a `.MOD` would apply them anyway), spells copied with `.COPY` (copies are made before `.MOD`s apply) and spells whose classes another book clears (`CLASSES:.CLEARALL`, order of `.MOD`s). Keys compared case-insensitively, as PCGen does.
+- Not converted (later phase, as decided): Tome of Magic (shadow magic, utterances, vestiges), incarnum. Maneuvers: see below. The mixed spell/power files were converted in the psionic phase (below).
+- The PHB's own spell files (the reference) and three files that contain only class `.MOD` lines (Fey Feature, Stormwrack, The Mind's Eye support) are unchanged.
+
+## Spell Compendium wins (your decision)
+
+- 669 spells are defined both in Spell Compendium and in 41 other files (Magic of Faerûn 168, Complete Divine 119, Complete Arcane 94, …). Each of those files is now loaded twice by its PCC, under opposite conditions: `SPELL:<file>|(EXCLUDE:<shared spells>)|PRECAMPAIGN:1,INCLUDES=Spell Compendium` and `SPELL:<file>|!PRECAMPAIGN:1,INCLUDES=Spell Compendium` (existing conditions kept on both) – the pattern Lords of Madness uses for Libris Mortis.
+- Before: PCGen already kept Spell Compendium's version for 668 of the 669 by load order; the exception was General of Undeath (Libris Mortis won). Now independent of load order.
+- Verified: with Spell Compendium loaded, all six test sets unchanged except the intended winner; without it, a 13-book set loads every spell exactly as before (1,713 spells, no difference).
+- Not covered by the rule: 162 spells defined in more than one book without Spell Compendium – PCGen still keeps one silently.
+
+## Magic of Eberron spells (from the book)
+
+- The book's 45 spells and infusions (chapter 4) were never converted (raw text, commented out in the PCC). Now 44 are implemented in `moe_spells.lst` + `moe_spells_class.lst` in the PHB's structure, each with the book's full text and its summary-list line as the PHB's description pair (DisplayFullSpell); the PCC loads both files.
+- Ancient Knowledge is not added: the Eberron Campaign Setting's spell file already implements it as 79 variants (one per Knowledge skill, with the +5 bonus); those variants carry this book's page (p.94) but the Eberron Campaign Setting's source – worth correcting later.
+- Spell Snare, Greater ("As spell snare, except …") takes Spell Snare's statistics, as the book says. Personal spells printed without save/SR lines get the PHB convention (None/No). Artificer-only infusions have no type (neither arcane nor divine).
+- Extraction: column by column with PyMuPDF; the side tab (rotated text) and the five illustration captions (caption font) removed; complete against the repo's raw file (45/45).
+- Verified in PCGen: 44 new spells, class levels identical to the book's Level lines (44/44), no new load messages, all other spells unchanged.
+- The psionic powers (`moe_spells_power.lst`) stay commented out – later phase.
+
+## Psionic powers
+
+- Reference: the PHB's structure (as for spells) with the Expanded Psionics Handbook's power conventions – disciplines as schools, display components `Au, Ma, Me, Ol, Vi`, discipline-restricted class levels (`Psion=5[PREVARGTEQ:PsionicEgoist,1]`) unchanged, no power-point token (the XPH has none).
+- Converted: the 9 files with powers (486 powers plus the spells in the same files – the mixed files deferred during the spell conversion): Expanded Psionics Handbook, Complete Psionic, The Mind's Eye, Dragon Magic, Races of the Dragon, Races of Stone, Weapons of Legacy, Magic of Incarnum, Dark Sun Campaign Setting. 60 types derived (incl. `Psionic` from the psionic classes), none left underivable.
+- New value rules: display components written out or without commas (`Visual`, `Auditory and visual`, `Au Ma`, `Auditory, mental, and visual`) → `Vi`, `Au, Vi`, `Au, Ma`, `Au, Me, Vi` (only values made entirely of display components; spell components untouched); `min.` → `minutes` in durations (`1 min.` → `1 minute`).
+- Verified in PCGen (two sets, Bahamut35e and Dark Sun's 35e mode, 3,618 spells and powers): same entries, 0 unexpected differences, identical load messages.
+- Magic of Eberron powers (book pages 104-107): 9 of the 10 added to `moe_spells_power.lst` + `moe_spells_power_class.lst` (PCC line activated), with full and summary descriptions; class levels 9/9 as printed. Suppress Schism is not added – Complete Psionic already defines it (a reprint; Magic of Eberron printed it first).
+- Found, to fix later: Complete Psionic defines an entry named just "c" (`CLASSES:Mantle=10`); Dark Sun's spell file has five stubs without statistics (Aging, Repel Metal or Wood, Proof Against Undeath) or that are labels ("No more spells selectable", "Cold Malice Domain Spells"); 140 entries in the nine files miss required tokens (listed in the raw notes).
+
+## Maneuvers (Tome of Battle)
+
+- Reference: the PHB's structure with the Tome of Battle's conventions – disciplines as `SCHOOL`, maneuver type (Strike, Boost, Counter, Stance) as `SUBSCHOOL`, discipline prerequisites as `PRESPELLSCHOOL`; maneuvers have no components, spell resistance or spell type, so none are added. All 208 maneuvers converted (definitions, description `.MOD`s, new `tob_spells_class.lst`).
+- **Four maneuvers collided with spells of the same key** and were lost whenever the other book was loaded: Iron Bones and Lion's Roar (Spell Compendium), Flesh Ripper (Book of Vile Darkness), Death Mark (Dark Sun). Worse, the maneuver's class levels were merged into the spell (Iron Bones listed Crusader/Swordsage/Warblade 6 next to Cleric/Sorcerer/Wizard 4). They now have their own keys – `Iron Bones (Maneuver)` etc., display names unchanged – and the 18 `SPELLKNOWN`/`SPELLS` references in `tob_abilities.lst` follow (incl. the `KEY,DC` form). The Spell Compendium rule's exclusion for the Tome of Battle is no longer needed (one plain `SPELL:` line again).
+- One-off value fixes: Tide of Chaos `SUBSCHOOL:Strike [Chaos]` → `SUBSCHOOL:Strike` + `DESCRIPTOR:Chaos`; Leaping Flame `DESCRIPTOR:Teleport` → `Teleportation` (as the other Shadow Hand maneuvers).
+- Verified in PCGen (Bahamut35e with Spell Compendium and Book of Vile Darkness; 35e mode with Dark Sun): all 208 maneuvers present (before 205 and 207), the colliding spells keep only their own classes, every other entry unchanged apart from the normalizations, identical load messages.
+- `wip.lst` (Tome of Battle, not loaded by the PCC) still uses the old keys.
+
+## To update later (needs the books or a decision)
+
+- **Spells defined in more than one book without Spell Compendium (162 keys)** – PCGen silently keeps one definition; Spell Compendium's 669 shared spells are resolved (see above).
+- **Spell types not derivable: 187** – 148 Eberron infusions (artificer only), 38 spells of Book of Exalted Deeds prestige classes without a spell type, 1 spell without classes.
+- **Spells missing required tokens: 944** (saves, spell resistance, components…) – listed per book below.
+- **Files with invalid UTF-8 characters: 1** (Windows-1252 quotes, shown as a replacement character in PCGen) – preserved byte for byte; repair separately.
+- **Ancient Knowledge's 79 variants** in the Eberron Campaign Setting file carry Magic of Eberron's page but the Eberron Campaign Setting's source.
+- **Pre-existing load problem**: loading Hamunaptra, Kalamar, Eldritch Might, Fantasy Firearms, Ravenloft, Book of Erotic Fantasy, Dragonlance, Eberron, Races of Eberron, Into the Dragon's Lair, Champions of Ruin and Valor, Waterdeep and Lost Empires together with the common supplements crashes PCGen's loader (also with the original data) – each works in smaller sets.
+
+## Per book: items to update later
+
+### 35e/green_ronin/hamunaptra/book_of_days/bod_spells.lst
+- Burst of Speed: missing SAVEINFO, SPELLRES
+- Eyes of Isis: missing SAVEINFO, SPELLRES
+- Locate Water: missing SAVEINFO, SPELLRES
+- Meld into Sand: missing SAVEINFO, SPELLRES
+- Mental Map: missing SAVEINFO, SPELLRES
+- Renenutet's Whisper: missing SAVEINFO, SPELLRES
+- Sand-Swim: missing SAVEINFO, SPELLRES
+- Silent Scribe: missing TARGETAREA, SAVEINFO, SPELLRES
+- Turn to Sand: missing SAVEINFO, SPELLRES
+
+### 35e/wizards_of_the_coast/campaign_settings/dragonlance/campaign/dcs_spells.lst
+- Divine Retribution: missing SAVEINFO, SPELLRES
+- Magius's Light of Truth: missing DURATION
+- Otyugh Swarm: missing SAVEINFO
+- Plague of Rats: missing SAVEINFO
+- Spirit Walk: missing SAVEINFO, SPELLRES
+- Unbinding: missing SAVEINFO
+
+### 35e/wizards_of_the_coast/campaign_settings/eberron/campaign/ecs_spells.lst
+- Armor Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Armor Enhancement: missing TYPE
+- Armor Enhancement, Greater: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Armor Enhancement, Greater: missing TYPE
+- Armor Enhancement, Lesser: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Armor Enhancement, Lesser: missing TYPE
+- Construct Energy Ward: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Construct Energy Ward: missing TYPE
+- Construct Energy Ward, Greater: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Construct Energy Ward, Greater: missing TYPE
+- Disable Construct: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Disable Construct: missing TYPE
+- Energy Alteration: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Energy Alteration: missing TYPE
+- Enhancement Alteration: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Enhancement Alteration: missing TYPE
+- Inflict Critical Damage: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Inflict Critical Damage: missing COMPS, CASTTIME, RANGE, TARGETAREA, DURATION, SAVEINFO, SPELLRES, TYPE
+- Inflict Light Damage: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Inflict Light Damage: missing TYPE
+- Inflict Moderate Damage: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Inflict Moderate Damage: missing COMPS, CASTTIME, RANGE, TARGETAREA, DURATION, SAVEINFO, SPELLRES, TYPE
+- Inflict Serious Damage: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Inflict Serious Damage: missing COMPS, CASTTIME, RANGE, TARGETAREA, DURATION, SAVEINFO, SPELLRES, TYPE
+- Iron Construct: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Iron Construct: missing TYPE
+- Item Alteration: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Item Alteration: missing TYPE
+- Magecraft: missing SAVEINFO, SPELLRES
+- Metamagic Item: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Metamagic Item: missing TYPE
+- Power Surge: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Power Surge: missing TYPE
+- Repair Critical Damage: missing COMPS, CASTTIME, RANGE, TARGETAREA, DURATION, SAVEINFO, SPELLRES
+- Repair Moderate Damage: missing COMPS, CASTTIME, RANGE, TARGETAREA, DURATION, SAVEINFO, SPELLRES
+- Repair Serious Damage: missing COMPS, CASTTIME, RANGE, TARGETAREA, DURATION, SAVEINFO, SPELLRES
+- Resistance Item: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Resistance Item: missing TYPE
+- Shield of Faith, Legion's: missing COMPS, CASTTIME, DURATION, SAVEINFO, SPELLRES
+- Skill Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Enhancement: missing TYPE
+- Spell Storing Item: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Spell Storing Item: missing TYPE
+- Stone Construct: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Stone Construct: missing TYPE
+- Suppress Requirement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Suppress Requirement: missing TYPE
+- Total Repair: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Total Repair: missing TYPE
+- Toughen Construct: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Toughen Construct: missing TYPE
+- True Creation: missing CASTTIME, RANGE, TARGETAREA, SAVEINFO, SPELLRES
+- Weapon Augmentation: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Weapon Augmentation: missing COMPS, CASTTIME, RANGE, TARGETAREA, DURATION, SAVEINFO, SPELLRES, TYPE
+- Weapon Augmentation, Greater: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Weapon Augmentation, Greater: missing COMPS, CASTTIME, RANGE, TARGETAREA, DURATION, SAVEINFO, SPELLRES, TYPE
+- Weapon Augmentation, Lesser: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Weapon Augmentation, Lesser: missing COMPS, CASTTIME, RANGE, SAVEINFO, SPELLRES, TYPE
+- Weapon Augmentation, Personal: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Weapon Augmentation, Personal: missing TYPE
+- Skill Appraise Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Appraise Enhancement: missing TYPE
+- Skill Balance Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Balance Enhancement: missing TYPE
+- Skill Bluff Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Bluff Enhancement: missing TYPE
+- Skill Climb Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Climb Enhancement: missing TYPE
+- Skill Concentration Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Concentration Enhancement: missing TYPE
+- Skill Craft (Armorsmithing) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Craft (Armorsmithing) Enhancement: missing TYPE
+- Skill Craft (Blacksmithing) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Craft (Blacksmithing) Enhancement: missing TYPE
+- Skill Craft (Bowmaking) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Craft (Bowmaking) Enhancement: missing TYPE
+- Skill Craft (Gemcutting) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Craft (Gemcutting) Enhancement: missing TYPE
+- Skill Craft (Metalworking) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Craft (Metalworking) Enhancement: missing TYPE
+- Skill Craft (Sculpting) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Craft (Sculpting) Enhancement: missing TYPE
+- Skill Craft (Untrained) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Craft (Untrained) Enhancement: missing TYPE
+- Skill Craft (Weaponsmithing) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Craft (Weaponsmithing) Enhancement: missing TYPE
+- Skill Decipher Script Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Decipher Script Enhancement: missing TYPE
+- Skill Diplomacy Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Diplomacy Enhancement: missing TYPE
+- Skill Disable Device Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Disable Device Enhancement: missing TYPE
+- Skill Disguise Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Disguise Enhancement: missing TYPE
+- Skill Escape Artist* Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Escape Artist* Enhancement: missing TYPE
+- Skill Forgery Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Forgery Enhancement: missing TYPE
+- Skill Gather Information Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Gather Information Enhancement: missing TYPE
+- Skill Heal Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Heal Enhancement: missing TYPE
+- Skill Hide* Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Hide* Enhancement: missing TYPE
+- Skill Iaijutsu Focus Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Iaijutsu Focus Enhancement: missing TYPE
+- Skill Intimidate Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Intimidate Enhancement: missing TYPE
+- Skill Jump* Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Jump* Enhancement: missing TYPE
+- Skill Knowledge (Arcana) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Arcana) Enhancement: missing TYPE
+- Skill Knowledge (Architecture and Engineering) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Architecture and Engineering) Enhancement: missing TYPE
+- Skill Knowledge (Shadowlands) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Shadowlands) Enhancement: missing TYPE
+- Skill Knowledge (Spirits) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Spirits) Enhancement: missing TYPE
+- Skill Knowledge (Untrained) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Untrained) Enhancement: missing TYPE
+- Skill Knowledge (War) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (War) Enhancement: missing TYPE
+- Skill Listen Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Listen Enhancement: missing TYPE
+- Skill Move Silently* Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Move Silently* Enhancement: missing TYPE
+- Skill Open Lock Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Open Lock Enhancement: missing TYPE
+- Skill Perform (String Instruments) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Perform (String Instruments) Enhancement: missing TYPE
+- Skill Ride Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Ride Enhancement: missing TYPE
+- Skill Search Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Search Enhancement: missing TYPE
+- Skill Search (Secret doors and hidden compartments) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Search (Secret doors and hidden compartments) Enhancement: missing TYPE
+- Skill Sense Motive Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Sense Motive Enhancement: missing TYPE
+- Skill Spellcraft Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Spellcraft Enhancement: missing TYPE
+- Skill Spellcraft (Decipher spell on scroll) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Spellcraft (Decipher spell on scroll) Enhancement: missing TYPE
+- Skill Spot Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Spot Enhancement: missing TYPE
+- Skill Survival Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Survival Enhancement: missing TYPE
+- Skill Swim* Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Swim* Enhancement: missing TYPE
+- Skill Use Magic Device Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Use Magic Device Enhancement: missing TYPE
+- Skill Use Magic Device (Scroll) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Use Magic Device (Scroll) Enhancement: missing TYPE
+- Skill Use Rope Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Use Rope Enhancement: missing TYPE
+- Skill Knowledge (Dungeoneering) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Dungeoneering) Enhancement: missing TYPE
+- Skill Knowledge (Forbidden Lore) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Forbidden Lore) Enhancement: missing TYPE
+- Skill Knowledge (Geography) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Geography) Enhancement: missing TYPE
+- Skill Knowledge (History) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (History) Enhancement: missing TYPE
+- Skill Knowledge (Local) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Local) Enhancement: missing TYPE
+- Skill Knowledge (Nature) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Nature) Enhancement: missing TYPE
+- Skill Knowledge (Nobility and Royalty) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Nobility and Royalty) Enhancement: missing TYPE
+- Skill Knowledge (Psionics) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Psionics) Enhancement: missing TYPE
+- Skill Knowledge (Religion) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Religion) Enhancement: missing TYPE
+- Skill Knowledge (Tactics) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Tactics) Enhancement: missing TYPE
+- Skill Knowledge (The Planes) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (The Planes) Enhancement: missing TYPE
+- Skill Knowledge (Aglarond & Altumbel & Sildeyuir & Wizards Reach & Yuirwood) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Aglarond & Altumbel & Sildeyuir & Wizards Reach & Yuirwood) Enhancement: missing TYPE
+- Skill Knowledge (Amn) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Amn) Enhancement: missing TYPE
+- Skill Knowledge (Anauroch) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Anauroch) Enhancement: missing TYPE
+- Skill Knowledge (Calimshan) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Calimshan) Enhancement: missing TYPE
+- Skill Knowledge (Chessenta) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Chessenta) Enhancement: missing TYPE
+- Skill Knowledge (Chondalwood) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Chondalwood) Enhancement: missing TYPE
+- Skill Knowledge (Chult) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Chult) Enhancement: missing TYPE
+- Skill Knowledge (Cormyr) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Cormyr) Enhancement: missing TYPE
+- Skill Knowledge (Dalelands & Cormanthor Drow & Elven Court) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Dalelands & Cormanthor Drow & Elven Court) Enhancement: missing TYPE
+- Skill Knowledge (Damara & Galena Mountains) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Damara & Galena Mountains) Enhancement: missing TYPE
+- Skill Knowledge (Dambrath) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Dambrath) Enhancement: missing TYPE
+- Skill Knowledge (Dragon Coast) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Dragon Coast) Enhancement: missing TYPE
+- Skill Knowledge (Evermeet) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Evermeet) Enhancement: missing TYPE
+- Skill Knowledge (Golden Water) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Golden Water) Enhancement: missing TYPE
+- Skill Knowledge (Great Dale & Forest of Lethyr) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Great Dale & Forest of Lethyr) Enhancement: missing TYPE
+- Skill Knowledge (Great Glacier & Sossal & Snow Eagle Aerie) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Great Glacier & Sossal & Snow Eagle Aerie) Enhancement: missing TYPE
+- Skill Knowledge (Halruaa) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Halruaa) Enhancement: missing TYPE
+- Skill Knowledge (High Forest) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (High Forest) Enhancement: missing TYPE
+- Skill Knowledge (Hordelands) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Hordelands) Enhancement: missing TYPE
+- Skill Knowledge (Impiltur) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Impiltur) Enhancement: missing TYPE
+- Skill Knowledge (Inner Sea) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Inner Sea) Enhancement: missing TYPE
+- Skill Knowledge (Lake of Steam) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Lake of Steam) Enhancement: missing TYPE
+- Skill Knowledge (Lantan) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Lantan) Enhancement: missing TYPE
+- Skill Knowledge (Lapaliiya) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Lapaliiya) Enhancement: missing TYPE
+- Skill Knowledge (Luiren) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Luiren) Enhancement: missing TYPE
+- Skill Knowledge (Moonsea) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Moonsea) Enhancement: missing TYPE
+- Skill Knowledge (Moonshae Isles) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Moonshae Isles) Enhancement: missing TYPE
+- Skill Knowledge (Mulhorand) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Mulhorand) Enhancement: missing TYPE
+- Skill Knowledge (Narfell) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Narfell) Enhancement: missing TYPE
+- Skill Knowledge (Nelanther Isles) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Nelanther Isles) Enhancement: missing TYPE
+- Skill Knowledge (Nimbral) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Nimbral) Enhancement: missing TYPE
+- Skill Knowledge (North) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (North) Enhancement: missing TYPE
+- Skill Knowledge (Outer Sea) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Outer Sea) Enhancement: missing TYPE
+- Skill Knowledge (Rashemen) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Rashemen) Enhancement: missing TYPE
+- Skill Knowledge (Ride) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Ride) Enhancement: missing TYPE
+- Skill Knowledge (Samarach) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Samarach) Enhancement: missing TYPE
+- Skill Knowledge (Sembia) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Sembia) Enhancement: missing TYPE
+- Skill Knowledge (Shaar & Great Rift) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Shaar & Great Rift) Enhancement: missing TYPE
+- Skill Knowledge (Shadovar) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Shadovar) Enhancement: missing TYPE
+- Skill Knowledge (Silver Marches & Silverymoon & Spine of the World) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Silver Marches & Silverymoon & Spine of the World) Enhancement: missing TYPE
+- Skill Knowledge (Smoking Mountains) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Smoking Mountains) Enhancement: missing TYPE
+- Skill Knowledge (Sword Coast) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Sword Coast) Enhancement: missing TYPE
+- Skill Knowledge (Tashalar) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Tashalar) Enhancement: missing TYPE
+- Skill Knowledge (Tethyr) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Tethyr) Enhancement: missing TYPE
+- Skill Knowledge (Tharsult) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Tharsult) Enhancement: missing TYPE
+- Skill Knowledge (Thay) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Thay) Enhancement: missing TYPE
+- Skill Knowledge (Thesk) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Thesk) Enhancement: missing TYPE
+- Skill Knowledge (Thindol) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Thindol) Enhancement: missing TYPE
+- Skill Knowledge (Turmish) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Turmish) Enhancement: missing TYPE
+- Skill Knowledge (Underdark Buried Realms) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Underdark Buried Realms) Enhancement: missing TYPE
+- Skill Knowledge (Underdark Darklands) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Underdark Darklands) Enhancement: missing TYPE
+- Skill Knowledge (Underdark Earthroot) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Underdark Earthroot) Enhancement: missing TYPE
+- Skill Knowledge (Underdark Glimmersea) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Underdark Glimmersea) Enhancement: missing TYPE
+- Skill Knowledge (Underdark Great Bhaerynden) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Underdark Great Bhaerynden) Enhancement: missing TYPE
+- Skill Knowledge (Underdark Northdark & Menzoberranzan): TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Underdark Northdark & Menzoberranzan): missing TYPE
+- Skill Knowledge (Underdark Old Shanatar & Oldonnar): TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Underdark Old Shanatar & Oldonnar): missing TYPE
+- Skill Knowledge (Unther) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Unther) Enhancement: missing TYPE
+- Skill Knowledge (Vaasa) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Vaasa) Enhancement: missing TYPE
+- Skill Knowledge (Vast) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Vast) Enhancement: missing TYPE
+- Skill Knowledge (Vilhon Reach) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Vilhon Reach) Enhancement: missing TYPE
+- Skill Knowledge (Waterdeep) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Waterdeep) Enhancement: missing TYPE
+- Skill Knowledge (Wealdath) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Wealdath) Enhancement: missing TYPE
+- Skill Knowledge (Western Heartlands & Evereska) Enhancement: TYPE missing, not derivable (classes: Artificer=Infusion)
+- Skill Knowledge (Western Heartlands & Evereska) Enhancement: missing TYPE
+- file contains bytes that are not valid UTF-8 (e.g. Windows-1252 quotes) - preserved as is, displayed as a replacement character in PCGen
+
+### 35e/wizards_of_the_coast/campaign_settings/forgotten_realms/_modules/into_the_dragons_lair/itdl_spells.lst
+- Shadow Mask: missing SAVEINFO, SPELLRES
+- Shadow Well: missing TARGETAREA
+
+### 35e/wizards_of_the_coast/campaign_settings/forgotten_realms/city_of_splendors_waterdeep/csw_spells.lst
+- Halaster's Fetch I: missing SAVEINFO, SPELLRES
+- Halaster's Fetch II: missing SAVEINFO, SPELLRES
+- Halaster's Fetch III: missing SAVEINFO, SPELLRES
+- Halaster's Fetch IV: missing SAVEINFO, SPELLRES
+- Halaster's Fetch V: missing SAVEINFO, SPELLRES
+- Halaster's Fetch VI: missing SAVEINFO, SPELLRES
+- Halaster's Light Step: missing SAVEINFO, SPELLRES
+- Halaster's Shaking Hand: missing SAVEINFO, SPELLRES
+- Jhanifer's Deliquence: missing SAVEINFO, SPELLRES
+- Steelsting: missing SAVEINFO, SPELLRES
+- Trobriand's Baleful Teleport: missing SAVEINFO, SPELLRES
+
+### 35e/wizards_of_the_coast/campaign_settings/forgotten_realms/magic_of_faerun/mag_spells.lst
+- Branch to Branch: missing SAVEINFO, SPELLRES
+- Camouflage: missing SAVEINFO, SPELLRES
+- Claws of the Beast: missing SAVEINFO, SPELLRES
+- Crawling Darkness: missing SAVEINFO, SPELLRES
+- Death Dragon: missing SAVEINFO, SPELLRES
+- Decoy Image: missing SAVEINFO, SPELLRES
+- Disguise Undead: missing SPELLRES
+- Fiendform: missing CASTTIME, RANGE, TARGETAREA, SAVEINFO, SPELLRES
+- Glory of the Martyr: missing CASTTIME, RANGE, DURATION, SAVEINFO, SPELLRES
+- Harmony: missing SAVEINFO, SPELLRES
+- Holy Star: missing SAVEINFO, SPELLRES
+- Kiss of the Vampire: missing CASTTIME, SAVEINFO, SPELLRES
+- Camouflage, Mass: missing SAVEINFO, SPELLRES
+- Poison Vines: missing COMPS, CASTTIME, RANGE, TARGETAREA, DURATION
+- Simbul's Spell Matrix: missing SAVEINFO, SPELLRES
+- Simbul's Spell Sequencer: missing COMPS, CASTTIME, RANGE, TARGETAREA, DURATION, SAVEINFO, SPELLRES
+- Simbul's Spell Trigger: missing COMPS, CASTTIME, RANGE, TARGETAREA, DURATION, SAVEINFO, SPELLRES
+- Spell Enhancer: missing SAVEINFO, SPELLRES
+- Stormrage: missing SAVEINFO, SPELLRES
+- Summon Undead II: missing DURATION, SAVEINFO, SPELLRES
+- Summon Undead III: missing DURATION, SAVEINFO, SPELLRES
+- Summon Undead IV: missing DURATION, SAVEINFO, SPELLRES
+- Summon Undead V: missing DURATION, SAVEINFO, SPELLRES
+- Understand Device: missing SAVEINFO, SPELLRES
+- Weapon of the Deity: missing SAVEINFO, SPELLRES
+- Dominate Monster.COPY=Dominate Monster (Reptilian Only): .COPY line kept as is
+
+### 35e/wizards_of_the_coast/campaign_settings/forgotten_realms/monsters_of_faerun/mon_spells.lst
+- Create Crawling Claw: missing SAVEINFO
+
+### 35e/wizards_of_the_coast/campaign_settings/forgotten_realms/players_guide_to_faerun/pg_spells.lst
+- Sword and Hammer: SPELLRES '?No' left as is
+- Sword and Hammer (Greater): SPELLRES '?No' left as is
+- Raging Flame: missing SAVEINFO
+
+### 35e/wizards_of_the_coast/campaign_settings/forgotten_realms/shining_south/shs_spells.lst
+- Streamers: missing SAVEINFO
+
+### 35e/wizards_of_the_coast/campaign_settings/forgotten_realms/underdark/und_spells.lst
+- Changestones: missing SAVEINFO
+- Excavate: missing SAVEINFO
+- Hail of Stone: missing SAVEINFO
+- Locate Node: missing SAVEINFO
+- Mineralize Water: missing SAVEINFO
+- Node Genesis: missing SAVEINFO
+- Node Lock: missing SAVEINFO
+- Portal Barricade: missing SAVEINFO
+- Portal Stabilization: missing SAVEINFO
+- Portal-to-Portal Redirect: missing SAVEINFO
+- Portal Reformat: missing SAVEINFO
+- Portal View: missing SAVEINFO
+- Reflective Disguise: missing SAVEINFO
+- Reflective Diguise, Mass: missing SAVEINFO
+- Stone Metamorphosis: missing SAVEINFO
+- Stone Metamorphosis, Greater: missing SAVEINFO
+- Stone Shape, Greater: missing TARGETAREA
+- Undermaster: missing SAVEINFO
+- Wall of Dispel Magic: missing RANGE, SAVEINFO
+- Wall of Greater Dispel Magic: missing RANGE, SAVEINFO
+
+### 35e/wizards_of_the_coast/campaign_settings/ghostwalk/gw_spells.lst
+- Black Lungs: missing CASTTIME
+- Bonerattle: missing CASTTIME
+- Bottomless Hate: missing SAVEINFO, SPELLRES
+- Camouflage: missing SAVEINFO, SPELLRES
+- Camouflage: missing SAVEINFO, SPELLRES
+- Camouflage, Mass: missing SAVEINFO, SPELLRES
+- Contingent Spell Lock: missing SAVEINFO, SPELLRES
+- Disguise Undead: missing SPELLRES
+- Hail of Ectoplasm: missing CASTTIME
+- Harmony: missing SAVEINFO, SPELLRES
+- Irresistible Force: missing SAVEINFO, SPELLRES
+- Spittle Spray: missing SAVEINFO, SPELLRES
+- Summon Undead I: missing SAVEINFO
+- Summon Undead II: missing SAVEINFO
+- Summon Undead III: missing SAVEINFO
+- Summon Undead IV: missing SAVEINFO
+- Summon Undead V: missing SAVEINFO
+- Surelife: missing SAVEINFO, SPELLRES
+- Unmovable Object: missing SAVEINFO, SPELLRES
+- Weapon of the Deity: missing SAVEINFO, SPELLRES
+
+### 35e/wizards_of_the_coast/campaign_settings/oriental_adventures/oriental_adventures/oa_spells.lst
+- Aiming at the Target: missing SAVEINFO
+- Animate Fire: missing SAVEINFO
+- Animate Water: missing SAVEINFO
+- Animate Wood: missing SAVEINFO
+- Bo of Water: missing SAVEINFO
+- Body Outside Body: missing SAVEINFO
+- Chameleon: missing SAVEINFO
+- Cloud Chariot: missing SAVEINFO
+- Cobra's Breath: missing SAVEINFO
+- Create Spring: missing SAVEINFO
+- Creeping Darkness: missing SAVEINFO
+- Dance of the Unicorn: missing SAVEINFO
+- Dancing Blade: missing SAVEINFO
+- Decapitating Scarf: missing SAVEINFO
+- Detect Curse: missing SAVEINFO
+- Detect Disease: missing SAVEINFO
+- Detect Taint: missing SAVEINFO
+- Discern Shapechanger: missing SAVEINFO
+- Dream Sight: missing SAVEINFO
+- Fiery Eyes: missing SAVEINFO
+- Finding the Center: missing SAVEINFO
+- Fire Breath: missing SAVEINFO
+- Fire Shuriken: missing SAVEINFO
+- Fire Wings: missing SAVEINFO
+- Fires of Purity: missing SAVEINFO
+- Giant Size: missing SAVEINFO
+- Greater Spirit Ally: missing SAVEINFO
+- Hail of Stone: missing SAVEINFO
+- Horse's Nose: missing SAVEINFO
+- Invisibility to Enemies: missing SAVEINFO
+- Iron Scarf: missing SAVEINFO
+- Know the Shadows: missing SAVEINFO
+- Lesser Spirit Ally: missing SAVEINFO
+- Lightning Blade: missing SAVEINFO
+- Metal Skin: missing SAVEINFO
+- Minute Form: missing SAVEINFO
+- Rain of Needles: missing SAVEINFO
+- Reanimation: missing SAVEINFO
+- Scales of the Lizard: missing SAVEINFO
+- Secret Signs: missing SAVEINFO
+- Servant Horde: missing SAVEINFO
+- Smoke Ladder: missing SAVEINFO
+- Spirit Ally: missing SAVEINFO
+- Spirit Needle: missing SAVEINFO
+- Spirit Self: missing SAVEINFO
+- Substitution: missing SAVEINFO
+- Summoning Wind: missing SAVEINFO
+- Surelife: missing SAVEINFO
+- Sustain: missing SAVEINFO
+- Swim: missing SAVEINFO
+- Sword of Darkness: missing SAVEINFO
+- Sword of Deception: missing SAVEINFO
+- Terra Cotta Lion: missing SAVEINFO
+- Terra Cotta Warrior: missing SAVEINFO
+- Tetsubo of Earth: missing SAVEINFO
+- Thornskin: missing SAVEINFO
+- Trance: missing SAVEINFO
+- Wall of Bones: missing SAVEINFO
+- Water to Poison: missing SAVEINFO
+- When Two Become One: missing SAVEINFO
+- Wood Rot: missing SAVEINFO
+- Words of the Kami: missing SAVEINFO
+- Yari of Air: missing SAVEINFO
+
+### 35e/wizards_of_the_coast/core/monster_manual/mm_spells.lst
+- Blur (Self Only): missing SAVEINFO, SPELLRES
+- Detect Evil (60 ft. radius): missing SAVEINFO, SPELLRES
+- Detect Good (60 ft. radius): missing SAVEINFO, SPELLRES
+- Gaseous Form (Self Only): missing SAVEINFO, SPELLRES
+- Invisibility (Greater/Self Only): missing SAVEINFO, SPELLRES
+- Invisibility (Self Only): missing SAVEINFO, SPELLRES
+- Levitate (Self Only): missing SAVEINFO, SPELLRES
+- Magic Circle against Evil (Self Only): missing SAVEINFO, SPELLRES
+- Polymorph (Self Only): missing SAVEINFO, SPELLRES
+- Teleport (Greater/Self Only): missing SAVEINFO, SPELLRES
+- Teleport (Greater/Forest Boundries Only): missing SAVEINFO, SPELLRES
+
+### 35e/wizards_of_the_coast/supplement/book_of_exalted_deeds/be_spells.lst
+- Aspect of the Deity: TYPE missing, not derivable (classes: Apostle of Peace=?, Exalted Arcanist=?)
+- Aspect of the Deity: missing SAVEINFO, SPELLRES, TYPE
+- Aspect of the Deity (Greater): TYPE missing, not derivable (classes: Apostle of Peace=?, Exalted Arcanist=?)
+- Aspect of the Deity (Greater): missing SAVEINFO, SPELLRES, TYPE
+- Aspect of the Deity (Lesser): TYPE missing, not derivable (classes: Apostle of Peace=?, Exalted Arcanist=?, Paladin=Divine)
+- Aspect of the Deity (Lesser): missing SAVEINFO, SPELLRES, TYPE
+- Bastion of Good: TYPE missing, not derivable (classes: Apostle of Peace=?, Cleric=Divine)
+- Bastion of Good: missing TYPE
+- Blessed Sight: TYPE missing, not derivable (classes: Apostle of Peace=?, Champion of Gwynharwyf=?, Cleric=Divine, Paladin=Divine, Slayer of Domiel=?)
+- Blessed Sight: missing SAVEINFO, SPELLRES, TYPE
+- Blinding Beauty: TYPE missing, not derivable (classes: Bard=Arcane, Beloved of Valarian=?, Druid=Divine, Ranger=Divine)
+- Blinding Beauty: missing SAVEINFO, SPELLRES, TYPE
+- Blood of the Martyr: TYPE missing, not derivable (classes: Apostle of Peace=?, Champion of Gwynharwyf=?, Cleric=Divine, Paladin=Divine)
+- Blood of the Martyr: missing TYPE
+- Bolt of Glory: TYPE missing, not derivable (classes: Exalted Arcanist=?)
+- Bolt of Glory: missing TYPE
+- Celestial Blood: TYPE missing, not derivable (classes: Apostle of Peace=?, Cleric=Divine)
+- Celestial Blood: missing TYPE
+- Crown of Flame: TYPE missing, not derivable (classes: Cleric=Divine, Exalted Arcanist=?)
+- Crown of Flame: missing TYPE
+- Divine Sacrifice: TYPE missing, not derivable (classes: Champion of Gwynharwyf=?, Paladin=Divine)
+- Divine Sacrifice: missing SAVEINFO, SPELLRES, TYPE
+- Ease Pain: TYPE missing, not derivable (classes: Apostle of Peace=?, Beloved of Valarian=?, Cleric=Divine)
+- Ease Pain: missing TYPE
+- Eladrin Form: missing SAVEINFO, SPELLRES
+- Elation: TYPE missing, not derivable (classes: Bard=Arcane, Cleric=Divine, Emissary of Barachiel=?, Sorcerer=Arcane, Wizard=Arcane)
+- Elation: missing TYPE
+- End to Strife: TYPE missing, not derivable (classes: Apostle of Peace=?, Cleric=Divine)
+- End to Strife: missing TYPE
+- Energetic Healing: TYPE missing, not derivable (classes: Apostle of Peace=?, Cleric=Divine, Druid=Divine)
+- Energetic Healing: missing TYPE
+- Eyes of the Avoral: TYPE missing, not derivable (classes: Apostle of Peace=?, Beloved of Valarian=?, Cleric=Divine, Druid=Divine, Ranger=Divine, Sorcerer=Arcane, Wizard=Arcane)
+- Eyes of the Avoral: missing TYPE
+- Glorious Raiment: TYPE missing, not derivable (classes: Apostle of Peace=?)
+- Glorious Raiment: missing TYPE
+- Glory of the Martyr: TYPE missing, not derivable (classes: Champion of Gwynharwyf=?, Paladin=Divine)
+- Glory of the Martyr: missing TYPE
+- Greater Status: TYPE missing, not derivable (classes: Apostle of Peace=?, Cleric=Divine)
+- Greater Status: missing TYPE
+- Heart's Ease: TYPE missing, not derivable (classes: Beloved of Valarian=?, Cleric=Divine)
+- Heart's Ease: missing TYPE
+- Heaven's Trumpet: TYPE missing, not derivable (classes: Emissary of Barachiel=?, Bard=Arcane, Cleric=Divine)
+- Heaven's Trumpet: missing TYPE
+- Heavenly Lightning: TYPE missing, not derivable (classes: Exalted Arcanist=?)
+- Heavenly Lightning: missing TYPE
+- Heavenly Lightning Storm: TYPE missing, not derivable (classes: Exalted Arcanist=?)
+- Heavenly Lightning Storm: missing TYPE
+- Lantern Light: TYPE missing, not derivable (classes: Cleric=Divine, Paladin=Divine, Sorcerer=Arcane, Vassal of Bahamut=?, Wizard=Arcane)
+- Lantern Light: missing TYPE
+- Path of the Exalted: missing TARGETAREA, SAVEINFO, SPELLRES
+- Quickshift: missing SAVEINFO, SPELLRES
+- Radiant Shield: missing SAVEINFO, SPELLRES
+- Ray of Hope: TYPE missing, not derivable (classes: Apostle of Peace=?, Bard=Arcane, Cleric=Divine, Emissary of Barachiel=?)
+- Ray of Hope: missing TYPE
+- Refreshment: TYPE missing, not derivable (classes: Apostle of Peace=?, Bard=Arcane, Cleric=Divine, Vassal of Bahamut=?)
+- Refreshment: missing TYPE
+- Remove Addiction: TYPE missing, not derivable (classes: Beloved of Valarian=?, Cleric=Divine, Druid=Divine)
+- Remove Addiction: missing TYPE
+- Remove Fatigue: TYPE missing, not derivable (classes: Apostle of Peace=?, Cleric=Divine)
+- Remove Fatigue: missing TYPE
+- Remove Nausea: TYPE missing, not derivable (classes: Apostle of Peace=?, Cleric=Divine)
+- Remove Nausea: missing TYPE
+- Righteous Glare: missing SAVEINFO, SPELLRES
+- Righteous Smite: TYPE missing, not derivable (classes: Cleric=Divine, Exalted Arcanist=?)
+- Righteous Smite: missing TYPE
+- Sacred Guardian: TYPE missing, not derivable (classes: Apostle of Peace=?, Cleric=Divine)
+- Sacred Guardian: missing TYPE
+- Shield of the Archons: TYPE missing, not derivable (classes: Apostle of Peace=?, Cleric=Divine)
+- Shield of the Archons: missing SAVEINFO, SPELLRES, TYPE
+- Smite Heretic: missing SAVEINFO, SPELLRES
+- Spear of Valarian: TYPE missing, not derivable (classes: Beloved of Valarian=?, Ranger=Divine, Druid=Divine)
+- Spear of Valarian: missing TYPE
+- Sustain: TYPE missing, not derivable (classes: Apostle of Peace=?, Cleric=Divine)
+- Sustain: missing TYPE
+- Sword of Conscience: TYPE missing, not derivable (classes: Champion of Gwynharwyf=?, Cleric=Divine, Exalted Arcanist=?, Paladin=Divine, Slayer of Domiel=?)
+- Sword of Conscience: missing TYPE
+- Unearthly Beauty: missing SAVEINFO, SPELLRES
+- Vision of Heaven: TYPE missing, not derivable (classes: Apostle of Peace=?, Cleric=Divine, Exalted Arcanist=?, Slayer of Domiel=?)
+- Vision of Heaven: missing TYPE
+- Warcry: TYPE missing, not derivable (classes: Champion of Gwynharwyf=?, Bard=Arcane, Sorcerer=Arcane, Wizard=Arcane)
+- Warcry: missing TYPE
+- Yoke of Mercy: TYPE missing, not derivable (classes: Apostle of Peace=?, Sorcerer=Arcane, Wizard=Arcane)
+- Yoke of Mercy: missing TYPE
+
+### 35e/wizards_of_the_coast/supplement/complete_adventurer/cad_spells.lst
+- Accelerated Movement: missing SAVEINFO, SPELLRES
+- Arrow Mind: missing SAVEINFO, SPELLRES
+- Arrow Storm: missing SAVEINFO, SPELLRES
+- Balancing Lorecall: missing SAVEINFO, SPELLRES
+- Blade Storm: missing SAVEINFO, SPELLRES
+- Bloodhound: missing SAVEINFO, SPELLRES
+- Branch to Branch: missing SAVEINFO, SPELLRES
+- Critical Strike (CA): missing SAVEINFO, SPELLRES
+- Daggerspell Stance: missing SAVEINFO, SPELLRES
+- Divine Insight: missing SAVEINFO, SPELLRES
+- Embrace the Wild: missing SAVEINFO, SPELLRES
+- Expeditious Retreat, Swift: missing SAVEINFO, SPELLRES
+- Fly, Swift: missing SAVEINFO, SPELLRES
+- Focusing Chant: missing SAVEINFO, SPELLRES
+- Forestfold: missing SAVEINFO, SPELLRES
+- Golem Strike: missing SAVEINFO, SPELLRES
+- Grave Strike: missing SAVEINFO, SPELLRES
+- Guided Shot: missing SAVEINFO, SPELLRES
+- Haste, Swift: missing SAVEINFO, SPELLRES
+- Hawkeye: missing SAVEINFO, SPELLRES
+- Healing Lorecall: missing SAVEINFO, SPELLRES
+- Improvisation: missing SAVEINFO, SPELLRES
+- Insightful Feint: missing SAVEINFO, SPELLRES
+- Inspirational Boost: missing SAVEINFO, SPELLRES
+- Instant Locksmith: missing SAVEINFO, SPELLRES
+- Instant Search: missing SAVEINFO, SPELLRES
+- Invisibility, Swift: missing SAVEINFO, SPELLRES
+- Listening Lorecall: missing SAVEINFO, SPELLRES
+- Master's Touch: missing SAVEINFO, SPELLRES
+- Nightstalker's Transformation: missing SAVEINFO, SPELLRES
+- Shadow Form: missing SAVEINFO, SPELLRES
+- Sniper's Eye: missing SAVEINFO, SPELLRES
+- Sniper's Shot: missing SAVEINFO, SPELLRES
+- Sonic Weapon: missing SAVEINFO, SPELLRES
+- Speechlink: missing SAVEINFO, SPELLRES
+- Vine Strike: missing SAVEINFO, SPELLRES
+- Wraithstrike: missing SAVEINFO, SPELLRES
+
+### 35e/wizards_of_the_coast/supplement/complete_arcane/car_spells.lst
+- Charm Animal.COPY=Charm Animal (snakes and lizards only): .COPY line kept as is
+
+### 35e/wizards_of_the_coast/supplement/complete_champion/cc_spells.lst
+- Conduit of Life: missing SAVEINFO, SPELLRES
+- Divine Presence: missing SAVEINFO, SPELLRES
+- Door of Decay: missing SAVEINFO, SPELLRES
+- Footsteps of the Divine: missing SAVEINFO, SPELLRES
+- Healing Circle: missing SAVEINFO, SPELLRES
+- Iconic Manifestation: missing SAVEINFO, SPELLRES
+- Lore of the Gods: missing SAVEINFO, SPELLRES
+- Master Cavalier: missing SAVEINFO, SPELLRES
+- Phantom Charge: missing SAVEINFO, SPELLRES
+- Spiritual Advisor: missing SAVEINFO, SPELLRES
+- Substitute Domain: missing SAVEINFO, SPELLRES
+- Surge of Fortune: missing SAVEINFO, SPELLRES
+- Touch of Restoration: missing SAVEINFO, SPELLRES
+- Turn Anathema: missing SAVEINFO, SPELLRES
+
+### 35e/wizards_of_the_coast/supplement/complete_divine/cd_spells.lst
+- Dragon Breath (Red Dragon or Gold Dragon): missing SAVEINFO, SPELLRES
+
+### 35e/wizards_of_the_coast/supplement/complete_mage/cm_spells.lst
+- Adamantine Wings: missing SAVEINFO
+
+### 35e/wizards_of_the_coast/supplement/complete_scoundrel/cs_spells.lst
+- Aquatic Escape: missing SAVEINFO, SPELLRES
+- Healer's Vision: missing SAVEINFO, SPELLRES
+- Mimicry: missing SAVEINFO, SPELLRES
+- Smoke Stairs: missing SAVEINFO, SPELLRES
+- Winged Watcher: missing SAVEINFO, SPELLRES
+
+### 35e/wizards_of_the_coast/supplement/complete_warrior/cw_spells.lst
+- Aspect of the Deity (Lesser): TYPE missing, not derivable (classes: none)
+- Aspect of the Deity (Lesser): missing SAVEINFO, SPELLRES, TYPE
+
+### 35e/wizards_of_the_coast/supplement/draconomicon/dr_spells.lst
+- Dragon Ally: missing TARGETAREA
+- Dragon Ally (Greater): missing TARGETAREA
+- Dragon Ally (Lesser): missing TARGETAREA
+
+### 35e/wizards_of_the_coast/supplement/drow_of_the_underdark/dru_spells.lst
+- Dridershape: missing SAVEINFO, SPELLRES
+- Shadow Shroud: missing SAVEINFO, SPELLRES
+- Spider Form: missing SAVEINFO, SPELLRES
+- Spider Form, Greater: missing SAVEINFO, SPELLRES
+- Spider Form, Lesser: missing SAVEINFO, SPELLRES
+
+### 35e/wizards_of_the_coast/supplement/epic_level_handbook/el_spells.lst
+- Damnation: missing RANGE
+- Gathering of Maggots: missing RANGE
+- Time Duplicate: missing RANGE
+
+### 35e/wizards_of_the_coast/supplement/fiendish_codex_ii/fci_spells.lst
+- Devil's Ego: missing SAVEINFO, SPELLRES
+- Devil's Eye: missing SAVEINFO, SPELLRES
+- Hellfire Storm: missing COMPS, CASTTIME, DURATION, SAVEINFO, SPELLRES
+
+### 35e/wizards_of_the_coast/supplement/frostburn/fr_spells.lst
+- Defile Snow and Ice: SPELLRES '#No' left as is
+- Summon Giants.COPY=Summon Giants (Frost Giants Only): .COPY line kept as is
+
+### 35e/wizards_of_the_coast/supplement/heroes_of_horror/hh_spells.lst
+- Dream Sight: missing SAVEINFO, SPELLRES
+- Mantle of Pure Spite: missing SAVEINFO, SPELLRES
+- Pact of Return: missing SAVEINFO, SPELLRES
+- Pronouncement of Fate: SPELLRES 'Special' left as is
+
+### 35e/wizards_of_the_coast/supplement/lords_of_madness/lom_spells.lst
+- Arms of Plenty: missing CASTTIME
+- Invoke Magic: missing SAVEINFO, SPELLRES
+
+### 35e/wizards_of_the_coast/supplement/monster_manual_2/mm2_spells.lst
+- Animate Objects.COPY=Animate Objects ~ Galeb Duhr: .COPY line kept as is
+- Dimension Door.COPY=Dimension Door ~ Nightmare Beast: .COPY line kept as is
+- Crushing Despair.COPY=Emotion Control ~ Fihyr: .COPY line kept as is
+- Speak with Animals.COPY=Speaks with Animals ~ Desmodu: .COPY line kept as is
+- Speak with Animals.COPY=Speaks with Animals ~ Jermlaine: .COPY line kept as is
+- Plane Shift.COPY=Plane Shift ~ Ethereal Slayer: .COPY line kept as is
+
+### 35e/wizards_of_the_coast/supplement/players_handbook_2/ph2_spells.lst
+- As the Frost: missing SAVEINFO, SPELLRES
+- Celerity: missing SAVEINFO, SPELLRES
+- Celerity, Greater: missing SAVEINFO, SPELLRES
+- Celerity, Lesser: missing SAVEINFO, SPELLRES
+- Channeled Divine Shield: missing SAVEINFO, SPELLRES
+- Cloud of Knives: missing SAVEINFO, SPELLRES
+- Deflect: missing SAVEINFO, SPELLRES
+- Deflect, Lesser: missing SAVEINFO, SPELLRES
+- Dragonshape: missing SAVEINFO, SPELLRES
+- Evard's Menacing Tentacles: missing SAVEINFO, SPELLRES
+- Hunter's Eye: missing SAVEINFO, SPELLRES
+- Mirror Image, Greater: missing SAVEINFO, SPELLRES
+- Mystic Aegis: missing SAVEINFO, SPELLRES
+- Sonic Shield: missing SAVEINFO, SPELLRES
+- Sure Strike: missing SAVEINFO, SPELLRES
+- Trollshape: missing SAVEINFO, SPELLRES
+- Visions of the Future: missing SAVEINFO, SPELLRES
+
+### 35e/wizards_of_the_coast/supplement/sandstorm/sa_spells.lst
+- Scalding Mud: missing TARGETAREA
+
+### 35e/wizards_of_the_coast/supplement/savage_species/ss_spells.lst
+- Camouflage: missing SAVEINFO, SPELLRES
+- Crawling Darkness: missing SAVEINFO, SPELLRES
+- Embrace The Wild: missing SAVEINFO, SPELLRES
+- Extend Tentacles: missing SAVEINFO, SPELLRES
+- Forestfold: missing COMPS, CASTTIME, RANGE, TARGETAREA, DURATION, SAVEINFO, SPELLRES
+- Holy Star: missing SAVEINFO, SPELLRES
+- Jagged Tooth: missing COMPS, CASTTIME, RANGE, DURATION
+- Sonorous Hum: missing SAVEINFO, SPELLRES
+- Speak To Allies: missing COMPS, CASTTIME, RANGE, DURATION, SAVEINFO, SPELLRES
+- Spell Flower: missing SAVEINFO, SPELLRES
+- Stalking Spell: missing COMPS, CASTTIME, RANGE, TARGETAREA, SPELLRES
+- Stone Body: missing SAVEINFO, SPELLRES
+
+### 35e/wizards_of_the_coast/supplement/spell_compendium/sc_spells.lst
+- Absorption: missing SAVEINFO, SPELLRES
+- Abyssal Army: missing SAVEINFO
+- Accelerated Movement: missing SAVEINFO, SPELLRES
+- Acid Sheath: missing SAVEINFO, SPELLRES
+- Aid, Mass: missing SAVEINFO
+- Aiming at the Target: missing SAVEINFO, SPELLRES
+- Alarm, Greater: missing SAVEINFO
+- Anarchic Storm: missing SAVEINFO
+- Animate Breath: missing SAVEINFO, SPELLRES
+- Animate Fire: missing SAVEINFO
+- Animate Snow: missing SAVEINFO
+- Animate Water: missing SAVEINFO
+- Animate Wood: missing SAVEINFO
+- Anticipate Teleportation: missing SAVEINFO
+- Anticipate Teleportation, Greater: missing SAVEINFO
+- Anticold Sphere: missing SAVEINFO
+- Anyspell: missing SAVEINFO, SPELLRES
+- Anyspell, Greater: missing SAVEINFO, SPELLRES
+- Appraising Touch: missing SAVEINFO, SPELLRES
+- Arrow Mind: missing SAVEINFO, SPELLRES
+- Arrow Storm: missing SAVEINFO, SPELLRES
+- Aspect of the Earth Hunter: missing SAVEINFO, SPELLRES
+- Aspect of the Wolf: missing SAVEINFO, SPELLRES
+- Assay Spell Resistance: missing SAVEINFO, SPELLRES
+- Astral Hospice: missing SAVEINFO, SPELLRES
+- Attune Form: missing SAVEINFO, SPELLRES
+- Aura Against Flame: missing SAVEINFO, SPELLRES
+- Aura of Glory: missing SAVEINFO
+- Avoid Planar Effects: missing SAVEINFO
+- Axiomatic Storm: missing SAVEINFO
+- Balancing Lorecall: missing SAVEINFO, SPELLRES
+- Balor Nimbus: missing SAVEINFO, SPELLRES
+- Battering Ram: missing SAVEINFO
+- Beast Claws: missing SAVEINFO, SPELLRES
+- Beget Bogun: missing SAVEINFO
+- Belker Claws: missing SAVEINFO
+- Benign Transposition: missing SAVEINFO
+- Bite of the Werebear: missing SAVEINFO, SPELLRES
+- Bite of the Wereboar: missing SAVEINFO, SPELLRES
+- Bite of the Wererat: missing SAVEINFO, SPELLRES
+- Bite of the Weretiger: missing SAVEINFO, SPELLRES
+- Bite of the Werewolf: missing SAVEINFO, SPELLRES
+- Black Blade of Disaster: missing SAVEINFO
+- Blade Storm: missing SAVEINFO, SPELLRES
+- Blades of Fire: missing SAVEINFO
+- Bless Weapon, Swift: missing SAVEINFO
+- Blessing of Bahamut: missing SAVEINFO, SPELLRES
+- Blinding Breath: missing SAVEINFO, SPELLRES
+- Blinding Spittle: missing SAVEINFO
+- Blink, Greater: missing SAVEINFO, SPELLRES
+- Bloodhound: missing SAVEINFO, SPELLRES
+- Body Blades: missing SAVEINFO, SPELLRES
+- Body of War: missing SAVEINFO, SPELLRES
+- Bolt of Glory: missing SAVEINFO
+- Bottle of Smoke: missing SAVEINFO
+- Brambles: missing SAVEINFO
+- Branch to Branch: missing SAVEINFO, SPELLRES
+- Breath Flare: missing SAVEINFO, SPELLRES
+- Breath of the Jungle: missing SAVEINFO
+- Breath Weapon Admixture: missing SAVEINFO, SPELLRES
+- Breath Weapon Substitution: missing SAVEINFO, SPELLRES
+- Briar Web: missing SAVEINFO
+- Bristle: missing SAVEINFO
+- Buoyant Lifting: missing SAVEINFO
+- Burning Sword: missing SAVEINFO
+- Buzzing Bee: missing SAVEINFO
+- Call Kolyarut: missing SAVEINFO
+- Call Marut: missing SAVEINFO
+- Call Zelekhut: missing SAVEINFO
+- Caltrops: missing SAVEINFO
+- Camouflage: missing SAVEINFO, SPELLRES
+- Chain Missile: missing SAVEINFO
+- Checkmate's Light: missing SAVEINFO
+- Chill of the Grave: missing SAVEINFO
+- Circle Dance: missing SAVEINFO, SPELLRES
+- Claws of the Bear: missing SAVEINFO, SPELLRES
+- Clear Mind: missing SAVEINFO, SPELLRES
+- Cloudburst: missing SAVEINFO
+- Cold Snap: missing SAVEINFO
+- Contingent Energy Resistance: missing SAVEINFO, SPELLRES
+- Corpse Candle: missing SAVEINFO
+- Corrosive Grasp: missing SAVEINFO
+- Crabwalk: missing SAVEINFO
+- Crawling Darkness: missing SAVEINFO, SPELLRES
+- Creaking Cacophony: missing SAVEINFO
+- Create Magic Tattoo: missing SAVEINFO
+- Critical Strike (SC): missing SAVEINFO, SPELLRES
+- Curse of Impending Blades: missing SAVEINFO
+- Curse of Impending Blades, Mass: missing SAVEINFO
+- Cursed Blade: missing SAVEINFO
+- Cutting Hand: missing SAVEINFO, SPELLRES
+- Daggerspell Stance: missing SAVEINFO, SPELLRES
+- Dance of the Unicorn: missing SAVEINFO
+- Dark Way: missing SAVEINFO
+- Darkfire: missing SAVEINFO
+- Death Armor: missing SAVEINFO
+- Death Dragon: missing SAVEINFO, SPELLRES
+- Death Pact: missing SAVEINFO
+- Death Throes: missing SAVEINFO
+- Decomposition: missing SAVEINFO
+- Deep Breath: missing SAVEINFO, SPELLRES
+- Detect Favored Enemy: missing SAVEINFO
+- Dimension Door, Greater: missing SAVEINFO, SPELLRES
+- Discern Shapechanger: missing SAVEINFO, SPELLRES
+- Disguise Undead: missing SAVEINFO
+- Dispel Ward: missing SAVEINFO
+- Dispelling Breath: missing SAVEINFO, SPELLRES
+- Dispelling Screen: missing SAVEINFO
+- Dispelling Screen, Greater: missing SAVEINFO
+- Displacer Form: missing SAVEINFO, SPELLRES
+- Disrupt Undead, Greater: missing SAVEINFO
+- Distracting Ray: missing SAVEINFO
+- Divine Insight: missing SAVEINFO, SPELLRES
+- Divine Sacrifice: missing SAVEINFO, SPELLRES
+- Dolorous Blow: missing SAVEINFO
+- Dragon Ally: missing SAVEINFO
+- Dragon Ally, Greater: missing SAVEINFO
+- Dragon Ally, Lesser: missing SAVEINFO
+- Dragonsight: missing SAVEINFO, SPELLRES
+- Dragonskin: missing SAVEINFO, SPELLRES
+- Dream Casting: missing SPELLRES
+- Dreamsight: missing SAVEINFO, SPELLRES
+- Duelward: missing SAVEINFO, SPELLRES
+- Earthfast: missing SAVEINFO
+- Earth Lock: missing SAVEINFO
+- Earthen Grasp: missing SAVEINFO
+- Easy Trail: missing SAVEINFO
+- Ebon Eyes: missing SAVEINFO
+- Echo Skull: missing SAVEINFO
+- Ectoplasmic Feedback: missing SAVEINFO
+- Electric Jolt: missing SAVEINFO
+- Elemental Body: missing SAVEINFO, SPELLRES
+- Embrace the Wild: missing SAVEINFO, SPELLRES
+- Energized Shield: missing SAVEINFO
+- Energized Shield, Lesser: missing SAVEINFO
+- Energy Immunity: missing SAVEINFO
+- Energy Transformation Field: missing SAVEINFO
+- Enervating Breath: missing SAVEINFO, SPELLRES
+- Enhance Familiar: missing SAVEINFO
+- Enhance Wild Shape: missing SAVEINFO, SPELLRES
+- Enrage Animal: missing SAVEINFO
+- Essence of the Raptor: missing SAVEINFO, SPELLRES
+- Ethereal Breath: missing SAVEINFO, SPELLRES
+- Ethereal Mount: missing SAVEINFO
+- Excavate: missing SAVEINFO
+- Expeditious Retreat, Swift: missing SAVEINFO, SPELLRES
+- Extend Tentacles: missing SAVEINFO, SPELLRES
+- Eye of Power: missing SAVEINFO
+- Eyes of the King: missing SAVEINFO
+- Familiar Pocket: missing SAVEINFO
+- Fangs of the Vampire King: missing SAVEINFO, SPELLRES
+- Fantastic Machine: missing SAVEINFO
+- Fantastic Machine, Greater: missing SAVEINFO
+- Favor of the Martyr: missing SAVEINFO
+- Fearsome Grapple: missing SAVEINFO, SPELLRES
+- Fiendform: missing SAVEINFO, SPELLRES
+- Fierce Pride of the Beastlands: missing SAVEINFO
+- Find the Gap: missing SAVEINFO, SPELLRES
+- Find Temple: missing SAVEINFO
+- Fire Shuriken: missing SAVEINFO
+- Fire Stride: missing SAVEINFO, SPELLRES
+- Fire Wings: missing SAVEINFO, SPELLRES
+- Fireward: missing SAVEINFO
+- Fist of Stone: missing SAVEINFO, SPELLRES
+- Flame Dagger: missing SAVEINFO
+- Flame of Faith: missing SAVEINFO
+- Flame Whips: missing SAVEINFO, SPELLRES
+- Flight of the Dragon: missing SAVEINFO, SPELLRES
+- Floating Disk, Greater: missing SAVEINFO
+- Fly, Swift: missing SAVEINFO, SPELLRES
+- Focusing Chant: missing SAVEINFO, SPELLRES
+- Force Chest: missing SAVEINFO, SPELLRES
+- Force Claw: missing SAVEINFO
+- Force Ladder: missing SAVEINFO
+- Force Missiles: missing SAVEINFO
+- Forcewave: missing SAVEINFO
+- Forestfold: missing SAVEINFO, SPELLRES
+- Fortify Familiar: missing SAVEINFO
+- Foundation of Stone: missing SAVEINFO
+- General of Undeath: missing SAVEINFO, SPELLRES
+- Ghost Trap: missing SAVEINFO
+- Ghostform: missing SAVEINFO, SPELLRES
+- Ghostharp: missing SAVEINFO
+- Ghoul Light: missing SAVEINFO
+- Giant's Wrath: missing SAVEINFO
+- Glowing Orb: missing SAVEINFO
+- Golden Barding: missing SAVEINFO
+- Golem Strike: missing SAVEINFO, SPELLRES
+- Grace: missing SAVEINFO, SPELLRES
+- Grave Strike: missing SAVEINFO, SPELLRES
+- Guided Shot: missing SAVEINFO, SPELLRES
+- Guiding Light: missing SAVEINFO
+- Gutsnake: missing SAVEINFO, SPELLRES
+- Hail of Stone: missing SAVEINFO
+- Hailstones: missing SAVEINFO
+- Hand of Divinity: missing SAVEINFO
+- Hardening: missing SAVEINFO
+- Haste, Swift: missing SAVEINFO, SPELLRES
+- Hawkeye: missing SAVEINFO, SPELLRES
+- Healing Lorecall: missing SAVEINFO, SPELLRES
+- Healing Sting: missing SAVEINFO
+- Heart of Stone: missing SAVEINFO, SPELLRES
+- Heavenly Host: missing SAVEINFO
+- Hellish Horde: missing SAVEINFO
+- Heroics: missing SAVEINFO
+- Hidden Lodge: missing SAVEINFO
+- Hide the Path: missing SAVEINFO
+- Hindsight: missing SAVEINFO
+- Holy Mount: missing SAVEINFO
+- Holy Star: missing SAVEINFO, SPELLRES
+- Holy Storm: missing SAVEINFO
+- Holy Transformation: missing SAVEINFO, SPELLRES
+- Holy Transformation, Lesser: missing SAVEINFO, SPELLRES
+- Hunter's Mercy: missing SAVEINFO, SPELLRES
+- Hunters of Hades: missing SAVEINFO
+- Hurl: missing SAVEINFO
+- Ice Axe: missing SAVEINFO
+- Ice Claw: missing SAVEINFO
+- Ice Dagger: missing SAVEINFO
+- Ice Gauntlet: missing SAVEINFO, SPELLRES
+- Improvisation: missing SAVEINFO, SPELLRES
+- Incorporeal Enhancement: missing SAVEINFO
+- Infernal Transformation: missing SAVEINFO, SPELLRES
+- Infernal Transformation, Lesser: missing SAVEINFO, SPELLRES
+- Infernal Wound: missing SAVEINFO
+- Inky Cloud: missing SAVEINFO
+- Insightful Feint: missing SAVEINFO, SPELLRES
+- Inspirational Boost: missing SAVEINFO, SPELLRES
+- Instant Locksmith: missing SAVEINFO, SPELLRES
+- Instant Refuge: missing SAVEINFO, SPELLRES
+- Instant Search: missing SAVEINFO, SPELLRES
+- Interplanar Telepathic Bond: missing SAVEINFO
+- Invisibility, Swift: missing SAVEINFO, SPELLRES
+- Jaws of the Wolf: missing SAVEINFO
+- Joyful Noise: missing SAVEINFO
+- Kelpstrand: missing SAVEINFO
+- Kiss of the Vampire: missing SAVEINFO, SPELLRES
+- Knight's Move: missing SAVEINFO, SPELLRES
+- Know Greatest Enemy: missing SAVEINFO
+- Last Breath: missing SAVEINFO
+- Launch Bolt: missing SAVEINFO
+- Launch Item: missing SAVEINFO
+- Lawful Sword: missing SAVEINFO
+- Lay of the Land: missing SAVEINFO, SPELLRES
+- Life Ward: missing SAVEINFO
+- Light of Lunia: missing SAVEINFO
+- Light of Mercuria: missing SAVEINFO
+- Light of Venya: missing SAVEINFO
+- Lightfoot: missing SAVEINFO, SPELLRES
+- Lion's Charge: missing SAVEINFO, SPELLRES
+- Listening Coin: missing SAVEINFO
+- Listening Lorecall: missing SAVEINFO, SPELLRES
+- Living Prints: missing SAVEINFO, SPELLRES
+- Lucent Lance: missing SAVEINFO
+- Luminous Gaze: missing SAVEINFO, SPELLRES
+- Maddening Scream: missing SAVEINFO
+- Magic Fang, Superior: missing SAVEINFO, SPELLRES
+- Make Manifest, Mass: missing SAVEINFO, SPELLRES
+- Mantle of Chaos: missing SAVEINFO, SPELLRES
+- Mantle of Evil: missing SAVEINFO, SPELLRES
+- Mantle of Good: missing SAVEINFO, SPELLRES
+- Mantle of Law: missing SAVEINFO, SPELLRES
+- Marked Object: missing SAVEINFO, SPELLRES
+- Master Air: missing SAVEINFO, SPELLRES
+- Master Earth: missing SAVEINFO, SPELLRES
+- Master's Touch (SC): missing SAVEINFO, SPELLRES
+- Minor Disguise: missing SAVEINFO, SPELLRES
+- Moment of Clarity: missing SAVEINFO
+- Moon Blade: missing SAVEINFO
+- Moonbow: missing SAVEINFO
+- Nature's Rampart: missing SAVEINFO
+- Naturewatch: missing SAVEINFO
+- Negative Energy Aura: missing SAVEINFO, SPELLRES
+- Nightshield: missing SAVEINFO, SPELLRES
+- Nightstalker's Transformation: missing SAVEINFO, SPELLRES
+- Nimbus of Light: missing SAVEINFO, SPELLRES
+- Nixie's Grace: missing SAVEINFO
+- Omen of Peril: missing SAVEINFO, SPELLRES
+- One with the Land: missing SAVEINFO, SPELLRES
+- One Mind: missing SAVEINFO, SPELLRES
+- One Mind, Greater: missing SAVEINFO, SPELLRES
+- One Mind, Lesser: missing SAVEINFO, SPELLRES
+- Orb of Acid, Lesser: missing SAVEINFO
+- Orb of Cold, Lesser: missing SAVEINFO
+- Orb of Electricity, Lesser: missing SAVEINFO
+- Orb of Fire, Lesser: missing SAVEINFO
+- Orb of Force: missing SAVEINFO
+- Orb of Sound, Lesser: missing SAVEINFO
+- Otyugh Swarm: missing SAVEINFO
+- Pavilion of Grandeur: missing SAVEINFO
+- Persistent Blade: missing SAVEINFO
+- Phantasmal Thief: missing SAVEINFO
+- Phantom Bear: missing SAVEINFO
+- Phantom Wolf: missing SAVEINFO
+- Plague of Rats: missing SAVEINFO
+- Plague of Undead: missing SAVEINFO
+- Planar Exchange: missing SAVEINFO
+- Planar Exchange, Greater: missing SAVEINFO
+- Planar Exchange, Lesser: missing SAVEINFO
+- Planar Tolerance: missing SAVEINFO
+- Plant Body: missing SAVEINFO, SPELLRES
+- Portal Alarm: missing SAVEINFO
+- Portal Alarm, Improved: missing SAVEINFO
+- Portal Beacon: missing SAVEINFO
+- Positive Energy Aura: missing SAVEINFO
+- Primal Form: missing SAVEINFO, SPELLRES
+- Quillfire: missing SAVEINFO, SPELLRES
+- Raging Flame: missing SAVEINFO
+- Rainbow Beam: missing SAVEINFO
+- Ram's Might: missing SAVEINFO, SPELLRES
+- Ray Deflection: missing SAVEINFO
+- Ray of Clumsiness: missing SAVEINFO
+- Ray of Deanimation: missing SAVEINFO
+- Ray of Dizziness: missing SAVEINFO
+- Ray of Entropy: missing SAVEINFO
+- Ray of Light: missing SAVEINFO
+- Ray of Sickness: missing SAVEINFO
+- Ray of Stupidity: missing SAVEINFO
+- Ray of Weakness: missing SAVEINFO
+- Razorfangs: missing SAVEINFO, SPELLRES
+- Rebuking Breath: missing SAVEINFO, SPELLRES
+- Recitation: missing SAVEINFO
+- Reflective Disguise: missing SAVEINFO, SPELLRES
+- Regal Procession: missing SAVEINFO
+- Repair Critical Damage: missing SAVEINFO
+- Repair Light Damage: missing SAVEINFO
+- Repair Minor Damage: missing SAVEINFO
+- Repair Moderate Damage: missing SAVEINFO
+- Repair Serious Damage: missing SAVEINFO
+- Reveille: missing SAVEINFO
+- Reverse Arrows: missing SAVEINFO, SPELLRES
+- Revive Undead: missing SAVEINFO
+- Rhino's Rush: missing SAVEINFO, SPELLRES
+- Righteous Aura: missing SAVEINFO, SPELLRES
+- Righteous Fury: missing SAVEINFO, SPELLRES
+- Righteous Wrath of the Faithful: missing SAVEINFO
+- Ring of Blades: missing SAVEINFO, SPELLRES
+- Ruby Ray of Reversal: missing SAVEINFO
+- Ruin Delver's Fortune: missing SAVEINFO, SPELLRES
+- Scale Weakening: missing SAVEINFO
+- Scent: missing SAVEINFO
+- Scintillating Scales: missing SAVEINFO, SPELLRES
+- Seal Portal: missing SAVEINFO
+- Seek Eternal Rest: missing SAVEINFO, SPELLRES
+- Sense Heretic: missing SAVEINFO
+- Serene Visage: missing SAVEINFO, SPELLRES
+- Servant Horde: missing SAVEINFO
+- Shadow Form: missing SAVEINFO, SPELLRES
+- Shadow Hand: missing SAVEINFO
+- Shadow Mask: missing SAVEINFO, SPELLRES
+- Sharptooth: missing SAVEINFO, SPELLRES
+- Shieldbearer: missing SAVEINFO
+- Shock and Awe: missing SAVEINFO
+- Shroud of Flame: missing SAVEINFO
+- Shroud of Undeath: missing SAVEINFO, SPELLRES
+- Sign: missing SAVEINFO, SPELLRES
+- Silverbeard: missing SAVEINFO, SPELLRES
+- Sirine's Grace: missing SAVEINFO, SPELLRES
+- Skeletal Guard: missing SAVEINFO
+- Slashing Darkness: missing SAVEINFO
+- Slow Burn: missing SAVEINFO
+- Snakebite: missing SAVEINFO, SPELLRES
+- Sniper's Eye: missing SAVEINFO, SPELLRES
+- Sniper's Shot: missing SAVEINFO, SPELLRES
+- Songbird: missing SAVEINFO
+- Sonic Weapon: missing SAVEINFO, SPELLRES
+- Sonorous Hum: missing SAVEINFO, SPELLRES
+- Speak to Allies: missing SAVEINFO
+- Speechlink: missing SAVEINFO
+- Spell Engine: missing SAVEINFO
+- Spell Enhancer: missing SAVEINFO, SPELLRES
+- Spell Flower: missing SAVEINFO, SPELLRES
+- Spell Matrix: missing SAVEINFO, SPELLRES
+- Spell Matrix, Greater: missing SAVEINFO, SPELLRES
+- Spell Matrix, Lesser: missing SAVEINFO, SPELLRES
+- Spider Plague: missing SAVEINFO
+- Spiderform: missing SAVEINFO, SPELLRES
+- Spikes: missing SAVEINFO
+- Spiritjaws: missing SAVEINFO
+- Spiritual Chariot: missing SAVEINFO, SPELLRES
+- Splinterbolt: missing SAVEINFO
+- Stalking Brand: missing SAVEINFO
+- Steeldance: missing SAVEINFO
+- Sticky Fingers: missing SAVEINFO, SPELLRES
+- Sticky Saddle: missing SAVEINFO, SPELLRES
+- Stolen Breath: missing SAVEINFO
+- Stone Body: missing SAVEINFO, SPELLRES
+- Stone Shape, Greater: missing SAVEINFO
+- Stone Spiders: missing SAVEINFO
+- Stony Grasp: missing SAVEINFO
+- Stormrage: missing SAVEINFO, SPELLRES
+- Strategic Charge: missing SAVEINFO, SPELLRES
+- Strength of Stone: missing SAVEINFO
+- Stunning Breath: missing SAVEINFO, SPELLRES
+- Stunning Breath, Greater: missing SAVEINFO, SPELLRES
+- Submerge Ship: missing SAVEINFO, SPELLRES
+- Summon Babau Demon: missing SAVEINFO
+- Summon Bearded Devil: missing SAVEINFO
+- Summon Bralani Eladrin: missing SAVEINFO
+- Summon Elemental Monolith: missing SAVEINFO
+- Summon Elementite Swarm: missing SAVEINFO
+- Summon Elysian Thrush: missing SAVEINFO
+- Summon Greater Elemental: missing SAVEINFO
+- Summon Hound Archon: missing SAVEINFO
+- Summon Undead I: missing SAVEINFO
+- Summon Undead II: missing SAVEINFO
+- Summon Undead III: missing SAVEINFO
+- Summon Undead IV: missing SAVEINFO
+- Summon Undead V: missing SAVEINFO
+- Surefoot: missing SAVEINFO, SPELLRES
+- Surefooted Stride: missing SAVEINFO
+- Surefooted Stride, Mass: missing SAVEINFO
+- Swamp Stride: missing SAVEINFO, SPELLRES
+- Swim: missing SAVEINFO
+- Swim, Mass: missing SAVEINFO
+- Sword of Darkness: missing SAVEINFO
+- Sword of Deception: missing SAVEINFO
+- Synostodweomer: missing SAVEINFO, SPELLRES
+- Targeting Ray: missing SAVEINFO
+- Telepathic Aura: missing SAVEINFO
+- Telepathic Bond, Lesser: missing SAVEINFO
+- Thornskin: missing SAVEINFO, SPELLRES
+- Thunderlance: missing SAVEINFO
+- Tiger's Tooth: missing SAVEINFO
+- Tortoise Shell: missing SAVEINFO
+- Towering Oak: missing SAVEINFO, SPELLRES
+- Transcribe Symbol: missing SAVEINFO
+- Treasure Scent: missing SAVEINFO, SPELLRES
+- Tremorsense: missing SAVEINFO, SPELLRES
+- Triadspell: missing SAVEINFO, SPELLRES
+- True Creation: missing SAVEINFO
+- Unbinding: missing SAVEINFO
+- Undeath's Eternal Foe: missing SAVEINFO
+- Undermaster: missing SAVEINFO, SPELLRES
+- Undersong: missing SAVEINFO, SPELLRES
+- Unholy Storm: missing SAVEINFO
+- Updraft: missing SAVEINFO, SPELLRES
+- Veil of Shadow: missing SAVEINFO, SPELLRES
+- Veil of Undeath: missing SAVEINFO, SPELLRES
+- Vile Death: missing SAVEINFO
+- Vine Strike: missing SAVEINFO, SPELLRES
+- Vipergout (SC): missing SAVEINFO
+- Visage of the Deity: missing SAVEINFO, SPELLRES
+- Visage of the Deity, Greater: missing SAVEINFO, SPELLRES
+- Visage of the Deity, Lesser: missing SAVEINFO, SPELLRES
+- Vision of Glory: missing SAVEINFO
+- Voice of the Dragon: missing SAVEINFO, SPELLRES
+- Vortex of Teeth: missing SAVEINFO
+- Wall of Dispel Magic: missing SAVEINFO
+- Wall of Gloom: missing SAVEINFO
+- Wall of Greater Dispel Magic: missing SAVEINFO
+- Wall of Light: missing SAVEINFO
+- Wall of Sand: missing SAVEINFO
+- War Cry: missing SAVEINFO, SPELLRES
+- Warning Shout: missing SAVEINFO
+- Weather Eye: missing SAVEINFO
+- Whirling Blade: missing SAVEINFO
+- Wild Runner: missing SAVEINFO, SPELLRES
+- Wings of Air: missing SAVEINFO
+- Wings of Air, Greater: missing SAVEINFO
+- Wood Rot: missing SAVEINFO
+- Wood Wose: missing SAVEINFO
+- Wounding Whispers: missing SAVEINFO, SPELLRES
+- Wraithstrike: missing SAVEINFO, SPELLRES
+- Zeal: missing SAVEINFO, SPELLRES
+- Zone of Respite: missing SAVEINFO
+- Zone of Revelation: missing SAVEINFO
+- Summon Monster III.COPY=Summon Monster III (Chaotic Evil Creatures Only): .COPY line kept as is
+- Summon Monster V.COPY=Summon Monster V (Chaotic Evil Creatures Only): .COPY line kept as is
+- Summon Monster VII.COPY=Summon Monster VII (Chaotic Evil Creatures Only): .COPY line kept as is
+- Summon Monster IX.COPY=Summon Monster IX (Chaotic Evil Creatures Only): .COPY line kept as is
+- Summon Monster III.COPY=Summon Monster III (Chaotic Good Creatures Only): .COPY line kept as is
+- Summon Monster V.COPY=Summon Monster V (Chaotic Good Creatures Only): .COPY line kept as is
+- Summon Monster VII.COPY=Summon Monster VII (Chaotic Good Creatures Only): .COPY line kept as is
+- Summon Monster IX.COPY=Summon Monster IX (Chaotic Good Creatures Only): .COPY line kept as is
+- Summon Monster III.COPY=Summon Monster III (Lawful good creatures only): .COPY line kept as is
+- Summon Monster V.COPY=Summon Monster V (Lawful good creatures only): .COPY line kept as is
+- Summon Monster VII.COPY=Summon Monster VII (Lawful good creatures only): .COPY line kept as is
+- Summon Monster IX.COPY=Summon Monster IX (Lawful good creatures only): .COPY line kept as is
+- Summon Monster III.COPY=Summon Monster III (Lawful evil creatures only): .COPY line kept as is
+- Summon Monster V.COPY=Summon Monster V (Lawful evil creatures only): .COPY line kept as is
+- Summon Monster VII.COPY=Summon Monster VII (Lawful evil creatures only): .COPY line kept as is
+- Summon Monster IX.COPY=Summon Monster IX (Lawful evil creatures only): .COPY line kept as is
+
+### 35e/wizards_of_the_coast/supplement/unearthed_arcana/ua_spells.lst
+- Cone of Cold.COPY=Cone of Fire: .COPY line kept as is
+- Summon Monster VI.COPY=Summon Monster VI (Fire Creatures Only): .COPY line kept as is
+- Meteor Swarm.COPY=Comet Swarm: .COPY line kept as is
+- Delayed Blast Fireball.COPY=Delayed Blast Frostball: .COPY line kept as is

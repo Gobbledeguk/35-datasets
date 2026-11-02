@@ -1,0 +1,16 @@
+# CVS $Revision: $ $Author: $ -- Sun Aug 17 15:41:15 2014 -- reformated by prettylst.pl v1.51 (build 24906)
+# Spell Name		Classes of caster			School			Sub-School			Descriptor				Components	Casting Time			Range			Target Area or Effect								Duration									Save Info								Spell Resistance					Source Page							Description
+
+###Block: Spells
+Block Crossroads	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One portal	DURATION:(CASTERLEVEL) hours [D]	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:Magic of Delight and Despair
+Circle of Friends	TYPE:Arcane	SCHOOL:Enchantment	SUBSCHOOL:Charm	DESCRIPTOR:Mind-Affecting	COMPS:V, S, M	CASTTIME:1 hour	RANGE:Touch	TARGETAREA:Object touched or up to 5 sq. ft./level	DURATION:Permanent until discharged [D]	SAVEINFO:See text	SPELLRES:No (object) and Yes, see text	SOURCEPAGE:Fey Kelir Magics
+Nondescript	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Glamer	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:Concentration, up to (CASTERLEVEL*10) minutes [D]	SAVEINFO:None or Will disbelief (if interacted with)	SPELLRES:No	SOURCEPAGE:Magic of Delight and Despair
+Regal Procession	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M	CASTTIME:1 round	RANGE:Close	TARGETAREA:One mount/level	DURATION:(CASTERLEVEL*2) hour [D]	SAVEINFO:None	SPELLRES:No	CLASSES:Wizard=6	DESC:Creates a procession of finely arrayed light horses foy you and your companions	SOURCEPAGE:Magic of Delight and Despair
+The Sky is Falling	TYPE:Arcane	SCHOOL:Evocation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:30 ft.	TARGETAREA:Cylinder (20 ft. radius, 40 ft. high), centered on you	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:Yes	SOURCEPAGE:Magic of Delight and Despair
+Reflective Disguise	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Glamer	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Bard,Wizard=2	DESC:Any intelligent creature sees you as the same species and gender as itself	SOURCEPAGE:Energy Fey: Bile Wrapped in Beauty
+
+###Block: Descriptions
+Block Crossroads.MOD	DESC:Causes a crossroads or backroad to cease functioning for the duration of the spell
+Circle of Friends.MOD	DESC:As a gliph of warding with a charm monster effect
+Nondescript.MOD	DESC:Makes you seem ordinary and nondescript to others
+The Sky is Falling.MOD	DESC:Creates a shower of pebbles that fall from the sky around you

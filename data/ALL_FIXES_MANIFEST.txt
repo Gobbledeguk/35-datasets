@@ -1,0 +1,179 @@
+BahamutDragon PCGen data – all fixes (feats, spells/powers/maneuvers/Tome of Magic, equipment, classes/deities/categories, Complete Champion churches, Forgotten Realms deities, 3e books, Dragonlance packs)
+Overlay for https://github.com/bahamutdragon/pcgen (base commit d353e9b): unpack in the repository root;
+files replace the originals of the same path; files that don't exist upstream are new.
+Contains everything from the topic overlays plus the Sovereign Press Dragonlance packs.
+
+386 files in 86 book folders:
+
+data/35e/green_ronin/hamunaptra/book_of_days/
+    _book_of_days.pcc, bod_spells.lst, bod_spells_class.lst
+data/35e/green_ronin/the_psychics_handbook/
+    tph_feats.lst
+data/35e/kenzer_and_co/
+    _kingdoms_of_kalamar_campaign.pcc, kokc_equip.lst, kokc_spells.lst, kokc_spells_class.lst
+data/35e/kenzer_and_co/kalamar/players_guide/
+    kokpg_abilities_feat.lst
+data/35e/malhavoc_press/complete_book_of_eldritch_might/
+    _complete_book_of_eldritch_might.pcc, cboem_spells.lst, cboem_spells_class.lst
+data/35e/paizo/dragon_magazine/338/
+    dm338_abilities_feat.lst
+data/35e/skortched_urf_studios/fantasy_firearms/
+    _fantasy_firearms.pcc, ff_equipment.lst, ff_spells.lst, ff_spells_class.lst
+data/35e/skortched_urf_studios/more_mighty_than_steal/
+    mmts_equipment.lst
+data/35e/sovereign_press/dragonlance/age_of_mortals/
+    README.txt, age_of_mortals.pcc, aom_abilitycategories.lst, aom_class_features.lst, aom_classes.lst, aom_domains.lst, aom_equipment.lst, aom_feats.lst, aom_races.lst, aom_spells.lst, aom_spells_class.lst, aom_templates.lst
+data/35e/sovereign_press/dragonlance/legends_of_the_twins/
+    README.txt, legends_of_the_twins.pcc, lott_abilitycategories.lst, lott_class_features.lst, lott_classes.lst, lott_equipment.lst, lott_feats.lst, lott_spells.lst, lott_spells_class.lst, lott_traits.lst
+data/35e/sword_and_sorcery/campaign_setting/ravenloft/ravenloft_players_handbook/
+    _raveonloft_players_handbook.pcc, rph_abilitycategories.lst, rph_feats.lst, rph_spells.lst, rph_spells_class.lst
+data/35e/sword_and_sorcery/campaign_setting/world_of_warcraft/core/
+    wow_equip.lst
+data/35e/valar_project/book_of_erotic_fantasy/
+    _book_of_erotic_fantasy.pcc, boef_classes.lst, boef_equip.lst, boef_equipmods.lst, boef_feats.lst, boef_spells.lst, boef_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/dragonlance/campaign/
+    _dragonlance_campaign_setting.pcc, dcs_equipment.lst, dcs_feats.lst, dcs_spells.lst, dcs_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/dragonlance/races_of_ansalon/
+    roa_equip_arms_armor.lst
+data/35e/wizards_of_the_coast/campaign_settings/eberron/campaign/
+    _eberron_campaign_setting.pcc, ecs_feats.lst, ecs_spells.lst, ecs_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/eberron/magic_of_eberron/
+    _magic_of_eberron.pcc, moe_abilities_feat.lst, moe_spells.lst, moe_spells_class.lst, moe_spells_power.lst, moe_spells_power_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/eberron/races_of_eberron/
+    _races_of_eberron.pcc, re_spells.lst, re_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/_modules/city_of_the_spider_queen/
+    csq_equip.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/_modules/into_the_dragons_lair/
+    _into_the_dragons_lair.pcc, itdl_spells.lst, itdl_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/champions_of_ruin/
+    _champions_of_ruin.pcc, cr_equip.lst, cr_feats.lst, cr_spells.lst, cr_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/champions_of_valor/
+    _champions_of_valor.pcc, cv_equip.lst, cv_feats.lst, cv_spells.lst, cv_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/city_of_splendors_waterdeep/
+    _city_of_splendors_waterdeep.pcc, csw_feats.lst, csw_spells.lst, csw_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/lost_empires_of_faerun/
+    _lost_empires_of_faerun.pcc, le_equip_general.lst, le_equip_magic.lst, le_spells.lst, le_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/magic_of_faerun/
+    _magic_of_faerun.pcc, mag_feats.lst, mag_spells.lst, mag_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/monsters_of_faerun/
+    _monsters_of_faerun.pcc, mon_spells.lst, mon_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/players_guide_to_faerun/
+    _players_guide_to_faerun.pcc, pg_deities.lst, pg_feats.lst, pg_spells.lst, pg_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/players_guide_to_faerun/frcs/
+    _frcs.pcc, frcs_equip.lst, frcs_spells.lst, frcs_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/races_of_faerun/
+    _races_of_faerun.pcc, rac_equip.lst, rac_feats.lst, rac_kits.lst, rac_skills.lst, rac_spells.lst, rac_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/shining_south/
+    _shining_south.pcc, shs_feats.lst, shs_spells.lst, shs_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/unapproachable_east/
+    _unapproachable_east.pcc, una_equip.lst, una_feats.lst, una_kits.lst, una_spells.lst, una_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/forgotten_realms/underdark/
+    _underdark.pcc, und_equip.lst, und_feats.lst, und_spells.lst, und_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/ghostwalk/
+    _ghostwalk.pcc, gw_abilitycategories.lst, gw_equip.lst, gw_feats.lst, gw_spells.lst, gw_spells_class.lst
+data/35e/wizards_of_the_coast/campaign_settings/oriental_adventures/oriental_adventures/
+    _oriental_adventures.pcc, oa_abilities.lst, oa_spells.lst, oa_spells_class.lst
+data/35e/wizards_of_the_coast/core/dungeon_masters_guide/
+    _dungeon_masters_guide.pcc, dmg_abilities.lst, dmg_abilitycategories.lst, dmg_equip.lst, dmg_feats.lst, dmg_spells.lst, dmg_spells_class.lst
+data/35e/wizards_of_the_coast/core/monster_manual/
+    _monster_manual.pcc, mm_spells.lst, mm_spells_class.lst
+data/35e/wizards_of_the_coast/core/players_handbook/
+    _players_handbook.pcc, ph_feats.lst, ph_spells_srd.lst, ph_spells_srd_class.lst
+data/35e/wizards_of_the_coast/shared/
+    equipment.lst
+data/35e/wizards_of_the_coast/supplement/arms_and_equipment/
+    _arms_and_equipment.pcc, ae_abilities.lst, ae_equip.lst, ae_equip_dup1.lst, ae_equip_dup2.lst, ae_equip_dup3.lst, ae_equip_dup4.lst, ae_equip_dup5.lst, ae_equip_dup6.lst, ae_equip_dup7.lst, ae_equipmods.lst, ae_equipmods_dup1.lst, ae_equipmods_dup2.lst, ae_profs_armor.lst, ae_profs_shield.lst, ae_profs_weapon.lst, ae_profs_weapon_dup1.lst, ae_profs_weapon_dup2.lst, ae_profs_weapon_dup3.lst, ae_profs_weapon_dup4.lst, ae_skills.lst
+data/35e/wizards_of_the_coast/supplement/book_of_exalted_deeds/
+    _book_of_exalted_deeds.pcc, be_feats.lst, be_spells.lst, be_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/book_of_vile_darkness/
+    _book_of_vile_darkness.pcc, bv_abilitycategories.lst, bv_spells.lst, bv_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/cityscape/
+    _cityscape.pcc, ci_abilities.lst, ci_feats.lst, ci_spells.lst, ci_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/complete_adventurer/
+    _complete_adventurer.pcc, cad_equip.lst, cad_feats.lst, cad_spells.lst, cad_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/complete_arcane/
+    _complete_arcane.pcc, car_feats.lst, car_spells.lst, car_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/complete_champion/
+    _complete_champion.pcc, cc_abilities.lst, cc_equip.lst, cc_feats.lst, cc_spells.lst, cc_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/complete_divine/
+    _complete_divine.pcc, cd_feats.lst, cd_spells.lst, cd_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/complete_mage/
+    _complete_mage.pcc, cm_equip.lst, cm_feats.lst, cm_spells.lst, cm_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/complete_psionic/
+    _complete_psionic.pcc, cp_equip.lst, cp_feats.lst, cp_spells.lst, cp_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/complete_scoundrel/
+    _complete_scoundrel.pcc, cs_equip.lst, cs_feats.lst, cs_spells.lst, cs_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/complete_warrior/
+    _complete_warrior.pcc, cw_equip.lst, cw_feats.lst, cw_spells.lst, cw_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/draconomicon/
+    _draconomicon.pcc, dr_abilitycategories.lst, dr_classes.lst, dr_equip.lst, dr_feats.lst, dr_spells.lst, dr_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/dragon_magic/
+    _dragon_magic.pcc, dm_abilities_feat.lst, dm_equip.lst, dm_spells.lst, dm_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/drow_of_the_underdark/
+    _drow_of_the_underdark.pcc, dru_feats.lst, dru_spells.lst, dru_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/dungeon_masters_guide_2/
+    dmg2_feats.lst
+data/35e/wizards_of_the_coast/supplement/dungeonscape/
+    _dungeonscape.pcc, du_abilities.lst, du_equip.lst, du_feats.lst, du_spells.lst, du_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/epic_level_handbook/
+    _epic_level_handbook.pcc, el_equip.lst, el_feats.lst, el_spells.lst, el_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/expanded_psionics_handbook/
+    _expanded_psionics_handbook.pcc, xph_equip.lst, xph_feats.lst, xph_spells.lst, xph_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/fiendish_codex_ii/
+    _fiendish_codex_ii.pcc, fci_feats.lst, fci_spells.lst, fci_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/frostburn/
+    _frostburn.pcc, fr_spells.lst, fr_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/heroes_of_battle/
+    hb_feats.lst
+data/35e/wizards_of_the_coast/supplement/heroes_of_horror/
+    _heroes_of_horror.pcc, hh_equip.lst, hh_feats.lst, hh_spells.lst, hh_spells_bv.lst, hh_spells_bv_class.lst, hh_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/libris_mortis/
+    _libris_mortis.pcc, lm_deities.lst, lm_equipment.lst, lm_spells.lst, lm_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/lords_of_madness/
+    _lords_of_madness.pcc, lom_abilities.lst, lom_classes.lst, lom_deities.lst, lom_equipment.lst, lom_feats.lst, lom_spells.lst, lom_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/magic_item_compendium/
+    _magic_item_compendium.pcc, mic_equip.lst, mic_spells.lst, mic_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/magic_of_incarnum/
+    _magic_of_incarnum.pcc, moi_abilities.lst, moi_abilitycategories.lst, moi_classes.lst, moi_feats.lst, moi_spells.lst, moi_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/miniatures_handbook/
+    _miniatures.pcc, mh_spells.lst, mh_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/monster_manual_2/
+    _monster_manual_2.pcc, mm2_spells.lst, mm2_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/monster_manual_3/
+    mm3_equip.lst, mm3_feats.lst
+data/35e/wizards_of_the_coast/supplement/players_handbook_2/
+    _players_handbook_2.pcc, ph2_feats.lst, ph2_spells.lst, ph2_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/races_of_destiny/
+    _races_of_destiny.pcc, rd_feats.lst, rd_spells.lst, rd_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/races_of_stone/
+    _races_of_stone.pcc, rs_equip.lst, rs_feats.lst, rs_spells.lst, rs_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/races_of_the_dragon/
+    _races_of_the_dragon.pcc, rdr_equip.lst, rdr_feats.lst, rdr_spells.lst, rdr_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/races_of_the_wild/
+    rw_classes.lst, rw_equip.lst, rw_feats.lst
+data/35e/wizards_of_the_coast/supplement/sandstorm/
+    _sandstorm.pcc, sa_spells.lst, sa_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/savage_species/
+    _savage_species.pcc, ss_equipment.lst, ss_feats.lst, ss_spells.lst, ss_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/spell_compendium/
+    _spell_compendium.pcc, sc_equip.lst, sc_spells.lst, sc_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/stormwrack/
+    sto_feats.lst
+data/35e/wizards_of_the_coast/supplement/tome_of_battle/
+    _tome_of_battle.pcc, tob_abilities.lst, tob_feats.lst, tob_spells.lst, tob_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/tome_of_magic/
+    _tome_of_magic.pcc, tm_equip.lst, tm_feats.lst, tm_spells.lst, tm_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/unearthed_arcana/
+    _unearthed_arcana.pcc, ua_classes.lst, ua_feats.lst, ua_spells.lst, ua_spells_class.lst
+data/35e/wizards_of_the_coast/supplement/weapons_of_legacy/
+    _weapons_of_legacy.pcc, wl_equip.lst, wl_feats.lst, wl_legacyitem_template.lst, wl_spells.lst, wl_spells_class.lst
+data/35e/wizards_of_the_coast/web/fey_feature/
+    _fey_feature.pcc, ff_feats.lst, ff_spells.lst, ff_spells_class.lst
+data/35e/wizards_of_the_coast/web/spellbook_archive/
+    _spellbook_archive.pcc, sa_spells.lst, sa_spells_class.lst
+data/35e/wizards_of_the_coast/web/the_minds_eye/
+    _the_minds_eye.pcc, tme_classes.lst, tme_feats.lst, tme_spells.lst, tme_spells_class.lst
+data/darksun_35e/campaign_setting/
+    _dark_sun_campaign_setting.pcc, dscs_abilities.lst, dscs_equip.lst, dscs_feats.lst, dscs_spells.lst, dscs_spells_class.lst
+data/darksun_35e/terrors_of_athas/
+    dstoa_abilities_races.lst, dstoa_races__other.lst

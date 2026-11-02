@@ -1,0 +1,403 @@
+# Class levels and domains of the spells in dscs_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Accelerate.MOD	CLASSES:Psychic Warrior=3|Egoist=4
+Antidote Simulation.MOD	CLASSES:Psychic Warrior=2|Psion,Wilder=3
+Aura Reading.MOD	CLASSES:Psion,Wilder=1
+Beacon.MOD	CLASSES:Psion,Wilder=3
+Bioflexibilty.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Cast Missiles.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Cause Sleep.MOD	CLASSES:Psion,Wilder=1
+Complete Healing.MOD	CLASSES:Egoist=7
+Concentrate Water.MOD	CLASSES:Psion,Wilder=2
+Cosmic Awareness.MOD	CLASSES:Seer=9
+Cryokinesis.MOD	CLASSES:Psion,Wilder=1
+Death Field.MOD	CLASSES:Egoist,Psychic Warrior=3
+Deflect Strike.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Detect Life.MOD	CLASSES:Psion,Wilder=2
+Detect Moisture.MOD	CLASSES:Seer=3
+Dimensional Screen.MOD	CLASSES:Psion,Wilder=6
+Electroerosion.MOD	CLASSES:Psion,Wilder=5
+Ghost Writing.MOD	CLASSES:Psion,Wilder=1
+Hallucination.MOD	CLASSES:Telepath=4
+Hush.MOD	CLASSES:Psion,Wilder=1
+Incorporeality.MOD	CLASSES:Psion,Wilder=7
+Magnetize.MOD	CLASSES:Psion,Wilder=4
+Mass Manipulation.MOD	CLASSES:Psion,Wilder=3
+Mindflame.MOD	CLASSES:Psion,Wilder=7
+Molecular Bonding.MOD	CLASSES:Psion,Wilder=2
+Nerve Manipulation.MOD	CLASSES:Psion,Wilder=3|Psychic Warrior=5
+Pheromone Discharge.MOD	CLASSES:Psion,Wilder=2
+Photosynthesis.MOD	CLASSES:Psion,Wilder=1
+Pocket Dimension.MOD	CLASSES:Shaper=5
+Poison Simulation.MOD	CLASSES:Psychic Warrior=6|Egoist=7
+Psionic Draw.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Psionic Sight.MOD	CLASSES:Psion,Wilder=3
+Psychic Tracking.MOD	CLASSES:Psion,Wilder=1
+Repugnance.MOD	CLASSES:Psion,Wilder=4
+Return Missile.MOD	CLASSES:Psion,Psychic Warrior,Wilder=2
+Sensory Suppression.MOD	CLASSES:Psion,Wilder=2
+Sever the Tie.MOD	CLASSES:Psion,Wilder=2
+Shadow Jump.MOD	CLASSES:Psion,Psychic Warrior,Wilder=4
+Share Strength.MOD	CLASSES:Egoist,Psychic Warrior=2
+Tattoo Animation.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Trail of Destruction.MOD	CLASSES:Psion,Wilder=1
+Truthear.MOD	CLASSES:Seer=3
+Watcher Ward.MOD	CLASSES:Psion,Wilder=2
+Weather Prediction.MOD	CLASSES:Psion,Wilder=2
+Wild Leap.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Aging.MOD	CLASSES:Egoist=3
+Create Element.MOD	CLASSES:Cleric=0
+Detect Element.MOD	CLASSES:Cleric=0
+Bless Element.MOD	CLASSES:Cleric=1
+Cooling Canopy.MOD	CLASSES:Cleric,Druid,Ranger,Wizard=1
+Curse Element.MOD	CLASSES:Cleric=1
+Heat Lash.MOD	CLASSES:Cleric=1
+Return to the Earth.MOD	CLASSES:Cleric,Templar=2|Druid=3	DOMAINS:Decaying Touch=1
+Eye of the Storm.MOD	CLASSES:Wizard=2|Cleric,Druid,Ranger=3	DOMAINS:Furious Storm=2
+Sand Pit.MOD	CLASSES:Cleric,Templar,Wizard=3	DOMAINS:Broken Sands=1
+Surface Walk.MOD	CLASSES:Cleric,Druid,Ranger,Templar=3
+Worm's Breath.MOD	CLASSES:Cleric,Druid,Ranger,Templar,Wizard=3	DOMAINS:Living Waters=3
+Control Tides.MOD	CLASSES:Cleric,Druid=4|Templar,Wizard=6	DOMAINS:Drowning Despair=3
+Curse of the Black Sands.MOD	CLASSES:Druid=3|Cleric=4	DOMAINS:Broken Sands=2
+Elemental Armor.MOD	CLASSES:Cleric=4
+Elemental Weapon.MOD	CLASSES:Cleric=4
+Sand Spray.MOD	CLASSES:Cleric,Wizard=4	DOMAINS:Broken Sands=3
+Cleansing Flame.MOD	CLASSES:Cleric,Druid=5|Wizard=6
+Elemental Strike.MOD	CLASSES:Druid=4|Cleric,Templar=5	DOMAINS:Fiery Wrath=5
+Ragestorm.MOD	CLASSES:Cleric,Wizard=5
+Rangeblade.MOD	CLASSES:Cleric,Wizard=5
+Braxatskin.MOD	CLASSES:Druid=5|Cleric,Wizard=6
+Rejuvenate.MOD	CLASSES:Druid=5|Cleric=6
+Elemental Chariot.MOD	CLASSES:Cleric=7
+Sands of Time.MOD	CLASSES:Wizard=6|Cleric=7	DOMAINS:Decaying Touch=5
+Unliving Identity.MOD	CLASSES:Cleric,Wizard=7	DOMAINS:Dead Heart=5
+Elemental Storm.MOD	CLASSES:Druid=7|Cleric=8	DOMAINS:Smoldering Spirit=7
+Elemental Chariot (Greater).MOD	CLASSES:Cleric=9	DOMAINS:Soaring Spirit=9
+Heartseeker.MOD	CLASSES:Cleric,Druid=9
+Sand Trap.MOD	CLASSES:Wizard=5	DOMAINS:Broken Sands=4
+Sand Flow.MOD	DOMAINS:Broken Sands=5
+Glass Storm.MOD	DOMAINS:Broken Sands=7
+Molten.MOD	DOMAINS:Broken Sands=8
+Fissure.MOD	DOMAINS:Broken Sands,Mountain's Fury=9
+Clues of Ash.MOD	DOMAINS:Burning Eyes=2
+Fire Track.MOD	CLASSES:Templar=5	DOMAINS:Burning Eyes=4
+Watch Fire.MOD	DOMAINS:Burning Eyes=7
+Confessor's Flame.MOD	CLASSES:Templar=7	DOMAINS:Burning Eyes=8
+Spirit of Flame.MOD	DOMAINS:Burning Eyes=9
+Cerulean Hail.MOD	CLASSES:Wizard=5	DOMAINS:Cold Malice=6
+Gray Beckoning.MOD	CLASSES:Wizard=6	DOMAINS:Dead Heart=6
+Gray Rift.MOD	CLASSES:Templar,Wizard=9	DOMAINS:Dead Heart=8
+Vampiric Youthfulness.MOD	CLASSES:Wizard=9	DOMAINS:Dead Heart=9
+Acid Rain.MOD	DOMAINS:Decaying Touch=4
+Curse of the Choking Sands.MOD	DOMAINS:Desert Mirage=3
+Coat of Mists.MOD	CLASSES:Druid=5	DOMAINS:Desert Mirage=4
+Shining Sands.MOD	CLASSES:Wizard=6	DOMAINS:Desert Mirage=5
+Surface Tension.MOD	DOMAINS:Drowning Despair=2
+Lungs of Water.MOD	DOMAINS:Drowning Despair=4
+Water Trap.MOD	DOMAINS:Drowning Despair=5
+Drown on Dry Land.MOD	DOMAINS:Drowning Despair=6
+Whirlpool of Doom.MOD	DOMAINS:Drowning Despair,Earthen Embrace=7
+Flash Flood.MOD	CLASSES:Druid=9	DOMAINS:Drowning Despair,Living Waters=8
+Flame Harvest.MOD	CLASSES:Druid=8	DOMAINS:Fiery Wrath=7
+Conflagration.MOD	DOMAINS:Fiery Wrath=9
+Sandstone.MOD	CLASSES:Wizard=2	DOMAINS:Forged Stone=1
+Legendary Stonecraft.MOD	DOMAINS:Forged Stone=9
+Storm Legion.MOD	CLASSES:Druid=9	DOMAINS:Furious Storm=8
+Channel Stench.MOD	DOMAINS:Ill Winds=1
+Breeze Lore.MOD	DOMAINS:Ill Winds=3
+Poisoned Gale.MOD	DOMAINS:Ill Winds=7
+Wind Trap.MOD	DOMAINS:Ill Winds=9
+Clear Water.MOD	CLASSES:Druid=2	DOMAINS:Living Waters=1
+Pact of Water.MOD	DOMAINS:Living Waters=4
+Sweet Water.MOD	DOMAINS:Living Waters=5
+Awaken Water Spirits.MOD	CLASSES:Druid=6	DOMAINS:Living Waters=6
+Waters of Life.MOD	CLASSES:Druid=7	DOMAINS:Living Waters=7
+Waterways.MOD	DOMAINS:Living Waters=9
+Oil Spray.MOD	DOMAINS:Mountain's Fury=4
+Repel Metal or Wood.MOD	DOMAINS:Mountain's Fury=5
+Magma Tunnel.MOD	CLASSES:Wizard=9	DOMAINS:Mountain's Fury=8
+Swarm of Anguish.MOD	CLASSES:Druid=9	DOMAINS:Ruinous Swarm=9
+Water Shock.MOD	DOMAINS:Sky Blitz=2
+Liquid Lightning.MOD	DOMAINS:Sky Blitz=8
+Water Light.MOD	DOMAINS:Sky Blitz=9
+Blindscorch.MOD	DOMAINS:Smoldering Spirit=4
+Blazing Wreath.MOD	DOMAINS:Smoldering Spirit=9
+Death Whip.MOD	CLASSES:Wizard=3	DOMAINS:Soul Slayer=3
+Air Lens.MOD	CLASSES:Templar=5	DOMAINS:Sun Flare=5
+Defiler Scent.MOD	CLASSES:Druid,Templar=0
+Nurturing Seeds.MOD	CLASSES:Druid=0|Ranger=1
+Black Cairn.MOD	CLASSES:Druid,Templar=1
+Plant Renewal.MOD	CLASSES:Druid,Ranger=1
+Proof Against Undeath.MOD	CLASSES:Druid=1
+Boneharden.MOD	CLASSES:Druid,Wizard=2
+Conservation.MOD	CLASSES:Druid=2|Wizard=3
+Echo of the Lirr.MOD	CLASSES:Druid,Ranger=2
+Sting of the Gold Scorpion.MOD	CLASSES:Druid,Ranger,Wizard=2
+Boneclaw's Cut.MOD	CLASSES:Druid,Wizard=3
+Claws of the Tembo.MOD	CLASSES:Druid,Ranger=3|Wizard=4
+Clear-river.MOD	CLASSES:Druid,Wizard=3
+Zombie Berry.MOD	CLASSES:Druid,Wizard=3
+Klar's Heart.MOD	CLASSES:Druid=4|Templar=5
+Conversion.MOD	CLASSES:Druid=5
+Groundflame.MOD	CLASSES:Druid=5|Wizard=6
+Skyfire.MOD	CLASSES:Druid,Wizard=5
+Allegiance of the Land.MOD	CLASSES:Druid=6
+Create Oasis.MOD	CLASSES:Druid=6
+Sirocco.MOD	CLASSES:Druid=8
+Wild Lands.MOD	CLASSES:Druid=9
+Footsteps of the Quarry.MOD	CLASSES:Ranger,Templar,Wizard=2
+Hand of the Sorcerer-king.MOD	CLASSES:Templar=1
+Battlefield Healing.MOD	CLASSES:Templar=2
+Dedication.MOD	CLASSES:Templar,Wizard=3
+Image of the Sorcerer-King.MOD	CLASSES:Templar=3
+Fool's Feast.MOD	CLASSES:Templar=4
+Mage Seeker.MOD	CLASSES:Templar,Wizard=4
+Wrath of the Sorcerer-king.MOD	CLASSES:Templar=4
+Wisdom of the Sorcerer-king.MOD	CLASSES:Templar=6
+Crusade.MOD	CLASSES:Templar=7
+Slave Scent.MOD	CLASSES:Wizard=0
+Illusory Talent.MOD	CLASSES:Wizard=1
+Wakefulness.MOD	CLASSES:Wizard=2
+Cerulean Shock.MOD	CLASSES:Wizard=2
+Magic Trick.MOD	CLASSES:Wizard=2
+Gloomcloud.MOD	CLASSES:Wizard=4
+Ghostfire.MOD	CLASSES:Wizard=4
+Touch the Black.MOD	CLASSES:Wizard=4
+Scapegoat.MOD	CLASSES:Wizard=5
+Quietstorm.MOD	CLASSES:Wizard=5
+Sparkrain.MOD	CLASSES:Wizard=5
+Sandflow.MOD	CLASSES:Wizard=5
+Banish Tyr-Storm.MOD	CLASSES:Wizard=6
+Summon Tyr-Storm.MOD	CLASSES:Wizard=6	DOMAINS:Furious Storm=6
+Shroud of Darkness.MOD	CLASSES:Wizard=6
+Protection from Time.MOD	CLASSES:Wizard=8
+Tempest.MOD	CLASSES:Wizard=9
+Pact of Darkness.MOD	CLASSES:Wizard=9
+Firewater.MOD	DOMAINS:Sky Blitz=1
+Blade Barrier.MOD	DOMAINS:Broken Sands=6
+Faerie Fire.MOD	DOMAINS:Burning Eyes=1
+Continual Flame.MOD	DOMAINS:Burning Eyes=3
+True Seeing.MOD	DOMAINS:Burning Eyes=5
+Find the Path.MOD	DOMAINS:Burning Eyes=6
+Chill Touch.MOD	DOMAINS:Cold Malice=1
+Chill Metal.MOD	DOMAINS:Cold Malice=2
+Ice Storm.MOD	DOMAINS:Cold Malice=3
+Enervation.MOD	DOMAINS:Cold Malice=4
+Cone of Cold.MOD	DOMAINS:Cold Malice=5
+Freezing Sphere.MOD	DOMAINS:Cold Malice=7
+Horrid Wilting.MOD	DOMAINS:Cold Malice=8
+Energy Drain.MOD	DOMAINS:Cold Malice=9
+Death Knell.MOD	DOMAINS:Dead Heart=1
+Speak with Dead.MOD	DOMAINS:Dead Heart=2
+Animate Dead.MOD	DOMAINS:Dead Heart=3
+Vampiric Touch.MOD	DOMAINS:Dead Heart=4
+Finger of Death.MOD	DOMAINS:Dead Heart=7
+Rusting Grasp.MOD	DOMAINS:Decaying Touch=2
+Contagion.MOD	DOMAINS:Decaying Touch=3
+Disintegrate.MOD	DOMAINS:Decaying Touch=6
+Destruction.MOD	DOMAINS:Decaying Touch=7
+Power Word Blind.MOD	DOMAINS:Decaying Touch=8
+Time Stop.MOD	DOMAINS:Decaying Touch=9
+Entropic Shield.MOD	DOMAINS:Desert Mirage=1
+Glitterdust.MOD	DOMAINS:Desert Mirage=2
+Mislead.MOD	DOMAINS:Desert Mirage=6
+Prismatic Wall.MOD	DOMAINS:Desert Mirage=7
+Horrid Wilting.MOD	DOMAINS:Desert Mirage=8
+Prismatic Sphere.MOD	DOMAINS:Desert Mirage=9
+Cause Fear.MOD	DOMAINS:Drowning Despair=1
+Storm of Vengeance.MOD	DOMAINS:Drowning Despair=9
+Magic Stone.MOD	DOMAINS:Earthen Embrace=1
+Bear's Endurance.MOD	DOMAINS:Earthen Embrace=2
+Secure Shelter.MOD	DOMAINS:Earthen Embrace=3
+Wall of Stone.MOD	DOMAINS:Earthen Embrace=4
+Stoneskin.MOD	DOMAINS:Earthen Embrace=5
+Flesh to Stone.MOD	DOMAINS:Earthen Embrace=6
+Iron Body.MOD	DOMAINS:Earthen Embrace=8
+Imprisonment.MOD	DOMAINS:Earthen Embrace=9
+Burning Hands.MOD	DOMAINS:Fiery Wrath,Smoldering Spirit=1
+Fire Trap.MOD	DOMAINS:Fiery Wrath=2
+Resist Energy.MOD	DOMAINS:Fiery Wrath=3
+Fire Seeds.MOD	DOMAINS:Fiery Wrath=6
+Sunburst.MOD	DOMAINS:Fiery Wrath=8
+Soften Earth and Stone.MOD	DOMAINS:Forged Stone=2
+Stone Shape.MOD	DOMAINS:Forged Stone=3
+Spike Stones.MOD	DOMAINS:Forged Stone=4
+Transmute Mud to Rock.MOD	DOMAINS:Forged Stone=5
+Move Earth.MOD	DOMAINS:Forged Stone=6
+Statue.MOD	DOMAINS:Forged Stone=7
+Repel Metal or Stone.MOD	DOMAINS:Forged Stone=8
+Gust of Wind.MOD	DOMAINS:Furious Storm=1
+Sleet Storm.MOD	DOMAINS:Furious Storm=3
+Ice Storm.MOD	DOMAINS:Furious Storm=4
+Control Winds.MOD	DOMAINS:Furious Storm=5
+Whirlwind.MOD	DOMAINS:Furious Storm=7
+Storm of Vengeance.MOD	DOMAINS:Furious Storm=9
+Pyrotechnics.MOD	DOMAINS:Ill Winds,Smoldering Spirit=2
+Stinking Cloud.MOD	DOMAINS:Ill Winds=4
+Cloudkill.MOD	DOMAINS:Ill Winds=5
+Acid Fog.MOD	DOMAINS:Ill Winds=6
+Incendiary Cloud.MOD	DOMAINS:Ill Winds,Smoldering Spirit=8
+Detect Secret Doors.MOD	DOMAINS:Light's Revelation=1
+Zone of Truth.MOD	DOMAINS:Light's Revelation=2
+Invisibility Purge.MOD	DOMAINS:Light's Revelation=3
+Discern Lies.MOD	DOMAINS:Light's Revelation=4
+True Seeing.MOD	DOMAINS:Light's Revelation=5
+Find the Path.MOD	DOMAINS:Light's Revelation=6
+Legend Lore.MOD	DOMAINS:Light's Revelation=7
+Discern Location.MOD	DOMAINS:Light's Revelation=8
+Foresight.MOD	DOMAINS:Light's Revelation=9
+Fog Cloud.MOD	DOMAINS:Living Waters=2
+Magic Stone.MOD	DOMAINS:Mountain's Fury=1
+Heat Metal.MOD	DOMAINS:Mountain's Fury=2
+Spike Stones.MOD	DOMAINS:Mountain's Fury=3
+Flesh to Stone.MOD	DOMAINS:Mountain's Fury=6
+Earthquake.MOD	DOMAINS:Mountain's Fury=7
+Command.MOD	DOMAINS:Rolling Thunder=1
+Sound Burst.MOD	DOMAINS:Rolling Thunder=2
+Wind Wall.MOD	DOMAINS:Rolling Thunder=3
+Shout.MOD	DOMAINS:Rolling Thunder=4
+Command (Greater).MOD	DOMAINS:Rolling Thunder=5
+Power Word Stun.MOD	DOMAINS:Rolling Thunder=6
+Shout (Greater).MOD	DOMAINS:Rolling Thunder=7
+Power Word Blind.MOD	DOMAINS:Rolling Thunder=8
+Power Word Kill.MOD	DOMAINS:Rolling Thunder=9
+Animal Messenger.MOD	DOMAINS:Ruinous Swarm=1
+Summon Swarm.MOD	DOMAINS:Ruinous Swarm=2
+Repel Vermin.MOD	DOMAINS:Ruinous Swarm=3
+Giant Vermin.MOD	DOMAINS:Ruinous Swarm=4
+Insect Plague.MOD	DOMAINS:Ruinous Swarm=5
+Creeping Doom.MOD	DOMAINS:Ruinous Swarm=7
+Sympathy.MOD	DOMAINS:Ruinous Swarm=8
+Shocking Grasp.MOD	DOMAINS:Sky Blitz=1
+Call Lightning.MOD	DOMAINS:Sky Blitz=3
+Quench.MOD	DOMAINS:Sky Blitz=4
+Call Lightning Storm.MOD	DOMAINS:Sky Blitz=5
+Control Weather.MOD	DOMAINS:Sky Blitz=6
+Chain Lightning.MOD	DOMAINS:Sky Blitz=7
+Fireball.MOD	DOMAINS:Smoldering Spirit=3
+Fire Shield.MOD	DOMAINS:Smoldering Spirit=5
+Delayed Blast Fireball.MOD	DOMAINS:Smoldering Spirit=6
+Feather Fall.MOD	DOMAINS:Soaring Spirit=1
+Spider Climb.MOD	DOMAINS:Soaring Spirit=2
+Fly.MOD	DOMAINS:Soaring Spirit=3
+Air Walk.MOD	DOMAINS:Soaring Spirit=4
+Teleport.MOD	DOMAINS:Soaring Spirit=5
+Wind Walk.MOD	DOMAINS:Soaring Spirit=6
+Teleport (Greater).MOD	DOMAINS:Soaring Spirit=7
+Reverse Gravity.MOD	DOMAINS:Soaring Spirit=8
+Ray of Enfeeblement.MOD	DOMAINS:Soul Slayer=1
+Black Tentacles.MOD	DOMAINS:Soul Slayer=4
+Slay Living.MOD	DOMAINS:Soul Slayer=5
+Harm.MOD	DOMAINS:Soul Slayer=6
+Circle of Death.MOD	DOMAINS:Soul Slayer=7
+Trap the Soul.MOD	DOMAINS:Soul Slayer=8
+Soul Bind.MOD	DOMAINS:Soul Slayer=9
+Color Spray.MOD	DOMAINS:Sun Flare=1
+Daylight.MOD	DOMAINS:Sun Flare=2
+Searing Light.MOD	DOMAINS:Sun Flare=3
+Rainbow Pattern.MOD	DOMAINS:Sun Flare=4
+Sunbeam.MOD	DOMAINS:Sun Flare=6
+Prismatic Spray.MOD	DOMAINS:Sun Flare=7
+Incendiary Cloud.MOD	DOMAINS:Sun Flare=8
+Prismatic Wall.MOD	DOMAINS:Sun Flare=9
+Detect Undead.MOD	CLASSES:Druid=1
+Darkness.MOD	CLASSES:Druid=2
+Gentle Repose.MOD	CLASSES:Druid=2
+Remove Paralysis.MOD	CLASSES:Druid=2
+Sleep.MOD	CLASSES:Druid=2
+Daylight.MOD	CLASSES:Druid=3
+Deeper Darkness.MOD	CLASSES:Druid=3
+Remove Curse.MOD	CLASSES:Druid=3
+Searing Light.MOD	CLASSES:Druid=3
+Nondetection.MOD	CLASSES:Druid=4
+Mark of Justice.MOD	CLASSES:Druid=5
+Righteous Might.MOD	CLASSES:Druid=5
+Raise Dead.MOD	CLASSES:Druid=6
+Cure Minor Wounds.MOD	CLASSES:Templar=0
+Detect Magic.MOD	CLASSES:Templar=0
+Detect Poison.MOD	CLASSES:Templar=0
+Guidance.MOD	CLASSES:Templar=0
+Inflict Minor Wounds.MOD	CLASSES:Templar=0
+Light.MOD	CLASSES:Templar=0
+Mending.MOD	CLASSES:Templar=0
+Read Magic.MOD	CLASSES:Templar=0
+Resistance.MOD	CLASSES:Templar=0
+Virtue.MOD	CLASSES:Templar=0
+Command.MOD	CLASSES:Templar=1
+Comprehend Languages.MOD	CLASSES:Templar=1
+Cure Light Wounds.MOD	CLASSES:Templar=1
+Deathwatch.MOD	CLASSES:Templar=1
+Detect Undead.MOD	CLASSES:Templar=1
+Divine Favor.MOD	CLASSES:Templar=1
+Doom.MOD	CLASSES:Templar=1
+Endure Elements.MOD	CLASSES:Templar=1
+Hide from Undead.MOD	CLASSES:Templar=1
+Inflict Light Wounds.MOD	CLASSES:Templar=1
+Remove Fear.MOD	CLASSES:Templar=1
+Protection from Evil.MOD	CLASSES:Templar=1
+Protection from Good.MOD	CLASSES:Templar=1
+Shield of Faith.MOD	CLASSES:Templar=1
+Bear's Endurance.MOD	CLASSES:Templar=2
+Cure Moderate Wounds.MOD	CLASSES:Templar=2
+Delay Poison.MOD	CLASSES:Templar=2
+Enthrall.MOD	CLASSES:Templar=2
+Hold Person.MOD	CLASSES:Templar=2
+Inflict Moderate Wounds.MOD	CLASSES:Templar=2
+Remove Paralysis.MOD	CLASSES:Templar=2
+Resist Energy.MOD	CLASSES:Templar=2
+Restoration (Lesser).MOD	CLASSES:Templar=2
+Silence.MOD	CLASSES:Templar=2
+Undetectable Alignment.MOD	CLASSES:Templar=2
+Zone of Truth.MOD	CLASSES:Templar=2
+Cure Serious Wounds.MOD	CLASSES:Templar=3
+Discern Lies.MOD	CLASSES:Templar=3
+Dispel Magic.MOD	CLASSES:Templar=3
+Glyph of Warding.MOD	CLASSES:Templar=3
+Inflict Serious Wounds.MOD	CLASSES:Templar=3
+Lightning Bolt.MOD	CLASSES:Templar=3
+Locate Object.MOD	CLASSES:Templar=3
+Magic Circle against Evil.MOD	CLASSES:Templar=3
+Magic Circle against Good.MOD	CLASSES:Templar=3
+Magic Vestment.MOD	CLASSES:Templar=3
+Protection from Energy.MOD	CLASSES:Templar=3
+Remove Disease.MOD	CLASSES:Templar=3
+Speak with Dead.MOD	CLASSES:Templar=3
+Wind Wall.MOD	CLASSES:Templar=3
+Air Walk.MOD	CLASSES:Templar=4
+Command (Greater).MOD	CLASSES:Templar=4
+Cure Critical Wounds.MOD	CLASSES:Templar=4
+Dimensional Anchor.MOD	CLASSES:Templar=4
+Freedom of Movement.MOD	CLASSES:Templar=4
+Geas (Lesser).MOD	CLASSES:Templar=4
+Inflict Critical Wounds.MOD	CLASSES:Templar=4
+Magic Weapon (Greater).MOD	CLASSES:Templar=4
+Neutralize Poison.MOD	CLASSES:Templar=4
+Sending.MOD	CLASSES:Templar=4
+Status.MOD	CLASSES:Templar=4
+Tongues.MOD	CLASSES:Templar=4
+Break Enchantment.MOD	CLASSES:Templar=5
+Mark of Justice.MOD	CLASSES:Templar=5
+Scrying.MOD	CLASSES:Templar=5
+Symbol of Pain.MOD	CLASSES:Templar=5
+Symbol of Sleep.MOD	CLASSES:Templar=5
+True Seeing.MOD	CLASSES:Templar=5
+Dispel Magic (Greater).MOD	CLASSES:Templar=6
+Forbiddance.MOD	CLASSES:Templar=6
+Glyph of Warding (Greater).MOD	CLASSES:Templar=6
+Raise Dead.MOD	CLASSES:Templar=6
+Symbol of Fear.MOD	CLASSES:Templar=6
+Symbol of Persuasion.MOD	CLASSES:Templar=6
+Word of Recall.MOD	CLASSES:Templar=6
+Refuge.MOD	CLASSES:Templar=7
+Scrying (Greater).MOD	CLASSES:Templar=7
+Symbol of Stunning.MOD	CLASSES:Templar=7
+Symbol of Weakness.MOD	CLASSES:Templar=7
+Antipathy.MOD	CLASSES:Templar=8
+Discern Location.MOD	CLASSES:Templar=8
+Finger of Death.MOD	CLASSES:Templar=8
+Poisoned Gale.MOD	CLASSES:Templar=8
+Regenerate.MOD	CLASSES:Templar=8
+Symbol of Death.MOD	CLASSES:Templar=8
+Energy Drain.MOD	CLASSES:Templar=9
+Power Word Blind.MOD	CLASSES:Templar=9
+Soul Bind.MOD	CLASSES:Templar=9

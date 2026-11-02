@@ -1,0 +1,17 @@
+# Class levels and domains of the spells in sa_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Animate Dead Familiar.MOD	CLASSES:Sorcerer,Wizard=5
+Arcane Bolt.MOD	CLASSES:Sorcerer,Wizard=1
+Bladesong.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Elemental Familiar.MOD	CLASSES:Sorcerer,Wizard=3
+Guidance of the Avatar.MOD	CLASSES:Cleric=2
+Hemorrhage.MOD	CLASSES:Cleric=1
+Mirror Move.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Mordenkainen's Force Missles.MOD	CLASSES:Sorcerer,Wizard=4
+Planar Familiar.MOD	CLASSES:Cleric=3
+Ray of Depletion.MOD	CLASSES:Sorcerer,Wizard=2|Bard=3
+Recitation.MOD	CLASSES:Cleric=4
+Sirellyn's Superior Magnetism.MOD	CLASSES:Sorcerer,Wizard=6
+Styptic.MOD	CLASSES:Cleric=0
+Summon Blood Elemental.MOD	CLASSES:Cleric=5
+Understand Object.MOD	CLASSES:Bard=1|Sorcerer,Wizard=2

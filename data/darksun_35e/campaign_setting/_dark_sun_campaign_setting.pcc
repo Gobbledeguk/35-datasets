@@ -36,7 +36,10 @@ LANGUAGE:dscs_languages.lst
 WEAPONPROF:dscs_profs_weapon.lst
 RACE:dscs_races.lst
 SKILL:dscs_skills.lst
-SPELL:dscs_spells.lst
+SPELL:dscs_spells.lst|(EXCLUDE:Backlash)|PRECAMPAIGN:1,INCLUDES=Spell Compendium
+SPELL:dscs_spells_class.lst|(EXCLUDE:Backlash)|PRECAMPAIGN:1,INCLUDES=Spell Compendium
+SPELL:dscs_spells.lst|!PRECAMPAIGN:1,INCLUDES=Spell Compendium
+SPELL:dscs_spells_class.lst|!PRECAMPAIGN:1,INCLUDES=Spell Compendium
 
 
 INFOTEXT:Supports 6.4.1

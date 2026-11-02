@@ -1,0 +1,19 @@
+
+# 1st Level.MOD
+
+###Block: Spells
+Microkinesis	TYPE:Psionic	SCHOOL:Psychokinesis	COMPS:Vi	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Psychokinetic Thieve's Tools	DURATION:(CASTERLEVEL) rounds [D]	SAVEINFO:None (Object)	SPELLRES:Yes (Object)
+Feather Weight	TYPE:Psionic	SCHOOL:Psychoportation	COMPS:Vi	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes [D]	SAVEINFO:None	SPELLRES:No
+
+###Block: Copies and other lines
+Detect Secret Doors.COPY=Detect Secret Doors (Psionic)
+Detect Snares and Pits.COPY=Detect Snares and Pits (Psionic)		CLASSES:Psychic Rogue=1
+Find Traps.COPY=Find Traps (Psionic)
+
+###Block: Descriptions
+Microkinesis.MOD	DESC:You can use telekinesis to replace your standard tools when using your Open Locks and Disable Device skills.  Augment:For each additional 2 power points you spend, you gain a +1 bonus on your Open Locks and Disable Device checks made with this power.
+Feather Weight.MOD	DESC:Your body seems light as a feather, though your weight does not actually change. This power has no effect on your equipment. If you fall while this power is in effect, you suffer 1d6 point of damage for every 60 feet you fall; you take no damage from falls of less than 60 feet.  While this power is in effect, you gain a +8 bonus on Climb checks you make to climb any vertical surface (not a ceiling or negative slope), and you climb at half your normal speed (or your normal speed if you make an accelerated climb). You retain your Dexterity bonus to Armor Class (if any) while climbing, and opponents get no special bonus on their attacks against you.  Also while this power is in effect you gain a +8 bonus on Move Silently checks.  Augment: For every additional power point you spend, you gain an additional +1 bonus on your Search checks when looking for traps.
+
+###Block: Other modifications
+Detect Secret Doors (Psionic).MOD	OUTPUTNAME:Detect Secret Doors
+Detect Snares and Pits (Psionic).MOD	OUTPUTNAME:Detect Snares and Pits
