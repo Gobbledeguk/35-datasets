@@ -1,0 +1,3 @@
+# Class levels and domains of the spells in shs_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Streamers.MOD	CLASSES:Cleric,Sorcerer,Wizard=5

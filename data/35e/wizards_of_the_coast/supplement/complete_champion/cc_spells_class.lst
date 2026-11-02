@@ -1,0 +1,53 @@
+# Class levels and domains of the spells in cc_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Aligned Aura.MOD	CLASSES:Blackguard,Cleric,Paladin=4
+Benediction.MOD	CLASSES:Cleric,Paladin=2
+Bewildering Mischance.MOD	CLASSES:Adept,Cleric,Shugenja=5
+Bewildering Substitution.MOD	CLASSES:Adept,Cleric,Shugenja=2
+Bewildering Visions.MOD	CLASSES:Adept,Cleric,Shugenja=2
+Bleed.MOD	CLASSES:Blackguard=4|Cleric,Druid=5
+Body Ward.MOD	CLASSES:Cleric,Druid=2
+Bolster Aura.MOD	CLASSES:Cleric=3|Paladin=4
+Conduit of Life.MOD	CLASSES:Cleric,Paladin=2
+Confound.MOD	CLASSES:Cleric=4
+Dampen Magic.MOD	CLASSES:Cleric=4
+Darts of Life.MOD	CLASSES:Cleric=5
+Deific Bastion.MOD	CLASSES:Blackguard,Cleric,Paladin=3
+Divine Presence.MOD	CLASSES:Blackguard,Cleric,Druid,Paladin=2
+Door of Decay.MOD	CLASSES:Cleric=5
+Execration.MOD	CLASSES:Blackguard,Cleric=2
+Footsteps of the Divine.MOD	CLASSES:Cleric=3
+Forest Child.MOD	CLASSES:Druid=8
+Forest Eyes.MOD	CLASSES:Druid=3
+Forest Voice.MOD	CLASSES:Druid=3
+Healing Circle.MOD	CLASSES:Cleric=5
+Iconic Manifestation.MOD	CLASSES:Druid=4
+Impede.MOD	CLASSES:Cleric=1
+Interfaith Blessing.MOD	CLASSES:Adept,Cleric,Druid,Shugenja=2
+Light of Courage.MOD	CLASSES:Cleric=6
+Light of Faith.MOD	CLASSES:Cleric=2
+Light of Purity.MOD	CLASSES:Cleric=4
+Light of Wisdom.MOD	CLASSES:Cleric=3
+Lore of the Gods.MOD	CLASSES:Cleric=2
+Mark of Sin.MOD	CLASSES:Cleric=5
+Master Cavalier.MOD	CLASSES:Blackguard,Cleric,Paladin=2
+Metal Fang.MOD	CLASSES:Druid,Ranger=2
+Moral Facade.MOD	CLASSES:Bard=3|Cleric,Paladin=4
+Phantom Charge.MOD	CLASSES:Blackguard,Paladin=4
+Profane Item.MOD	CLASSES:Blackguard,Cleric=4
+Ravenous Darkness.MOD	CLASSES:Cleric=7
+Rejuvenating Light.MOD	CLASSES:Cleric=7
+Sacred Item.MOD	CLASSES:Cleric,Paladin=4
+Seed of Life.MOD	CLASSES:Cleric,Paladin=4|Druid=5
+Soul Ward.MOD	CLASSES:Cleric,Druid=2
+Spiritual Advisor.MOD	CLASSES:Cleric=4
+Spiritual Guardian.MOD	CLASSES:Cleric=6
+Subdue Aura.MOD	CLASSES:Cleric=3|Paladin=4
+Substitute Domain.MOD	CLASSES:Cleric=2
+Summon Holy Symbol.MOD	CLASSES:Cleric=0|Paladin=1
+Surge of Fortune.MOD	CLASSES:Cleric=5
+Touch of Restoration.MOD	CLASSES:Paladin=2
+Turn Anathema.MOD	CLASSES:Blackguard,Cleric,Paladin=2
+War-Mount.MOD	CLASSES:Blackguard,Paladin=3
+Weight of Sin.MOD	CLASSES:Cleric=6
+Wooden Blight.MOD	CLASSES:Druid=6

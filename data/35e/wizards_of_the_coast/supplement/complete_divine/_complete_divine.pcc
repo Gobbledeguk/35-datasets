@@ -1,0 +1,61 @@
+# CVS $Revision$ $Author$ -- Sun Dec  8 22:17:49 2013 -- reformated by prettylst.pl v1.50 (build 22352)
+CAMPAIGN:Complete Divine
+GAMEMODE:35e|Bahamut35e
+
+GENRE:Fantasy
+BOOKTYPE:Supplement
+SETTING:Dungeons & Dragons
+STATUS:BETA
+PRECAMPAIGN:1,INCLUDESBOOKTYPE=Core35e
+!PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
+TYPE:Wizards of the Coast.Supplement.Supplement
+PUBNAMELONG:Wizards of the Coast
+PUBNAMESHORT:WotC
+PUBNAMEWEB:http://www.wizards.com/default.asp?x=dnd
+SOURCELONG:Complete Divine
+SOURCESHORT:CD
+ISOGL:NO
+SOURCEDATE:2004-05
+RANK:200405
+INFOTEXT:Complete Divine Supplement
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../../_artwork/cover_35e_wotc_cd.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../../_artwork/logo_wotc.png
+
+# Basics
+ABILITY:cd_abilities.lst
+ABILITYCATEGORY:cd_abilitycategories.lst
+CLASS:cd_classes.lst
+DEITY:cd_deities.lst
+DOMAIN:cd_domains.lst
+ABILITY:cd_feats.lst
+ABILITY:cd_feats_ismite.lst
+
+SPELL:cd_spells.lst|(EXCLUDE:Anger of the Noonday Sun|Awaken (Mass)|Beast Claws|Beget Bogun|Bestow Curse (Greater)|Binding Winds|Blast of Force|Blessed Aim|Blessing of Bahamut|Body of the Sun|Bolt of Glory|Bolts of Bedevilment|Bottle of Smoke|Brain Spider|Brambles|Briar Web|Brilliant Aura|Camouflage|Camouflage (Mass)|Castigate|Chain of Eyes|Cloudburst|Cometfall|Contagious Touch|Creeping Cold|Creeping Cold (Greater)|Crown of Glory|Crumble|Curse of Ill Fortune|Curse of Lycanthropy|Dance of the Unicorn|Death Pact|Decomposition|Deific Vengeance|Detect Favored Enemy|Divine Agility|Divine Sacrifice|Doomtide|Dragonbreath|Energy Vortex|Enveloping Cocoon|Fire Wings|Fires of Purity|Flame of Faith|Golden Barding|Implacable Pursuer|Infestation of Maggots|Languor|Last Breath|Maddening Scream|Maelstrom|Mark of the Hunter|Miasma|Monstrous Thrall|Murderous Mist|Nature's Avatar|Naturewatch|Nimbus of Light|Obedient Avalanche|Omen of Peril|Otyugh Swarm|Pavilion of Grandeur|Phantasmal Decoy|Phantasmal Disorientation|Phantom Bear|Phantom Stag|Phantom Wolf|Plague of Rats|Poison Thorns|Probe Thoughts|Quill Blast|Rejuvenation Cocoon|Renewal Pact|Resurgence|Resurgence (Mass)|Revenance|Righteous Wrath of the Faithful|Sacred Haven|Sandblast|Scent|Scourge|Shadow Landscape|Slime Wave|Spell Resistance (Mass)|Spikes|Spiritual Chariot|Stalwart Pact|Standing Wave|Storm of Elemental Fury|Storm Tower|Stormrage|Subvert Planar Essence|Telepathic Bond (Lesser)|Tidal Surge|Tortoise Shell|Touch of Madness|Traveler's Mount|True Creation|True Domination|Unbinding|Unyielding Roots|Vigor|Vigor (Greater)|Vigor (Lesser)|Vigor (Mass Lesser)|Vigorous Circle|Visage of the Deity|Visage of the Deity (Greater)|Visage of the Deity (Lesser)|Waterspout|Wave of Grief|Weapon of the Deity|Weather Eye|Whirlwind (Greater)|Winged Mount|Wood Wose|Wrack|Zeal|Zealot Pact)|PRECAMPAIGN:1,INCLUDES=Spell Compendium
+SPELL:cd_spells.lst|!PRECAMPAIGN:1,INCLUDES=Spell Compendium
+SPELL:cd_spells_class.lst
+TEMPLATE:cd_templates.lst
+
+# Web Enhancement - More Divinity
+ABILITY:web_enhancement/cd_abilities.lst
+ABILITYCATEGORY:web_enhancement/cd_abilitycategories.lst
+CLASS:web_enhancement/cd_classes.lst
+
+
+FORWARDREF:DOMAINSPELLLIST|Winter,Ocean,Sand
+FORWARDREF:SKILL|Knowledge (Psionics),Use Psionic Device
+
+# Prestige classes not implemented
+
+INFOTEXT:Supports 6.4.1
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:

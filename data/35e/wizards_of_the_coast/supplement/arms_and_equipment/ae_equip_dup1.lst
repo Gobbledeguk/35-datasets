@@ -1,0 +1,2 @@
+# Arms and Equipment Guide objects that Complete Warrior / Forgotten Realms Campaign Setting (3.5) also define(s) (3.5 reprint): loaded only when none of those books is loaded.
+Maul													PROFICIENCY:WEAPON|Maul																		TYPE:Weapon.Martial.Melee.TwoHanded.Bludgeoning				CONTAINS:UNLIM|Weapon Crystal=1							COST:15	WT:20										CRITMULT:x3	CRITRANGE:1							DAMAGE:1d10				EQMOD:STEEL					WIELD:TwoHanded										SIZE:M	SOURCEPAGE:p.9																									SPROP:The maul is simply a two-handed warhammer of enormous size. Dwarves favor it.

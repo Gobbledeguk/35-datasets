@@ -1,0 +1,346 @@
+# Class levels and domains of the spells in cd_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Bane Bow.MOD	CLASSES:Ranger=4
+Blink (Improved).MOD	CLASSES:Bard,Sorcerer,Wizard=5	DOMAINS:Celerity=8
+Cloudwalkers.MOD	CLASSES:Druid=7	DOMAINS:Weather=6
+Recitation (CD).MOD	CLASSES:Cleric=4	DOMAINS:Purification=4
+Acid Fog.MOD	CLASSES:Blighter=6
+Air Walk.MOD	CLASSES:Shugenja,Temple Raider of Olidammara=4	DOMAINS:Order of the Spring Zephyr=4
+Animate Dead.MOD	CLASSES:Blighter=4
+Animate Rope.MOD	CLASSES:Consecrated Harrier=1
+Antilife Shell.MOD	CLASSES:Blighter=5
+Antimagic Field.MOD	CLASSES:Shugenja=6	DOMAINS:Order of the Ineffable Mystery=6
+Antipathy.MOD	CLASSES:Blighter,Shugenja=9	DOMAINS:Order of the Perfect Sculpture=9
+Antiplant Shell.MOD	CLASSES:Blighter=4
+Atonement.MOD	CLASSES:Shugenja=5
+Augury.MOD	CLASSES:Temple Raider of Olidammara=2	DOMAINS:Dream,Oracle,Order of the Gentle Rain=2
+Bane.MOD	CLASSES:Blighter=1
+Banishment.MOD	CLASSES:Shugenja=6	DOMAINS:Order of the Impenetrable Crucible=6
+Barkskin.MOD	CLASSES:Shugenja=2
+Bear's Endurance.MOD	CLASSES:Holy Liberator,Shugenja=2
+Crushing Hand.MOD	DOMAINS:Force=9
+Binding.MOD	CLASSES:Shugenja=7	DOMAINS:Order of the Impenetrable Crucible=8
+Blasphemy.MOD	DOMAINS:Mysticism=8[!PREALIGN:CG,NG,LG]
+Bless.MOD	CLASSES:Holy Liberator,Shugenja=1	DOMAINS:Community=1
+Bless Water.MOD	CLASSES:Holy Liberator=1
+Bless Weapon.MOD	CLASSES:Holy Liberator=1	DOMAINS:Glory=2
+Blight.MOD	CLASSES:Blighter=4
+Blur.MOD	DOMAINS:Order of the Spring Zephyr=2|Celerity=3
+Break Enchantment.MOD	CLASSES:Holy Liberator=4	DOMAINS:Liberation=5
+Bull's Strength.MOD	CLASSES:Holy Liberator,Shugenja=2
+Burning Hands.MOD	CLASSES:Blighter,Shugenja=1	DOMAINS:Order of the Consuming Flame=1
+Call Lightning.MOD	CLASSES:Shugenja=3
+Calm Emotions.MOD	CLASSES:Consecrated Harrier=1
+Cat's Grace.MOD	CLASSES:Shugenja,Temple Raider of Olidammara=2	DOMAINS:Celerity=2
+Cat's Grace (Mass).MOD	DOMAINS:Celerity=7
+Cause Fear.MOD	CLASSES:Shugenja=1
+Chain Lightning.MOD	CLASSES:Shugenja=7
+Charm Person.MOD	CLASSES:Consecrated Harrier=2
+Chill Metal.MOD	CLASSES:Blighter=2	DOMAINS:Cold=2
+Chill Touch.MOD	CLASSES:Blighter=2	DOMAINS:Cold=1
+Circle of Death.MOD	CLASSES:Blighter=6
+Clairaudience/Clairvoyance.MOD	CLASSES:Consecrated Harrier,Shugenja=3	DOMAINS:Order of the All-Seeing Eye=3
+Cloudkill.MOD	CLASSES:Shugenja=6
+Color Spray.MOD	CLASSES:Shugenja=2
+Command.MOD	CLASSES:Consecrated Harrier=1	DOMAINS:Domination,Pact=1
+Command (Greater).MOD	DOMAINS:Domination=5
+Commune.MOD	DOMAINS:Oracle,Order of the Gentle Rain=5
+Commune with Nature.MOD	CLASSES:Shugenja=5	DOMAINS:Order of the All-Seeing Eye=5
+Comprehend Languages.MOD	DOMAINS:Mind=1
+Cone of Cold.MOD	DOMAINS:Cold=6
+Confusion.MOD	CLASSES:Temple Raider of Olidammara=4|Shugenja=5	DOMAINS:Madness=4
+Confusion (Lesser).MOD	DOMAINS:Madness=1
+Contagion.MOD	CLASSES:Blighter=3	DOMAINS:Pestilence=3
+Contingency.MOD	CLASSES:Shugenja=6
+Control Undead.MOD	CLASSES:Blighter=7
+Control Water.MOD	CLASSES:Shugenja=4
+Control Weather.MOD	CLASSES:Shugenja=6|Blighter=7	DOMAINS:Order of the Forbidding Wasteland=6
+Control Winds.MOD	CLASSES:Shugenja=5
+Create Food and Water.MOD	DOMAINS:Creation=3
+Create Greater Undead.MOD	DOMAINS:Pestilence=8
+Create Undead.MOD	CLASSES:Blighter=5
+Create Water.MOD	CLASSES:Shugenja=0|Holy Liberator=1	DOMAINS:Creation=1
+Cure Critical Wounds.MOD	CLASSES:Shugenja=4	DOMAINS:Order of the Gentle Rain=4
+Cure Light Wounds.MOD	CLASSES:Holy Liberator,Shugenja=1	DOMAINS:Order of the Gentle Rain=1
+Cure Light Wounds (Mass).MOD	CLASSES:Shugenja=5
+Cure Minor Wounds.MOD	CLASSES:Shugenja=0	DOMAINS:Order of the Gentle Rain=0
+Cure Moderate Wounds.MOD	CLASSES:Shugenja=2|Holy Liberator=3	DOMAINS:Order of the Gentle Rain=2
+Cure Serious Wounds.MOD	CLASSES:Shugenja=3|Holy Liberator=4	DOMAINS:Order of the Gentle Rain=3
+Curse Water.MOD	CLASSES:Blighter=1
+Dancing Lights.MOD	CLASSES:Shugenja=0
+Darkness.MOD	CLASSES:Blighter=2
+Darkvision.MOD	CLASSES:Temple Raider of Olidammara=2
+Daylight.MOD	CLASSES:Consecrated Harrier=2|Holy Liberator,Shugenja=3
+Daze.MOD	CLASSES:Shugenja=0	DOMAINS:Order of the Spring Zephyr=0
+Death Knell.MOD	CLASSES:Blighter=2
+Death Ward.MOD	CLASSES:Consecrated Harrier=3|Blighter,Holy Liberator,Shugenja,Temple Raider of Olidammara=4	DOMAINS:Order of the Impenetrable Crucible=5
+Deep Slumber.MOD	DOMAINS:Dream=3
+Deeper Darkness.MOD	CLASSES:Blighter=3
+Delay Poison.MOD	CLASSES:Holy Liberator,Shugenja,Temple Raider of Olidammara=2
+Delayed Blast Fireball.MOD	DOMAINS:Order of the Consuming Flame=8
+Desecrate.MOD	CLASSES:Blighter=3
+Detect Chaos.MOD	DOMAINS:Inquisition=1
+Detect Law.MOD	CLASSES:Temple Raider of Olidammara=1
+Detect Magic.MOD	CLASSES:Blighter,Shugenja=0	DOMAINS:Order of the Forbidding Wasteland=0
+Detect Poison.MOD	CLASSES:Blighter,Shugenja=0|Holy Liberator=1
+Detect Scrying.MOD	CLASSES:Shugenja=4
+Detect Secret Doors.MOD	CLASSES:Temple Raider of Olidammara=1
+Detect Snares and Pits.MOD	CLASSES:Shugenja=1	DOMAINS:Order of the All-Seeing Eye=1
+Detect Thoughts.MOD	CLASSES:Consecrated Harrier,Shugenja=2	DOMAINS:Mind,Order of the All-Seeing Eye=2|Inquisition=3
+Detect Undead.MOD	CLASSES:Blighter,Holy Liberator=1
+Dictum.MOD	DOMAINS:Inquisition=7
+Dimension Door.MOD	CLASSES:Shugenja=5
+Dimensional Anchor.MOD	CLASSES:Shugenja=4
+Diminish Plants.MOD	CLASSES:Blighter=3
+Discern Lies.MOD	CLASSES:Consecrated Harrier,Holy Liberator=3|Shugenja=4	DOMAINS:Inquisition,Mind=4
+Discern Location.MOD	CLASSES:Shugenja=8	DOMAINS:Oracle=8
+Disguise Self.MOD	CLASSES:Consecrated Harrier,Shugenja,Temple Raider of Olidammara=1	DOMAINS:Order of the Spring Zephyr=1
+Disintegrate.MOD	CLASSES:Shugenja=7
+Dismissal.MOD	CLASSES:Consecrated Harrier,Shugenja=4	DOMAINS:Order of the Impenetrable Crucible=4
+Dispel Evil.MOD	CLASSES:Holy Liberator=4
+Dispel Law.MOD	CLASSES:Holy Liberator=4
+Dispel Magic.MOD	CLASSES:Blighter,Holy Liberator,Shugenja=3	DOMAINS:Order of the Ineffable Mystery=3
+Dispel Magic (Greater).MOD	CLASSES:Blighter,Shugenja=6	DOMAINS:Liberation=6
+Disrupt Undead.MOD	CLASSES:Shugenja=0	DOMAINS:Glory=1
+Divination.MOD	DOMAINS:Oracle=3|Order of the All-Seeing Eye=4
+Divine Favor.MOD	CLASSES:Holy Liberator=1	DOMAINS:Mysticism=1
+Divine Power.MOD	DOMAINS:Competition=4
+Dominate Monster.MOD	CLASSES:Consecrated Harrier=4
+Dominate Person.MOD	DOMAINS:Domination=4
+Doom.MOD	CLASSES:Blighter,Consecrated Harrier=1	DOMAINS:Pestilence=1
+Eagle's Splendor.MOD	CLASSES:Holy Liberator=2
+Earthquake.MOD	CLASSES:Blighter=7	DOMAINS:Order of the Perfect Sculpture=8
+Elemental Swarm.MOD	CLASSES:Shugenja=9
+Endure Elements.MOD	CLASSES:Blighter,Holy Liberator,Shugenja=1
+Enthrall.MOD	DOMAINS:Domination=2
+Entropic Shield.MOD	DOMAINS:Order of the Ineffable Mystery=1
+Etherealness.MOD	CLASSES:Shugenja=9
+Expeditious Retreat.MOD	CLASSES:Shugenja=1	DOMAINS:Celerity=1
+Faerie Fire.MOD	CLASSES:Shugenja=1
+Feather Fall.MOD	CLASSES:Shugenja=1
+Feeblemind.MOD	CLASSES:Shugenja=5
+Find the Path.MOD	DOMAINS:Order of the All-Seeing Eye=6
+Finger of Death.MOD	CLASSES:Blighter=6
+Fire Seeds.MOD	CLASSES:Blighter,Shugenja=6
+Fire Shield.MOD	CLASSES:Shugenja=4
+Fire Storm.MOD	CLASSES:Blighter,Shugenja=7	DOMAINS:Order of the Consuming Flame=7
+Fire Trap.MOD	CLASSES:Blighter=2
+Fireball.MOD	DOMAINS:Order of the Consuming Flame=4
+Flame Arrow.MOD	CLASSES:Shugenja=4
+Flame Blade.MOD	CLASSES:Shugenja=2
+Flame Strike.MOD	CLASSES:Blighter=4|Shugenja=5	DOMAINS:Order of the Consuming Flame=5
+Flaming Sphere.MOD	CLASSES:Blighter,Shugenja=2
+Flare.MOD	CLASSES:Blighter,Shugenja=0	DOMAINS:Order of the Consuming Flame=0
+Flesh to Stone.MOD	CLASSES:Shugenja=7	DOMAINS:Order of the Perfect Sculpture=6
+Fog Cloud.MOD	CLASSES:Shugenja=2
+Forbiddance.MOD	CLASSES:Blighter=5
+Forcecage.MOD	DOMAINS:Force=7
+Foresight.MOD	CLASSES:Blighter=9	DOMAINS:Oracle,Order of the All-Seeing Eye,Order of the Spring Zephyr=9
+Freedom of Movement.MOD	CLASSES:Holy Liberator,Temple Raider of Olidammara=4	DOMAINS:Liberation=4
+Gate.MOD	DOMAINS:Glory,Pact,Summoner=9
+Geas/Quest.MOD	DOMAINS:Domination,Inquisition=6
+Ghost Sound.MOD	CLASSES:Blighter,Shugenja=0
+Glitterdust.MOD	CLASSES:Shugenja=2
+Glyph of Warding.MOD	CLASSES:Shugenja=3
+Glyph of Warding (Greater).MOD	CLASSES:Shugenja=6
+Guidance.MOD	CLASSES:Shugenja=0	DOMAINS:Order of the All-Seeing Eye=0
+Gust of Wind.MOD	CLASSES:Shugenja=3
+Hallucinatory Terrain.MOD	CLASSES:Shugenja=4
+Harm.MOD	CLASSES:Blighter=6
+Haste.MOD	CLASSES:Shugenja=3	DOMAINS:Celerity=4
+Heal.MOD	CLASSES:Shugenja=6	DOMAINS:Order of the Gentle Rain=6
+Heal (Mass).MOD	CLASSES:Shugenja=8	DOMAINS:Order of the Gentle Rain=8|Community=9
+Heal Mount.MOD	CLASSES:Holy Liberator=3
+Heat Metal.MOD	CLASSES:Blighter,Shugenja=2
+Heroes' Feast.MOD	DOMAINS:Community,Creation=6
+Heroism.MOD	CLASSES:Holy Liberator=2
+Hide from Animals.MOD	CLASSES:Blighter=1
+Hide from Undead.MOD	CLASSES:Temple Raider of Olidammara=1
+Hold Person.MOD	CLASSES:Consecrated Harrier,Shugenja=2
+Holy Aura.MOD	DOMAINS:Mysticism=8[!PREALIGN:CE,NE,LE]
+Holy Smite.MOD	DOMAINS:Glory=4
+Holy Sword.MOD	CLASSES:Holy Liberator=4	DOMAINS:Glory=5
+Holy Word.MOD	DOMAINS:Mysticism=7[!PREALIGN:CE,NE,LE]
+Horrid Wilting.MOD	CLASSES:Blighter=8	DOMAINS:Order of the Forbidding Wasteland=8
+Hypnotism.MOD	CLASSES:Shugenja=1
+Identify.MOD	DOMAINS:Oracle=1
+Illusory Wall.MOD	CLASSES:Shugenja=4
+Implosion.MOD	CLASSES:Blighter,Shugenja=9
+Imprisonment.MOD	CLASSES:Shugenja=9	DOMAINS:Inquisition,Order of the Impenetrable Crucible=9
+Incendiary Cloud.MOD	CLASSES:Shugenja=8|Blighter=9
+Inflict Critical Wounds.MOD	CLASSES:Blighter=4
+Inflict Light Wounds.MOD	CLASSES:Blighter=1
+Inflict Minor Wounds.MOD	CLASSES:Blighter=0
+Inflict Moderate Wounds.MOD	CLASSES:Blighter=2
+Inflict Serious Wounds.MOD	CLASSES:Blighter=3
+Insanity.MOD	DOMAINS:Madness=7
+Invisibility.MOD	CLASSES:Temple Raider of Olidammara=2|Shugenja=3	DOMAINS:Order of the Spring Zephyr=3
+Invisibility (Greater).MOD	CLASSES:Shugenja=5	DOMAINS:Order of the Spring Zephyr=5
+Invisibility (Mass).MOD	CLASSES:Shugenja=7
+Keen Edge.MOD	CLASSES:Shugenja=3
+Know Direction.MOD	CLASSES:Shugenja=0
+Legend Lore.MOD	CLASSES:Consecrated Harrier=4	DOMAINS:Oracle=6|Order of the All-Seeing Eye=7
+Levitate.MOD	CLASSES:Shugenja=2
+Light.MOD	CLASSES:Shugenja=0
+Lightning Bolt.MOD	CLASSES:Shugenja=4
+Locate Creature.MOD	CLASSES:Shugenja=4
+Locate Object.MOD	CLASSES:Shugenja=2|Temple Raider of Olidammara=3
+Mage Armor.MOD	DOMAINS:Force=1
+Mage Hand.MOD	CLASSES:Shugenja=0
+Mage's Disjunction.MOD	DOMAINS:Order of the Ineffable Mystery=9
+Mage's Magnificent Mansion.MOD	DOMAINS:Community=8
+Magic Circle against Evil.MOD	CLASSES:Holy Liberator=3
+Magic Circle against Law.MOD	CLASSES:Holy Liberator,Temple Raider of Olidammara=3
+Magic Missile.MOD	DOMAINS:Force=2
+Magic Stone.MOD	CLASSES:Shugenja=1	DOMAINS:Order of the Perfect Sculpture=1
+Magic Weapon.MOD	CLASSES:Holy Liberator,Shugenja=1	DOMAINS:Order of the Impenetrable Crucible=1
+Magic Weapon (Greater).MOD	CLASSES:Holy Liberator,Shugenja=3	DOMAINS:Order of the Impenetrable Crucible=3
+Major Creation.MOD	DOMAINS:Creation=5
+Major Image.MOD	CLASSES:Shugenja=3
+Make Whole.MOD	CLASSES:Shugenja=2
+Mark of Justice.MOD	CLASSES:Consecrated Harrier,Holy Liberator=4
+Meld into Stone.MOD	CLASSES:Shugenja=3
+Mending.MOD	CLASSES:Shugenja=0	DOMAINS:Order of the Perfect Sculpture=0
+Meteor Swarm.MOD	CLASSES:Shugenja=9	DOMAINS:Order of the Consuming Flame=9
+Mind Blank.MOD	CLASSES:Blighter=8	DOMAINS:Liberation,Mind=8
+Minor Creation.MOD	DOMAINS:Creation=4
+Minor Image.MOD	CLASSES:Shugenja=2	DOMAINS:Creation=2
+Mirage Arcana.MOD	CLASSES:Shugenja=5
+Mislead.MOD	CLASSES:Shugenja=7	DOMAINS:Order of the Spring Zephyr=7
+Moment of Prescience.MOD	DOMAINS:Competition=8
+Move Earth.MOD	CLASSES:Shugenja=6
+Neutralize Poison.MOD	CLASSES:Holy Liberator,Shugenja,Temple Raider of Olidammara=4
+Nightmare.MOD	DOMAINS:Dream=5
+Nondetection.MOD	CLASSES:Temple Raider of Olidammara=3
+Obscure Object.MOD	CLASSES:Temple Raider of Olidammara=3	DOMAINS:Order of the Ineffable Mystery=2
+Obscuring Mist.MOD	CLASSES:Shugenja,Temple Raider of Olidammara=1
+Resilient Sphere.MOD	DOMAINS:Force=4
+Telekinetic Sphere.MOD	DOMAINS:Force=8
+Owl's Wisdom.MOD	CLASSES:Holy Liberator=2
+Passwall.MOD	CLASSES:Shugenja=5
+Pass without Trace.MOD	CLASSES:Shugenja=1
+Permanent Image.MOD	CLASSES:Shugenja=6	DOMAINS:Creation=7
+Persistent Image.MOD	CLASSES:Shugenja=5
+Phantasmal Killer.MOD	DOMAINS:Dream=4|Madness=6
+Planar Ally.MOD	DOMAINS:Summoner=6
+Planar Ally (Greater).MOD	DOMAINS:Summoner=8
+Planar Ally (Lesser).MOD	DOMAINS:Summoner=4
+Plant Growth.MOD	CLASSES:Shugenja=3
+Poison.MOD	CLASSES:Blighter=3	DOMAINS:Pestilence=4
+Polar Ray.MOD	DOMAINS:Cold=8
+Power Word Blind.MOD	CLASSES:Shugenja=8
+Power Word Stun.MOD	DOMAINS:Dream=9
+Prayer.MOD	CLASSES:Holy Liberator,Shugenja=3	DOMAINS:Community,Competition=3
+Produce Flame.MOD	CLASSES:Blighter,Shugenja=2	DOMAINS:Order of the Consuming Flame=2
+Programmed Image.MOD	CLASSES:Shugenja=7
+Protection from Energy.MOD	CLASSES:Blighter,Shugenja=3
+Protection from Evil.MOD	CLASSES:Holy Liberator=1
+Protection from Law.MOD	CLASSES:Holy Liberator,Temple Raider of Olidammara=1
+Protection from Spells.MOD	CLASSES:Shugenja=8	DOMAINS:Order of the Ineffable Mystery=8
+Purify Food and Drink.MOD	CLASSES:Shugenja=0
+Quench.MOD	CLASSES:Shugenja=4
+Rage.MOD	DOMAINS:Liberation,Madness=3
+Telepathic Bond.MOD	DOMAINS:Community,Mind=5
+Ray of Enfeeblement.MOD	CLASSES:Blighter=1
+Read Magic.MOD	CLASSES:Blighter,Shugenja=0|Holy Liberator=1
+Refuge.MOD	DOMAINS:Community,Liberation=7
+Regenerate.MOD	CLASSES:Shugenja=8	DOMAINS:Competition=7
+Remove Blindness/Deafness.MOD	CLASSES:Holy Liberator,Shugenja=3
+Remove Curse.MOD	CLASSES:Holy Liberator,Shugenja,Temple Raider of Olidammara=3
+Remove Disease.MOD	CLASSES:Shugenja=3
+Remove Fear.MOD	CLASSES:Shugenja=1	DOMAINS:Competition,Order of the Forbidding Wasteland=1
+Remove Paralysis.MOD	CLASSES:Holy Liberator,Shugenja=2
+Repel Metal or Stone.MOD	CLASSES:Blighter=7
+Repel Vermin.MOD	CLASSES:Blighter=4
+Repel Wood.MOD	CLASSES:Blighter=5
+Repulsion.MOD	CLASSES:Blighter=7	DOMAINS:Force=6|Order of the Impenetrable Crucible=7
+Resistance.MOD	CLASSES:Shugenja=0|Holy Liberator=1	DOMAINS:Order of the Impenetrable Crucible,Order of the Ineffable Mystery=0
+Resist Energy.MOD	CLASSES:Blighter,Holy Liberator,Shugenja=2|Temple Raider of Olidammara=3
+Restoration.MOD	CLASSES:Holy Liberator,Shugenja,Temple Raider of Olidammara=4
+Restoration (Greater).MOD	CLASSES:Shugenja=7
+Restoration (Lesser).MOD	CLASSES:Holy Liberator=1|Shugenja,Temple Raider of Olidammara=2	DOMAINS:Order of the Forbidding Wasteland=3
+Resurrection.MOD	CLASSES:Shugenja=7	DOMAINS:Order of the Gentle Rain=7
+Righteous Might.MOD	CLASSES:Shugenja=5	DOMAINS:Competition,Mysticism=5
+Rusting Grasp.MOD	CLASSES:Blighter=4
+Sanctuary.MOD	CLASSES:Shugenja=1
+Screen.MOD	CLASSES:Shugenja=8	DOMAINS:Order of the Spring Zephyr=8
+Scrying.MOD	CLASSES:Shugenja=5	DOMAINS:Oracle=4
+Scrying (Greater).MOD	CLASSES:Shugenja=7	DOMAINS:Dream,Oracle,Order of the Forbidding Wasteland=7
+Searing Light.MOD	CLASSES:Shugenja=3	DOMAINS:Glory,Order of the Consuming Flame=3
+See Invisibility.MOD	CLASSES:Consecrated Harrier,Temple Raider of Olidammara=3
+Shambler.MOD	CLASSES:Blighter=8	DOMAINS:Order of the Forbidding Wasteland=9
+Shield of Faith.MOD	CLASSES:Shugenja=1
+Shield of Law.MOD	DOMAINS:Inquisition=8
+Shield Other.MOD	CLASSES:Holy Liberator=2	DOMAINS:Pact=2
+Shocking Grasp.MOD	CLASSES:Shugenja=1
+Silence.MOD	CLASSES:Shugenja=2
+Silent Image.MOD	CLASSES:Shugenja=1
+Sleep.MOD	CLASSES:Shugenja=1	DOMAINS:Dream=1
+Soften Earth and Stone.MOD	DOMAINS:Order of the Perfect Sculpture=2
+Soul Bind.MOD	DOMAINS:Order of the Gentle Rain=9
+Sound Burst.MOD	DOMAINS:Order of the Impenetrable Crucible=2
+Speak with Animals.MOD	CLASSES:Shugenja=1
+Speak with Dead.MOD	DOMAINS:Pact=3
+Spell Immunity.MOD	CLASSES:Shugenja,Temple Raider of Olidammara=4	DOMAINS:Order of the Ineffable Mystery=4
+Spell Resistance.MOD	CLASSES:Shugenja=5	DOMAINS:Order of the Ineffable Mystery=5
+Spell Turning.MOD	CLASSES:Shugenja=7	DOMAINS:Order of the Ineffable Mystery=7
+Spike Stones.MOD	CLASSES:Shugenja=4
+Spiritual Weapon.MOD	DOMAINS:Mysticism=2
+Statue.MOD	CLASSES:Shugenja=7	DOMAINS:Order of the Perfect Sculpture=7
+Status.MOD	DOMAINS:Community=2
+Stinking Cloud.MOD	CLASSES:Blighter=3
+Stone Shape.MOD	CLASSES:Shugenja=3	DOMAINS:Order of the Perfect Sculpture=3
+Stoneskin.MOD	CLASSES:Shugenja=6
+Stone Tell.MOD	CLASSES:Shugenja=6
+Storm of Vengeance.MOD	CLASSES:Blighter,Shugenja=9
+Suggestion.MOD	DOMAINS:Domination=3
+Suggestion (Mass).MOD	DOMAINS:Domination=7
+Summon Monster I.MOD	DOMAINS:Summoner=1
+Summon Monster II.MOD	DOMAINS:Summoner=2
+Summon Monster III.MOD	DOMAINS:Summoner=3
+Summon Monster V.MOD	DOMAINS:Summoner=5
+Summon Monster VII.MOD	DOMAINS:Summoner=7
+Summon Swarm.MOD	DOMAINS:Pestilence=2
+Sunbeam.MOD	CLASSES:Shugenja=7	DOMAINS:Glory=7
+Sunburst.MOD	CLASSES:Shugenja=8	DOMAINS:Purification=9
+Teleport.MOD	CLASSES:Shugenja=6
+Teleport Object.MOD	CLASSES:Shugenja=7
+Teleport (Greater).MOD	CLASSES:Shugenja=8
+Teleportation Circle.MOD	CLASSES:Shugenja=9
+Time Stop.MOD	DOMAINS:Celerity=9
+Tongues.MOD	DOMAINS:Community=4
+Touch of Fatigue.MOD	CLASSES:Blighter=0
+Transmute Mud to Rock.MOD	CLASSES:Blighter=4
+Transmute Rock to Mud.MOD	CLASSES:Blighter=4	DOMAINS:Order of the Perfect Sculpture=5
+Tree Stride.MOD	DOMAINS:Celerity=5
+True Resurrection.MOD	CLASSES:Shugenja=9
+True Seeing.MOD	CLASSES:Shugenja=6	DOMAINS:Inquisition=5
+Undetectable Alignment.MOD	CLASSES:Holy Liberator,Temple Raider of Olidammara=2	DOMAINS:Liberation=2
+Unhallow.MOD	CLASSES:Blighter=4
+Vampiric Touch.MOD	CLASSES:Blighter=3
+Veil.MOD	CLASSES:Shugenja=6	DOMAINS:Order of the Spring Zephyr=6
+Virtue.MOD	CLASSES:Shugenja=0|Holy Liberator=1
+Vision.MOD	DOMAINS:Order of the All-Seeing Eye=8
+Wall of Fire.MOD	CLASSES:Blighter,Shugenja=4
+Wall of Force.MOD	DOMAINS:Force=5
+Wall of Ice.MOD	CLASSES:Shugenja=5	DOMAINS:Cold=5
+Wall of Iron.MOD	CLASSES:Shugenja=5
+Wall of Stone.MOD	CLASSES:Shugenja=5
+Warp Wood.MOD	CLASSES:Blighter=2
+Water Breathing.MOD	CLASSES:Shugenja=3
+Water Walk.MOD	CLASSES:Shugenja=3
+Waves of Exhaustion.MOD	CLASSES:Blighter=8
+Waves of Fatigue.MOD	CLASSES:Blighter=5
+Weird.MOD	DOMAINS:Dream,Madness,Mind=9
+Whirlwind.MOD	CLASSES:Shugenja=8
+Wind Walk.MOD	CLASSES:Shugenja=6	DOMAINS:Celerity=6
+Wind Wall.MOD	CLASSES:Shugenja=3
+Zone of Truth.MOD	CLASSES:Holy Liberator=2	DOMAINS:Inquisition=2
+Dragon Breath (Red Dragon or Gold Dragon).MOD	CLASSES:Shugenja=5
+Summon Monster III (Elementals).MOD	CLASSES:Shugenja=3
+Summon Monster V (Medium Elemental).MOD	CLASSES:Shugenja=5
+Summon Monster VI (Large Elemental).MOD	CLASSES:Shugenja=6
+Summon Monster VII (Huge Elemental).MOD	CLASSES:Shugenja=7
+Summon Monster VIII (Greater Elemental).MOD	CLASSES:Shugenja=8
+Summon Monster IX (Elder Elemental).MOD	CLASSES:Shugenja=9
+Align Weapon.MOD	CLASSES:Ur-Priest=2

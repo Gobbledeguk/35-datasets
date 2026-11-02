@@ -1,0 +1,30 @@
+# Class levels and domains of the spells in dr_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Deafening Breath.MOD	CLASSES:Sorcerer,Wizard=9
+Draconic Polymorph.MOD	CLASSES:Sorcerer,Wizard=5
+Dragon Breath.MOD	CLASSES:Sorcerer,Wizard=3
+Lower Spell Resistance.MOD	CLASSES:Cleric,Sorcerer,Wizard=4
+Detect Magic.MOD	CLASSES:Hoardstealer=1
+Detect Secret Doors.MOD	CLASSES:Hoardstealer=1
+Expeditious Retreat.MOD	CLASSES:Hoardstealer=1
+Ghost Sound.MOD	CLASSES:Hoardstealer=1
+Identify.MOD	CLASSES:Hoardstealer=1
+Floating Disk.MOD	CLASSES:Hoardstealer=1
+Magic Aura.MOD	CLASSES:Hoardstealer=1
+Read Magic.MOD	CLASSES:Hoardstealer=1
+Unseen Servant.MOD	CLASSES:Hoardstealer=1
+Cat's Grace.MOD	CLASSES:Hoardstealer=2
+Knock.MOD	CLASSES:Hoardstealer=2
+Invisibility.MOD	CLASSES:Hoardstealer=2
+Locate Object.MOD	CLASSES:Hoardstealer=2
+Resist Energy.MOD	CLASSES:Hoardstealer=2
+Spider Climb.MOD	CLASSES:Hoardstealer=2
+Arcane Sight.MOD	CLASSES:Hoardstealer=3
+Clairaudience/Clairvoyance.MOD	CLASSES:Hoardstealer=3
+Dispel Magic.MOD	CLASSES:Hoardstealer=3
+Protection from Energy.MOD	CLASSES:Hoardstealer=3
+Shrink Item.MOD	CLASSES:Hoardstealer=3
+Arcane Eye.MOD	CLASSES:Hoardstealer=4
+Dimension Door.MOD	CLASSES:Hoardstealer=4
+Freedom of Movement.MOD	CLASSES:Hoardstealer=4
+Hide from Dragons.MOD	CLASSES:Hoardstealer=4

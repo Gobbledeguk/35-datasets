@@ -1,0 +1,329 @@
+# CVS $Revision: $ $Author: $ -- Sun Aug 17 15:41:15 2014 -- reformated by prettylst.pl v1.51 (build 24906)
+
+###Block: Spells
+Anger of the Noonday Sun	TYPE:Divine	SCHOOL:Evocation	DESCRIPTOR:Light	COMPS:V, S	CASTTIME:1 standard action	RANGE:10 ft.	TARGETAREA:All sighted creatures within a 10-ft.-radius burst centered on you	DURATION:Instantaneous	SAVEINFO:Reflex negates	SPELLRES:Yes	CLASSES:Druid=6	DESC:See Text	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.150	SOURCEDATE:2004-05
+Awaken, Mass	KEY:Awaken (Mass)	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, F, XP	CASTTIME:24 hours	RANGE:Medium	TARGETAREA:(min(CASTERLEVEL)/3) animals or trees, no two of which may be more than 30 ft. apart	DURATION:Instantaneous	SAVEINFO:See text	SPELLRES:Yes	CLASSES:Druid=8	DESC:See Text	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.151	SOURCEDATE:2004-05
+Bane Bow	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Ranged weapon touched	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.151	SOURCEDATE:2004-05
+Beast Claws	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=3|Cleric=4	DESC:Change your hands into claws. Damage 1d6 plus strength or magic; Threat range 19-20. See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.151-152	SOURCEDATE:2004-05
+Beget Bogun	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M, XP	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Tiny Construct	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=1	DESC:Creates a natural homunculus.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.152	SOURCEDATE:2004-05
+Bestow Curse, Greater	KEY:Bestow Curse (Greater)	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:Permanent	SAVEINFO:Will negates	SPELLRES:Yes	CLASSES:Bard=6|Cleric,Sorcerer,Wizard=7	DESC:Caster choose 1 of 3 curses to bestow.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.153	SOURCEDATE:2004-05
+Binding Winds	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One creature	DURATION:Concentration	SAVEINFO:Reflex negates	SPELLRES:Yes	CLASSES:Druid=5	DOMAINS:Weather=5	DESC:See Text	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.153	SOURCEDATE:2004-05
+Blast of Force	TYPE:Divine	SCHOOL:Evocation	DESCRIPTOR:Force	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	ITEM:Potion	TARGETAREA:Ray	DURATION:Instantaneous	SAVEINFO:Fortitude partial	SPELLRES:Yes	DOMAINS:Force=3	DESC:Blast one target for (min((CASTERLEVEL+1)/2,5))d6. In addition must make a Fortitude save or be knocked down.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.153-154	SOURCEDATE:2004-05
+Blessed Aim	TYPE:Divine	SCHOOL:Divination	COMPS:V, S	CASTTIME:1 standard action	RANGE:60 ft.	ITEM:Potion	TARGETAREA:60 ft. spread, centered on you	DURATION:Concentration	SAVEINFO:Will negates (harmless)	SPELLRES:No	CLASSES:Blackguard,Paladin=2|Cleric=3	DESC: +2 morale bonus on ranged attacks for your allies within the spread.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.154	SOURCEDATE:2004-05
+Blessing of Bahamut	TYPE:Divine	SCHOOL:Abjuration	DESCRIPTOR:Good	COMPS:V, M	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Paladin=3	DESC:Gain damage reduction 10/magic.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.154	SOURCEDATE:2004-05
+Blink, Improved	KEY:Blink (Improved)	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds [D]	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.154-155	SOURCEDATE:2004-05
+Body of the Sun	TYPE:Arcane.Divine	SCHOOL:Transmutation	DESCRIPTOR:Fire	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:5 ft.	ITEM:Potion	TARGETAREA:5 ft.-radius emanation centered on you	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Druid,Sorcerer,Wizard=2	DESC:Fire and light extend 5ft. from caster's body inflicting 1d4+1 points of fire damage (Reflex save for half).	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.155	SOURCEDATE:2004-05
+Bolt of Glory	TYPE:Divine	SCHOOL:Evocation	DESCRIPTOR:Good	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Ray	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:Yes	DOMAINS:Glory=6	DESC:Ray deals positive energy damage, more against undead and evil outsiders.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.155	SOURCEDATE:2004-05
+Bolts of Bedevilment	TYPE:Divine	SCHOOL:Enchantment	DESCRIPTOR:Mind-Affecting	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Ray	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates	SPELLRES:Yes	DOMAINS:Madness=5	DESC:One ray attack per round, dazes 1d3 rounds.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.155	SOURCEDATE:2004-05
+Bottle of Smoke	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, F	CASTTIME:10 minutes	RANGE:Touch	ITEM:Potion	TARGETAREA:Creates one smoky, horselike creature	DURATION:(CASTERLEVEL) hours	SAVEINFO:None	SPELLRES:No	CLASSES:Ranger=3|Druid=4	DESC:Creates a steed made of smoke.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.155-156	SOURCEDATE:2004-05
+Brain Spider	TYPE:Divine	SCHOOL:Divination	DESCRIPTOR:Mind-Affecting	COMPS:V, S, M, DF	CASTTIME:1 full round	RANGE:Long	TARGETAREA:Up to eight living creatures within range.	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates	SPELLRES:Yes	CLASSES:Cleric=8	DOMAINS:Mind=7	DESC:Eavesdrop on thoughts of up to eight other creatures.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.156	SOURCEDATE:2004-05
+Brambles	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Wooden weapon touched	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric,Druid=2	DESC:Small magical thorns/spikes protrude from wooden weapon; gains a +1 to hit enhancement and deals +(min(CASTERLEVEL,10)) damage.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.156	SOURCEDATE:2004-05
+Briar Web	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Medium	ITEM:Potion	TARGETAREA:Plants in a 20-ft-radius spread.	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Reflex negates; see text	SPELLRES:No	CLASSES:Druid,Ranger=2|Cleric=3	DESC:As entangle, but thorns deal damage each round.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.156-157	SOURCEDATE:2004-05
+Brilliant Aura	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:(min(CASTERLEVEL)/2) persons, all of whom must be within 30 ft. of each other	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Druid=7	DESC:See Text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.157	SOURCEDATE:2004-05
+Camouflage	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Druid,Ranger=1	DESC:Gain +10 circumstance bonus on Hide checks.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.157	SOURCEDATE:2004-05
+Camouflage, Mass	KEY:Camouflage (Mass)	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Any number of creatures, no two of which can be more than 60 ft. apart	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Druid,Ranger=4	DESC:As camouflage, except the effect is mobile within the group.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.157-158	SOURCEDATE:2004-05
+Castigate	TYPE:Divine	SCHOOL:Evocation	DESCRIPTOR:Sonic	COMPS:V	CASTTIME:1 standard action	RANGE:10 ft.	TARGETAREA:10-ft. radius emanation.	DURATION:Instantaneous	SAVEINFO:Fortitude half	SPELLRES:Yes	CLASSES:Cleric=4	DESC: Deafen or damage foes, depending on their alignment.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.158	SOURCEDATE:2004-05
+Chain of Eyes	TYPE:Divine	SCHOOL:Divination	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Living creature touched.	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates	SPELLRES:Yes	CLASSES:Cleric=3|Druid=4	DESC:Scrying sensor passed along by touch.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.158	SOURCEDATE:2004-05
+Cloudburst	TYPE:Divine	SCHOOL:Evocation	SUBSCHOOL:Water	COMPS:V, S	CASTTIME:1 full round	RANGE:Long	ITEM:Potion	TARGETAREA:100-ft.-radius emanation	DURATION:(CASTERLEVEL*10) minutes [D]	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=2	DESC:See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.158-159	SOURCEDATE:2004-05
+Cloudwalkers	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:(CASTERLEVEL) creatures, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) hours [D]	SAVEINFO:Reflex negates (harmless)	SPELLRES:Yes (harmless)	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.159	SOURCEDATE:2004-05
+Cometfall	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Effect:400-pound ball of rock and ice	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:No	CLASSES:Cleric,Druid=6	DESC:Comet appears above your enemies (CASTERLEVEL*5) feet and drops causing 2d6 points per 10 feet of falling.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.159	SOURCEDATE:2004-05
+Contagious Touch	TYPE:Divine	SCHOOL:Necromancy	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Fortitude negates	SPELLRES:No	CLASSES:Druid=6	DESC:Infects a touched creature with chosen disease.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.159	SOURCEDATE:2004-05
+Creeping Cold	TYPE:Divine	SCHOOL:Transmutation	DESCRIPTOR:Cold	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Close	ITEM:Potion	TARGETAREA:One creature	DURATION:3 rounds	SAVEINFO:Fortitude half	SPELLRES:Yes	CLASSES:Druid=2	DESC:Deals progressive damage from cold (+1d6/round).	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.159-160	SOURCEDATE:2004-05
+Creeping Cold, Greater	KEY:Creeping Cold (Greater)	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature	DURATION:See text	SAVEINFO:Fortitude half	SPELLRES:Yes	CLASSES:Druid=7	DESC:As creeping cold, but has a higher damage cap.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.160	SOURCEDATE:2004-05
+Crown of Glory	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S, M, DF	CASTTIME:1 full round	RANGE:120 ft.	TARGETAREA:120 ft.-radius emanation, centered on you	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates	SPELLRES:Yes	DOMAINS:Glory=8	DESC:Gain +4 Cha and enthralls subjects.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.160	SOURCEDATE:2004-05
+Crumble	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One structure or construct	DURATION:Instantaneous	SAVEINFO:Fortitude partial (object)	SPELLRES:Yes (object)	CLASSES:Druid=6	DESC:Cause damage to structure; see text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.160	SOURCEDATE:2004-05
+Curse of Ill Fortune	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Medium	ITEM:Potion	TARGETAREA:One living creature	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates	SPELLRES:Yes	CLASSES:Blackguard,Cleric=2	DESC:Cause -3 penalty on attack rolls, saving throws, ability checks and skill checks.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.160	SOURCEDATE:2004-05
+Curse of Lycanthropy	TYPE:Divine	SCHOOL:Necromancy	COMPS:V, S, M/DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Humanoid touched	DURATION:Permanent; see text	SAVEINFO:Fortitude negates	SPELLRES:Yes	DOMAINS:Pestilence=6	DESC:Causes temporary lycanthropy in subject.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.160-161	SOURCEDATE:2004-05
+Dance of the Unicorn	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=5	DOMAINS:Purification=5	DESC:Purifies surrounding area; see text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.161	SOURCEDATE:2004-05
+Death Pact	TYPE:Divine	SCHOOL:Necromancy	DESCRIPTOR:Evil	COMPS:V, S, M/DF, XP	CASTTIME:1o minutes	RANGE:Touch	TARGETAREA:Willing living creature touched	DURATION:Permanent until triggered	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric=8	DOMAINS:Pact=8	DESC:Brings target back to life but with a price; see text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.161	SOURCEDATE:2004-05
+Decomposition	TYPE:Divine	SCHOOL:Necromancy	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:50 ft.	ITEM:Potion	TARGETAREA:All enemies within a 50-ft.-radius emanation centered on you	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:Yes	CLASSES:Druid=2	DESC:Wounded creatures suffer 1 extra hp/round.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.161	SOURCEDATE:2004-05
+Deific Vengeance	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	ITEM:Potion	TARGETAREA:One creature	DURATION:Instantaneous	SAVEINFO:Will half	SPELLRES:Yes	CLASSES:Cleric=2	DESC:Cause (min((CASTERLEVEL+1)/2,5))d6 or (min(CASTERLEVEL,10))d6 if the target is undead.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.	SOURCEDATE:2004-05
+Detect Favored Enemy	TYPE:Divine	SCHOOL:Divination	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:60 ft.	ITEM:Potion	TARGETAREA:Quarter circle emanating from you to the extreme of the range	DURATION:Concentration, up to (CASTERLEVEL*10) minutes [D]	SAVEINFO:None	SPELLRES:No	CLASSES:Ranger=3	DESC:Reveals favored enemies.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.162	SOURCEDATE:2004-05
+Divine Agility	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Living creature touched	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:No	CLASSES:Cleric=5	DESC:See changed text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.162	SOURCEDATE:2004-05
+Divine Sacrifice	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Blackguard,Paladin=1	DESC:Sacrifice hit points for a damage bonus.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.163	SOURCEDATE:2004-05
+Doomtide	TYPE:Divine	SCHOOL:Illusion	SUBSCHOOL:Pattern	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:80 ft.	TARGETAREA:Eight 10-ft. cubes extending from the caster's location	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates	SPELLRES:Yes	CLASSES:Cleric=4	DESC:Create misty tentacles.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.163	SOURCEDATE:2004-05
+Dragonbreath	TYPE:Arcane.Divine	SCHOOL:Evocation	VARIANTS:Good|Evil	COMPS:V, S, M/DF	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Special	SPELLRES:No	CLASSES:Cleric,Sorcerer,Wizard=5	DESC:Gain a true dragons breath weapon attack.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.164	SOURCEDATE:2004-05
+Dream Sight	TYPE:Divine	SCHOOL:Divination	COMPS:S, DF	CASTTIME:1 full round	RANGE:See text	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	DOMAINS:Dream=6	DESC:See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.164	SOURCEDATE:2004-05
+Energy Vortex	TYPE:Divine	SCHOOL:Evocation	DESCRIPTOR:Choose:Acid|Cold|Fire|Electricity|Sonic	COMPS:V, S	CASTTIME:1 standard action	RANGE:20 ft.	TARGETAREA:All creatures within a 20-ft.-radius burst centered on you	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:Yes	CLASSES:Cleric,Druid=4	DESC:Choose a energy type and it causes 1d8+(min(CASTERLEVEL,20)). You may double the damage if you forgoe a save and take the damage as well.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.164	SOURCEDATE:2004-05
+Enveloping Cocoon	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Effect:Cocoon of force around one Large or smaller creature	DURATION:(CASTERLEVEL) rounds [D]	SAVEINFO:Reflex negates	SPELLRES:Yes	CLASSES:Druid=6	DESC:See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.164-165	SOURCEDATE:2004-05
+Fire Wings	TYPE:Divine	SCHOOL:Transmutation	DESCRIPTOR:Fire	COMPS:V, S, M/F	CASTTIME:1 full round	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=3	DESC:Attack or Fly; see text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.165	SOURCEDATE:2004-05
+Fires of Purity	TYPE:Arcane.Divine	SCHOOL:Evocation	DESCRIPTOR:Fire	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Creature touched	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Reflex negates (harmless); see text	SPELLRES:Yes (harmless); see text	CLASSES:Druid,Sorcerer,Wizard=6	DOMAINS:Purification=6	DESC:Deal an extra 1d6+(min(CASTERLEVEL,15)) of fire damage to any you attack or attack you.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.165	SOURCEDATE:2004-05
+Flame of Faith	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Nonmagical weapon touched	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric=3	DESC:Normal or masterwork weapon becomes temporary flaming burst weapon.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.166	SOURCEDATE:2004-05
+Golden Barding	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Force	COMPS:V, DF	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Special mount touched	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Blackguard,Paladin=1	DESC:Create Magical Barding type depends on level; see text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.166	SOURCEDATE:2004-05
+Implacable Pursuer	TYPE:Divine	SCHOOL:Divination	COMPS:V, S	CASTTIME:1 minute	RANGE:Long	TARGETAREA:One creature	DURATION:(CASTERLEVEL) hours [D]	SAVEINFO:Will negates; see text	SPELLRES:Yes	CLASSES:Blackguard,Ranger=4	DESC:See text	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.166	SOURCEDATE:2004-05
+Infestation of Maggots	TYPE:Divine	SCHOOL:Necromancy	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Creature touched	DURATION:(min(CASTERLEVEL)/2) rounds	SAVEINFO:Fortitude negates	SPELLRES:Yes	CLASSES:Druid=3	DESC:Deal 1d4 temporary constitution per round.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.166-167	SOURCEDATE:2004-05
+Languor	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Effect:Ray	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates	SPELLRES:Yes	CLASSES:Druid=4	DESC:Causes short term Strength loss and slowing; See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.167	SOURCEDATE:2004-05
+Last Breath	TYPE:Divine	SCHOOL:Necromancy	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Dead creature touched	DURATION:Instantaneous	SAVEINFO:None; see text	SPELLRES:Yes (harmless)	CLASSES:Druid=4	DESC:Creature killed within 1 round returns to 0 hp.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.167-168	SOURCEDATE:2004-05
+Maddening Scream	TYPE:Divine	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	COMPS:V	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Living creature touched	DURATION:1d4+1 rounds	SAVEINFO:None	SPELLRES:Yes	DOMAINS:Madness=8	DESC:Subject has -4 AC, no shield, Reflex save on 20 only.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.168	SOURCEDATE:2004-05
+Maelstrom	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, DF	CASTTIME:1 full round	RANGE:Long	TARGETAREA:Effect:A whirlpool 120 ft. wide and 60 ft. deep	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Reflex negates (and see text)	SPELLRES:No	DOMAINS:Ocean=8	DESC:See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.168	SOURCEDATE:2004-05
+Mark of the Hunter	TYPE:Divine	SCHOOL:Divination	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	ITEM:Potion	TARGETAREA:One creature, which must be a favored enemy of the caster	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:Will negates	SPELLRES:Yes	CLASSES:Ranger=3	DESC:Gain +4 to your favored enemy bonuses against target; see text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.168	SOURCEDATE:2004-05
+Miasma	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One living creature	DURATION:(CASTERLEVEL*3) rounds	SAVEINFO:See text	SPELLRES:Yes	CLASSES:Druid=6	DESC:Gas cloud suffocates target.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.168-169	SOURCEDATE:2004-05
+Monstrous Thrall	TYPE:Divine	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	COMPS:V, S, XP	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One creature	DURATION:Instantaneous	SAVEINFO:Will negates	SPELLRES:Yes	DOMAINS:Domination=9	DESC:XP Cost 500 per hd/level	DESC:As true domination, except the subject can be any creature.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.169	SOURCEDATE:2004-05
+Murderous Mist	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Effect:Cloud that spreads in 30-ft. radius, 20 ft. high	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Reflex half; see text	SPELLRES:Yes	CLASSES:Druid=4	DESC:Create cloud of scalding hot steam; see text for further.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.169-170	SOURCEDATE:2004-05
+Nature's Avatar	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Animal touched	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Druid=9	DESC:Target animal gains +10 attack and damage bonus, haste, and +(CASTERLEVEL)d8 temporary hit points.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.170	SOURCEDATE:2004-05
+Naturewatch	TYPE:Divine	SCHOOL:Necromancy	COMPS:S	CASTTIME:1 standard action	RANGE:Close	ITEM:Potion	TARGETAREA:Quarter circle emanating from you to the extreme of the range	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=0|Ranger=1	DESC:Same as deathwatch but only finctions on plants and animals; see text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.170	SOURCEDATE:2004-05
+Nimbus of Light	TYPE:Divine	SCHOOL:Evocation	DESCRIPTOR:Light	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes [D]	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric=1	DOMAINS:Purification=1	DESC:Creates light 30' Can use as ranged touch attack 30' for 1d8 plus 1 point per round that's elapsed since casting to max of +(CASTERLEVEL).	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.	SOURCEDATE:2004-05
+Obedient Avalanche	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Cold	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:20-ft.-radius avalanche of snow, centered anywhere within range; see text	DURATION:Instantaneous	SAVEINFO:Reflex half; see text	SPELLRES:No	DOMAINS:Cold=9	DESC:You summon an avalanche of snow out of a rift in midair, burying your foes and sending them to a frosty death. The obedient avalanche affects creatures differently, depending on where they are in relation to the avalanche. Within 20 feet of the Center Point: Creatures take 1d8 points of damage per two caster levels (maximum 10d8) and an additional 1d6 points of cold damage per two caster levels. Creatures who fail their saves are also buried (as described in Avalanches, page 90 of the Dungeon Master's Guide). All squares within 20 feet of the center point are covered in heavy snow (see page 94 of the Dungeon Master's Guide), which persists as long as ordinary snow would. Between 20 feet and 40 feet of the Center Point: Creatures take half as much damage from the impact of the avalanche as the creatures nearer the center point took (Reflex save negates). Creatures who fail their saves must also resist the force of the snow moving past them as if they were being bull rushed. The snow has a +13 bonus (+5 for effective Strength of 20 and +8 for effectively being Huge) on the bull rush check, and it pushes characters away from the center point of the spell. All squares in the 20-foot to 40-foot ring are covered in light snow, which persists as long as ordinary snow would. Terrain and Structures: The avalanche uproots small trees and other vegetation automatically, and it leaves a trail of light rubble (as described on page 91 of the Dungeon Master's Guide) even after the snow melts. Structures struck by an obedient avalanche take 1d6?10 points of damage. The obedient avalanche extinguishes all flames, whether normal or magical, it touches.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.170	SOURCEDATE:2004-05
+Omen of Peril	TYPE:Divine	SCHOOL:Divination	COMPS:V, F	CASTTIME:1 full round	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric,Druid=1	DESC:Brief supplication gives you a vision that hints at how dangerous the immediate future is likely to be.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.171-172	SOURCEDATE:2004-05
+Otyugh Swarm	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Effect:Three or more otyughs, no two of which are more than 30 ft. apart	DURATION:Seven days or seven months [D]; see text	SAVEINFO:None	SPELLRES:No	DOMAINS:Pestilence=9	DESC:Creates 3d4 otyughs or 1d3+1 Huge otyughs.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.172	SOURCEDATE:2004-05
+Pavilion of Grandeur	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, DF	CASTTIME:10 minutes	RANGE:Close	TARGETAREA:Effect:Extradimensional pavilion, up to (CASTERLEVEL*5) 10-ft. cubes(S),plus feast for (CASTERLEVEL*12) creatures	DURATION:(CASTERLEVEL) days, plus 12 hours [D]; see text	SAVEINFO:None	SPELLRES:No	DOMAINS:Creation=9	DESC:See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.172	SOURCEDATE:2004-05
+Phantasmal Decoy	TYPE:Divine	SCHOOL:Illusion	SUBSCHOOL:Phantasm	DESCRIPTOR:Mind-Affecting	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	ITEM:Potion	TARGETAREA:One living creature	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will disbelief [if interacted with]	SPELLRES:Yes	CLASSES:Ranger=3	DESC:Create an illusion of a hated enemy.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.172	SOURCEDATE:2004-05
+Phantasmal Disorientation	TYPE:Divine	SCHOOL:Illusion	SUBSCHOOL:Phantasm	DESCRIPTOR:Mind-Affecting	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One living creature	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:Will negates	SPELLRES:Yes	CLASSES:Druid=6	DESC:See text	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.172-173	SOURCEDATE:2004-05
+Phantom Bear	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, DF	CASTTIME:1 full round	RANGE:Medium	TARGETAREA:Effect:One summoned phantom bear	DURATION:Concentration up to (CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=9	DESC:As phantom wolf; see text	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.173	SOURCEDATE:2004-05
+Phantom Stag	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S	CASTTIME:1 standard action	RANGE:0 ft.	TARGETAREA:Effect:One quasi-real staglike creature	DURATION:(CASTERLEVEL) hours [D]	SAVEINFO:None; See text	SPELLRES:No	CLASSES:Druid=5	DESC:You conjure a quasi-real, staglike creature; see text	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.174	SOURCEDATE:2004-05
+Phantom Wolf	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, DF	CASTTIME:1 full round	RANGE:Medium	TARGETAREA:Effect:One summoned phantom wolf	DURATION:Concentration up to (CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=8	DESC:Conjure phantom wolf to do your bidding.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.174	SOURCEDATE:2004-05
+Plague of Rats	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, DF	CASTTIME:1 full round	RANGE:Medium	TARGETAREA:Effect:Swarm of dire rats in a 20-ft. spread	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:Yes; see text	DOMAINS:Pestilence=5	DESC:Summons a swarm of diseased rats.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.174-175	SOURCEDATE:2004-05
+Poison Thorns	TYPE:Divine	SCHOOL:Transmutation	COMPS:V	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:See text	SPELLRES:No	CLASSES:Druid=5	DESC:See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.175	SOURCEDATE:2004-05
+Probe Thoughts	TYPE:Arcane.Divine	SCHOOL:Divination	DESCRIPTOR:Mind-Affecting	COMPS:V, S	CASTTIME:1 minute	RANGE:Close	TARGETAREA:One living creature.	DURATION:Concentration	SAVEINFO:Fortitude negates; see text	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=6	DOMAINS:Mind=6	DESC:Read subject's memories, one question/round.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.176	SOURCEDATE:2004-05
+Quill Blast	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:20 ft.	TARGETAREA:20-ft.-radius spread, centered on you	DURATION:Instantaneous	SAVEINFO:Reflex half; see text	SPELLRES:Yes	CLASSES:Druid=5	DESC:Needle-sharp quills emerge from your skin and then fly outward.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.176	SOURCEDATE:2004-05
+Recitation	KEY:Recitation (CD)	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:All allies and foes within a 60 ft.-radius burst centered on you.	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:Yes	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.176	SOURCEDATE:2004-05
+Rejuvenation Cocoon	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Willing creature touched	DURATION:2 rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Druid=5	DESC:Heals and protects target.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.177	SOURCEDATE:2004-05
+Renewal Pact	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S, DF/XP	CASTTIME:10 minutes	RANGE:Touch	TARGETAREA:Willing living creature touched	DURATION:Permanent until triggered	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Cleric=7	DOMAINS:Pact=7	DESC:Reverses certain effects when contacted.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.177	SOURCEDATE:2004-05
+Resurgence	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Creature touched	DURATION:Instantaneous	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Blackguard,Cleric,Paladin=1	DESC:Allows one retry on a failed save against an ongoing spell, spell-like ability, or supernatural ability.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.177	SOURCEDATE:2004-05
+Resurgence, Mass	KEY:Resurgence (Mass)	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	ITEM:Potion	TARGETAREA:(CASTERLEVEL) creatures, no two of which can be more than 30 ft. apart	DURATION:Instantaneous	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Blackguard,Paladin=3|Cleric=4	DESC:Same as resurgence, except it affects multiple targets. Allows one retry on a failed save against an ongoing spell, spell-like ability, or supernatural ability.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.177	SOURCEDATE:2004-05
+Revenance	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Dead ally touched	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None; see text	SPELLRES:Yes (harmless)	CLASSES:Blackguard,Cleric,Paladin=4	DESC:Brings an ally back to life for duration of spell; see text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.178	SOURCEDATE:2004-05
+Righteous Wrath of the Faithful	TYPE:Divine	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:30 ft.	TARGETAREA:All allies within 30 ft.-radius burst centered on you	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:Yes	CLASSES:Cleric=7	DESC:As aid within 30 ft., follower of your deity receive more.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.178	SOURCEDATE:2004-05
+Sacred Haven	TYPE:Divine	SCHOOL:Abjuration	DESCRIPTOR:Good	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Paladin=4	DESC:Creatures gains +2 sacred bonus to AC.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.178	SOURCEDATE:2004-05
+Sandblast	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:10 ft.	ITEM:Potion	TARGETAREA:Semicircular burst of sand 10 ft. long, centered on your hands	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:Yes	CLASSES:Druid=1	DESC:You fire a hail of hot sand, dealing 1d6 points of nonlethal damage.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.178	SOURCEDATE:2004-05
+Scent	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:Yes (harmless)	CLASSES:Druid,Ranger,Sorcerer,Wizard=2	DESC:Bestows Scent ability with all the same powers.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.178-179	SOURCEDATE:2004-05
+Scourge	TYPE:Divine	SCHOOL:Necromancy	COMPS:V, S, F, DF	CASTTIME:1 standard action	RANGE:Long	TARGETAREA:(CASTERLEVEL) creatures, no two of which can be more than 50 ft. apart.	DURATION:Instantaneous	SAVEINFO:Fortitude negates	SPELLRES:Yes	DOMAINS:Pestilence=7	DESC:Inflicts a disease that must be magically cured, (CASTERLEVEL) subjects.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.179-180	SOURCEDATE:2004-05
+Shadow Landscape	TYPE:Divine	SCHOOL:Illusion	SUBSCHOOL:Shadow	COMPS:V, S, DF	CASTTIME:1 hour	RANGE:Long	TARGETAREA:One-mile radius spread, centered on a point in space	DURATION:(CASTERLEVEL) days [D]	SAVEINFO:Reflex partial; see text	SPELLRES:Yes	CLASSES:Druid=9	DESC:Make an area more dangerous.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.180	SOURCEDATE:2004-05
+Slime Wave	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:15 ft.-radius spread	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Reflex negates	SPELLRES:No	CLASSES:Cleric,Druid=7	DESC:Creates a 15 ft. spread of green slime.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.180-181	SOURCEDATE:2004-05
+Spell Resistance, Mass	KEY:Spell Resistance (Mass)	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Up to (CASTERLEVEL) creatures, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Cleric=7	DESC:Targets gain SR equal to (min(CASTERLEVEL)+12). Divide the duration evenly amoung all the creatures you target.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.181	SOURCEDATE:2004-05
+Spikes	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Wooden weapon touched	DURATION:(CASTERLEVEL) hours	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric,Druid=3	DESC:As brambles, except affected weapon gains +2 enhancement bonus and threat range doubled.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.181	SOURCEDATE:2004-05
+Spiritual Chariot	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One special mount	DURATION:(CASTERLEVEL) hours	SAVEINFO:None	SPELLRES:No	CLASSES:Blackguard,Paladin=4	DESC:Creates a special chariot behind the paladin's special mount.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.181	SOURCEDATE:2004-05
+Stalwart Pact	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S, DF, XP	CASTTIME:10 minutes	RANGE:Touch	TARGETAREA:Willing living creature touched	DURATION:Permanent until triggered, then (CASTERLEVEL) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Cleric=5	DOMAINS:Pact=5	DESC:Upon losing half HP, gain (CASTERLEVEL*5) hp, DR 5/magic and +4 luck bons on saving throws. Cost:250 XP.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.181	SOURCEDATE:2004-05
+Standing Wave	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	ITEM:Potion	TARGETAREA:Waves under a creature or object within range	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:Reflex negates	SPELLRES:Yes	CLASSES:Druid=3	DESC:Transports across water.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.182	SOURCEDATE:2004-05
+Storm of Elemental Fury	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S	CASTTIME:1 full round	RANGE:Long	TARGETAREA:Effect: 40-ft.-radius storm cloud, 200 feet above the ground	DURATION:Concentration (maximum 4 rounds) [D]	SAVEINFO:See text	SPELLRES:Yes	CLASSES:Druid=8	DESC:See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.182	SOURCEDATE:2004-05
+Storm Tower	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S	CASTTIME:1 full round	RANGE:Long	TARGETAREA:100-ft. tall, 20-ft.-radius spread	DURATION:(CASTERLEVEL) rounds [D]	SAVEINFO:None	SPELLRES:Yes	CLASSES:Druid=7	DESC:See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.182	SOURCEDATE:2004-05
+Stormrage	TYPE:Divine	SCHOOL:Transmutation	DESCRIPTOR:Electricity	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes [D]	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric,Druid=8	DESC:Launch bolts 1d6 per level; see text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.182-183	SOURCEDATE:2004-05
+Subvert Planar Essence	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, M/DF	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:20-ft.-radius emanation centered on a point in space	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Fortitude negates	SPELLRES:Yes	CLASSES:Cleric,Sorcerer,Wizard=6	DESC:See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.183	SOURCEDATE:2004-05
+Telepathic Bond, Lesser	KEY:Telepathic Bond (Lesser)	TYPE:Divine	SCHOOL:Divination	DESCRIPTOR:Mind-Affecting	COMPS:V, S	CASTTIME:1 standard action	RANGE:30 ft.	ITEM:Potion	TARGETAREA:You and one willing creature within 30 ft.	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric,Sorcerer,Wizard=3	DOMAINS:Mind=3	DESC:Link with subject within 30 ft. for (CASTERLEVEL*10) minutes.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.183	SOURCEDATE:2004-05
+Tidal Surge	TYPE:Divine	SCHOOL:Evocation	DESCRIPTOR:Water	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One or more creatures in a 20-ft.-radius burst	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:Yes	CLASSES:Druid=6	DOMAINS:Ocean=5	DESC:See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.183-184	SOURCEDATE:2004-05
+Tortoise Shell	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Living creature touched	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:Yes (harmless)	CLASSES:Druid=6	DESC:Grants +6 enhancement bonus to AC.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.184	SOURCEDATE:2004-05
+Touch of Madness	TYPE:Divine	SCHOOL:Enchantment	DESCRIPTOR:Mind-Affecting	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates	SPELLRES:Yes	DOMAINS:Madness=2	DESC:Daze one living creature for duration of spell. Creature cannot take any actions.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.184	SOURCEDATE:2004-05
+Traveler's Mount	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Animal or magical beast touched	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates	SPELLRES:Yes	CLASSES:Blackguard,Druid,Paladin,Ranger=1	DESC:+10 feet enhancement bonus to speed but cannot attack during the duration of the spell.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.184	SOURCEDATE:2004-05
+True Creation	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M, XP	CASTTIME:10 minutes	RANGE:0 ft.	TARGETAREA:Effect:Unattended, nonmagical object of nonliving matter up to (CASTERLEVEL) cu. ft.	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	DOMAINS:Creation=8	DESC:Create a nonmagical unattended object of any sort of matter. See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.184-185	SOURCEDATE:2004-05
+True Domination	TYPE:Divine	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One humanoid of Medium-size or smaller	DURATION:(CASTERLEVEL) days	SAVEINFO:Will negates	SPELLRES:Yes	DOMAINS:Domination=8	DESC:As dominate person, but save at -4.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.185	SOURCEDATE:2004-05
+Unbinding	TYPE:Arcane.Divine	SCHOOL:Abjuration	COMPS:V, S, M, DF	CASTTIME:1 full round	RANGE:180 ft.	TARGETAREA:180-ft.-radius burst, centered on you	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=9	DESC:Burst of force erupts from your body and magically destroys any spells that contain, constrain, or seal, with the exceptions noted in the text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.185	SOURCEDATE:2004-05
+Unyielding Roots	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Willing creature touched	DURATION:(CASTERLEVEL) minutes [D]	SAVEINFO:Fortitude negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Druid=9	DESC:See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.185-186	SOURCEDATE:2004-05
+Vigor	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Living creature touched	DURATION:(min(CASTERLEVEL,15)+10) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Cleric,Druid=3	DESC:Same as lesser vigor except it grants target fast healing ability for the duration of the spell at 2 hp automatically healed per round.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.186	SOURCEDATE:2004-05
+Vigor, Greater	KEY:Vigor (Greater)	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Living creature touched	DURATION:(min(CASTERLEVEL,25)+10) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Cleric,Druid=5	DESC:Same as lesser vigor except it grants target fast healing ability for the duration of the spell at 4 hp automatically healed per round.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.186	SOURCEDATE:2004-05
+Vigor, Lesser	KEY:Vigor (Lesser)	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Living creature touched	DURATION:(min(CASTERLEVEL,5)+10) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Cleric,Druid=1	DESC:Grants target fast healing ability for the duration of the spell. Heals 1 hp automatically per round.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.186	SOURCEDATE:2004-05
+Vigor, Mass Lesser	KEY:Vigor (Mass Lesser)	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S	CASTTIME:1 standard action	RANGE:20 ft.	ITEM:Potion	TARGETAREA:(min(CASTERLEVEL)/2) creatures, no two of which can be more than 30 ft. apart	DURATION:(min(CASTERLEVEL,15)+10) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Cleric,Druid=3	DESC:Same as lesser vigor except it grants all targets fast healing ability for the duration of the spell at 1 hp automatically healed per round.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.186-187	SOURCEDATE:2004-05
+Vigorous Circle	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S	CASTTIME:1 standard action	RANGE:20 ft.	TARGETAREA:(min(CASTERLEVEL)/2) creatures, no two of which can be more than 30 ft. apart	DURATION:(min(CASTERLEVEL,30)+10) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Cleric,Druid=6	DESC:Same as mass lesser vigor except it grants all targets fast healing ability for the duration of the spell at 3 hp automatically healed per round.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.187	SOURCEDATE:2004-05
+Visage of the Deity	TYPE:Divine	SCHOOL:Transmutation	DESCRIPTOR:Good|Evil	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric=6	DESC:Your form becomes more like your deity's, take on celestial or fiendish qualities; see text	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.187	SOURCEDATE:2004-05
+Visage of the Deity, Greater	KEY:Visage of the Deity (Greater)	TYPE:Divine	SCHOOL:Transmutation	DESCRIPTOR:Good|Evil	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric=9	DESC:Your form becomes more like your deity's - become half-celestial or half-fiend; see text	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.187	SOURCEDATE:2004-05
+Visage of the Deity, Lesser	KEY:Visage of the Deity (Lesser)	TYPE:Divine	SCHOOL:Transmutation	DESCRIPTOR:Good|Evil	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric=3|Blackguard,Paladin=4	DESC:Your form becomes more like your deity's; see text	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.187	SOURCEDATE:2004-05
+Waterspout	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, DF	CASTTIME:1 full round	RANGE:Long	TARGETAREA:Effect:A cylinder 10 ft. wide and 80 ft. tall	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Reflex negates	SPELLRES:No	DOMAINS:Ocean=7	DESC:Create waterspout; see text	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.188	SOURCEDATE:2004-05
+Wave of Grief	TYPE:Arcane.Divine	SCHOOL:Enchantment	DESCRIPTOR:Evil|Mind-Affecting	COMPS:S, M	CASTTIME:1 standard action	RANGE:Close	ITEM:Potion	TARGETAREA:Cone	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates	SPELLRES:Yes	CLASSES:Bard,Blackguard,Cleric=2	DESC:Targets become overwhelmed with grief. They suffer a -3 morale penalty on all attack rolls, saving throws, ability checks, and skill checks.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.188	SOURCEDATE:2004-05
+Weapon of the Deity	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, DF	CASTTIME:1 standard action	RANGE:0 ft.	TARGETAREA:One weapon you hold	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Blackguard,Cleric,Paladin=4	DESC:Imbue a weapon favored by your deity with special enhancements and abilities. See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.188	SOURCEDATE:2004-05
+Weather Eye	TYPE:Divine	SCHOOL:Divination	COMPS:V, S, M, DF	CASTTIME:1 hour	RANGE:(CASTERLEVEL+1) miles	ITEM:Potion	TARGETAREA: (CASTERLEVEL+1) miles, centered on you	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=3|Cleric=4	DESC:You may accurately predict the natural weather up to one week into the future. If unnatural forces currently affect the weather then the spell acts as detect magic.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.189	SOURCEDATE:2004-05
+Whirlwind, Greater	KEY:Whirlwind (Greater)	TYPE:Divine	SCHOOL:Evocation	DESCRIPTOR:Air	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Effect:20-ft.-radius tornado, up to (CASTERLEVEL*5) ft. tall, centered anywhere within range	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Fortitude partial	SPELLRES:Yes	CLASSES:Druid=9	DESC:See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.189-190	SOURCEDATE:2004-05
+Winged Mount	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Your touched mount	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Blackguard,Paladin=4	DESC:Mount gains fly speed of 40 with maneurverability of good.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.190	SOURCEDATE:2004-05
+Wood Wose	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	ITEM:Potion	TARGETAREA:Effect:One nature servant	DURATION:(CASTERLEVEL) hours	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=1	DESC:Summon minor nature spirit.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.190	SOURCEDATE:2004-05
+Wrack	TYPE:Arcane.Divine	SCHOOL:Necromancy	DESCRIPTOR:Evil	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	ITEM:Potion	TARGETAREA:One humanoid	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Fortitude negates	SPELLRES:Yes	CLASSES:Cleric=3|Sorcerer,Wizard=4	DESC:EVIL - Target becomes helpless and after spell incurs -2 penalty to all rolls. See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.190-191	SOURCEDATE:2004-05
+Zeal	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Blackguard,Paladin=2	DESC:Creates a divine shield to protect you as you close with a chosen opponent. You gain a +4 deflection bonus to your AC against all attacks of opportunity other than your chosen foe. You may move through enemies as if they were allies. See text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.191	SOURCEDATE:2004-05
+Zealot Pact	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S, DF, XP	CASTTIME:10 minutes	RANGE:Touch	TARGETAREA:Willing living creature touched	DURATION:Permanent until triggered, then (CASTERLEVEL) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Cleric=6	DOMAINS:Pact=6	DESC:Gain +4 bonus and deal double damage against opposite alignment once spell is activated by first successful hit; see text.	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEPAGE:p.191	SOURCEDATE:2004-05
+Blessing of the Spirits	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S	CASTTIME:10 minutes	RANGE:0 ft.	TARGETAREA:Self	DURATION:Until Dispelled or Dismissed	SAVEINFO:None	SPELLRES:No; see text	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+Chastise Spirits	TYPE:Divine	SCHOOL:Necromancy	COMPS:V	CASTTIME:1 standard action	RANGE:0 ft.	TARGETAREA:30 ft. radius burst	DURATION:Instantaneous	SAVEINFO:Will half	SPELLRES:No	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+Detect Spirits	TYPE:Divine	SCHOOL:Divination	COMPS:V	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:Cone-shaped emanation	DURATION:Concentration, up to (CASTERLEVEL) minutes [D]	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+Favored of the Spirits	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S	CASTTIME:8 hours	RANGE:0 ft.	TARGETAREA:Self	DURATION:Until triggered, then instantaneous	SAVEINFO:None	SPELLRES:No	XPCOST:1000	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+Spirit Journey	TYPE:Divine	SCHOOL:Illusion	COMPS:V, S	CASTTIME:1 standard action	RANGE:0 ft.	TARGETAREA:Self	DURATION:(CASTERLEVEL) hours [D]	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+Warding of the Spirits	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S	CASTTIME:1 minute	RANGE:0 ft.	TARGETAREA:10-ft.-radius emanation from caster	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:Will negates (harmless)	SPELLRES:No	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+Dragon Breath (Red Dragon or Gold Dragon)	TYPE:Arcane.Divine	SCHOOL:Evocation	DESCRIPTOR:Fire Shugenja	DESCRIPTOR:Good|Evil	COMPS:V, S, M/DF	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+Summon Monster III (Elementals)	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, F/DF	CASTTIME:1 round	RANGE:Close	TARGETAREA:One or more summoned elementals, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+Summon Monster V (Medium Elemental)	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, F/DF	CASTTIME:1 round	RANGE:Close	TARGETAREA:One or more summoned elementals, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+Summon Monster VI (Large Elemental)	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, F/DF	CASTTIME:1 round	RANGE:Close	TARGETAREA:One or more summoned elementals, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+Summon Monster VII (Huge Elemental)	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, F/DF	CASTTIME:1 round	RANGE:Close	TARGETAREA:One or more summoned elementals, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+Summon Monster VIII (Greater Elemental)	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, F/DF	CASTTIME:1 round	RANGE:Close	TARGETAREA:One or more summoned elementals, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+Summon Monster IX (Elder Elemental)	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, F/DF	CASTTIME:1 round	RANGE:Close	TARGETAREA:One or more summoned elementals, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+Summon Nature's Ally V (Large Air Elemental)	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, DF	CASTTIME:1 round	RANGE:Close	TARGETAREA:One elemental	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Divine	SOURCESHORT:CD	SOURCEDATE:2004-05
+
+###Block: Descriptions
+Bane Bow.MOD	DESC:See Text
+Blink (Improved).MOD	DESC:Same as blink but better control; see text.
+Cloudwalkers.MOD	DESC:Clouds support creatures, allowing fight.
+Recitation (CD).MOD	DESC:Allies gain +2 or +3 on attacks and saves, and enemies suffer -2.
+Blessing of the Spirits.MOD	DESC:+2 to AC and saves, counter mind control, hedge out elementals and outsiders.
+Chastise Spirits.MOD	DESC:The spirit shaman uses divine energy to damage hostile spirits (incorporeal undead, fey, elementals, astral creatures, creatures with the spirit subtype, spirit folk, telthors, and creatures created by dream sight or wood wose) for (CASTERLEVEL)d6 damage.
+Detect Spirits.MOD	DESC:Reveals spirits within 60 ft. This includes incorporeal undead, fey, elementals, astral creatures, creatures with the spirit subtype, spirit folk, telthors, and creatures created by dream sight or wood wose.
+Favored of the Spirits.MOD	DESC:Cures (min(CASTERLEVEL*10,150)) points of damage, all diseases and mental conditions. The spell triggers if the caster is reduced to 0 hit points or less.
+Spirit Journey.MOD	DESC:Step into the spirit plane to travel rapidly.
+Warding of the Spirits.MOD	DESC:+2 to AC and saves, counter mind control, hedge out elementals and outsiders in 10-ft. radius for (CASTERLEVEL*10) minutes.
+Dragon Breath (Red Dragon or Gold Dragon).MOD	DESC:You choose a red or gold and mimic its breath weapon.
+Summon Monster III (Elementals).MOD	DESC:This spell functions like summon monster I, except that you can summon one elemental from the 3rd-level list, 1d3 elementals of the same kind from the 2nd-level list, or 1d4+1 elementals of the same kind from the 1st-level list
+Summon Monster V (Medium Elemental).MOD	DESC:This spell functions like summon monster I, except that you can summon one elemental from the 5th-level list, 1d3 elementals of the same kind from the 4th-level list, or 1d4+1 elementals of the same kind from a lower-level list
+Summon Monster VI (Large Elemental).MOD	DESC:This spell functions like summon monster I, except that you can summon one elemental from the 6th-level list, 1d3 elementals of the same kind from the 5th-level list, or 1d4+1 elementals of the same kind from a lower-level list
+Summon Monster VII (Huge Elemental).MOD	DESC:This spell functions like summon monster I, except that you can summon one elemental from the 7th-level list, 1d3 elementals of the same kind from the 6th-level list, or 1d4+1 elementals of the same kind from a lower-level list
+Summon Monster VIII (Greater Elemental).MOD	DESC:This spell functions like summon monster I, except that you can summon one elemental from the 8th-level list, 1d3 elementals of the same kind from the 7th-level list, or 1d4+1 elementals of the same kind from a lower-level list
+Summon Monster IX (Elder Elemental).MOD	DESC:This spell functions like summon monster I, except that you can summon one elemental from the 9th-level list, 1d3 elementals of the same kind from the 8th-level list, or 1d4+1 elementals of the same kind from a lower-level list
+Summon Nature's Ally V (Large Air Elemental).MOD	DESC:This spell functions like summon nature's ally I, except that you can summon one large air elemental from the 5th-level list.
+
+###Block: Other modifications
+Air Walk.MOD	DESCRIPTOR:Air Shugenja
+Antimagic Field.MOD	DESCRIPTOR:Earth Shugenja
+Antipathy.MOD	DESCRIPTOR:Earth Shugenja
+Atonement.MOD	DESCRIPTOR:Water Shugenja
+Banishment.MOD	DESCRIPTOR:Earth Shugenja
+Barkskin.MOD	DESCRIPTOR:Earth Shugenja
+Bear's Endurance.MOD	DESCRIPTOR:Earth Shugenja
+Binding.MOD	DESCRIPTOR:Earth Shugenja
+Bless.MOD	DESCRIPTOR:Water Shugenja
+Bull's Strength.MOD	DESCRIPTOR:Earth Shugenja
+Burning Hands.MOD	DESCRIPTOR:Fire Shugenja
+Call Lightning.MOD	DESCRIPTOR:Fire Shugenja
+Cat's Grace.MOD	DESCRIPTOR:Fire Shugenja
+Cause Fear.MOD	DESCRIPTOR:Fire Shugenja
+Chain Lightning.MOD	DESCRIPTOR:Fire Shugenja
+Clairaudience/Clairvoyance.MOD	DESCRIPTOR:Air Shugenja
+Cloudkill.MOD	DESCRIPTOR:Air Shugenja
+Color Spray.MOD	DESCRIPTOR:Air Shugenja
+Confusion.MOD	DESCRIPTOR:Fire Shugenja
+Contingency.MOD	DESCRIPTOR:Water Shugenja
+Control Water.MOD	DESCRIPTOR:Water Shugenja
+Control Weather.MOD	DESCRIPTOR:Water Shugenja
+Control Winds.MOD	DESCRIPTOR:Air Shugenja
+Create Water.MOD	DESCRIPTOR:Water Shugenja
+Cure Critical Wounds.MOD	DESCRIPTOR:Water Shugenja
+Cure Light Wounds.MOD	DESCRIPTOR:Water Shugenja
+Cure Light Wounds (Mass).MOD	DESCRIPTOR:Water Shugenja
+Cure Minor Wounds.MOD	DESCRIPTOR:Water Shugenja
+Cure Moderate Wounds.MOD	DESCRIPTOR:Water Shugenja
+Cure Serious Wounds.MOD	DESCRIPTOR:Water Shugenja
+Dancing Lights.MOD	DESCRIPTOR:Fire Shugenja
+Daylight.MOD	DESCRIPTOR:Fire Shugenja
+Daze.MOD	DESCRIPTOR:Air Shugenja
+Death Ward.MOD	DESCRIPTOR:Earth Shugenja
+Delay Poison.MOD	DESCRIPTOR:Water Shugenja
+Detect Poison.MOD	DESCRIPTOR:Water Shugenja
+Detect Scrying.MOD	DESCRIPTOR:Air Shugenja
+Detect Snares and Pits.MOD	DESCRIPTOR:Air Shugenja
+Detect Thoughts.MOD	DESCRIPTOR:Air Shugenja
+Dimension Door.MOD	DESCRIPTOR:Air Shugenja
+Dimensional Anchor.MOD	DESCRIPTOR:Earth Shugenja
+Discern Lies.MOD	DESCRIPTOR:Air Shugenja
+Discern Location.MOD	DESCRIPTOR:Water Shugenja
+Disguise Self.MOD	DESCRIPTOR:Air Shugenja
+Disintegrate.MOD	DESCRIPTOR:Earth Shugenja
+Dismissal.MOD	DESCRIPTOR:Earth Shugenja
+Disrupt Undead.MOD	DESCRIPTOR:Fire Shugenja
+Etherealness.MOD	DESCRIPTOR:Air Shugenja
+Expeditious Retreat.MOD	DESCRIPTOR:Air Shugenja
+Faerie Fire.MOD	DESCRIPTOR:Fire Shugenja
+Feather Fall.MOD	DESCRIPTOR:Air Shugenja
+Feeblemind.MOD	DESCRIPTOR:Fire Shugenja
+Fire Seeds.MOD	DESCRIPTOR:Fire Shugenja
+Fire Shield.MOD	DESCRIPTOR:Fire Shugenja
+Fire Storm.MOD	DESCRIPTOR:Fire Shugenja
+Flame Arrow.MOD	DESCRIPTOR:Fire Shugenja
+Flame Blade.MOD	DESCRIPTOR:Fire Shugenja
+Flame Strike.MOD	DESCRIPTOR:Fire Shugenja
+Flaming Sphere.MOD	DESCRIPTOR:Fire Shugenja
+Flare.MOD	DESCRIPTOR:Fire Shugenja
+Flesh to Stone.MOD	DESCRIPTOR:Earth Shugenja
+Fog Cloud.MOD	DESCRIPTOR:Water Shugenja
+Ghost Sound.MOD	DESCRIPTOR:Air Shugenja
+Glitterdust.MOD	DESCRIPTOR:Earth Shugenja
+Glyph of Warding (Greater).MOD	DESCRIPTOR:Fire Shugenja
+Guidance.MOD	DESCRIPTOR:Air Shugenja
+Gust of Wind.MOD	DESCRIPTOR:Air Shugenja
+Hallucinatory Terrain.MOD	DESCRIPTOR:Air Shugenja
+Haste.MOD	DESCRIPTOR:Air Shugenja
+Heal.MOD	DESCRIPTOR:Water Shugenja
+Heal (Mass).MOD	DESCRIPTOR:Water Shugenja
+Heat Metal.MOD	DESCRIPTOR:Fire Shugenja
+Hold Person.MOD	DESCRIPTOR:Earth Shugenja
+Hypnotism.MOD	DESCRIPTOR:Fire Shugenja
+Illusory Wall.MOD	DESCRIPTOR:Air Shugenja
+Implosion.MOD	DESCRIPTOR:Fire Shugenja
+Imprisonment.MOD	DESCRIPTOR:Earth Shugenja
+Incendiary Cloud.MOD	DESCRIPTOR:Fire Shugenja
+Invisibility.MOD	DESCRIPTOR:Air Shugenja
+Invisibility (Greater).MOD	DESCRIPTOR:Air Shugenja
+Invisibility (Mass).MOD	DESCRIPTOR:Air Shugenja
+Keen Edge.MOD	DESCRIPTOR:Fire Shugenja
+Know Direction.MOD	DESCRIPTOR:Air Shugenja
+Levitate.MOD	DESCRIPTOR:Air Shugenja
+Light.MOD	DESCRIPTOR:Fire Shugenja
+Lightning Bolt.MOD	DESCRIPTOR:Fire Shugenja
+Locate Creature.MOD	DESCRIPTOR:Water Shugenja
+Locate Object.MOD	DESCRIPTOR:Water Shugenja
+Mage Hand.MOD	DESCRIPTOR:Earth Shugenja
+Magic Stone.MOD	DESCRIPTOR:Earth Shugenja
+Magic Weapon.MOD	DESCRIPTOR:Earth Shugenja
+Magic Weapon (Greater).MOD	DESCRIPTOR:Earth Shugenja
+Major Image.MOD	DESCRIPTOR:Air Shugenja
+Make Whole.MOD	DESCRIPTOR:Earth Shugenja
+Meld into Stone.MOD	DESCRIPTOR:Earth Shugenja
+Mending.MOD	DESCRIPTOR:Earth Shugenja
+Meteor Swarm.MOD	DESCRIPTOR:Fire Shugenja
+Minor Image.MOD	DESCRIPTOR:Air Shugenja
+Mirage Arcana.MOD	DESCRIPTOR:Air Shugenja
+Mislead.MOD	DESCRIPTOR:Air Shugenja
+Move Earth.MOD	DESCRIPTOR:Earth Shugenja
+Neutralize Poison.MOD	DESCRIPTOR:Water Shugenja
+Obscuring Mist.MOD	DESCRIPTOR:Water Shugenja
+Passwall.MOD	DESCRIPTOR:Earth Shugenja
+Pass without Trace.MOD	DESCRIPTOR:Earth Shugenja
+Permanent Image.MOD	DESCRIPTOR:Air Shugenja
+Persistent Image.MOD	DESCRIPTOR:Air Shugenja
+Plant Growth.MOD	DESCRIPTOR:Earth Shugenja
+Power Word Blind.MOD	DESCRIPTOR:Fire Shugenja
+Prayer.MOD	DESCRIPTOR:Earth Shugenja
+Produce Flame.MOD	DESCRIPTOR:Fire Shugenja
+Programmed Image.MOD	DESCRIPTOR:Air Shugenja
+Protection from Spells.MOD	DESCRIPTOR:Earth Shugenja
+Purify Food and Drink.MOD	DESCRIPTOR:Water Shugenja
+Quench.MOD	DESCRIPTOR:Fire Shugenja
+Regenerate.MOD	DESCRIPTOR:Water Shugenja
+Remove Blindness/Deafness.MOD	DESCRIPTOR:Water Shugenja
+Remove Curse.MOD	DESCRIPTOR:Water Shugenja
+Remove Disease.MOD	DESCRIPTOR:Water Shugenja
+Remove Fear.MOD	DESCRIPTOR:Water Shugenja
+Remove Paralysis.MOD	DESCRIPTOR:Water Shugenja
+Resistance.MOD	DESCRIPTOR:Earth Shugenja
+Restoration.MOD	DESCRIPTOR:Water Shugenja
+Restoration (Greater).MOD	DESCRIPTOR:Water Shugenja
+Restoration (Lesser).MOD	DESCRIPTOR:Water Shugenja
+Resurrection.MOD	DESCRIPTOR:Water Shugenja
+Righteous Might.MOD	DESCRIPTOR:Water Shugenja
+Sanctuary.MOD	DESCRIPTOR:Earth Shugenja
+Screen.MOD	DESCRIPTOR:Air Shugenja
+Scrying.MOD	DESCRIPTOR:Water Shugenja
+Scrying (Greater).MOD	DESCRIPTOR:Water Shugenja
+Searing Light.MOD	DESCRIPTOR:Fire Shugenja
+Shield of Faith.MOD	DESCRIPTOR:Earth Shugenja
+Shocking Grasp.MOD	DESCRIPTOR:Fire Shugenja
+Silence.MOD	DESCRIPTOR:Air Shugenja
+Silent Image.MOD	DESCRIPTOR:Air Shugenja
+Sleep.MOD	DESCRIPTOR:Air Shugenja
+Speak with Animals.MOD	DESCRIPTOR:Water Shugenja
+Spell Immunity.MOD	DESCRIPTOR:Earth Shugenja
+Spell Resistance.MOD	DESCRIPTOR:Earth Shugenja
+Spell Turning.MOD	DESCRIPTOR:Earth Shugenja
+Spike Stones.MOD	DESCRIPTOR:Earth Shugenja
+Statue.MOD	DESCRIPTOR:Earth Shugenja
+Stone Shape.MOD	DESCRIPTOR:Earth Shugenja
+Stoneskin.MOD	DESCRIPTOR:Earth Shugenja
+Stone Tell.MOD	DESCRIPTOR:Earth Shugenja
+Storm of Vengeance.MOD	DESCRIPTOR:Water Shugenja
+Sunbeam.MOD	DESCRIPTOR:Fire Shugenja
+Sunburst.MOD	DESCRIPTOR:Fire Shugenja
+Teleport.MOD	DESCRIPTOR:Air Shugenja
+Teleport Object.MOD	DESCRIPTOR:Air Shugenja
+Teleport (Greater).MOD	DESCRIPTOR:Air Shugenja
+Teleportation Circle.MOD	DESCRIPTOR:Air Shugenja
+True Resurrection.MOD	DESCRIPTOR:Water Shugenja
+True Seeing.MOD	DESCRIPTOR:Water Shugenja
+Veil.MOD	DESCRIPTOR:Air Shugenja
+Virtue.MOD	DESCRIPTOR:Earth Shugenja
+Wall of Fire.MOD	DESCRIPTOR:Fire Shugenja
+Wall of Ice.MOD	DESCRIPTOR:Water Shugenja
+Wall of Iron.MOD	DESCRIPTOR:Earth Shugenja
+Wall of Stone.MOD	DESCRIPTOR:Earth Shugenja
+Water Breathing.MOD	DESCRIPTOR:Water Shugenja
+Water Walk.MOD	DESCRIPTOR:Water Shugenja
+Whirlwind.MOD	DESCRIPTOR:Air Shugenja
+Wind Walk.MOD	DESCRIPTOR:Air Shugenja
+Wind Wall.MOD	DESCRIPTOR:Air Shugenja

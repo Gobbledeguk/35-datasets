@@ -1,0 +1,30 @@
+# Class levels and domains of the spells in cs_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Animate Instrument.MOD	CLASSES:Bard=2
+Aquatic Escape.MOD	CLASSES:Druid=1
+Armor Lock.MOD	CLASSES:Bard,Hexblade,Sorcerer,Wizard=1
+Assassin's Darkness.MOD	CLASSES:Assassin=4
+Blockade.MOD	CLASSES:Druid,Ranger,Sorcerer,Wizard=1
+Catapult.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Create Fetch.MOD	CLASSES:Assassin,Bard=3|Sorcerer,Wizard=4
+Disobedience.MOD	CLASSES:Bard,Sorcerer,Wizard=3
+Enlarge Weapon.MOD	CLASSES:Sorcerer,Wizard=2
+Evacuation Rune.MOD	CLASSES:Bard,Sorcerer,Wizard=5
+Fatal Flame.MOD	CLASSES:Sorcerer,Wizard=2
+Grasping Wall.MOD	CLASSES:Sorcerer,Wizard=3
+Harmonic Void.MOD	CLASSES:Bard=5
+Healer's Vision.MOD	CLASSES:Assassin,Cleric=1
+Lucky Streak.MOD	CLASSES:Bard=1|Sorcerer,Wizard=2
+Mage Burr.MOD	CLASSES:Bard,Hexblade,Sorcerer,Wizard=1
+Manifestation of the Deity.MOD	CLASSES:Cleric=2
+Mimicry.MOD	CLASSES:Assassin,Bard=1
+Opportune Dodge.MOD	CLASSES:Bard=2
+Scry Location.MOD	CLASSES:Bard=5|Sorcerer,Wizard=6|Cleric,Druid=7
+Siphon.MOD	CLASSES:Sorcerer,Wizard=3
+Smoke Stairs.MOD	CLASSES:Assassin,Druid=2
+Spell Theft.MOD	CLASSES:Bard,Hexblade=4|Sorcerer,Wizard=5
+Spore Field.MOD	CLASSES:Druid=1|Ranger=2
+Spymaster's Coin.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Wall of Vermin.MOD	CLASSES:Druid=3
+Wand Modulation.MOD	CLASSES:Sorcerer,Wizard=3
+Winged Watcher.MOD	CLASSES:Druid=1

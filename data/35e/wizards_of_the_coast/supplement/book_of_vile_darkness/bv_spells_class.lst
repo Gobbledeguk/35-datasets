@@ -1,0 +1,174 @@
+# Class levels and domains of the spells in bv_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Aberrate.MOD	CLASSES:Sorcerer,Wizard=1
+Abyssal Might.MOD	CLASSES:Blackguard=3|Cleric,Sorcerer,Wizard=4
+Addiction.MOD	CLASSES:Assassin=1|Bard,Cleric,Sorcerer,Wizard=2
+Alert Bebilith.MOD	CLASSES:Sorcerer,Wizard=6
+Black Bag.MOD	CLASSES:Assassin,Sorcerer,Wizard=1
+Bodak Birth.MOD	CLASSES:Cleric=8
+Boneblade.MOD	CLASSES:Blackguard=2|Cleric=3
+Boneblast.MOD	CLASSES:Blackguard=1|Cleric=2
+Call Dretch Horde.MOD	CLASSES:Sorcerer,Wizard=5
+Call Lemure Horde.MOD	CLASSES:Sorcerer,Wizard=5
+Call Nightmare.MOD	CLASSES:Sorcerer,Wizard=5
+Charnel Fire.MOD	CLASSES:Cleric=5
+Circle of Nausea.MOD	CLASSES:Druid=2|Cleric=3
+Claws of the Savage.MOD	CLASSES:Blackguard,Cleric,Druid=4
+Cloud of the Achaierai.MOD	CLASSES:Cleric=6
+Cruel Disappointment.MOD	CLASSES:Sorcerer,Wizard=3
+Crushing Fist of Spite.MOD	CLASSES:Sorcerer,Wizard=9
+Curse of the Putrid Husk.MOD	CLASSES:Bard,Sorcerer,Wizard=3
+Dance of Ruin.MOD	CLASSES:Bard,Cleric,Sorcerer,Wizard=2
+Dancing Chains.MOD	CLASSES:Sorcerer,Wizard=4
+Darklight.MOD	CLASSES:Sorcerer,Wizard=1|Assassin=2
+Death Grimace.MOD	CLASSES:Assassin,Blackguard,Sorcerer,Wizard=1
+Demon Wings.MOD	CLASSES:Blackguard=3
+Demoncall.MOD	CLASSES:Blackguard=2
+Demonflesh.MOD	CLASSES:Blackguard=1
+Distort Summon.MOD	CLASSES:Sorcerer,Wizard=4
+Distort Weapon.MOD	CLASSES:Blackguard=1
+Dread Word.MOD	CLASSES:Sorcerer,Wizard=3
+Drown (BoVD).MOD	CLASSES:Sorcerer,Wizard=3
+Drug Resistance.MOD	CLASSES:Cleric,Sorcerer,Wizard=1
+Ectoplasmic Enhancement.MOD	CLASSES:Sorcerer,Wizard=6
+Evil Eye.MOD	CLASSES:Sorcerer,Wizard=3
+Extract Drug.MOD	CLASSES:Bard,Cleric,Druid,Sorcerer,Wizard=1
+Eye of the Beholder.MOD	CLASSES:Sorcerer,Wizard=7
+Eye of the Zombie.MOD	CLASSES:Cleric=2|Sorcerer,Wizard=3
+False Sending.MOD	CLASSES:Cleric=5|Sorcerer,Wizard=6
+Fiendish Clarity.MOD	CLASSES:Cleric,Sorcerer,Wizard=7
+Fiendish Quickening.MOD	CLASSES:Cleric,Sorcerer,Wizard=6
+Flesh Armor.MOD	CLASSES:Assassin=4
+Glimpse of Truth.MOD	CLASSES:Sorcerer,Wizard=3
+Graz'zt's Long Grasp.MOD	CLASSES:Sorcerer,Wizard=2
+Grim Revenge.MOD	CLASSES:Sorcerer,Wizard=4
+Gutwrench.MOD	CLASSES:Sorcerer,Wizard=8
+Heartache.MOD	CLASSES:Cleric=1
+Heartclutch.MOD	CLASSES:Cleric=5
+Hell's Power.MOD	CLASSES:Blackguard=3|Cleric,Sorcerer,Wizard=4
+Identify Transgressor.MOD	CLASSES:Cleric=4
+Impotent Possessor.MOD	CLASSES:Sorcerer,Wizard=6
+Imprison Possessor.MOD	CLASSES:Sorcerer,Wizard=5
+Masochism.MOD	CLASSES:Sorcerer,Wizard=2|Assassin,Blackguard,Cleric=3
+Mindrape.MOD	CLASSES:Sorcerer,Wizard=9
+Mirror Sending.MOD	CLASSES:Sorcerer,Wizard=4
+Nether Trail.MOD	CLASSES:Sorcerer,Wizard=1
+No Light.MOD	CLASSES:Cleric,Sorcerer,Wizard=0|Bard=1
+Preserve Organ.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=0
+Psychic Poison.MOD	CLASSES:Cleric,Sorcerer,Wizard=4
+Reality Blind.MOD	CLASSES:Sorcerer,Wizard=3
+Resonating Resistance.MOD	CLASSES:Cleric,Sorcerer,Wizard=5
+Sacrificial Skill.MOD	CLASSES:Cleric,Sorcerer,Wizard=1|Assassin=2
+Sap Strength.MOD	CLASSES:Cleric,Sorcerer,Wizard=2
+Shriveling.MOD	CLASSES:Sorcerer,Wizard=2|Cleric=3
+Slash Tongue.MOD	CLASSES:Cleric,Sorcerer,Wizard=0
+Slow Consumption.MOD	CLASSES:Cleric=1|Sorcerer,Wizard=2
+Snare Astral Traveler.MOD	CLASSES:Cleric,Sorcerer,Wizard=6
+Song of Festering Death.MOD	CLASSES:Bard=2
+Sorrow.MOD	CLASSES:Bard,Cleric=1
+Soul's Shackles.MOD	CLASSES:Bard,Sorcerer,Wizard=5
+Soul's Treasure Lost.MOD	CLASSES:Sorcerer,Wizard=8
+Spider Hand.MOD	CLASSES:Cleric,Druid=1
+Spider Legs.MOD	CLASSES:Cleric=2
+Spread of Savagery.MOD	CLASSES:Cleric=9
+Steal Life.MOD	CLASSES:Sorcerer,Wizard=8
+Stop Heart.MOD	CLASSES:Assassin,Cleric=4|Sorcerer,Wizard=5
+Stunning Screech.MOD	CLASSES:Bard=3
+Stupor.MOD	CLASSES:Assassin,Cleric,Sorcerer,Wizard=1
+Suspend Disease.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=1
+Tongue of Baalzebul.MOD	CLASSES:Cleric=1
+Tongue Serpents.MOD	CLASSES:Sorcerer,Wizard=3
+Tongue Tendrils.MOD	CLASSES:Sorcerer,Wizard=1
+Unheavened.MOD	CLASSES:Sorcerer,Wizard=2
+Unliving Weapon.MOD	CLASSES:Cleric=3
+Unnerving Gaze.MOD	CLASSES:Sorcerer,Wizard=0
+Vile Lance.MOD	CLASSES:Cleric,Sorcerer,Wizard=3|Blackguard=4
+Wall of Chains.MOD	CLASSES:Sorcerer,Wizard=3
+Wall of Deadly Chains.MOD	CLASSES:Sorcerer,Wizard=4
+Wall of Eyes.MOD	CLASSES:Sorcerer,Wizard=7
+Wall of Ooze.MOD	CLASSES:Cleric,Sorcerer,Wizard=5
+Were-Doom.MOD	CLASSES:Cleric,Druid=9
+Spores of the Vrock.MOD	CLASSES:Cleric=2
+Wither Limb (BoVD).MOD	CLASSES:Cleric,Sorcerer,Wizard=2
+Wretched Blight.MOD	CLASSES:Cleric=7
+Whirlwind of Teeth.MOD	CLASSES:Sorcerer,Wizard=7
+Absorb Mind.MOD	CLASSES:Corrupted=3
+Absorb Strength.MOD	CLASSES:Corrupted=4
+Apocalypse from the Sky.MOD	CLASSES:Corrupted=9
+Befoul (Vile).MOD	CLASSES:Corrupted=8
+Claws of the Bebilith.MOD	CLASSES:Corrupted=5
+Consume Likeness.MOD	CLASSES:Corrupted=6
+Death by Thorns.MOD	CLASSES:Corrupted=7
+Devil's Tongue.MOD	CLASSES:Corrupted=2
+Evil Weather.MOD	CLASSES:Corrupted=8
+Fangs of the Vampire King (Corrupt).MOD	CLASSES:Corrupted=2
+Forbidden Speech.MOD	CLASSES:Corrupted=5
+Lahm's Finger Darts.MOD	CLASSES:Corrupted=2
+Love's Pain.MOD	CLASSES:Corrupted=3
+Plague of Nightmares.MOD	CLASSES:Corrupted=8
+Power Leech (BoVD).MOD	CLASSES:Corrupted=5
+Rapture of Rupture.MOD	CLASSES:Corrupted=7
+Red Fester.MOD	CLASSES:Corrupted=3
+Rotting Curse of Urfestra.MOD	CLASSES:Corrupted=3
+Seething Eyebane.MOD	CLASSES:Corrupted=1
+Serpent of Theggeron.MOD	CLASSES:Corrupted=3
+Touch of Juiblex.MOD	CLASSES:Corrupted=3
+Bane.MOD	CLASSES:Demonologist=1
+Demonflesh.MOD	CLASSES:Demonologist=1
+Doom.MOD	CLASSES:Demonologist=1
+Protection from Evil.MOD	CLASSES:Demonologist=1
+Protection from Good.MOD	CLASSES:Demonologist=1
+Spores of the Vrock.MOD	CLASSES:Demonologist=1
+Summon Monster I.MOD	CLASSES:Demonologist=1
+Unnerving Gaze.MOD	CLASSES:Demonologist=1
+Bestow Curse.MOD	CLASSES:Demonologist=2
+Dance of Ruin.MOD	CLASSES:Demonologist=2
+Demoncall.MOD	CLASSES:Demonologist=2
+Magic Circle against Evil.MOD	CLASSES:Demonologist=2
+Magic Circle against Good.MOD	CLASSES:Demonologist=2
+Protection from Energy.MOD	CLASSES:Demonologist=2
+Stunning Screech.MOD	CLASSES:Demonologist=2
+Summon Monster II.MOD	CLASSES:Demonologist=2
+Abyssal Might.MOD	CLASSES:Demonologist=3
+Call Dretch Horde.MOD	CLASSES:Demonologist=3
+Distort Summon.MOD	CLASSES:Demonologist=3
+Demon Wings.MOD	CLASSES:Demonologist=3
+Dread Word.MOD	CLASSES:Demonologist=3
+Dimensional Anchor.MOD	CLASSES:Demonologist=3
+Planar Binding (Lesser).MOD	CLASSES:Demonologist=3
+Summon Monster III.MOD	CLASSES:Demonologist=3
+Bestow Curse (Greater).MOD	CLASSES:Demonologist=4
+Call Nightmare.MOD	CLASSES:Demonologist=4
+Cloud of the Achaierai.MOD	CLASSES:Demonologist=4
+Dismissal.MOD	CLASSES:Demonologist=4
+Impotent Possessor.MOD	CLASSES:Demonologist=4
+Imprison Possessor.MOD	CLASSES:Demonologist=4
+Planar Binding.MOD	CLASSES:Demonologist=4
+Summon Monster IV.MOD	CLASSES:Demonologist=4
+Cause Fear.MOD	CLASSES:Mortal Hunter=1
+Charm Person.MOD	CLASSES:Mortal Hunter=1
+Detect Good.MOD	CLASSES:Mortal Hunter=1
+Heartache.MOD	CLASSES:Mortal Hunter=1
+Protection from Good.MOD	CLASSES:Mortal Hunter=1
+Sleep.MOD	CLASSES:Mortal Hunter=1
+Unnerving Gaze.MOD	CLASSES:Mortal Hunter=1
+Detect Thoughts.MOD	CLASSES:Mortal Hunter=2
+Evil Eye.MOD	CLASSES:Mortal Hunter=2
+Hold Person.MOD	CLASSES:Mortal Hunter=2
+Magic Circle against Good.MOD	CLASSES:Mortal Hunter=2
+See Invisibility.MOD	CLASSES:Mortal Hunter=2
+Web.MOD	CLASSES:Mortal Hunter=2
+Wither Limb (BoVD).MOD	CLASSES:Mortal Hunter=2
+Flesh Ripper.MOD	CLASSES:Mortal Hunter=3
+Mirror Sending.MOD	CLASSES:Mortal Hunter=3
+Nondetection.MOD	CLASSES:Mortal Hunter=3
+Scrying.MOD	CLASSES:Mortal Hunter=3
+Suggestion.MOD	CLASSES:Mortal Hunter=3
+Vile Lance.MOD	CLASSES:Mortal Hunter=3
+Wrack.MOD	CLASSES:Mortal Hunter=3
+Arcane Eye.MOD	CLASSES:Mortal Hunter=4
+Call Dretch Horde.MOD	CLASSES:Mortal Hunter=4
+Locate Creature.MOD	CLASSES:Mortal Hunter=4
+Morality Undone.MOD	CLASSES:Mortal Hunter=4
+Phantasmal Killer.MOD	CLASSES:Mortal Hunter=4
+Resonating Resistance.MOD	CLASSES:Mortal Hunter=4

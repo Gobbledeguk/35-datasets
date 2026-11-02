@@ -1,0 +1,59 @@
+# CVS $Revision$ $Author$ -- Fri Oct 11 07:36:00 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+CAMPAIGN:Complete Arcane
+KEY:Complete Arcane
+GAMEMODE:35e|Bahamut35e
+
+GENRE:Fantasy
+BOOKTYPE:Supplement
+SETTING:Dungeons & Dragons
+TYPE:Wizards of the Coast.Supplement.Supplement
+PRECAMPAIGN:1,INCLUDESBOOKTYPE=Core35e
+STATUS:BETA
+PUBNAMELONG:Wizards of the Coast
+PUBNAMESHORT:WotC
+PUBNAMEWEB:http://www.wizards.com/default.asp?x=dnd
+SOURCELONG:Complete Arcane
+SOURCESHORT:CAr
+SOURCEDATE:2004-11
+RANK:200411
+ISOGL:NO
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../../_artwork/cover_35e_wotc_car.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../../_artwork/logo_wotc.png
+
+INFOTEXT:Complete Arcane Supplement
+
+# Complete Arcane Files
+ABILITY:car_abilities.lst
+ABILITYCATEGORY:car_abilitycategories.lst
+CLASS:car_classes.lst
+COMPANIONMOD:car_companionmods.lst
+EQUIPMENT:car_equip.lst
+EQUIPMOD:car_equipmods.lst
+ABILITY:car_feats.lst
+ABILITY:car_feats_epic.lst|PRECAMPAIGN:1,INCLUDES=Epic Level Handbook
+KIT:car_kits.lst
+LANGUAGE:car_languages.lst
+RACE:car_races.lst
+SKILL:car_skills.lst
+SPELL:car_spells.lst|(EXCLUDE:Absorption|Aiming at the Target|Animate Fire|Animate Water|Animate Wood|Anticipate Teleportation|Anticipate Teleportation (Greater)|Arc of Lightning|Arrow of Bone|Backbiter|Bands of Steel|Blackfire|Blades of Fire|Blast of Flame|Blink (Greater)|Blistering Radiance|Brilliant Blade|Burning Blood|Corpse Candle|Darkvision (Mass)|Defenestrating Sphere|Discern Shapechanger|Duelward|Earthen Grasp|Emerald Flame Fist|Energy Immunity|Enhance Familiar|Familiar Pocket|Fiendform|Fire Shield (Mass)|Fire Shuriken|Fire Wings|Fireburst|Fireburst (Greater)|Fist of Stone|Flensing|Fly (Mass)|Fortify Familiar|Freezing Fog|Ghostform|Hail of Stone|Heart of Stone|Heart Ripper|Ice Knife|Illusory Pit|Hidden Lodge|Low-Light Vision|Mage Armor (Greater)|Orb of Acid|Orb of Acid (Lesser)|Orb of Cold|Orb of Cold (Lesser)|Orb of Electricity|Orb of Electricity (Lesser)|Orb of Fire|Orb of Fire (Lesser)|Orb of Force|Orb of Sound|Orb of Sound (Lesser)|Dispelling Screen|Dispelling Screen (Greater)|Phantasmal Assailants|Prismatic Ray|Programmed Amnesia|Reaving Dispel|Reciprocal Gyre|Refusal|Repair Critical Damage|Repair Light Damage|Repair Minor Damage|Repair Moderate Damage|Repair Serious Damage|Resist Energy (Mass)|Resonating Bolt|Ring of Blades|Servant Horde|Shadow Binding|Sign of Sealing|Sign of Sealing (Greater)|Sphere of Ultimate Destruction|Spiritwall|Stony Grasp|Summon Elemental Monolith|Swim|Sword of Darkness|Sword of Deception|Thornskin|Transfix|Transmute Rock to Lava|Vitriolic Sphere|Wall of Gloom|Whirling Blade|Withering Palm|Wood Rot)|PRECAMPAIGN:1,INCLUDES=Spell Compendium
+SPELL:car_spells.lst|!PRECAMPAIGN:1,INCLUDES=Spell Compendium
+SPELL:car_spells_class.lst
+TEMPLATE:car_templates.lst
+
+#
+HIDETYPE:FEAT|PreAppFeat
+FORWARDREF:CLASSSPELLLIST|Hexblade
+
+INFOTEXT:Supports 6.4.1
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:

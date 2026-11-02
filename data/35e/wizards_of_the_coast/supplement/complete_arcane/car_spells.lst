@@ -1,0 +1,626 @@
+# CVS $Revision: $ $Author: $ -- Sun Aug 17 15:41:15 2014 -- reformatted by prettylst.pl v1.51 (build 24906)
+
+###Block: Spells
+Eldritch Blast	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Blast-Shape	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:One target	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.7	SOURCEDATE:2004-11
+Baleful Utterance	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Least-Invocation|Sonic	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:5-ft. radius spread; or one solid object or one crystalline creature	DURATION:Instantaneous	SAVEINFO:Will negates (object) or Fortitude half; see text	SPELLRES:Yes (object)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.132	SOURCEDATE:2004-11
+Beguiling Influence	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:24 hours	SAVEINFO:None	SPELLRES:No	TEMPBONUS:PC|SKILL|Bluff,Diplomacy,Intimidate|6	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.132	SOURCEDATE:2004-11
+Beshadowed Blast	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Eldritch-Essence	DESCRIPTOR:Lesser-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:See text	TARGETAREA:Living creature struck	DURATION:1 round	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.132	SOURCEDATE:2004-11
+Bewitching Blast	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Eldritch-Essence	DESCRIPTOR:Greater-Invocation|Mind-Affecting	COMPS:S	CASTTIME:1 standard action	RANGE:See text	TARGETAREA:Creature struck	DURATION:1 round	SAVEINFO:Will negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.132	SOURCEDATE:2004-11
+Breath of the Night	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:Fog spreads in 20-ft. radius, 20 ft. high	DURATION:1 minute	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.132	SOURCEDATE:2004-11
+Brimstone Blast	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Eldritch-Essence	DESCRIPTOR:Lesser-Invocation|Fire	COMPS:S	CASTTIME:1 standard action	RANGE:See text	TARGETAREA:Target struck	DURATION:(floor(CASTERLEVEL/5)) rounds	SAVEINFO:Reflex negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.132	SOURCEDATE:2004-11
+Charm	TYPE:Arcane	SCHOOL:Enchantment	SUBSCHOOL:Charm	DESCRIPTOR:Lesser-Invocation|Mind-Affecting|Language-Dependant	COMPS:S	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:One creature	DURATION:(CASTERLEVEL) days	SAVEINFO:Will negates	SPELLRES:Yes	DESC:As charm person but not restricted by creature size or type. You can never have more than one target charmed at a time with this ability. If a second creature is charmed, you lose your hold on the first creature.	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.132	SOURCEDATE:2004-11
+Chilling Tentacles	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Greater-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:20-ft. radius spread	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.132	SOURCEDATE:2004-11
+Curse of Despair	TYPE:Arcane	SCHOOL:Necromancy	DESCRIPTOR:Lesser-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:Permanent	SAVEINFO:Will negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.132	SOURCEDATE:2004-11
+Dark Discorporation	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Dark-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:24 hours	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.132	SOURCEDATE:2004-11
+Dark Foresight	TYPE:Arcane	SCHOOL:Divination	DESCRIPTOR:Dark-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal or touch	TARGETAREA:See text	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None or Will negates (harmless)	SPELLRES:No or Yes (harmless)	TEMPBONUS:ANYPC|COMBAT|AC|2|TYPE=Insight	TEMPBONUS:ANYPC|SAVE|Reflex|2|TYPE=Insight	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.133	SOURCEDATE:2004-11
+Dark One's Own Luck	TYPE:Arcane	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:24 hours	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.133	SOURCEDATE:2004-11
+Darkness (Invocation)	OUTPUTNAME:Darkness (Sp)	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Least-Invocation|Darkness	COMPS:S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Object touched	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.133	SOURCEDATE:2004-11
+Dead Walk (The)	OUTPUTNAME:[NAME] Dead Walk	TYPE:Arcane	SCHOOL:Necromancy	DESCRIPTOR:Lesser-Invocation|Evil	COMPS:S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One or more corpses touched	DURATION:Instantaneous or (CASTERLEVEL) minutes; see text	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.133	SOURCEDATE:2004-11
+Devil's Sight	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:24 hours	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.133	SOURCEDATE:2004-11
+Devour Magic	TYPE:Arcane	SCHOOL:Abjuration	DESCRIPTOR:Greater-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.133	SOURCEDATE:2004-11
+Earthen Grasp (Invocation)	OUTPUTNAME:Earthen Grasp	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Least-Invocation|Earth	COMPS:S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Animated earthen arm	DURATION:(CASTERLEVEL*2) rounds	SAVEINFO:None	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.133	SOURCEDATE:2004-11
+Eldritch Chain	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Blast-Shape	DESCRIPTOR:Lesser-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:One primary target, plus (floor(CASTERLEVEL/5)) secondary targets	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.133	SOURCEDATE:2004-11
+Eldritch Cone	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Blast-Shape	DESCRIPTOR:Greater-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:30-foot Cone-shaped burst	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.133	SOURCEDATE:2004-11
+Eldritch Doom	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Blast-Shape	DESCRIPTOR:Dark-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:20-ft. radius spread	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.133	SOURCEDATE:2004-11
+Eldritch Spear	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Blast-Shape	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:250 ft.	TARGETAREA:One target	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.133	SOURCEDATE:2004-11
+Enervating Shadow	TYPE:Arcane	SCHOOL:Necromancy	DESCRIPTOR:Greater-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:5 rounds	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.133	SOURCEDATE:2004-11
+Entropic Warding	TYPE:Arcane	SCHOOL:Abjuration	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.134	SOURCEDATE:2004-11
+Fell Flight	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Lesser-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:24 hours	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.134	SOURCEDATE:2004-11
+Flee the Scene	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Teleportation	DESCRIPTOR:Lesser-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:You	DURATION:Instantaneous	SAVEINFO:None and Will disbelief (if interacted with)	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.134	SOURCEDATE:2004-11
+Frightful Blast	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Eldritch-Essence	DESCRIPTOR:Least-Invocation|Fear|Mind-Affecting	COMPS:S	CASTTIME:1 standard action	RANGE:See text	TARGETAREA:Creature struck	DURATION:1 minute	SAVEINFO:Will negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.134	SOURCEDATE:2004-11
+Hellrime Blast	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Eldritch-Essence	DESCRIPTOR:Lesser-Invocation|Cold	COMPS:S	CASTTIME:1 standard action	RANGE:See text	TARGETAREA:Creature struck	DURATION:10 minutes	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.134	SOURCEDATE:2004-11
+Hideous Blow	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Blast-Shape	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature or object struck	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.134	SOURCEDATE:2004-11
+Hungry Darkness	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Lesser-Invocation|Darkness	COMPS:S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Object touched	DURATION:Concentration + 2 rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.134	SOURCEDATE:2004-11
+Leaps and Bounds	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:24 hours	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.134	SOURCEDATE:2004-11
+Miasmic Cloud	TYPE:Arcane	SCHOOL:Necromancy	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:10-ft. radius spread	DURATION:1 minute	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.134	SOURCEDATE:2004-11
+Noxious Blast	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Eldritch-Essence	DESCRIPTOR:Greater-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:See text	TARGETAREA:Creature struck	DURATION:1 minute	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.135	SOURCEDATE:2004-11
+Path of Shadow	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Shadow	DESCRIPTOR:Dark-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Up to (CASTERLEVEL) touched creatures	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.135	SOURCEDATE:2004-11
+Repelling Blast	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Eldritch-Essence	DESCRIPTOR:Greater-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:See text	TARGETAREA:Creature struck	DURATION:Instantaneous	SAVEINFO:Reflex negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.135	SOURCEDATE:2004-11
+Retributive Invisibility	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Glamer	DESCRIPTOR:Dark-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Fortitude half and negates; see text	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.135	SOURCEDATE:2004-11
+See the Unseen	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:24 hours	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.135	SOURCEDATE:2004-11
+Sickening Blast	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Eldritch-Essence	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:See text	TARGETAREA:Living creature struck	DURATION:1 minute	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.135	SOURCEDATE:2004-11
+Spiderwalk	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:24 hours	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.135	SOURCEDATE:2004-11
+Stony Grasp (Invocation)	OUTPUTNAME:Stony Grasp	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Lesser-Invocation|Earth	COMPS:S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Animated stone arm	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.135	SOURCEDATE:2004-11
+Summon Swarm (Invocation)	OUTPUTNAME:Summon Swarm	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Summoning	DESCRIPTOR:Least-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One swarm of bats, rats, or spiders	DURATION:Concentration	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.135	SOURCEDATE:2004-11
+Tenacious Plague	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Summoning	DESCRIPTOR:Greater-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Long	TARGETAREA:(CASTERLEVEL/3) swarms of locust, each of which must be adjacent to at least one other swarm	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.135	SOURCEDATE:2004-11
+Utterdark Blast	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Eldritch-Essence	DESCRIPTOR:Dark-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:See text	TARGETAREA:Creature struck	DURATION:1 hour	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.135	SOURCEDATE:2004-11
+Vitriolic Blast	TYPE:Arcane	SCHOOL:Eldritch-Blast	SUBSCHOOL:Eldritch-Essence	DESCRIPTOR:Greater-Invocation|Acid	COMPS:S	CASTTIME:1 standard action	RANGE:See text	TARGETAREA:Target struck	DURATION:(floor(CASTERLEVEL/5)) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.136	SOURCEDATE:2004-11
+Voidsense	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Lesser-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:24 hours	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.136	SOURCEDATE:2004-11
+Voracious Dispelling	TYPE:Arcane	SCHOOL:Abjuration	DESCRIPTOR:Lesser-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One spellcaster, creature, or object; or 20-ft. radius burst	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.136	SOURCEDATE:2004-11
+Walk Unseen	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Glamer	DESCRIPTOR:Lesser-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:24 hours	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.136	SOURCEDATE:2004-11
+Wall of Gloom (Invocation)	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Shadow	DESCRIPTOR:Lesser-Invocation|Darkness|Fear|Mind-Affecting	COMPS:S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Semiopaque sheet of darkness up to 40 ft. long, or a ring of darkness with a radius of up to 15 ft.; either form 20 ft. high	DURATION:Concentration + (CASTERLEVEL) rounds	SAVEINFO:Will negates, see text	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.136	SOURCEDATE:2004-11
+Wall of Perilous Flame	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Greater-Invocation|Fire	COMPS:S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Sheet of flame up to (CASTERLEVEL*20) ft. long or a ring of fire with a radius of up to ((CASTERLEVEL/2)*5) ft; either form 20 ft. high	DURATION:Concentration + (CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.136	SOURCEDATE:2004-11
+Warlock's Call	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Greater-Invocation	COMPS:S	CASTTIME:1 standard action	RANGE:See text	TARGETAREA:One creature	DURATION:1 round; see text	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.136	SOURCEDATE:2004-11
+Word of Changing	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Dark-Invocation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature	DURATION:Permanent	SAVEINFO:Fortitude negates, Will partial; see text	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.136	SOURCEDATE:2004-11
+Absorption	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL*10) minutes or until expended	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=9	DESC:You absorb targeted spell energy to power spells of your own	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.96	SOURCEDATE:2004-11
+Accuracy	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One thrown weapon/level touched or one projectile weapon touched	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:Will negates (harmless, object)	SPELLRES:Yes	DESC:Doubles weapon's range increment	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.96	SOURCEDATE:2004-11
+Aiming at the Target	TYPE:Arcane	SCHOOL:Abjuration	COMPS:S	CASTTIME:1 swift action	RANGE:Personal	TARGETAREA:You	DURATION:Concentration, up to 20 minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=5	DESC:+10 bonus on Concentration checks for previously cast spell	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.96	SOURCEDATE:2004-11
+Animate Fire	TYPE:Divine	SCHOOL:Transmutation	DESCRIPTOR:Fire	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Close	TARGETAREA:Up to a 5-ft cube of fire	DURATION:Concentration, up to (CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=2	DESC:Turn Small or smaller fire into animated object	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.96	SOURCEDATE:2004-11
+Animate Water	TYPE:Divine	SCHOOL:Transmutation	DESCRIPTOR:Water	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Close	TARGETAREA:Up to a 5-ft cube of water	DURATION:Concentration, up to (CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=1	DESC:Turn Small or smaller quantity of water into animated object	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.96	SOURCEDATE:2004-11
+Animate Wood	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Touch	TARGETAREA:One small or smaller wooden object	DURATION:Concentration, up to (CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=1	DESC:Turn Small or smaller wooden item into animated object	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.96	SOURCEDATE:2004-11
+Anticipate Teleportation	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S, F	CASTTIME:1 full round	RANGE:One willing creature touched	TARGETAREA:5-ft/level radius emanation from touched creature	DURATION:(CASTERLEVEL) hours	SAVEINFO:None	SPELLRES:No	COST:500	CLASSES:Sorcerer,Wizard=4	DESC:Predict and delay the arrival of creatures teleporting into range by 1 round	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.97	SOURCEDATE:2004-11
+Anticipate Teleportation, Greater	KEY:Anticipate Teleportation (Greater)	OUTPUTNAME:Anticipate Teleportation, Greater	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S, F	CASTTIME:10 minutes	RANGE:One willing creature touched	TARGETAREA:5-ft/level radius emanation from touched creature	DURATION:24 hours	SAVEINFO:None	SPELLRES:No	COST:1000	CLASSES:Sorcerer,Wizard=8	DESC:Predict and delay the arrival of creatures teleporting into range by 3 round	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.97	SOURCEDATE:2004-11
+Apparition	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Phantasm	DESCRIPTOR:Fear|Mind-Affecting	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates	SPELLRES:Yes	DESC:Subject face takes on terrifying appearance, viewers may become shaken	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.97	SOURCEDATE:2004-11
+Arc of Lightning	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Electricity	COMPS:V, S, M/DF	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:A line between two creature	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:No	CLASSES:Druid=4|Sorcerer,Wizard=5	DESC:Line of electricity between two creatures (1d6/level damage)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.97	SOURCEDATE:2004-11
+Arrow of Bone	TYPE:Arcane	SCHOOL:Necromancy	DESCRIPTOR:Death	COMPS:V, S, M	CASTTIME:10 minutes	RANGE:Touch	TARGETAREA:One projectile or thrown weapon touched	DURATION:8 hours, or until discharged	SAVEINFO:Fortitude partial	SPELLRES:Yes	COST:50	CLASSES:Sorcerer,Wizard=6	DESC:Missile or thrown weapon gains +4 bonus, target take 3d6+1/level damage (max +15) or is slain	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.97	SOURCEDATE:2004-11
+Assay Resistance	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V, S	CASTTIME:1 swift action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.98	SOURCEDATE:2004-11
+Backbiter	TYPE:Arcane	SCHOOL:Necromancy	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One weapon	DURATION:(CASTERLEVEL) rounds, or until discharged	SAVEINFO:Will negates; See text (object)	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=1	DESC:Wooden-hafted weapon strikes wielder	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.98	SOURCEDATE:2004-11
+Bands of Steel	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One creature	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Reflex partial	SPELLRES:No	CLASSES:Sorcerer,Wizard=3	DESC:Metallic bands immobilize or entangle target for 1 round/level	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.98	SOURCEDATE:2004-11
+Blackfire	TYPE:Arcane	SCHOOL:Necromancy	DESCRIPTOR:Evil	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Ray	DURATION:(CASTERLEVEL) rounds	SAVEINFO:See text	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=8	DESC:Target engulfed in black flame, take 1d4 Con damage and becomes nauseated; flames and effects can spread to adjacent living creatures	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.99	SOURCEDATE:2004-11
+Blades of Fire	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Fire	COMPS:V	CASTTIME:1 swift action	RANGE:Touch	TARGETAREA:Up to two melee weapons you are wielding	DURATION:1 round	SAVEINFO:None	SPELLRES:No	CLASSES:Ranger,Sorcerer,Wizard=2	DESC:Your melee weapons deal +1d6 fire damage for 1 round	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.99	SOURCEDATE:2004-11
+Blast of Flame	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Fire	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:Cone-shaped burst	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:No	CLASSES:Sorcerer,Wizard=4	DESC:60-ft cone of fire (1d6/level damage)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.99	SOURCEDATE:2004-11
+Blink, Greater	KEY:Blink (Greater)	OUTPUTNAME:Blink, Greater	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Bard,Sorcerer,Wizard=5	DESC:Controlled blinking between the Material and Ethereal Planes grants defenses for 1 round/level	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.99	SOURCEDATE:2004-11
+Blistering Radiance	TYPE:Arcane.Divine	SCHOOL:Evocation	DESCRIPTOR:Fire|Light	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Long	TARGETAREA:50-ft-radius spread	DURATION:(CASTERLEVEL) rounds	SAVEINFO:See text	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=4|Cleric=5	DESC:Sphere of light blinds creatures, deals 2d6 fire damage in 50-ft radius spread	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.99	SOURCEDATE:2004-11
+Body Outside Body	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:10 ft.	TARGETAREA:One duplicate/5 levels	DURATION:1 minute	SAVEINFO:None	SPELLRES:No	DESC:Create one duplicate of yourself/5 levels	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.100	SOURCEDATE:2004-11
+Brilliant Blade	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One melee or thrown weapon, or fifty projectiles	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates (harmless, object)	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=6|Cleric=8	DESC:Weapon or projectiles shed light, ignore armor	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.100	SOURCEDATE:2004-11
+Burning Blood	TYPE:Arcane	SCHOOL:Necromancy	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One living creature; see text	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Fortitude partial; See text	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=4	DESC:Target takes 1d8 acid damage plus 1d8 fire damage/round	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.100	SOURCEDATE:2004-11
+Chameleon	TYPE:Divine	SCHOOL:Illusion	SUBSCHOOL:Glamer	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) hours	SAVEINFO:None (harmless)	SPELLRES:Yes	CLASSES:Druid=2	DESC:Subject gets +10 on Hide checks	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.100	SOURCEDATE:2004-11
+Cloud Chariot	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Water	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:See text	TARGETAREA:You and other touched willing creatures	DURATION:10 minutes	SAVEINFO:None	SPELLRES:No	DESC:You and your allies fly on a fast-moving cloud	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.100	SOURCEDATE:2004-11
+Cobra's Breath	TYPE:Arcane	SCHOOL:Transmutation	COMPS:S, M	CASTTIME:1 standard action	RANGE:10 ft.	TARGETAREA:Cone-shaped burst	DURATION:Instantaneous	SAVEINFO:Fortitude negates	SPELLRES:No	DESC:Cone of poisons deals 1d3 Con damage	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.101	SOURCEDATE:2004-11
+Commune with Greater Spirit	TYPE:Arcane	SCHOOL:Divination	COMPS:V, S, M, XP	CASTTIME:10 minutes	RANGE:10 ft.	TARGETAREA:One spirit	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates; See text	SPELLRES:No	COST:25	XPCOST:100	DESC:Any spirit creature answers one question/level	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.101	SOURCEDATE:2004-11
+Commune with Lesser Spirit	TYPE:Arcane	SCHOOL:Divination	COMPS:V, S, M	CASTTIME:10 minutes	RANGE:10 ft.	TARGETAREA:One lesser spirit	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates; See text	SPELLRES:No	COST:10	DESC:Lesser spirit creature answers one question/2 level	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.101	SOURCEDATE:2004-11
+Corpse Candle	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Ghostly hand and a candle	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=3	DESC:Ghostly hand and candle sheds light, affects incorporeal creatures	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.101	SOURCEDATE:2004-11
+Creeping Darkness	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Darkness	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Cloud that spreads in 20-ft radius, 20-ft high	DURATION:(CASTERLEVEL*3) rounds	SAVEINFO:None	SPELLRES:No	DESC:Cloud of inky blackness moves at your command	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.102	SOURCEDATE:2004-11
+Dancing Blade	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Close	TARGETAREA:One sword	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	DESC:Target sword fights independently	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.102	SOURCEDATE:2004-11
+Darkvision, Mass	KEY:Darkvision (Mass)	OUTPUTNAME:Darkvision, Mass	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:10 ft.	TARGETAREA:The caster and all allies in a 10-ft-radius burst, centered on the caster	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=4	DESC:Creatures in 10-ft radius gain ability to see 60-ft in total darkness	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.102	SOURCEDATE:2004-11
+Decapitating Scarf	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature	DURATION:Instantaneous	SAVEINFO:Fortitude partial; See text	SPELLRES:No	DESC:Ranged attack decapitates target or deals 1d4 damage/level (max 20d4)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.102	SOURCEDATE:2004-11
+Defenestrating Sphere	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Air	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:2-ft-radius sphere	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Fortitude partial; See text	SPELLRES:Yes	COST:100	CLASSES:Sorcerer,Wizard=4	DESC:Cloudy gray sphere knocks enemies prone, hurls them upward for subsequent falling damage	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.103	SOURCEDATE:2004-11
+Discern Shapechanger	TYPE:Arcane	SCHOOL:Divination	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=3	DESC:Penetrates disguises and identifies shapechanging creatures	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.103	SOURCEDATE:2004-11
+Duelward	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds, or until discharged	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=5	DESC:+4 on Spellcraft checks, counterspell as an immediate action	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.103	SOURCEDATE:2004-11
+Earthbolt	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Earth	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Line up to close range	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:Yes	DESC:Seismic pulse deals 1d6/level damage to creatures along its path	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.104	SOURCEDATE:2004-11
+Earthen Grasp	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Earth	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Animated earthen arm	DURATION:(CASTERLEVEL*2) rounds	SAVEINFO:None	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=2	DESC:Arm made of earth and soil grapples foes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.104	SOURCEDATE:2004-11
+Elemental Burst	TYPE:Arcane	SCHOOL:Evocation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:10-ft-radius burst	DURATION:Instantaneous	SAVEINFO:See text	SPELLRES:Yes	DESC:Elemental target explodes with varying effects	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.104	SOURCEDATE:2004-11
+Elemental Ward	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:60-ft-radius emanation, centered on you	DURATION:1 minute	SAVEINFO:Will negates	SPELLRES:Yes	DESC:Drives elementals away	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.105	SOURCEDATE:2004-11
+Emerald Flame Fist	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Fire	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature or object touched	DURATION:(CASTERLEVEL) rounds; see text	SAVEINFO:See text	SPELLRES:No	CLASSES:Sorcerer,Wizard=7	DESC:Touch attack deals 336+1/level fire damage (max +20); target can be engulfed by flame for additional damage	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.105	SOURCEDATE:2004-11
+Energy Immunity	TYPE:Arcane.Divine	SCHOOL:Abjuration	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:24 hours	SAVEINFO:None (harmless)	SPELLRES:Yes	CLASSES:Cleric,Druid=6|Sorcerer,Wizard=7	DESC:Subject and equipment gain immunity to damage of specified energy type	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.105	SOURCEDATE:2004-11
+Enhance Familiar	TYPE:Arcane	SCHOOL:Universal	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Familiar touched	DURATION:(CASTERLEVEL) hours	SAVEINFO:None (harmless)	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=3	DESC:Your familiar receives +2 bonus on saves, combat rolls, and AC for 1 hour/level	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.105	SOURCEDATE:2004-11
+Entangling Scarf	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Reflex negates	SPELLRES:No	DESC:Successful ranged touch attack entangles a foe	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.105	SOURCEDATE:2004-11
+Familiar Pocket	TYPE:Arcane	SCHOOL:Universal	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One container or garment with a pocket touched	DURATION:(CASTERLEVEL) hours	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=2	DESC:Garment or container becomes an extra-dimensional safe haven for your familiar	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.106	SOURCEDATE:2004-11
+Fiendform	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Evil	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=6	DESC:Assume form and abilities of fiendish creature, demon or devil	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.106	SOURCEDATE:2004-11
+Fiery Eyes	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Fire	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:1 minute	SAVEINFO:Reflex special; See text	SPELLRES:No	DESC:Your glowing eyes illuminate area and can ignite combustible items	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.106	SOURCEDATE:2004-11
+Finding the Center	TYPE:Arcane	SCHOOL:Abjuration	COMPS:S	CASTTIME:1 swift action	RANGE:Personal	TARGETAREA:You	DURATION:10 minutes	SAVEINFO:None	SPELLRES:No	DESC:Automatically maintain concentration on previously cast spell	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.106	SOURCEDATE:2004-11
+Fire Breath	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Fire	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	DESC:Ranged touch attack deals 1d8/2 levels fire damage (max 10d8) for 1 round/level	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.106	SOURCEDATE:2004-11
+Fire Shield, Mass	KEY:Fire Shield (Mass)	OUTPUTNAME:Fire Shield, Mass	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Fire|Cold	VARIANTS:Warm Shield, Mass|Chill Shield, Mass	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One or more allied creatures, no two of which can be more than 30-ft apart	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=5	DESC:Creatures attacking allies take damage; allies are protected from fire or cold	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.106	SOURCEDATE:2004-11
+Fire Shuriken	TYPE:Arcane.Divine	SCHOOL:Evocation	DESCRIPTOR:Fire	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:0 ft.	TARGETAREA:One magical shuriken/3 levels	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:Yes	CLASSES:Assassin=2	DESC:Magical shuriken deal 3d6 fire damage	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.107	SOURCEDATE:2004-11
+Fire Wings	OUTPUTNAME:Fire Wings	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Fire	COMPS:V, S, M, F	CASTTIME:1 full round	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:No	DESC:Your arms become flaming wings capable of flight and dealing +2d6 fire damage on unarmed attacks	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.107	SOURCEDATE:2004-11
+Fireburst	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Fire	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:5 ft,	TARGETAREA:Burst of fire extending 5-ft from you	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=2	DESC:Adjacent subjects take 1d8/level fire damage	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.107	SOURCEDATE:2004-11
+Fireburst, Greater	KEY:Fireburst (Greater)	OUTPUTNAME:Fireburst, Greater	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Fire	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:10 ft,	TARGETAREA:Burst of fire extending 10-ft from you	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=5	DESC:Subjects within 10-ft take 1d8/level fire damage	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.107	SOURCEDATE:2004-11
+Fist of Stone	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Earth	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:1 minute	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=1	DESC:Gain +6 STR and natural Slam attack	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.107	SOURCEDATE:2004-11
+Flensing	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Evil	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One corporeal creature; see text	DURATION:Up to 4 rounds; see text	SAVEINFO:Fortitude partial; See text	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=8	DESC:Pain and trauma deal 2d6 damage, 1d6 Con damage, 1d6 CHA damage for up to 4 rounds	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.108	SOURCEDATE:2004-11
+Fly, Mass	KEY:Fly (Mass)	OUTPUTNAME:Fly, Mass	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature/level, no two of which can be more than 30-ft apart	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=5	DESC:One creature/level flies at speed of 60-ft	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.108	SOURCEDATE:2004-11
+Force Whip	TYPE:Divine	SCHOOL:Evocation	DESCRIPTOR:Sonic|Mind-Affecting	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:A whip of force	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates; See text	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.108	SOURCEDATE:2004-11
+Fortify Familiar	TYPE:Arcane	SCHOOL:Universal	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Familiar touched	DURATION:(CASTERLEVEL) hours	SAVEINFO:None (harmless)	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=4	DESC:Your familiar gains 2d8 temporary HP, +2 to AC, 25%% chance to avoid extra sneak attack and critical hits	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.108	SOURCEDATE:2004-11
+Freezing Fog	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Cold	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Fog spreads in 20-ft. radius, 20 ft. high	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=5	DESC:A bank of freezing mist billows out from the point you designate, obscuring all sight (including darkvision) beyond 5 feet. Creatures in the first 5 feet of the mist have concealment, while creatures farther inside have total concealment. Each round on your turn, the frigid mist deals 1d6 points of cold damage to each creature and object within it. The freezing fog is so thick that any creature attempting to move through it progresses at a maximum speed of 5 feet (regardless of its normal speed) and takes a -2 penalty on all melee attack rolls and damage rolls and a -6 penalty on ranged weapon attack rolls (but not ranged spell attack rolls). A creature or object that falls into the fog from above is slowed, so that each 10 feet of mist it passes through effectively reduces overall falling distance by 10 feet. Freezing fog also coats all solid surfaces in its area with a slick, icy rime, and on your turn each round, each creature in the area of the fog must make a successful Reflex save or fall. A creature that manages to stand must make a DC 10 Balance check in order to move, falling if it fails its save by 5 or more. Creatures in a freezing fog can't take a 5-foot step. A severe wind (31+ mph) disperses the cloud in 1 round. The spell does not function underwater.	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.108	SOURCEDATE:2004-11
+Ghostform	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=8	DESC:You assume incorporeal form and gain some incorporeal traits and bonuses	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.109	SOURCEDATE:2004-11
+Ghost Light	TYPE:Arcane	SCHOOL:Necromancy	DESCRIPTOR:Fear|Mind-Affecting	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One medium or smaller ghostly light	DURATION:Concentration	SAVEINFO:Will negates	SPELLRES:Yes	DESC:Ghostly green radiance can be shaped and manipulated, causes fear	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.109	SOURCEDATE:2004-11
+Giant Size	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Personal	TARGETAREA:You	DURATION:1 minute	SAVEINFO:None	SPELLRES:No	DESC:You grow to Huge or larger size	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.109	SOURCEDATE:2004-11
+Hail of Stone	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Earth	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Medium	TARGETAREA:Cylinder (5-ft radius, 40-ft high)	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:Yes	COST:5	DESC:Rain of stone deals 1d4/level damage (max 5d4)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.110	SOURCEDATE:2004-11
+Heart of Stone	TYPE:Arcane	SCHOOL:Necromancy	COMPS:V, S, F, XP	CASTTIME:1 hour	RANGE:Personal	TARGETAREA:You	DURATION:1 year	SAVEINFO:None	SPELLRES:No	COST:5000	XPCOST:1000	CLASSES:Sorcerer,Wizard=8	DESC:Exchange your heart with stone heart to gain damage reduction, resistance to energy for 1 year	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.110	SOURCEDATE:2004-11
+Heart Ripper	TYPE:Divine	SCHOOL:Necromancy	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One or more creatures, no two of which can be more than 30-ft apart; See text	DURATION:Instantaneous	SAVEINFO:Fortitude negates	SPELLRES:Yes	CLASSES:Assassin=4	DESC:Kills living creatures with less than 4 HD	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.110	SOURCEDATE:2004-11
+Ice Blast	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Cold	COMPS:S, M	CASTTIME:1 standard action	RANGE:30 ft.	TARGETAREA:Cone shaped burst	DURATION:Instantaneous; See text	SAVEINFO:Fortitude negates	SPELLRES:Yes	DESC:Spray of ice crystals deals 1d6/2 levels cold damage (max 10d6) and makes targets fatigued	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.110	SOURCEDATE:2004-11
+Ice Knife	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Cold	COMPS:S, M	CASTTIME:1 full round	RANGE:Long	TARGETAREA:One icy missile	DURATION:Instantaneous	SAVEINFO:See text	SPELLRES:Yes	CLASSES:Assassin=2	DESC:Magical shard of ice deals 2d8 cold damage plus 2 Dex damage, or deal 1d8 cold damage in 10-ft-radius burst	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.112	SOURCEDATE:2004-11
+Illusory Pit	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Figment	COMPS:V, S	CASTTIME:1 full round	RANGE:Medium	TARGETAREA:10-ft cube/level	DURATION:Concentration + (CASTERLEVEL) rounds	SAVEINFO:Will partial; See text	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=6	DESC:Creatures in area are stunned or knocked prone while believing they're falling	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.112	SOURCEDATE:2004-11
+Imbue Familiar with Spell Ability	TYPE:Arcane	SCHOOL:Universal	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Familiar touched	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.112	SOURCEDATE:2004-11
+Internal Fire	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Fire	COMPS:V, S, F	CASTTIME:1 full round	RANGE:Medium	TARGETAREA:Up to 1 HD/level of creature, no two of which can be more than 20-ft apart	DURATION:Instantaneous	SAVEINFO:Fortitude partial	SPELLRES:Yes	DESC:Targets die instantly or take 6d6+1/level fire damage	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.112	SOURCEDATE:2004-11
+Iron Scarf	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	DESC:Ranged attack deals 1d8 damage +1/level	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.112	SOURCEDATE:2004-11
+Kiss of the Toad	TYPE:Arcane	SCHOOL:Necromancy	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Living creature touched	DURATION:Instantaneous; See text	SAVEINFO:Fortitude negates; See text	SPELLRES:Yes	DESC:Touch deals 1d6 Con damage, repeats in 1 min	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.113	SOURCEDATE:2004-11
+Leomund's Hidden Lodge	KEY:Hidden Lodge	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, F; See text	CASTTIME:10 minutes	RANGE:Close	TARGETAREA:20-ft-square structure	DURATION:24 hours	SAVEINFO:None	SPELLRES:No	CLASSES:Bard,Sorcerer,Wizard=5	DESC:Creates sturdy cottage camouflaged to blend into natural surroundings	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.113	SOURCEDATE:2004-11
+Lightning Blade	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Electricity	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:See text	DURATION:1 minute or until discharged	SAVEINFO:None	SPELLRES:Yes	DESC:Blade of electricity energy deals total 1d6 damage/level as touch attack or ranged touch attack	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.113	SOURCEDATE:2004-11
+Low-Light Vision	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	CLASSES:Assassin,Ranger,Sorcerer,Wizard=1	DESC:See twice as far as a human in poor light	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.113	SOURCEDATE:2004-11
+Mage Armor, Greater	KEY:Mage Armor (Greater)	OUTPUTNAME:Mage Armor, Greater	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Force	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates (harmless)	SPELLRES:No	COST:25	CLASSES:Sorcerer,Wizard=3	DESC:Gives subject +6 armor bonus	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.114	SOURCEDATE:2004-11
+Magnetism	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Ray	DURATION:(CASTERLEVEL) rounds	SAVEINFO:See text	SPELLRES:No	DESC:Draw iron or steel objects to yourself with effective STR 30	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.114	SOURCEDATE:2004-11
+Melt	TYPE:Arcane	SCHOOL:Evocation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One 5-ft cube of ice or 10-ft cube of snow/level, or one cold creature/level	DURATION:Instantaneous	SAVEINFO:See text	SPELLRES:See text	DESC:Melt ice and snow or deal 2/level damage to magical ice or cold creature (mac 10)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.114	SOURCEDATE:2004-11
+Metal Skin	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:Yes	DESC:Grants +8 natural armor bonus, -2 to Dex	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.115	SOURCEDATE:2004-11
+Minute Form	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Personal	TARGETAREA:You	DURATION:1 minute	SAVEINFO:None	SPELLRES:No	DESC:You shrink to Tiny or smaller size	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.115	SOURCEDATE:2004-11
+Orb of Acid	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Acid	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One orb of acid	DURATION:Instantaneous	SAVEINFO:Fortitude partial	SPELLRES:No	CLASSES:Sorcerer,Wizard=4	DESC:Ranged touch attack deals 1d6/level acid damage and target might be sickened	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.115	SOURCEDATE:2004-11
+Orb of Acid, Lesser	KEY:Orb of Acid (Lesser)	OUTPUTNAME:Orb of Acid, Lesser	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Acid	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One orb of acid	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=1	DESC:Ranged touch attack deals 1d8 acid damage +1d8/2 levels beyond 1st (max 5d8)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.115	SOURCEDATE:2004-11
+Orb of Cold	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Cold	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One orb of cold	DURATION:Instantaneous	SAVEINFO:Fortitude partial	SPELLRES:No	CLASSES:Sorcerer,Wizard=4	DESC:Ranged touch attack deals 1d6/level cold damage and target might be blinded	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.115	SOURCEDATE:2004-11
+Orb of Cold, Lesser	KEY:Orb of Cold (Lesser)	OUTPUTNAME:Orb of Cold, Lesser	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Cold	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One orb of cold	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=1	DESC:Ranged touch attack deals 1d8 cold damage +1d8/2 levels beyond 1st (max 5d8)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.116	SOURCEDATE:2004-11
+Orb of Electricity	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Electricity	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One orb of electricity	DURATION:Instantaneous	SAVEINFO:Fortitude partial	SPELLRES:No	CLASSES:Sorcerer,Wizard=4	DESC:Ranged touch attack deals 1d6/level electricity damage and target might be entangled	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.116	SOURCEDATE:2004-11
+Orb of Electricity, Lesser	KEY:Orb of Electricity (Lesser)	OUTPUTNAME:Orb of Electricity, Lesser	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Electricity	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One orb of electricity	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=1	DESC:Ranged touch attack deals 1d8 electricity damage +1d8/2 levels beyond 1st (max 5d8)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.116	SOURCEDATE:2004-11
+Orb of Fire	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Fire	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One orb of fire	DURATION:Instantaneous	SAVEINFO:Fortitude partial	SPELLRES:No	CLASSES:Sorcerer,Wizard=4	DESC:Ranged touch attack deals 1d6/level fire damage and target might be dazed	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.116	SOURCEDATE:2004-11
+Orb of Fire, Lesser	KEY:Orb of Fire (Lesser)	OUTPUTNAME:Orb of Fire, Lesser	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Fire	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One orb of fire	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=1	DESC:Ranged touch attack deals 1d8 fire damage +1d8/2 levels beyond 1st (max 5d8)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.116	SOURCEDATE:2004-11
+Orb of Force	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Force	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One orb of force	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=4	DESC:Globe of force deals 1d6/level damage (max 10d6)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.116	SOURCEDATE:2004-11
+Orb of Sound	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Sonic	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One orb of sonic energy	DURATION:Instantaneous	SAVEINFO:Fortitude partial	SPELLRES:No	CLASSES:Sorcerer,Wizard=4	DESC:Ranged touch attack deals 1d8 sonic damage +1d8/2 levels beyond 1st (max 5d8)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.116	SOURCEDATE:2004-11
+Orb of Sound, Lesser	KEY:Orb of Sound (Lesser)	OUTPUTNAME:Orb of Sound, Lesser	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Sonic	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One orb of sonic energy	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=1	DESC:Ranged touch attack deals 1d6/level sonic damage and target might be deafened	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.116	SOURCEDATE:2004-11
+Otiluke's Dispelling Screen	KEY:Dispelling Screen	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Energy wall whose area is up to one 10-ft square/level, or a sphere or hemisphere with a radius of up to 1-ft/level	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=4	DESC:Targeted Dispel Magic on any creatures and unattended items, +10 max on caster level check	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.116	SOURCEDATE:2004-11
+Otiluke's Dispelling Screen, Greater	KEY:Dispelling Screen (Greater)	OUTPUTNAME:Dispelling Screen, Greater	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Energy wall whose area is up to one 10-ft square/level, or a sphere or hemisphere with a radius of up to 1-ft/level	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=7	DESC:Targeted Dispel Magic on any creatures and unattended items, +20 max on caster level check	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.117	SOURCEDATE:2004-11
+Pain	TYPE:Arcane	SCHOOL:Necromancy	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Up to 1 HD/level of creature, no two of which can be more than 20-ft apart	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Fortitude partial	SPELLRES:Yes	DESC:Wracking pain gives targets -4 on attack rolls, skill and ability checks	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.117	SOURCEDATE:2004-11
+Phantasmal Assailants	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Phantasm	DESCRIPTOR:Fear|Mind-Affecting	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One living creature	DURATION:Instantaneous	SAVEINFO:See text	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=2	DESC:Nightmare creature strike target for 4 Wis damage, 4 Dex damage	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.117	SOURCEDATE:2004-11
+Poison Needles	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature	DURATION:Instantaneous	SAVEINFO:See text	SPELLRES:Yes	DESC:Hail of poison needles deals range of effects to target	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.117	SOURCEDATE:2004-11
+Prismatic Ray	TYPE:Arcane	SCHOOL:Evocation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Ray	DURATION:Instantaneous	SAVEINFO:See text	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=5	DESC:Ray of light blinds target, deals random effects	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.118	SOURCEDATE:2004-11
+Programmed Amnesia	TYPE:Arcane	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	COMPS:V, S, M	CASTTIME:10 minutes	RANGE:Close	TARGETAREA:One living creature	DURATION:Permanent	SAVEINFO:Will negates	SPELLRES:Yes	COST:500	CLASSES:Sorcerer,Wizard=9	DESC:Destroy, alter or replace memories in target creature	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.118	SOURCEDATE:2004-11
+Protection from Charm	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	DESC:Subject gains +1/3 levels bonus (max +5) on saves against charm and compulsion	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.118	SOURCEDATE:2004-11
+Rain of Needles	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Up to 1 creature/level	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:Yes	DESC:Ranged attack deals total 1d4/level damage (max 5d4)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.118	SOURCEDATE:2004-11
+Reanimation	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S, M, F	CASTTIME:1 full round	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) days	SAVEINFO:None (harmless)	SPELLRES:Yes	DESC:Dead creature restored to functional half life with 1 HP	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.119	SOURCEDATE:2004-11
+Reaving Dispel	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One spellcaster, creature or object; or 20-ft-radius burst	DURATION:Instantaneous	SAVEINFO:See text	SPELLRES:No	CLASSES:Sorcerer,Wizard=9	DESC:On a targeted dispel, steal spell power and effects for yourself	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.119	SOURCEDATE:2004-11
+Reciprocal Gyre	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One creature or object	DURATION:Instantaneous	SAVEINFO:See text	SPELLRES:No	CLASSES:Sorcerer,Wizard=5	DESC:Creature or object takes 1d6 damage/level of spell affecting it (max 25d6)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.119	SOURCEDATE:2004-11
+Refusal	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Two 10-ft squares/level	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates; See text	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=5	DESC:Spellcasters and creatures with spell-like abilities are prevented from entering an area	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.120	SOURCEDATE:2004-11
+Repair Critical Damage	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Construct touched	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=4	DESC:Repairs 4d8+1/level point of damage to any construct (max +20)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.120	SOURCEDATE:2004-11
+Repair Light Damage	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Construct touched	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=1	DESC:Repairs 1d8+1/level point of damage to any construct (max +5)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.120	SOURCEDATE:2004-11
+Repair Minor Damage	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Construct touched	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=0	DESC:Repairs 1 point of damage to any construct	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.120	SOURCEDATE:2004-11
+Repair Moderate Damage	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Construct touched	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=2	DESC:Repairs 2d8+1/level point of damage to any construct (max +10)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.120	SOURCEDATE:2004-11
+Repair Serious Damage	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Construct touched	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=3	DESC:Repairs 3d8+1/level point of damage to any construct (max +15)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.120	SOURCEDATE:2004-11
+Resist Energy, Mass	KEY:Resist Energy (Mass)	OUTPUTNAME:Resist Energy, Mass	TYPE:Arcane.Divine	SCHOOL:Abjuration	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature/level, no two of which can be more than 30-ft apart	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:Fortitude negates (harmless)	SPELLRES:Yes	CLASSES:Cleric,Druid=3|Sorcerer,Wizard=4	DESC:Targeted creatures ignore damage from specified energy type	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.120	SOURCEDATE:2004-11
+Resonating Bolt	TYPE:Arcane.Divine	SCHOOL:Evocation	DESCRIPTOR:Sonic	COMPS:V, S	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:60-ft line	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=3|Bard=4	DESC:Sonic energy deals 1d4 damage/level (max 10d4)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.121	SOURCEDATE:2004-11
+Ring of Blades	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric=3	DESC:Blades surround you, damaging other creatures (1d6+1/level damage)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.121	SOURCEDATE:2004-11
+Scales of the Lizard	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:1 minute	SAVEINFO:None	SPELLRES:No	DESC:Grants +2 or higher enhancement bonus to natural armor	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.121	SOURCEDATE:2004-11
+Secret Signs	TYPE:Arcane	SCHOOL:Enchantment	DESCRIPTOR:Mind-Affecting	COMPS:F	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One intelligent creature	DURATION:1 round	SAVEINFO:None (harmless)	SPELLRES:Yes	DESC:Communicate a simple nonverbal message to one intelligent creature	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.121	SOURCEDATE:2004-11
+Servant Horde	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Invisible, mindless, shapeless servants	DURATION:(CASTERLEVEL) hours	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=5	DESC:Create 2d6 Unseen Servant +1/level (max +15)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.121	SOURCEDATE:2004-11
+Shadow Binding	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Shadow	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:10-ft-radius burst	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=3	DESC:Ribbonlike shadows daze and entangle creatures in 10-ft radius burst	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.122	SOURCEDATE:2004-11
+Sign of Sealing	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Close	TARGETAREA:One door, chest or portal up to 30 sq ft/level in size	DURATION:Permanent	SAVEINFO:Reflex half; See text	SPELLRES:No	COST:100	CLASSES:Sorcerer,Wizard=3	DESC:Magical sigil protects door or chest, deals 1d4/level damage if opened (max 10d4)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.122	SOURCEDATE:2004-11
+Sign of Sealing, Greater	KEY:Sign of Sealing (Greater)	OUTPUTNAME:Sign of Sealing, Greater	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S, M	CASTTIME:10 minutes	RANGE:Close	TARGETAREA:One door, chest or portal up to 30 sq ft/level in size	DURATION:Permanent	SAVEINFO:Reflex half; See text	SPELLRES:No	COST:500	CLASSES:Sorcerer,Wizard=6	DESC:Magical sigil protects door, chest or open space, deals 1d6/level damage if opened (max 20d6)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.122	SOURCEDATE:2004-11
+Smoke Ladder	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 full round	RANGE:Touch	TARGETAREA:A ladder of smoke	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	DESC:Smoke transforms into ladder up to 10-ft long/level	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.122	SOURCEDATE:2004-11
+Snake Darts	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One or two creatures	DURATION:Instantaneous; See text	SAVEINFO:Fortitude partial; See text	SPELLRES:Yes	DESC:Two snakes hit one or two targets, deals 3d6 damage and inject poison (1d6 Con damage, repeats in 1 min)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.122	SOURCEDATE:2004-11
+Sphere of Ultimate Destruction	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:2-ft-radius sphere	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Fortitude partial; See text	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=9	DESC:Featureless black sphere moves 30-ft/round, disintegrates on ranged touch attack	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.123	SOURCEDATE:2004-11
+Spirit Binding	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Calling	DESCRIPTOR:See Text	COMPS:V, S	CASTTIME:10 minutes	RANGE:Close	TARGETAREA:Up to 16 HD worth of spirits, no two of which can be more than 30 ft apart when they appear	DURATION:Instantaneous	SAVEINFO:Will negates	SPELLRES:Yes	DESC:As Spirit Binding (Lesser), but traps up to 16 HD of spirits	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.123	SOURCEDATE:2004-11
+Spirit Binding, Lesser	KEY:Spirit Binding (Lesser)	OUTPUTNAME:Spirit Bind, Lesser	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Calling	DESCRIPTOR:See Text	COMPS:V, S	CASTTIME:10 minutes	RANGE:Close	TARGETAREA:One spirit of up to 8 HD	DURATION:Instantaneous	SAVEINFO:Will negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.123	SOURCEDATE:2004-11
+Spirit Binding, Greater	KEY:Spirit Binding (Greater)	OUTPUTNAME:Spirit Bind, Greater	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Calling	DESCRIPTOR:See Text	COMPS:V, S	CASTTIME:10 minutes	RANGE:Close	TARGETAREA:Up to 32 HD worth of spirits, no two of which can be more than 30 ft apart when they appear	DURATION:Instantaneous	SAVEINFO:Will negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.123	SOURCEDATE:2004-11
+Spirit Needle	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One spirit creature	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:Yes	DESC:Needle pins spirit in place in corporeal form	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.123	SOURCEDATE:2004-11
+Spirit Self	TYPE:Arcane	SCHOOL:Necromancy	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:1 minute	SAVEINFO:None	SPELLRES:No	DESC:Your incorporeal spirit separates from your body	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.123	SOURCEDATE:2004-11
+Spiritwall	TYPE:Arcane	SCHOOL:Necromancy	DESCRIPTOR:Fear|Mind-Affecting	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:0 ft.	TARGETAREA:Swirling wall whose area is up to one 10-ft square/level, or a sphere or hemisphere with a radius of up to 1-ft/level	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	CLASSES:Sorcerer,Wizard=5	DESC:Wall of spirit-form causes panic, deals 1d10 damage if touched, can bestow negative levels if passed through	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.124	SOURCEDATE:2004-11
+Steam Breath	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Fire	COMPS:V, S, M	CASTTIME:1 full round	RANGE:30 ft.	TARGETAREA:Cone	DURATION:Instantaneous	SAVEINFO:Reflex half	SPELLRES:Yes	DESC:Superheated steam deals 1d6/level fire damage (max 10d6)	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.124	SOURCEDATE:2004-11
+Stony Grasp	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Earth	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Animated stone arm	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=3	DESC:Arm made of soil and rock grapples foes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.124	SOURCEDATE:2004-11
+Summon Elemental Monolith	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	DESCRIPTOR:See Text	COMPS:V, S, M/DF	CASTTIME:1 full round	RANGE:Medium	TARGETAREA:One summoned elemental monolith	DURATION:Concentration, up to (CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	COST:100	CLASSES:Cleric,Druid,Sorcerer,Wizard=9	DESC:Calls powerful elemental creature to fight for you	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.124	SOURCEDATE:2004-11
+Summoning Wind	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:10 minutes	RANGE:10 miles/level	TARGETAREA:Up to 10 creatures/level	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	DESC:Send a short message to 10 creatures/level	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.124	SOURCEDATE:2004-11
+Superior Invisibility	KEY:Superior Invisibility	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Glamer	COMPS:V, S	CASTTIME:10 minutes	RANGE:Personal or Touch	TARGETAREA:You or a creature or object weighting no more than 100 lbs/level	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates (harmless)	SPELLRES:No	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.125	SOURCEDATE:2004-11
+Swim	TYPE:Arcane.Divine	SCHOOL:Transmutation	DESCRIPTOR:Water	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Medium	TARGETAREA:One creature	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None (harmless)	SPELLRES:Yes	CLASSES:Druid,Sorcerer,Wizard=2	DESC:Subject gains swim speed, +8 bonus on Swim checks	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.125	SOURCEDATE:2004-11
+Sword of Darkness	TYPE:Arcane	SCHOOL:Evocation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Black blade of negative energy	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=7	DESC:Blade of negative energy attacks independently, deals 1d4 damage, bestow one negative level	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.126	SOURCEDATE:2004-11
+Sword of Deception	TYPE:Arcane	SCHOOL:Evocation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Pale green blade of force	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=5	DESC:Blade of energy attacks independently, deals 1d4 damage, penalizes subsequents save	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.126	SOURCEDATE:2004-11
+Terra Cotta Warrior	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One statuette touched	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	COST:1	DESC:Statuette becomes a Medium animated object which fights for you	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.126	SOURCEDATE:2004-11
+Terra Cotta Lion	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One statuette touched	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	COST:10	DESC:Statuette becomes a Huge animated object which fights for you	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.126	SOURCEDATE:2004-11
+Thornskin	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=3	DESC:Your unarmed attacks deal +1d6 damage; natural and unarmed attacks against you take 1d4 damage	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.127	SOURCEDATE:2004-11
+Transfix	TYPE:Arcane	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Medium	TARGETAREA:One or more humanoids within a 10-ft radius emanation	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=6	DESC:Humanoids freeze in place until condition you specify is met	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.127	SOURCEDATE:2004-11
+Transmute Rock to Lava	TYPE:Arcane.Divine	SCHOOL:Transmutation	DESCRIPTOR:Earth|Fire	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One 10-ft cube	DURATION:Instantaneous	SAVEINFO:Reflex half; See text	SPELLRES:No	CLASSES:Druid,Sorcerer,Wizard=9	DESC:Transform one 10-ft cube with subsequent fire damage and effects	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.127	SOURCEDATE:2004-11
+Unluck	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates	SPELLRES:Yes	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.128	SOURCEDATE:2004-11
+Vitriolic Sphere	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Acid	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Long	TARGETAREA:10-ft-radius burst	DURATION:Instantaneous; See text	SAVEINFO:See text	SPELLRES:No	CLASSES:Sorcerer,Wizard=5	DESC:Potent acid deals 1d4/level damage (max +15d4) plus possible damage following two rounds	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.128	SOURCEDATE:2004-11
+Wall of Bones	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Medium	TARGETAREA:Wall whose area is up to one 10-ft square/level	DURATION:10 minute	SAVEINFO:None	SPELLRES:No	DESC:Shapeable wall grants cover and concealment, deals damage to anyone who tries to pass	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.128	SOURCEDATE:2004-11
+Wall of Gloom	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Shadow	DESCRIPTOR:Darkness|Fear|Mind-Affecting	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Semiopaque sheet of darkness up to 40 ft long, or a ring of darkness with a radius of up to 15 ft;either form 20-ft high	DURATION:Concentration + (CASTERLEVEL) rounds	SAVEINFO:Will negates; See text	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=2	DESC:Shadow barrier obscures vision and deters passage	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.129	SOURCEDATE:2004-11
+Water to Poison	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 full round	RANGE:Touch	TARGETAREA:One ounce of water/level	DURATION:Instantaneous	SAVEINFO:None; See text	SPELLRES:No	COST:50	DESC:Transform water into ingested poison	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.129	SOURCEDATE:2004-11
+Whirling Blade	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:60-ft line	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Bard,Sorcerer,Wizard=2	DESC:Hurled slashing weapon magically attacks all foes in 60-ft line	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.129	SOURCEDATE:2004-11
+Withering Palm	TYPE:Arcane.Divine	SCHOOL:Necromancy	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Living creature touched	DURATION:Instantaneous	SAVEINFO:Fortitude negates	SPELLRES:Yes	CLASSES:Cleric=7	DESC:Touch attack deals 1 point STR damage plus 1 point CON damage/2 levels	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.130	SOURCEDATE:2004-11
+Wood Rot	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One nonmagical wooden object or a volume of wood; or one plant creature	DURATION:See Text	SAVEINFO:None	SPELLRES:No	CLASSES:Druid=5	DESC:Destroy wooden items or deal 3d6+1/level damage (max +15) to plant creatures	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.130	SOURCEDATE:2004-11
+Haboob	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Air|Earth	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	ITEM:Potion	TARGETAREA:Abrasive dust spreads in 20-ft. radius, 20 ft. high	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None or Reflex half; See text	SPELLRES:No	CLASSES:Cleric,Druid,Ranger,Sorcerer,Wizard=3	DESC:Create a thick haze of swirling dust; see text.	SOURCELONG:Complete Arcane	SOURCESHORT:CAr	SOURCEPAGE:p.117	SOURCEDATE:2004-11
+
+###Block: Copies and other lines
+Charm Animal.COPY=Charm Animal (snakes and lizards only)
+
+###Block: Descriptions
+Eldritch Blast.MOD	DESC:Your eldritch blast is a ray of baleful magical energy that deals damage and other debilitating effects to your enemies. It deals (floor((CASTERLEVEL+1)/2))d6 points of damage (half damage to objects)
+Baleful Utterance.MOD	DESC:You speak a single syllable of the Dark Speech that breaks brittle, nonmagical objects; sunders a single solid, nonmagical object; or damages a crystalline creature. If a creature is holding or wearing the target and it is destroyed, the creature must make a Fortitude save or be dazed for 1 round and deafened for 1 minute.
+Beguiling Influence.MOD	DESC:You beguile and bewitch your foes and get a +6 bonus on Bluff, Diplomacy, and Intimidate checks.
+Beshadowed Blast.MOD	DESC:Beshadowed blast renders the target blinded
+Bewitching Blast.MOD	DESC:Bewitching Blast causes creatures struck to be confused, making them unable to independently determine what they will do.
+Breath of the Night.MOD	DESC:A bank of fog billows out around you. The fog does not block line of sight but all creatures in the fog have concealment.
+Brimstone Blast.MOD	DESC:Brimstone blast causes targets to catch on fire, taking 2d6 points of fire damage per round until it takes a full-round action to extinguish the flames or the duration expires.  A burning creature burning in this way never takes more than 2d6 points of fire damage in a round, even if it is hit by multiple brimstone blasts.
+Chilling Tentacles.MOD	DESC:Conjures a field of soul chilling black tentacles, each 10 ft. long, which grapple all within 20 ft. spread. Creatures within the area take 2d6 points of cold damage each round whether or not they are grappled by the tentacles.
+Curse of Despair.MOD	DESC:You place a curse on the subject.  -6 to an ability score; -4 on attack rolls, saves, and checks; or 50%% chance of losing each action. Even if the save against this ability succeeds, the creature takes -1 penalty on attack rolls for 1 minute.
+Dark Discorporation.MOD	DESC:You become a swarm of Diminutive batlike shadows that fills two 10' squares or eight contiguous 5' squares, shapable as you desire. You gain the following traits: STR:1, Dex:+6, +4 size bonus to AC and +CHA mod deflection bonus, but lose natural and armor bonuses to AC. Fly speed 40' with perfect maneuverability and can pass through openings Diminutive creatures can pass. Swarm traits (see MM p.???), Swarm attack (strikes as magic weapon of your alignment) 4d6 damage to creatures in the space you occupy at end of turn. Distraction: creatures that begin their turn occupied by swarm must Fort save or be nauseated 1 round. Spellcasting requires concentration check. Possessions: gear becomes non-functional and is absorbed into your new form.  You can only take move actions while in this form - cannot use other invocations.
+Dark Foresight.MOD	DESC:Grants you a powerful sixth sense in relation to yourself or another. Once foresight is cast, you receive instantaneous warnings of impending danger or harm to the subject of the spell. If you are within 100' and have line of sight you may communicate telepathically with the target.
+Dark One's Own Luck.MOD	DESC:You are favored by the dark powers. You gain a luck bonus equal to your Charisma bonus on Fortitude saves, Reflex saves, or Will saves (your choice).  You can't apply this ability to two different save types at the same time.
+Darkness (Invocation).MOD	DESC:Causes an object to radiate shadowy illumination out to a 20-ft. radius.
+Dead Walk (The).MOD	DESC:Turn the bones and bodies of dead creatures into undead skeletons and zombies that obey your commands. Unless you include the normal material component for the spell (onyx gem worth 25 gp/HD of undead) as part of the process, undead created by this ability crumble into dust after (CASTERLEVEL) minutes.
+Devil's Sight.MOD	DESC:You gain the visual acuity of a devil.  You can see normally in darkness and magical darkness up to 30 ft.
+Devour Magic.MOD	DESC:You deliver greater dispel magic by touch and gain 5 temporary hit points for each spell level dispelled. These temporary hit points do not stack with other temporary hit points.  If a new spell is devoured you may replace the old temporary hit points with the new ones, thus resetting the clock.
+Earthen Grasp (Invocation).MOD	DESC:You can cause an arm made of dense, compacted earth or soil (but not stone) to grapple your foes.  Treat as Medium creature with BAB +(CASTERLEVEL) and STR (floor(CASTERLEVEL/3)*2+14) the arm cannot move but can make one grapple attempt per round at any creature in it's or adjacent square. Each round it successfully pins a target it deals 1d6+STR lethal damage.  It has AC 15, hardness 4, (CASTERLEVEL*3) HP.
+Eldritch Chain.MOD	DESC:You turn your eldritch blast into an arc of energy that jumps from the first target to others. All secondary targets must be within 30 ft. of the previous target and you can't target the same creature more than once.  You must make additional ranged touch attacks for each secondary target and if you miss any target in the chain, it ends there. Secondary blasts each deal full damage.
+Eldritch Cone.MOD	DESC:Eldritch cone deals normal eldritch blast damage to all targets within the area.  No ranged touch attack is required but any creature in the area can attempt a saving throw.
+Eldritch Doom.MOD	DESC:Eldritch doom deals normal eldritch blast damage to any targets designated by you within the area of effect. No ranged touch attack is required but any targeted creature in the area can attempt a saving throw.
+Eldritch Spear.MOD	DESC:Eldritch spear increases the range of an eldritch blast attack to 250 feet with no range increment.
+Enervating Shadow.MOD	DESC:The dark powers cloak you and shield you from harm while draining vitality from nearby foes.  You have total concealment in any area that isn't brightly lit.  Any creature adjacent to you takes a -4 penalty to STR for 5 rounds. Once affected, a creature cannot be affected again for 24 hours.  This invocation can be countered or dispelled by any light spell of equal or higher level.
+Entropic Warding.MOD	DESC:Chaotic energies swirl about you, deflecting ranged attacks (arrows, rays, etc) to have 20%% miss chance. You can move through any type of terrain (mud, snow, dust, or the like) and leave neither footprints nor scent. Tracking you is impossible by nonmagical means.
+Fell Flight.MOD	DESC:The powers of darkness bear you aloft as you sprout a streaming, winglike cape of shadows. You can fly at your land speed with good maneuverability.
+Flee the Scene.MOD	DESC:You instantly transfer yourself from your current location to any other spot within range leaving behind a major image of yourself in your place that lasts for 1 round which reacts appropriately to attacks.
+Frightful Blast.MOD	DESC:Creatures struck by frightful blast become shaken. A shaken creature struck by frightful blast is not affected by the shaken aspect of the blast but takes damage normally.
+Hellrime Blast.MOD	DESC:Hellrime blast deals cold damage and any creature struck by the attack take a -4 penalty to Dexterity.  Dexterity penalties from multiple hellrime blasts do not stack.
+Hideous Blow.MOD	DESC:A successful melee attack affects the target as if struck by your eldritch blast (including any eldritch essence applied to the blast) in addition to any weapon damage that you deal with the attack.
+Hungry Darkness.MOD	DESC:This spell causes an object to radiate shadowy illumination out to a 20-ft. radius. Every square of this area is filled with a swarm of bats, which attacks all other creatures within its area.  If the bat swarm is destroyed, the darkness disappears as well.
+Leaps and Bounds.MOD	DESC:You gain amazing agility and get a +6 bonus on Balance, Jump, and Tumble checks.
+Miasmic Cloud.MOD	DESC:A misty cloud of fog spreads around you, which does not block line of sight, but all creatures in the fog have concealment.  Creatures who enter the fog become fatigued for as long as they remain within the cloud and 1 round thereafter.
+Noxious Blast.MOD	DESC:Noxious blast causes creatures struck to become nauseated.
+Path of Shadow.MOD	DESC:You and any creature you touch are then transported along a coiling path of shadowstuff to the edge of the Material Plane where it borders the Plane of Shadow.  In the region of shadow, you move at a rate of 50 miles per hour, moving normally on the borders of the Plane of Shadow but much more rapidly relative to the Material Plane. Thus, you can use this spell to travel rapidly by stepping onto the Plane of Shadow, moving the desired distance, and then stepping back onto the Material Plane. Each hour that you spend shadow walking you regain hit points as if you had rested for a full day.
+Repelling Blast.MOD	DESC:Repelling Blast  causes any medium or smaller creature struck to be hurled 1d6X5 feet (1d6 squares) directly away from you and knocked prone. If the creature strikes a solid object they stop prematurely and take 1d6 points of damage per 10' hurled and still knocked prone.  Movement from the blast does not provoke attacks of opportunity.
+Retributive Invisibility.MOD	DESC:You can use greater invisibility but if it is dispelled a shock wave releases from your body in a 20' radius burst dealing 4d6 points of sonic damage to all creatures and stuns them for one round. Fort save halves the damage and negates the stunning effect.
+See the Unseen.MOD	DESC:You can see any objects or beings that are invisible within your range of vision, as well as any that are ethereal, as if they were normally visible. You also gain the ability to see up to 60 ft. in total darkness.
+Sickening Blast.MOD	DESC:Creatures struck by sickening blast become sickened.  A sickened creature struck by a second sickening blast is not affected by the sickening aspect of the blast but still takes damage normally.
+Spiderwalk.MOD	DESC:You can climb and travel on vertical surfaces or even traverse ceilings as well as a spider does. The affected creature must have its hands free to climb in this manner. You gain a climb speed of 20 feet; furthermore, it need not make Climb checks to traverse a vertical or horizontal surface (even upside down). You are unaffected by mundane or magical webs.
+Stony Grasp (Invocation).MOD	DESC:You can cause an arm made of stone to appear from any natural surface to grapple your foes.  Treat as Medium creature with BAB +(CASTERLEVEL) and STR (floor(CASTERLEVEL/3)*2+14) the arm cannot move but can make one grapple attempt per round at any creature in it's or adjacent square. Each round it successfully pins a target it deals 1d6+STR lethal damage.  It has AC 18, hardness 8, (CASTERLEVEL*4) HP.
+Summon Swarm (Invocation).MOD	DESC:You summon a swarm of bats, rats, or spiders (your choice), which attacks all other creatures within its area.
+Tenacious Plague.MOD	DESC:You summon an insect plague but add Charisma modifier to Fort save to resist the distraction, attacks by the swarm are treated as magic weapons.
+Utterdark Blast.MOD	DESC:Utterdark Blast deals negative energy damage and creatures struck gain two negative levels, which fade after 1 hour
+Vitriolic Blast.MOD	DESC:Vitriolic Blast deals acid damage and 2d6 additional points of acid damage per round after the initial strike for the indicated duration.  This damage is not subject to spell resistance.
+Voidsense.MOD	DESC:You can sharpen your hearing and sight, gaining blindsense out to 30 feet
+Voracious Dispelling.MOD	DESC:Cancels magical spells and effects.  Any creature with an active spell effect that is dispelled takes 1 point of damage per level of the spell effect.
+Walk Unseen.MOD	DESC:You become invisible, vanishing from sight, even from darkvision. If you are carrying gear, that vanishes, too.
+Wall of Gloom (Invocation).MOD	DESC:Shadow barrier obscures vision and deters passage. Creatures in square adjacent to the wall have concealment against attacks from the other side, creatures more than 1 square away have total concealment.  Creatures with 6 or fewer HD must halt at its edge, ending its move action (though it can attempt to move through or away with a second move action). Each previous failure to pass the wall imposes a cumulative -1 penalty on its Will save. Wall of gloom counters or dispels any light spell of equal or lower level.
+Wall of Perilous Flame.MOD	DESC:An immobile, blazing curtain of shimmering violet fire springs into existence. One side of the wall, selected by you, sends forth waves of heat, dealing 2d4 points of fire damage to creatures within 10 feet and 1d4 points of fire damage to those past 10 feet but within 20 feet. Half the damage is supernatural power and is therefore not subject to being reduced by resistance to fire.  If a creature is reduced to 0 HP or lower by the wall its remains are completely consumed 1 round later (as if by a destruction spell).
+Warlock's Call.MOD	DESC:You contact a particular creature with which you are familiar and send a short message of twenty-five words or less to the subject. A creature unwilling to reply can attempt a Will save to turn the sending back on you, dealing 1d10 points of damage to you.
+Word of Changing.MOD	DESC:You change the subject into a Small or smaller animal of nor more than 1 HD. 24 hours after being transformed the subject is entitled to a second saving throw (at its original bonus) to resume its normal form.  If failed it remains in the new form permanently.
+Assay Resistance.MOD	DESC:+10 bonus on caster level checks to defeat one creature's spell resistance
+Force Whip.MOD	DESC:Whip of magical force keeps animals at bay and can frighten animals as ranged touch attack
+Imbue Familiar with Spell Ability.MOD	DESC:You transfer spells and casting ability into your familiar
+Spirit Binding (Lesser).MOD	DESC:Traps spirit creature of 8 HD or less until it performs a task
+Spirit Binding (Greater).MOD	DESC:As Spirit Binding (Lesser), but traps up to 24 HD of spirits
+Superior Invisibility.MOD	DESC:Subject is invisible to sight, hearing and scent for 1 hour/level and can attack
+Unluck.MOD	DESC:Target remakes all rolls, use worse result for 1 round/target
+
+###Block: Other modifications
+Acid Splash.MOD	TYPE:Arcane
+Disrupt Undead.MOD	TYPE:Arcane
+Light.MOD	TYPE:Arcane
+Ray of Frost.MOD	TYPE:Arcane
+Accuracy.MOD	TYPE:Arcane
+Burning Hands.MOD	TYPE:Arcane
+Chill Touch.MOD	TYPE:Arcane
+Fist of Stone.MOD	TYPE:Arcane
+Hail of Stone.MOD	TYPE:Arcane
+Magic Missile.MOD	TYPE:Arcane
+Orb of Acid (Lesser).MOD	TYPE:Arcane
+Orb of Cold (Lesser).MOD	TYPE:Arcane
+Orb of Electricity (Lesser).MOD	TYPE:Arcane
+Orb of Fire (Lesser).MOD	TYPE:Arcane
+Orb of Sound (Lesser).MOD	TYPE:Arcane
+Shocking Grasp.MOD	TYPE:Arcane
+True Strike.MOD	TYPE:Arcane
+Blades of Fire.MOD	TYPE:Arcane
+Continual Flame.MOD	TYPE:Arcane
+Fire Trap.MOD	TYPE:Arcane
+Fireburst.MOD	TYPE:Arcane
+Flaming Sphere.MOD	TYPE:Arcane
+Ice Knife.MOD	TYPE:Arcane
+Acid Arrow.MOD	TYPE:Arcane
+Pyrotechnics.MOD	TYPE:Arcane
+Scorching Ray.MOD	TYPE:Arcane
+Whirling Blade.MOD	TYPE:Arcane
+Shatter.MOD	TYPE:Arcane
+Fire Shield.MOD	TYPE:Arcane
+Fireball.MOD	TYPE:Arcane
+Flame Arrow.MOD	TYPE:Arcane
+Gust of Wind.MOD	TYPE:Arcane
+Ice Storm.MOD	TYPE:Arcane
+Lightning Bolt.MOD	TYPE:Arcane
+Poison.MOD	TYPE:Arcane
+Ring of Blades.MOD	TYPE:Arcane
+Sleet Storm.MOD	TYPE:Arcane
+Stinking Cloud.MOD	TYPE:Arcane
+Blast of Flame.MOD	TYPE:Arcane
+Contagion.MOD	TYPE:Arcane
+Black Tentacles.MOD	TYPE:Arcane
+Orb of Acid.MOD	TYPE:Arcane
+Orb of Cold.MOD	TYPE:Arcane
+Orb of Electricity.MOD	TYPE:Arcane
+Orb of Fire.MOD	TYPE:Arcane
+Orb of Force.MOD	TYPE:Arcane
+Orb of Sound.MOD	TYPE:Arcane
+Phantasmal Killer.MOD	TYPE:Arcane
+Shout.MOD	TYPE:Arcane
+Wall of Fire.MOD	TYPE:Arcane
+Arc of Lightning.MOD	TYPE:Arcane
+Cloudkill.MOD	TYPE:Arcane
+Cone of Cold.MOD	TYPE:Arcane
+Fire Shield (Mass).MOD	TYPE:Arcane
+Fireburst (Greater).MOD	TYPE:Arcane
+Flame Strike.MOD	TYPE:Arcane
+Prismatic Ray.MOD	TYPE:Arcane
+Acid Fog.MOD	TYPE:Arcane
+Blade Barrier.MOD	TYPE:Arcane
+Chain Lightning.MOD	TYPE:Arcane
+Circle of Death.MOD	TYPE:Arcane
+Disintegrate.MOD	TYPE:Arcane
+Fire Seeds.MOD	TYPE:Arcane
+Freezing Sphere.MOD	TYPE:Arcane
+Transformation.MOD	TYPE:Arcane
+Delayed Blast Fireball.MOD	TYPE:Arcane
+Earthquake.MOD	TYPE:Arcane
+Finger of Death.MOD	TYPE:Arcane
+Fire Storm.MOD	TYPE:Arcane
+Mage's Sword.MOD	TYPE:Arcane
+Prismatic Spray.MOD	TYPE:Arcane
+Sunbeam.MOD	TYPE:Arcane
+Waves of Exhaustion.MOD	TYPE:Arcane
+Horrid Wilting.MOD	TYPE:Arcane
+Incendiary Cloud.MOD	TYPE:Arcane
+Polar Ray.MOD	TYPE:Arcane
+Prismatic Wall.MOD	TYPE:Arcane
+Scintillating Pattern.MOD	TYPE:Arcane
+Shout (Greater).MOD	TYPE:Arcane
+Sunburst.MOD	TYPE:Arcane
+Elemental Swarm.MOD	TYPE:Arcane
+Implosion.MOD	TYPE:Arcane
+Meteor Swarm.MOD	TYPE:Arcane
+Prismatic Sphere.MOD	TYPE:Arcane
+Wail of the Banshee.MOD	TYPE:Arcane
+Weird.MOD	TYPE:Arcane
+Dancing Lights.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Flare.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Ray of Frost.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Arcane Mark.MOD	TYPE:Arcane
+Daze.MOD	TYPE:Arcane
+Detect Magic.MOD	TYPE:Arcane
+Detect Poison.MOD	TYPE:Arcane
+Disrupt Undead.MOD	TYPE:Arcane
+Ghost Sound.MOD	TYPE:Arcane
+Light.MOD	TYPE:Arcane
+Mage Hand.MOD	TYPE:Arcane
+Mending.MOD	TYPE:Arcane
+Message.MOD	TYPE:Arcane
+Open/Close.MOD	TYPE:Arcane
+Prestidigitation.MOD	TYPE:Arcane
+Read Magic.MOD	TYPE:Arcane
+Resistance.MOD	TYPE:Arcane
+Elemental Burst.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth|WuJenFire|WuJenMetal|WuJenWater|WuJenWood
+Endure Elements.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth|WuJenFire|WuJenMetal|WuJenWater|WuJenWood
+Hail of Stone.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Fiery Eyes.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Melt.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Smoke Ladder.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Iron Scarf.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Magic Weapon.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Animate Water.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Cobra's Breath.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Obscuring Mist.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Animate Wood.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWood
+Backbiter.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWood
+Accuracy.MOD	TYPE:Arcane
+Animate Rope.MOD	TYPE:Arcane
+Charm Person.MOD	TYPE:Arcane
+Comprehend Languages.MOD	TYPE:Arcane
+Detect Chaos.MOD	TYPE:Arcane
+Detect Evil.MOD	TYPE:Arcane
+Detect Good.MOD	TYPE:Arcane
+Detect Law.MOD	TYPE:Arcane
+Disguise Self.MOD	TYPE:Arcane
+Ghost Light.MOD	TYPE:Arcane
+Hold Portal.MOD	TYPE:Arcane
+Hypnotism.MOD	TYPE:Arcane
+Jump.MOD	TYPE:Arcane
+Magic Missile.MOD	TYPE:Arcane
+Protection from Chaos.MOD	TYPE:Arcane
+Protection from Evil.MOD	TYPE:Arcane
+Protection from Good.MOD	TYPE:Arcane
+Protection from Law.MOD	TYPE:Arcane
+Scales of the Lizard.MOD	TYPE:Arcane
+Secret Signs.MOD	TYPE:Arcane
+Shield.MOD	TYPE:Arcane
+Silent Image.MOD	TYPE:Arcane
+Sleep.MOD	TYPE:Arcane
+Summon Monster I.MOD	TYPE:Arcane
+True Strike.MOD	TYPE:Arcane
+Unseen Servant.MOD	TYPE:Arcane
+Ventriloquism.MOD	TYPE:Arcane
+Resist Energy.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth|WuJenFire|WuJenMetal|WuJenWater|WuJenWood
+Bear's Endurance.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Bull's Strength.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Animate Fire.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Cat's Grace.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Fire Shuriken.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Pyrotechnics.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Entangling Scarf.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Protection from Arrows.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Rain of Needles.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Fog Cloud.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Ice Blast.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Ice Knife.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Swim.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Warp Wood.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWood
+Wood Shape.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWood
+Alter Self.MOD	TYPE:Arcane
+Apparition.MOD	TYPE:Arcane
+Arcane Lock.MOD	TYPE:Arcane
+Blur.MOD	TYPE:Arcane
+Chameleon.MOD	TYPE:Arcane
+Detect Thoughts.MOD	TYPE:Arcane
+Force Whip.MOD	TYPE:Arcane
+Hold Person.MOD	TYPE:Arcane
+Hypnotic Pattern.MOD	TYPE:Arcane
+Invisibility.MOD	TYPE:Arcane
+Kiss of the Toad.MOD	TYPE:Arcane
+Knock.MOD	TYPE:Arcane
+Lightning Blade.MOD	TYPE:Arcane
+Locate Object.MOD	TYPE:Arcane
+Minor Image.MOD	TYPE:Arcane
+Misdirection.MOD	TYPE:Arcane
+Protection from Charm.MOD	TYPE:Arcane
+Rope Trick.MOD	TYPE:Arcane
+See Invisibility.MOD	TYPE:Arcane
+Spider Climb.MOD	TYPE:Arcane
+Summon Monster II.MOD	TYPE:Arcane
+Wall of Gloom.MOD	TYPE:Arcane
+Whispering Wind.MOD	TYPE:Arcane
+Protection from Energy.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth|WuJenFire|WuJenMetal|WuJenWater|WuJenWood
+Earthbolt.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Terra Cotta Warrior.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Fire Wings.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Fireball.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Keen Edge.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Magic Weapon (Greater).MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Magnetism.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Gaseous Form.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Steam Breath.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Stinking Cloud.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Water Breathing.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Plant Growth.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWood
+Thornskin.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWood
+Commune with Lesser Spirit.MOD	TYPE:Arcane
+Corpse Candle.MOD	TYPE:Arcane
+Discern Shapechanger.MOD	TYPE:Arcane
+Dispel Magic.MOD	TYPE:Arcane
+Displacement.MOD	TYPE:Arcane
+Haste.MOD	TYPE:Arcane
+Illusory Script.MOD	TYPE:Arcane
+Magic Circle against Chaos.MOD	TYPE:Arcane
+Magic Circle against Evil.MOD	TYPE:Arcane
+Magic Circle against Good.MOD	TYPE:Arcane
+Magic Circle against Law.MOD	TYPE:Arcane
+Major Image.MOD	TYPE:Arcane
+Remove Curse.MOD	TYPE:Arcane
+Suggestion.MOD	TYPE:Arcane
+Summon Monster III.MOD	TYPE:Arcane
+Tongues.MOD	TYPE:Arcane
+Elemental Ward.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth|WuJenFire|WuJenMetal|WuJenWater|WuJenWood
+Scrying.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth|WuJenFire|WuJenMetal|WuJenWater|WuJenWood
+Dimension Door.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Stoneskin.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Fire Shield.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Fire Trap.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Wall of Fire.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Dancing Blade.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Poison Needles.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Rusting Grasp.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Ice Storm.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Solid Fog.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Wall of Ice.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Water to Poison.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Animate Dead.MOD	TYPE:Arcane
+Charm Monster.MOD	TYPE:Arcane
+Confusion.MOD	TYPE:Arcane
+Creeping Darkness.MOD	TYPE:Arcane
+Crushing Despair.MOD	TYPE:Arcane
+Dismissal.MOD	TYPE:Arcane
+Globe of Invulnerability (Lesser).MOD	TYPE:Arcane
+Good Hope.MOD	TYPE:Arcane
+Heart Ripper.MOD	TYPE:Arcane
+Invisibility (Greater).MOD	TYPE:Arcane
+Locate Creature.MOD	TYPE:Arcane
+Minor Creation.MOD	TYPE:Arcane
+Pain.MOD	TYPE:Arcane
+Polymorph.MOD	TYPE:Arcane
+Resist Energy (Mass).MOD	TYPE:Arcane
+Shout.MOD	TYPE:Arcane
+Snake Darts.MOD	TYPE:Arcane
+Spirit Binding (Lesser).MOD	TYPE:Arcane
+Summon Monster IV.MOD	TYPE:Arcane
+Wall of Bones.MOD	TYPE:Arcane
+Stone Shape.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Terra Cotta Lion.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Wall of Stone.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Fire Breath.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Metal Skin.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Cone of Cold.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Wood Rot.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWood
+Aiming at the Target.MOD	TYPE:Arcane
+Animal Growth.MOD	TYPE:Arcane
+Arc of Lightning.MOD	TYPE:Arcane
+Baleful Polymorph.MOD	TYPE:Arcane
+Dominate Person.MOD	TYPE:Arcane
+Dream.MOD	TYPE:Arcane
+Fabricate.MOD	TYPE:Arcane
+Feeblemind.MOD	TYPE:Arcane
+Hold Monster.MOD	TYPE:Arcane
+Major Creation.MOD	TYPE:Arcane
+Nightmare.MOD	TYPE:Arcane
+Passwall.MOD	TYPE:Arcane
+Permanency.MOD	TYPE:Arcane
+Persistent Image.MOD	TYPE:Arcane
+Servant Horde.MOD	TYPE:Arcane
+Spirit Self.MOD	TYPE:Arcane
+Summon Monster V.MOD	TYPE:Arcane
+Summoning Wind.MOD	TYPE:Arcane
+Sword of Deception.MOD	TYPE:Arcane
+Symbol of Pain.MOD	TYPE:Arcane
+Symbol of Sleep.MOD	TYPE:Arcane
+Telekinesis.MOD	TYPE:Arcane
+Teleport.MOD	TYPE:Arcane
+Vitriolic Sphere.MOD	TYPE:Arcane
+Wall of Force.MOD	TYPE:Arcane
+Flesh to Stone.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Move Earth.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Stone to Flesh.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Fire Seeds.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Spirit Needle.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Wall of Iron.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Control Water.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Ironwood.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWood
+Repel Wood.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWood
+Control Weather.MOD	TYPE:Arcane
+Dispel Magic (Greater).MOD	TYPE:Arcane
+Geas/Quest.MOD	TYPE:Arcane
+Globe of Invulnerability.MOD	TYPE:Arcane
+Permanent Image.MOD	TYPE:Arcane
+Programmed Image.MOD	TYPE:Arcane
+Repulsion.MOD	TYPE:Arcane
+Speak with Dead.MOD	TYPE:Arcane
+Spirit Binding.MOD	TYPE:Arcane
+Suggestion (Mass).MOD	TYPE:Arcane
+Summon Monster VI.MOD	TYPE:Arcane
+Symbol of Fear.MOD	TYPE:Arcane
+Symbol of Persuasion.MOD	TYPE:Arcane
+Transfix.MOD	TYPE:Arcane
+True Seeing.MOD	TYPE:Arcane
+Veil.MOD	TYPE:Arcane
+Scrying (Greater).MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth|WuJenFire|WuJenMetal|WuJenWater|WuJenWood
+Statue.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Delayed Blast Fireball.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Decapitating Scarf.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Transmute Metal to Wood.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWood
+Body Outside Body.MOD	TYPE:Arcane
+Commune with Greater Spirit.MOD	TYPE:Arcane
+Disintegrate.MOD	TYPE:Arcane
+Energy Immunity.MOD	TYPE:Arcane
+Ethereal Jaunt.MOD	TYPE:Arcane
+Giant Size.MOD	TYPE:Arcane
+Limited Wish.MOD	TYPE:Arcane
+Power Word Blind.MOD	TYPE:Arcane
+Reanimation.MOD	TYPE:Arcane
+Summon Monster VII.MOD	TYPE:Arcane
+Sword of Darkness.MOD	TYPE:Arcane
+Symbol of Stunning.MOD	TYPE:Arcane
+Symbol of Weakness.MOD	TYPE:Arcane
+Teleport (Greater).MOD	TYPE:Arcane
+Teleport Object.MOD	TYPE:Arcane
+Withering Palm.MOD	TYPE:Arcane
+Earthquake.MOD	TYPE:Arcane	DESCRIPTOR:WuJenEarth
+Incendiary Cloud.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Repel Metal or Stone.MOD	TYPE:Arcane	DESCRIPTOR:WuJenMetal
+Cloud Chariot.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Horrid Wilting.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWater
+Control Plants.MOD	TYPE:Arcane	DESCRIPTOR:WuJenWood
+Antipathy.MOD	TYPE:Arcane
+Finding the Center.MOD	TYPE:Arcane
+Mind Blank.MOD	TYPE:Arcane
+Minute Form.MOD	TYPE:Arcane
+Polymorph Any Object.MOD	TYPE:Arcane
+Power Word Stun.MOD	TYPE:Arcane
+Spirit Binding (Greater).MOD	TYPE:Arcane
+Summon Monster VIII.MOD	TYPE:Arcane
+Symbol of Death.MOD	TYPE:Arcane
+Symbol of Insanity.MOD	TYPE:Arcane
+Sympathy.MOD	TYPE:Arcane
+Whirlwind.MOD	TYPE:Arcane
+Internal Fire.MOD	TYPE:Arcane	DESCRIPTOR:WuJenFire
+Absorption.MOD	TYPE:Arcane
+Astral Projection.MOD	TYPE:Arcane
+Dominate Monster.MOD	TYPE:Arcane
+Etherealness.MOD	TYPE:Arcane
+Freedom.MOD	TYPE:Arcane
+Gate.MOD	TYPE:Arcane
+Imprisonment.MOD	TYPE:Arcane
+Power Word Kill.MOD	TYPE:Arcane
+Shapechange.MOD	TYPE:Arcane
+Summon Elemental Monolith.MOD	TYPE:Arcane
+Summon Monster IX.MOD	TYPE:Arcane
+Teleportation Circle.MOD	TYPE:Arcane
+Time Stop.MOD	TYPE:Arcane
+Transmute Rock to Lava.MOD	TYPE:Arcane
+Wish.MOD	TYPE:Arcane
+Mage Armor (Greater).MOD	TEMPBONUS:ANYPC|COMBAT|AC|6|TYPE=Armor

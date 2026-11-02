@@ -1,0 +1,30 @@
+# Class levels and domains of the spells in ph_spells_srd.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Clenched Fist.MOD	CLASSES:Sorcerer,Wizard=8	DOMAINS:Strength=8
+Crushing Hand.MOD	CLASSES:Sorcerer,Wizard=9	DOMAINS:Strength=9
+Forceful Hand.MOD	CLASSES:Sorcerer,Wizard=6
+Grasping Hand.MOD	CLASSES:Sorcerer,Wizard=7	DOMAINS:Strength=7
+Interposing Hand.MOD	CLASSES:Sorcerer,Wizard=5
+Instant Summons.MOD	CLASSES:Sorcerer,Wizard=7
+Black Tentacles.MOD	CLASSES:Sorcerer,Wizard=4
+Secret Chest.MOD	CLASSES:Sorcerer,Wizard=5
+Secure Shelter.MOD	CLASSES:Bard,Sorcerer,Wizard=4
+Tiny Hut.MOD	CLASSES:Bard,Sorcerer,Wizard=3
+Trap.MOD	CLASSES:Sorcerer,Wizard=2
+Acid Arrow.MOD	CLASSES:Sorcerer,Wizard=2
+Mage's Disjunction.MOD	CLASSES:Sorcerer,Wizard=9	DOMAINS:Magic=9
+Mage's Faithful Hound.MOD	CLASSES:Sorcerer,Wizard=5
+Mage's Lucubration.MOD	CLASSES:Wizard=6
+Mage's Magnificent Mansion.MOD	CLASSES:Sorcerer,Wizard=7
+Mage's Private Sanctum.MOD	CLASSES:Sorcerer,Wizard=5
+Mage's Sword.MOD	CLASSES:Sorcerer,Wizard=7
+Magic Aura.MOD	CLASSES:Bard,Sorcerer,Wizard=1	DOMAINS:Magic=1
+Freezing Sphere.MOD	CLASSES:Sorcerer,Wizard=6
+Resilient Sphere.MOD	CLASSES:Sorcerer,Wizard=4
+Telekinetic Sphere.MOD	CLASSES:Sorcerer,Wizard=8
+Irresistible Dance.MOD	CLASSES:Bard=6|Sorcerer,Wizard=8
+Mnemonic Enhancer.MOD	CLASSES:Wizard=4
+Telepathic Bond.MOD	CLASSES:Sorcerer,Wizard=5
+Hideous Laughter.MOD	CLASSES:Bard=1|Sorcerer,Wizard=2
+Floating Disk.MOD	CLASSES:Sorcerer,Wizard=1
+Transformation.MOD	CLASSES:Sorcerer,Wizard=6

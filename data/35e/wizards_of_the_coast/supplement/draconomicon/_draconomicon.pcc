@@ -1,0 +1,61 @@
+# CVS $Revision$ $Author$ -- Thu Oct 10 15:48:27 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+CAMPAIGN:Draconomicon
+KEY:Draconomicon
+GAMEMODE:35e|Bahamut35e
+TYPE:Wizards of the Coast.Supplement
+STATUS:ALPHA
+
+PRECAMPAIGN:1,INCLUDESBOOKTYPE=Core35e
+PRECAMPAIGN:1,INCLUDES=Monster Manual v.3.5
+PRECAMPAIGN:2,INCLUDES=Spell Compendium,INCLUDES=Complete Arcane
+GENRE:Fantasy
+BOOKTYPE:Sourcebook
+SETTING:Dungeons & Dragons
+PUBNAMELONG:Wizards of the Coast
+PUBNAMESHORT:WotC
+PUBNAMEWEB:http://www.wizards.com/default.asp?x=dnd
+SOURCELONG:Draconomicon
+SOURCESHORT:Dr
+SOURCEDATE:2004-11
+RANK:200411
+ISOGL:NO
+COPYRIGHT:Wizards of the Coast
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../../_artwork/cover_35e_wotc_dr.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../../_artwork/logo_wotc.png
+
+INFOTEXT:Draconomicon Sourcebook - Requires Work
+
+###Block: Draconomicon files
+ABILITY:dr_abilities.lst
+ABILITYCATEGORY:dr_abilitycategories.lst
+CLASS:dr_classes.lst
+COMPANIONMOD:dr_companionmods.lst
+DEITY:dr_deities.lst
+DOMAIN:dr_domains.lst
+EQUIPMENT:dr_equip.lst
+EQUIPMOD:dr_equipmods.lst
+ABILITY:dr_feats.lst
+RACE:dr_races.lst
+SPELL:dr_spells.lst|(EXCLUDE:Animate Breath|Aura of Terror|Blinding Breath|Breath Flare|Breath Weapon Admixture|Breath Weapon Substitution|Dispelling Breath|Enervating Breath|Ethereal Breath|Hiss of Sleep|Imperious Glare|Maddening Whispers|Mesmerizing Glare|Razorfangs|Rebuking Breath|Scintillating Scales|Sharptooth|Stunning Breath|Stunning Breath (Greater)|Wingbind|Wings of Air|Wings of Air (Greater)|Antidragon Aura|Antimagic Ray|Aura of Evasion|Cheat|Contingent Energy Resistance|Death Dragon|Draconic Might|Dragon Ally|Dragon Ally (Greater)|Dragon Ally (Lesser)|Dragonsight|Dragonskin|Earthbind|Energy Immunity|Entice Gift|Fell the Greatest Foe|Find the Gap|Flight of the Dragon|Hide from Dragons|Miser's Envy|Phantasmal Thief|Scale Weakening|Shield of Warding|Suppress Breath Weapon|Voice of the Dragon|Vulnerability)|PRECAMPAIGN:1,INCLUDES=Spell Compendium
+SPELL:dr_spells.lst|!PRECAMPAIGN:1,INCLUDES=Spell Compendium
+SPELL:dr_spells_class.lst
+TEMPLATE:dr_templates.lst
+
+
+FORWARDREF:SKILL|Knowledge (Underdark)
+# Dragon (Underdark) uses this skill
+# TODO: Move dragons to new dragon selection system
+
+INFOTEXT:Supports 6.4.1
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:

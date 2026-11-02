@@ -1,0 +1,63 @@
+# CVS $Revision$ $Author$ -- Thu Aug 14 01:14:25 2014 -- reformated by prettylst.pl v1.51 (build 24365)
+CAMPAIGN:Arms and Equipment Guide
+
+PRECAMPAIGN:1,INCLUDESBOOKTYPE=Core35e
+GAMEMODE:35e|Bahamut35e
+GENRE:Fantasy
+BOOKTYPE:Accessory
+SETTING:Dungeons & Dragons
+TYPE:Wizards of the Coast.Supplement.Supplement
+STATUS:BETA
+PUBNAMELONG:Wizards of the Coast
+PUBNAMESHORT:WotC
+PUBNAMEWEB:www.wizards.com
+SOURCELONG:Arms and Equipment Guide
+SOURCESHORT:AE
+SOURCEDATE:2003-03
+RANK:200303
+SOURCEWEB:www.wizards.com
+ISOGL:NO
+ISLICENSED:NO
+COPYRIGHT:Wizards of the Coast
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../../_artwork/cover_35e_wotc_ae.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../../_artwork/logo_wotc.png
+
+ABILITY:ae_abilities.lst
+#ABILITYCATEGORY:ae_abilitycategories.lst
+#CLASS:ae_classes.lst
+EQUIPMENT:ae_equip.lst
+EQUIPMENT:ae_equip_dup1.lst|!PRECAMPAIGN:1,INCLUDES=Complete Warrior,INCLUDES=Forgotten Realms Campaign Setting (3.5)
+EQUIPMENT:ae_equip_dup2.lst|!PRECAMPAIGN:1,INCLUDES=Dragon Magazine Compendium
+EQUIPMENT:ae_equip_dup3.lst|!PRECAMPAIGN:1,INCLUDES=Dungeonscape
+EQUIPMENT:ae_equip_dup4.lst|!PRECAMPAIGN:1,INCLUDES=Forgotten Realms Campaign Setting (3.5)
+EQUIPMENT:ae_equip_dup5.lst|!PRECAMPAIGN:1,INCLUDES=Races of Faerun (35e)
+EQUIPMENT:ae_equip_dup6.lst|!PRECAMPAIGN:1,INCLUDES=Races of Stone
+EQUIPMENT:ae_equip_dup7.lst|!PRECAMPAIGN:1,INCLUDES=Races of the Wild
+EQUIPMOD:ae_equipmods.lst
+EQUIPMOD:ae_equipmods_dup1.lst|!PRECAMPAIGN:1,INCLUDES=Libris Mortis
+EQUIPMOD:ae_equipmods_dup2.lst|!PRECAMPAIGN:1,INCLUDES=Magic Item Compendium
+#ABILITY:ae_feats.lst
+SKILL:ae_skills.lst
+#SPELL:ae_spells.lst
+#RACE:ae_races.lst
+ARMORPROF:ae_profs_armor.lst
+SHIELDPROF:ae_profs_shield.lst
+WEAPONPROF:ae_profs_weapon.lst
+WEAPONPROF:ae_profs_weapon_dup1.lst|!PRECAMPAIGN:1,INCLUDES=Dragon Magazine Compendium
+WEAPONPROF:ae_profs_weapon_dup2.lst|!PRECAMPAIGN:1,INCLUDES=Races of Faerun (35e)
+WEAPONPROF:ae_profs_weapon_dup3.lst|!PRECAMPAIGN:1,INCLUDES=Races of Stone
+WEAPONPROF:ae_profs_weapon_dup4.lst|!PRECAMPAIGN:1,INCLUDES=Races of the Wild
+
+INFOTEXT:3e Arms and Equipment Guide converted for 3.5 (D&D v.3.5 Accessory Update terms); objects reprinted in 3.5 books load only when those books are not loaded.
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:

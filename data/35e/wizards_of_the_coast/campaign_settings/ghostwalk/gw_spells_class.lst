@@ -1,0 +1,44 @@
+# Class levels and domains of the spells in gw_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Anti-Ectoplasm Shell.MOD	CLASSES:Sorcerer,Wizard=6
+Black Lungs.MOD	CLASSES:Cleric=2
+Blessing of the Snake Mother.MOD	CLASSES:Cleric=3
+Bonerattle.MOD	CLASSES:Bard,Bone Collector,Sorcerer,Wizard=1
+Bottomless Hate.MOD	CLASSES:Ranger=2
+Charm Person or Ghost.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Contingent Spell Lock.MOD	CLASSES:Bard,Cleric,Sorcerer,Wizard=6	DOMAINS:Ghost=5
+Create Ectoplasm.MOD	CLASSES:Cleric,Sorcerer,Wizard=1
+Death Lock.MOD	CLASSES:Cleric=3|Sorcerer,Wizard=4
+Delay Manifestation.MOD	CLASSES:Cleric=2|Sorcerer,Wizard=3
+Detect Ghost.MOD	CLASSES:Bard,Cleric,Druid,Sorcerer,Wizard=0
+Dispel Possession.MOD	CLASSES:Bard=4|Cleric,Sorcerer,Wizard=5
+Disrupt Ectoplasm.MOD	CLASSES:Cleric,Sorcerer,Wizard=0
+Dominate Person or Ghost.MOD	CLASSES:Bard=5|Sorcerer,Wizard=6
+Ecotplasmic Decay.MOD	CLASSES:Sorcerer,Wizard=3
+Ectoplasmic Web.MOD	CLASSES:Sorcerer,Wizard=3
+Ethereal Alarm.MOD	CLASSES:Bard,Ranger,Sorcerer,Wizard=2
+Forced Incorporeality.MOD	CLASSES:Cleric,Sorcerer,Wizard=3
+Forced Manifestation.MOD	CLASSES:Bone Collector,Cleric,Sorcerer,Wizard=3
+Ghost Bane Weapon.MOD	CLASSES:Cleric,Sorcerer,Wizard=4
+Ghost Companion.MOD	CLASSES:Druid,Paladin,Ranger=2|Sorcerer,Wizard=3
+Ghost Lock.MOD	CLASSES:Cleric=2|Sorcerer,Wizard=4
+Ghost Venom.MOD	CLASSES:Druid,Ranger=3
+Glyph of Turning.MOD	CLASSES:Cleric=3
+Hail of Ectoplasm.MOD	CLASSES:Sorcerer,Wizard=2
+Hold Person or Ghost.MOD	CLASSES:Bard,Cleric=3|Sorcerer,Wizard=4	DOMAINS:Ghost=2
+I Smell Your Fear.MOD	CLASSES:Ranger=4
+Incorporeal Disharmonics.MOD	CLASSES:Bard=2
+Irresistible Force.MOD	CLASSES:Paladin=4
+Painless Death.MOD	CLASSES:Cleric=1
+Persuade to Manifest.MOD	CLASSES:Bard=2|Sorcerer,Wizard=3
+Pleasant Visage.MOD	CLASSES:Bard,Cleric,Sorcerer,Wizard=1
+Preserve Ectoplasm.MOD	CLASSES:Sorcerer,Wizard=0
+Proper State.MOD	CLASSES:Cleric=4	DOMAINS:Ghost=4
+Protection from Possession.MOD	CLASSES:Bard,Bone Collector,Cleric,Paladin,Sorcerer,Wizard=1	DOMAINS:Ghost=1
+Raise Ghost.MOD	CLASSES:Cleric=4
+Repel Ectoplasm.MOD	CLASSES:Sorcerer,Wizard=6	DOMAINS:Ghost=7
+Sherem Transformation.MOD	CLASSES:Sorcerer,Wizard=6
+Song of the Calling.MOD	CLASSES:Bard=3
+Spittle Spray.MOD	CLASSES:Cleric=1
+Unmovable Object.MOD	CLASSES:Paladin=4
+Cure Light Wounds.MOD	CLASSES:Bone Collector=1

@@ -1,0 +1,63 @@
+# CVS $Revision: $ $Author: $ -- Sun Aug 17 15:41:15 2014 -- reformated by prettylst.pl v1.51 (build 24906)
+
+# Spell Name			Classes of caster						School			Sub-School			Descriptor					Components			Casting Time			Range			Target Area or Effect											Duration										Save Info							Spell Resistance				Description
+
+###Block: Spells
+Animate Instrument	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Instrument touched	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No
+Aquatic Escape	TYPE:Divine	SCHOOL:Transmutation	SUBSCHOOL:Polymorph	COMPS:V, S	CASTTIME:1 swift action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds [D]
+Armor Lock	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature wearing armor	DURATION:(CASTERLEVEL) rounds [D]	SAVEINFO:Fortitude negates	SPELLRES:Yes
+Assassin's Darkness	TYPE:Arcane	SCHOOL:Evocation	SUBSCHOOL:Darkness	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:40-ft.-radius spherical emanation	DURATION:(CASTERLEVEL) minutes [D]	SAVEINFO:No	SPELLRES:No
+Blockade	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M	CASTTIME:1 swift action	RANGE:0 ft.	TARGETAREA:5-ft. cube of wood	DURATION:3 rounds	SAVEINFO:No	SPELLRES:None
+Catapult	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One held object, weighing up to 5 lb.	DURATION:Instantaneous	SAVEINFO:No	SPELLRES:None
+Create Fetch	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:A duplicate of yourself	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:No
+Disobedience	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature	DURATION:(CASTERLEVEL) hours [D]	SAVEINFO:Will negates (harmless); see text	SPELLRES:Yes
+Enlarge Weapon	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One touched melee weapon	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates (harmless, object)	SPELLRES:Yes (harmless, object)
+Evacuation Rune	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Teleportation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One invisible rune	DURATION:24 hours	SAVEINFO:None (harmless)	SPELLRES:No (harmless)
+Fatal Flame	TYPE:Arcane	SCHOOL:Evocation	SUBSCHOOL:Fire	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One living creature with 1 or more HD	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates, Reflex half; see text	SPELLRES:Yes
+Grasping Wall	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Hands sprout from a wall in an area of up to four 5-ft. squares (S)	DURATION:Concentration (max. (CASTERLEVEL) rounds) + 3 rounds	SAVEINFO:Reflex negates	SPELLRES:No
+Harmonic Void	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:60-ft.-radius spherical emanation, centered on you	DURATION:Concentration, up to (CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No
+Healer's Vision	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds [D]
+Lucky Streak	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature	DURATION:(CASTERLEVEL) minutes [D]	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)
+Mage Burr	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature wearing armor or using a shield	DURATION:(CASTERLEVEL) rounds [D]	SAVEINFO:Fortitude negates	SPELLRES:Yes
+Manifestation of the Deity	TYPE:Divine	SCHOOL:Illusion	SUBSCHOOL:Pattern	DESCRIPTOR:Fear|Mind-Affecting	COMPS:V, S, DF	CASTTIME:1 swift action	RANGE:Personal	TARGETAREA:An image of the deity you worship	DURATION:(CASTERLEVEL/3) rounds [D]	SAVEINFO:Will negates	SPELLRES:No
+Mimicry	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes
+Opportune Dodge	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S	CASTTIME:1 swift action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)
+Scry Location	TYPE:Arcane.Divine	SCHOOL:Divination	SUBSCHOOL:Scrying	COMPS:V, S, M/DF, F	CASTTIME:1 hour	RANGE:See text	TARGETAREA:Magical sensor	DURATION:(CASTERLEVEL) minutes	SAVEINFO:No	SPELLRES:No
+Siphon	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 minute	RANGE:Touch	TARGETAREA:One touched wand or staff	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No
+Smoke Stairs	TYPE:Arcane.Divine	SCHOOL:Transmutation	DESCRIPTOR:Air	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes
+Spell Theft	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No
+Spore Field	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:10-ft.-radius spread	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Fortitude partial; see text	SPELLRES:No
+Spymaster's Coin	TYPE:Arcane	SCHOOL:Divination	SUBSCHOOL:Scrying	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Magical sensor	DURATION:(CASTERLEVEL) hours or until triggered, then (CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No
+Wall of Vermin	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Wall of pests whose area is up to four 5-ft. squares (S)	DURATION:Concentration + (CASTERLEVEL) rounds	SAVEINFO:Fortitude partial; see text	SPELLRES:Yes
+Wand Modulation	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 swift action	RANGE:Touch	TARGETAREA:One touched wand	DURATION:(CASTERLEVEL) minutes [D]	SAVEINFO:Yes (harmless,object)	SPELLRES:Yes (harmless,object)
+Winged Watcher	TYPE:Divine	SCHOOL:Transmutation	SUBSCHOOL:Polymorph	COMPS:V, S	CASTTIME:1 swift action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds [D]
+
+###Block: Descriptions
+Animate Instrument.MOD	DESC:Your instrument animates and plays by itself.
+Aquatic Escape.MOD	DESC:Take the form of a fish.
+Armor Lock.MOD	DESC:Target's armor becomes restrictive, slowing movement to 10 ft.
+Assassin's Darkness.MOD	DESC:Globe of pure darkness blocks all sight but your own.
+Blockade.MOD	DESC:Fill 5-ft. square with enormous block of wood.
+Catapult.MOD	DESC:Magically propel an object from your hand.
+Create Fetch.MOD	DESC:Craft a temporary duplicate of yourself that follows telepathic orders.
+Disobedience.MOD	DESC:Subject is shielded from mind control.
+Enlarge Weapon.MOD	DESC:Your weapon grows one size category.
+Evacuation Rune.MOD	DESC:Create invisible rune that you can teleport to as swift action.
+Fatal Flame.MOD	DESC:Target's body bursts into flame upon its death.
+Grasping Wall.MOD	DESC:Wall sprouts hands that entangle enemies, help allies climb.
+Harmonic Void.MOD	DESC:Nearby casters must succeed on Concentration check to use verbal-component spells.
+Healer's Vision.MOD	DESC:Gain +5 bonus on Heal checks, and +2 attack and damage on sneak attacks.
+Lucky Streak.MOD	DESC:Target gains +2 luck bonus on rerolls made with luck feats.
+Mage Burr.MOD	DESC:Double arcane spell failure chance for target's armor.
+Manifestation of the Deity.MOD	DESC:Create illusion of your deity, rendering enemies shaken for 1 round.
+Mimicry.MOD	DESC:Perfectly mimic familiar sounds, voices, or accents.
+Opportune Dodge.MOD	DESC:Subject can avoid a single attack of opportunity.
+Scry Location.MOD	DESC:Spy on a distant location.
+Siphon.MOD	DESC:Drain 5 or more charges from wand or staff to replace one or more cast spells.
+Smoke Stairs.MOD	DESC:Walk up a column of smoke as if it were solid.
+Spell Theft.MOD	DESC:Dispel spells on target and gain their benefit for yourself.
+Spore Field.MOD	DESC:Mushrooms grow from ground, slowing movement and sickening living creatures.
+Spymaster's Coin.MOD	DESC:Hide a scrying sensor in a coin or other Tiny object for later activation.
+Wall of Vermin.MOD	DESC:Wall of biting pests provides concealment, attacks anyone passing through.
+Wand Modulation.MOD	DESC:Temporarily change wand to cast another, weaker spell.
+Winged Watcher.MOD	DESC:You take the form of an owl (MM 277) or raven (MM 278), as chosen when you cast the spell.

@@ -1,0 +1,415 @@
+# Class levels and domains of the spells in be_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Affliction.MOD	CLASSES:Cleric,Druid=3|Sorcerer,Wizard=4	DOMAINS:Wrath=3
+Amber Sarcophagus.MOD	CLASSES:Sorcerer,Wizard=7
+Armageddon.MOD	CLASSES:ALL=9
+Aspect of the Deity.MOD	CLASSES:Apostle of Peace,Exalted Arcanist=6	DOMAINS:Herald=7
+Aspect of the Deity (Greater).MOD	CLASSES:Apostle of Peace,Exalted Arcanist=9	DOMAINS:Herald=9
+Axiomatic Creature.MOD	CLASSES:Cleric,Sorcerer,Wizard=8
+Ayailla's Radiant Burst.MOD	CLASSES:ALL=2
+Bastion of Good.MOD	CLASSES:Apostle of Peace,Cleric=7
+Blessed Sight.MOD	CLASSES:Apostle of Peace,Champion of Gwynharwyf,Cleric,Paladin,Slayer of Domiel=3	DOMAINS:Celestial=3
+Blinding Beauty.MOD	CLASSES:Bard,Beloved of Valarian,Druid,Ranger=4	DOMAINS:Fey=4
+Blinding Glory.MOD	CLASSES:Sorcerer,Wizard=9	DOMAINS:Glory=9
+Blood of the Martyr.MOD	CLASSES:Apostle of Peace,Champion of Gwynharwyf,Cleric,Paladin=4
+Brilliant Emanation.MOD	CLASSES:ALL=3
+Call Faithful Servants.MOD	CLASSES:Sorcerer,Wizard=5|Cleric=6	DOMAINS:Celestial=6
+Call Mount.MOD	CLASSES:Paladin=2
+Celestial Aspect.MOD	CLASSES:ALL=3
+Celestial Blood.MOD	CLASSES:Apostle of Peace,Cleric=6	DOMAINS:Pleasure=6
+Celestial Brilliance.MOD	CLASSES:Cleric,Sorcerer,Wizard=4	DOMAINS:Glory=4
+Chaav's Laugh.MOD	CLASSES:Cleric=5	DOMAINS:Joy=5
+Channel Celestial.MOD	CLASSES:ALL=7
+Channel Greater Celestial.MOD	CLASSES:ALL=9
+Constricting Chains.MOD	CLASSES:ALL=7
+Crown of Brilliance.MOD	CLASSES:Cleric=6
+Crown of Flame.MOD	CLASSES:Cleric,Exalted Arcanist=5	DOMAINS:Glory=5
+Cry of Ysgard.MOD	CLASSES:ALL=7
+Curtain of Light.MOD	CLASSES:ALL=5
+Dancing Web.MOD	CLASSES:Sorcerer,Wizard=4|Cleric,Druid=5
+Diamond Spray.MOD	CLASSES:ALL=4
+Distilled Joy.MOD	CLASSES:Sorcerer,Wizard=3	DOMAINS:Joy=3
+Divine Inspiration.MOD	CLASSES:ALL=1
+Dolorous Motes.MOD	CLASSES:Sorcerer,Wizard=3|Bard=4
+Dragon Cloud.MOD	CLASSES:ALL=8
+Ease Pain.MOD	CLASSES:Apostle of Peace,Beloved of Valarian,Cleric=2
+Eladrin Form.MOD	CLASSES:Sorcerer,Wizard=7
+Elation.MOD	CLASSES:Bard,Cleric,Emissary of Barachiel=2|Sorcerer,Wizard=3	DOMAINS:Joy=2
+Emerald Burst.MOD	CLASSES:Sorcerer,Wizard=5
+Empyreal Ecstasy.MOD	CLASSES:Bard=6	DOMAINS:Pleasure=7
+End to Strife.MOD	CLASSES:Apostle of Peace,Cleric=9
+Energetic Healing.MOD	CLASSES:Apostle of Peace,Cleric,Druid=5
+Energize Potion.MOD	CLASSES:Sorcerer,Wizard=2|Cleric,Druid=3	DOMAINS:Wrath=2
+Estanna's Stew.MOD	CLASSES:Cleric,Druid,Paladin=2
+Exalted Fury.MOD	CLASSES:ALL=9
+Exalted Raiment.MOD	CLASSES:ALL=6
+Eyes of the Avoral.MOD	CLASSES:Apostle of Peace,Beloved of Valarian,Cleric,Druid,Ranger,Sorcerer,Wizard=1
+Faerinaal's Hymn.MOD	CLASSES:Bard=2
+Glorious Raiment.MOD	CLASSES:Apostle of Peace=2	DOMAINS:Glory=2
+Greater Status.MOD	CLASSES:Apostle of Peace,Cleric=4	DOMAINS:Community=4
+Hammer of Righteousness.MOD	CLASSES:ALL=3
+Heart's Ease.MOD	CLASSES:Beloved of Valarian,Cleric=3	DOMAINS:Pleasure=3
+Heaven's Trumpet.MOD	CLASSES:Emissary of Barachiel=4|Bard=6|Cleric=7
+Heavenly Lightning.MOD	CLASSES:Exalted Arcanist=5	DOMAINS:Celestial=5
+Heavenly Lightning Storm.MOD	CLASSES:Exalted Arcanist=7	DOMAINS:Celestial=7
+Inquisition.MOD	CLASSES:ALL=5
+Inspired Aim.MOD	CLASSES:Cleric,Ranger=3|Bard=4	DOMAINS:Fey=3
+Lantern Light.MOD	CLASSES:Cleric,Paladin,Sorcerer,Vassal of Bahamut,Wizard=1
+Last Judgment.MOD	CLASSES:Cleric,Sorcerer,Wizard=8	DOMAINS:Wrath=8
+Lastai's Caress.MOD	CLASSES:Cleric=2	DOMAINS:Pleasure=2
+Leonal's Roar.MOD	CLASSES:Druid=8
+Luminous Armor.MOD	CLASSES:ALL=2
+Luminous Armor (Greater).MOD	CLASSES:ALL=4
+Mind Bond.MOD	CLASSES:Paladin=3
+Path of the Exalted.MOD	CLASSES:ALL=3
+Perfect Summons.MOD	CLASSES:Sorcerer,Wizard=4
+Phieran's Resolve.MOD	CLASSES:ALL=3
+Phoenix Fire.MOD	CLASSES:ALL=7
+Quickshift.MOD	CLASSES:Cleric,Sorcerer,Wizard=6
+Radiant Fog.MOD	CLASSES:Sorcerer,Wizard=4
+Radiant Shield.MOD	CLASSES:Sorcerer,Wizard=4	DOMAINS:Wrath=4
+Rain of Black Tulips.MOD	CLASSES:Druid=9
+Rain of Embers.MOD	CLASSES:ALL=7
+Rain of Roses.MOD	CLASSES:Druid=7
+Ray of Hope.MOD	CLASSES:Apostle of Peace,Bard,Cleric,Emissary of Barachiel=1
+Refreshment.MOD	CLASSES:Apostle of Peace,Bard,Cleric,Vassal of Bahamut=3	DOMAINS:Endurance=3
+Remove Addiction.MOD	CLASSES:Beloved of Valarian,Cleric,Druid=2
+Remove Nausea.MOD	CLASSES:Apostle of Peace,Cleric=3
+Restore Soul's Treasure.MOD	CLASSES:ALL=8
+Righteous Glare.MOD	CLASSES:Cleric,Sorcerer,Wizard=7
+Righteous Smite.MOD	CLASSES:Cleric,Exalted Arcanist=7	DOMAINS:Wrath=7
+Sacred Guardian.MOD	CLASSES:Apostle of Peace,Cleric=5
+Sanctify the Wicked.MOD	CLASSES:ALL=9
+Secure Corpse.MOD	CLASSES:Cleric=6
+Shield of the Archons.MOD	CLASSES:Apostle of Peace,Cleric=7
+Sicken Evil.MOD	CLASSES:ALL=5
+Silvered Claws.MOD	CLASSES:Druid,Ranger=1
+Silvered Weapon.MOD	CLASSES:Paladin=1|Ranger=2
+Smite Heretic.MOD	CLASSES:Paladin=3
+Spear of Valarian.MOD	CLASSES:Beloved of Valarian,Ranger=4|Druid=5
+Spread of Contentment.MOD	CLASSES:Cleric=8	DOMAINS:Pleasure=8
+Starmantle.MOD	CLASSES:Sorcerer,Wizard=6	DOMAINS:Joy=7
+Storm of Shards.MOD	CLASSES:ALL=6
+Sublime Revelry.MOD	CLASSES:Cleric=9	DOMAINS:Pleasure=9
+Sunmantle.MOD	CLASSES:ALL=4
+Sword of Conscience.MOD	CLASSES:Champion of Gwynharwyf,Cleric,Exalted Arcanist,Paladin,Slayer of Domiel=4
+Telepathy Block.MOD	CLASSES:Bard,Cleric,Sorcerer,Wizard=5
+Telepathy Tap.MOD	CLASSES:ALL=3
+Tomb of Light.MOD	CLASSES:Cleric,Sorcerer,Wizard=7
+Touch of Adamantine.MOD	CLASSES:Sorcerer,Wizard=5|Cleric,Druid=6
+Twilight Luck.MOD	CLASSES:ALL=1
+Unearthly Beauty.MOD	CLASSES:Druid=8	DOMAINS:Fey=8
+Valiant Steed.MOD	CLASSES:ALL=6
+Vanishing Weapon.MOD	CLASSES:Sorcerer,Wizard=5
+Vengeance Halo.MOD	CLASSES:Cleric=6	DOMAINS:Wrath=6
+Vision of Heaven.MOD	CLASSES:Apostle of Peace,Cleric,Exalted Arcanist,Slayer of Domiel=1	DOMAINS:Celestial,Joy=1
+Wages of Sin.MOD	CLASSES:Sorcerer,Wizard=6
+Warcry.MOD	CLASSES:Champion of Gwynharwyf=2|Bard,Sorcerer,Wizard=3
+Warding Gems.MOD	CLASSES:Cleric=5
+Yoke of Mercy.MOD	CLASSES:Apostle of Peace,Sorcerer,Wizard=2
+Create Water.MOD	CLASSES:Apostle of Peace=0
+Cure Minor Wounds.MOD	CLASSES:Apostle of Peace=0
+Detect Magic.MOD	CLASSES:Apostle of Peace=0
+Detect Poison.MOD	CLASSES:Apostle of Peace=0
+Guidance.MOD	CLASSES:Apostle of Peace=0
+Light.MOD	CLASSES:Apostle of Peace=0
+Mending.MOD	CLASSES:Apostle of Peace=0
+Purify Food and Drink.MOD	CLASSES:Apostle of Peace=0
+Read Magic.MOD	CLASSES:Apostle of Peace=0
+Resistance.MOD	CLASSES:Apostle of Peace=0
+Virtue.MOD	CLASSES:Apostle of Peace=0
+Bless.MOD	CLASSES:Apostle of Peace=1
+Bless Water.MOD	CLASSES:Apostle of Peace=1
+Command.MOD	CLASSES:Apostle of Peace=1
+Comprehend Languages.MOD	CLASSES:Apostle of Peace=1
+Cure Light Wounds.MOD	CLASSES:Apostle of Peace=1
+Detect Evil.MOD	CLASSES:Apostle of Peace=1
+Detect Undead.MOD	CLASSES:Apostle of Peace=1
+Endure Elements.MOD	CLASSES:Apostle of Peace=1
+Entropic Shield.MOD	CLASSES:Apostle of Peace=1
+Eyes of the Avoral.MOD	CLASSES:Apostle of Peace=1
+Hide from Undead.MOD	CLASSES:Apostle of Peace=1
+Obscuring Mist.MOD	CLASSES:Apostle of Peace=1
+Protection from Evil.MOD	CLASSES:Apostle of Peace=1
+Ray of Hope.MOD	CLASSES:Apostle of Peace=1
+Remove Fear.MOD	CLASSES:Apostle of Peace=1
+Sanctuary.MOD	CLASSES:Apostle of Peace=1
+Shield of Faith.MOD	CLASSES:Apostle of Peace=1
+Vision of Heaven.MOD	CLASSES:Apostle of Peace=1
+Aid.MOD	CLASSES:Apostle of Peace=2
+Augury.MOD	CLASSES:Apostle of Peace=2
+Bear's Endurance.MOD	CLASSES:Apostle of Peace=2
+Calm Emotions.MOD	CLASSES:Apostle of Peace=2
+Consecrate.MOD	CLASSES:Apostle of Peace=2
+Cure Moderate Wounds.MOD	CLASSES:Apostle of Peace=2
+Delay Poison.MOD	CLASSES:Apostle of Peace=2
+Eagle's Splendor.MOD	CLASSES:Apostle of Peace=2
+Ease Pain.MOD	CLASSES:Apostle of Peace=2
+Enthrall.MOD	CLASSES:Apostle of Peace=2
+Glorious Raiment.MOD	CLASSES:Apostle of Peace=2
+Restoration (Lesser).MOD	CLASSES:Apostle of Peace=2
+Make Whole.MOD	CLASSES:Apostle of Peace=2
+Owl's Wisdom.MOD	CLASSES:Apostle of Peace=2
+Remove Paralysis.MOD	CLASSES:Apostle of Peace=2
+Resist Energy.MOD	CLASSES:Apostle of Peace=2
+Shield Other.MOD	CLASSES:Apostle of Peace=2
+Silence.MOD	CLASSES:Apostle of Peace=2
+Status.MOD	CLASSES:Apostle of Peace=2
+Yoke of Mercy.MOD	CLASSES:Apostle of Peace=2
+Zone of Truth.MOD	CLASSES:Apostle of Peace=2
+Blessed Sight.MOD	CLASSES:Apostle of Peace=3
+Create Food and Water.MOD	CLASSES:Apostle of Peace=3
+Cure Serious Wounds.MOD	CLASSES:Apostle of Peace=3
+Dispel Magic.MOD	CLASSES:Apostle of Peace=3
+Helping Hand.MOD	CLASSES:Apostle of Peace=3
+Invisibility Purge.MOD	CLASSES:Apostle of Peace=3
+Magic Circle against Evil.MOD	CLASSES:Apostle of Peace=3
+Magic Vestment.MOD	CLASSES:Apostle of Peace=3
+Meld into Stone.MOD	CLASSES:Apostle of Peace=3
+Prayer.MOD	CLASSES:Apostle of Peace=3
+Protection from Energy.MOD	CLASSES:Apostle of Peace=3
+Refreshment.MOD	CLASSES:Apostle of Peace=3
+Remove Blindness/Deafness.MOD	CLASSES:Apostle of Peace=3
+Remove Curse.MOD	CLASSES:Apostle of Peace=3
+Remove Disease.MOD	CLASSES:Apostle of Peace=3
+Remove Nausea.MOD	CLASSES:Apostle of Peace=3
+Water Breathing.MOD	CLASSES:Apostle of Peace=3
+Water Walk.MOD	CLASSES:Apostle of Peace=3
+Wind Wall.MOD	CLASSES:Apostle of Peace=3
+Air Walk.MOD	CLASSES:Apostle of Peace=4
+Blood of the Martyr.MOD	CLASSES:Apostle of Peace=4
+Control Water.MOD	CLASSES:Apostle of Peace=4
+Cure Critical Wounds.MOD	CLASSES:Apostle of Peace=4
+Death Ward.MOD	CLASSES:Apostle of Peace=4
+Discern Lies.MOD	CLASSES:Apostle of Peace=4
+Dismissal.MOD	CLASSES:Apostle of Peace=4
+Divination.MOD	CLASSES:Apostle of Peace=4
+Freedom of Movement.MOD	CLASSES:Apostle of Peace=4
+Good Hope.MOD	CLASSES:Apostle of Peace=4
+Greater Status.MOD	CLASSES:Apostle of Peace=4
+Imbue with Spell Ability.MOD	CLASSES:Apostle of Peace=4
+Aspect of the Deity (Lesser).MOD	CLASSES:Apostle of Peace=4
+Planar Ally (Lesser).MOD	CLASSES:Apostle of Peace=4
+Neutralize Poison.MOD	CLASSES:Apostle of Peace=4
+Remove Fatigue.MOD	CLASSES:Apostle of Peace=4
+Repel Vermin.MOD	CLASSES:Apostle of Peace=4
+Restoration.MOD	CLASSES:Apostle of Peace=4
+Sending.MOD	CLASSES:Apostle of Peace=4
+Spell Immunity.MOD	CLASSES:Apostle of Peace=4
+Sustain.MOD	CLASSES:Apostle of Peace=4
+Tongues.MOD	CLASSES:Apostle of Peace=4
+Atonement.MOD	CLASSES:Apostle of Peace=5
+Break Enchantment.MOD	CLASSES:Apostle of Peace=5
+Commune.MOD	CLASSES:Apostle of Peace=5
+Cure Light Wounds (Mass).MOD	CLASSES:Apostle of Peace=5
+Dispel Evil.MOD	CLASSES:Apostle of Peace=5
+Energetic Healing.MOD	CLASSES:Apostle of Peace=5
+Command (Greater).MOD	CLASSES:Apostle of Peace=5
+Hallow.MOD	CLASSES:Apostle of Peace=5
+Mark of Justice.MOD	CLASSES:Apostle of Peace=5
+Plane Shift.MOD	CLASSES:Apostle of Peace=5
+Raise Dead.MOD	CLASSES:Apostle of Peace=5
+Sacred Guardian.MOD	CLASSES:Apostle of Peace=5
+Scrying.MOD	CLASSES:Apostle of Peace=5
+Spell Resistance.MOD	CLASSES:Apostle of Peace=5
+Symbol of Sleep.MOD	CLASSES:Apostle of Peace=5
+True Seeing.MOD	CLASSES:Apostle of Peace=5
+Wall of Stone.MOD	CLASSES:Apostle of Peace=5
+Antilife Shell.MOD	CLASSES:Apostle of Peace=6
+Aspect of the Deity.MOD	CLASSES:Apostle of Peace=6
+Banishment.MOD	CLASSES:Apostle of Peace=6
+Bear's Endurance (Mass).MOD	CLASSES:Apostle of Peace=6
+Celestial Blood.MOD	CLASSES:Apostle of Peace=6
+Cure Moderate Wounds (Mass).MOD	CLASSES:Apostle of Peace=6
+Eagle's Splendor (Mass).MOD	CLASSES:Apostle of Peace=6
+Forbiddance.MOD	CLASSES:Apostle of Peace=6
+Geas/Quest.MOD	CLASSES:Apostle of Peace=6
+Dispel Magic (Greater).MOD	CLASSES:Apostle of Peace=6
+Heal.MOD	CLASSES:Apostle of Peace=6
+Heroes' Feast.MOD	CLASSES:Apostle of Peace=6
+Owl's Wisdom (Mass).MOD	CLASSES:Apostle of Peace=6
+Planar Ally.MOD	CLASSES:Apostle of Peace=6
+Symbol of Persuasion.MOD	CLASSES:Apostle of Peace=6
+Wind Walk.MOD	CLASSES:Apostle of Peace=6
+Word of Recall.MOD	CLASSES:Apostle of Peace=6
+Bastion of Good.MOD	CLASSES:Apostle of Peace=7
+Control Weather.MOD	CLASSES:Apostle of Peace=7
+Ethereal Jaunt.MOD	CLASSES:Apostle of Peace=7
+Restoration (Greater).MOD	CLASSES:Apostle of Peace=7
+Scrying (Greater).MOD	CLASSES:Apostle of Peace=7
+Cure Serious Wounds (Mass).MOD	CLASSES:Apostle of Peace=7
+Refuge.MOD	CLASSES:Apostle of Peace=7
+Regenerate.MOD	CLASSES:Apostle of Peace=7
+Repulsion.MOD	CLASSES:Apostle of Peace=7
+Resurrection.MOD	CLASSES:Apostle of Peace=7
+Shield of the Archons.MOD	CLASSES:Apostle of Peace=7
+Antimagic Field.MOD	CLASSES:Apostle of Peace=8
+Discern Location.MOD	CLASSES:Apostle of Peace=8
+Planar Ally (Greater).MOD	CLASSES:Apostle of Peace=8
+Holy Aura.MOD	CLASSES:Apostle of Peace=8
+Cure Critical Wounds (Mass).MOD	CLASSES:Apostle of Peace=8
+Astral Projection.MOD	CLASSES:Apostle of Peace=9
+End to Strife.MOD	CLASSES:Apostle of Peace=9
+Etherealness.MOD	CLASSES:Apostle of Peace=9
+Gate.MOD	CLASSES:Apostle of Peace=9
+Aspect of the Deity (Greater).MOD	CLASSES:Apostle of Peace=9
+Heal (Mass).MOD	CLASSES:Apostle of Peace=9
+Miracle.MOD	CLASSES:Apostle of Peace=9
+True Resurrection.MOD	CLASSES:Apostle of Peace=9
+Calm Animals.MOD	CLASSES:Beloved of Valarian=1
+Charm Animal.MOD	CLASSES:Beloved of Valarian=1
+Cure Light Wounds.MOD	CLASSES:Beloved of Valarian=1
+Delay Poison.MOD	CLASSES:Beloved of Valarian=1
+Detect Poison.MOD	CLASSES:Beloved of Valarian=1
+Detect Snares and Pits.MOD	CLASSES:Beloved of Valarian=1
+Entangle.MOD	CLASSES:Beloved of Valarian=1
+Eyes of the Avoral.MOD	CLASSES:Beloved of Valarian=1
+Longstrider.MOD	CLASSES:Beloved of Valarian=1
+Pass without Trace.MOD	CLASSES:Beloved of Valarian=1
+Speak with Animals.MOD	CLASSES:Beloved of Valarian=1
+Summon Nature's Ally I.MOD	CLASSES:Beloved of Valarian=1
+Barkskin.MOD	CLASSES:Beloved of Valarian=2
+Cure Moderate Wounds.MOD	CLASSES:Beloved of Valarian=2
+Eagle's Splendor.MOD	CLASSES:Beloved of Valarian=2
+Ease Pain.MOD	CLASSES:Beloved of Valarian=2
+Hold Animal.MOD	CLASSES:Beloved of Valarian=2
+Restoration (Lesser).MOD	CLASSES:Beloved of Valarian=2
+Owl's Wisdom.MOD	CLASSES:Beloved of Valarian=2
+Remove Addiction.MOD	CLASSES:Beloved of Valarian=2
+Shield Other.MOD	CLASSES:Beloved of Valarian=2
+Summon Nature's Ally II.MOD	CLASSES:Beloved of Valarian=2
+Zone of Truth.MOD	CLASSES:Beloved of Valarian=2
+Cure Serious Wounds.MOD	CLASSES:Beloved of Valarian=3
+Darkvision.MOD	CLASSES:Beloved of Valarian=3
+Discern Lies.MOD	CLASSES:Beloved of Valarian=3
+Heart's Ease.MOD	CLASSES:Beloved of Valarian=3
+Neutralize Poison.MOD	CLASSES:Beloved of Valarian=3
+Remove Disease.MOD	CLASSES:Beloved of Valarian=3
+Summon Nature's Ally III.MOD	CLASSES:Beloved of Valarian=3
+Water Walk.MOD	CLASSES:Beloved of Valarian=3
+Blinding Beauty.MOD	CLASSES:Beloved of Valarian=4
+Commune with Nature.MOD	CLASSES:Beloved of Valarian=4
+Cure Critical Wounds.MOD	CLASSES:Beloved of Valarian=4
+Dispel Evil.MOD	CLASSES:Beloved of Valarian=4
+Freedom of Movement.MOD	CLASSES:Beloved of Valarian=4
+Nondetection.MOD	CLASSES:Beloved of Valarian=4
+Restoration.MOD	CLASSES:Beloved of Valarian=4
+Spear of Valarian.MOD	CLASSES:Beloved of Valarian=4
+Summon Nature's Ally IV.MOD	CLASSES:Beloved of Valarian=4
+Bless.MOD	CLASSES:Champion of Gwynharwyf=1
+Bless Weapon.MOD	CLASSES:Champion of Gwynharwyf=1
+Cure Light Wounds.MOD	CLASSES:Champion of Gwynharwyf=1
+Detect Poison.MOD	CLASSES:Champion of Gwynharwyf=1
+Detect Undead.MOD	CLASSES:Champion of Gwynharwyf=1
+Divine Favor.MOD	CLASSES:Champion of Gwynharwyf=1
+Divine Sacrifice.MOD	CLASSES:Champion of Gwynharwyf=1
+Endure Elements.MOD	CLASSES:Champion of Gwynharwyf=1
+Restoration (Lesser).MOD	CLASSES:Champion of Gwynharwyf=1
+Magic Weapon.MOD	CLASSES:Champion of Gwynharwyf=1
+Protection from Evil.MOD	CLASSES:Champion of Gwynharwyf=1
+Read Magic.MOD	CLASSES:Champion of Gwynharwyf=1
+Remove Fear.MOD	CLASSES:Champion of Gwynharwyf=1
+Resistance.MOD	CLASSES:Champion of Gwynharwyf=1
+Virtue.MOD	CLASSES:Champion of Gwynharwyf=1
+Bull's Strength.MOD	CLASSES:Champion of Gwynharwyf=2
+Delay Poison.MOD	CLASSES:Champion of Gwynharwyf=2
+Eagle's Splendor.MOD	CLASSES:Champion of Gwynharwyf=2
+Owl's Wisdom.MOD	CLASSES:Champion of Gwynharwyf=2
+Remove Paralysis.MOD	CLASSES:Champion of Gwynharwyf=2
+Resist Energy.MOD	CLASSES:Champion of Gwynharwyf=2
+Shield Other.MOD	CLASSES:Champion of Gwynharwyf=2
+Warcry.MOD	CLASSES:Champion of Gwynharwyf=2
+Blessed Sight.MOD	CLASSES:Champion of Gwynharwyf=3
+Cure Moderate Wounds.MOD	CLASSES:Champion of Gwynharwyf=3
+Daylight.MOD	CLASSES:Champion of Gwynharwyf=3
+Discern Lies.MOD	CLASSES:Champion of Gwynharwyf=3
+Dispel Magic.MOD	CLASSES:Champion of Gwynharwyf=3
+Magic Circle against Evil.MOD	CLASSES:Champion of Gwynharwyf=3
+Prayer.MOD	CLASSES:Champion of Gwynharwyf=3
+Remove Blindness/Deafness.MOD	CLASSES:Champion of Gwynharwyf=3
+Remove Curse.MOD	CLASSES:Champion of Gwynharwyf=3
+Blood of the Martyr.MOD	CLASSES:Champion of Gwynharwyf=4
+Break Enchantment.MOD	CLASSES:Champion of Gwynharwyf=4
+Cure Serious Wounds.MOD	CLASSES:Champion of Gwynharwyf=4
+Death Ward.MOD	CLASSES:Champion of Gwynharwyf=4
+Dispel Evil.MOD	CLASSES:Champion of Gwynharwyf=4
+Freedom of Movement.MOD	CLASSES:Champion of Gwynharwyf=4
+Glory of the Martyr.MOD	CLASSES:Champion of Gwynharwyf=4
+Holy Sword.MOD	CLASSES:Champion of Gwynharwyf=4
+Neutralize Poison.MOD	CLASSES:Champion of Gwynharwyf=4
+Restoration.MOD	CLASSES:Champion of Gwynharwyf=4
+Sword of Conscience.MOD	CLASSES:Champion of Gwynharwyf=4
+Charm Person.MOD	CLASSES:Emissary of Barachiel=1
+Comprehend Languages.MOD	CLASSES:Emissary of Barachiel=1
+Cure Light Wounds.MOD	CLASSES:Emissary of Barachiel=1
+Hypnotism.MOD	CLASSES:Emissary of Barachiel=1
+Magic Mouth.MOD	CLASSES:Emissary of Barachiel=1
+Message.MOD	CLASSES:Emissary of Barachiel=1
+Protection from Chaos.MOD	CLASSES:Emissary of Barachiel=1
+Protection from Evil.MOD	CLASSES:Emissary of Barachiel=1
+Ray of Hope.MOD	CLASSES:Emissary of Barachiel=1
+Sanctuary.MOD	CLASSES:Emissary of Barachiel=1
+Sleep.MOD	CLASSES:Emissary of Barachiel=1
+Ventriloquism.MOD	CLASSES:Emissary of Barachiel=1
+Animal Messenger.MOD	CLASSES:Emissary of Barachiel=2
+Blindness/Deafness.MOD	CLASSES:Emissary of Barachiel=2
+Blur.MOD	CLASSES:Emissary of Barachiel=2
+Calm Emotions.MOD	CLASSES:Emissary of Barachiel=2
+Cat's Grace.MOD	CLASSES:Emissary of Barachiel=2
+Cure Moderate Wounds.MOD	CLASSES:Emissary of Barachiel=2
+Detect Thoughts.MOD	CLASSES:Emissary of Barachiel=2
+Elation.MOD	CLASSES:Emissary of Barachiel=2
+Enthrall.MOD	CLASSES:Emissary of Barachiel=2
+Eagle's Splendor.MOD	CLASSES:Emissary of Barachiel=2
+Fox's Cunning.MOD	CLASSES:Emissary of Barachiel=2
+Glitterdust.MOD	CLASSES:Emissary of Barachiel=2
+Hold Person.MOD	CLASSES:Emissary of Barachiel=2
+Hypnotic Pattern.MOD	CLASSES:Emissary of Barachiel=2
+Silence.MOD	CLASSES:Emissary of Barachiel=2
+Suggestion.MOD	CLASSES:Emissary of Barachiel=2
+Tongues.MOD	CLASSES:Emissary of Barachiel=2
+Whispering Wind.MOD	CLASSES:Emissary of Barachiel=2
+Charm Monster.MOD	CLASSES:Emissary of Barachiel=3
+Clairaudience/Clairvoyance.MOD	CLASSES:Emissary of Barachiel=3
+Cure Serious Wounds.MOD	CLASSES:Emissary of Barachiel=3
+Daylight.MOD	CLASSES:Emissary of Barachiel=3
+Deep Slumber.MOD	CLASSES:Emissary of Barachiel=3
+Dispel Magic.MOD	CLASSES:Emissary of Barachiel=3
+Good Hope.MOD	CLASSES:Emissary of Barachiel=3
+Haste.MOD	CLASSES:Emissary of Barachiel=3
+Geas (Lesser).MOD	CLASSES:Emissary of Barachiel=3
+Refreshment.MOD	CLASSES:Emissary of Barachiel=3
+Remove Curse.MOD	CLASSES:Emissary of Barachiel=3
+Scrying.MOD	CLASSES:Emissary of Barachiel=3
+See Invisibility.MOD	CLASSES:Emissary of Barachiel=3
+Atonement.MOD	CLASSES:Emissary of Barachiel=4
+Break Enchantment.MOD	CLASSES:Emissary of Barachiel=4
+Cure Critical Wounds.MOD	CLASSES:Emissary of Barachiel=4
+Dream.MOD	CLASSES:Emissary of Barachiel=4
+Heaven's Trumpet.MOD	CLASSES:Emissary of Barachiel=4
+Hold Monster.MOD	CLASSES:Emissary of Barachiel=4
+Sending.MOD	CLASSES:Emissary of Barachiel=4
+Bless.MOD	CLASSES:Vassal of Bahamut=1
+Bless Weapon.MOD	CLASSES:Vassal of Bahamut=1
+Divine Favor.MOD	CLASSES:Vassal of Bahamut=1
+Endure Elements.MOD	CLASSES:Vassal of Bahamut=1
+Lantern Light.MOD	CLASSES:Vassal of Bahamut=1
+Protection from Evil.MOD	CLASSES:Vassal of Bahamut=1
+Shield of Faith.MOD	CLASSES:Vassal of Bahamut=1
+Align Weapon.MOD	CLASSES:Vassal of Bahamut=2
+Bear's Endurance.MOD	CLASSES:Vassal of Bahamut=2
+Bull's Strength.MOD	CLASSES:Vassal of Bahamut=2
+Alter Self.MOD	CLASSES:Vassal of Bahamut=2
+Resist Energy.MOD	CLASSES:Vassal of Bahamut=2
+Shield Other.MOD	CLASSES:Vassal of Bahamut=2
+Undetectable Alignment.MOD	CLASSES:Vassal of Bahamut=2
+Discern Lies.MOD	CLASSES:Vassal of Bahamut=3
+Magic Circle against Evil.MOD	CLASSES:Vassal of Bahamut=3
+Protection from Energy.MOD	CLASSES:Vassal of Bahamut=3
+Refreshment.MOD	CLASSES:Vassal of Bahamut=3
+Searing Light.MOD	CLASSES:Vassal of Bahamut=3
+Dispel Evil.MOD	CLASSES:Vassal of Bahamut=4
+Divination.MOD	CLASSES:Vassal of Bahamut=4
+Divine Power.MOD	CLASSES:Vassal of Bahamut=4
+Holy Sword.MOD	CLASSES:Vassal of Bahamut=4
+Tongues.MOD	CLASSES:Vassal of Bahamut=4

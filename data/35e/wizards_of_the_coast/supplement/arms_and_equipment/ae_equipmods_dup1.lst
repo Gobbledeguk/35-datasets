@@ -1,0 +1,2 @@
+# Arms and Equipment Guide objects that Libris Mortis also define(s) (3.5 reprint): loaded only when none of those books is loaded.
+Sacred					KEY:Sacred					TYPE:Armor.Shield	PLUS:2			VISIBLE:QUALIFY	SOURCEPAGE:AaEG 93																PRETYPE:2,Enhancement,Armor.Shield																																							BONUS:VAR|TurnLevelUndead|2																																SPROP:These are always dedicated to a particular deity. The wearer of the correct god receives a +2 to his level for turn checks.

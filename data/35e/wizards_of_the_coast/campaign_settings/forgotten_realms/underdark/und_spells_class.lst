@@ -1,0 +1,14 @@
+# Class levels and domains of the spells in und_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Changestones.MOD	CLASSES:Druid,Sorcerer,Wizard=7
+Mineralize Water.MOD	CLASSES:Sorcerer,Wizard=6
+Portal Barricade.MOD	DOMAINS:Portal=5
+Portal Stabilization.MOD	DOMAINS:Portal=1
+Portal-to-Portal Redirect.MOD	DOMAINS:Portal=6
+Portal Reformat.MOD	DOMAINS:Portal=8
+Portal View.MOD	CLASSES:Bard,Sorcerer,Wizard=4
+Reflective Diguise (Mass).MOD	CLASSES:Bard=5|Prime Underdark Guide,Sorcerer,Wizard=6
+Stone Metamorphosis.MOD	CLASSES:Cleric,Druid=4|Sorcerer,Wizard=6
+Stone Metamorphosis (Greater).MOD	CLASSES:Cleric,Druid=6|Sorcerer,Wizard=8
+Viscid Glod.MOD	CLASSES:Sorcerer,Wizard=4
+Weighted in the Balance.MOD	DOMAINS:Balance=9

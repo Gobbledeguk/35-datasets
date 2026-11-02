@@ -1,0 +1,6 @@
+# Arms and Equipment Guide objects that Dragon Magazine Compendium also define(s) (3.5 reprint): loaded only when none of those books is loaded.
+Lucerne Hammer			TYPE:Martial.Melee.MartialMelee.Piercing
+Duom					TYPE:Exotic.Melee.ExoticMelee.Piercing
+Gyrspike				TYPE:Exotic.Melee.ExoticMelee.Bludgeoning.Slashing
+Whip-dagger				TYPE:Exotic.Ranged.Slashing
+Double Bow (Elven)		TYPE:Exotic.Ranged.Projectile.Piercing
