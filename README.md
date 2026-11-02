@@ -1,3 +1,34 @@
+# 35-datasets – reviewed D&D 3.5 data for PCGen (overlay)
+
+**This repository is an overlay, not a stand-alone data set.** It contains only the files that were changed or added
+on top of the BahamutDragon PCGen data; it needs that data underneath to work.
+
+## Requirements
+- **BahamutDragon PCGen data**: https://github.com/bahamutdragon/pcgen – tested against commit **d353e9b**.
+  BahamutDragon also provides the Bahamut35e game mode (`system/gameModes`) and the shared `data/_universal` files,
+  which this repository does not contain.
+- **PCGen 6.08** (tested with 6.08.00 RC10).
+
+## Installation
+1. Get the BahamutDragon repository (clone it, or download it as a zip) – ideally at commit d353e9b.
+2. Copy this repository's `data/` folder over the BahamutDragon `data/` folder and let it **replace** files with the
+   same name. Nothing needs to be deleted: changed files replace the originals, new files (class files of the
+   converted spell files, the Arms and Equipment Guide, the Dragon Magazine Compendium, the Sovereign Press
+   Dragonlance books) are added.
+3. Use the result as you would use BahamutDragon (copy `data` and `system` into your PCGen installation, or point
+   PCGen at it).
+
+When updating to a newer version of this repository, start again from a fresh BahamutDragon copy, so no older files
+remain.
+
+## Contents
+- `data/` – the overlay: 423 files in 73 book folders (`data/ALL_FIXES_MANIFEST.txt` lists the fixes).
+- `notes/` – what was changed in each review, and what still needs the books.
+- `GDG-BD_all_fixes_281026.zip` – the same fixes as one archive (including the Dragonlance books, but **without** the
+  Dragon Magazine Compendium, which is only in `data/35e/paizo/dragon_magazine_compendium/`).
+
+## History
+
 From 13/10/2026, this contains an attempt at using Claude.ai to convert the YagmothLives collected Mostly Complete Dragon Compendium pdf. https://www.reddit.com/r/DungeonsAndDragons35e/comments/1iiq5v0/the_mostly_complete_dragon_magazine_compendium/
 
 Updated conversion notes can be found in the repository.
