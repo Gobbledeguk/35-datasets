@@ -1,0 +1,11 @@
+# Class levels and domains of the spells in lom_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Glyph of Warding (Elder).MOD	CLASSES:Cleric=9
+Permeable Form.MOD	CLASSES:Sorcerer,Wizard=3
+Whispercast.MOD	CLASSES:Sorcerer,Wizard=2
+Arms of Plenty.MOD	CLASSES:Sorcerer,Wizard=3
+Befoul.MOD	CLASSES:Cleric=8	DOMAINS:Corruption=8
+Invoke the Cerulean Sign.MOD	CLASSES:Bard,Cleric,Paladin,Wizard,Sorcerer=3|Ranger,Druid=2
+Invoke Magic.MOD	CLASSES:Sorcerer,Wizard=9
+Nature's Purity.MOD	CLASSES:Druid=3
+Undulant Innards.MOD	CLASSES:Sorcerer,Wizard=3

@@ -1,0 +1,61 @@
+# Class levels and domains of the spells in sa_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Antifire Sphere.MOD	CLASSES:Sorcerer,Wizard=5
+Ashen Union.MOD	CLASSES:Sorcerer,Wizard=6
+Ashtar.MOD	CLASSES:Sorcerer,Wizard=2
+Awaken Sand.MOD	CLASSES:Druid=6	DOMAINS:Sand=6
+Black Sand.MOD	CLASSES:Cleric=3	DOMAINS:Sand=2
+Blast of Sand.MOD	CLASSES:Druid,Sorcerer,Wizard=4	DOMAINS:Sand=4
+Body Blaze.MOD	CLASSES:Sorcerer,Wizard=3
+Choking Sands.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=5
+Cloak of Shade.MOD	CLASSES:Cleric,Druid=1
+Control Sand.MOD	CLASSES:Cleric,Druid=3
+Desert Binding.MOD	CLASSES:Sorcerer,Wizard=8	DOMAINS:Sand=8
+Desert Diverson.MOD	CLASSES:Sorcerer,Wizard=4
+Desiccate.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=2	DOMAINS:Thirst=2
+Desiccate (Mass).MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=6	DOMAINS:Thirst=5
+Dispel Water.MOD	CLASSES:Bard,Druid=4|Cleric,Sorcerer,Wizard=5	DOMAINS:Thirst=4
+Flashflood.MOD	CLASSES:Cleric,Druid=8
+Flaywind Burst.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=5	DOMAINS:Sand=5
+Flesh to Salt (Mass).MOD	CLASSES:Druid,Sorcerer,Wizard=7
+Freedom of Breath.MOD	CLASSES:Cleric,Druid,Paladin,Ranger=2
+Fuse Sand.MOD	CLASSES:Sorcerer,Wizard=4|Druid=5
+Halo of Sand.MOD	CLASSES:Druid,Ranger=2
+Hydrate.MOD	CLASSES:Bard,Cleric,Druid,Paladin,Ranger=2
+Impede Sun's Brilliance.MOD	CLASSES:Druid,Ranger=1	DOMAINS:Summer=1
+Mantle of the Fiery Spirit.MOD	CLASSES:Druid=8|Cleric=9
+Mephit Mob.MOD	CLASSES:Bard,Druid=6	DOMAINS:Thirst=7
+Parboil.MOD	CLASSES:Sorcerer,Wizard=4|Cleric=5
+Parching Touch.MOD	CLASSES:Sorcerer,Wizard=1	DOMAINS:Thirst=1
+Protection from Dessication.MOD	CLASSES:Druid,Ranger=2|Cleric,Sorcerer,Wizard=3	DOMAINS:Summer=3
+Sandform.MOD	CLASSES:Druid,Sorcerer,Wizard=4
+Sandstorm.MOD	CLASSES:Druid=6
+Scalding Mud.MOD	CLASSES:Druid,Sorcerer,Wizard=6
+Scimitar of Sand.MOD	CLASSES:Druid,Sorcerer,Wizard=2
+Searing Exposure.MOD	CLASSES:Druid,Sorcerer,Wizard=4
+Skin of the Cactus.MOD	CLASSES:Ranger=3|Druid=4	DOMAINS:Summer=4
+Sleep mote.MOD	CLASSES:Druid,Sorcerer,Wizard=5
+Slipsand.MOD	CLASSES:Druid,Ranger=4
+Soul of the Waste.MOD	CLASSES:Cleric,Druid=3
+Storm Mote.MOD	CLASSES:Druid,Sorcerer,Wizard=3
+Summon Desert Ally I.MOD	CLASSES:Druid,Ranger=1
+Summon Desert Ally II.MOD	CLASSES:Druid,Ranger=2
+Summon Desert Ally III.MOD	CLASSES:Druid,Ranger=3
+Summon Desert Ally IV.MOD	CLASSES:Druid,Ranger=4
+Summon Desert Ally V.MOD	CLASSES:Druid=5
+Summon Desert Ally VI.MOD	CLASSES:Druid=6
+Summon Desert Ally VII.MOD	CLASSES:Druid=7
+Summon Desert Ally VIII.MOD	CLASSES:Druid=8	DOMAINS:Sand=9
+Summon Desert Ally IX.MOD	CLASSES:Druid=9
+Symbol of Thirst.MOD	CLASSES:Cleric,Sorcerer,Wizard=6
+Tormenting Thirst.MOD	CLASSES:Bard,Sorcerer,Wizard=3
+Transmute Sand to Glass.MOD	CLASSES:Druid,Sorcerer,Wizard=5
+Transmute Stone to Sand.MOD	CLASSES:Druid,Sorcerer,Wizard=5
+Unearthly Heat.MOD	CLASSES:Sorcerer,Wizard=5	DOMAINS:Summer=5
+Vitrify.MOD	CLASSES:Sorcerer,Wizard=7	CLASSES:Sorcerer,Wizard=8	DOMAINS:Sand=7
+Wall of Magma.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=5
+Wall of Salt.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=4
+Waste Strider.MOD	CLASSES:Druid,Ranger=1	DOMAINS:Sand=1
+Whispering Sand.MOD	CLASSES:Druid,Sorcerer,Wizard=3
+Wither.MOD	CLASSES:Sorcerer,Wizard=4
+Mephit Mob (Thirst Domain).MOD	DOMAINS:Thirst=7

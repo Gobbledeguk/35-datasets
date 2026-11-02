@@ -1,0 +1,10 @@
+# Class levels and domains of the spells in wl_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Revitalize Legacy (Greater).MOD	CLASSES:Cleric,Druid,Shugenja,Sorcerer,Wizard,Wu Jen=9
+Revitalize Legacy (Least).MOD	CLASSES:Bard,Cleric,Druid,Paladin,Ranger,Shugenja,Sorcerer,Wizard,Wu Jen=3
+Revitalize Legacy (Lesser).MOD	CLASSES:Bard,Cleric,Druid,Shugenja,Sorcerer,Wizard,Wu Jen=5
+Sever Legacy.MOD	CLASSES:Sorcerer,Wizard,Wu Jen=8
+Suppress Legacy.MOD	CLASSES:Hexblade=4|Sorcerer,Wizard,Wu Jen=5
+Revitalize Legacy (Psionic).MOD	CLASSES:Psion,Psychic Warrior,Wilder=3
+Sever Legacy (Psionic).MOD	CLASSES:Psion,Wilder=8
+Suppress Legacy (Psionic).MOD	CLASSES:Psion,Wilder=5

@@ -1,0 +1,22 @@
+# Class levels and domains of the spells in du_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Arcane Sight.MOD	CLASSES:Trapsmith=1
+Cat's Grace.MOD	CLASSES:Trapsmith=1
+Clairaudience/Clairvoyance.MOD	CLASSES:Trapsmith=1
+Dispel Magic.MOD	CLASSES:Trapsmith=1
+Fox's Cunning.MOD	CLASSES:Trapsmith=1
+Gaseous Form.MOD	CLASSES:Trapsmith=1
+Haste.MOD	CLASSES:Trapsmith=1
+Knock.MOD	CLASSES:Trapsmith=1
+Protection from Energy.MOD	CLASSES:Trapsmith=1
+Arcane Eye.MOD	CLASSES:Trapsmith=2
+Dimension Door.MOD	CLASSES:Trapsmith=2
+Globe of Invulnerability (Lesser).MOD	CLASSES:Trapsmith=2
+Resilient Sphere.MOD	CLASSES:Trapsmith=2
+Stoneskin.MOD	CLASSES:Trapsmith=2
+Stone Shape.MOD	CLASSES:Trapsmith=2
+Interposing Hand.MOD	CLASSES:Trapsmith=3
+Break Enchantment.MOD	CLASSES:Trapsmith=3
+Fabricate.MOD	CLASSES:Trapsmith=3
+Dispel Magic (Greater).MOD	CLASSES:Trapsmith=3
+Wall of Stone.MOD	CLASSES:Trapsmith=3

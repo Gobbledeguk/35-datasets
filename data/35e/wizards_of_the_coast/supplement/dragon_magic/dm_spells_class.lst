@@ -1,0 +1,48 @@
+# Class levels and domains of the spells in dm_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Adoration of the Frightful.MOD	CLASSES:Hexblade=2|Bard,Cleric,Sorcerer,Wizard=3
+Arcane Spellsurge.MOD	CLASSES:Sorcerer,Wizard,Wu Jen=7
+Aspect of the Chromatic Dragon.MOD	CLASSES:Sorcerer=8
+Aspect of the Platinum Dragon.MOD	CLASSES:Sorcerer=7
+Burst of Glacial Wrath.MOD	CLASSES:Sorcerer,Wizard=9
+Call of the Twilight Defender.MOD	CLASSES:Druid,Sorcerer,Wizard=6
+Channel The Dragon.MOD	CLASSES:Wu Jen=7
+Curse of the Elemental Lords.MOD	CLASSES:Sorcerer,Wizard=4
+Detect Dragonblood.MOD	CLASSES:Sorcerer,Wizard=1
+Dragoneye Rune.MOD	CLASSES:Sorcerer,Wizard,Wu Jen=2
+Dragonshape (Least).MOD	CLASSES:Sorcerer,Wizard=3
+Dragonshape (Lesser).MOD	CLASSES:Sorcerer,Wizard=6
+Eyes of the Oracle.MOD	CLASSES:Cleric,Sorcerer,Wizard,Wu Jen=6
+Ferocity of Sanguine Rage.MOD	CLASSES:Sorcerer,Wizard=3|Assassin=4
+Firestride Exhalation.MOD	CLASSES:Sorcerer,Wizard=4	CLASSES:Wu Jen=4
+Form of the Desert Hunter.MOD	CLASSES:Sorcerer,Wizard=5
+Glorious Master of the Elements.MOD	CLASSES:Sorcerer,Wizard=7
+Haze of Smoldering Stone.MOD	CLASSES:Sorcerer,Wizard=6|Druid=7	CLASSES:Wu Jen=6
+Hoard Gullet.MOD	CLASSES:Sorcerer,Wizard=1
+Justice of the Wyrm King.MOD	CLASSES:Sorcerer,Wizard=7
+Kiss of Draconic Defiance.MOD	CLASSES:Sorcerer,Wizard=7
+Lord of the Sky.MOD	CLASSES:Shugenja=5[PREABILITY:1,CATEGORY=Internal,Shugenja (air)]	CLASSES:Sorcerer,Wizard=5
+Magic of the Dragonheart.MOD	CLASSES:Sorcerer=2
+Mark of the Enlightened Soul.MOD	CLASSES:Cleric,Sorcerer,Wizard=4
+Mind of the Labyrinth.MOD	CLASSES:Sorcerer,Wizard=8
+Passage of the Shifting Sands.MOD	CLASSES:Druid,Sorcerer,Wizard=4
+Path of Frost.MOD	CLASSES:Druid,Sorcerer,Wizard=1
+Primal Hunter.MOD	CLASSES:Ranger=1|Druid,Sorcerer=2
+Primal Instinct.MOD	CLASSES:Ranger=2|Druid,Sorcerer=3
+Primal Senses.MOD	CLASSES:Ranger=3|Druid,Sorcerer=4
+Primal Speed.MOD	CLASSES:Ranger=4|Druid,Sorcerer=6
+Rot of Ages.MOD	CLASSES:Druid,Sorcerer,Wizard=1
+Soul of Anarchy.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Soul of Light.MOD	CLASSES:Paladin=2|Cleric=3
+Soul of Order.MOD	CLASSES:Paladin=1|Sorcerer,Wizard=2
+Soul of Shadow.MOD	CLASSES:Blackguard=2|Cleric=3
+Touch of the Blackened Soul.MOD	CLASSES:Cleric,Sorcerer,Wizard=4
+Trance of the Verdant Domain.MOD	CLASSES:Hexblade=3|Sorcerer,Wizard=4
+Undying Vigor of the Dragonlords.MOD	CLASSES:Sorcerer=5
+Vision of the Omniscient Eye.MOD	CLASSES:Bard,Cleric,Druid,Sorcerer,Wizard=3
+Wingblast.MOD	CLASSES:Druid,Sorcerer,Wizard=3	CLASSES:Shugenja=3[PREABILITY:1,CATEGORY=Internal,Shugenja (air)]
+Wreath of Flames.MOD	CLASSES:Druid,Sorcerer,Wizard=3	CLASSES:Wu Jen=3
+Amethyst Burst.MOD	CLASSES:Psion,Wilder=2
+Channel The Psychic Dragon.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Crystal Body.MOD	CLASSES:Psion,Wilder=5
+Gemstone Breath.MOD	CLASSES:Psion,Wilder=4

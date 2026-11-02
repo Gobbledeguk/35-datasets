@@ -1,0 +1,350 @@
+# Class levels and domains of the spells in sc_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Abyssal Army.MOD	CLASSES:Cleric,Sorcerer,Wizard=9
+Acid Breath.MOD	CLASSES:Sorcerer,Wizard=3
+Acid Sheath.MOD	CLASSES:Sorcerer,Wizard=5
+Aid (Mass).MOD	CLASSES:Cleric=3
+Alarm (Greater).MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Align Fang (Mass).MOD	CLASSES:Druid,Ranger=3
+Align Weapon (Mass).MOD	CLASSES:Cleric=3
+Anarchic Storm.MOD	CLASSES:Cleric=3
+Anarchic Water.MOD	CLASSES:Cleric=1
+Appraising Touch.MOD	CLASSES:Bard,Sorcerer,Wizard=1
+Aspect of the Earth Hunter.MOD	CLASSES:Ranger=4|Druid=6
+Aspect of the Wolf.MOD	CLASSES:Druid,Ranger=1
+Assay Spell Resistance.MOD	CLASSES:Cleric,Sorcerer,Wizard=4
+Astral Hospice.MOD	CLASSES:Cleric=4
+Attune Form.MOD	CLASSES:Cleric,Druid=3|Sorcerer,Wizard=4
+Avoid Planar Effects.MOD	CLASSES:Cleric,Druid=2|Sorcerer,Wizard=3
+Awaken Sin.MOD	CLASSES:Paladin=2|Cleric=3
+Axiomatic Storm.MOD	CLASSES:Cleric,Paladin=3
+Axiomatic Water.MOD	CLASSES:Cleric,Paladin=1
+Babau Slime.MOD	CLASSES:Druid,Sorcerer,Wizard=1	DOMAINS:Abyss=3
+Balor Nimbus.MOD	CLASSES:Cleric,Sorcerer,Wizard=2	DOMAINS:Abyss=4
+Barghest's Feast.MOD	CLASSES:Cleric=6|Sorcerer,Wizard=7
+Battle Hymn.MOD	CLASSES:Bard=2|Sorcerer,Wizard=4
+Beastland Ferocity.MOD	CLASSES:Bard,Druid=1
+Belker Claws.MOD	CLASSES:Sorcerer,Wizard=2
+Blindsight (Greater).MOD	CLASSES:Cleric,Druid=4
+Blood Sirocco.MOD	CLASSES:Druid=6
+Blood to Water.MOD	CLASSES:Cleric=7
+Bodak's Glare.MOD	CLASSES:Cleric=8	DOMAINS:Abyss=8
+Body Harmonic.MOD	CLASSES:Bard=5
+Body of War.MOD	CLASSES:Sorcerer,Wizard=7
+Breath of the Jungle.MOD	CLASSES:Druid=1
+Bristle.MOD	CLASSES:Sorcerer,Wizard=2
+Burning Sword.MOD	CLASSES:Sorcerer,Wizard=2
+Buzzing Bee.MOD	CLASSES:Sorcerer,Wizard=1
+Call Kolyarut.MOD	CLASSES:Cleric,Sorcerer,Wizard=7
+Call Marut.MOD	CLASSES:Cleric,Sorcerer,Wizard=9
+Call Zelekhut.MOD	CLASSES:Cleric,Sorcerer,Wizard=5
+Caltrops.MOD	CLASSES:Sorcerer,Wizard=0
+Capricious Zephyr.MOD	CLASSES:Druid,Sorcerer,Wizard=3
+Chain Missile.MOD	CLASSES:Sorcerer,Wizard=3
+Charge of the Triceratops.MOD	CLASSES:Druid,Ranger=3
+Checkmate's Light.MOD	CLASSES:Paladin=2|Cleric=3
+Claws of the Bear.MOD	CLASSES:Druid,Ranger=1
+Clear Mind.MOD	CLASSES:Paladin=1
+Climb Walls.MOD	CLASSES:Druid,Ranger=1	DOMAINS:Balance=3
+Cloak Pool.MOD	CLASSES:Paladin=2|Cleric=3
+Cloud-Walkers.MOD	CLASSES:Druid=7	DOMAINS:Windstorm=6
+Cold Fire.MOD	CLASSES:Cleric,Druid=1
+Cold Snap.MOD	CLASSES:Druid=5|Cleric=6
+Cone of Dimness.MOD	CLASSES:Sorcerer,Wizard=3
+Contagion (Mass).MOD	CLASSES:Cleric,Druid=5|Sorcerer,Wizard=6
+Conviction (Mass).MOD	CLASSES:Cleric=3
+Corona of Cold.MOD	CLASSES:Cleric,Druid=3
+Corporeal Instability.MOD	CLASSES:Sorcerer,Wizard=4
+Crabwalk.MOD	CLASSES:Bard,Druid,Ranger=1
+Creaking Cacophony.MOD	CLASSES:Bard,Druid=3
+Critical Strike (SC).MOD	CLASSES:Assassin,Bard,Sorcerer,Wizard=1
+Curse of Ill Fortune (Mass).MOD	CLASSES:Cleric=5
+Curse of Impending Blades (Mass).MOD	CLASSES:Bard,Ranger,Sorcerer,Wizard=3
+Cutting Hand.MOD	CLASSES:Sorcerer,Wizard=1
+Cyclonic Blast.MOD	CLASSES:Sorcerer,Wizard=5
+Dead End.MOD	CLASSES:Assassin,Bard,Sorcerer,Wizard=1
+Deadfall.MOD	CLASSES:Druid=8
+Death Throes.MOD	CLASSES:Cleric,Sorcerer,Wizard=5
+Deep Breath.MOD	CLASSES:Druid,Ranger,Sorcerer,Wizard=1
+Delusions of Grandeur.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Demon Dirge.MOD	CLASSES:Cleric,Sorcerer,Wizard=3
+Devil Blight.MOD	CLASSES:Cleric,Sorcerer,Wizard=3
+Diamondsteel.MOD	CLASSES:Paladin,Sorcerer,Wizard=3
+Dimension Door (Greater).MOD	CLASSES:Sorcerer,Wizard=5
+Dinosaur Stampede.MOD	CLASSES:Druid=6
+Dire Hunger.MOD	CLASSES:Druid=5
+Discolor Pool.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Dispel Ward.MOD	CLASSES:Cleric,Sorcerer,Wizard=1
+Displacer Form.MOD	CLASSES:Sorcerer,Wizard=4
+Disrupt Undead (Greater).MOD	CLASSES:Sorcerer,Wizard=3
+Distracting Ray.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Dolorous Blow.MOD	CLASSES:Bard,Sorcerer,Wizard=3
+Downdraft.MOD	CLASSES:Cleric,Druid=3
+Dreamsight.MOD	DOMAINS:Dream=6
+Earth Lock.MOD	CLASSES:Sorcerer,Wizard=2
+Earthen Grace.MOD	CLASSES:Druid,Sorcerer,Wizard=3
+Ebon Eyes.MOD	CLASSES:Assassin,Cleric,Sorcerer,Wizard=1
+Effulgent Epuration.MOD	CLASSES:Sorcerer,Wizard=9
+Electric Loop.MOD	CLASSES:Sorcerer,Wizard=2
+Elemental Body.MOD	CLASSES:Sorcerer,Wizard=7
+Energized Shield.MOD	CLASSES:Paladin=2|Cleric=3
+Energized Shield (Lesser).MOD	CLASSES:Paladin=1|Cleric=2
+Energy Spheres.MOD	CLASSES:Sorcerer,Wizard=4
+Energy Transformation Field.MOD	CLASSES:Sorcerer,Wizard=7
+Enhance Wild Shape.MOD	CLASSES:Druid=4
+Enlarge Person (Greater).MOD	CLASSES:Sorcerer,Wizard=5
+Enrage Animal.MOD	CLASSES:Druid,Ranger=1
+Essence of the Raptor.MOD	CLASSES:Druid=4
+Ethereal Chamber.MOD	CLASSES:Sorcerer,Wizard=2
+Ethereal Mount.MOD	CLASSES:Bard,Sorcerer,Wizard=4
+Evil Glare.MOD	CLASSES:Cleric,Sorcerer,Wizard=7
+Extract Water Elemental.MOD	CLASSES:Druid,Sorcerer,Wizard=6
+Eye of the Hurricane.MOD	CLASSES:Druid=4
+False Gravity.MOD	CLASSES:Sorcerer,Wizard=3
+Favor of the Martyr.MOD	CLASSES:Paladin=4
+Field of Icy Razors.MOD	CLASSES:Sorcerer,Wizard=8
+Fierce Pride of the Beastlands.MOD	CLASSES:Cleric,Sorcerer,Wizard=8
+Find Temple.MOD	CLASSES:Paladin=1
+Floating Disk (Greater).MOD	CLASSES:Sorcerer,Wizard=4
+Force Chest.MOD	CLASSES:Sorcerer,Wizard=4
+Force Claw.MOD	CLASSES:Sorcerer,Wizard=4
+Force Missiles.MOD	CLASSES:Sorcerer,Wizard=4
+Foundation of Stone.MOD	CLASSES:Cleric,Druid=1
+Freeze.MOD	CLASSES:Druid=6
+Frost Breath.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=2
+Fugue.MOD	CLASSES:Bard=4
+Giant's Wrath.MOD	CLASSES:Druid,Sorcerer,Wizard=3
+Glass Strike.MOD	CLASSES:Sorcerer,Wizard=7
+Glowing Orb.MOD	CLASSES:Sorcerer,Wizard=3|Cleric=4
+Grace.MOD	CLASSES:Bard=2|Cleric=3
+Graymantle.MOD	CLASSES:Sorcerer,Wizard=5
+Hamatula Barbs.MOD	CLASSES:Cleric,Sorcerer,Wizard=3
+Hand of the Faithful.MOD	CLASSES:Paladin=3|Cleric=4
+Heartfire.MOD	CLASSES:Bard,Druid=2
+Heat Drain.MOD	CLASSES:Cleric=8
+Heatstroke.MOD	CLASSES:Druid=3
+Heavenly Host.MOD	CLASSES:Cleric,Sorcerer,Wizard=9
+Hellish Horde.MOD	CLASSES:Cleric,Sorcerer,Wizard=9
+Heroics.MOD	CLASSES:Sorcerer,Wizard=2
+Hide the Path.MOD	CLASSES:Cleric,Druid=6
+Holy Mount.MOD	CLASSES:Paladin=2
+Holy Storm.MOD	CLASSES:Cleric,Paladin=3
+Holy Transformation.MOD	CLASSES:Cleric=4
+Holy Transformation (Lesser).MOD	CLASSES:Cleric=4
+Hungry Gizzard.MOD	CLASSES:Druid=6
+Hunters of Hades.MOD	CLASSES:Cleric=9
+Hurl.MOD	CLASSES:Sorcerer,Wizard=2
+Hypothermia.MOD	CLASSES:Druid=3|Cleric=4
+Ice Axe.MOD	CLASSES:Cleric=3
+Ice Claw.MOD	CLASSES:Sorcerer,Wizard=7
+Ice Flowers.MOD	CLASSES:Cleric,Druid=6
+Ice Gauntlet.MOD	CLASSES:Cleric=1
+Illusory Feast.MOD	CLASSES:Sorcerer,Wizard=5
+Imbue Familiar withSpell Ability.MOD	CLASSES:Sorcerer,Wizard=6
+Indomitability.MOD	CLASSES:Sorcerer,Wizard=5
+Infernal Transformation.MOD	CLASSES:Cleric=7
+Infernal Transformation (Lesser).MOD	CLASSES:Cleric=4
+Infernal Wound.MOD	CLASSES:Cleric,Sorcerer,Wizard=2
+Instant Refuge.MOD	CLASSES:Sorcerer,Wizard=9
+Interplanar Message.MOD	CLASSES:Cleric=3
+Interplanar Telepathic Bond.MOD	CLASSES:Sorcerer,Wizard=6
+Invisibility (Superior).MOD	CLASSES:Sorcerer,Wizard=8
+Ironguard.MOD	CLASSES:Sorcerer,Wizard=7
+Ironthunder Horn.MOD	CLASSES:Bard=1|Sorcerer,Wizard=2
+Junglerazer.MOD	CLASSES:Druid=3|Sorcerer,Wizard=3
+Jungle's Rapture.MOD	CLASSES:Druid=5
+Kelpstrand.MOD	CLASSES:Druid=2
+Knight's Move.MOD	CLASSES:Paladin=2|Cleric=3
+Know Opponent.MOD	CLASSES:Bard,Cleric=3
+Lay of the Land.MOD	CLASSES:Ranger=1|Bard,Druid=4
+Life Ward.MOD	CLASSES:Sorcerer,Wizard=2
+Life's Grace.MOD	CLASSES:Cleric=5
+Light of Lunia.MOD	CLASSES:Cleric,Sorcerer,Wizard=1	DOMAINS:Celestia=1
+Light of Mercuria.MOD	CLASSES:Cleric,Sorcerer,Wizard=2
+Light of Venya.MOD	CLASSES:Cleric,Sorcerer,Wizard=3
+Lucent Lance.MOD	CLASSES:Sorcerer,Wizard=5|Cleric=6
+Luminous Gaze.MOD	CLASSES:Sorcerer,Wizard=1
+Mage Armor (Mass).MOD	CLASSES:Sorcerer,Wizard=3
+Magic Fang (Superior).MOD	CLASSES:Druid,Ranger=4
+Magic Miasma.MOD	CLASSES:Sorcerer,Wizard=9
+Malevolent Miasma.MOD	CLASSES:Sorcerer,Wizard=2
+Make Manifest.MOD	CLASSES:Cleric=4|Sorcerer,Wizard=6
+Make Manifest (Mass).MOD	CLASSES:Cleric=6|Sorcerer,Wizard=8
+Mantle of Chaos.MOD	CLASSES:Cleric=3	DOMAINS:Limbo=3
+Mantle of Evil.MOD	CLASSES:Blackguard,Cleric=3	DOMAINS:Hades=3
+Mantle of Good.MOD	CLASSES:Paladin=1
+Mantle of Law.MOD	CLASSES:Cleric,Paladin=3	DOMAINS:Mechanus=3
+Marked Object.MOD	CLASSES:Ranger=1|Assassin,Sorcerer,Wizard=2
+Master's Touch (SC).MOD	CLASSES:Bard,Sorcerer,Wizard=1
+Mechanus Mind.MOD	CLASSES:Sorcerer,Wizard=2	DOMAINS:Mechanus=2
+Metal Melt.MOD	CLASSES:Sorcerer,Wizard=4
+Miasma of Entropy.MOD	CLASSES:Druid=4|Sorcerer,Wizard=5
+Mind Poison.MOD	CLASSES:Sorcerer,Wizard=3
+Moon Bolt.MOD	CLASSES:Cleric,Druid=4
+Moon Lust.MOD	CLASSES:Cleric=1
+Moonbow.MOD	CLASSES:Sorcerer,Wizard=5
+Mountain Stance.MOD	CLASSES:Druid,Sorcerer,Wizard=2
+Nauseating Breath.MOD	CLASSES:Cleric,Sorcerer,Wizard=3
+Negative Energy Aura.MOD	CLASSES:Cleric=4
+Nerveskitter.MOD	CLASSES:Sorcerer,Wizard=1
+Nightshield.MOD	CLASSES:Cleric,Sorcerer,Wizard=1
+Nixie's Grace.MOD	CLASSES:Bard=6
+One Mind.MOD	CLASSES:Paladin=2
+One Mind (Greater).MOD	CLASSES:Paladin=3
+One Mind (Lesser).MOD	CLASSES:Paladin=1
+Ooze Puppet.MOD	CLASSES:Sorcerer,Wizard=6
+Opalescent Glare.MOD	CLASSES:Cleric,Sorcerer,Wizard=6	DOMAINS:Arborea=4
+Perinarch.MOD	CLASSES:Druid,Sorcerer,Wizard=4	DOMAINS:Limbo=4
+Perinarch (Planar).MOD	CLASSES:Druid,Sorcerer,Wizard=9	DOMAINS:Limbo=9
+Persistent Blade.MOD	CLASSES:Sorcerer,Wizard=1
+Phantom Foe.MOD	CLASSES:Assassin,Sorcerer,Wizard=2
+Planar Bubble.MOD	CLASSES:Cleric,Sorcerer,Wizard=7
+Planar Exchange.MOD	CLASSES:Cleric=6
+Planar Exchange (Greater).MOD	CLASSES:Cleric=8
+Planar Exchange (Lesser).MOD	CLASSES:Cleric=4
+Planar Tolerance.MOD	CLASSES:Cleric,Druid,Ranger=4|Sorcerer,Wizard=5	DOMAINS:Elysium=2
+Plane Shift (Greater).MOD	CLASSES:Cleric=7|Sorcerer,Wizard=8
+Portal Alarm.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Portal Alarm (Improved).MOD	CLASSES:Bard,Sorcerer,Wizard=4
+Portal Beacon.MOD	CLASSES:Cleric,Sorcerer,Wizard=1
+Positive Energy Aura.MOD	CLASSES:Cleric=4
+Primal Form.MOD	CLASSES:Druid,Sorcerer,Wizard=3
+Quick Potion.MOD	CLASSES:Sorcerer,Wizard=2
+Radiant Assault.MOD	CLASSES:Cleric,Sorcerer,Wizard=7
+Rainbow Beam.MOD	CLASSES:Sorcerer,Wizard=2
+Rainbow Blast.MOD	CLASSES:Sorcerer,Wizard=3
+Raise from the Deep.MOD	CLASSES:Sorcerer,Wizard=4
+Ray Deflection.MOD	CLASSES:Bard,Sorcerer,Wizard=4
+Ray of Clumsiness.MOD	CLASSES:Sorcerer,Wizard=1
+Ray of Deanimation.MOD	CLASSES:Bard,Sorcerer,Wizard=4
+Ray of Dizziness.MOD	CLASSES:Bard,Sorcerer,Wizard=3
+Ray of Entropy.MOD	CLASSES:Sorcerer,Wizard=6
+Ray of Flame.MOD	CLASSES:Sorcerer,Wizard=1
+Ray of Ice.MOD	CLASSES:Sorcerer,Wizard=2
+Ray of Light.MOD	CLASSES:Bard,Sorcerer,Wizard=6
+Ray of Sickness.MOD	CLASSES:Sorcerer,Wizard=2
+Ray of Stupidity.MOD	CLASSES:Sorcerer,Wizard=2
+Ray of Weakness.MOD	CLASSES:Sorcerer,Wizard=2
+Reality Maelstrom.MOD	CLASSES:Sorcerer,Wizard=1
+Rebuke (Final).MOD	CLASSES:Sorcerer,Wizard=7
+Rebuke (Greater).MOD	CLASSES:Sorcerer,Wizard=4
+Recitation (SC).MOD	CLASSES:Cleric=4	DOMAINS:Purification=4
+Red Tide.MOD	CLASSES:Druid=8
+Reduce Person (Greater).MOD	CLASSES:Sorcerer,Wizard=5
+Reflective Disguise (Mass).MOD	CLASSES:Bard=5|Sorcerer,Wizard=6
+Rejuvenative Corpse.MOD	CLASSES:Cleric=3
+Remove Scent.MOD	CLASSES:Bard,Druid,Ranger,Sorcerer,Wizard=1
+Replicate Casting.MOD	CLASSES:Sorcerer,Wizard=9
+Resist Planar Alignment.MOD	CLASSES:Cleric,Druid,Paladin,Ranger,Sorcerer,Wizard=1	DOMAINS:Hades=2
+Resistance (Greater).MOD	CLASSES:Bard,Cleric,Druid,Sorcerer,Wizard=4
+Resistance (Superior).MOD	CLASSES:Bard,Cleric,Druid,Sorcerer,Wizard=6
+Revive Outsider.MOD	CLASSES:Cleric=6
+Rhino's Rush.MOD	CLASSES:Paladin,Ranger=1	DOMAINS:Wrath=1
+Ruin Delver's Fortune.MOD	CLASSES:Bard,Sorcerer,Wizard=4
+Rust Ray.MOD	CLASSES:Sorcerer,Wizard=3
+Safety.MOD	CLASSES:Cleric=3
+Saltray.MOD	CLASSES:Druid=2
+Sarcophagus of Stone.MOD	CLASSES:Cleric=6
+Scorch.MOD	CLASSES:Sorcerer,Wizard=2
+Scramble Portal.MOD	CLASSES:Sorcerer,Wizard=4
+Seal Portal.MOD	CLASSES:Sorcerer,Wizard=6
+Seek Eternal Rest.MOD	CLASSES:Paladin=3
+Sense Heretic.MOD	CLASSES:Paladin=1
+Sensory Deprivation.MOD	CLASSES:Sorcerer,Wizard=4
+Serene Visage.MOD	CLASSES:Bard,Sorcerer,Wizard=1
+Shadow Cache.MOD	CLASSES:Bard,Sorcerer,Wizard=3
+Shadow Phase.MOD	CLASSES:Sorcerer,Wizard=3|Assassin=4
+Shadow Radiance.MOD	CLASSES:Sorcerer,Wizard=2
+Shadowblast.MOD	CLASSES:Cleric,Druid=4
+Shadowfade.MOD	CLASSES:Sorcerer,Wizard=5
+Shadow Grappler.MOD	CLASSES:Sorcerer,Wizard=6
+Shard Storm.MOD	CLASSES:Sorcerer,Wizard=5
+Shield of Faith (Mass).MOD	CLASSES:Cleric=4
+Shieldbearer.MOD	CLASSES:Sorcerer,Wizard=1
+Shifting Paths.MOD	CLASSES:Druid=7|Sorcerer,Wizard=8
+Shock and Awe.MOD	CLASSES:Assassin,Bard,Sorcerer,Wizard=1
+Sirine's Grace.MOD	CLASSES:Bard=4|Druid=5
+Slapping Hand.MOD	CLASSES:Sorcerer,Wizard=2
+Slow Burn.MOD	CLASSES:Druid,Sorcerer,Wizard=1
+Snake's Swiftness (Mass).MOD	CLASSES:Druid=2|Sorcerer,Wizard=3
+Snowball Swarm.MOD	CLASSES:Sorcerer,Wizard=2
+Snowshoes.MOD	CLASSES:Cleric,Druid,Ranger=1
+Snowshoes (Mass).MOD	CLASSES:Cleric,Druid,Ranger=3
+Solipism.MOD	CLASSES:Sorcerer,Wizard=7
+Sonic Rumble.MOD	CLASSES:Sorcerer,Wizard=5
+Sonic Snap.MOD	CLASSES:Sorcerer,Wizard=0
+Sonic Whip.MOD	CLASSES:Bard=2
+Spell Immunity (Lesser).MOD	CLASSES:Cleric=2
+Spell Matrix.MOD	CLASSES:Sorcerer,Wizard=7
+Spell Matrix (Greater).MOD	CLASSES:Sorcerer,Wizard=9
+Spell Matrix (Lesser).MOD	CLASSES:Sorcerer,Wizard=5
+Spell Vulnerability.MOD	CLASSES:Sorcerer,Wizard=3|Cleric=4
+Spiritjaws.MOD	CLASSES:Druid=3
+Splinterbolt.MOD	CLASSES:Druid=2
+Spontaneous Search.MOD	CLASSES:Sorcerer,Wizard=1
+Stabilize.MOD	CLASSES:Cleric,Paladin=2
+Starvation.MOD	CLASSES:Druid=4
+Sticky Fingers.MOD	CLASSES:Assassin,Bard=1
+Sticky Saddle.MOD	CLASSES:Paladin=1
+Sting Ray.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Stolen Breath.MOD	CLASSES:Sorcerer,Wizard=2
+Stun Ray.MOD	CLASSES:Sorcerer,Wizard=7
+Submerge Ship.MOD	CLASSES:Sorcerer,Wizard=7
+Sudden Stalagmite.MOD	CLASSES:Druid=4
+Summon Babau Demon.MOD	CLASSES:Cleric=6
+Summon Bearded Devil.MOD	CLASSES:Cleric=5
+Summon Bralani Eladrin.MOD	CLASSES:Cleric=5
+Summon Elementite Swarm.MOD	CLASSES:Druid=4
+Summon Elysian Thrush.MOD	CLASSES:Bard,Cleric=2
+Summon Greater Elemental.MOD	CLASSES:Druid=6
+Summon Hound Archon.MOD	CLASSES:Cleric=4
+Surefooted Stride.MOD	CLASSES:Druid,Ranger=1|Bard,Sorcerer,Wizard=2
+Surefooted Stride (Mass).MOD	CLASSES:Ranger=4|Bard,Sorcerer,Wizard=5
+Suspended Silence.MOD	CLASSES:Sorcerer,Wizard=3
+Swamp Lung.MOD	CLASSES:Druid=7
+Swamp Stride.MOD	CLASSES:Ranger=4|Druid=5
+Swim (Mass).MOD	CLASSES:Druid=4
+Symbol of Spell Loss.MOD	CLASSES:Cleric,Sorcerer,Wizard=5
+Synostodweomer.MOD	CLASSES:Sorcerer,Wizard=7
+Targeting Ray.MOD	CLASSES:Bard,Sorcerer,Wizard=1
+Telepathic Aura.MOD	CLASSES:Paladin=4
+Thunderhead.MOD	CLASSES:Druid,Sorcerer,Wizard=1
+Thunderous Roar.MOD	CLASSES:Druid=3
+Treasure Scent.MOD	CLASSES:Bard,Druid=3|Sorcerer,Wizard=4
+Tremor.MOD	CLASSES:Cleric,Druid=3
+Triadspell.MOD	CLASSES:Cleric=5
+Tsunami.MOD	CLASSES:Druid=9
+Unholy Storm.MOD	CLASSES:Blackguard,Cleric=3
+Unluck~SC.MOD	CLASSES:Bard,Sorcerer,Wizard=3
+Updraft.MOD	CLASSES:Cleric,Druid=1
+Veil of Undeath.MOD	CLASSES:Cleric,Sorcerer,Wizard=8
+Vipergout~SC.MOD	CLASSES:Sorcerer,Wizard=3
+Viscid Glob.MOD	CLASSES:Sorcerer,Wizard=5
+Vortex of Teeth.MOD	CLASSES:Druid,Sorcerer,Wizard=4
+Wall of Gears.MOD	CLASSES:Sorcerer,Wizard=6	DOMAINS:Mechanus=6
+Wall of Light.MOD	CLASSES:Cleric,Sorcerer,Wizard=3
+Wall of Smoke.MOD	CLASSES:Druid,Sorcerer,Wizard=1
+Weapon Shift.MOD	CLASSES:Sorcerer,Wizard=1|Bard=2
+Wild Runner.MOD	CLASSES:Druid,Ranger=4
+Winter Chill.MOD	CLASSES:Druid=1
+Word of Binding.MOD	CLASSES:Paladin=3
+Wrathful Castigation.MOD	CLASSES:Sorcerer,Wizard=8
+Xorn Movement.MOD	CLASSES:Sorcerer,Wizard=5
+Zone of Respite.MOD	CLASSES:Cleric,Sorcerer,Wizard=5
+Zone of Revelation.MOD	CLASSES:Cleric=5
+Summon Monster III (Chaotic Evil Creatures Only).MOD	CLASSES:.CLEARALL
+Summon Monster V (Chaotic Evil Creatures Only).MOD	CLASSES:.CLEARALL
+Summon Monster VII (Chaotic Evil Creatures Only).MOD	CLASSES:.CLEARALL
+Summon Monster IX (Chaotic Evil Creatures Only).MOD	CLASSES:.CLEARALL
+Summon Monster III (Chaotic Good Creatures Only).MOD	CLASSES:.CLEARALL
+Summon Monster V (Chaotic Good Creatures Only).MOD	CLASSES:.CLEARALL
+Summon Monster VII (Chaotic Good Creatures Only).MOD	CLASSES:.CLEARALL
+Summon Monster IX (Chaotic Good Creatures Only).MOD	CLASSES:.CLEARALL
+Summon Monster III (Lawful good creatures only).MOD	CLASSES:.CLEARALL
+Summon Monster V (Lawful good creatures only).MOD	CLASSES:.CLEARALL
+Summon Monster VII (Lawful good creatures only).MOD	CLASSES:.CLEARALL
+Summon Monster IX (Lawful good creatures only).MOD	CLASSES:.CLEARALL
+Summon Monster III (Lawful evil creatures only).MOD	CLASSES:.CLEARALL
+Summon Monster V (Lawful evil creatures only).MOD	CLASSES:.CLEARALL
+Summon Monster VII (Lawful evil creatures only).MOD	CLASSES:.CLEARALL
+Summon Monster IX (Lawful evil creatures only).MOD	CLASSES:.CLEARALL

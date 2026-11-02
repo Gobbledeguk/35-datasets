@@ -1,0 +1,10 @@
+
+
+Flindbar	PROFICIENCY:WEAPON|Flindbar	TYPE:Weapon.Exotic.Melee.Bludgeoning.MeleeBludgeoning.Flail	COST:30	WT:2	CRITMULT:x2	CRITRANGE:2	DAMAGE:2d4	EQMOD:STEEL	WIELD:OneHanded	SIZE:M
+
+
+# 
+Warforged Body	PROFICIENCY:ARMOR|Warforged Body	TYPE:WarforgedArmor.Armor	COST:0	DEFINE:WarforgedAC|0	ACCHECK:0	EQMOD:Warforged Body	MAXDEX:8	PRERACE:1,Warforged	SPELLFAILURE:5	BONUS:COMBAT|AC|max(2,WarforgedAC)|TYPE=Armor
+
+
+

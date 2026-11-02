@@ -1,0 +1,41 @@
+# Class levels and domains of the spells in rdr_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Create Trap.MOD	CLASSES:Sorcerer,Wizard=1
+Essence of the Dragon.MOD	CLASSES:Sorcerer=2
+Ghostly Reload.MOD	CLASSES:Sorcerer,Wizard=1
+Ghostly Tail.MOD	CLASSES:Sorcerer=1
+Gnome Blight.MOD	CLASSES:Sorcerer,Wizard=2
+Hoard Life.MOD	CLASSES:Sorcerer=4
+Instant Diversion.MOD	CLASSES:Bard,Sorcerer,Wizard=1
+Local Tremor.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=2
+Manifest Dragon Heritage.MOD	CLASSES:Sorcerer=5
+Manifest Dragon Heritage (Greater).MOD	CLASSES:Sorcerer=8
+Mighty Wallop.MOD	CLASSES:Sorcerer,Wizard=1
+Mighty Wallop (Greater).MOD	CLASSES:Sorcerer,Wizard=3
+Peaceful Serenity of Io.MOD	CLASSES:Bard,Cleric,Druid=2
+Power Word Deafen.MOD	CLASSES:Sorcerer,Wizard=3
+Power Word Disable.MOD	CLASSES:Sorcerer,Wizard=5
+Power Word Distract.MOD	CLASSES:Sorcerer,Wizard=4
+Power Word Fatigue.MOD	CLASSES:Sorcerer,Wizard=1
+Power Word Maladroit.MOD	CLASSES:Sorcerer,Wizard=3
+Power Word Nauseate.MOD	CLASSES:Sorcerer,Wizard=6
+Power Word Pain.MOD	CLASSES:Sorcerer,Wizard=1
+Power Word Petrify.MOD	CLASSES:Sorcerer,Wizard=8
+Power Word Sicken.MOD	CLASSES:Sorcerer,Wizard=2
+Power Word Weaken.MOD	CLASSES:Sorcerer,Wizard=3
+Sense of the Dragon.MOD	CLASSES:Sorcerer,Wizard=3
+Steal Size.MOD	CLASSES:Sorcerer,Wizard=2
+Sticky Floor.MOD	CLASSES:Sorcerer,Wizard=1
+Summon Aspect of Bahamut.MOD	CLASSES:Cleric,Sorcerer,Wizard=7
+Tail Slap.MOD	CLASSES:Sorcerer=2
+Tail Sweep.MOD	CLASSES:Sorcerer=4
+Unfettered Grasp.MOD	CLASSES:Sorcerer,Wizard=2
+Wall of Scales.MOD	CLASSES:Sorcerer=4
+Wings of Bounding.MOD	CLASSES:Sorcerer=1
+Wings of Cover.MOD	CLASSES:Sorcerer=2
+Wings of Flurry.MOD	CLASSES:Sorcerer=4
+Wings of Swift Flying.MOD	CLASSES:Sorcerer=1
+Breath Barrier.MOD	CLASSES:Psion,Psychic Warrior,Wilder=3
+Dragon Hearted.MOD	CLASSES:Psion,Psychic Warrior,Wilder=4
+Evade Breath.MOD	CLASSES:Psychic Warrior=2|Psion,Wilder=4
+Sense of the Dragon (Psionic).MOD	CLASSES:Psion,Psychic Warrior,Wilder=5

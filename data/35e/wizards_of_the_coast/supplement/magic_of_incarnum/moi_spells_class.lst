@@ -1,0 +1,42 @@
+# Class levels and domains of the spells in moi_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Adept Spirit.MOD	CLASSES:Cleric=2|Sorcerer,Wizard=3
+Adept Spirit (Mass).MOD	CLASSES:Cleric=6|Sorcerer,Wizard=7
+Animal Spirit.MOD	CLASSES:Druid,Ranger=2
+Animal Spirit (Mass).MOD	CLASSES:Druid=6
+Channel the Mishtai.MOD	CLASSES:Sorcerer,Wizard=2
+Channel the Mishtai (Greater).MOD	CLASSES:Sorcerer,Wizard=6
+Conjure Greater Midnight Construct.MOD	CLASSES:Sorcerer,Wizard=8
+Conjure Lesser Midnight Construct.MOD	CLASSES:Sorcerer,Wizard=4
+Conjure Midnight Construct.MOD	CLASSES:Sorcerer,Wizard=6
+Detect Incarnum.MOD	CLASSES:Bard,Blackguard,Cleric,Paladin,Sorcerer,Wizard=1	DOMAINS:Incarnum=1
+Divest Essentia.MOD	CLASSES:Assassin,Hexblade,Sorcerer,Wizard=2
+Essentia Lock.MOD	CLASSES:Cleric,Sorcerer,Wizard=4	DOMAINS:Incarnum=4
+Guardian Spirit.MOD	CLASSES:Cleric,Ranger=3|Sorcerer,Wizard=4
+Guardian Spirit (Mass).MOD	CLASSES:Cleric=7|Sorcerer,Wizard=8
+Incarnum Apotheosis.MOD	DOMAINS:Incarnum=8
+Incarnum Arc.MOD	CLASSES:Sorcerer,Wizard=2
+Incarnum Bladestorm.MOD	CLASSES:Sorcerer,Wizard=7	DOMAINS:Incarnum=7
+Incarnum Vigor.MOD	CLASSES:Cleric=6|Druid=7	DOMAINS:Incarnum=6
+Incarnum Weapon.MOD	CLASSES:Cleric=5	DOMAINS:Incarnum=5
+Open Greater Chakra.MOD	CLASSES:Cleric,Sorcerer,Wizard=9
+Open Least Chakra.MOD	CLASSES:Cleric,Sorcerer,Wizard=4
+Open Lesser Chakra.MOD	CLASSES:Cleric,Sorcerer,Wizard=7
+Protection From Incarnum.MOD	CLASSES:Blackguard,Cleric,Paladin,Sorcerer,Wizard=1
+Rend Essentia.MOD	CLASSES:Assassin,Hexblade=3|Sorcerer,Wizard=4
+Soul Blight.MOD	CLASSES:Assassin,Hexblade,Sorcerer,Wizard=2
+Soul Boon.MOD	CLASSES:Sorcerer,Wizard=2|Cleric=3	DOMAINS:Incarnum=2
+Soulbanned Zone.MOD	CLASSES:Sorcerer,Wizard=8
+Soulbleed.MOD	CLASSES:Assassin,Blackguard=4
+Soulmeld Blessing.MOD	CLASSES:Cleric=2
+Soulmeld Disjunction.MOD	CLASSES:Sorcerer,Wizard=9	DOMAINS:Incarnum=9
+Suppress Magic.MOD	CLASSES:Cleric,Hexblade,Sorcerer,Wizard=2
+Unbind Chakra.MOD	CLASSES:Assassin,Hexblade=3|Sorcerer,Wizard=4
+Unshape Soulmeld.MOD	CLASSES:Cleric,Sorcerer,Wizard=4
+Valiant Spirit.MOD	CLASSES:Bard,Cleric,Paladin=4
+Valiant Spirit (Mass).MOD	CLASSES:Cleric=8
+Wall of Incarnum.MOD	CLASSES:Sorcerer,Wizard=3	DOMAINS:Incarnum=3
+Wrathful Doom.MOD	CLASSES:Sorcerer,Wizard=6
+Incarnum Fusion.MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicShaper,1]	CLASSES:Psychic Warrior=3
+Open Chakra (Psionic).MOD	CLASSES:Psion,Psychic Warrior,Wilder=4
+Soul Crystal.MOD	CLASSES:Psion,Wilder=7

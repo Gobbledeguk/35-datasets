@@ -1,0 +1,281 @@
+# Class levels and domains of the spells in xph_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Adapt Body.MOD	CLASSES:Psion,Psychic Warrior,Wilder=5
+Affinity Field.MOD	CLASSES:Psion,Wilder=9
+Anchored Navigation.MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=4
+Animal Affinity.MOD	CLASSES:Psychic Warrior=2	CLASSES:Psion=2[PREVARGTEQ:PsionicEgoist,1]
+Apopsi.MOD	CLASSES:Psion,Wilder=9
+Assimilate.MOD	CLASSES:Psion,Wilder=9
+Astral Caravan.MOD	CLASSES:Psion=3[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=3
+Astral Seed.MOD	CLASSES:Psion=8[PREVARGTEQ:PsionicShaper,1]	CLASSES:PsiSpell=8
+Astral Traveler.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Aura Alteration.MOD	CLASSES:Psion,Wilder=6
+Aura Sight.MOD	CLASSES:Psion,Wilder=4	CLASSES:PsiSpell=4
+Aversion.MOD	CLASSES:Psion=2[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=2
+Baleful Teleport.MOD	CLASSES:Psion=5[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=5
+Banishment (Psionic).MOD	CLASSES:Psion=6[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=6
+Bend Reality.MOD	CLASSES:Psion,Wilder=8
+Bestow Power.MOD	CLASSES:Psion,Wilder=2
+Biofeedback.MOD	CLASSES:Psychic Warrior=1|Psion,Wilder=2
+Bite of the Wolf.MOD	CLASSES:Psychic Warrior=1
+Body Adjustment.MOD	CLASSES:Psychic Warrior=2|Psion,Wilder=3
+Body Equilibrium.MOD	CLASSES:Psion,Psychic Warrior,Wilder=2
+Body Purification.MOD	CLASSES:Psychic Warrior=2|Psion,Wilder=3
+Bolt.MOD	CLASSES:Psion,Wilder=1
+Brain Lock.MOD	CLASSES:Psion=2[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=2
+Breath of the Black Dragon.MOD	CLASSES:Psion,Psychic Warrior,Wilder=6
+Burst.MOD	CLASSES:Psion=1[PREVARGTEQ:PsionicNomad,1]	CLASSES:Psychic Warrior=1
+Call to Mind.MOD	CLASSES:Psion,Wilder=1
+Call Weaponry.MOD	CLASSES:Psychic Warrior=1
+Catapsi.MOD	CLASSES:Psion,Psychic Warrior,Wilder=5
+Catfall.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Charm (Psionic).MOD	CLASSES:Psion=1[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=1
+Clairtangent Hand.MOD	CLASSES:Psion=5[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=5
+Clairvoyant Sense.MOD	CLASSES:Psion=2[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=2
+Claw of Energy.MOD	CLASSES:Psychic Warrior=4
+Claws of the Vampire.MOD	CLASSES:Psychic Warrior=3
+Cloud Mind.MOD	CLASSES:Psion,Wilder=2
+Cloud Mind (Mass).MOD	CLASSES:Psion,Wilder=6
+Compression.MOD	CLASSES:Psychic Warrior=1
+Conceal Thoughts.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Concealing Amorpha.MOD	CLASSES:Psion,Psychic Warrior,Wilder=2
+Concealing Amorpha (Greater).MOD	CLASSES:Psychic Warrior=3	CLASSES:Psion=3[PREVARGTEQ:PsionicShaper,1]
+Concussion Blast.MOD	CLASSES:Psion,Wilder=2
+Contingency (Psionic).MOD	CLASSES:Psion,Wilder=6
+Control Air.MOD	CLASSES:Psion=2[PREVARGTEQ:PsionicKineticist,1]	CLASSES:PsiSpell=2
+Control Body.MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicKineticist,1]	CLASSES:PsiSpell=4
+Control Flames.MOD	CLASSES:Psion,Wilder=1
+Control Light.MOD	CLASSES:Psion,Wilder=1
+Control Object.MOD	CLASSES:Psion=1[PREVARGTEQ:PsionicKineticist,1]	CLASSES:PsiSpell=1
+Control Sound.MOD	CLASSES:Psion,Wilder=2
+Co-Opt Concentration.MOD	CLASSES:Psion,Wilder=6
+Correspond.MOD	CLASSES:Psion,Wilder=4
+Create Sound.MOD	CLASSES:Psion,Wilder=1
+Crisis of Breath.MOD	CLASSES:Psion=3[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=3
+Crisis of Life.MOD	CLASSES:Psion=7[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=7
+Crystal Shard.MOD	CLASSES:Psion,Wilder=1
+Crystallize.MOD	CLASSES:Psion=6[PREVARGTEQ:PsionicShaper,1]	CLASSES:PsiSpell=6
+Danger Sense.MOD	CLASSES:Psion,Psychic Warrior,Wilder=3
+Darkvision (Psionic).MOD	CLASSES:Psychic Warrior=2|Psion,Wilder=3
+Daze (Psionic).MOD	CLASSES:Psion,Wilder=1
+Death Urge.MOD	CLASSES:Psion,Wilder=4
+Deceleration.MOD	CLASSES:Psion,Wilder=1
+Decerebrate.MOD	CLASSES:Psion,Wilder=7
+Deja Vu.MOD	CLASSES:Psion,Wilder=1
+Demoralize.MOD	CLASSES:Psion,Wilder=1
+Destiny Dissonance.MOD	CLASSES:Psion=1[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=1
+Detect Hostile Intent.MOD	CLASSES:Psion,Psychic Warrior,Wilder=2
+Detect Psionics.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Detect Remote Viewing.MOD	CLASSES:Psion,Wilder=4
+Detect Teleportation.MOD	CLASSES:Psion=1[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=1
+Dimension Slide.MOD	CLASSES:Psychic Warrior=3
+Dimension Swap.MOD	CLASSES:Psion=2[PREVARGTEQ:PsionicNomad,1]	CLASSES:Psychic Warrior=2
+Dimensional Anchor (Psionic).MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=4
+Disable.MOD	CLASSES:Psion,Wilder=1
+Disintegrate (Psionic).MOD	CLASSES:Psion,Wilder=6
+Dismissal (Psionic).MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=4
+Dismiss Ectoplasm.MOD	CLASSES:Psion,Wilder=3
+Dispel Psionics.MOD	CLASSES:Psion,Wilder=3
+Dispelling Buffer.MOD	CLASSES:Psion=6[PREVARGTEQ:PsionicKineticist,1]	CLASSES:Psychic Warrior=6
+Dissipating Touch.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Dissolving Touch.MOD	CLASSES:Psychic Warrior=2
+Dissolving Weapon.MOD	CLASSES:Psychic Warrior=2
+Divert Teleport.MOD	CLASSES:Psion,Wilder=7
+Divination (Psionic).MOD	CLASSES:Psion,Wilder=4
+Dominate (Psionic).MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=4
+Dream Travel.MOD	CLASSES:Psion=7[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=7
+Duodimensional Claw.MOD	CLASSES:Psychic Warrior=3
+Ecto Protection.MOD	CLASSES:Psion,Wilder=1
+Ectoplasmic Cocoon.MOD	CLASSES:Psion=3[PREVARGTEQ:PsionicShaper,1]	CLASSES:PsiSpell=3
+Ectoplasmic Cocoon (Mass).MOD	CLASSES:Psion=7[PREVARGTEQ:PsionicShaper,1]	CLASSES:PsiSpell=7
+Ectoplasmic Form.MOD	CLASSES:Psion=3[PREVARGTEQ:PsionicEgoist,1]	CLASSES:Psychic Warrior=3
+Ectoplasmic Shambler.MOD	CLASSES:Psion,Wilder=5
+Ego Whip.MOD	CLASSES:Psion,Wilder=2
+Elfsight.MOD	CLASSES:Psychic Warrior=1|Psion,Wilder=2
+Empathic Feedback.MOD	CLASSES:Psychic Warrior=3|Psion,Wilder=4
+Empathic Transfer.MOD	CLASSES:Psion=2[PREVARGTEQ:PsionicEgoist,1]	CLASSES:Psychic Warrior=2
+Empathy.MOD	CLASSES:Psion,Wilder=1
+Empty Mind.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Energy Adaptation.MOD	CLASSES:Psion,Psychic Warrior,Wilder=4
+Energy Adaptation (Specified).MOD	CLASSES:Psion,Psychic Warrior,Wilder=2
+Energy Ball.MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicKineticist,1]	CLASSES:PsiSpell=4
+Energy Bolt.MOD	CLASSES:Psion,Wilder=3
+Energy Burst.MOD	CLASSES:Psion,Wilder=3
+Energy Cone.MOD	CLASSES:Psion=3[PREVARGTEQ:PsionicKineticist,1]	CLASSES:PsiSpell=3
+Energy Conversion.MOD	CLASSES:Psion,Wilder=7
+Energy Current.MOD	CLASSES:Psion=5[PREVARGTEQ:PsionicKineticist,1]	CLASSES:PsiSpell=5
+Energy Push.MOD	CLASSES:Psion,Wilder=2
+Energy Ray.MOD	CLASSES:Psion,Wilder=1
+Energy Retort.MOD	CLASSES:Psion,Wilder=3
+Energy Wall.MOD	CLASSES:Psion,Wilder=3
+Energy Wave.MOD	CLASSES:Psion,Wilder=7
+Entangling Ectoplasm.MOD	CLASSES:Psion,Wilder=1
+Eradicate Invisibility.MOD	CLASSES:Psion,Wilder=3
+Escape Detection.MOD	CLASSES:Psychic Warrior=3	CLASSES:Psion=3[PREVARGTEQ:PsionicSeer,1]
+Ethereal Jaunt (Psionic).MOD	CLASSES:Psion=7[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=7
+Etherealness (Psionic).MOD	CLASSES:Psion,Wilder=9
+Evade Burst.MOD	CLASSES:Psychic Warrior=3|Psion,Wilder=7
+Exhalation of the Black Dragon.MOD	CLASSES:Psychic Warrior=3
+Expansion.MOD	CLASSES:Psychic Warrior=1
+Fabricate (Psionic).MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicShaper,1]	CLASSES:PsiSpell=4
+Fabricate (Greater Psionic).MOD	CLASSES:Psion=6[PREVARGTEQ:PsionicShaper,1]	CLASSES:PsiSpell=6
+False Sensory Input.MOD	CLASSES:Psion=3[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=3
+Far Hand.MOD	CLASSES:Psion,Wilder=1
+Fate Link.MOD	CLASSES:Psion=3[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=3
+Fate of One.MOD	CLASSES:Psion=7[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=7
+Feat Leech.MOD	CLASSES:Psion,Psychic Warrior,Wilder=2
+Fiery Discorporation.MOD	CLASSES:Psion=5[PREVARGTEQ:PsionicKineticist,1]	CLASSES:PsiSpell=5
+Fission.MOD	CLASSES:Psion=7[PREVARGTEQ:PsionicEgoist,1]	CLASSES:PsiSpell=7
+Fly (Psionic).MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=4
+Force Screen.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Form of Doom.MOD	CLASSES:Psychic Warrior=6
+Freedom of Movement (Psionic).MOD	CLASSES:Psion,Psychic Warrior,Wilder=4
+Fuse Flesh.MOD	CLASSES:Psion,Wilder=6
+Fusion.MOD	CLASSES:Psion=8[PREVARGTEQ:PsionicEgoist,1]	CLASSES:PsiSpell=8
+Genesis (Psionic).MOD	CLASSES:Psion=9[PREVARGTEQ:PsionicShaper,1]	CLASSES:PsiSpell=9
+Graft Weapon.MOD	CLASSES:Psychic Warrior=3
+Grease (Psionic).MOD	CLASSES:Psion,Wilder=1
+Grip of Iron.MOD	CLASSES:Psychic Warrior=1
+Hail of Crystals.MOD	CLASSES:Psion=5[PREVARGTEQ:PsionicShaper,1]	CLASSES:PsiSpell=5
+Hammer.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Hustle.MOD	CLASSES:Psychic Warrior=2	CLASSES:Psion=3[PREVARGTEQ:PsionicEgoist,1]
+Hypercognition.MOD	CLASSES:Psion=8[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=8
+Id Insinuation.MOD	CLASSES:Psion,Wilder=2
+Identify (Psionic).MOD	CLASSES:Psion,Wilder=2
+Immovability.MOD	CLASSES:Psychic Warrior=4
+Incarnate.MOD	CLASSES:Psion,Wilder=5
+Inertial Armor.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Inertial Barrier.MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicKineticist,1]	CLASSES:Psychic Warrior=4
+Inflict Pain.MOD	CLASSES:Psion,Wilder=2
+Insanity (Psionic).MOD	CLASSES:Psion,Wilder=7
+Intellect Fortress.MOD	CLASSES:Psion,Wilder=4
+Iron Body (Psionic).MOD	CLASSES:Psion,Wilder=8
+Keen Edge (Psionic).MOD	CLASSES:Psion,Psychic Warrior,Wilder=3
+Knock (Psionic).MOD	CLASSES:Psion,Wilder=2
+Know Direction and Location.MOD	CLASSES:Psion,Wilder=1
+Leech Field.MOD	CLASSES:Psion,Wilder=5
+Levitate (Psionic).MOD	CLASSES:Psion=2[PREVARGTEQ:PsionicNomad,1]	CLASSES:Psychic Warrior,Wilder=2
+Major Creation (Psionic).MOD	CLASSES:Psion,Wilder=5
+Matter Agitation.MOD	CLASSES:Psion,Wilder=1
+Matter Manipulation.MOD	CLASSES:Psion,Wilder=8
+Mental Barrier.MOD	CLASSES:Psion,Psychic Warrior,Wilder=3
+Mental Disruption.MOD	CLASSES:Psion,Wilder=2
+Metaconcert.MOD	CLASSES:Psychic Warrior=5	CLASSES:Psion=5[PREVARGTEQ:PsionicTelepath,1]
+Metafaculty.MOD	CLASSES:Psion=9[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=9
+Metamorphosis.MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicEgoist,1]	CLASSES:PsiSpell=4
+Metamorphosis (Greater).MOD	CLASSES:Psion=9[PREVARGTEQ:PsionicEgoist,1]	CLASSES:PsiSpell=9
+Metaphysical Claw.MOD	CLASSES:Psychic Warrior=1
+Metaphysical Weapon.MOD	CLASSES:Psychic Warrior=1
+Microcosm.MOD	CLASSES:Psion,Wilder=9
+Mind Blank (Personal).MOD	CLASSES:Psychic Warrior=6|Psion,Wilder=7
+Mind Blank (Psionic).MOD	CLASSES:Psion,Wilder=8
+Mind Probe.MOD	CLASSES:Psion=5[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=5
+Mind Seed.MOD	CLASSES:Psion=8[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=8
+Mind Switch.MOD	CLASSES:Psion=6[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=6
+Mind Switch (True).MOD	CLASSES:Psion=9[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=9
+Mind Thrust.MOD	CLASSES:Psion,Wilder=1
+Mind Trap.MOD	CLASSES:Psion,Wilder=3
+Mindlink.MOD	CLASSES:Psion=1[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=1
+Mindlink (Thieving).MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=4
+Mindwipe.MOD	CLASSES:Psion,Wilder=4
+Minor Creation (Psionic).MOD	CLASSES:Psion=1[PREVARGTEQ:PsionicShaper,1]	CLASSES:PsiSpell=1
+Missive.MOD	CLASSES:Psion,Wilder=1
+Missive (Mass).MOD	CLASSES:Psion,Wilder=2
+Modify Memory (Psionic).MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=4
+Moment of Prescience (Psionic).MOD	CLASSES:Psion,Wilder=7
+My Light.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Null Psionics Field.MOD	CLASSES:Psion=6[PREVARGTEQ:PsionicKineticist,1]	CLASSES:PsiSpell=6
+Oak Body.MOD	CLASSES:Psychic Warrior=5|Psion,Wilder=7
+Object Reading.MOD	CLASSES:Psion=2[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=2
+Overland Flight (Psionic).MOD	CLASSES:Psion,Wilder=6
+Painful Strike.MOD	CLASSES:Psychic Warrior=2
+Personality Parasite.MOD	CLASSES:Psion,Wilder=4
+Phase Door (Psionic).MOD	CLASSES:Psion,Wilder=7
+Plane Shift (Psionic).MOD	CLASSES:Psion,Wilder=5
+Power Leech.MOD	CLASSES:Psion,Wilder=4
+Power Resistance.MOD	CLASSES:Psion,Wilder=5
+Precognition.MOD	CLASSES:Psion=1[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=1
+Precognition (Defensive).MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Precognition (Greater).MOD	CLASSES:Psion=6[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=6
+Precognition (Offensive).MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Prescience (Offensive).MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Prevenom.MOD	CLASSES:Psychic Warrior=1
+Prevenom Weapon.MOD	CLASSES:Psychic Warrior=1
+Prowess.MOD	CLASSES:Psychic Warrior=2
+Psionic Blast.MOD	CLASSES:Psion,Wilder=3
+Psionic Lion's Charge.MOD	CLASSES:Psychic Warrior=2
+Psionic Lock.MOD	CLASSES:Psion,Wilder=2
+Psionic Repair Damage.MOD	CLASSES:Psion=2[PREVARGTEQ:PsionicShaper,1]	CLASSES:PsiSpell=2
+Psionic Revivify.MOD	CLASSES:Psion=5[PREVARGTEQ:PsionicEgoist,1]	CLASSES:PsiSpell=5
+Psionic Scent.MOD	CLASSES:Psychic Warrior=2
+Psychic Chirurgery.MOD	CLASSES:Psion=9[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=9
+Psychic Crush.MOD	CLASSES:Psion,Wilder=5
+Psychic Reformation.MOD	CLASSES:Psion,Wilder=4
+Psychic Vampire.MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicEgoist,1]	CLASSES:Psychic Warrior=4
+Psychofeedback.MOD	CLASSES:Psion=5[PREVARGTEQ:PsionicEgoist,1]	CLASSES:Psychic Warrior=5
+Quintessence.MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicShaper,1]	CLASSES:PsiSpell=4
+Read Thoughts.MOD	CLASSES:Psion=2[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=2
+Reality Revision.MOD	CLASSES:Psion,Wilder=9
+Recall Agony.MOD	CLASSES:Psion,Wilder=2
+Recall Death.MOD	CLASSES:Psion,Wilder=8
+Reddopsi.MOD	CLASSES:Psion=7[PREVARGTEQ:PsionicKineticist,1]	CLASSES:PsiSpell=7
+Remote View Trap.MOD	CLASSES:Psion,Wilder=6
+Remote Viewing.MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=4
+Restoration (Psionic).MOD	CLASSES:Psion=6[PREVARGTEQ:PsionicEgoist,1]	CLASSES:PsiSpell=6
+Restore Extremity.MOD	CLASSES:Psion=5[PREVARGTEQ:PsionicEgoist,1]	CLASSES:PsiSpell=5
+Retrieve.MOD	CLASSES:Psion,Wilder=6
+Schism.MOD	CLASSES:Psion=4[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=4
+Second Chance.MOD	CLASSES:Psion=5[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=5
+Sense Link.MOD	CLASSES:Psion,Wilder=1
+Sense Link (Forced).MOD	CLASSES:Psion,Wilder=2
+Sensitivity to Psychic Impressions.MOD	CLASSES:Psion=2[PREVARGTEQ:PsionicSeer,1]	CLASSES:PsiSpell=2
+Sequester (Psionic).MOD	CLASSES:Psion,Wilder=7
+Shadow Body.MOD	CLASSES:Psion,Wilder=8
+Share Pain.MOD	CLASSES:Psion,Wilder=2
+Share Pain (Forced).MOD	CLASSES:Psion,Wilder=3
+Shatter Mind Blank.MOD	CLASSES:Psion,Wilder=5
+Skate.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Solicit Psicrystal.MOD	CLASSES:Psion,Wilder=3
+Steadfast Perception.MOD	CLASSES:Psychic Warrior=4
+Stomp.MOD	CLASSES:Psychic Warrior=1
+Strength of My Enemy.MOD	CLASSES:Psychic Warrior=2
+Suggestion (Psionic).MOD	CLASSES:Psion=2[PREVARGTEQ:PsionicTelepath,1]	CLASSES:PsiSpell=2
+Suspend Life.MOD	CLASSES:Psion,Psychic Warrior,Wilder=6
+Sustenance.MOD	CLASSES:Psion,Psychic Warrior,Wilder=2
+Swarm of Crystals.MOD	CLASSES:Psion,Wilder=2
+Synesthete.MOD	CLASSES:Psion,Psychic Warrior,Wilder=1
+Telekinetic Force.MOD	CLASSES:Psion,Wilder=3
+Telekinetic Maneuver.MOD	CLASSES:Psion,Wilder=4
+Telekinetic Sphere (Psionic).MOD	CLASSES:Psion=8[PREVARGTEQ:PsionicKineticist,1]	CLASSES:PsiSpell=8
+Telekinetic Thrust.MOD	CLASSES:Psion,Wilder=3
+Telempathic Projection.MOD	CLASSES:Psion,Wilder=1
+Teleport (Psionic).MOD	CLASSES:Psion=5[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=5
+Teleport (Psionic Greater).MOD	CLASSES:Psion,Wilder=8
+Teleportation Circle (Psionic).MOD	CLASSES:Psion=9[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=9
+Teleport Trigger.MOD	CLASSES:Psion=5[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=5
+Temporal Acceleration.MOD	CLASSES:Psion,Wilder=6
+Thicken Skin.MOD	CLASSES:Psion=1[PREVARGTEQ:PsionicEgoist,1]	CLASSES:Psychic Warrior=1
+Thought Shield.MOD	CLASSES:Psion,Psychic Warrior,Wilder=2
+Time Hop.MOD	CLASSES:Psion,Wilder=3
+Time Hop (Mass).MOD	CLASSES:Psion=8[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=8
+Time Regression.MOD	CLASSES:Psion=9[PREVARGTEQ:PsionicNomad,1]	CLASSES:PsiSpell=9
+Timeless Body.MOD	CLASSES:Psion,Wilder=9
+Tongues (Psionic).MOD	CLASSES:Psion,Wilder=2
+Tornado Blast.MOD	CLASSES:Psion=9[PREVARGTEQ:PsionicKineticist,1]	CLASSES:PsiSpell=9
+Touchsight.MOD	CLASSES:Psion,Wilder=3
+Tower of Iron Will.MOD	CLASSES:Psion,Wilder=5
+Trace Teleport.MOD	CLASSES:Psion,Wilder=4
+True Creation (Psionic).MOD	CLASSES:Psion=9[PREVARGTEQ:PsionicShaper,1]	CLASSES:PsiSpell=9
+True Metabolism.MOD	CLASSES:Psion,Wilder=8
+True Seeing (Psionic).MOD	CLASSES:Psion,Wilder=5
+Truevenom.MOD	CLASSES:Psychic Warrior=4
+Truevenom Weapon.MOD	CLASSES:Psychic Warrior=4
+Ubiquitous Vision.MOD	CLASSES:Psion,Psychic Warrior,Wilder=3
+Ultrablast.MOD	CLASSES:Psion,Wilder=7
+Vampiric Blade.MOD	CLASSES:Psychic Warrior=3
+Wall Walker.MOD	CLASSES:Psychic Warrior=2
+Dweomer of Transference.MOD	CLASSES:Cleric,Sorcerer,Wizard=4
+Glossolalia.MOD	CLASSES:Bard=2
+Mental Pinnacle.MOD	CLASSES:Sorcerer,Wizard=6
+Psychic Turmoil.MOD	CLASSES:Cleric,Sorcerer,Wizard=5
+Psychic Turmoil (Greater).MOD	CLASSES:Cleric,Sorcerer,Wizard=7

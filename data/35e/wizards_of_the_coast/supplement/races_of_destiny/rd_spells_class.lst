@@ -1,0 +1,26 @@
+# Class levels and domains of the spells in rd_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Animate City.MOD	DOMAINS:City=9
+Charm Person (Mass).MOD	CLASSES:Bard=4|Sorcerer,Wizard=5
+Choose Destiny.MOD	DOMAINS:Destiny=9
+City Lights.MOD	CLASSES:Sorcerer,Wizard=2	DOMAINS:City=2
+City Stride.MOD	CLASSES:Bard=6	DOMAINS:City=6
+City's Might.MOD	DOMAINS:City=8
+Commune with City.MOD	DOMAINS:City=4
+Discern Bloodline.MOD	CLASSES:Bard,Sorcerer,Wizard=1
+Friendly Face.MOD	CLASSES:Bard,Sorcerer,Wizard=1
+Insignia of Alarm.MOD	CLASSES:Bard,Cleric,Paladin=2
+Insignia of Blessing.MOD	CLASSES:Cleric,Paladin=3
+Insignia of Healing.MOD	CLASSES:Bard,Cleric=3
+Insignia of Warding.MOD	CLASSES:Cleric,Paladin=3
+Locate City.MOD	CLASSES:Bard,Ranger,Sorcerer,Wizard=1
+Phantom Guardians.MOD	CLASSES:Sorcerer,Wizard=3
+Proud Arrogance.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Rooftop Strider.MOD	CLASSES:Assassin=1
+Scholar's Touch.MOD	CLASSES:Bard,Cleric,Sorcerer,Wizard=1
+Shadow Guardians.MOD	CLASSES:Sorcerer,Wizard=5
+Skyline Runner.MOD	DOMAINS:City=5
+Unseen Servant (Mass).MOD	CLASSES:Sorcerer,Wizard=4
+Urban Shield.MOD	DOMAINS:City=7
+Warp Destiny.MOD	DOMAINS:Destiny=6
+Winding Alleys.MOD	CLASSES:Bard=3	DOMAINS:City=3

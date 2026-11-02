@@ -1,0 +1,4 @@
+# Class levels and domains of the spells in tm_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Shadow Mystery ~.MOD	CLASSES:Shadowcaster=9
+Vestigewrack.MOD	CLASSES:Blackguard,Cleric,Sorcerer,Wizard=2

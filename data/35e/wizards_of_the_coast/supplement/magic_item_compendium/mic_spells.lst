@@ -1,0 +1,10 @@
+# CVS $Revision: $ $Author: $ -- Sun Aug 17 15:41:15 2014 -- reformated by prettylst.pl v1.51 (build 24906)
+
+
+# Spell Name	Save Info		Spell Resistance	Description
+
+###Block: Spells
+Summon Manticore	SAVEINFO:None	SPELLRES:No
+
+###Block: Descriptions
+Summon Manticore.MOD	DESC:Summons a manticore

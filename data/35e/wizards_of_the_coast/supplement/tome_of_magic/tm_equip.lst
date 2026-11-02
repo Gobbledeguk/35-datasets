@@ -1,0 +1,110 @@
+
+
+Shadow Silk Padded Armor	PROFICIENCY:ARMOR|Padded	TYPE:Container.Magic.Enhancement.Armor.Light.ArmorProfLight.ArmorType_Light.Suit.Nonmetal	CONTAINS:UNLIM|Armor Crystal=1	COST:1350	WT:2.5	ACCHECK:0	EQMOD:CLOTH.Masterwork (Armor)	MAXDEX:10	SOURCELONG:Magic Item Compendium	SOURCESHORT:MIC	SOURCEPAGE:p.155	SPELLFAILURE:5	BONUS:COMBAT|AC|1|TYPE=Armor	BONUS:SKILL|Hide,Move Silently|2|TYPE=Competence	SPROP:The armor looks like deep black silk. It feels heavier in well lit areas and lighter in darkness. The spell failure chance drops by 5%% in areas of shadowy illumination or less. It has 10 hit points and a hardness of 1, but restores itself in areas of shadowy illumination or darkness at 1 hp/round.
+Shadow Silk Leather Armor	PROFICIENCY:ARMOR|Leather	TYPE:Container.Magic.Enhancement.Armor.Light.ArmorProfLight.ArmorType_Light.Suit.Nonmetal	CONTAINS:UNLIM|Armor Crystal=1	COST:1600	WT:4	ACCHECK:0	EQMOD:CLOTH.Masterwork (Armor)	MAXDEX:8	SOURCELONG:Magic Item Compendium	SOURCESHORT:MIC	SOURCEPAGE:p.155	SPELLFAILURE:10	BONUS:COMBAT|AC|2|TYPE=Armor	BONUS:SKILL|Hide,Move Silently|2|TYPE=Competence	SPROP:The armor looks like deep black silk. It feels heavier in well lit areas and lighter in darkness. The spell failure chance drops by 5%% in areas of shadowy illumination or less. It has 10 hit points and a hardness of 1, but restores itself in areas of shadowy illumination or darkness at 1 hp/round.
+Shadow Silk Hide Armor	PROFICIENCY:ARMOR|Hide	TYPE:Container.Magic.Enhancement.Armor.Light.ArmorProfLight.ArmorType_Light.Suit.Nonmetal	CONTAINS:UNLIM|Armor Crystal=1	COST:2350	WT:5.5	ACCHECK:-2	EQMOD:CLOTH.Masterwork (Armor)	MAXDEX:6	SOURCELONG:Magic Item Compendium	SOURCESHORT:MIC	SOURCEPAGE:p.155	SPELLFAILURE:20	BONUS:COMBAT|AC|3|TYPE=Armor	BONUS:SKILL|Hide,Move Silently|2|TYPE=Competence	SPROP:The armor looks like deep black silk. It feels heavier in well lit areas and lighter in darkness. The spell failure chance drops by 5%% in areas of shadowy illumination or less. It has 10 hit points and a hardness of 1, but restores itself in areas of shadowy illumination or darkness at 1 hp/round.
+
+
+
+Chime of Suppression	TYPE:Magic.Pact Magic Item	COST:3800	WT:0.5	SOURCEPAGE:p.76
+Implements of Binding	TYPE:Magic.Pact Magic Item	COST:1530	WT:10	SOURCEPAGE:p.76
+Soul Lens	TYPE:Magic.Pact Magic Item	COST:12000	WT:0	SOURCEPAGE:p.76
+Seal of the Spirit	TYPE:Magic.Pact Magic Item	COST:6000	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Acererak)	TYPE:Magic.Pact Magic Item	COST:10800	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Agares)	TYPE:Magic.Pact Magic Item	COST:43200	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Amon)	TYPE:Magic.Pact Magic Item	COST:9000	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Andras)	TYPE:Magic.Pact Magic Item	COST:5400	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Andromalius)	TYPE:Magic.Pact Magic Item	COST:43000	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Aym)	TYPE:Magic.Pact Magic Item	COST:9000	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Balam)	TYPE:Magic.Pact Magic Item	COST:43200	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Buer)	TYPE:Magic.Pact Magic Item	COST:5400	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Chupoclops)	TYPE:Magic.Pact Magic Item	COST:32760	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Dahlver-Nar)	TYPE:Magic.Pact Magic Item	COST:8000	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Dantalion)	TYPE:Magic.Pact Magic Item	COST:5400	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Eligor)	TYPE:Magic.Pact Magic Item	COST:16000	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Eurynome)	TYPE:Magic.Pact Magic Item	COST:5400	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Focalor)	TYPE:Magic.Pact Magic Item	COST:5400	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Geryon)	TYPE:Magic.Pact Magic Item	COST:5400	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Haagenti)	TYPE:Magic.Pact Magic Item	COST:9000	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Halphax)	TYPE:Magic.Pact Magic Item	COST:55000	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Haures)	TYPE:Magic.Pact Magic Item	COST:30240	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Ipos)	TYPE:Magic.Pact Magic Item	COST:16000	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Karsus)	TYPE:Magic.Pact Magic Item	COST:16200	WT:0	SOURCEPAGE:p.77
+Teeth of Dahlver-Nar (Leraje)	TYPE:Magic.Pact Magic Item	COST:21600	WT:0	SOURCEPAGE:p.78
+Teeth of Dahlver-Nar (Malphas)	TYPE:Magic.Pact Magic Item	COST:10080	WT:0	SOURCEPAGE:p.78
+Teeth of Dahlver-Nar (Marchosias)	TYPE:Magic.Pact Magic Item	COST:16000	WT:0	SOURCEPAGE:p.78
+Teeth of Dahlver-Nar (Naberius)	TYPE:Magic.Pact Magic Item	COST:10800	WT:0	SOURCEPAGE:p.78
+Teeth of Dahlver-Nar (Orthos)	TYPE:Magic.Pact Magic Item	COST:5400	WT:0	SOURCEPAGE:p.78
+Teeth of Dahlver-Nar (Otiax)	TYPE:Magic.Pact Magic Item	COST:10800	WT:0	SOURCEPAGE:p.78
+Teeth of Dahlver-Nar (Paimon)	TYPE:Magic.Pact Magic Item	COST:16000	WT:0	SOURCEPAGE:p.78
+Teeth of Dahlver-Nar (Ronove)	TYPE:Magic.Pact Magic Item	COST:9000	WT:0	SOURCEPAGE:p.78
+Teeth of Dahlver-Nar (Savnok)	TYPE:Magic.Pact Magic Item	COST:2000	WT:0	SOURCEPAGE:p.78
+Teeth of Dahlver-Nar (Shax)	TYPE:Magic.Pact Magic Item	COST:10080	WT:0	SOURCEPAGE:p.78
+Teeth of Dahlver-Nar (Tenebrous)	TYPE:Magic.Pact Magic Item	COST:5400	WT:0	SOURCEPAGE:p.78
+Teeth of Dahlver-Nar (Zagan)	TYPE:Magic.Pact Magic Item	COST:16200	WT:0	SOURCEPAGE:p.78
+
+
+Vestige Phylactery	TYPE:Magic.Pact Magic Item	COST:15000	WT:5	SOURCEPAGE:p.79
+
+Shadow Magic Staff (One apprentice)	TYPE:Magic.Shadow Magic Item	COST:30000	WT:0	SOURCEPAGE:p.154
+Shadow Magic Staff (one initiate)	TYPE:Magic.Shadow Magic Item	COST:48469	WT:0	SOURCEPAGE:p.154
+Shadow Magic Staff (one master)	TYPE:Magic.Shadow Magic Item	COST:69375	WT:0	SOURCEPAGE:p.154
+Shadow Magic Staff (two apprentice)	TYPE:Magic.Shadow Magic Item	COST:49500	WT:0	SOURCEPAGE:p.154
+Shadow Magic Staff (two initiate)	TYPE:Magic.Shadow Magic Item	COST:81318	WT:0	SOURCEPAGE:p.154
+Shadow Magic Staff (two master)	TYPE:Magic.Shadow Magic Item	COST:115313	WT:0	SOURCEPAGE:p.154
+Shadow Magic Staff (One apprentice/one initiate)	TYPE:Magic.Shadow Magic Item	COST:74690	WT:0	SOURCEPAGE:p.154
+Shadow Magic Staff (One apprentice/one master)	TYPE:Magic.Shadow Magic Item	COST:104063	WT:0	SOURCEPAGE:p.154
+Shadow Magic Staff (one initiate/one master)	TYPE:Magic.Shadow Magic Item	COST:112500	WT:0	SOURCEPAGE:p.154
+
+Metashadow Rod (Empower Mystery/Lesser)	TYPE:Magic.Rod.Shadow Magic Item	COST:9000	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Empower Mystery/Normal)	TYPE:Magic.Rod.Shadow Magic Item	COST:32500	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Empower Mystery/Greater)	TYPE:Magic.Rod.Shadow Magic Item	COST:73000	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Enlarge Mystery/Lesser)	TYPE:Magic.Rod.Shadow Magic Item	COST:3000	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Enlarge Mystery/Normal)	TYPE:Magic.Rod.Shadow Magic Item	COST:11000	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Enlarge Mystery/Greater)	TYPE:Magic.Rod.Shadow Magic Item	COST:24500	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Extend Mystery/Lesser)	TYPE:Magic.Rod.Shadow Magic Item	COST:3000	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Extend Mystery/Normal)	TYPE:Magic.Rod.Shadow Magic Item	COST:11000	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Extend Mystery/Greater)	TYPE:Magic.Rod.Shadow Magic Item	COST:24500	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Line of Shadow/Lesser)	TYPE:Magic.Rod.Shadow Magic Item	COST:14000	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Line of Shadow/Normal)	TYPE:Magic.Rod.Shadow Magic Item	COST:54000	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Line of Shadow/Greater)	TYPE:Magic.Rod.Shadow Magic Item	COST:121500	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Maximize Mystery/Lesser)	TYPE:Magic.Rod.Shadow Magic Item	COST:14000	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Maximize Mystery/Normal)	TYPE:Magic.Rod.Shadow Magic Item	COST:54000	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Maximize Mystery/Greater)	TYPE:Magic.Rod.Shadow Magic Item	COST:121500	WT:0	SOURCEPAGE:p.154
+Metashadow Rod (Quickern Mystery/Lesser)	TYPE:Magic.Rod.Shadow Magic Item	COST:35500	WT:0	SOURCEPAGE:p.155
+Metashadow Rod (Quickern Mystery/Normal)	TYPE:Magic.Rod.Shadow Magic Item	COST:75500	WT:0	SOURCEPAGE:p.155
+Metashadow Rod (Quickern Mystery/Greater)	TYPE:Magic.Rod.Shadow Magic Item	COST:170000	WT:0	SOURCEPAGE:p.155
+Metashadow Rod (Reach Mystery/Lesser)	TYPE:Magic.Rod.Shadow Magic Item	COST:14000	WT:0	SOURCEPAGE:p.155
+Metashadow Rod (Reach Mystery/Normal)	TYPE:Magic.Rod.Shadow Magic Item	COST:54000	WT:0	SOURCEPAGE:p.155
+Metashadow Rod (Reach Mystery/Greater)	TYPE:Magic.Rod.Shadow Magic Item	COST:121500	WT:0	SOURCEPAGE:p.155
+Metashadow Rod (Still Mystery/Lesser)	TYPE:Magic.Rod.Shadow Magic Item	COST:3000	WT:0	SOURCEPAGE:p.155
+Metashadow Rod (Still Mystery/Normal)	TYPE:Magic.Rod.Shadow Magic Item	COST:11000	WT:0	SOURCEPAGE:p.155
+Metashadow Rod (Still Mystery/Greater)	TYPE:Magic.Rod.Shadow Magic Item	COST:24500	WT:0	SOURCEPAGE:p.155
+
+Dark Lantern	TYPE:Magic.Wondrous	COST:2000	WT:2	SOURCEPAGE:p.156
+Collar of Umbral Metamorphosis	TYPE:Magic.Wondrous	COST:10800	WT:1	SOURCEPAGE:p.156
+Gem of Night	TYPE:Magic.Wondrous	COST:1500	WT:0	SOURCEPAGE:p.156
+Orb of Shadow (1st Level)	TYPE:Magic.Wondrous	COST:1000	WT:0	SOURCEPAGE:p.156
+Orb of Shadow (2nd Level)	TYPE:Magic.Wondrous	COST:4000	WT:0	SOURCEPAGE:p.156
+Orb of Shadow (3rd Level)	TYPE:Magic.Wondrous	COST:9000	WT:0	SOURCEPAGE:p.156
+Orb of Shadow (4th Level)	TYPE:Magic.Wondrous	COST:16000	WT:0	SOURCEPAGE:p.156
+Orb of Shadow (5th Level)	TYPE:Magic.Wondrous	COST:25000	WT:0	SOURCEPAGE:p.156
+Orb of Shadow (6th Level)	TYPE:Magic.Wondrous	COST:36000	WT:0	SOURCEPAGE:p.156
+Orb of Shadow (7th Level)	TYPE:Magic.Wondrous	COST:49000	WT:0	SOURCEPAGE:p.156
+Orb of Shadow (8th Level)	TYPE:Magic.Wondrous	COST:64000	WT:0	SOURCEPAGE:p.156
+Orb of Shadow (9th Level)	TYPE:Magic.Wondrous	COST:81000	WT:0	SOURCEPAGE:p.156
+Orb of Shadow (2 Mysteries)	TYPE:Magic.Wondrous	COST:70000	WT:0	SOURCEPAGE:p.156
+
+Ring of Orb of Shadow (1st Level)	TYPE:Magic.Ring	COST:1000	WT:0	SOURCEPAGE:p.156
+Ring of Orb of Shadow (2nd Level)	TYPE:Magic.Ring	COST:4000	WT:0	SOURCEPAGE:p.156
+Ring of Orb of Shadow (3rd Level)	TYPE:Magic.Ring	COST:9000	WT:0	SOURCEPAGE:p.156
+Ring of Orb of Shadow (4th Level)	TYPE:Magic.Ring	COST:16000	WT:0	SOURCEPAGE:p.156
+Ring of Orb of Shadow (5th Level)	TYPE:Magic.Ring	COST:25000	WT:0	SOURCEPAGE:p.156
+Ring of Orb of Shadow (6th Level)	TYPE:Magic.Ring	COST:36000	WT:0	SOURCEPAGE:p.156
+Ring of Orb of Shadow (7th Level)	TYPE:Magic.Ring	COST:49000	WT:0	SOURCEPAGE:p.156
+Ring of Orb of Shadow (8th Level)	TYPE:Magic.Ring	COST:64000	WT:0	SOURCEPAGE:p.156
+Ring of Orb of Shadow (9th Level)	TYPE:Magic.Ring	COST:81000	WT:0	SOURCEPAGE:p.156
+Ring of Orb of Shadow (2 Mysteries)	TYPE:Magic.Ring	COST:70000	WT:0	SOURCEPAGE:p.156
+
+Ring of Nullification	TYPE:Magic.Ring	COST:3200	WT:0	SOURCEPAGE:p.157
+Shroud of Night	TYPE:Magic.Wondrous	COST:10160	WT:0	SOURCEPAGE:p.157

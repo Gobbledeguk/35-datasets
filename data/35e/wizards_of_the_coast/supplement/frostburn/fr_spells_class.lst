@@ -1,0 +1,136 @@
+# Class levels and domains of the spells in fr_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Algid Enhancement.MOD	CLASSES:Cleric=6
+Artic Haze.MOD	CLASSES:Druid,Sorcerer,Wizard=3
+Aura of Cold (Greater).MOD	CLASSES:Cleric,Druid=7
+Aura of Cold (Lesser).MOD	CLASSES:Cleric,Druid=3|Paladin,Ranger=4
+Binding Snow.MOD	CLASSES:Cleric,Druid,Paladin,Ranger=3
+Blizzard.MOD	CLASSES:Druid=5	DOMAINS:Winter=5
+Blood Snow.MOD	CLASSES:Cleric,Druid=2|Sorcerer,Wizard=3
+Bone Chill.MOD	CLASSES:Sorcerer,Wizard=2
+Boreal Wind.MOD	CLASSES:Bard,Cleric,Sorcerer,Wizard=5
+Brumal Stiffening.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=2
+Call Avalanche.MOD	CLASSES:Druid=5
+Column of Ice.MOD	CLASSES:Druid=3|Sorcerer,Wizard=4
+Cometstrike.MOD	CLASSES:Druid=9
+Conjure Ice Beast I.MOD	CLASSES:Cleric,Druid,Ranger=1
+Conjure Ice Beast II.MOD	CLASSES:Cleric,Druid,Ranger=2
+Conjure Ice Beast III.MOD	CLASSES:Cleric,Druid,Ranger=3
+Conjure Ice Beast IV.MOD	CLASSES:Cleric,Druid,Ranger=4
+Conjure Ice Beast V.MOD	CLASSES:Cleric,Druid=5
+Conjure Ice Beast VI.MOD	CLASSES:Cleric,Druid=6
+Conjure Ice Beast VII.MOD	CLASSES:Cleric,Druid=7
+Conjure Ice Beast VIII.MOD	CLASSES:Cleric,Druid=8
+Conjure Ice Beast IX.MOD	CLASSES:Cleric,Druid=9
+Conjure Ice Object.MOD	CLASSES:Cleric,Druid=2
+Control Snow and Ice.MOD	CLASSES:Cleric=3
+Control Temperature.MOD	CLASSES:Druid,Sorcerer,Wizard=3
+Crack Ice.MOD	CLASSES:Sorcerer,Wizard=3
+Crunchy Snow.MOD	CLASSES:Druid,Ranger=1
+Death Hail.MOD	CLASSES:Druid=6	DOMAINS:Winter=6
+Defile Snow and Ice.MOD	CLASSES:Cleric=3
+Detect Fire.MOD	CLASSES:Cleric=1
+Dispel Cold.MOD	CLASSES:Cleric=5
+Dispel Fire.MOD	CLASSES:Cleric=5
+Ease of Breath.MOD	CLASSES:Cleric,Druid,Ranger=1
+Entomb.MOD	CLASSES:Druid,Sorcerer,Wizard=6
+Evergreen.MOD	CLASSES:Druid=2
+Fimbulwinter.MOD	CLASSES:Druid,Sorcerer,Wizard=8|Cleric=9	DOMAINS:Winter=9
+Flash-Freeze.MOD	CLASSES:Druid=2
+Flesh to Ice.MOD	CLASSES:Sorcerer,Wizard=5
+Fortify Cold Creatures.MOD	CLASSES:Cleric=1
+Freeze Armor.MOD	CLASSES:Cleric,Druid=4
+Freezing Glance.MOD	CLASSES:Sorcerer,Wizard=6
+Frost Weapon.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=2
+Frostbite.MOD	CLASSES:Cleric=5
+Frostburn.MOD	CLASSES:Cleric=4
+Frostburn (Lesser).MOD	CLASSES:Cleric=2
+Frostburn (Mass).MOD	CLASSES:Cleric=6
+Frostfell.MOD	CLASSES:Druid=8|Sorcerer,Wizard=9
+Frostfell slide.MOD	CLASSES:Druid,Ranger=4
+Gelid Blood.MOD	CLASSES:Sorcerer,Wizard=5
+Glacial Globe of Invulnerability.MOD	CLASSES:Sorcerer,Wizard=3|Cleric=4
+Glacial Ward (Great).MOD	CLASSES:Sorcerer,Wizard=7
+Glacial Ward.MOD	CLASSES:Sorcerer,Wizard=4
+Glacier.MOD	CLASSES:Druid=8
+Glaze Lock.MOD	CLASSES:Sorcerer,Wizard=1
+Heartfreeze.MOD	CLASSES:Sorcerer,Wizard=6
+Heat Leech.MOD	CLASSES:Sorcerer,Wizard=2
+Hibernal Healing.MOD	CLASSES:Druid=4|Cleric=5
+Hibernate.MOD	CLASSES:Druid=4|Cleric=5
+Ice Assassin.MOD	CLASSES:Sorcerer,Wizard=9
+Ice Castle.MOD	CLASSES:Sorcerer,Wizard=7
+Ice Darts.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Ice Rift.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=6
+Ice Shape.MOD	CLASSES:Cleric,Druid=3|Sorcerer,Wizard=5
+Ice Shield.MOD	CLASSES:Sorcerer,Wizard=4|Druid=5
+Ice Ship.MOD	CLASSES:Sorcerer,Wizard=4
+Ice Skate.MOD	CLASSES:Druid,Ranger=1
+Ice Slick.MOD	CLASSES:Cleric=1
+Ice to Flesh.MOD	CLASSES:Sorcerer,Wizard=5
+Ice Web.MOD	CLASSES:Sorcerer,Wizard=4
+Iceberg.MOD	CLASSES:Sorcerer,Wizard=9
+Icicle.MOD	CLASSES:Sorcerer,Wizard=2
+Ivory Flesh.MOD	CLASSES:Bard,Druid,Ranger=1
+Leomund's Tiny Igloo.MOD	CLASSES:Sorcerer,Wizard=2
+Meld into Ice.MOD	CLASSES:Cleric,Druid=3
+Mindfrost.MOD	CLASSES:Sorcerer,Wizard=4
+Move Snow and Ice.MOD	CLASSES:Druid,Sorcerer,Wizard=6
+Numbing Sphere.MOD	CLASSES:Druid,Sorcerer,Wizard=2
+Obscuring Snow.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=2
+Pass through Ice.MOD	CLASSES:Cleric,Druid=5
+Raise Ice Forest.MOD	CLASSES:Druid=7
+Shivering Touch.MOD	CLASSES:Cleric,Sorcerer,Wizard=3
+Shivering Touch (Lesser).MOD	CLASSES:Cleric,Sorcerer,Wizard=1
+Snow Walk.MOD	CLASSES:Druid,Ranger=2	DOMAINS:Winter=2
+Snow Wave.MOD	CLASSES:Druid=6
+Snowdrift.MOD	CLASSES:Druid,Sorcerer,Wizard=1
+Snowsight.MOD	CLASSES:Druid,Ranger=1	DOMAINS:Winter=1
+Snowsong.MOD	CLASSES:Bard=6
+Suppress Flame.MOD	CLASSES:Sorcerer,Wizard=6
+Thaw.MOD	CLASSES:Druid=2
+Thin Air.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=2
+Wall of Coldfire.MOD	CLASSES:Sorcerer,Wizard=4|Druid=5
+Waves of Cold.MOD	CLASSES:Sorcerer,Wizard=6
+Whiteout.MOD	CLASSES:Druid=7
+Zone of Glacial Cold.MOD	CLASSES:Druid,Ranger,Sorcerer,Wizard=2
+Summon Giants (Frost Giants Only).MOD	CLASSES:.CLEARALL
+Cause Fear.MOD	CLASSES:Disciple of Thrym=1
+Corrupt Weapon.MOD	CLASSES:Disciple of Thrym=1
+Detect Fire.MOD	CLASSES:Disciple of Thrym=1
+Divine Favor.MOD	CLASSES:Disciple of Thrym=1
+Doom.MOD	CLASSES:Disciple of Thrym=1
+Ease of Breath.MOD	CLASSES:Disciple of Thrym=1
+Frostburn (Lesser).MOD	CLASSES:Disciple of Thrym=1
+Magic Weapon.MOD	CLASSES:Disciple of Thrym=1
+Obscuring Mist.MOD	CLASSES:Disciple of Thrym=1
+Protection from Good.MOD	CLASSES:Disciple of Thrym=1
+Protection from Law.MOD	CLASSES:Disciple of Thrym=1
+Shivering Touch (Lesser).MOD	CLASSES:Disciple of Thrym=1
+Blood Snow.MOD	CLASSES:Disciple of Thrym=2
+Bull's Strength.MOD	CLASSES:Disciple of Thrym=2
+Chill Metal.MOD	CLASSES:Disciple of Thrym=2
+Conjure Ice Object.MOD	CLASSES:Disciple of Thrym=2
+Eagle's Splendor.MOD	CLASSES:Disciple of Thrym=2
+Fog Cloud.MOD	CLASSES:Disciple of Thrym=2
+Frost Weapon.MOD	CLASSES:Disciple of Thrym=2
+Zone of Glacial Cold.MOD	CLASSES:Disciple of Thrym=2
+Binding Snow.MOD	CLASSES:Disciple of Thrym=3
+Ice Shape.MOD	CLASSES:Disciple of Thrym=3
+Aura of Cold (Lesser).MOD	CLASSES:Disciple of Thrym=3
+Meld into Ice.MOD	CLASSES:Disciple of Thrym=3
+Shivering Touch.MOD	CLASSES:Disciple of Thrym=3
+Sleet Storm.MOD	CLASSES:Disciple of Thrym=3
+Boreal Wind.MOD	CLASSES:Disciple of Thrym=4
+Glacial Globe of Invulnerability.MOD	CLASSES:Disciple of Thrym=4
+Frostburn.MOD	CLASSES:Disciple of Thrym=4
+Hibernal Healing.MOD	CLASSES:Disciple of Thrym=4
+Summon Giants.MOD	CLASSES:Disciple of Thrym=4
+Dispel Fire.MOD	CLASSES:Disciple of Thrym=5
+Dispel Good.MOD	CLASSES:Disciple of Thrym=5
+Dispel Law.MOD	CLASSES:Disciple of Thrym=5
+Entomb.MOD	CLASSES:Disciple of Thrym=5
+Frostbite.MOD	CLASSES:Disciple of Thrym=5
+Ice Storm.MOD	CLASSES:Disciple of Thrym=5
+Stoneskin.MOD	CLASSES:Disciple of Thrym=5
+Wall of Ice.MOD	CLASSES:Disciple of Thrym=5

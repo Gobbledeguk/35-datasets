@@ -1,0 +1,61 @@
+
+###Block: Arms
+Buckler-axe, Dwarven	KEY:Buckler-axe (Dwarven)	PROFICIENCY:WEAPON|Buckler-axe (Dwarven)	TYPE:Weapon.Melee.Light.Exotic	COST:20	WT:4	CRITMULT:x3	CRITRANGE:1	DAMAGE:1d6	WIELD:Light	SIZE:M	SOURCEPAGE:p.153
+Hammer, Throwing	KEY:Hammer (Throwing)	PROFICIENCY:WEAPON|Hammer (Throwing)	TYPE:Weapon.Melee.Light.Exotic	COST:30	WT:2	CRITMULT:x2	CRITRANGE:1	DAMAGE:1d6	RANGE:20	SIZE:M	SOURCEPAGE:p.154
+Tortoise Blade, Gnome	KEY:Tortoise Blade (Gnome)	PROFICIENCY:WEAPON|Tortoise Blade (Gnome)	TYPE:Weapon.Melee.Light.Exotic	COST:10	WT:3	CRITMULT:x2	CRITRANGE:2	DAMAGE:1d6	WIELD:Light	SIZE:M	SOURCEPAGE:p.155
+Quickrazor, Gnome	KEY:Quickrazor (Gnome)	PROFICIENCY:WEAPON|Quickrazor (Gnome)	TYPE:Weapon.Melee.Light.Exotic.Slashing.Melee.MeleeSlashing.Gnome	COST:45	WT:1	CRITMULT:x2	CRITRANGE:2	DAMAGE:1d4	SIZE:M	SOURCEPAGE:p.154	SPROP:The gnome quickrazor is a fast, flashy weapon favored by gnome bards, because it allows them to hold an instrument, attack with a weapon, and still keep one hand free for spellcasting. In addition, many two-weapon-wielding spellcasters find it a perfect off-hand weapon because it allows them to keep their primary weapon in hand and still cast spells with their off hand. The quickrazor features a light, wide knife blade with a very small hilt. The weapon is worn tied to the wielder's wrist in a specially designed sheath. When you attack with a quickrazor, you fl ick it out in a quick, slashing circle, catching the hilt in your hand at the end of the arc and then snapping it back into its rest. Because of this fl icking technique, drawing a quickrazor is always a free action, but at the end of your action, you must stow the quickrazor in order to use it properly again on your next turn. Stowing the weapon after attacking with it in this fashion is a free action. Because you must stow the quickrazor at the end of each attack with it, you are treated as unarmed during other creatures' actions. If you draw a quickrazor and simply wield it instead of using its intended attack method, it counts as an improvised weapon, imposing a -2 penalty on attack rolls even if you have the appropriate Exotic Weapon Proficiency feat. Quickrazors are easier to conceal than most weapons, and they grant a +4 bonus on Sleight of Hand checks to conceal them. Quickrazors grant a +2 bonus on Bluff checks made to feint in combat. Attaching a quickrazor and sheath to your wrist so that it can be wielded properly is a full-round action that provokes attacks of opportunity. A character can have only one quickrazor attached to each wrist at a time.|PRERULE:1,DisplayFullEquip
+Swordcatcher, Gnome	KEY:Swordcatcher (Gnome)	PROFICIENCY:WEAPON|Swordcatcher (Gnome)	TYPE:Weapon.Melee.OneHanded.Exotic	COST:35	WT:5	CRITMULT:x2	CRITRANGE:2	DAMAGE:1d6	SIZE:M	SOURCEPAGE:p.155
+Greathammer, Goliath	KEY:Greathammer (Goliath)	PROFICIENCY:WEAPON|Greathammer (Goliath)	TYPE:Weapon.Melee.TwoHanded.Exotic	COST:30	WT:30	CRITMULT:x4	CRITRANGE:1	DAMAGE:1d12	SIZE:M	SOURCEPAGE:p.154
+Spear, Dwarven Double	KEY:Spear (Dwarven Double)	PROFICIENCY:WEAPON|Spear (Dwarven Double)	TYPE:Weapon.Melee.TwoHanded.Exotic.Double	ALTTYPE:Weapon.Melee.Slashing.Piercing	COST:115	WT:15	CRITMULT:x3	CRITRANGE:1	ALTCRITMULT:x3	ALTCRITRANGE:1	DAMAGE:1d8	ALTDAMAGE:1d8	SIZE:M	SOURCEPAGE:p.154
+Warpike, Dwarven	KEY:Warpike (Dwarven)	PROFICIENCY:WEAPON|Warpike (Dwarven)	TYPE:Weapon.Melee.TwoHanded.Exotic	COST:45	WT:15	CRITMULT:x3	CRITRANGE:1	DAMAGE:2d6	SIZE:M	SOURCEPAGE:p.155
+Crossbow, Great	KEY:Crossbow (Great)	PROFICIENCY:WEAPON|Crossbow (Great)	TYPE:Weapon.Ranged.TwoHanded.Exotic.Container	COST:150	WT:14	CRITMULT:x2	CRITRANGE:3	DAMAGE:2d8	RANGE:120	SIZE:M	SOURCEPAGE:p.153
+
+###Block: Armor
+Stone Plate	KEY:Stone Plate	PROFICIENCY:ARMOR|Stone Plate	TYPE:ArmorProfHeavy.ArmorType_Heavy.Armor.Heavy.Exotic.Suit.Standard.Container.ArmorType_Heavy	CONTAINS:UNLIM|Armor Crystal=1	COST:750	WT:35	ACCHECK:-7	EQMOD:STEEL	MAXDEX:1	SOURCEPAGE:p.158	SPELLFAILURE:30	BONUS:VAR|ArmorCheckPenalty|7	BONUS:COMBAT|AC|6|TYPE=Armor
+Heavy Plate Armor	KEY:Heavy Plate Armor	PROFICIENCY:ARMOR|Heavy Plate Armor	TYPE:ArmorProfHeavy.ArmorType_Heavy.Armor.Heavy.Exotic.Suit.Standard.Container.ArmorType_Heavy	CONTAINS:UNLIM|Armor Crystal=1	COST:2000	WT:100	ACCHECK:-8	EQMOD:STEEL	MAXDEX:0	SOURCEPAGE:p.155	SPELLFAILURE:45	BONUS:VAR|ArmorCheckPenalty|8	BONUS:COMBAT|AC|9|TYPE=Armor
+
+###Block: Shields
+Shield, Tower, Steel	KEY:Shield (Tower/Steel)	PROFICIENCY:SHIELD|Tower Shield	TYPE:ShieldProfTower.Container.Shield.Tower.Exotic.Standard	CONTAINS:UNLIM|Shield Crystal=1	COST:75	WT:100	ACCHECK:-10	EQMOD:STEEL	SIZE:M	SOURCEPAGE:p.158	SPELLFAILURE:50	BONUS:VAR|ArmorCheckPenalty|10	BONUS:COMBAT|AC|4|TYPE=Shield
+
+###Block: Exotic Armor
+Twist Cloth, Gnome	KEY:Twist Cloth (Gnome)	PROFICIENCY:ARMOR|Twist Cloth (Gnome)	TYPE:ArmorProfExotic.Armor.Light.Exotic.Suit.Standard.Container.ArmorType_Light	CONTAINS:UNLIM|Armor Crystal=1	COST:150	WT:5	ACCHECK:0	EQMOD:CLOTH	SOURCEPAGE:p.159	SPELLFAILURE:5	BONUS:VAR|ArmorCheckPenalty|0	BONUS:COMBAT|AC|1|TYPE=Armor
+Mammoth Leather	KEY:Mammoth Leather	PROFICIENCY:ARMOR|Mammoth Leather	TYPE:ArmorProfExotic.Armor.Light.Exotic.Suit.Standard.Container.ArmorType_Light	CONTAINS:UNLIM|Armor Crystal=1	COST:45	WT:30	ACCHECK:-4	EQMOD:LEATHER	MAXDEX:4	SOURCEPAGE:p.157	SPELLFAILURE:20	BONUS:VAR|ArmorCheckPenalty|4	BONUS:COMBAT|AC|4|TYPE=Armor
+# Medium
+Interlocking Scale	KEY:Interlocking Scale	PROFICIENCY:ARMOR|Interlocking Scale	TYPE:ArmorProfExotic.Armor.Medium.Exotic.Suit.Standard.Container.ArmorType_Medium	CONTAINS:UNLIM|Armor Crystal=1	COST:250	WT:30	ACCHECK:-6	EQMOD:STEEL	MAXDEX:2	SOURCEPAGE:p.156	SPELLFAILURE:30	BONUS:VAR|ArmorCheckPenalty|6	BONUS:COMBAT|AC|4|TYPE=Armor
+Tumbler's Breastplate	KEY:Tumbler's Breastplate	PROFICIENCY:ARMOR|Tumbler's Breastplate	TYPE:ArmorProfExotic.Armor.Medium.Exotic.Suit.Standard.Container.ArmorType_Medium	CONTAINS:UNLIM|Armor Crystal=1	COST:450	WT:30	ACCHECK:-4	EQMOD:STEEL	MAXDEX:4	SOURCEPAGE:p.158	SPELLFAILURE:25	BONUS:VAR|ArmorCheckPenalty|4	BONUS:COMBAT|AC|5|TYPE=Armor
+# Heavy
+Interlocking Plate	KEY:Interlocking Plate	PROFICIENCY:ARMOR|Interlocking Plate	TYPE:ArmorProfExotic.Armor.Heavy.Exotic.Suit.Standard.Container.ArmorType_Heavy	CONTAINS:UNLIM|Armor Crystal=1	COST:1750	WT:50	ACCHECK:-8	EQMOD:STEEL	MAXDEX:0	SOURCEPAGE:p.155	SPELLFAILURE:40	BONUS:VAR|ArmorCheckPenalty|8	BONUS:COMBAT|AC|8|TYPE=Armor
+Battle Plate	KEY:Battle Plate	PROFICIENCY:ARMOR|Battle Plate	TYPE:ArmorProfExotic.Armor.Heavy.Exotic.Suit.Standard.Container.ArmorType_Heavy	CONTAINS:UNLIM|Armor Crystal=1	COST:2500	WT:125	ACCHECK:-7	EQMOD:STEEL	MAXDEX:1	SOURCEPAGE:p.155	SPELLFAILURE:50	BONUS:VAR|ArmorCheckPenalty|7	BONUS:COMBAT|AC|9|TYPE=Armor
+Mountain Plate	KEY:Mountain Plate	PROFICIENCY:ARMOR|Mountain Plate	TYPE:ArmorProfExotic.Armor.Heavy.Exotic.Suit.Standard.Container.ArmorType_Heavy	CONTAINS:UNLIM|Armor Crystal=1	COST:3250	WT:225	ACCHECK:-9	EQMOD:STEEL	MAXDEX:0	SOURCEPAGE:p.157	SPELLFAILURE:60	BONUS:VAR|ArmorCheckPenalty|9	BONUS:COMBAT|AC|10|TYPE=Armor
+
+###Block: Shields
+Battle Cloak, Gnome	KEY:Battle Cloak (Gnome)	PROFICIENCY:SHIELD|Battle Cloak (Gnome)	TYPE:ShieldProfExotic.Container.Shield.Exotic.Standard	CONTAINS:UNLIM|Shield Crystal=1	COST:5	WT:1	ACCHECK:0	EQMOD:CLOTH	SIZE:M	SOURCEPAGE:p.155	SPELLFAILURE:0	BONUS:VAR|ArmorCheckPenalty|0	BONUS:COMBAT|AC|1|TYPE=Shield
+Shield, Extreme, Wooden	KEY:Shield (Extreme/Wooden)	PROFICIENCY:SHIELD|Shield (Extreme/Wooden)	TYPE:ShieldProfExotic.Container.Shield.Exotic.Standard	CONTAINS:UNLIM|Shield Crystal=1	COST:10	WT:15	ACCHECK:-4	EQMOD:STEEL	SIZE:M	SOURCEPAGE:p.157	SPELLFAILURE:15	BONUS:VAR|ArmorCheckPenalty|4	BONUS:COMBAT|AC|3|TYPE=Shield	SPROP: You strap a large or larger shield to your forearm and grip it with your hand. These exotic shields are so heavy that you can't use your shield hand for anything else while using one, nor can you make shield bash attacks.
+Shield, Extreme, Steel	KEY:Shield (Extreme/Steel)	PROFICIENCY:SHIELD|Shield (Extreme/Steel)	TYPE:ShieldProfExotic.Container.Shield.Exotic.Standard	CONTAINS:UNLIM|Shield Crystal=1	COST:30	WT:25	ACCHECK:-4	EQMOD:STEEL	SIZE:M	SOURCEPAGE:p.157	SPELLFAILURE:15	BONUS:VAR|ArmorCheckPenalty|4	BONUS:COMBAT|AC|3|TYPE=Shield	SPROP: You strap a large or larger shield to your forearm and grip it with your hand. These exotic shields are so heavy that you can't use your shield hand for anything else while using one, nor can you make shield bash attacks.
+Shield, Gauntlet	KEY:Shield (Gauntlet)	PROFICIENCY:SHIELD|Shield (Gauntlet)	TYPE:ShieldProfExotic.Container.Shield.Exotic.Standard	TYPE:Weapon.Melee.Martial.Unarmed.Bludgeoning.Shieldbash	CONTAINS:UNLIM|Shield Crystal=1	COST:50	WT:20	ACCHECK:-2	CRITMULT:x2	CRITRANGE:1	DAMAGE:1d4	EQMOD:STEEL	WIELD:OneHanded	SIZE:M	SOURCEPAGE:p.158	SPELLFAILURE:35	BONUS:VAR|ArmorCheckPenalty|2	BONUS:COMBAT|AC|2|TYPE=Shield
+Shield, Rider's	KEY:Shield (Rider's)	PROFICIENCY:SHIELD|Shield (Rider's)	TYPE:ShieldProfExotic.Container.Shield.Exotic.Standard	TYPE:Weapon.Melee.Martial.Unarmed.Bludgeoning.Shieldbash	CONTAINS:UNLIM|Shield Crystal=1	COST:75	WT:15	ACCHECK:-2	CRITMULT:x2	CRITRANGE:1	DAMAGE:1d4	EQMOD:STEEL	WIELD:OneHanded	SIZE:M	SOURCEPAGE:p.158	SPELLFAILURE:15	BONUS:VAR|ArmorCheckPenalty|2	BONUS:COMBAT|AC|2|TYPE=Shield
+
+###Block: Miscellaneous Gear
+Blasting Pellets										TYPE:Miscellaneous Gear	COST:50	WT:2
+Blister Oil											TYPE:Miscellaneous Gear	COST:15	WT:0.5
+Earthsilk Jersey										TYPE:Miscellaneous Gear	COST:150	WT:2
+Earthsilk rope (50 ft.)									TYPE:Miscellaneous Gear	COST:12	WT:7
+Goliath healing kit									TYPE:Miscellaneous Gear	COST:50	WT:1
+Hearthfire (12 uses)									TYPE:Miscellaneous Gear	COST:10	WT:2	BASEQTY:12
+Hearthfire lantern									TYPE:Miscellaneous Gear	COST:7	WT:2
+Song collar											TYPE:Miscellaneous Gear	COST:15	WT:2
+Saddle, Burrower's			KEY:Saddle (Burrower's/Pack)		TYPE:Miscellaneous Gear	COST:20	WT:12
+Saddle, Burrower's			KEY:Saddle (Burrower's/Riding)	TYPE:Miscellaneous Gear	COST:40	WT:25
+Saddle, flyer's				KEY:Saddle (Flyer's/Military)		TYPE:Miscellaneous Gear	COST:70	WT:25
+Saddle, flyer's				KEY:Saddle (Flyer's/Pack)		TYPE:Miscellaneous Gear	COST:18	WT:15
+Saddle, flyer's				KEY:Saddle (Flyer's/Riding)		TYPE:Miscellaneous Gear	COST:35	WT:25
+Spiderlily essence (1 application)							TYPE:Miscellaneous Gear	COST:75			QUALITY:CraftDC|25
+
+###Block: Mounts
+Ankheg		TYPE:Mount
+Bulette		TYPE:Mount
+Delver		TYPE:Mount
+Deep hound		TYPE:Mount
+Dire Badger		TYPE:Mount
+Dire Eagle		TYPE:Mount
+Thrum worm		TYPE:Mount

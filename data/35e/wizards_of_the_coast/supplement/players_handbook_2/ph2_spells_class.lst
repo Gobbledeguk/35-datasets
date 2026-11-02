@@ -1,0 +1,265 @@
+# Class levels and domains of the spells in ph2_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Alter Fortune.MOD	CLASSES:Bard,Cleric,Druid,Sorcerer,Wizard=3
+Animalistic Power.MOD	CLASSES:Cleric,Druid,Duskblade,Ranger,Sorcerer,Wizard=2
+Animalistic Power (Mass).MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=7
+As the Frost.MOD	CLASSES:Druid,Sorcerer,Wizard=7
+Baleful Blink.MOD	CLASSES:Bard,Sorcerer,Wizard=4
+Disrupting Hand.MOD	CLASSES:Sorcerer,Wizard=3
+Helpful Hand.MOD	CLASSES:Sorcerer,Wizard=1
+Striking Fist.MOD	CLASSES:Duskblade,Sorcerer,Wizard=2
+Tripping Hand.MOD	CLASSES:Duskblade,Sorcerer,Wizard=1
+Warding Hand.MOD	CLASSES:Sorcerer,Wizard=2
+Blade of Blood.MOD	CLASSES:Assassin,Blackguard,Cleric,Duskblade,Sorcerer,Wizard=1
+Black Karma Curse.MOD	CLASSES:Cleric,Sorcerer,Wizard=2
+Blade Brothers.MOD	CLASSES:Bard,Cleric=2
+Bleakness.MOD	CLASSES:Cleric,Sorcerer,Wizard=4
+Blessing of the Righteous.MOD	CLASSES:Cleric,Paladin=4
+Blinding Color Surge.MOD	CLASSES:Beguiler,Sorcerer,Wizard=2
+Blood Creeper.MOD	CLASSES:Druid=5
+Bones of the Earth.MOD	CLASSES:Druid=6
+Bright Worms.MOD	CLASSES:Sorcerer,Wizard=4
+Burning Rage.MOD	CLASSES:Sorcerer,Wizard=1
+Call of Stone.MOD	CLASSES:Druid,Sorcerer,Wizard=4
+Celerity.MOD	CLASSES:Bard,Sorcerer,Wizard=4
+Celerity (Greater).MOD	CLASSES:Sorcerer,Wizard=8
+Celerity (Lesser).MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Chain Dispel.MOD	CLASSES:Cleric,Sorcerer,Wizard=8
+Channeled Divine Health.MOD	CLASSES:Cleric=4
+Channeled Divine Shield.MOD	CLASSES:Cleric=3
+Channeled Pyroburst.MOD	CLASSES:Duskblade,Sorcerer,Wizard=4
+Chasing Perfection.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=6
+Cloud of Knives.MOD	CLASSES:Cleric,Sorcerer,Wizard=2
+Condemnation.MOD	CLASSES:Sorcerer,Wizard=4|Cleric=5
+Crown of Clarity.MOD	CLASSES:Ranger=2|Druid,Sorcerer,Wizard=3
+Crown of Grave.MOD	CLASSES:Cleric,Sorcerer,Wizard=3
+Crown of Might.MOD	CLASSES:Cleric,Duskblade,Sorcerer,Wizard=3
+Crown of Protection.MOD	CLASSES:Cleric,Duskblade,Sorcerer,Wizard=3
+Crown of Smiting.MOD	CLASSES:Paladin=2|Cleric=3
+Crown of Veils.MOD	CLASSES:Bard=2|Beguiler,Sorcerer,Wizard=3
+Crushing Grip.MOD	CLASSES:Sorcerer,Wizard=4
+Curse of Arrow Attraction.MOD	CLASSES:Ranger=2|Cleric,Sorcerer,Wizard=3
+Deflect.MOD	CLASSES:Duskblade,Sorcerer,Wizard=2
+Deflect (Lesser).MOD	CLASSES:Duskblade,Sorcerer,Wizard=1
+Dimension Shuffle.MOD	CLASSES:Sorcerer,Wizard=5
+Dimension Step.MOD	CLASSES:Sorcerer,Wizard=3
+Dispelling Touch.MOD	CLASSES:Sorcerer,Wizard=2|Duskblade=3
+Divine Retaliation.MOD	CLASSES:Cleric=3|Paladin=4
+Doom Scarabs.MOD	CLASSES:Duskblade=3|Sorcerer,Wizard=4
+Dragonshape.MOD	CLASSES:Sorcerer,Wizard=9
+Drifts of the Shalm.MOD	CLASSES:Druid=2
+Electric Vengeance.MOD	CLASSES:Sorcerer,Wizard=2
+Electric Vengeance (Greater).MOD	CLASSES:Sorcerer,Wizard=5
+Energy Aegis.MOD	CLASSES:Cleric,Duskblade,Sorcerer,Wizard=3
+Energy Surge.MOD	CLASSES:Duskblade,Sorcerer,Wizard=3
+Energy Surge (Greater).MOD	CLASSES:Sorcerer,Wizard=6
+Energy Surge (Lesser).MOD	CLASSES:Sorcerer,Wizard=2
+Energy Vulnerability.MOD	CLASSES:Cleric,Sorcerer,Wizard=3
+Etherealness (Swift).MOD	CLASSES:Beguiler,Cleric,Sorcerer,Wizard=5
+Evard's Menacing Tentacles.MOD	CLASSES:Druid,Sorcerer,Wizard=3
+Explosive Rune Field.MOD	CLASSES:Sorcerer,Wizard=4
+Field of Resistance.MOD	CLASSES:Sorcerer,Wizard=5
+Friend to Foe.MOD	CLASSES:Bard,Beguiler,Sorcerer,Wizard=5
+Halt.MOD	CLASSES:Bard,Beguiler,Duskblade,Sorcerer,Wizard=3
+Healing Spirit.MOD	CLASSES:Paladin=3|Bard,Cleric,Druid=4
+Hesitate.MOD	CLASSES:Bard,Beguiler,Cleric,Sorcerer,Wizard=3
+Hunter's Eye.MOD	CLASSES:Ranger=2
+Incite Riot.MOD	CLASSES:Bard,Beguiler,Sorcerer,Wizard=5
+Increase Virulence.MOD	CLASSES:Assassin,Bard,Blackguard,Sorcerer,Wizard=2
+Inevitable Defeat.MOD	CLASSES:Beguiler,Sorcerer,Wizard=3
+Insight of Good Fortune.MOD	CLASSES:Bard,Cleric,Sorcerer,Wizard=2
+Invest Heavy Protection.MOD	CLASSES:Cleric=5
+Invest Light Protection.MOD	CLASSES:Cleric=1
+Invest Moderate Protection.MOD	CLASSES:Cleric=3
+Kelgore's Fire Bolt.MOD	CLASSES:Duskblade,Sorcerer,Wizard=1
+Kelgore's Grave Mist.MOD	CLASSES:Sorcerer,Wizard=2
+Legion of Sentinels.MOD	CLASSES:Beguiler,Sorcerer,Wizard=3
+Linked Perception.MOD	CLASSES:Ranger=1|Druid=2
+Longstrider (Mass).MOD	CLASSES:Ranger=4|Druid=5
+Luminous Assassin (Lesser).MOD	CLASSES:Sorcerer,Wizard=3
+Luminous Assassin (Greater).MOD	CLASSES:Sorcerer,Wizard=7
+Luminous Assassin.MOD	CLASSES:Sorcerer,Wizard=5
+Magic Convalescence.MOD	CLASSES:Bard,Cleric,Druid=5
+Mana Flux.MOD	CLASSES:Cleric,Sorcerer,Wizard=5
+Mark of Doom.MOD	CLASSES:Paladin=2|Cleric=3
+Mark of Judgement.MOD	CLASSES:Cleric=2
+Melf's Unicorn Arrow.MOD	CLASSES:Sorcerer,Wizard=3
+Meteoric Strike.MOD	CLASSES:Druid,Paladin=4|Cleric=5
+Mirror Image (Greater).MOD	CLASSES:Bard,Beguiler,Sorcerer,Wizard=4
+Mystic Aegis.MOD	CLASSES:Cleric=4
+Mystic Surge.MOD	CLASSES:Sorcerer,Wizard=4
+Overwhelm.MOD	CLASSES:Beguiler,Sorcerer,Wizard=6
+Phantom Battle.MOD	CLASSES:Bard=3|Beguiler,Sorcerer,Wizard=4
+Plague.MOD	CLASSES:Cleric,Druid=7|Sorcerer,Wizard=8
+Prismatic Mist.MOD	CLASSES:Sorcerer,Wizard=3
+Pulse of Hate.MOD	CLASSES:Cleric,Sorcerer,Wizard=7
+Radiance.MOD	CLASSES:Cleric,Druid,Sorcerer,Wizard=5
+Ray of the Python.MOD	CLASSES:Bard=2|Sorcerer,Wizard=3
+Regroup.MOD	CLASSES:Duskblade,Sorcerer,Wizard=3
+Renewed Vigor.MOD	CLASSES:Cleric,Druid=4|Bard=5
+Righteous Burst.MOD	CLASSES:Cleric=7
+Rouse.MOD	CLASSES:Beguiler,Duskblade,Sorcerer,Wizard=1
+Scattering Trap.MOD	CLASSES:Sorcerer,Wizard=3
+Seeking Ray.MOD	CLASSES:Duskblade,Sorcerer,Wizard=2
+Share Talents.MOD	CLASSES:Bard=1|Cleric,Ranger,Sorcerer,Wizard=2
+Slashing Dispel.MOD	CLASSES:Sorcerer,Wizard=4|Duskblade=5
+Sonic Shield.MOD	CLASSES:Bard=3|Duskblade,Sorcerer,Wizard=5
+Stand.MOD	CLASSES:Duskblade,Sorcerer,Wizard=1
+Stay the Hand.MOD	CLASSES:Bard=1|Beguiler,Cleric,Sorcerer,Wizard=2
+Stifle Spell.MOD	CLASSES:Cleric,Sorcerer,Wizard=4
+Stretch Weapon.MOD	CLASSES:Bard,Cleric,Duskblade,Sorcerer,Wizard=2
+Summon Golem.MOD	CLASSES:Cleric,Sorcerer,Wizard=9
+Sure Strike.MOD	CLASSES:Duskblade,Sorcerer,Wizard=2
+Thunder Field.MOD	CLASSES:Bard=4|Druid,Sorcerer,Wizard=6
+Toxic Weapon.MOD	CLASSES:Duskblade=4|Sorcerer,Wizard=5
+Trollshape.MOD	CLASSES:Sorcerer,Wizard=4
+Vertigo.MOD	CLASSES:Bard,Beguiler,Sorcerer,Wizard=2
+Vertigo Field.MOD	CLASSES:Beguiler,Sorcerer,Wizard=3
+Visions of the Future.MOD	CLASSES:Cleric=8
+Whelm.MOD	CLASSES:Beguiler,Sorcerer,Wizard=1
+Whelm (Mass).MOD	CLASSES:Beguiler,Sorcerer,Wizard=4
+Whelming Blast.MOD	CLASSES:Beguiler,Sorcerer,Wizard=2
+Wrack Earth.MOD	CLASSES:Druid=7
+Dancing Lights.MOD	CLASSES:Beguiler=0
+Daze.MOD	CLASSES:Beguiler=0
+Detect Magic.MOD	CLASSES:Beguiler=0
+Ghost Sound.MOD	CLASSES:Beguiler=0
+Message.MOD	CLASSES:Beguiler=0
+Open/Close.MOD	CLASSES:Beguiler=0
+Read Magic.MOD	CLASSES:Beguiler=0
+Charm Person.MOD	CLASSES:Beguiler=1
+Color Spray.MOD	CLASSES:Beguiler=1
+Comprehend Languages.MOD	CLASSES:Beguiler=1
+Detect Secret Doors.MOD	CLASSES:Beguiler=1
+Disguise Self.MOD	CLASSES:Beguiler=1
+Expeditious Retreat.MOD	CLASSES:Beguiler=1
+Hypnotism.MOD	CLASSES:Beguiler=1
+Mage Armor.MOD	CLASSES:Beguiler=1
+Obscuring Mist.MOD	CLASSES:Beguiler=1
+Silent Image.MOD	CLASSES:Beguiler=1
+Sleep.MOD	CLASSES:Beguiler=1
+Undetectable Alignment.MOD	CLASSES:Beguiler=1
+Blur.MOD	CLASSES:Beguiler=2
+Daze Monster.MOD	CLASSES:Beguiler=2
+Detect Thoughts.MOD	CLASSES:Beguiler=2
+Fog Cloud.MOD	CLASSES:Beguiler=2
+Glitterdust.MOD	CLASSES:Beguiler=2
+Hypnotic Pattern.MOD	CLASSES:Beguiler=2
+Invisibility.MOD	CLASSES:Beguiler=2
+Knock.MOD	CLASSES:Beguiler=2
+Minor Image.MOD	CLASSES:Beguiler=2
+Mirror Image.MOD	CLASSES:Beguiler=2
+Misdirection.MOD	CLASSES:Beguiler=2
+See Invisibility.MOD	CLASSES:Beguiler=2
+Silence.MOD	CLASSES:Beguiler=2
+Spider Climb.MOD	CLASSES:Beguiler=2
+Touch of Idiocy.MOD	CLASSES:Beguiler=2
+Arcane Sight.MOD	CLASSES:Beguiler=3
+Clairaudience/Clairvoyance.MOD	CLASSES:Beguiler=3
+Deep Slumber.MOD	CLASSES:Beguiler=3
+Dispel Magic.MOD	CLASSES:Beguiler=3
+Displacement.MOD	CLASSES:Beguiler=3
+Glibness.MOD	CLASSES:Beguiler=3
+Haste.MOD	CLASSES:Beguiler=3
+Hold Person.MOD	CLASSES:Beguiler=3
+Invisibility Sphere.MOD	CLASSES:Beguiler=3
+Major Image.MOD	CLASSES:Beguiler=3
+Nondetection.MOD	CLASSES:Beguiler=3
+Slow.MOD	CLASSES:Beguiler=3
+Suggestion.MOD	CLASSES:Beguiler=3
+Zone of Silence.MOD	CLASSES:Beguiler=3
+Charm Monster.MOD	CLASSES:Beguiler=4
+Confusion.MOD	CLASSES:Beguiler=4
+Crushing Despair.MOD	CLASSES:Beguiler=4
+Freedom of Movement.MOD	CLASSES:Beguiler=4
+Invisibility (Greater).MOD	CLASSES:Beguiler=4
+Locate Creature.MOD	CLASSES:Beguiler=4
+Rainbow Pattern.MOD	CLASSES:Beguiler=4
+Solid Fog.MOD	CLASSES:Beguiler=4
+Break Enchantment.MOD	CLASSES:Beguiler=5
+Dominate Person.MOD	CLASSES:Beguiler=5
+Feeblemind.MOD	CLASSES:Beguiler=5
+Hold Monster.MOD	CLASSES:Beguiler=5
+Mind Fog.MOD	CLASSES:Beguiler=5
+Telepathic Bond.MOD	CLASSES:Beguiler=5
+Seeming.MOD	CLASSES:Beguiler=5
+Sending.MOD	CLASSES:Beguiler=5
+Dispel Magic (Greater).MOD	CLASSES:Beguiler=6
+Suggestion (Mass).MOD	CLASSES:Beguiler=6
+Mislead.MOD	CLASSES:Beguiler=6
+Repulsion.MOD	CLASSES:Beguiler=6
+Shadow Walk.MOD	CLASSES:Beguiler=6
+True Seeing.MOD	CLASSES:Beguiler=6
+Veil.MOD	CLASSES:Beguiler=6
+Ethereal Jaunt.MOD	CLASSES:Beguiler=7
+Arcane Sight (Greater).MOD	CLASSES:Beguiler=7
+Hold Person (Mass).MOD	CLASSES:Beguiler=7
+Invisibility (Mass).MOD	CLASSES:Beguiler=7
+Phase Door.MOD	CLASSES:Beguiler=7
+Power Word Blind.MOD	CLASSES:Beguiler=7
+Project Image.MOD	CLASSES:Beguiler=7
+Spell Turning.MOD	CLASSES:Beguiler=7
+Demand.MOD	CLASSES:Beguiler=8
+Discern Location.MOD	CLASSES:Beguiler=8
+Mind Blank.MOD	CLASSES:Beguiler=8
+Moment of Prescience.MOD	CLASSES:Beguiler=8
+Power Word Stun.MOD	CLASSES:Beguiler=8
+Scintillating Pattern.MOD	CLASSES:Beguiler=8
+Screen.MOD	CLASSES:Beguiler=8
+Dominate Monster.MOD	CLASSES:Beguiler=9
+Etherealness.MOD	CLASSES:Beguiler=9
+Foresight.MOD	CLASSES:Beguiler=9
+Hold Monster (Mass).MOD	CLASSES:Beguiler=9
+Power Word Kill.MOD	CLASSES:Beguiler=9
+Time Stop.MOD	CLASSES:Beguiler=9
+Acid Splash.MOD	CLASSES:Duskblade=0
+Dancing Lights.MOD	CLASSES:Duskblade=0
+Detect Magic.MOD	CLASSES:Duskblade=0
+Disrupt Undead.MOD	CLASSES:Duskblade=0
+Flare.MOD	CLASSES:Duskblade=0
+Ghost Sound.MOD	CLASSES:Duskblade=0
+Ray of Frost.MOD	CLASSES:Duskblade=0
+Read Magic.MOD	CLASSES:Duskblade=0
+Touch of Fatigue.MOD	CLASSES:Duskblade=0
+Burning Hands.MOD	CLASSES:Duskblade=1
+Cause Fear.MOD	CLASSES:Duskblade=1
+Chill Touch.MOD	CLASSES:Duskblade=1
+Color Spray.MOD	CLASSES:Duskblade=1
+Expeditious Retreat (Swift).MOD	CLASSES:Duskblade=1
+Jump.MOD	CLASSES:Duskblade=1
+Magic Weapon.MOD	CLASSES:Duskblade=1
+Obscuring Mist.MOD	CLASSES:Duskblade=1
+Ray of Enfeeblement.MOD	CLASSES:Duskblade=1
+Resist Energy.MOD	CLASSES:Duskblade=1
+Shocking Grasp.MOD	CLASSES:Duskblade=1
+True Strike.MOD	CLASSES:Duskblade=1
+Acid Arrow.MOD	CLASSES:Duskblade=2
+Bear's Endurance.MOD	CLASSES:Duskblade=2
+Bull's Strength.MOD	CLASSES:Duskblade=2
+Cat's Grace.MOD	CLASSES:Duskblade=2
+Darkvision.MOD	CLASSES:Duskblade=2
+Fly (Swift).MOD	CLASSES:Duskblade=2
+Ghoul Touch.MOD	CLASSES:Duskblade=2
+Invisibility (Swift).MOD	CLASSES:Duskblade=2
+Scorching Ray.MOD	CLASSES:Duskblade=2
+See Invisibility.MOD	CLASSES:Duskblade=2
+Spider Climb.MOD	CLASSES:Duskblade=2
+Touch of Idiocy.MOD	CLASSES:Duskblade=2
+Keen Edge.MOD	CLASSES:Duskblade=3
+Magic Weapon (Greater).MOD	CLASSES:Duskblade=3
+Protection from Energy.MOD	CLASSES:Duskblade=3
+Ray of Exhaustion.MOD	CLASSES:Duskblade=3
+Vampiric Touch.MOD	CLASSES:Duskblade=3
+Interposing Hand.MOD	CLASSES:Duskblade=4
+Dimension Door.MOD	CLASSES:Duskblade=4
+Dispel Magic.MOD	CLASSES:Duskblade=4
+Enervation.MOD	CLASSES:Duskblade=4
+Fire Shield.MOD	CLASSES:Duskblade=4
+Phantasmal Killer.MOD	CLASSES:Duskblade=4
+Shout.MOD	CLASSES:Duskblade=4
+Clenched Fist.MOD	CLASSES:Duskblade=5
+Chain Lightning.MOD	CLASSES:Duskblade=5
+Disintegrate.MOD	CLASSES:Duskblade=5
+Hold Monster.MOD	CLASSES:Duskblade=5
+Polar Ray.MOD	CLASSES:Duskblade=5
+Waves of Fatigue.MOD	CLASSES:Duskblade=5

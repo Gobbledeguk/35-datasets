@@ -1,0 +1,16 @@
+# Class levels and domains of the spells in dru_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Armored Vermin.MOD	CLASSES:Cleric,Druid=4
+Bebilith Blessing.MOD	CLASSES:Cleric=5
+Combat Readiness.MOD	CLASSES:Assassin,Bard,Sorcerer,Wizard=1
+Dominate Vermin.MOD	CLASSES:Cleric,Druid=3
+Dridershape.MOD	CLASSES:Sorcerer,Wizard=5
+Engulfing Terror.MOD	CLASSES:Druid,Sorcerer,Wizard=3
+Magical Backlash.MOD	CLASSES:Bard,Hexblade,Sorcerer,Wizard=2
+Shadow Double.MOD	CLASSES:Assassin=1|Hexblade,Sorcerer,Wizard=2
+Shadow Shroud.MOD	CLASSES:Cleric,Sorcerer,Wizard=2
+Snuff The Light.MOD	CLASSES:Assassin,Bard,Sorcerer,Wizard=1
+Spider Form.MOD	CLASSES:Sorcerer,Wizard=3
+Spider Form (Greater).MOD	CLASSES:Sorcerer,Wizard=5
+Spider Form (Lesser).MOD	CLASSES:Sorcerer,Wizard=1
+Yochlol Blessing.MOD	CLASSES:Cleric=4

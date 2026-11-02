@@ -1,0 +1,42 @@
+
+
+Barbed Chain	PROFICIENCY:WEAPON|Barbed Chain	TYPE:Exotic.Melee.Weapon.Bludgeoning.Piercing	COST:18	WT:6	CRITMULT:x2	CRITRANGE:1	DAMAGE:2d6
+Tail Blade	PROFICIENCY:WEAPON|Tail Blade	TYPE:Exotic.Melee.Weapon.Slashing	COST:17	WT:6	CRITMULT:x2	CRITRANGE:2	DAMAGE:1d8
+Tail Club	PROFICIENCY:WEAPON|Tail Club	TYPE:Exotic.Melee.Weapon.Bludgeoning.Piercing	COST:10	WT:10	CRITMULT:x2	CRITRANGE:1	DAMAGE:1d8
+Chain Lash	PROFICIENCY:WEAPON|Chain Lash	TYPE:Exotic.Melee.Weapon.Double.Bludgeoning	COST:5	WT:5	CRITMULT:x2	CRITRANGE:1	ALTCRITMULT:x2	ALTCRITRANGE:1	DAMAGE:1d6	ALTDAMAGE:1d6
+Gythka	PROFICIENCY:WEAPON|Gythka	TYPE:Exotic.Melee.Weapon.Double.Slashing	COST:60	WT:25	CRITMULT:x2	CRITRANGE:1	ALTCRITMULT:x2	ALTCRITRANGE:1	DAMAGE:1d8	ALTDAMAGE:1d8	WIELD:TwoHanded
+Salamander Longspear	PROFICIENCY:WEAPON|Salamander Longspear	TYPE:Exotic.Melee.Weapon.Piercing	COST:10	WT:18	CRITMULT:x2	CRITRANGE:2	DAMAGE:2d6
+Pincer Staff	PROFICIENCY:WEAPON|Pincer Staff	TYPE:Exotic.Melee.Weapon.Bludgeoning	COST:8	WT:8	CRITMULT:x2	CRITRANGE:1	DAMAGE:1d4	WIELD:TwoHanded
+Scissors Sword	PROFICIENCY:WEAPON|Scissors Sword	TYPE:Exotic.Melee.Weapon.Slashing	COST:100	WT:25	CRITMULT:x2	CRITRANGE:2	DAMAGE:2d8
+Sharktooth Staff	PROFICIENCY:WEAPON|Sharktooth Staff	TYPE:Exotic.Melee.Weapon.Slashing	COST:20	WT:10	CRITMULT:x3	CRITRANGE:1	DAMAGE:2d6
+Snake Chain	PROFICIENCY:WEAPON|Snake Chain	TYPE:Exotic.Melee.Weapon.Double.Bludgeoning	COST:5	WT:10	CRITMULT:x3	CRITRANGE:1	ALTCRITMULT:x2	ALTCRITRANGE:1	DAMAGE:1d6	ALTDAMAGE:1d6
+Notbora	PROFICIENCY:WEAPON|Notbora	TYPE:Exotic.Melee.Weapon.Double.Bludgeoning.Slashing	COST:20	WT:2	CRITMULT:x2	CRITRANGE:1	ALTCRITMULT:x2	ALTCRITRANGE:2	DAMAGE:2d6	ALTDAMAGE:2d6	WIELD:TwoHanded
+Chuul Lasher	PROFICIENCY:WEAPON|Chuul Lasher	TYPE:Weapon.Container.Melee.Exotic.Reach.Finesseable.Subdual.Slashing	COST:1	WT:2	CRITMULT:x2	CRITRANGE:1	DAMAGE:1d2	REACH:15
+Chatkcha	PROFICIENCY:WEAPON|Chatkcha	TYPE:Exotic.Ranged.Thrown.Weapon.Piercing	COST:1	WT:3	CRITMULT:x2	CRITRANGE:1	DAMAGE:1d6	RANGE:20
+Howler Javelin	PROFICIENCY:WEAPON|Howler Javelin	TYPE:Exotic.Ranged.Thrown.Weapon.Piercing	COST:2	WT:2	CRITMULT:x2	CRITRANGE:1	DAMAGE:1d6	RANGE:30
+Salamander Halfspear	PROFICIENCY:WEAPON|Salamander Halfspear	TYPE:Exotic.Ranged.Thrown.Weapon.Piercing	COST:2	WT:6	CRITMULT:x3	CRITRANGE:1	DAMAGE:1d8	RANGE:10
+Salamander Shortspear	PROFICIENCY:WEAPON|Salamander Shortspear	TYPE:Exotic.Ranged.Thrown.Weapon.Piercing	COST:4	WT:10	CRITMULT:x2	CRITRANGE:1	DAMAGE:2d6	RANGE:10
+
+# Track these down...
+Lance (heavy)		PROFICIENCY:WEAPON|Lance (heavy)	
+Desmodu Lance		PROFICIENCY:WEAPON|Desmodu Lance	
+Desmodu Leather		PROFICIENCY:WEAPON|Desmodu Leather	
+Desmodu Longbow		PROFICIENCY:WEAPON|Desmodu Longbow	
+Loxo Javelin		PROFICIENCY:WEAPON|Loxo Javelin	
+Loxo Morningstar		PROFICIENCY:WEAPON|Loxo Morningstar	
+
+
+###Block - Special and Superior Items
+Aboleth mucus (vial)	TYPE:Special and Superior Items	COST:0.2	WT:1
+Breathing Mask	TYPE:Special and Superior Items	COST:1000	WT:5
+Cable (50 ft.)	TYPE:Special and Superior Items	COST:25	WT:2
+Cablespool	TYPE:Special and Superior Items	COST:125	WT:2
+Cablespool with cable	TYPE:Special and Superior Items	COST:175	WT:6
+Delver slime (vial)	TYPE:Special and Superior Items	COST:150	WT:1
+Drow arrow poison (dose)	TYPE:Special and Superior Items	COST:120	WT:0.25
+Flash tube	TYPE:Special and Superior Items	COST:30	WT:1
+Frostfire	TYPE:Special and Superior Items	COST:40	WT:1
+Harness	TYPE:Special and Superior Items	COST:20	WT:2
+Sculptor's slime (vial)	TYPE:Special and Superior Items	COST:750	WT:4
+Spore flask	TYPE:Special and Superior Items	COST:1000	WT:1
+Sun lantern	TYPE:Special and Superior Items	COST:162	WT:3

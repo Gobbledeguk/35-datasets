@@ -1,0 +1,20 @@
+# CVS $Revision: $ $Author: $ -- Thu Feb 12 11:39:05 2015 -- reformated by PCGen PrettyLST v6.04.01
+
+###Block: Spells
+Beget Bogun	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M, XP	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Tiny construct	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	XPCOST:25	CLASSES:Druid=1	DESC:You create a Tiny nature servant	SOURCELONG:Monster Manual II	SOURCESHORT:MM2	SOURCEPAGE:MM2	SOURCEDATE:2002-09
+
+###Block: Copies and other lines
+Animate Objects.COPY=Animate Objects ~ Galeb Duhr
+Dimension Door.COPY=Dimension Door ~ Nightmare Beast
+Crushing Despair.COPY=Emotion Control ~ Fihyr
+Speak with Animals.COPY=Speaks with Animals ~ Desmodu
+Speak with Animals.COPY=Speaks with Animals ~ Jermlaine
+Plane Shift.COPY=Plane Shift ~ Ethereal Slayer
+
+###Block: Other modifications
+Animate Objects ~ Galeb Duhr.MOD	OUTPUTNAME:Animate Object (Stone only)	TYPE:SpellLike
+Dimension Door ~ Nightmare Beast.MOD	OUTPUTNAME:Dimension Door	TYPE:SpellLike	RANGE:.CLEAR	RANGE:1000-ft	DESC:.CLEAR	DESC:Teleports you up to 1000-ft.
+Emotion Control ~ Fihyr.MOD	OUTPUTNAME:Emotion Control	TYPE:SpellLike	RANGE:.CLEAR	RANGE:260-ft	TARGETAREA:.CLEAR	TARGETAREA:15-ft radius spread	DURATION:.CLEAR	DURATION:Concentration
+Speaks with Animals ~ Desmodu.MOD	OUTPUTNAME:Speas with Animals (Bats only)	TYPE:SpellLike	DESC:.CLEAR	DESC:You can comprehend and communicate with bats. You are able to ask questions of and receive answers from bats, although the spell doesn't make them any more friendly or cooperative than normal. Furthermore, wary and cunning bats are likely to be terse and evasive, while the more stupid ones make inane comments. If a bat is friendly toward you, it may do some favor or service for you.
+Speaks with Animals ~ Jermlaine.MOD	OUTPUTNAME:Speas with Animals (Rats and Dire Rats only)	TYPE:SpellLike	DESC:.CLEAR	DESC:You can comprehend and communicate with Rats and Dire Rats. You are able to ask questions of and receive answers from rats and dire rats, although the spell doesn't make them any more friendly or cooperative than normal. Furthermore, wary and cunning rats are likely to be terse and evasive, while the more stupid ones make inane comments. If a rat is friendly toward you, it may do some favor or service for you.
+Plane Shift ~ Ethereal Slayer.MOD	OUTPUTNAME:Plane Shift (Self Only)	TYPE:SpellLike	TARGETAREA:.CLEAR	TARGETAREA:You.	DESC:.CLEAR	DESC:You move yourself to another plane of existence or alternate dimension. Precise accuracy as to a particular arrival location on the intended plane is nigh impossible. From the Material Plane, you can reach any other plane, though you appear 5 to 500 miles [5d%%] from your intended destination. Note: Plane shift transport you instantaneously and then ends. You need to find other means if you are to travel back.

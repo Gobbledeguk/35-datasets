@@ -1,0 +1,9 @@
+# Class levels and domains of the spells in rs_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Earth Hammer.MOD	CLASSES:Paladin=3|Cleric=5
+Earth Glide.MOD	CLASSES:Druid,Sorcerer,Wizard=8
+Eye of Stone.MOD	CLASSES:Sorcerer,Wizard=6
+Harmonize.MOD	CLASSES:Bard=2
+Harmonize (Greater).MOD	CLASSES:Bard=4
+Stone Fist.MOD	CLASSES:Cleric,Paladin=2
+Walk the Mountain's Path.MOD	CLASSES:Druid,Sorcerer,Wizard=3

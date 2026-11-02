@@ -1,0 +1,19 @@
+# Class levels and domains of the spells in fci_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Denounce.MOD	CLASSES:Cleric,Paladin=2
+Investiture Of The Amnizu.MOD	CLASSES:Blackguard=3|Cleric,Sorcerer,Wizard=4
+Investiture Of The Barbed Devil.MOD	CLASSES:Blackguard=4|Cleric,Sorcerer,Wizard=6
+Investiture Of The Bearded Devil.MOD	CLASSES:Blackguard=2|Cleric,Sorcerer,Wizard=3
+Investiture Of The Chain Devil.MOD	CLASSES:Blackguard=2|Cleric,Sorcerer,Wizard=3
+Investiture Of The Erinyes.MOD	CLASSES:Blackguard=3|Cleric,Sorcerer,Wizard=4
+Investiture Of The Harvester Devil.MOD	CLASSES:Blackguard=3|Cleric,Sorcerer,Wizard=4
+Investiture Of The Hellfire Engine.MOD	CLASSES:Cleric,Sorcerer,Wizard=9
+Investiture Of The Horned Devil.MOD	CLASSES:Cleric,Sorcerer,Wizard=8
+Investiture Of The Ice Devil.MOD	CLASSES:Cleric,Sorcerer,Wizard=7
+Investiture Of The Malebranche.MOD	CLASSES:Blackguard=4|Cleric,Sorcerer,Wizard=6
+Investiture Of The Narzugon.MOD	CLASSES:Blackguard=4|Cleric,Sorcerer,Wizard=5
+Investiture Of The Orthon.MOD	CLASSES:Blackguard=4|Cleric,Sorcerer,Wizard=5
+Investiture Of The Pit Fiend.MOD	CLASSES:Cleric,Sorcerer,Wizard=9
+Investiture Of The Spined Devil.MOD	CLASSES:Blackguard=1|Cleric,Sorcerer,Wizard=2
+Investiture Of The Steel Devil.MOD	CLASSES:Blackguard=3|Cleric,Sorcerer,Wizard=4
+Righteous Exile.MOD	CLASSES:Cleric=9

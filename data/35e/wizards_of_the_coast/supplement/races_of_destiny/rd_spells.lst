@@ -1,0 +1,58 @@
+# CVS $Revision: $ $Author: $ -- Sun Aug 17 15:41:15 2014 -- reformated by prettylst.pl v1.51 (build 24906)
+###RACES OF DESTINY - Dec 2004 (COMPLETE) - REQUIRES 'Race of Destiny' TEMPLATE
+
+###Block: Spells
+Animate City	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 round	RANGE:60 ft.	TARGETAREA:60-ft.-radius emanation, centered on you	DURATION:(CASTERLEVEL) minutes [D]	SAVEINFO:None	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.164	SOURCEDATE:2004-12
+Bestow Curse, Greater	KEY:Bestow Curse (Greater)	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:Permanent	SAVEINFO:Will negates	SPELLRES:Yes	CLASSES:Bard=6|Cleric=7|Sorcerer,Wizard=8	DOMAINS:Destiny=7	DESC:See text for details of curse options.	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.164	SOURCEDATE:2004-12
+Charm Person, Mass	KEY:Charm Person (Mass)	TYPE:Arcane	SCHOOL:Enchantment	SUBSCHOOL:Charm	DESCRIPTOR:Mind-Affecting	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One or more creatures, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates	SPELLRES:Yes	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.164	SOURCEDATE:2004-12
+Choose Destiny	TYPE:Divine	SCHOOL:Divination	COMPS:V	CASTTIME:swift action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.164	SOURCEDATE:2004-12
+City Lights	TYPE:Arcane.Divine	SCHOOL:Evocation	DESCRIPTOR:Light	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:60 ft.	ITEM:Potion	TARGETAREA:60-ft.-radius burst	DURATION:Instantaneous	SAVEINFO:Fortitude partial	SPELLRES:Yes	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.164	SOURCEDATE:2004-12
+City Stride	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Teleportation	COMPS:V, S, M	CASTTIME:1 round	RANGE:Touch	TARGETAREA:You and touched objects or touched willing creatures	DURATION:Instantaneous	SAVEINFO:None and Will negates (object)	SPELLRES:No and Yes (object)	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.164	SOURCEDATE:2004-12
+City's Might	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, M/DF	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds; see text	SAVEINFO:None	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.165	SOURCEDATE:2004-12
+Commune with City	TYPE:Divine	SCHOOL:Divination	COMPS:V, S	CASTTIME:10 minutes	RANGE:Personal	TARGETAREA:You	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.165	SOURCEDATE:2004-12
+Delay Death	TYPE:Divine	SCHOOL:Necromancy	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Living creature touched	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Cleric=3	DOMAINS:Destiny=3	DESC:Target cannot die from hit point damage during the duration of the spell.	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.165	SOURCEDATE:2004-12
+Discern Bloodline	TYPE:Arcane	SCHOOL:Divination	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	ITEM:Potion	TARGETAREA:One creature per round	DURATION:Concentration up to (CASTERLEVEL) rounds	SAVEINFO:Will negates	SPELLRES:Yes	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.165	SOURCEDATE:2004-12
+Friendly Face	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Glamer	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL*10) minutes [D]	SAVEINFO:None	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.166	SOURCEDATE:2004-12
+Insignia of Alarm	TYPE:Arcane.Divine	SCHOOL:Abjuration	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Long	ITEM:Potion	TARGETAREA:All wearers of special insignia within range	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:Yes (harmless)	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.166	SOURCEDATE:2004-12
+Insignia of Blessing	TYPE:Divine	SCHOOL:Enchantment	SUBSCHOOL:Comulsion	DESCRIPTOR:Mind-Affecting	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Long	ITEM:Potion	TARGETAREA:All wearers of special insignia within range	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:Yes (harmless)	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.166	SOURCEDATE:2004-12
+Insignia of Healing	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Long	ITEM:Potion	TARGETAREA:All wearers of special insignia within range	DURATION:Instantaneous	SAVEINFO:Will half (Harmless)	SPELLRES:Yes (harmless);see text	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.166	SOURCEDATE:2004-12
+Insignia of Warding	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Long	ITEM:Potion	TARGETAREA:All wearers of special insignia within range	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates (Harmless)	SPELLRES:Yes (harmless)	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.166	SOURCEDATE:2004-12
+Locate City	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V	CASTTIME:1 round	RANGE:(CASTERLEVEL*10) miles	ITEM:Potion	TARGETAREA:(CASTERLEVEL*10) miles radius circle, centered on you	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.166	SOURCEDATE:2004-12
+Omen of Peril	TYPE:Divine	SCHOOL:Divination	COMPS:V, F	CASTTIME:1 round	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric,Druid=1	DOMAINS:Destiny=1	DESC:Grants a brief vision; see text.	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.166	SOURCEDATE:2004-12
+Phantom Guardians	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Figment	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	ITEM:Potion	TARGETAREA:(CASTERLEVEL) illusory figure	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will disbelief (if interacted)	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.167	SOURCEDATE:2004-12
+Proud Arrogance	TYPE:Arcane	SCHOOL:Enchantment	SUBSCHOOL:Charm	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	ITEM:Potion	TARGETAREA:(CASTERLEVEL) creatures, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates (Harmless)	SPELLRES:Yes (harmless)	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.167	SOURCEDATE:2004-12
+Rooftop Strider	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.167	SOURCEDATE:2004-12
+Scholar's Touch	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V, S, M, F	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:One book/round	DURATION:Concentration, up to (CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.167	SOURCEDATE:2004-12
+Shadow Guardians	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Shadow	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:(CASTERLEVEL) illusory figure	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will disbelief (if interacted)	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.168	SOURCEDATE:2004-12
+Skyline Runner	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) hours	SAVEINFO:None	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.168	SOURCEDATE:2004-12
+Stalwart Pact	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S, DF, XP	CASTTIME:10 minutes	RANGE:Touch	TARGETAREA:Willing living creature touched	DURATION:Permanent until triggered, then (CASTERLEVEL) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	CLASSES:Cleric=5	DOMAINS:Destiny,Pact=5	DESC:Upon losing half HP, gain (CASTERLEVEL*5) hp, DR 5/magic and +4 luck bonus on saving throws. Cost:250 XP.	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.168	SOURCEDATE:2004-12
+Unseen Servant, Mass	KEY:Unseen Servant (Mass)	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:(CASTERLEVEL) invisible, mindless, shapeless servants	DURATION:(CASTERLEVEL) hours	SAVEINFO:None	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.168	SOURCEDATE:2004-12
+Urban Shield	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, M/DF	CASTTIME:immediate action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.168	SOURCEDATE:2004-12
+Warp Destiny	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:immediate action	RANGE:Personal	TARGETAREA:You	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.169	SOURCEDATE:2004-12
+Winding Alleys	TYPE:Arcane.Divine	SCHOOL:Illusion	SUBSCHOOL:Phantasm	DESCRIPTOR:Mind-Affecting	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	ITEM:Potion	TARGETAREA:One creature	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will negates	SPELLRES:Yes	SOURCELONG:Races of Destiny	SOURCESHORT:RD	SOURCEPAGE:p.169	SOURCEDATE:2004-12
+
+###Block: Descriptions
+Animate City.MOD	DESC:Buildings and structures attack your enemies; see text.
+Charm Person (Mass).MOD	DESC:Like charm person, affects a number of creatures whose combined HD does not exceed twice your level.
+Choose Destiny.MOD	DESC:During the spell, any time you make an attack roll, skill check, ability check or saving throw you may roll twice and select which die roll to use.
+City Lights.MOD	DESC:Absorb all artificial light causing a flare; see text.
+City Stride.MOD	DESC:Teleports you from one community to a second designated community; see text.
+City's Might.MOD	DESC:Gain Strength and Constitution from the living city; see text.
+Commune with City.MOD	DESC:Gain three factual knowledges from the surrounding area; see text.
+Discern Bloodline.MOD	DESC:Know race and templates of target.
+Friendly Face.MOD	DESC:Grants +5 circumstance bonus on Diplomacy and Gather Information checks.
+Insignia of Alarm.MOD	DESC:Spell alerts all wearers.
+Insignia of Blessing.MOD	DESC:+1 morale bonus on attack rolls and on saving throws against fear effects.
+Insignia of Healing.MOD	DESC:Heals 1d8+(min(CASTERLEVEL,10)) to all wearers.
+Insignia of Warding.MOD	DESC:+1 divine bonus to AC and on Fort saves.
+Locate City.MOD	DESC:Sense the distance of your nearest community of minimum size you designate.
+Phantom Guardians.MOD	DESC:Creates minor image of small or medium creature who follow a brief set of commands.
+Proud Arrogance.MOD	DESC:Grants +4 save against charm, compulsion and fear effects. Only works on same race.
+Rooftop Strider.MOD	DESC:Gain +5 competence bonus to Balance and Jump checks.
+Scholar's Touch.MOD	DESC:Absorb the contents of an entire book as if you had read it once. Not perfect recall and must be able to read the language.
+Shadow Guardians.MOD	DESC:As phantom guardians only more substantial and able to attack.
+Skyline Runner.MOD	DESC:You can walk on any city surface as if it were level ground, including vertical walls, windows and clothes-drying lines.
+Unseen Servant (Mass).MOD	DESC:Same as unseen servant, only it creates multiple servants.
+Urban Shield.MOD	DESC:City shields you, granting a +4 AC bonus and +2 Reflex saves against all attacks and spells.
+Warp Destiny.MOD	DESC:Gain an insight bonus (min(CASTERLEVEL,20)) to reshape your fate; see text.
+Winding Alleys.MOD	DESC:Target feels as if the walls are closing in on him.

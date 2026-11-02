@@ -1,0 +1,13 @@
+# Class levels and domains of the spells in ss_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Bridge Of Sound.MOD	CLASSES:Bard=2|Cleric=3|Sorcerer,Wizard=3
+Improved Blindsight.MOD	CLASSES:Cleric=5|Druid=4|Sorcerer,Wizard=4
+Improved Enlarge.MOD	CLASSES:Sorcerer,Wizard=5
+Improved Reduce.MOD	CLASSES:Sorcerer,Wizard=5
+Incarnate Construct.MOD	CLASSES:Cleric=9|Sorcerer,Wizard=9
+Laogzed's Breath.MOD	CLASSES:Cleric=3|Sorcerer,Wizard=3
+Major Resistance.MOD	CLASSES:Bard=2|Cleric=2|Druid=2|Paladin=2|Sorcerer,Wizard=2
+Minor Servitor.MOD	CLASSES:Cleric=7|Sorcerer,Wizard=5
+Stalking Spell.MOD	CLASSES:Sorcerer,Wizard=8
+Superior Resistance.MOD	CLASSES:Bard=5|Cleric=5|Druid=5|Sorcerer,Wizard=5
+Undead Mask.MOD	CLASSES:Cleric=7
