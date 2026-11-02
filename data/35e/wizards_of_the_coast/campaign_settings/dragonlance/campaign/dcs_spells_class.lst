@@ -1,0 +1,20 @@
+# Class levels and domains of the spells in dcs_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Billim's Bifrost Bridge.MOD	CLASSES:Sorcerer,Wizard=3
+Crackling Sphere.MOD	CLASSES:Sorcerer,Wizard=2
+Dalamar's Lightning Lance.MOD	CLASSES:Sorcerer,Wizard=4
+Deep Freeze.MOD	CLASSES:Sorcerer,Wizard=7
+Disjoin.MOD	CLASSES:Cleric,Sorcerer,Wizard=6
+Earthen Shield.MOD	CLASSES:Cleric,Sorcerer,Wizard=3
+Electrical Storm.MOD	CLASSES:Sorcerer,Wizard=7
+Elemental Dart.MOD	CLASSES:Sorcerer,Wizard=2
+Fistandantilus's Portal.MOD	CLASSES:Sorcerer,Wizard=8
+Magius's Light of Truth.MOD	CLASSES:Sorcerer,Wizard=9
+Palin's Pyre.MOD	CLASSES:Sorcerer,Wizard=3
+Share Animal's Mind.MOD	CLASSES:Cleric,Druid=3
+Shocking Spark.MOD	CLASSES:Sorcerer,Wizard=2
+Spark Shield.MOD	CLASSES:Cleric,Sorcerer,Wizard=4
+Spirit Walk.MOD	CLASSES:Cleric=6|Sorcerer,Wizard=7
+Stone Shards.MOD	CLASSES:Sorcerer,Spellthief,Wizard=2
+Storm Wall.MOD	CLASSES:Sorcerer,Wizard=4
+Talons.MOD	CLASSES:Cleric,Druid=1

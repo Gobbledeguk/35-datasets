@@ -1,0 +1,45 @@
+# CVS $Revision$ $Author$ -- Sun Dec  8 22:17:49 2013 -- reformated by prettylst.pl v1.50 (build 22352)
+CAMPAIGN:Magic of Faerun
+GAMEMODE:35e|Bahamut35e
+
+TYPE:Wizards of the Coast.Campaign Setting.Forgotten Realms
+GENRE:Fantasy
+SETTING:Forgotten Realms
+STATUS:ALPHA
+PRECAMPAIGN:2,INCLUDES=Player's Guide to Faerun,INCLUDES=Complete Arcane
+SOURCELONG:Magic of Faerun
+SOURCESHORT:Mag
+SOURCEDATE:2001-08
+RANK:200108
+ISOGL:NO
+COPYRIGHT:Wizards of the Coast
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../../../_artwork/cover_35e_wotc_mag.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../../../_artwork/logo_wotc.png
+
+
+#Magic of Faerun
+ABILITY:mag_abilities.lst
+CLASS:mag_classes.lst
+EQUIPMENT:mag_equip.lst
+EQUIPMOD:mag_equipmods.lst
+ABILITY:mag_feats.lst
+LANGUAGE:mag_languages.lst
+RACE:mag_races.lst
+SPELL:mag_spells.lst|(EXCLUDE:Acid Storm|Amanuensis|Amplify|Aura Against Flame|Aura of Glory|Aura of Vitality|Backlash|Ball Lightning|Battering Ram|Binding Winds|Black Blade of Disaster|Blade Thirst|Blinding Spittle|Blindsight|Blood Frenzy|Body Blades|Bombardment|Branch to Branch|Brilliant Aura|Cacophonic Shield|Camouflage|Cast in Stone|Celebration|Circle Dance|Cloudburst|Cloud of Bewilderment|Cocoon|Combust|Corrosive Grasp|Crawling Darkness|Crumble|Curse of Ill Fortune|Darkfire|Dark Way|Deafening Clang|Death Armor|Death Dragon|Death Pact|Decoy Image|Dirge|Disguise Undead|Disquietude|Distort Speech|Doomtide|Drown|Earthfast|Easy Climb|Easy Trail|Echo Skull|Electric Jolt|Explosive Cascade|Faith Healing|Fiendform|Fire Spiders|Firebrand|Flame Dagger|Force Ladder|Forceward|Forcewave|Fortunate Fate|G'Elsewhere Chant|Gemjump|Ghostharp|Great Thunderclap|Gutsnake|Hand of Divinity|Hardening|Haunting Tune|Healing Sting|Healing Touch|Herald's Call|Holy Star|Hunter's Mercy|Ice Dagger|Inferno|Infestation of Maggots|Iron Bones|Ironguts|Jaws of the Wolf|Kiss of the Vampire|Know Greatest Enemy|Know Vulnerabilities|Land Womb|Launch Bolt|Launch Item|Life Bolt|Living Prints|Low-Light Vision|Loyal Vassal|Mage Hand (Greater)|Camouflage (Mass)|Master Air|Master Earth|Maw of Chaos|Memory Rot|Minor Disguise|Murderous Mist|Nature's Balance|Naturewatch|Net of Shadows|Nightmare Lullaby|One with the Land|Owl's Insight|Poison Vines|Prismatic Eye|Puppeteer|Quillfire|Ram's Might|Reveille|Revenance|Reverse Arrows|Righteous Fury|Safe Clearing|Scent|Scintillating Sphere|Shadow Hand|Shadow Well|Share Husk|Shatterfloor|Shroud of Undeath|Silent Portal|Silverbeard|Skeletal Guard|Smell of Fear|Snakebite|Songbird|Speechlink|Spell Engine|Spell Enhancer|Spider Poison|Spirit Worm|Stalking Brand|Steeldance|Stone Bones|Stonehold|Stone Shatter|Stormrage|Storm Tower|Strategic Charge|Strength of Stone|Summon Undead I|Summon Undead II|Summon Undead III|Summon Undead IV|Summon Undead V|Suppress Glyph|Surefoot|Tortoise Shell|Towering Oak|Transcribe Symbol|Translocation Trick|Undead Bane Weapon|Undead Lieutenant|Undead Torch|Undeath's Eternal Foe|Vine Mine|Vision of Glory|Wall of Chaos|Wall of Evil|Wall of Good|Wall of Law|War Cry|Warning Shout|Weapon of the Deity|Weapon of Impact|Wind at Back|Wind Tunnel|Wounding Whispers)|PRECAMPAIGN:1,INCLUDES=Spell Compendium
+SPELL:mag_spells.lst|!PRECAMPAIGN:1,INCLUDES=Spell Compendium
+SPELL:mag_spells_class.lst
+TEMPLATE:mag_templates.lst
+
+INFOTEXT:Supports 6.4.1
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:

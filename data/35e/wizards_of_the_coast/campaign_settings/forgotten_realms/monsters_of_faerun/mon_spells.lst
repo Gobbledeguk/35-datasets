@@ -1,0 +1,15 @@
+# CVS $Revision: $ $Author: $ -- Sun Aug 17 15:41:15 2014 -- reformated by prettylst.pl v1.51 (build 24906)
+
+###Block: Spells
+Create Chosen One	TYPE:Arcane	SCHOOL:Alteration	COMPS:V, S, M	CASTTIME:1 Hour	RANGE:Touch	TARGETAREA:One human	DURATION:Instantaneous	SAVEINFO:Will negates	SPELLRES:Yes	PRECLASS:1,Red Wizard=1	SOURCELONG:Monster Compendium: Monsters of Faerun	SOURCESHORT:mon	SOURCEPAGE:p.	SOURCEDATE:2001-02
+Create Crawling Claw	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 Hour	RANGE:Close	TARGETAREA:Severed left hands within a 5-foot radius circle.	DURATION:Instantaneous	SPELLRES:Yes	SOURCELONG:Monster Compendium: Monsters of Faerun	SOURCESHORT:mon	SOURCEPAGE:p.	SOURCEDATE:2001-02
+Create Darkenbeast	TYPE:Arcane	SCHOOL:Transmutation	DESCRIPTOR:Evil	COMPS:V, S, M	CASTTIME:1 Hour	RANGE:Close	TARGETAREA:One animal of no more than 2 HD.	DURATION:Instantaneous	SAVEINFO:See text	SPELLRES:Yes	COST:200	SOURCELONG:Monster Compendium: Monsters of Faerun	SOURCESHORT:mon	SOURCEPAGE:p.	SOURCEDATE:2001-02
+Shape Metal	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, M/DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Metal or metal object, up to 10 cubic foot + 1 cubic foot/level.	DURATION:Instantaneous	SAVEINFO:Fortitude negates	SPELLRES:Yes	CLASSES:Cleric=4|Sorcerer,Wizard=5	DESC:As Stone Shape but affect metal instead of stone.	SOURCELONG:Monster Compendium: Monsters of Faerun	SOURCESHORT:mon	SOURCEPAGE:p.	SOURCEDATE:2001-02
+
+###Block: Descriptions
+Create Chosen One.MOD	DESC:Turn a normal human (max 3 level or hd) into a maddened, murderous creature.
+Create Crawling Claw.MOD	DESC:Create a number of crawling claw.
+Create Darkenbeast.MOD	DESC:Transmute a small or medium animal with no more than 2 HD into a darkenbeast.
+
+###Block: Other modifications
+Create Undead.MOD	DESC:Baneguard (12th caster level). Direguard (16th caster level).

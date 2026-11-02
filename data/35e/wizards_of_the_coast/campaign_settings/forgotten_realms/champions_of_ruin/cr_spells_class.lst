@@ -1,0 +1,49 @@
+# Class levels and domains of the spells in cr_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Anathema.MOD	CLASSES:Cleric,Druid=9
+Arrowsplit.MOD	CLASSES:Assassin,Justice of Weald and Woe,Ranger=3
+Bedevil.MOD	CLASSES:Blackguard,Sorcerer,Wizard=3
+Bloodfreeze Arrow.MOD	CLASSES:Assassin,Justice of Weald and Woe,Ranger=4
+Brilliant Energy Arrow.MOD	CLASSES:Assassin,Justice of Weald and Woe,Ranger=2
+Control Darkness and Shadow.MOD	CLASSES:Bard=2|Sorcerer,Wizard=3
+Darkflame Arrow.MOD	CLASSES:Assassin,Justice of Weald and Woe,Ranger=3
+Doublestrike Arrow.MOD	CLASSES:Justice of Weald and Woe,Ranger=4
+Enrange Animals.MOD	CLASSES:Druid,Ranger=1
+Mark of the Unfaithful.MOD	CLASSES:Cleric,Druid=7
+Necrotic Skull Bomb.MOD	CLASSES:Cleric,Sorcerer,Wizard=5
+Ravage.MOD	CLASSES:Cleric=7
+Remorseless Charm.MOD	CLASSES:Bard=5|Cleric,Sorcerer,Wizard=6
+Scourge of Force.MOD	CLASSES:Sorcerer,Wizard=2
+Serpent Arrow.MOD	CLASSES:Justice of Weald and Woe=3|Sorcerer,Wizard=4
+Shadow Arrow.MOD	CLASSES:Assassin,Justice of Weald and Woe,Ranger=4
+Shadow Trap.MOD	CLASSES:Cleric,Sorcerer,Wizard=7
+Spellslayer Arrow.MOD	CLASSES:Assassin,Justice of Weald and Woe,Ranger=2
+Unholy Beast.MOD	CLASSES:Druid=4
+Whip of Thorns.MOD	CLASSES:Druid=2
+Woodwisp Arrow.MOD	CLASSES:Assassin,Druid,Justice of Weald and Woe,Ranger=1
+Camouflage.MOD	CLASSES:Justice of Weald and Woe=1
+Detect Snares and Pits.MOD	CLASSES:Justice of Weald and Woe=1
+Endure Elements.MOD	CLASSES:Justice of Weald and Woe=1
+Faerie Fire.MOD	CLASSES:Justice of Weald and Woe=1
+Hide from Animals.MOD	CLASSES:Justice of Weald and Woe=1
+Jump.MOD	CLASSES:Justice of Weald and Woe=1
+Longstrider.MOD	CLASSES:Justice of Weald and Woe=1
+Obscuring Mist.MOD	CLASSES:Justice of Weald and Woe=1
+Pass without Trace.MOD	CLASSES:Justice of Weald and Woe=1
+Barkskin.MOD	CLASSES:Justice of Weald and Woe=2
+Cat's Grace.MOD	CLASSES:Justice of Weald and Woe=2
+Fog Cloud.MOD	CLASSES:Justice of Weald and Woe=2
+Snare.MOD	CLASSES:Justice of Weald and Woe=2
+Speak with Plants.MOD	CLASSES:Justice of Weald and Woe=2
+Spider Climb.MOD	CLASSES:Justice of Weald and Woe=2
+Tree Shape.MOD	CLASSES:Justice of Weald and Woe=2
+Darkvision.MOD	CLASSES:Justice of Weald and Woe=3
+Meld into Stone.MOD	CLASSES:Justice of Weald and Woe=3
+Spike Growth.MOD	CLASSES:Justice of Weald and Woe=3
+Water Breathing.MOD	CLASSES:Justice of Weald and Woe=3
+Wind Wall.MOD	CLASSES:Justice of Weald and Woe=3
+Freedom of Movement.MOD	CLASSES:Justice of Weald and Woe=4
+Poison.MOD	CLASSES:Justice of Weald and Woe=4
+Scrying.MOD	CLASSES:Justice of Weald and Woe=4
+Spike Stones.MOD	CLASSES:Justice of Weald and Woe=4
+Tree Stride.MOD	CLASSES:Justice of Weald and Woe=4

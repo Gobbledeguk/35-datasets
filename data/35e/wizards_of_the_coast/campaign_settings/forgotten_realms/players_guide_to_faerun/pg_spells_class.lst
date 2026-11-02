@@ -1,0 +1,26 @@
+# Class levels and domains of the spells in pg_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Briartangle.MOD	CLASSES:Cleric,Druid=4
+Caligarde's Claw.MOD	CLASSES:Sorcerer,Wizard=4
+Elminster's Effulgent Expuration.MOD	CLASSES:Sorcerer,Wizard=9
+Mystra's Miasma.MOD	CLASSES:Sorcerer,Wizard=9
+Nchaser's Glowing Orb.MOD	CLASSES:Sorcerer,Wizard=3|Cleric=4
+Presper's Moonbow.MOD	CLASSES:Sorcerer,Wizard=5
+Vipergout~PG.MOD	CLASSES:Sorcerer,Wizard=7	DOMAINS:Scalykind=7
+Black Talon.MOD	CLASSES:Cleric=2[PREDEITY:1,Cyric]
+Dread Blast.MOD	CLASSES:Cleric=4[PREDEITY:1,Cyric]
+Mold Touch.MOD	CLASSES:Cleric=3[PREDEITY:1,Nature]
+Moonweb.MOD	CLASSES:Cleric=5[PREDEITY:1,Selune]
+Pact of Martyrdom.MOD	CLASSES:Cleric,Paladin=4[PREDEITY:1,Ilmater]
+Shield of Lathander.MOD	CLASSES:Cleric=5[PREDEITY:1,Lathander]
+Shield of Lathander (Greater).MOD	CLASSES:Cleric=7[PREDEITY:1,Lathander]
+Skull Eyes.MOD	CLASSES:Cleric=5[PREDEITY:1,Cyric]
+Strength of the Beast.MOD	CLASSES:Cleric,Druid=4[PREDEITY:1,Malar,Selune]
+Sunrise.MOD	CLASSES:Cleric=3[PREDEITY:1,Lathander]
+Sword and Hammer.MOD	CLASSES:Cleric,Paladin=4[PREDEITY:1,Tyr]
+Sword and Hammer (Greater).MOD	CLASSES:Cleric=6[PREDEITY:1,Tyr]
+Thorn Spray.MOD	CLASSES:Cleric=4[PREDEITY:1,Malar,Nature]
+Tree Healing.MOD	CLASSES:Cleric=5[PREDEITY:1,Nature]
+Triple Mask.MOD	CLASSES:Cleric=7[PREDEITY:1,Cyric]
+Undeath after Death.MOD	CLASSES:Cleric=7[PREDEITY:1,Bane]
+Wall of Moonlight.MOD	CLASSES:Cleric=4[PREDEITY:1,Selune]

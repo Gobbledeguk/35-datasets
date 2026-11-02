@@ -1,0 +1,3 @@
+# Class levels and domains of the spells in kokc_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Shathy's Pestilence.MOD	CLASSES:Sorcerer,Wizard=4

@@ -1,0 +1,29 @@
+# CVS $Revision: $ $Author: $ -- Thu Aug  7 12:47:32 2014 -- reformated by prettylst.pl v1.51 (build 24365)
+
+# Spell Name		Output Name					Classes of caster						School			Sub-School			Spell Descriptors			Type				Components				Casting Time			Range			Item		Target Area or Effect			Duration				Save Info			Spell Resistance	XP Cost	Source Page		Description																												Temporary effect description							Temporary Bonus
+
+###Block: Spells
+Bestow Ancient Curse	TYPE:Divine	SCHOOL:Necromancy	COMPS:V, DF, XP	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Creature touched	DURATION:Permanent	SAVEINFO:Will negates	SPELLRES:Yes	XPCOST:2000	TEMPDESC:The curse persists across the generations.	SOURCEPAGE:p.
+Bestow Divine Curse	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, M, DF, PowerCheck	CASTTIME:1 full round	RANGE:Medium	ITEM:Potion	TARGETAREA:One creature	DURATION:Permanent	SAVEINFO:None	SPELLRES:No	TEMPDESC:Applies penalty to attacks, saves, and skill checks.	TEMPBONUS:PC|SAVE|ALL|-4|TYPE=Temporary	TEMPBONUS:PC|COMBAT|TOHIT|-4|TYPE=Temporary	TEMPBONUS:PC|SKILL|ALL|-4|TYPE=Temporary	SOURCEPAGE:p.
+Borrowed Time	TYPE:Arcane.Divine	SCHOOL:Necromancy	COMPS:V, M, PowerCheck	CASTTIME:3 days	RANGE:Personal	TARGETAREA:You	DURATION:See text	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.
+Borrowed Time (Greater)	OUTPUTNAME:Borrowed Time, Greater	TYPE:Arcane.Divine	SCHOOL:Necromancy	COMPS:V, M, PowerCheck	CASTTIME:3 days	RANGE:Personal	TARGETAREA:You	DURATION:See text	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.
+Borrowed Time (Lesser)	OUTPUTNAME:Borrowed Time, Lesser	TYPE:Arcane.Divine	SCHOOL:Necromancy	COMPS:V, M, PowerCheck	CASTTIME:3 days	RANGE:Personal	TARGETAREA:You	DURATION:See text	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.
+Feign Undeath	TYPE:Arcane.Divine	SCHOOL:Necromancy	COMPS:V, S, M, PowerCheck	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Living creature touched	DURATION:(CASTERLEVEL*2) minutes	SAVEINFO:Will Negates	SPELLRES:Yes	SOURCEPAGE:p.
+Soul Anchor	TYPE:Arcane.Divine	SCHOOL:Abjuration	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Creature touched	DURATION: (CASTERLEVEL) minutes	SAVEINFO:Will Negates	SPELLRES:Yes	SOURCEPAGE:p.
+Tomb Ward	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, DF, PowerCheck	CASTTIME:1 day	RANGE:Touch	TARGETAREA:One tomb	DURATION:Permanent	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.
+Zone of Deception	TYPE:Divine	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	ITEM:Potion	TARGETAREA:20-ft.-radius emanation	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.
+Final Rest	TYPE:Divine	SCHOOL:Necromancy	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One newly dead body.	DURATION:Permanent	SAVEINFO:Will negates	SPELLRES:No	SOURCEPAGE:p.
+Vanish
+
+###Block: Descriptions
+Bestow Ancient Curse.MOD	DESC:You bestow a curse that persists through generations.
+Bestow Divine Curse.MOD	DESC:-6 to an ability score; -4 on attack rolls, saves, and checks; or 50%% chance of losing each action.
+Borrowed Time.MOD	DESC:Animate yourself as one of the undead to complete a specific task.
+Borrowed Time (Greater).MOD	DESC:Animate yourself as one of the undead to complete a specific task.
+Borrowed Time (Lesser).MOD	DESC:Animate yourself as one of the undead to complete a specific task.
+Feign Undeath.MOD	DESC:You may deal your target with the physical aspects of a zombie.
+Soul Anchor.MOD	DESC:Bars extradimensional movement.
+Tomb Ward.MOD	DESC:Invoke a curse to protect a tomb from defilers.
+Zone of Deception.MOD	DESC:Subjects within range cannot tell the truth.
+Final Rest.MOD	DESC:It can resist to any attermpt to transformation into an undead creature (including Animate Dead and Create Undead spells and create spawn ability of undead creatures).
+Vanish.MOD	DESC:No description...

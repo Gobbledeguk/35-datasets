@@ -1,0 +1,190 @@
+
+###Block: Spells
+Ale Goggles	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Figment	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One living creature	DURATION:(CASTERLEVEL) Hours	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.99
+Ale Goggles, Mass	KEY:Ale Goggles (Mass)	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Figment	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature/level, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) Hours	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.99
+Analyze Ancestry	TYPE:Divine	SCHOOL:Divination	COMPS:V, S, DF	CASTTIME:24 hours	RANGE:Touch	TARGETAREA:Creature touched	DURATION:Instantaneous	SAVEINFO:Will negates (harmless)	SPELLRES:No	SOURCEPAGE:p.99
+Analyze Fertility	TYPE:Divine	SCHOOL:Divination	DESCRIPTOR:Sexual	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:Instantaneous	SAVEINFO:Will negates (harmless)	SPELLRES:No	SOURCEPAGE:p.99
+Animate Image	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Figment	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:One text or graphic	DURATION:Concentration +(CASTERLEVEL) rounds	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.99
+Beauty's Caress	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) Hours	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.100
+Blandness	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 action	RANGE:Close	ITEM:Potion	TARGETAREA:All creatures within a 20 ft. radius	DURATION:(CASTERLEVEL) Hours	SAVEINFO:None	SPELLRES:Yes	SOURCEPAGE:p.100
+Blandness (Greater)	OUTPUTNAME:[NAME] Blandness	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 action	RANGE:Close	TARGETAREA:All creatures within a 20 ft. radius	DURATION:(CASTERLEVEL) Hours	SAVEINFO:None	SPELLRES:Yes	SOURCEPAGE:p.100
+Blessed Seed	TYPE:Divine	SCHOOL:Transmutation	DESCRIPTOR:Good|Sexual	COMPS:V, S, DF, XP	CASTTIME:1 action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) Hours	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCEPAGE:p.101
+Block the Seed	TYPE:Arcane.Divine	SCHOOL:Abjuration	DESCRIPTOR:Sexual	COMPS:V, S, M	CASTTIME:1 action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) Days	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.101
+Body to Body	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, M	CASTTIME:1 action	RANGE:Close	TARGETAREA:One creature touched/three levels	DURATION:(CASTERLEVEL) Hours	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.101
+Calm Weather	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:2 Miles	TARGETAREA:2-mile-radius circle, centered on you	DURATION:Instantaneous	SAVEINFO:See text	SPELLRES:No	SOURCEPAGE:p.101
+Come to Me	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Teleportation	COMPS:V, F	CASTTIME:1 standard action	RANGE:Same plane	TARGETAREA:One willing ally	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.101
+Cursed Orgasm	TYPE:Arcane.Divine	SCHOOL:Transmutation	DESCRIPTOR:Sexual	COMPS:V, S, M	CASTTIME:1 action	RANGE:Touch	TARGETAREA:One creature	DURATION:(CASTERLEVEL) orgasms	SAVEINFO:Fortitude negates	SPELLRES:No	SOURCEPAGE:p.102
+Depilatory	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:One living creature	DURATION:Instantaneous and 24 hours	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.102
+Desperation	TYPE:Arcane.Divine	SCHOOL:Necromancy	DESCRIPTOR:Sexual	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:24 hours [see text]	SAVEINFO:Will negates [see text]	SPELLRES:Yes	SOURCEPAGE:p.102
+Detect Disease	TYPE:Divine	SCHOOL:Divination	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:Cone-shaped emanation	DURATION:Concentration, up to (CASTERLEVEL*10) Minutes	SAVEINFO:Will negates (harmless)	SPELLRES:No	CLASSES:Paladin,Ranger=1|Cleric,Druid,Imagist=2	DESC:Detects disease in one creature	SOURCEPAGE:p.103
+Detect Pregnancy	TYPE:Divine	SCHOOL:Divination	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Creature touched	DURATION:Instantaneous	SAVEINFO:Will negates (harmless)	SPELLRES:No	SOURCEPAGE:p.103
+Disrobe	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 action	RANGE:Close	TARGETAREA:One living creature wearing clothing, armor, or adornments	DURATION:Instantaneous	SAVEINFO:Ref negates [see text]	SPELLRES:No	SOURCEPAGE:p.103
+Divine Mark	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Living creature touched	DURATION:(CASTERLEVEL) Days [D]	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.103
+Eminently Talented	TYPE:Arcane.Divine	SCHOOL:Transmutation	DESCRIPTOR:Sexual	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) Hours	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.104
+Engorged Gait	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One living creature	DURATION:(CASTERLEVEL) Rounds	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCEPAGE:p.104
+Engorged Strike	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Living creature touched	DURATION:(CASTERLEVEL) Hours	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.104
+False Confidence	TYPE:Arcane.Divine	SCHOOL:Necromancy	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch [see text]	TARGETAREA:Creature touched [see text]	DURATION:Permanent	SAVEINFO:Will half	SPELLRES:Yes	SOURCEPAGE:p.104
+Fecund Growth	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF, XP	CASTTIME:1 round	RANGE:Up to 100 ft./level	TARGETAREA:Up to 100 ft./level emanation centered on you	DURATION:See text	SAVEINFO:Fortitude negates [see text]	SPELLRES:Yes	SOURCEPAGE:p.105
+Fiendish Seed	TYPE:Divine	SCHOOL:Transmutation	DESCRIPTOR:Evil|Sexual	COMPS:V, S, M, XP	CASTTIME:1 action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) Hours	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCEPAGE:p.105
+Find a Soulmate	TYPE:Divine	SCHOOL:Divination	COMPS:V, S, M, DF	CASTTIME:1 action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:Instantaneous	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.105
+Ghost Touch	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Object touched	DURATION:(CASTERLEVEL) Minutes	SAVEINFO:Will negates (harmless,object)	SPELLRES:Yes (harmless,object)	SOURCEPAGE:p.106
+Grope	TYPE:Arcane.Divine	SCHOOL:Transmutation	DESCRIPTOR:Sexual	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature	DURATION:Concentration	SAVEINFO:Fortitude negates (harmless)	SPELLRES:Yes	SOURCEPAGE:p.106
+Healing Sphere	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S, DF	CASTTIME:1 action	RANGE:Close	TARGETAREA:One orb of positive energy	DURATION:1 minute	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.106
+Hedonist's Delight	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) Hours	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.107
+Impotency	TYPE:Arcane.Divine	SCHOOL:Transmutation	DESCRIPTOR:Sexual	COMPS:V, S, M	CASTTIME:1 hour	RANGE:Touch	TARGETAREA:Creature touched	DURATION:Permanent	SAVEINFO:Will negates	SPELLRES:No	SOURCEPAGE:p.107
+Infestation	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, DF	CASTTIME:1 round	RANGE:Long	TARGETAREA:One swarm or insects/3 levels, each of which must be adjacent to at least one other swarm	DURATION:(CASTERLEVEL) Minutes	SAVEINFO:Fortitude negates [see text]	SPELLRES:No	CLASSES:Druid=6	DESC:Locust swarms attack creatures. Infests with fine-sized, diseased parasites	SOURCEPAGE:p.107
+Innocence of the Virgin	TYPE:Divine	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting|Sexual	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Living humanoid touched	DURATION:Permanent [see text]	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.107
+Invigorate	TYPE:Divine	SCHOOL:Transmutation	DESCRIPTOR:Sexual	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One living creature	DURATION:(CASTERLEVEL) Hours; see text	SAVEINFO:Fortitude negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.108
+Irrational Attraction	TYPE:Divine	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	COMPS:V, S	CASTTIME:1 action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) Rounds	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.108
+Jealousy	TYPE:Arcane.Divine	SCHOOL:Necromancy	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch [see text]	TARGETAREA:Creature touched [see text]	DURATION:Permanent	SAVEINFO:Will half	SPELLRES:Yes	SOURCEPAGE:p.108
+Kiss of Life	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S, M	CASTTIME:1 round	RANGE:Touch	TARGETAREA:Dead creature touched	DURATION:Instantaneous	SAVEINFO:None [see text]	SPELLRES:Yes (harmless)	SOURCEPAGE:p.109
+Liar's Curse	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature	DURATION:Permanent	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.109
+Lifebond	TYPE:Divine	SCHOOL:Divination	COMPS:V, S	CASTTIME:1 action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:Permanent	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.109
+Life Shell	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, Special	CASTTIME:1 round	RANGE:10 ft.	TARGETAREA:10-ft.-radius emanation, centered on you	DURATION:(CASTERLEVEL*10) Minutes [D]	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.109
+Limited Telepathy	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V, S	CASTTIME:1 action	RANGE:Close	TARGETAREA:One creature	DURATION:(CASTERLEVEL*10) Minutes [D]	SAVEINFO:Will negates	SPELLRES:No	SOURCEPAGE:p.110
+Love Nest	TYPE:Arcane	SCHOOL:Evocation	DESCRIPTOR:Force	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:20 ft.	TARGETAREA:20 ft.-radius sphere centered on your location	DURATION:(CASTERLEVEL*2) hours [D]	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.110
+Magic Probe	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature Touched	DURATION:Instantaneous	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.110
+Magic Status	TYPE:Divine	SCHOOL:Divination	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One living creature touched per three levels	DURATION:(CASTERLEVEL) Hours	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.110
+Mantle of Love	TYPE:Arcane.Divine	SCHOOL:Abjuration	COMPS:V, S, F	CASTTIME:1 action	RANGE:Touch	ITEM:Potion	TARGETAREA:One living creature	DURATION:(CASTERLEVEL) Minutes	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.110
+Mind to Mind	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V, S	CASTTIME:1 action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL*10) Minutes [D]	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.111
+Mirror Talk	TYPE:Arcane.Divine	SCHOOL:Illusion	SUBSCHOOL:Phantasm	DESCRIPTOR:Mind-Affecting	COMPS:V, S, F	CASTTIME:10 minutes	RANGE:See text	TARGETAREA:Magical sensor	DURATION:(CASTERLEVEL) Minutes	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.111
+Mirror Walk	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Teleportation	COMPS:V, S, F	CASTTIME:10 minutes	RANGE:Personal and Touch	TARGETAREA:You and touched objecs or other touched willing creature	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.111
+Miss	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, F	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature	DURATION:See text	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.112
+Orgasmic Vibrations	TYPE:Arcane.Divine	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	COMPS:V, S, M	CASTTIME:1 action	RANGE:Close	TARGETAREA:One living creature	DURATION:(CASTERLEVEL) Rounds	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.112
+Orgasmic Vibrations (Mass)	OUTPUTNAME:[NAME] Orgasmic Vibrations	TYPE:Arcane.Divine	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	COMPS:V, S, M	CASTTIME:1 action	RANGE:Close	TARGETAREA:One or more creatures, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) Rounds	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.112
+Peace Aura	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:40 ft. radius emanating from the touched point	DURATION:24 hours	SAVEINFO:Will half [see text]	SPELLRES:No	SOURCEPAGE:p.112
+Peacock's Beauty	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, M/DF	CASTTIME:1 standard action	RANGE:Touch	ITEM:Potion	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) Minutes	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	SOURCEPAGE:p.112
+Peacock's Beauty (Mass)	OUTPUTNAME:[NAME] Peacock's Beauty	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, M/DF	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature/level, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) Minutes	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	SOURCEPAGE:p.113
+Phantasmal Lover	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Phantasm	DESCRIPTOR:Mind-Affecting|Sexual	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One living creature	DURATION:Instantaneous	SAVEINFO:Will disbelief, then Fortitude partial	SPELLRES:Yes	SOURCEPAGE:p.113
+Pheromones	TYPE:Divine	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	COMPS:V, S, M	CASTTIME:1 action	RANGE:10 ft.	ITEM:Potion	TARGETAREA:10 ft. radius emanation, centered on you	DURATION:(CASTERLEVEL) Hours	SAVEINFO:Will negates	SPELLRES:No	SOURCEPAGE:p.113
+Pillow Talk	TYPE:Arcane.Divine	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting|Sexual	COMPS:V, S, Special	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One living creature	DURATION:(CASTERLEVEL) Minutes	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.113
+Pleasant Dreams	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, DF	CASTTIME:10 minutes	RANGE:Touch	ITEM:Potion	TARGETAREA:Living creature touched	DURATION:24 hours	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.114
+Privacy	TYPE:Arcane	SCHOOL:Abjuration	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:10 ft.	ITEM:Potion	TARGETAREA:10 ft. radius emanation, centered on you	DURATION:(CASTERLEVEL*10) Minutes [D]	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.114
+Repulsiveness	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 action	RANGE:Close	TARGETAREA:One creature	DURATION:(CASTERLEVEL) Hours [D]	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCEPAGE:p.114
+Resist Temptation	TYPE:Arcane.Divine	SCHOOL:Abjuration	DESCRIPTOR:Sexual	COMPS:V, S, DF	CASTTIME:1 action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL*10) Minutes [D]	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.114
+Reverse Gender	TYPE:Arcane.Divine	SCHOOL:Transmutation	DESCRIPTOR:Sexual	COMPS:V, S, M	CASTTIME:1 action	RANGE:Close	ITEM:Potion	TARGETAREA:One creature	DURATION:(CASTERLEVEL) Hours	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCEPAGE:p.115
+Sanctuary (Mass)	OUTPUTNAME:[NAME] Sanctuary	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature/level, no two of which can be more than 20 ft. apart	DURATION:(CASTERLEVEL) Rounds	SAVEINFO:Will negates	SPELLRES:No	CLASSES:Cleric,Imagist=5	DESC:As sanctuary, affects one subject/level	SOURCEPAGE:p.115
+Seduction	TYPE:Arcane	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	COMPS:V, S, M	CASTTIME:1 action	RANGE:Close	TARGETAREA:One creature	DURATION:(CASTERLEVEL/2) rounds	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.115
+Shadow Life	TYPE:Arcane	SCHOOL:Necromancy	COMPS:V, S	CASTTIME:1 minute	RANGE:Touch	TARGETAREA:Dead creature touched	DURATION:(CASTERLEVEL*10) Minutes	SAVEINFO:None [see text]	SPELLRES:Yes (harmless)	SOURCEPAGE:p.115
+Share Sensation	TYPE:Arcane.Divine	SCHOOL:Illusion	SUBSCHOOL:Figment	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:See text	DURATION:(CASTERLEVEL*10) Minutes [D]	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.115
+Spell Meld	TYPE:Arcane.Divine	SCHOOL:Evocation	COMPS:V, S, M, F, XP	CASTTIME:10 minutes	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL*10) Minutes	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.116
+Succor	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S, DF	CASTTIME:1 action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) Minutes	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCEPAGE:p.116
+Suspicion	TYPE:Arcane.Divine	SCHOOL:Divination	DESCRIPTOR:Sexual	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:Instantaneous	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.116
+Touch Me Not	TYPE:Arcane.Divine	SCHOOL:Abjuration	COMPS:V	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) Rounds	SAVEINFO:Will half	SPELLRES:Yes	SOURCEPAGE:p.116
+True Form	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature Touched	DURATION:Instantaneous	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.117
+Unseen Lover	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Summoning	DESCRIPTOR:Sexual	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One invisible, mindless sexual partner	DURATION:(CASTERLEVEL) Hours	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:p.117
+Vision of Exquisite Pleasure	TYPE:Arcane.Divine	SCHOOL:Enchantment	SUBSCHOOL:Charm	DESCRIPTOR:Mind-Affecting|Sexual	COMPS:V, S, DF	CASTTIME:1 action	RANGE:Close	TARGETAREA:One person	DURATION:(CASTERLEVEL) Rounds [D]	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.117
+Vision of Exquisite Pleasure (Mass)	OUTPUTNAME:[NAME] Vision of Exquisite Pleasure	TYPE:Arcane.Divine	SCHOOL:Enchantment	SUBSCHOOL:Charm	DESCRIPTOR:Mind-Affecting|Sexual	COMPS:V, S, DF	CASTTIME:1 action	RANGE:Medium	TARGETAREA:One or more humanoid creatures, no two of which can be more than 30 ft. apart	DURATION:(CASTERLEVEL) Rounds [D]	SAVEINFO:Will negates	SPELLRES:Yes	SOURCEPAGE:p.118
+Wet Dreams	TYPE:Arcane	SCHOOL:Illusion	SUBSCHOOL:Phantasm	DESCRIPTOR:Mind-Affecting|Sexual	COMPS:V, S, M	CASTTIME:10 minutes	RANGE:Unlimited	TARGETAREA:Living creature Touched	DURATION:Instantaneous + 24 hours [see text]	SAVEINFO:Will negates [see text]	SPELLRES:Yes	SOURCEPAGE:p.118
+Word of Repression	TYPE:Divine	SCHOOL:Evocation	DESCRIPTOR:Sexual|Sonic	COMPS:V	CASTTIME:1 standard action	RANGE:40 ft.	TARGETAREA:Creatures that has sex within 24 hours in a fo-ft. radius spread centered on you	DURATION:Instantaneous	SAVEINFO:None or Will negates [see text]	SPELLRES:Yes	SOURCEPAGE:p.118
+Youth's Beauty	TYPE:Arcane.Divine	SCHOOL:Necromancy	COMPS:V, S, XP	CASTTIME:1 action	RANGE:Personal	TARGETAREA:Creature Touched	DURATION:Permanent	SAVEINFO:Fortitude negates (harmless)	SPELLRES:No	SOURCEPAGE:p.119
+Barkskin (self only)	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:No	TEMPBONUS:ANYPC|COMBAT|AC|%CHOICE|TYPE=NaturalArmor	TEMPVALUE:MIN=2|MAX=5|TITLE=Choose Natural Armor Bonus	SOURCEPAGE:SpellsA-B.rtf
+Bear's Endurance (self only)	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	TEMPBONUS:ANYPC|STAT|CON|4|TYPE=Enhancement	SOURCEPAGE:SpellsA-B.rtf
+Blur (Self Only)	TYPE:Divine	SCHOOL:Illusion	SUBSCHOOL:Glamer	COMPS:V	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes [D]	SAVEINFO:None	SPELLRES:No	CLASSES:Kundala=3	DESC:Attacks miss subject 20%% of the time.	SOURCEPAGE:SpellsA-B.rtf
+Bull's Strength (self only)	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, M/DF	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	TEMPBONUS:ANYPC|STAT|STR|4|TYPE=Enhancement	SOURCEPAGE:SpellsA-B.rtf
+Cat's Grace (self only)	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	TEMPBONUS:ANYPC|STAT|DEX|4|TYPE=Enhancement	SOURCEPAGE:SpellsC.rtf
+Cure Critical Wounds (self only)	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:SpellsC.rtf
+Cure Light Wounds (self only)	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:SpellsC.rtf
+Cure Moderate Wounds (self only)	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:SpellsC.rtf
+Cure Serious Wounds (self only)	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:SpellsC.rtf
+Darkvision (self only)	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) hours	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:SpellsD-E.rtf
+Dimensional Anchor (self only)	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:SpellsD-E.rtf
+Jump (self only)	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) minutes [D]	SAVEINFO:None	SPELLRES:No	TEMPBONUS:ANYPC|SKILL|Jump|10+(((%CHOICE/5).TRUNC)*10)MIN20	TEMPVALUE:MIN=1|MAX=20|TITLE=Choose spell caster level	SOURCEPAGE:SpellsH-L.rtf
+Mage Armor (self only)	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Force	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL) hours [D]	SAVEINFO:None	SPELLRES:No	TEMPBONUS:ANYPC|COMBAT|AC|4|TYPE=Armor.REPLACE	SOURCEPAGE:SpellsM-O.rtf
+Protection from Energy (self only)	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL*10) minutes or until discharged	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:SpellsP-R.rtf
+Rage (self only)	TYPE:Divine	SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:Concentration + (CASTERLEVEL) rounds [D]	SAVEINFO:None	SPELLRES:No	TEMPBONUS:ANYPC|SAVE|Will|1|TYPE=Morale	TEMPBONUS:ANYPC|COMBAT|AC|-2	TEMPBONUS:ANYPC|STAT|STR|2|TYPE=Morale	TEMPBONUS:ANYPC|STAT|CON|2|TYPE=Morale	SOURCEPAGE:SpellsP-R.rtf
+Resist Energy (self only)	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:SpellsP-R.rtf
+Water Breathing (self only)	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	ITEM:Potion	TARGETAREA:You	DURATION:(CASTERLEVEL*2) hours; see text	SAVEINFO:None	SPELLRES:No	SOURCEPAGE:SpellsT-Z.rtf
+
+###Block: Descriptions
+Ale Goggles.MOD	DESC:Target perceives others as having +4 bonus to appearance
+Ale Goggles (Mass).MOD	DESC:As ale goggles, but affects 1 creature/level
+Analyze Ancestry.MOD	DESC:Determine ten genealogical generations of creature
+Analyze Fertility.MOD	DESC:Determine how fertile target is and reveal conception-influencing spells
+Animate Image.MOD	DESC:Creates moving images from text
+Beauty's Caress.MOD	DESC:Subject gains 1d4/2 caster levels to charisma and appearance
+Blandness.MOD	DESC:Target's appearance is raised or lowered to the racial average
+Blandness (Greater).MOD	DESC:As blandness, but permanent
+Blessed Seed.MOD	DESC:Sex results in pregnancy, with a half-celestial child
+Block the Seed.MOD	DESC:Prevents conception for 1 day/level
+Body to Body.MOD	DESC:Links creatures to you like shield other and allows spells to be shared
+Calm Weather.MOD	DESC:Removes weather-affecting spells
+Come to Me.MOD	DESC:Teleports willing ally to you
+Cursed Orgasm.MOD	DESC:Next orgasm deals ((CASTERLEVEL)MAX10)d6 damage
+Depilatory.MOD	DESC:Removes Hair
+Desperation.MOD	DESC:Target suffers penalties until he has sex
+Detect Pregnancy.MOD	DESC:Determine if target creature is carrying natural or implanted young
+Disrobe.MOD	DESC:Subject's nonmagical clothing and armor falls off
+Divine Mark.MOD	DESC:Inscribe a personal rune
+Eminently Talented.MOD	DESC:+5 competency bonus on Perform (Sexual Techniques) checks
+Engorged Gait.MOD	DESC:Target's speed reduced by one-half
+Engorged Strike.MOD	DESC:Target's unarmed strikes treated as one size category larger
+False Confidence.MOD	DESC:Target suffers a -2 penalty on Appearance- and Charisma-based skill checks
+Fecund Growth.MOD	DESC:Increases the size and health of all living things within range
+Fiendish Seed.MOD	DESC:Subject can impregnate or become pregnant regardless of mundane birth control methods used
+Find a Soulmate.MOD	DESC:Finds the target's true love (perfect mate)
+Ghost Touch.MOD	DESC:Makes item able to interact with incoporeal creatures
+Grope.MOD	DESC:Telekinesis similar to a physical touch
+Healing Sphere.MOD	DESC:Orb deals 2d8+((CASTERLEVEL)MAX10) point of damage
+Hedonist's Delight.MOD	DESC:Enhance pleasurable sensations and +2 bonus on Craft checks
+Impotency.MOD	DESC:Target becomes sexually impotent and recieves -2 penalty on Bluff, Diplomacy and Intimidate
+Innocence of the Virgin.MOD	DESC:Subject loses all knowledge of sex. -10 penalty on sexually related Bluff, Diplomacy and Perform checks
+Invigorate.MOD	DESC:Subject gains +4 Constitution and makes the target extremely fertile
+Irrational Attraction.MOD	DESC:Subject becomes enamored with any type of creature
+Jealousy.MOD	DESC:Deals ((CASTERLEVEL)MAX10)d6 points of damage if target has sex with anyone other than caster
+Kiss of Life.MOD	DESC:Restore very recently dead creature to life
+Liar's Curse.MOD	DESC:Body part grows when telling falsehoods
+Lifebond.MOD	DESC:Permanent link to monitor position, condition of loved one
+Life Shell.MOD	DESC:Barrier against nonliving matter
+Limited Telepathy.MOD	DESC:Communicate with intelligent creature
+Love Nest.MOD	DESC:Create a comfortable tent that gives a +5 bonus to resist scrying
+Magic Probe.MOD	DESC:Reveals all spell currently active on target
+Magic Status.MOD	DESC:As status, but includes spells cast upon your allies
+Mantle of Love.MOD	DESC:Subject gains a +4 morale bonus on saves; 1 min/level
+Mind to Mind.MOD	DESC:Telepathically links caster and target; 10 minutes/level
+Mirror Talk.MOD	DESC:Look and speak from one focus mirror through another
+Mirror Walk.MOD	DESC:Step from one focus mirror through another
+Miss.MOD	DESC:Target suffers a -10 penalty on next attack roll
+Orgasmic Vibrations.MOD	DESC:Pleasurably distract target
+Orgasmic Vibrations (Mass).MOD	DESC:As Orgasmic Vibrations, but all within 30 ft.
+Peace Aura.MOD	DESC:Wards an area so that those who attack take 1d6/caster level
+Peacock's Beauty.MOD	DESC:Subject gains +4 to APP for 1 minute/level
+Peacock's Beauty (Mass).MOD	DESC:As peacock's beauty, affects one subject/level
+Phantasmal Lover.MOD	DESC:Attractive illusion dazes and fatigues or exauses subject
+Pheromones.MOD	DESC:Increases the attitude of creatures by your scent
+Pillow Talk.MOD	DESC:Subject can't prevaricate after sex
+Pleasant Dreams.MOD	DESC:Protects creature from influenced dreams
+Privacy.MOD	DESC:Emanation negates divinations
+Repulsiveness.MOD	DESC:Subject takes 1d6 per caster level (max 5d6) Appearance damage
+Resist Temptation.MOD	DESC:Subject gains +4 resistance bonus on Will saves against charms and enchantments. 10 minutes/level
+Reverse Gender.MOD	DESC:Reverses target's gender for 1 hour/level
+Seduction.MOD	DESC:One creature becomes sexually attracted to you
+Shadow Life.MOD	DESC:Temporarily return creature to life
+Share Sensation.MOD	DESC:Feel your target's physical sensations
+Spell Meld.MOD	DESC:Pool spellcasting power with willing target
+Succor.MOD	DESC:Prevents 1 negative energy drain and 1 point of ability damage/five levels
+Suspicion.MOD	DESC:Gain vision of target's last sexual encounter
+Touch Me Not.MOD	DESC:Caster gains +2 bonus to AC, Grapplers take 1d8+1/level damage (max +5)
+True Form.MOD	DESC:Removes all altering magic from a creature
+Unseen Lover.MOD	DESC:Invisible, mindless, shapeless force copulates yith you or a willing subject
+Vision of Exquisite Pleasure.MOD	DESC:Stuns one person; 1 rd./level
+Vision of Exquisite Pleasure (Mass).MOD	DESC:As vision of exquisite pleasure, but all within 30 ft.
+Wet Dreams.MOD	DESC:Sends pleasent, tiring vision to sleeping target
+Word of Repression.MOD	DESC:Kills, confuses, stuns, or makes impotent subjects that had sex within 24 hours
+Youth's Beauty.MOD	DESC:You look younger as you age. Appearance increases each age category
+Barkskin (self only).MOD	DESC:Grants enhancement to natural armor.
+Bear's Endurance (self only).MOD	DESC:Subject gains +4 to Con for (CASTERLEVEL) minutes.
+Bull's Strength (self only).MOD	DESC:Subject gains +4 to Str for (CASTERLEVEL) minutes.
+Cat's Grace (self only).MOD	DESC:Subject gains +4 to Dex for (CASTERLEVEL) minutes.
+Cure Critical Wounds (self only).MOD	DESC:Cures 4d8+((CASTERLEVEL)MIN20) damage.
+Cure Light Wounds (self only).MOD	DESC:Cures 1d8+((CASTERLEVEL)MIN5) damage
+Cure Moderate Wounds (self only).MOD	DESC:Cures 2d8+((CASTERLEVEL)MIN10) damage
+Cure Serious Wounds (self only).MOD	DESC:Cures 3d8+((CASTERLEVEL)MIN15) damage
+Darkvision (self only).MOD	DESC:See 60 ft. in total darkness.
+Dimensional Anchor (self only).MOD	DESC:Bars extradimensional movement.
+Jump (self only).MOD	DESC:Subject gets bonus on Jump checks.
+Mage Armor (self only).MOD	DESC:Gives subject +4 armor bonus.
+Protection from Energy (self only).MOD	DESC:Absorb (CASTERLEVEL*12) points of damage from one kind of energy.
+Rage (self only).MOD	DESC:Subjects gains +2 to Str and Con, +1 on Will saves, -2 to AC.
+Resist Energy (self only).MOD	DESC:Ignores first 10 (or more) points of damage/attack from specified energy type.
+Water Breathing (self only).MOD	DESC:Subjects can breathe underwater.

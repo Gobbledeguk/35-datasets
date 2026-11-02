@@ -1,0 +1,24 @@
+# Class levels and domains of the spells in le_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Aura of the Sun.MOD	CLASSES:Cleric,Paladin=4
+Backblast.MOD	CLASSES:Wizard,Sorcerer=3
+Bloodbriars.MOD	CLASSES:Druid,Sorcerer,Wizard=4
+Clearstone.MOD	CLASSES:Sorcerer,Wizard=3
+Crushing Sphere.MOD	CLASSES:Sorcerer,Wizard=6
+Ebon Ray of Doom.MOD	CLASSES:Assassin=3|Sorcerer,Wizard=4
+Ghost Pipes.MOD	CLASSES:Bard=1
+Know Bloodline.MOD	CLASSES:Cleric=3
+Mailed Might of the Magelords.MOD	CLASSES:Sorcerer,Wizard=5
+Nar Fiendbond.MOD	CLASSES:Cleric,Sorcerer,Wizard=7
+Nezram's Amethyst Aura.MOD	CLASSES:Sorcerer,Wizard=3
+Nezram's Emerald Energy Shield.MOD	CLASSES:Sorcerer,Wizard=4
+Nezram's Sapphire Screen of Shielding.MOD	CLASSES:Sorcerer,Wizard=5
+Ray of Resurgence.MOD	CLASSES:Cleric=1|Sorcerer,Wizard=2
+Sakkratar's Triple Strike.MOD	CLASSES:Sorcerer,Wizard=5
+Shalantha's Delicate Disk.MOD	CLASSES:Sorcerer,Wizard=6
+Srinshee's Spell Shift.MOD	CLASSES:Sorcerer,Wizard=9
+Storm Shield.MOD	CLASSES:Cleric,Druid=3
+Sun Scepter.MOD	CLASSES:Cleric=6
+Theskyn's Hearty Heave.MOD	CLASSES:Sorcerer,Wizard=2
+Toothed Tentacle.MOD	CLASSES:Sorcerer,Wizard=2
+Tyche's Touch.MOD	CLASSES:Cleric=2

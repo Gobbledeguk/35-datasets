@@ -1,0 +1,17 @@
+
+
+Ring of Improved Invisibility	TYPE:MAGIC.Ring.Finger	COST:50000	SPROP:The wearer of this ring may activate a charge and cloak himself in improved invisibility, as the spell. Caster level 7. Max Charges 50.
+
+Brigandine Armor	PROFICIENCY:ARMOR|Brigandine Armor	TYPE:Medium.ArmorMedium.ArmorProf_Medium.Metal	COST:120	WT:30	ACCHECK:-3	MAXDEX:3	SOURCEPAGE:p.96	SPELLFAILURE:20	BONUS:COMBAT|AC|4|TYPE=Armor
+
+Holy Sword.COPY=Kargi Mourn
+Kargi Mourn.MOD	SOURCEPAGE:p.117	SOURCELONG:Kingdom of Kalamar	SOURCESHORT:KoKC	BONUS:WEAPON|TOHIT,DAMAGE|3|TYPE=Enhancement|PRECLASS:1,Paladin=1	SPROP:Inflicts double damage to hobgoblins; Paladins that follow The True, grants Great Cleave when fighting hobgoblins|PRECLASS:1,Paladin=1
+
+Lamellar Armor	PROFICIENCY:ARMOR|Lamellar Armor	TYPE:Medium.ArmorMedium.ArmorProf_Medium.Metal	COST:200	WT:30	ACCHECK:-4	MAXDEX:3	SOURCEPAGE:p.133	SPELLFAILURE:30	BONUS:COMBAT|AC|5|TYPE=Armor
+
+Falchion.COPY=Mother of Pearls
+Mother of Pearls.MOD	SOURCEPAGE:p.134	SOURCELONG:Kingdom of Kalamar	SOURCESHORT:KoKC	SPROP:+2 Competency bonus to Swim, Profession (Sailor) and Appraise checks. Can cast TRUE STRIKE once per day against any sea-dwelling creature.
+
+Cord Armor	TYPE:Light.ArmorLight.ArmorProf_Light.NonMetal
+	PROFICIENCY:ARMOR|Cord Armor		BONUS:COMBAT|AC|2|TYPE=Armor	ACCHECK:-1	SPELLFAILURE:15	MAXDEX:5	WT:15	COST:30	SOURCEPAGE:p.159
+

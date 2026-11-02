@@ -1,0 +1,15 @@
+# Age Of Mortals – class feature categories (Player's Handbook form: views of Special Ability by type)
+
+ABILITYCATEGORY:Mariner (Age of Mortals) Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:Special Ability	TYPE:Mariner (Age of Mortals) Class Feature	PLURAL:Mariner (Age of Mortals) Class Features	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Academy Sorcerer Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:Special Ability	TYPE:Academy Sorcerer Class Feature	PLURAL:Academy Sorcerer Class Features	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Citadel Mystic Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:Special Ability	TYPE:Citadel Mystic Class Feature	PLURAL:Citadel Mystic Class Features	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Kender Nightstalker Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:Special Ability	TYPE:Kender Nightstalker Class Feature	PLURAL:Kender Nightstalker Class Features	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Legion Mystic Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:Special Ability	TYPE:Legion Mystic Class Feature	PLURAL:Legion Mystic Class Features	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Legion Scout Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:Special Ability	TYPE:Legion Scout Class Feature	PLURAL:Legion Scout Class Features	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Legion Sorcerer Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:Special Ability	TYPE:Legion Sorcerer Class Feature	PLURAL:Legion Sorcerer Class Features	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Master Ambassador Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:Special Ability	TYPE:Master Ambassador Class Feature	PLURAL:Master Ambassador Class Features	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Nomad Shaman Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:Special Ability	TYPE:Nomad Shaman Class Feature	PLURAL:Nomad Shaman Class Features	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Rogue Knight Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:Special Ability	TYPE:Rogue Knight Class Feature	PLURAL:Rogue Knight Class Features	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Solamnic Auxiliary Mage Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:Special Ability	TYPE:Solamnic Auxiliary Mage Class Feature	PLURAL:Solamnic Auxiliary Mage Class Features	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Spellfilch Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:Special Ability	TYPE:Spellfilch Class Feature	PLURAL:Spellfilch Class Features	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:War Mage Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	CATEGORY:Special Ability	TYPE:War Mage Class Feature	PLURAL:War Mage Class Features	DISPLAYLOCATION:Class Features

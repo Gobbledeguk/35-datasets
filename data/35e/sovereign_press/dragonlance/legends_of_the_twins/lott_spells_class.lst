@@ -1,0 +1,17 @@
+# Class levels and domains of the spells in lott_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Confluence.MOD	CLASSES:Sorcerer=2|Wizard=2
+Frozen Moment.MOD	CLASSES:Sorcerer=4|Wizard=4
+Historic Vision.MOD	CLASSES:Cleric=2|Mystic=2|Sorcerer=1|Wizard=1
+Past-Seeing.MOD	CLASSES:Cleric=5|Mystic=5|Druid=4|Sorcerer=4|Wizard=4
+River's Ravages.MOD	CLASSES:Druid=2|Sorcerer=2|Wizard=2
+River's Ravages (Greater).MOD	CLASSES:Druid=7|Sorcerer=8|Wizard=8
+River's Ravaging Flood.MOD	CLASSES:Druid=4|Sorcerer=5|Wizard=5
+River Watch.MOD	CLASSES:Cleric=6|Sorcerer=4|Wizard=4
+Temporal Shield.MOD	CLASSES:Sorcerer=2|Wizard=2
+Temporal Sphere.MOD	CLASSES:Sorcerer=5|Wizard=5
+Temporal Sphere (Mobile).MOD	CLASSES:Sorcerer=9|Wizard=9
+Temporal Sphere (Selective).MOD	CLASSES:Sorcerer=7|Wizard=7
+Timeheal.MOD	CLASSES:Sorcerer=7|Wizard=7
+Time Reaver.MOD	CLASSES:Sorcerer=9|Wizard=9
+Tear of Veil's Parting.MOD	CLASSES:Wizard=7

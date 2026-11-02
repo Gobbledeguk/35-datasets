@@ -1,0 +1,10 @@
+# CVS $Revision: $ $Author: $ -- Sun Aug 17 15:41:15 2014 -- reformated by prettylst.pl v1.51 (build 24906)
+
+###Block: Spells
+Force Shapechange	TYPE:Divine	SCHOOL:Abjuration	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:One living creature.	DURATION:(CASTERLEVEL) rounds	SAVEINFO:Will partial	SPELLRES:Yes	DESC:Forces shapechangers into natural form.	SOURCELONG:Races of Eberron	SOURCESHORT:RE	SOURCEPAGE:p.	SOURCEDATE:2005-04
+Illusion Purge	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S	CASTTIME:1 standard action	RANGE:5-ft/level	TARGETAREA:5-ft-radius/level emanation centered on you.	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	SOURCELONG:Races of Eberron	SOURCESHORT:RE	SOURCEPAGE:p.	SOURCEDATE:2005-04
+True Seeing, Mass	KEY:True Seeing (Mass)	TYPE:Divine	SCHOOL:Divination	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One creature/level, no two of which can be more than 30-ft apart.	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	SOURCELONG:Races of Eberron	SOURCESHORT:RE	SOURCEPAGE:p.	SOURCEDATE:2005-04
+
+###Block: Descriptions
+Illusion Purge.MOD	DESC:Dispel illusions within 5-ft/level
+True Seeing (Mass).MOD	DESC:Lets you see all things as they really are.

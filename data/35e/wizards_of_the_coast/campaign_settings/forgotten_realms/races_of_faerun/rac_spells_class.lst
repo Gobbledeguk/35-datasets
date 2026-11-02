@@ -1,0 +1,11 @@
+# Class levels and domains of the spells in rac_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Aerial Summoning Dance.MOD	CLASSES:Cleric=4
+Commune with Earth.MOD	CLASSES:Cleric,Druid=5
+Detect Metal and Minerals.MOD	CLASSES:Cleric,Sorcerer,Wizard=3
+Handfang.MOD	CLASSES:Cleric,Sorcerer,Wizard=3
+Mass Contagion.MOD	CLASSES:Cleric,Druid=5|Sorcerer,Wizard=6
+Plague Carrier.MOD	CLASSES:Cleric,Druid=5|Sorcerer,Wizard=6
+Shadow Canopy.MOD	CLASSES:Sorcerer,Wizard=6
+Spore Cloak.MOD	CLASSES:Druid=5|Sorcerer,Wizard=6
+Verraketh's Shadow Crown.MOD	CLASSES:Bard=3

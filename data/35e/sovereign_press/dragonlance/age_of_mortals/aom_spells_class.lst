@@ -1,0 +1,34 @@
+# Class levels and domains of the spells in aom_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Bind Spirit.MOD	CLASSES:Cleric=7|Sorcerer=7|Wizard=7
+Call Undead I.MOD	CLASSES:Cleric=1|Sorcerer=1|Wizard=1
+Call Undead II.MOD	CLASSES:Cleric=2|Sorcerer=2|Wizard=2
+Call Undead III.MOD	CLASSES:Cleric=3|Sorcerer=3|Wizard=3
+Call Undead IV.MOD	CLASSES:Cleric=4|Sorcerer=4|Wizard=4
+Call Undead V.MOD	CLASSES:Cleric=5|Sorcerer=5|Wizard=5
+Call Undead VI.MOD	CLASSES:Cleric=6|Sorcerer=6|Wizard=6
+Call Undead VII.MOD	CLASSES:Cleric=7|Sorcerer=7|Wizard=7
+Call Undead VIII.MOD	CLASSES:Cleric=8|Sorcerer=8|Wizard=8
+Call Undead IX.MOD	CLASSES:Cleric=9|Sorcerer=9|Wizard=9
+Diamond Body.MOD	DOMAINS:Channeling=9
+Dragon's Blood.MOD	CLASSES:Cleric=3|Sorcerer=3|Wizard=3
+Dragonbane.MOD	CLASSES:Cleric=4|Paladin=4|Sorcerer=3|Wizard=3
+Emotional Brew.MOD	CLASSES:Bard=4|Cleric=5|Sorcerer=5|Wizard=5
+Ensnare the Heart.MOD	CLASSES:Bard=5|Cleric=5|Sorcerer=6|Wizard=6
+Ethereal Flame.MOD	CLASSES:Cleric=4|Sorcerer=4|Wizard=4
+Eternal Repose.MOD	CLASSES:Cleric=8|Sorcerer=8|Wizard=8
+Fog of Fear.MOD	CLASSES:Cleric=4|Sorcerer=5|Wizard=5
+Greed.MOD	CLASSES:Cleric=3|Sorcerer=3|Wizard=3
+Mindweb.MOD	CLASSES:Cleric=4|Sorcerer=4|Wizard=4
+Mistshackles.MOD	CLASSES:Cleric=3|Sorcerer=3|Wizard=3
+Part Death's Shroud.MOD	CLASSES:Cleric=4|Sorcerer=4|Wizard=4
+Reshape Metal.MOD	CLASSES:Cleric=4|Sorcerer=6|Wizard=6
+Reveal the True Form.MOD	CLASSES:Cleric=7|Sorcerer=7|Wizard=7
+Second Life.MOD	CLASSES:Cleric=6
+Spear of Divine Might.MOD	CLASSES:Cleric=5
+Spear of Divine Wrath.MOD	CLASSES:Cleric=5
+Spiritual Horde.MOD	CLASSES:Cleric=9
+Spiritward.MOD	CLASSES:Cleric=6|Sorcerer=7|Wizard=7
+Stirge Swarm.MOD	CLASSES:Sorcerer=5|Wizard=5
+Stonesight.MOD	CLASSES:Cleric=3|Druid=2|Sorcerer=3|Wizard=3
+Trace Magic.MOD	CLASSES:Bard=2|Cleric=2|Druid=2|Sorcerer=2|Wizard=2

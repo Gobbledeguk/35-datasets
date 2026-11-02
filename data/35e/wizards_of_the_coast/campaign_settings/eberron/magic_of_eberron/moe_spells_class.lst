@@ -1,0 +1,46 @@
+# Class levels of the entries in moe_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Ablative Armor.MOD	CLASSES:Artificer=1
+Adamantine Weapon.MOD	CLASSES:Artificer=3
+Blast Rod.MOD	CLASSES:Artificer=3
+Censure Elementals.MOD	CLASSES:Artificer=4
+Clothier's Closet.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Concurrent Infusions.MOD	CLASSES:Artificer=4
+Control Elemental.MOD	CLASSES:Sorcerer,Wizard=6
+Detect Dragonmark.MOD	CLASSES:Cleric,Sorcerer,Wizard=1
+Dimension Leap.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Distracting Shadows.MOD	CLASSES:Bard,Sorcerer,Wizard=1
+Elemental Prod.MOD	CLASSES:Artificer=2
+Expose the Dead.MOD	CLASSES:Cleric,Paladin,Sorcerer,Wizard=2
+Glimpse of Eternity.MOD	CLASSES:Bard,Sorcerer,Wizard=5
+Glimpse of the Prophecy.MOD	CLASSES:Bard,Cleric,Sorcerer,Wizard=6
+Hidden Ward.MOD	CLASSES:Bard,Sorcerer,Wizard=1
+Indisputable Possession.MOD	CLASSES:Artificer=1
+Khyber Trap.MOD	CLASSES:Sorcerer,Wizard=3
+Leap into Animal.MOD	CLASSES:Druid,Ranger=2
+Leech Undeath.MOD	CLASSES:Cleric=7|Sorcerer,Wizard=8
+Lucky Blade.MOD	CLASSES:Artificer=2
+Lucky Cape.MOD	CLASSES:Artificer=3
+Magic Weapon (Greater Legion's).MOD	CLASSES:Sorcerer,Wizard=5|Cleric=6
+Magic Weapon (Legion's).MOD	CLASSES:Cleric,Paladin,Sorcerer,Wizard=2
+Metamagic Scroll.MOD	CLASSES:Artificer=1
+Mindburn.MOD	CLASSES:Sorcerer,Wizard=2
+Orb of Dancing Death.MOD	CLASSES:Cleric,Sorcerer,Wizard=5
+Overwhelming Revelations.MOD	CLASSES:Sorcerer,Wizard=6
+Pending Potion.MOD	CLASSES:Artificer=1
+Reinforce Construct.MOD	CLASSES:Artificer=2
+Scalding Touch.MOD	CLASSES:Sorcerer,Wizard=7
+Scry Trap.MOD	CLASSES:Cleric,Sorcerer,Wizard=5
+Semblance of Life.MOD	CLASSES:Cleric=6
+Sense Weakness.MOD	CLASSES:Cleric,Sorcerer,Wizard=2
+Shared Healing.MOD	CLASSES:Cleric=2
+Slaying Arrow.MOD	CLASSES:Artificer=5
+Speaking Stones.MOD	CLASSES:Sorcerer,Wizard=2
+Spell Snare.MOD	CLASSES:Artificer=3|Sorcerer,Wizard=4
+Spell Snare (Greater).MOD	CLASSES:Artificer=6|Sorcerer,Wizard=7
+Storm Touch.MOD	CLASSES:Sorcerer,Wizard=5
+Suffer the Flesh.MOD	CLASSES:Sorcerer,Wizard=2
+Suppress Dragonmark.MOD	CLASSES:Artificer,Sorcerer,Wizard=2
+Undying Aura.MOD	CLASSES:Cleric=5
+Watchful Ancestors.MOD	CLASSES:Bard,Cleric,Sorcerer,Wizard=4
+Wind's Favor.MOD	CLASSES:Druid=3

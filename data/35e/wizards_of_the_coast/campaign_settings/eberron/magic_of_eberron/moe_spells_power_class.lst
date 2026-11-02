@@ -1,0 +1,11 @@
+# Class levels of the entries in moe_spells_power.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Faint Memory.MOD	CLASSES:Psion,Wilder=3
+Forced Dream.MOD	CLASSES:Psion,Wilder=3
+Foretelling.MOD	CLASSES:Psion,Wilder=2
+Induce Awe.MOD	CLASSES:Psion,Wilder=2
+Project Quori Spirit.MOD	CLASSES:Psion,Wilder=3
+Psychic Beacon.MOD	CLASSES:Psion,Wilder=2
+Sense Danger.MOD	CLASSES:Psychic Warrior=2|Psion,Wilder=3
+Stun Quori Spirit.MOD	CLASSES:Psion,Wilder=3
+Waking Dreams.MOD	CLASSES:Psion,Wilder=2

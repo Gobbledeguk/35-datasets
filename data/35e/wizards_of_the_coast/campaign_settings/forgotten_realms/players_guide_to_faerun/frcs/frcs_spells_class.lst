@@ -1,0 +1,39 @@
+# Class levels and domains of the spells in frcs_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Aganazzar's Scorcher.MOD	CLASSES:Sorcerer,Wizard=2
+Elminster's Evasion.MOD	CLASSES:Sorcerer,Wizard=9
+Gate Seal.MOD	CLASSES:Sorcerer,Wizard=3|Bard,Cleric,Druid=6
+Shout (Great).MOD	CLASSES:Sorcerer,Wizard=8
+Grimwald's Graymantle.MOD	CLASSES:Sorcerer,Wizard=5
+Snilloc's Snowball Swarm.MOD	CLASSES:Sorcerer,Wizard=2
+Alter Self.MOD	CLASSES:Harper Scout=1
+Disguise Self.MOD	CLASSES:Harper Scout=1
+Charm Person.MOD	CLASSES:Harper Scout=1
+Comprehend Languages.MOD	CLASSES:Harper Scout=1
+Erase.MOD	CLASSES:Harper Scout=1
+Feather Fall.MOD	CLASSES:Harper Scout=1
+Jump.MOD	CLASSES:Harper Scout=1
+Light.MOD	CLASSES:Harper Scout=1
+Message.MOD	CLASSES:Harper Scout=1
+Mount.MOD	CLASSES:Harper Scout=1
+Read Magic.MOD	CLASSES:Harper Scout=1
+Scatterspray.MOD	CLASSES:Harper Scout=1
+Sleep.MOD	CLASSES:Harper Scout=1
+Spider Climb.MOD	CLASSES:Harper Scout=1
+Cat's Grace.MOD	CLASSES:Harper Scout=2
+Darkvision.MOD	CLASSES:Harper Scout=2
+Detect Thoughts.MOD	CLASSES:Harper Scout=2
+Eagle's Splendor.MOD	CLASSES:Harper Scout=2
+Invisibility.MOD	CLASSES:Harper Scout=2
+Knock.MOD	CLASSES:Harper Scout=2
+Locate Object.MOD	CLASSES:Harper Scout=2
+Magic Mouth.MOD	CLASSES:Harper Scout=2
+Misdirection.MOD	CLASSES:Harper Scout=2
+See Invisibility.MOD	CLASSES:Harper Scout=2
+Shadow Mask.MOD	CLASSES:Harper Scout=2
+Clairaudience/Clairvoyance.MOD	CLASSES:Harper Scout=3
+Nondetection.MOD	CLASSES:Harper Scout=3
+Suggestion.MOD	CLASSES:Harper Scout=3
+Tongues.MOD	CLASSES:Blackguard=3
+Undetectable Alignment.MOD	CLASSES:Harper Scout=3
+Eagle's Splendor.MOD	DOMAINS:Trade=2

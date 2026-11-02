@@ -1,18 +1,22 @@
 # Legends of the Twins — importable pack, built by packs/dragonlance/build_legends_of_the_twins.py.
 CAMPAIGN:Legends of the Twins
 KEY:Legends of the Twins
-GAMEMODE:35e
+GAMEMODE:35e|Bahamut35e
 TYPE:SovereignPress.Dragonlance
 BOOKTYPE:Supplement
+PRECAMPAIGN:1,INCLUDESBOOKTYPE=Core35e
+PRECAMPAIGN:1,INCLUDES=Dragonlance Campaign Setting
 SETTING:Dragonlance
 SOURCELONG:Legends of the Twins
 SOURCESHORT:LotT
-SOURCEDATE:2007
+#SOURCEDATE:2007  (PCGen needs year and month, e.g. 2007-07 - month not known, see the book's copyright page)
 ISOGL:NO
 
+ABILITYCATEGORY:lott_abilitycategories.lst
 ABILITY:lott_class_features.lst
 CLASS:lott_classes.lst
 EQUIPMENT:lott_equipment.lst
 ABILITY:lott_feats.lst
 SPELL:lott_spells.lst
+SPELL:lott_spells_class.lst
 ABILITY:lott_traits.lst

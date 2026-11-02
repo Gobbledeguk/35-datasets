@@ -1,0 +1,25 @@
+# Class levels and domains of the spells in csw_spells.lst (PHB structure: ph_spells_class.lst)
+###Block: Classes and domains
+Binding Chain of Fate.MOD	CLASSES:Sorcerer,Wizard=9
+Ensul's Soultheft.MOD	CLASSES:Sorcerer,Wizard=9
+Halaster's Blacksphere.MOD	CLASSES:Sorcerer,Wizard=8
+Halaster's Fetch I.MOD	CLASSES:Sorcerer,Wizard=4
+Halaster's Fetch II.MOD	CLASSES:Sorcerer,Wizard=5
+Halaster's Fetch III.MOD	CLASSES:Sorcerer,Wizard=6
+Halaster's Fetch IV.MOD	CLASSES:Sorcerer,Wizard=7
+Halaster's Fetch V.MOD	CLASSES:Sorcerer,Wizard=8
+Halaster's Fetch VI.MOD	CLASSES:Sorcerer,Wizard=9
+Halaster's Image Swap.MOD	CLASSES:Bard,Sorcerer,Wizard=4
+Halaster's Light Step.MOD	CLASSES:Bard,Sorcerer,Wizard=2
+Halaster's Shaking Hand.MOD	CLASSES:Sorcerer,Wizard=6
+Halaster's Teleport Cage.MOD	CLASSES:Sorcerer,Wizard=9
+Jhanifer's Deliquence.MOD	CLASSES:Sorcerer,Wizard=4
+Jumpgout.MOD	CLASSES:Sorcerer,Wizard=5
+Khelben's Dweomerdoom.MOD	CLASSES:Sorcerer,Wizard=9
+Laeral's Crowning Touch.MOD	CLASSES:Cleric,Sorcerer,Wizard=9
+Laeral's Silver Lance.MOD	CLASSES:Sorcerer,Wizard=3
+Palarandusk's Fire Breath.MOD	CLASSES:Sorcerer,Wizard=2
+Steelsting.MOD	CLASSES:Sorcerer,Wizard=4
+Trobriand's Baleful Teleport.MOD	CLASSES:Sorcerer,Wizard=6
+Trobriand's Crytalbrittle.MOD	CLASSES:Bard,Sorcerer,Wizard=3
+Trobriand's Glassee.MOD	CLASSES:Sorcerer,Wizard=6

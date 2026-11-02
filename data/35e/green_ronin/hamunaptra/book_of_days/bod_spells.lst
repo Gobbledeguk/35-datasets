@@ -1,0 +1,124 @@
+# CVS $Revision: $ $Author: $ -- Thu Aug  7 12:47:32 2014 -- reformated by prettylst.pl v1.51 (build 24365)
+
+###Block: Spells
+Animate Sand	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:1 or more patches of sand/other grainy material; see text	DURATION:(CASTERLEVEL) rounds	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.81	SOURCEWEB:http://www.greenronin.com/
+Antimagic Bastion	TYPE:Arcane.Divine	SCHOOL:Abjuration	COMPS:V, S, M/DF	CASTTIME:1 standard action	RANGE:10 ft.	TARGETAREA:10-ft.-radius emanation, centered on the caster	DURATION:(CASTERLEVEL*10) minutes [D]	SAVEINFO:None	SPELLRES:See text	COST:100	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.81	SOURCEWEB:http://www.greenronin.com/
+Banquet of Ashes	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) days	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.81	SOURCEWEB:http://www.greenronin.com/
+Barge of Ra	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, M	CASTTIME:1 round	RANGE:Close	TARGETAREA:A single summoned barge, complete with sails and oars.	DURATION:(CASTERLEVEL) hours [D]	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.82	SOURCEWEB:http://www.greenronin.com/
+Blessing of Shade	TYPE:Arcane.Divine	SCHOOL:Abjuration	DESCRIPTOR:Darkness	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:(CASTERLEVEL/2) creatures touched	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.82	SOURCEWEB:http://www.greenronin.com/
+Burst of Speed	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:You	DURATION:1 minute	CLASSES:Bard,Sorcerer,Wizard=0	DESC:Subjects speed increases by +10 ft.	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.82	SOURCEWEB:http://www.greenronin.com/
+Call Animal	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S, DF	CASTTIME:1 round	RANGE:Close	TARGETAREA:One summoned creature	DURATION:(CASTERLEVEL) hours [D]	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.82	SOURCEWEB:http://www.greenronin.com/
+Call Corpse	TYPE:Arcane.Divine	SCHOOL:Necromancy	COMPS:V, S	CASTTIME:1 round	RANGE:Close	TARGETAREA:One or more corpses	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.82	SOURCEWEB:http://www.greenronin.com/
+Call Sphinx	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Calling	COMPS:V, S, M	CASTTIME:1 hour	RANGE:Close	TARGETAREA:One great sphinx	DURATION:Instantaneous	SAVEINFO:See text.	SPELLRES:See text.	COST:1000	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.83	SOURCEWEB:http://www.greenronin.com/
+Circle of Bes	TYPE:Arcane.Divine	SCHOOL:Abjuration	DESCRIPTOR:Good	COMPS:V, S, M/DF, multiple casters	CASTTIME:4 to 7 rounds; see text	RANGE:See text	TARGETAREA:See text	DURATION:(CASTERLEVEL) minutes [D]	SAVEINFO:Will negates (harmless)	SPELLRES:No; see text	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.83	SOURCEWEB:http://www.greenronin.com/
+Detect Divine Blood	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V, S, M/DF	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:Cone-shaped emanation	DURATION:Concentration, up to (CASTERLEVEL*10) minutes [D]	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.84	SOURCEWEB:http://www.greenronin.com/
+Endure	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.84	SOURCEWEB:http://www.greenronin.com/
+Eye of Ra	TYPE:Arcane.Divine	SCHOOL:Divination	SUBSCHOOL:Scrying	COMPS:V, S, M	CASTTIME:1 round	RANGE:Unlimited	TARGETAREA:Caster	DURATION:(CASTERLEVEL) minutes [D]	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.84	SOURCEWEB:http://www.greenronin.com/
+Eyes of Isis	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:Caster	DURATION:(CASTERLEVEL) minutes [D]	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.84	SOURCEWEB:http://www.greenronin.com/
+Flesh to Salt	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	ITEM:Potion	TARGETAREA:One creature	DURATION:Instantaneous	SAVEINFO:Fortitude negates	SPELLRES:Yes	CLASSES:Sorcerer,Wizard=6	DOMAINS:Vengeance=7	DESC:Turns target into a statue of salt.	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.84	SOURCEWEB:http://www.greenronin.com/
+Flight of the Ba	TYPE:Arcane	SCHOOL:Necromancy	COMPS:V, S, F	CASTTIME:10 minutes	RANGE:Self	TARGETAREA:You	DURATION:(CASTERLEVEL) hours [D]	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.85	SOURCEWEB:http://www.greenronin.com/
+Heart Clutch	TYPE:Arcane	SCHOOL:Necromancy	COMPS:V, S	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One living creature	DURATION:Instantaneous	SAVEINFO:Fortitude partial	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.85	SOURCEWEB:http://www.greenronin.com/
+Jackal's Bite	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, M (but see text)	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Living creature touched	DURATION:(CASTERLEVEL) minutes	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.85	SOURCEWEB:http://www.greenronin.com/
+Know Deity	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V, S	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:One living or undead creature	DURATION:Instantaneous	SAVEINFO:Will negates	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.85	SOURCEWEB:http://www.greenronin.com/
+Know Superior	TYPE:Arcane	SCHOOL:Divination	COMPS:V, S	CASTTIME:1 standard action	RANGE:60 ft.	TARGETAREA:One living creature	DURATION:Instantaneous	SAVEINFO:Will negates	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.85	SOURCEWEB:http://www.greenronin.com/
+Locate Water	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Long	TARGETAREA:Circle, centered on you, with a radius of (CASTERLEVEL*40+400)	DURATION:(CASTERLEVEL) minutes	CLASSES:Druid=0|Ranger=1|Cleric=2|Sorcerer,Wizard=3	DOMAINS:Life,Prophecy,Survival=1	DESC:Locates nearest source of fresh water.	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.85	SOURCEWEB:http://www.greenronin.com/
+Meld into Sand	TYPE:Divine	SCHOOL:Transmutation	DESCRIPTOR:Earth	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:Caster	DURATION:(CASTERLEVEL*10) minutes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.86	SOURCEWEB:http://www.greenronin.com/
+Mental Map	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V, S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:Caster	DURATION:(CASTERLEVEL*10) minutes, and permanent (see text)	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.86	SOURCEWEB:http://www.greenronin.com/
+Minor Miracle	TYPE:Divine	SCHOOL:Evocation	COMPS:V, S, DF, XP; see text	CASTTIME:1 standard action	RANGE:See text	TARGETAREA:See text	DURATION:See text	SAVEINFO:See text	SPELLRES:Yes	XPCOST:300	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.86	SOURCEWEB:http://www.greenronin.com/
+Moment of Cunning	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:1 round	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.86	SOURCEWEB:http://www.greenronin.com/
+Moment of Endurance	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:1 round	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.87	SOURCEWEB:http://www.greenronin.com/
+Moment of Grace	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:1 round	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.87	SOURCEWEB:http://www.greenronin.com/
+Moment of Splendor	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:1 round	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.87	SOURCEWEB:http://www.greenronin.com/
+Moment of Strength	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:1 round	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.87	SOURCEWEB:http://www.greenronin.com/
+Moment of Wisdom	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:1 round	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.88	SOURCEWEB:http://www.greenronin.com/
+Mummify	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action (see text)	RANGE:Touch	TARGETAREA:Corpse touched	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	CLASSES:Cleric=1	DESC:Mummifies target corpse touched.	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.88	SOURCEWEB:http://www.greenronin.com/
+Pebble to Boulder	TYPE:Arcane.Divine	SCHOOL:Transmutation	DESCRIPTOR:Earth	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One or more pebbles made of nonmagical stone	DURATION:Instantaneous, or a (CASTERLEVEL) rounds [see text]	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.88	SOURCEWEB:http://www.greenronin.com/
+Phantom Chariot	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S	CASTTIME:10 minutes	RANGE:0 ft.	TARGETAREA:Two quasi-real equine creations and chariot	DURATION:(CASTERLEVEL) hours [D]	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.88	SOURCEWEB:http://www.greenronin.com/
+Quench Thirst	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:One creature touched	DURATION:Instantaneous	SAVEINFO:Fortitude negates (harmless)	SPELLRES:Yes (harmless)	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.88	SOURCEWEB:http://www.greenronin.com/
+Quick Scribe	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S	CASTTIME:1 round	RANGE:0 ft.	TARGETAREA:A piece of papyrus, a small bowl of ink, and a quill, all nonmagical	DURATION:(CASTERLEVEL) hours and permanent (see text)	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.89	SOURCEWEB:http://www.greenronin.com/
+Ray of Dehydration	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One living creature	DURATION:Instantaneous	SAVEINFO:Fortitude partial	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.89	SOURCEWEB:http://www.greenronin.com/
+Ray of Thirst	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:One living creature	DURATION:Instantaneous	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.89	SOURCEWEB:http://www.greenronin.com/
+Renenutet's Whisper	TYPE:Arcane.Divine	SCHOOL:Divination	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:Caster	DURATION:(CASTERLEVEL) hours or until discharged	COST:500	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.89	SOURCEWEB:http://www.greenronin.com/
+Revive	TYPE:Divine	SCHOOL:Conjuration	SUBSCHOOL:Healing	COMPS:V, S	CASTTIME:2 rounds	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) hours	SAVEINFO:Will negates (harmless), then Fortitude (see text)	SPELLRES:Yes (harmless)	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.89	SOURCEWEB:http://www.greenronin.com/
+Root	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, M	CASTTIME:10 minutes	RANGE:Touch	TARGETAREA:A single plant, usually a tree or large bush	DURATION:Permanent	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.90	SOURCEWEB:http://www.greenronin.com/
+Sand-Swim	TYPE:Divine	SCHOOL:Transmutation	DESCRIPTOR:Earth	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:Caster	DURATION:(CASTERLEVEL*10) minutes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.90	SOURCEWEB:http://www.greenronin.com/
+Screaming Sandstorm	TYPE:Divine	SCHOOL:Evocation	DESCRIPTOR:Air|Earth	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Long	TARGETAREA:Cylinder 30 ft. radius, 30 ft. high	DURATION:(CASTERLEVEL) rounds [D]	SAVEINFO:Reflex half or none; see text	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.90	SOURCEWEB:http://www.greenronin.com/
+Searing Touch	TYPE:Arcane.Divine	SCHOOL:Evocation	DESCRIPTOR:Fire	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature or object touched	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.91	SOURCEWEB:http://www.greenronin.com/
+Shadow Step	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Teleportation	COMPS:V	CASTTIME:1 standard action	RANGE:Long	TARGETAREA:Caster	DURATION:Instantaneous	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.91	SOURCEWEB:http://www.greenronin.com/
+Shape Sand	TYPE:Arcane.Divine	SCHOOL:Transmutation	DESCRIPTOR:Earth	COMPS:V, S, M/DF	CASTTIME:1 standard action	RANGE:Close	TARGETAREA:Sand, up to (CASTERLEVEL+10) cu. ft.	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.91	SOURCEWEB:http://www.greenronin.com/
+Silent Scribe	TYPE:Arcane	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Short (any point within 30 ft.)	DURATION:(CASTERLEVEL) minutes [D]	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.91	SOURCEWEB:http://www.greenronin.com/
+Sink	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S, DF	CASTTIME:1 standard action	RANGE:Long	TARGETAREA:Sand or soft earth in a 40-ft.-radius spread	DURATION:(CASTERLEVEL) minutes [D]	SAVEINFO:Reflex partial; see text	SPELLRES:No	CLASSES:Druid,Ranger=1	DESC:Sand and soft earth hinders movement within a 40-ft.-radius spread.	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.91	SOURCEWEB:http://www.greenronin.com/
+Skin of Bronze	TYPE:Arcane.Divine	SCHOOL:Abjuration	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL*10) minutes or until discharged	SAVEINFO:Will negates (harmless)	SPELLRES:Yes (harmless)	COST:100	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.92	SOURCEWEB:http://www.greenronin.com/
+Solar Scourge	TYPE:Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL) days [D]	SAVEINFO:Will negates	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.92	SOURCEWEB:http://www.greenronin.com/
+Summon Focus	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Summoning	COMPS:V, S	CASTTIME:1 standard action	RANGE:0 ft.	TARGETAREA:One spell focus	DURATION:(CASTERLEVEL) minutes	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.92	SOURCEWEB:http://www.greenronin.com/
+Tanglefoot Touch	TYPE:Arcane	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:(CASTERLEVEL*10) minutes	SAVEINFO:No	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.92	SOURCEWEB:http://www.greenronin.com/
+Temporary Oasis	TYPE:Arcane.Divine	SCHOOL:Conjuration	SUBSCHOOL:Creation	COMPS:V, S, M	CASTTIME:10 minutes	RANGE:Close	TARGETAREA:(CASTERLEVEL+30) ft. radius	DURATION:(CASTERLEVEL) hours	SAVEINFO:None	SPELLRES:No	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.92	SOURCEWEB:http://www.greenronin.com/
+Tireless Vigil	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S, F	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Creature touched	DURATION:1 hour	SAVEINFO:Will negates (harmless)	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.92	SOURCEWEB:http://www.greenronin.com/
+Touch of Starvation	TYPE:Arcane.Divine	SCHOOL:Transmutation	COMPS:V, S	CASTTIME:1 standard action	RANGE:Touch	TARGETAREA:Living creature touched	DURATION:Instantaneous	SAVEINFO:Fortitude negates	SPELLRES:Yes	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.93	SOURCEWEB:http://www.greenronin.com/
+Transmute Sand to Stone	TYPE:Arcane.Divine	SCHOOL:Transmutation	DESCRIPTOR:Earth	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Medium	TARGETAREA:Up to (CASTERLEVEL*2) 10-ft. cubes	DURATION:Permanent	SAVEINFO:See text	SPELLRES:No	CLASSES:Druid,Sorcerer,Wizard=5	DESC:Transforms (CASTERLEVEL*2) 10-ft. cubes of sand to stone.	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.93	SOURCEWEB:http://www.greenronin.com/
+Turn to Sand	TYPE:Arcane.Divine	SCHOOL:Transmutation	DESCRIPTOR:Earth	COMPS:V, S, M	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:Caster	DURATION:(CASTERLEVEL) rounds [D]	COST:100	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.93	SOURCEWEB:http://www.greenronin.com/
+Ward of Anubis	TYPE:Arcane.Divine	SCHOOL:Abjuration	COMPS:V, S, M, XP, allows for multiple casters	CASTTIME:40 minutes, plus 10 minutes per additional caster	RANGE:Anywhere within the area to be warded	TARGETAREA:Any enclosed structure (such as a building or tome) up to (CASTERLEVEL*200) sq. ft. [S]	DURATION:See below	SAVEINFO:None	SPELLRES:Yes	COST:3000	XPCOST:3000	SOURCELONG:Hamunaptra - The Book of Days	SOURCESHORT:BoD	SOURCEPAGE:p.93	SOURCEWEB:http://www.greenronin.com/
+
+###Block: Descriptions
+Animate Sand.MOD	DESC:Sand attacks your foes.
+Antimagic Bastion.MOD	DESC:As per antimagic field, except it applies to one type of magic.
+Banquet of Ashes.MOD	DESC:Curse prevents target from drawing nourishment from food.
+Barge of Ra.MOD	DESC:Summons a flying barge that carries (CASTERLEVEL*400) pounds.
+Blessing of Shade.MOD	DESC:Wraps target in protective shadows.
+Call Animal.MOD	DESC:Summons a Tiny or smaller animal to serve as a guide or messenger.
+Call Corpse.MOD	DESC:Pulls a corpse from the ground to appear at the caster's feet.
+Call Sphinx.MOD	DESC:Calls the nearest sphinx to aid you.
+Circle of Bes.MOD	DESC:Cooperative spell creating the effects of protection from evil/good and bless to all involved in the circle.
+Detect Divine Blood.MOD	DESC:Detects presence of divine blood within 60 feet.
+Endure.MOD	DESC:Bestows the Endurance feat on a subject.
+Eye of Ra.MOD	DESC:Caster gains a bird's eye view and a +10 bonus to Spot checks to detect hidden creatures.
+Eyes of Isis.MOD	DESC:Automatically identifies a spell as it is cast.
+Flight of the Ba.MOD	DESC:Caster releases his ba in the form of an incorporeal bird.
+Heart Clutch.MOD	DESC:Target's heart stops and tears free from its body.
+Jackal's Bite.MOD	DESC:Grants target a bite attack that deals 1d8 points of damage.
+Know Deity.MOD	DESC:Caster learns the subject's patron deity.
+Know Superior.MOD	DESC:Discover to whom target creature answers.
+Meld into Sand.MOD	DESC:You and your gear merge into sand.
+Mental Map.MOD	DESC:You recall directions with absolute clarity.
+Minor Miracle.MOD	DESC:Alters reality, within spell limits.
+Moment of Cunning.MOD	DESC:Subject gains a +2 bonus to his Int for (CASTERLEVEL/2) rounds.
+Moment of Endurance.MOD	DESC:Subject gains a +2 bonus to his Con for (CASTERLEVEL/2) rounds.
+Moment of Grace.MOD	DESC:Subject gains a +2 bonus to his Dex for (CASTERLEVEL/2) rounds.
+Moment of Splendor.MOD	DESC:Subject gains a +2 bonus to his Cha for (CASTERLEVEL/2) rounds.
+Moment of Strength.MOD	DESC:Subject gains a +2 bonus to his Str for (CASTERLEVEL/2) rounds.
+Moment of Wisdom.MOD	DESC:Subject gains a +2 bonus to his Wis for (CASTERLEVEL/2) rounds.
+Pebble to Boulder.MOD	DESC:Transforms a thrown pebble into a full-sized boulder dealing (min(CASTERLEVEL,15))d6 damage.
+Phantom Chariot.MOD	DESC:A pair of magical horses and a chariot appears for (CASTERLEVEL) hours.
+Quench Thirst.MOD	DESC:Alleviates target's need for water for one day.
+Quick Scribe.MOD	DESC:Creates writing tools and papyrus.
+Ray of Dehydration.MOD	DESC:Deals (min(CASTERLEVEL,20))d6 nonlethal damage and dehydrates target.
+Ray of Thirst.MOD	DESC:Deals 1d6 nonlethal damage and dehydrates target.
+Renenutet's Whisper.MOD	DESC:You may react to one event before it takes place.
+Revive.MOD	DESC:Makes desert travel easier.
+Root.MOD	DESC:You establish a plant in any kind of earth.
+Sand-Swim.MOD	DESC:Lets you swim through and breathe within sand.
+Screaming Sandstorm.MOD	DESC:Sandstorm deals damage and reduces visibility.
+Searing Touch.MOD	DESC:Melee touch attack deals (min(CASTERLEVEL,5))d6 damage.
+Shadow Step.MOD	DESC:Teleport to any place your shadow touches.
+Shape Sand.MOD	DESC:Create shapes and objects out of sand.
+Silent Scribe.MOD	DESC:Creates writing tools and papyrus and silently transcribes spoken words or thoughts.
+Skin of Bronze.MOD	DESC:Ignore 15 points of damage per attack.
+Solar Scourge.MOD	DESC:Target creature becomes sensitive to heat.
+Summon Focus.MOD	DESC:Summons a focus for casting spells.
+Tanglefoot Touch.MOD	DESC:Temporarily reduce target's Dex by 1d6 points.
+Temporary Oasis.MOD	DESC:Creates a small oasis that lasts for (CASTERLEVEL) hour.
+Tireless Vigil.MOD	DESC:Grants a +2 bonus to all Listen and Spot checks for 1 hour.
+Touch of Starvation.MOD	DESC:Subject takes 1d6 nonlethal damage, and is subject to starvation.
+Turn to Sand.MOD	DESC:You transform into a mass of sand for (CASTERLEVEL) rounds.
+Ward of Anubis.MOD	DESC:Array of magical eff ects protect a structure from thievery.
+
+###Block: Other modifications
+Burst of Speed.MOD	TEMPBONUS:ANYPC|MOVEADD|TYPE=Walk|10|TYPE=Enhancement
+Moment of Cunning.MOD	TEMPBONUS:ANYPC|STAT|INT|2|TYPE=Divine
+Moment of Endurance.MOD	TEMPBONUS:ANYPC|STAT|CON|2|TYPE=Divine
+Moment of Grace.MOD	TEMPBONUS:ANYPC|STAT|DEX|2|TYPE=Divine
+Moment of Splendor.MOD	TEMPBONUS:ANYPC|STAT|CHA|2|TYPE=Divine
+Moment of Strength.MOD	TEMPBONUS:ANYPC|STAT|STR|2|TYPE=Divine
+Moment of Wisdom.MOD	TEMPBONUS:ANYPC|STAT|WIS|2|TYPE=Divine
+Tanglefoot Touch.MOD	TEMPBONUS:ANYPC|STAT|DEX|-1*(%CHOICE)	TEMPVALUE:MIN=1|MAX=6|TITLE=Choose number of 1d6 lost Dexterity
+Tireless Vigil.MOD	TEMPBONUS:ANYPC|SKILL|Spot,Listen|2|TYPE=Divine
