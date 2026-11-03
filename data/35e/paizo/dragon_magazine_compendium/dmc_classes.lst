@@ -39,3 +39,23 @@ CLASS:Mariner	STARTSKILLPTS:6	CSKILL:Balance|Bluff|Climb|TYPE=Craft|Escape Artis
 1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Seamanship
 2	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Dirty Strike
 4	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Back-to-Back
+
+###Block: Mountebank (PDF pp. 382-385)
+CLASS:Mountebank	HD:6	TYPE:PC.Base.NonCaster	FACT:ClassType|PC	FACT:Abb|Mtb	MAXLEVEL:20	SOURCEPAGE:p.382	PREALIGN:LN,TN,CN,LE,NE,CE	DEFINE:MountebankLVL|0	BONUS:VAR|MountebankLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Mountebank	STARTSKILLPTS:6	CSKILL:Appraise|Balance|Bluff|Concentration|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Intimidate|Knowledge (The Planes)|Move Silently|Open Lock|Search|Sense Motive|Sleight of Hand|Spellcraft|Tumble|Use Magic Device
+1	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Weapon and Armor Proficiency
+1	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Beguiling Stare
+1	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Bonus Language
+1	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Mark of Damnation
+1	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Trapfinding
+2	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Deceptive Attack
+3	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Infernal Patron
+3	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Mass Beguile
+4	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Infernal Guise
+5	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Disguise the Soul's Aspect
+8	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Infernal Defense
+10	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Infernal Jaunt
+12	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Infernal Influence
+16	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Infernal Escape
+20	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Infernal Deception
+20	ABILITY:Mountebank Class Feature|AUTOMATIC|Mountebank ~ Aspect of the Damned

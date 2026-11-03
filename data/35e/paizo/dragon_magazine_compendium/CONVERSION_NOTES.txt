@@ -864,6 +864,24 @@ Strike +0/1/3/5 d4, Back-to-Back +0/1/2/5, Sailor Lore +3/7/12/22. Proficient wi
 weapons, not longsword; light armor yes, breastplate no; buckler yes, light, heavy and tower shields no. Lucky and Quick-Thinking
 available. No load messages.
 
+MOUNTEBANK (pp. 382-385) - built by mountebank_build.py
+- Class lines as the Master: HD d6, PC.Base.NonCaster, 3/4 BAB, good Reflex, poor Fort/Will (with the alternate/fractional
+  switches), 6 skill points, PREALIGN for any nongood alignment, the book's 21 class skills.
+- Weapon and Armor Proficiency: simple weapons, light armor, no shields.
+- Bonus Language: one of Abyssal or Infernal (ADD:LANGUAGE|1|Abyssal,Infernal).
+- Trapfinding: own ability with the PHB rogue's TrapFinding type, so prerequisites testing TYPE.Trapfinding accept it.
+- Infernal Patron (3rd): daily uses = 1/2 level + Cha modifier (variable MountebankPatronUses), shown in the description; mass
+  beguile and the five infernal abilities (alter self, displacement, infernal jaunt, single-target confusion, self-only
+  teleport for two uses, mislead) are descriptions with their values computed (DC 10 + 1/2 level + Cha, caster level, range,
+  jaunt distance) - their uses come from the shared patron pool, which PCGen's per-ability spell-like uses can't express.
+- Beguiling Stare, Deceptive Attack (+1d6 at 2nd, +1d6 every four levels), Mark of Damnation, Disguise the Soul's Aspect:
+  descriptions with the current values. Aspect of the Damned (20th): description - the half-fiend template and the shift to
+  evil are left to the DM, as she becomes an NPC.
+Verified in PCGen 6.08 (35e; human, Cha 16, chaotic neutral): levels 1/3/10/20 - BAB and base saves exactly the table
+(+0/0/2/0, +2/1/3/1, +7/3/7/3, +15/6/12/6); patron uses 0/4/8/13; DC 13/14/18/23; deceptive attack +0/1/3/5 d6. Trapfinding
+passes PREABILITY ... TYPE.Trapfinding (as a rogue does; a mariner doesn't). Descriptions show DC 18, 8 uses, 200 ft range,
+60 ft jaunt, +3d6, caster level 10, +5 at 10th level. No load messages.
+
 ======================================================================
 FILE LAYOUT (consolidated)
 ======================================================================
