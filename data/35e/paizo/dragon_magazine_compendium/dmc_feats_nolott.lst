@@ -1,0 +1,6 @@
+# Dragon Magazine Compendium - support feats from Legends of the Twins (Sovereign Press, Dragonlance),
+# loaded only without that book (the PCC line has !PRECAMPAIGN:1,INCLUDES=Legends of the Twins).
+# They are on the mariner bonus feat list; definitions as in that book's data (lott_feats.lst).
+
+Lucky	CATEGORY:FEAT	TYPE:General	SOURCELONG:Legends of the Twins	SOURCESHORT:LotT	SOURCEPAGE:p.13	DESC:You survive through sheer good fortune. [Legends of the Twins feat, included because it is on the mariner bonus feat list.]	BENEFIT:+1 luck bonus on all saving throws.	BONUS:SAVE|ALL|1|TYPE=Luck
+Quick-Thinking	CATEGORY:FEAT	TYPE:General	SOURCELONG:Legends of the Twins	SOURCESHORT:LotT	SOURCEPAGE:p.13	DESC:You react quickly to danger. [Legends of the Twins feat, included because it is on the mariner bonus feat list.]	BENEFIT:+2 on initiative rolls and +2 on all Spot checks.	BONUS:COMBAT|INITIATIVE|2	BONUS:SKILL|Spot|2

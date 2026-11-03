@@ -11,3 +11,31 @@ CLASS:Master	STARTSKILLPTS:8
 2	ABILITY:Master Class Feature|AUTOMATIC|Master ~ Bonus Feat
 7	ABILITY:Master Class Feature|AUTOMATIC|Master ~ Secondary Focus
 10	ABILITY:Master Class Feature|AUTOMATIC|Master ~ Skill Mastery
+
+###Block: Battle Dancer (PDF pp. 129-132)
+CLASS:Battle Dancer	HD:8	TYPE:PC.Base.NonCaster	FACT:ClassType|PC	FACT:Abb|BDn	MAXLEVEL:20	SOURCEPAGE:p.129	PREALIGN:CG,CN,CE	DEFINE:BattleDancerLVL|0	BONUS:VAR|BattleDancerLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Battle Dancer	STARTSKILLPTS:4	CSKILL:Balance|Climb|Escape Artist|Hide|Jump|Listen|Move Silently|Open Lock|TYPE=Perform|Sleight of Hand|Swim|Tumble
+1	ABILITY:Battle Dancer Class Feature|AUTOMATIC|Battle Dancer ~ Weapon and Armor Proficiency
+1	ABILITY:Battle Dancer Class Feature|AUTOMATIC|Battle Dancer ~ AC Bonus
+1	ABILITY:Battle Dancer Class Feature|AUTOMATIC|Battle Dancer ~ Unarmed Strike
+2	ABILITY:Battle Dancer Class Feature|AUTOMATIC|Battle Dancer ~ Dance of Reckless Bravery|PRESKILL:1,Tumble=5
+4	ABILITY:Battle Dancer Class Feature|AUTOMATIC|Battle Dancer ~ Bonus Speed
+5	ABILITY:Battle Dancer Class Feature|AUTOMATIC|Battle Dancer ~ Dance of the Vexing Snake|PRESKILL:1,Tumble=8
+6	ABILITY:Battle Dancer Class Feature|AUTOMATIC|Battle Dancer ~ Dancer's Strike
+8	ABILITY:Battle Dancer Class Feature|AUTOMATIC|Battle Dancer ~ Dance of the Floating Step|PRESKILL:1,Tumble=11
+11	ABILITY:Battle Dancer Class Feature|AUTOMATIC|Battle Dancer ~ Dance of the Springing Tiger|PRESKILL:1,Tumble=14
+14	ABILITY:Battle Dancer Class Feature|AUTOMATIC|Battle Dancer ~ Dance of the Crushing Python|PRESKILL:1,Tumble=17
+17	ABILITY:Battle Dancer Class Feature|AUTOMATIC|Battle Dancer ~ Dance of the Soaring Eagle|PRESKILL:1,Tumble=20
+20	ABILITY:Battle Dancer Class Feature|AUTOMATIC|Battle Dancer ~ Dance of Death's Embrace|PRESKILL:1,Tumble=23
+12	BONUS:ABILITYPOOL|Dancer's Strike Alignment|1
+18	BONUS:ABILITYPOOL|Dancer's Strike Special|1
+
+###Block: Mariner (PDF pp. 336-338)
+CLASS:Mariner	HD:8	TYPE:PC.Base.NonCaster	FACT:ClassType|PC	FACT:Abb|Mar	MAXLEVEL:20	SOURCEPAGE:p.336	DEFINE:MarinerLVL|0	BONUS:VAR|MarinerLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Mariner	STARTSKILLPTS:6	CSKILL:Balance|Bluff|Climb|TYPE=Craft|Escape Artist|Gather Information|Jump|Knowledge (Local)|Knowledge (Nature)|TYPE=Profession|Speak Language|Spot|Survival|Swim|Tumble|Use Rope
+1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Weapon and Armor Proficiency
+1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Bonus Feat
+1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Sailor Lore
+1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Seamanship
+2	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Dirty Strike
+4	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Back-to-Back

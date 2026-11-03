@@ -24,6 +24,7 @@ ABILITY:dmc_feats.lst
 ABILITY:dmc_abilities_rw.lst|PRECAMPAIGN:1,INCLUDES=Races of the Wild
 ABILITY:dmc_abilities_rs.lst|PRECAMPAIGN:1,INCLUDES=Races of Stone
 ABILITY:dmc_feats_nocw.lst|!PRECAMPAIGN:1,INCLUDES=Complete Warrior
+ABILITY:dmc_feats_nolott.lst|!PRECAMPAIGN:1,INCLUDES=Legends of the Twins
 ABILITY:dmc_abilities_cadv.lst|PRECAMPAIGN:1,INCLUDES=Complete Adventurer
 ABILITY:dmc_flaws.lst|PRECAMPAIGN:1,INCLUDES=Unearthed Arcana (Complete)
 ABILITY:dmc_vestiges.lst|PRECAMPAIGN:1,INCLUDES=Tome of Magic

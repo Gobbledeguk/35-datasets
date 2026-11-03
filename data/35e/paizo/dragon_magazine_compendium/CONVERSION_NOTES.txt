@@ -824,6 +824,46 @@ Verified in PCGen 6.08 (10th-level master, Int 14, Craftsman primary / Sage seco
 (+4 competence), Knowledge (history) 4 ranks = 8 (+2); knacks: Item of Distinction, Word of Mouth and Lore available, Item of
 Renown/Fame, Linguist, Tactical Advantage and all Performer/Professional knacks not; bonus feats limited to the list.
 
+BATTLE DANCER (pp. 129-132) - built by battle_dancer_build.py
+- Class lines as the Master / PHB classes: HD d8, PC.Base.NonCaster, full BAB, good Reflex, poor Fort/Will (with the alternate/
+  fractional progression switches), 4 skill points, PREALIGN:CG,CN,CE (any chaotic), the book's 12 class skills (Perform by type).
+- Weapon and Armor Proficiency: simple weapons, no armor or shields (PHB Sorcerer form).
+- AC Bonus (1st): built like the PHB Monk's, with Charisma: Cha bonus + 1 per five levels, only unarmored, without shield and at
+  light load (the monk's ENCUMBERANCE/armor condition).
+- Unarmed Strike (1st): Improved Unarmed Strike plus the PHB monk's unarmed damage system fed with the battle dancer's level
+  (as Oriental Adventures' shaman does) - the book's damage table, incl. Small and Large, is identical to the monk's. Like the
+  repo's other users of the system, monk and battle dancer levels add together for the damage tier (the book doesn't say).
+- Bonus Speed (4th): +10 ft at 4th, 10th and 16th level; untyped and without armor conditions, as the text states none.
+- The seven dances are granted at their level only with the Tumble ranks the text requires (PRESKILL), so a battle dancer
+  without the ranks doesn't get them until she has them: Reckless Bravery 2nd/5, Vexing Snake 5th/8, Floating Step 8th/11,
+  Springing Tiger 11th/14, Crushing Python 14th/17, Soaring Eagle 17th/20, Death's Embrace 20th/23.
+- Dancer's Strike (6th): magic; at 12th a choice ("Dancer's Strike Alignment") of one aspect of her own alignment (only the
+  aspects her alignment has qualify); at 18th a choice ("Dancer's Strike Special") of adamantine, cold iron, silver or an alignment.
+- Dance of the Soaring Eagle: fly speed equal to her base land speed (MOVECLONE:Walk,Fly,*1 - the racial base speed, without
+  the class's bonus speed), average maneuverability in the text.
+- Durations of 5 + Charisma modifier rounds, the current dodge bonus and speed bonus are computed in the descriptions.
+Verified in PCGen 6.08 (35e and Bahamut35e; human, Cha 16, Dex 14, chaotic good): levels 5/12/17/20 - BAB and base saves exactly
+the table (+5/1/4/1, +12/4/8/4, +17/5/10/5, +20/6/12/6); AC bonus +4/+5/+6/+7; speed 40/50/60/60 ft; unarmed damage 1d8/2d6/2d8/
+2d10. Level 5 with 8 Tumble ranks has Reckless Bravery and Vexing Snake, with 4 ranks neither; level 20 with 23 ranks has all seven
+dances; at 12th a chaotic good battle dancer qualifies for Dancer's Strike Chaotic and Good, not Evil or Lawful. No load messages.
+
+MARINER (pp. 336-338) - built by mariner_build.py
+- Class lines as the Master: HD d8, PC.Base.NonCaster, full BAB, good Fort and Reflex, poor Will (with the alternate/fractional
+  switches), 6 skill points, any alignment, the book's 16 class skills (Craft and Profession by type, Speak Language).
+- Weapon and Armor Proficiency: simple weapons plus cutlass, net, scimitar and trident (PHB Druid form, AUTO:WEAPONPROF), light
+  armor, bucklers only (AUTO:SHIELDPROF|SHIELDTYPE=Buckler).
+- Bonus Feat (1st, 5th, 10th, 15th, 20th): category "Mariner Bonus Feat" with a pool (1 + level/5) and the 26 listed feats
+  (ABILITYLIST), like the Master's. Lucky and Quick-Thinking (Legends of the Twins) are in dmc_feats_nolott.lst, loaded only
+  without that book (PCC: !PRECAMPAIGN:1,INCLUDES=Legends of the Twins), definitions as in that book's data.
+- Seamanship (1st): competence bonus on Balance, Climb and Profession (Sailor): +1, +1 per four levels after 1st.
+- Dirty Strike (2nd), Back-to-Back (4th), Sailor Lore (1st): text with the current values computed (+Nd4, dodge bonus, level +
+  Int); they're situational (a full-round attack; adjacent to an ally while fighting defensively; a special check).
+Verified in PCGen 6.08 (35e; human, Str 16, Int 14): levels 1/5/10/20 - BAB and base saves exactly the table (+1/2/2/0,
++5/4/4/1, +10/7/7/3, +20/12/12/6); Seamanship +1/+2/+3/+5 in Balance, Climb and Profession (Sailor); 1/2/3/5 bonus feats; Dirty
+Strike +0/1/3/5 d4, Back-to-Back +0/1/2/5, Sailor Lore +3/7/12/22. Proficient with cutlass, net, scimitar, trident and simple
+weapons, not longsword; light armor yes, breastplate no; buckler yes, light, heavy and tower shields no. Lucky and Quick-Thinking
+available. No load messages.
+
 ======================================================================
 FILE LAYOUT (consolidated)
 ======================================================================
@@ -836,6 +876,7 @@ whole file under one condition, so files with different conditions or object typ
 - dmc_equip.lst              (user-maintained goods file, unchanged), dmc_equip_power_components.lst (generated to spec)
 - dmc_equip_weapons_armor.lst <- weapons + armor;  dmc_equip_magic.lst <- wondrous items, magic weapons, magic armor
 - dmc_equipmods.lst          <- equipment modifiers + magic special abilities
+- dmc_feats_nolott.lst <- Lucky, Quick-Thinking (Legends of the Twins), loaded only without that book
 - one file per optional book where content depends on it: _xph (Expanded Psionics: racial, domain, feat additions), _sc,
   _bovd, _cadv, _ca, _rs, _rw, vestiges (Tome of Magic), flaws (Unearthed Arcana), feats_nocw (only without Complete Warrior)
 - separate by type as in the repo: races, templates, languages, domains, spells + class/domain spell lists (like the PHB's

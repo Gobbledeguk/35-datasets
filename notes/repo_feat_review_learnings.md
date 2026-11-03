@@ -161,7 +161,16 @@ How the per-book review works, and what each book taught us. Updated as the revi
 - **Exclude files nobody loads** from gap counts: two "race files" were raw book text (one commented out, one unreferenced) and inflated every race statistic.
 - **Count, don't estimate**, before writing numbers into notes.
 
+## Book-data learnings (Complete Champion)
+- **Copy the working examples and the repo's own template**: three complete churches and a template block defined every convention (rank cost = difference of minimum scores, automatic criteria via membership grants, per-CR expansion).
+- **Prove the mechanism end to end with one character**: membership → automatic criteria (score 8 as predicted) → repeatable criteria (+1 each) → rank with its benefit on the standard sheet.
+- **Keys: never cut inside a parenthesis, and none at all for MULT abilities** – an unbalanced "(" aborted the whole data load; PCGen forbids parentheses in repeatable abilities' keys.
+- **Test files are data too**: a character-file ABILITY line uses `KEY:` (not `KEY=`), repeatable selections need `APPLIEDTO:`; alignment lines need a game mode that defines the alignment channel (plain 35e in this test install).
+- **Fill tables from data, not memory**: the deity column was wrong for two churches until taken from PREDEITY.
+
 ## Testing learnings
+- **Test in one game mode (your decision): plain 35e.** In the test installation, characters with an alignment line
+  load only in 35e (Bahamut35e fails on ALIGN there), so 35e covers classes with alignment requirements too.
 - **The working environment can be reset** (Oct 2026): the repo clone, the PCGen install and all tools disappeared; the output folder survived. Rebuild recipe: PCGen 6.08.00RC10 release zip + `git clone` of bahamutdragon/pcgen, copy the repo's `system/` and `outputsheets/` over PCGen's, point `data` at a repo copy (hard-link copy for the updated install), character template with `VERSION:6.08.00` (the RC suffix is rejected) and `GAMEMODE:Bahamut35e`; ability visibility prints as "Yes".
 - **A character without an alignment passes alignment prerequisites** in this setup (Champions of Ruin, Evil Brand) – so an alignment fix shows no qualification change; verify the parsed form instead.
 - **Alignment cannot be evaluated in the headless test setup**: any `ALIGN:` line makes character loading fail, and the alignment channel cannot be set from code. Instead, verify alignment prerequisites by printing PCGen's **parsed** prerequisite (which alignments it contains). Found with Complete Divine's Spontaneous Healer (`!PREALIGN:CE,NE,CE` missing LE).
@@ -196,4 +205,13 @@ How the per-book review works, and what each book taught us. Updated as the revi
 - Leftover-"or" check (mis-split alternatives) on delivered files and the earlier patch (Magic of Incarnum).
 - First-level checks skip feats using the Universal Rules counters (Races of the Dragon, Races of Destiny).
 - First-level check no longer flags "1st-level spells/powers" (Magic of Incarnum).
-- Self-reference check in the routine, plus a repo-wide scan (Champions of Ruin).
+- Self-reference check in the routine, plus a repo-wide scan (Champions of Ruin).## Rules reference
+- **d20srd.org** (the Hypertext d20 SRD, v3.5, with the SRD errata worked in) – recommended by the user as the reference
+  for the basic 3.5 rules: class tables (base attack, saves, spells per day), core spell lists, skills, domains, feat
+  prerequisites. The web tool only opens URLs from a search result or the user's message. Tested: the index page
+  (https://www.d20srd.org/index.htm) opens, but its links are not exposed, and general searches ("monk class table")
+  return mostly Pathfinder (pathfinder.d20srd.org) and 5e pages – check the edition of every hit. Most reliable: the
+  user pastes the specific d20srd page URL; for rules already in the repo's PHB data, that data (verified) is the
+  reference.
+
+
