@@ -91,7 +91,7 @@ Jaws of Adamantine.MOD	DOMAINS:Hunger (DMC)=2
 Kissed by the Ages.MOD	CLASSES:Sorcerer,Wizard=9
 Lash of the Kraken.MOD	CLASSES:Druid,Sorcerer,Wizard=3
 Liferot.MOD	CLASSES:Cleric=3|Sorcerer,Wizard=4
-Lighten Load.MOD	CLASSES:Cleric=2	DOMAINS:Army=2
+Lighten Load (DMC).MOD	CLASSES:Cleric=2	DOMAINS:Army=2
 Lobotomize.MOD	CLASSES:Sorcerer,Wizard=5
 Loresong.MOD	CLASSES:Bard,Sorcerer,Wizard=1
 Lunacy.MOD	CLASSES:Druid,Sorcerer,Wizard=6

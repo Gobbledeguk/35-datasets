@@ -138,7 +138,7 @@ SPELL CHECK AGAINST THE PDF (03/11/2026) - dmc_spell_extract.py, dmc_spell_compa
 - Correctness, field by field for the 218 non-epic spells: school, subschool, descriptor, class/domain levels, components,
   casting time, range, target/effect/area, duration, saving throw and spell resistance match the book. The remaining
   differences are print/extraction artifacts or deliberate conventions: OCR "6o ft" for 60 ft, footnote numbers, wrapped
-  lines; the book's "[Teleportation]" descriptor kept as the subschool and its "(Lawful)/(Force)/(Mind-Affecting)"
+  lines; the book's "(Lawful)/(Force)/(Mind-Affecting)"
   subschools as descriptors (3.5 rules); "language-dependant" spelled correctly; personal spells without save lines get
   SAVEINFO:None and SPELLRES:No as in the PHB data (Shield, True Strike).
 - Fixed: six spells kept only their first school - now SCHOOL:Evocation|Necromancy (Blaze Bones, Cold of the Grave),
@@ -146,6 +146,21 @@ SPELL CHECK AGAINST THE PDF (03/11/2026) - dmc_spell_extract.py, dmc_spell_compa
   multi-school spells; Feed the Many's duration had been split into its description ("24 hours (see text of create" +
   "food and water in the PLAYER'S HANDBOOK ...") - joined again.
   Verified in PCGen (35e, compendium loaded): 902 spells before and after, exactly these 7 changed, identical load messages.
+
+SPELL SANITY CHECK (03/11/2026) - dmc_spell_sanity.py
+- Checked: unique keys, no clash with other books' spell keys, required fields, valid schools/subschools (and that a subschool
+  fits its school), known descriptors, levels 0-9, every spell castable (class, domain or a "Level:" line), every class and
+  domain named exists in the repository, TYPE (Arcane/Divine) matches the casters, domain spell lists and .MOD lines point to
+  existing spells.
+- Fixed: Lighten Load clashed with Dark Sun's different spell of that name (2 hours/level) - now keyed "Lighten Load (DMC)",
+  as the conversion keys all spells whose names exist elsewhere; its class line and the Army domain's spell list (dmc_domains,
+  dmc_abilities) follow. Citygate and Teleport Legion are Transmutation spells, so Teleportation can't be their subschool (it's a
+  Conjuration subschool) - it's a descriptor, as printed (this corrects the earlier spell-check note). Summon Avatar of Elemental
+  Evil: the book's "[see text]" is no descriptor (the PHB data's summon spells have none) - "See Text" removed.
+- Not errors: 24 spells lack components, casting time, range, duration, save or spell resistance because the book prints them in
+  short form ("as bane, except ...") - checked against the PDF for each.
+  Verified in PCGen (35e): with the compendium 902 spells, only these changes, identical load messages; with the compendium and
+  Dark Sun both Lighten Load spells exist, no duplicates.
 
 ----------------------------------------------------------------------
 New base classes (compendium pp. 75-708, step 1 of the classes section) - REBUILT
