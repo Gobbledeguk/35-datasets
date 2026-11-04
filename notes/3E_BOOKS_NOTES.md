@@ -60,3 +60,9 @@ no 3e damage reduction) and loads in 3.5 without messages. Changes:
 - Races of Faerûn's PCC loads `rac_equip.lst` twice when the guide is loaded without Complete Adventurer (its first
   and third EQUIPMENT lines both apply) – harmless, the definitions are identical.
 - Epic Level Handbook: Self Concealment has an incomplete source page ("p.").
+
+## Campaign key (complete repository)
+The 3.5 Arms and Equipment Guide has KEY:Arms and Equipment Guide (3.5), as BahamutDragon keys its 3.5 Forgotten Realms
+Campaign Setting: the 3e original in data/3e has the same campaign name, and PCGen reported "Loaded Campaigns with matching
+names" when both folders are present. Races of Faerûn and Unearthed Arcana refer to the guide by this key in their load
+conditions (4 lines updated). Characters saved with the guide need CAMPAIGN:Arms and Equipment Guide (3.5).
