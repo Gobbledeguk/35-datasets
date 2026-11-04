@@ -18,6 +18,8 @@ INFOTEXT:Races, feats, flaws, fighting styles, arms & equipment, base classes, v
 
 ABILITYCATEGORY:dmc_abilitycategories.lst
 ABILITYCATEGORY:dmc_abilitycategories_cadv.lst|PRECAMPAIGN:1,INCLUDES=Complete Adventurer
+ABILITYCATEGORY:dmc_abilitycategories_nodcs.lst|!PRECAMPAIGN:1,INCLUDES=Dragonlance Campaign Setting
+ABILITYCATEGORY:dmc_abilitycategories_nolott.lst|!PRECAMPAIGN:1,INCLUDES=Legends of the Twins
 ABILITY:dmc_abilities.lst
 ABILITY:dmc_abilities_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
 ABILITY:dmc_feats.lst
@@ -31,12 +33,16 @@ ABILITY:dmc_vestiges.lst|PRECAMPAIGN:1,INCLUDES=Tome of Magic
 SPELL:dmc_vestiges_spells.lst|PRECAMPAIGN:1,INCLUDES=Tome of Magic
 ABILITY:dmc_abilities_sc.lst|PRECAMPAIGN:1,INCLUDES=Spell Compendium
 ABILITY:dmc_abilities_bovd.lst|PRECAMPAIGN:1,INCLUDES=Book of Vile Darkness
+ABILITY:dmc_abilities_nodcs.lst|!PRECAMPAIGN:1,INCLUDES=Dragonlance Campaign Setting
+ABILITY:dmc_abilities_nolott.lst|!PRECAMPAIGN:1,INCLUDES=Legends of the Twins
 DOMAIN:dmc_domains.lst
 SPELL:dmc_spells.lst
 SPELL:dmc_spells_class.lst
 SPELL:dmc_spells_domains_sc.lst|PRECAMPAIGN:1,INCLUDES=Spell Compendium
 SPELL:dmc_spells_domains_bovd.lst|PRECAMPAIGN:1,INCLUDES=Book of Vile Darkness
 CLASS:dmc_classes.lst
+CLASS:dmc_classes_nodcs.lst|!PRECAMPAIGN:1,INCLUDES=Dragonlance Campaign Setting
+CLASS:dmc_classes_nolott.lst|!PRECAMPAIGN:1,INCLUDES=Legends of the Twins
 LANGUAGE:dmc_languages.lst
 WEAPONPROF:dmc_profs_weapon.lst
 ARMORPROF:dmc_profs_armor.lst

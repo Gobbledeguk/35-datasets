@@ -24,9 +24,9 @@ ABILITYCATEGORY:Battle Dancer Class Feature	CATEGORY:Special Ability	TYPE:Battle
 ABILITYCATEGORY:Dancer's Strike Alignment	CATEGORY:Special Ability	TYPE:DancersStrikeAlignment	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO
 ABILITYCATEGORY:Dancer's Strike Special	CATEGORY:Special Ability	TYPE:DancersStrikeSpecial	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO
 
-###Block: Mariner
-ABILITYCATEGORY:Mariner Class Feature	CATEGORY:Special Ability	TYPE:Mariner Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
-ABILITYCATEGORY:Mariner Bonus Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	POOL:Pool_MarinerFeat	CATEGORY:FEAT	ABILITYLIST:Alertness|Combat Expertise|Improved Disarm|Improved Feint|Improved Trip|Combat Reflexes|Dodge|Mobility|Exotic Weapon Proficiency|Improved Initiative|Lucky|Point Blank Shot|Far Shot|Precise Shot|Rapid Shot|Power Attack|Cleave|Great Cleave|Improved Bull Rush|Improved Overrun|Improved Sunder|Quick Draw|Quick-Thinking|Toughness|Weapon Finesse|Weapon Focus	PLURAL:Mariner Bonus Feats	DISPLAYLOCATION:Feats
-
 ###Block: Mountebank
-ABILITYCATEGORY:Mountebank Class Feature	CATEGORY:Special Ability	TYPE:Mountebank Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Mountebank (DMC) Class Feature	CATEGORY:Special Ability	TYPE:Mountebank (DMC) Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Sha'ir
+ABILITYCATEGORY:Sha'ir Class Feature	CATEGORY:Special Ability	TYPE:Sha'ir Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Sha'ir Gen	CATEGORY:Special Ability	TYPE:ShairGen	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Class Features

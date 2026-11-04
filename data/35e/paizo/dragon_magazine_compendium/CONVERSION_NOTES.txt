@@ -131,8 +131,35 @@ dmc_abilities_domains_sc.lst   domain spells that come from Spell Compendium (lo
 - Not converted: the spell-list summary pages (they repeat the spells' Level lines), the "spellbooks" chapter
   (roleplaying lists of existing spells) and the initiate-feat appendix (initiate feats are Complete Divine).
 
+SPELL CHECK AGAINST THE PDF (03/11/2026) - dmc_spell_extract.py, dmc_spell_compare.py
+- Completeness: the spell chapter (PDF pp. 1280-1362, three columns) was extracted by line position (incl. pages stored as
+  overlapping text fragments, e.g. p.1320). All 222 spells of the data are in the PDF and the PDF has no spell the data
+  lacks (2 are epic spells with a Spellcraft DC instead of a level).
+- Correctness, field by field for the 218 non-epic spells: school, subschool, descriptor, class/domain levels, components,
+  casting time, range, target/effect/area, duration, saving throw and spell resistance match the book. The remaining
+  differences are print/extraction artifacts or deliberate conventions: OCR "6o ft" for 60 ft, footnote numbers, wrapped
+  lines; the book's "[Teleportation]" descriptor kept as the subschool and its "(Lawful)/(Force)/(Mind-Affecting)"
+  subschools as descriptors (3.5 rules); "language-dependant" spelled correctly; personal spells without save lines get
+  SAVEINFO:None and SPELLRES:No as in the PHB data (Shield, True Strike).
+- Fixed: six spells kept only their first school - now SCHOOL:Evocation|Necromancy (Blaze Bones, Cold of the Grave),
+  Enchantment|Evocation (Burning Hate, Caustic Disdain, Storm Slave), Conjuration|Necromancy (Liferot), the repo's form for
+  multi-school spells; Feed the Many's duration had been split into its description ("24 hours (see text of create" +
+  "food and water in the PLAYER'S HANDBOOK ...") - joined again.
+  Verified in PCGen (35e, compendium loaded): 902 spells before and after, exactly these 7 changed, identical load messages.
+
 ----------------------------------------------------------------------
-New base classes (compendium pp. 75-708, step 1 of the classes section)
+New base classes (compendium pp. 75-708, step 1 of the classes section) - REBUILT
+----------------------------------------------------------------------
+The first conversion (14 classes with text-only features) was replaced: the classes are rebuilt one at a time on the
+repository's own class patterns and verified in PCGen - see the per-class sections (MASTER, BATTLE DANCER, MARINER,
+MOUNTEBANK, NOBLE, MYSTIC, SHA'IR) and STILL TO BUILD further down.
+- Reprints load only without their original book: Mystic and Noble (Dragonlance Campaign Setting) in dmc_*_nodcs.lst,
+  Mariner (Legends of the Twins) in dmc_*_nolott.lst - checked: with that book loaded, its own class is used.
+- Mountebank is keyed "Mountebank (DMC)" (class, features and category), as Complete Scoundrel has a different prestige class
+  of that name - checked: with Complete Scoundrel loaded, both exist.
+- WotC classes reprinted in this section (archivist, beguiler, binder, duskblade, warlock, ...) and core classes are not
+  repeated, because the repo already has them.
+
 ----------------------------------------------------------------------
 dmc_classes.lst                     14 base classes that don't already exist in the repo:
                                     Battle Dancer, Death Master, Jester, Mariner, Master, Mountebank, Mystic,
@@ -882,6 +909,76 @@ Verified in PCGen 6.08 (35e; human, Cha 16, chaotic neutral): levels 1/3/10/20 -
 passes PREABILITY ... TYPE.Trapfinding (as a rogue does; a mariner doesn't). Descriptions show DC 18, 8 uses, 200 ft range,
 60 ft jaunt, +3d6, caster level 10, +5 at 10th level. No load messages.
 
+NOBLE (pp. 398-400) - built by noble_build.py
+- Class lines as the Master: HD d8, PC.Base.NonCaster, 3/4 BAB, good Reflex and Will, poor Fort (with the alternate/fractional
+  switches), 4 skill points, any alignment; class skills incl. every Knowledge (TYPE=Knowledge) and Perform skill, Speak Language.
+- "May be taken only at 1st level" (no precedent in the repository): a Noble level requires no levels yet or Noble levels
+  already - PREMULT:1,[PRELEVEL:MAX=0],[PRECLASS:1,Noble=1]. So a character born a noble can keep advancing, nobody becomes one later.
+- Weapon and Armor Proficiency: simple and martial weapons, light armor, shields except tower (PHB bard/ranger form).
+- Bonus Class Skill (1st): ADD:CLASSSKILLS|1|ANY on the 1st level.
+- Favor (+1 at 1st, 3rd, 7th, 12th, 16th), Inspire Confidence uses (2nd, 5th, 9th, 13th, 17th), Coordinate (4th, 8th, 13th, 18th,
+  20th) and Inspire Greatness allies (11th, 14th, 17th, 20th): counters raised on the table's level lines (the progressions are
+  irregular); favors per week = half level (min 1), confidence allies = half level rounded up. All shown in the descriptions;
+  the ally bonuses are situational (descriptions, as for the compendium's other classes).
+Verified in PCGen 6.08 (35e): levels 1/4/11/13/20 - BAB and base saves exactly the table; favor +1/2/3/4/5 with 1/2/5/6/10 favors
+per week; inspire confidence 0/1/3/4/5 per day for 0/2/6/7/10 allies; coordinate +0/1/2/3/5; inspire greatness 0/0/1/1/4 allies.
+A character without levels and a 3rd-level noble may take a Noble level, a 1st-level fighter may not. No load messages.
+
+MYSTIC (pp. 386-388) - built by mystic_build.py
+- A reprint of the Dragonlance Campaign Setting's mystic, which the repository also defines (dcs_classes.lst): the compendium's
+  Mystic is in dmc_classes_nodcs.lst / dmc_abilities_nodcs.lst / dmc_abilitycategories_nodcs.lst, loaded only without that
+  book (PCC: !PRECAMPAIGN:1,INCLUDES=Dragonlance Campaign Setting), as the compendium's other reprints.
+- Class lines as the Master: HD d8, 3/4 BAB, good Fort and Will, poor Reflex (with the alternate/fractional switches), 2 skill
+  points, any alignment. Simple weapons, light and medium armor, shields except tower.
+- Spells as Complete Divine's Favored Soul, with Wisdom: spontaneous (MEMORIZE:NO), the cleric list (SPELLLIST:1|Cleric - PCGen
+  asks for the list when the first level is taken), the Dragonlance mystic's caster-level variables; CAST and KNOWN per the
+  tables. 1st-level orisons per day: 5 (the original book and the sorcerer's table; your decision) - the compendium prints 0 (checked
+  on the page image), a misprint. Spells known at 1st level are 4 orisons and 2 1st-level spells (+1 domain spell), as printed.
+- Domain: one choice ("Mystic Domain") among 21 abilities generated from the PHB domains (Magic excluded; Chaos, Evil, Good,
+  Law only for a matching alignment). PCGen allows no DOMAIN token on abilities, so each carries the domain's own tokens (its
+  granted power ABILITY:Domain|AUTOMATIC|<domain> and class skills) and adds its domain spells as known (SPELLKNOWN, as the
+  repo does for sorcerers), each once castable - the "+d" of the spells-known table. Sun: its domain spells and turn undead as
+  the PHB cleric's turning at mystic level (3 + Cha uses), without greater turning.
+Verified in PCGen 6.08 (35e; human, Wis 16, lawful good): levels 1/4/10/20 - BAB and base saves exactly the table; caster level
+1/4/10/20; spells per day incl. Wisdom bonus spells (L1 5/4, L4 6/7/4, L10 6/7/7/7/5/3, L20 9th level 6). Spell lists Mystic
+and Cleric: cure light wounds and bless 1st level, fireball not available. A lawful good mystic qualifies for Good, Law,
+Animal, Sun, not Chaos or Evil; Magic is not offered. Animal domain: spells known 4/3 at 1st (2+d), 9/6/5/4/3/2 at 10th (the
+table's +d), calm animals known at 1st, hold animal not before 4th, commune with nature at 10th, antilife shell not yet;
+speak with animals granted. Sun domain: turn undead at level 10, 3 uses, no greater turning. No load messages.
+Note: the Dragonlance Campaign Setting's own mystic (dcs_classes.lst) has no spell list at all (no SPELLLIST, no class
+spells) - it could get the same fix.
+
+SHA'IR (pp. 535-541) - built by shair_build.py
+- Class lines as the Master: HD d4, 1/2 BAB, good Will, poor Fort/Reflex (with the alternate/fractional switches), 2 skill
+  points, any alignment; bonus languages Aquan, Auran, Ignan, Terran (LANGBONUS, as the PHB cleric). Simple weapons, no armor.
+- Spells as the PHB sorcerer (Charisma, MEMORIZE:NO) with the sorcerer list through SPELLLIST:1|Sorcerer (PCGen asks for the
+  list when the first level is taken, as for the Mystic), the caster-level variables (arcane), CAST and KNOWN per the tables.
+  The spells of the Air, Chaos, Earth, Fire, Knowledge, Law, Luck, Sun and Water domains that are not on the sorcerer list (32,
+  from the PHB domains) are added to the class's own list (SPELLLEVEL:CLASS, as the Kender Nightstalker); no granted powers.
+- The retrieval rules (gen search times, the DC 20 Diplomacy check and its modifiers, spells ready for level hours) and the
+  class abilities are descriptions with their values computed (Diplomacy +level, caster level, Elemental Travel uses counted on
+  the level lines: 1/day at 9th, 2/day at 15th, at will at 18th).
+- Gen familiar: a choice ("Sha'ir Gen") of air, earth, fire or water gen at 1st level, naming the energy it is immune to
+  (electricity, acid, fire, cold) - where Elemental Protection rises from 2 to 4. OPEN: the gens themselves as companion races
+  (four creatures with full statistics on pp. 539-541) don't exist yet, so the gen isn't available as a familiar companion.
+Verified in PCGen 6.08 (35e; human, Cha 16): levels 1/5/9/15/20 - BAB and base saves exactly the table; caster level 1/5/9/15/20;
+spells per day incl. Charisma bonus spells (L1 4/3, L5 5/5/4/2, L9 5/6/6/5/-/1, L15 9th 0, L20 9th 5); spell lists Sorcerer and
+Sha'ir: magic missile 1, fireball 3, aid 2, chaos hammer 4, cure light wounds not available; elemental travel 0/0/1/2/2 per
+day; all four gens selectable; descriptions show the values. No load messages.
+
+STILL TO BUILD (status 03/11/2026)
+- Postponed - spell lists not in the compendium (the class pages mention them, nothing else does): Death Master (pp. 184-188,
+  "death master spells list"), Savant (pp. 523-527, "savant arcane spell list" and "savant divine spell list"). Both were
+  printed in Dragon Compendium Volume 1 (Paizo, 2005), which should contain the lists. The Jester's list is missing as well.
+- Savant table misprint: the 18th-level row reads "Deceptive attack +5d6" - a Mountebank feature, apparently copied from
+  the neighboring class; the savant's sneak attack progression is +1d6 at 3rd, +2d6 at 9th, +3d6 at 15th.
+- Postponed - Nightstalker (pp. 389-391): its "nightstalker spell list" (orisons to 6th level, known automatically) is not in
+  the compendium. It is the base-class version of Age of Mortals' Kender Nightstalker prestige class (aom_classes.lst):
+  shared concept and signature abilities (death sight, whispers of the dead, spirit companions, spectral symbiosis), but
+  different mechanics (20 levels, any race, rebuke undead at 4th, Charisma casting, trapfinding, spiritual resilience,
+  advanced learning). The prestige class's list (17 spells, 1st-4th level) is likely a subset of the base class's list.
+- Still to rebuild: Jester (spell list missing too), Shaman, Sohei, Urban Druid.
+
 ======================================================================
 FILE LAYOUT (consolidated)
 ======================================================================
@@ -895,6 +992,8 @@ whole file under one condition, so files with different conditions or object typ
 - dmc_equip_weapons_armor.lst <- weapons + armor;  dmc_equip_magic.lst <- wondrous items, magic weapons, magic armor
 - dmc_equipmods.lst          <- equipment modifiers + magic special abilities
 - dmc_feats_nolott.lst <- Lucky, Quick-Thinking (Legends of the Twins), loaded only without that book
+- dmc_classes_nodcs.lst, dmc_abilities_nodcs.lst, dmc_abilitycategories_nodcs.lst <- the Mystic, loaded only without the
+  Dragonlance Campaign Setting
 - one file per optional book where content depends on it: _xph (Expanded Psionics: racial, domain, feat additions), _sc,
   _bovd, _cadv, _ca, _rs, _rw, vestiges (Tome of Magic), flaws (Unearthed Arcana), feats_nocw (only without Complete Warrior)
 - separate by type as in the repo: races, templates, languages, domains, spells + class/domain spell lists (like the PHB's

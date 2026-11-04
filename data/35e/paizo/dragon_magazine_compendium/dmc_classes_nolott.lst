@@ -1,0 +1,11 @@
+# Dragon Magazine Compendium - Mariner (reprint), loaded only without Legends of the Twins.
+
+###Block: Mariner (PDF pp. 336-338)
+CLASS:Mariner	HD:8	TYPE:PC.Base.NonCaster	FACT:ClassType|PC	FACT:Abb|Mar	MAXLEVEL:20	SOURCEPAGE:p.336	DEFINE:MarinerLVL|0	BONUS:VAR|MarinerLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Mariner	STARTSKILLPTS:6	CSKILL:Balance|Bluff|Climb|TYPE=Craft|Escape Artist|Gather Information|Jump|Knowledge (Local)|Knowledge (Nature)|TYPE=Profession|Speak Language|Spot|Survival|Swim|Tumble|Use Rope
+1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Weapon and Armor Proficiency
+1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Bonus Feat
+1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Sailor Lore
+1	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Seamanship
+2	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Dirty Strike
+4	ABILITY:Mariner Class Feature|AUTOMATIC|Mariner ~ Back-to-Back

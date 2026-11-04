@@ -1,0 +1,5 @@
+# Dragon Magazine Compendium - Mariner (reprint), loaded only without Legends of the Twins.
+
+###Block: Mariner
+ABILITYCATEGORY:Mariner Class Feature	CATEGORY:Special Ability	TYPE:Mariner Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Mariner Bonus Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	POOL:Pool_MarinerFeat	CATEGORY:FEAT	ABILITYLIST:Alertness|Combat Expertise|Improved Disarm|Improved Feint|Improved Trip|Combat Reflexes|Dodge|Mobility|Exotic Weapon Proficiency|Improved Initiative|Lucky|Point Blank Shot|Far Shot|Precise Shot|Rapid Shot|Power Attack|Cleave|Great Cleave|Improved Bull Rush|Improved Overrun|Improved Sunder|Quick Draw|Quick-Thinking|Toughness|Weapon Finesse|Weapon Focus	PLURAL:Mariner Bonus Feats	DISPLAYLOCATION:Feats

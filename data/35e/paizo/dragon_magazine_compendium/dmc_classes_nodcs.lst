@@ -1,0 +1,46 @@
+# Dragon Magazine Compendium - Mystic (PDF pp. 386-388), a reprint of the Dragonlance Campaign Setting's mystic.
+# Loaded only without that book (the PCC line has !PRECAMPAIGN:1,INCLUDES=Dragonlance Campaign Setting).
+
+CLASS:Mystic	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Mys	MAXLEVEL:20	SOURCEPAGE:p.386	DEFINE:MysticLVL|0	BONUS:VAR|MysticLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Mystic	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (Nature)|Knowledge (Religion)|TYPE=Profession|Spellcraft
+CLASS:Mystic	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:NO	SPELLLIST:1|Cleric	BONUS:CASTERLEVEL|Mystic|Caster_Level_Mystic	DEFINE:Caster_Level_Mystic|0	BONUS:VAR|Caster_Level_Mystic|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLMystic|0	BONUS:VAR|CasterLevelBLMystic|charbonusto("PCLEVEL","Mystic")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_Mystic+CasterLevelBLMystic|TYPE=Base
+1	CAST:5,3	KNOWN:4,2	ABILITY:Mystic Class Feature|AUTOMATIC|Mystic ~ Weapon and Armor Proficiency	ABILITY:Mystic Class Feature|AUTOMATIC|Mystic ~ Spells	ABILITY:Mystic Class Feature|AUTOMATIC|Mystic ~ Domain	BONUS:ABILITYPOOL|Mystic Domain|1
+2	CAST:6,4	KNOWN:5,2
+3	CAST:6,5	KNOWN:5,3
+4	CAST:6,6,3	KNOWN:6,3,1
+5	CAST:6,6,4	KNOWN:6,4,2
+6	CAST:6,6,5,3	KNOWN:7,4,2,1
+7	CAST:6,6,6,4	KNOWN:7,5,3,2
+8	CAST:6,6,6,5,3	KNOWN:8,5,3,2,1
+9	CAST:6,6,6,6,4	KNOWN:8,5,4,3,2
+10	CAST:6,6,6,6,5,3	KNOWN:9,5,4,3,2,1
+11	CAST:6,6,6,6,6,4	KNOWN:9,5,5,4,3,2
+12	CAST:6,6,6,6,6,5,3	KNOWN:9,5,5,4,3,2,1
+13	CAST:6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,3,2
+14	CAST:6,6,6,6,6,6,5,3	KNOWN:9,5,5,4,4,3,2,1
+15	CAST:6,6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,4,3,2
+16	CAST:6,6,6,6,6,6,6,5,3	KNOWN:9,5,5,4,4,4,3,2,1
+17	CAST:6,6,6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,4,3,3,2
+18	CAST:6,6,6,6,6,6,6,6,5,3	KNOWN:9,5,5,4,4,4,3,3,2,1
+19	CAST:6,6,6,6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,4,3,3,3,2
+20	CAST:6,6,6,6,6,6,6,6,6,6	KNOWN:9,5,5,4,4,4,3,3,3,3
+
+###Block: Noble (PDF pp. 398-400)
+CLASS:Noble	HD:8	TYPE:PC.Base.NonCaster	FACT:ClassType|PC	FACT:Abb|Nob	MAXLEVEL:20	SOURCEPAGE:p.399	PREMULT:1,[PRELEVEL:MAX=0],[PRECLASS:1,Noble=1]	DEFINE:NobleLVL|0	DEFINE:NobleFavor|0	DEFINE:NobleConfidenceUses|0	DEFINE:NobleCoordinate|0	DEFINE:NobleGreatnessAllies|0	BONUS:VAR|NobleLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Noble	STARTSKILLPTS:4	CSKILL:Appraise|Bluff|Diplomacy|Gather Information|Intimidate|TYPE=Knowledge|Listen|TYPE=Perform|Ride|Sense Motive|Speak Language
+1	ABILITY:Noble Class Feature|AUTOMATIC|Noble ~ Weapon and Armor Proficiency	ABILITY:Noble Class Feature|AUTOMATIC|Noble ~ Bonus Class Skill	ABILITY:Noble Class Feature|AUTOMATIC|Noble ~ Favor	BONUS:VAR|NobleFavor|1	ADD:CLASSSKILLS|1|ANY
+2	ABILITY:Noble Class Feature|AUTOMATIC|Noble ~ Inspire Confidence	BONUS:VAR|NobleConfidenceUses|1
+3	BONUS:VAR|NobleFavor|1
+4	ABILITY:Noble Class Feature|AUTOMATIC|Noble ~ Coordinate	BONUS:VAR|NobleCoordinate|1
+5	BONUS:VAR|NobleConfidenceUses|1
+7	BONUS:VAR|NobleFavor|1
+8	BONUS:VAR|NobleCoordinate|1
+9	BONUS:VAR|NobleConfidenceUses|1
+11	ABILITY:Noble Class Feature|AUTOMATIC|Noble ~ Inspire Greatness	BONUS:VAR|NobleGreatnessAllies|1
+12	BONUS:VAR|NobleFavor|1
+13	BONUS:VAR|NobleConfidenceUses|1	BONUS:VAR|NobleCoordinate|1
+14	BONUS:VAR|NobleGreatnessAllies|1
+16	BONUS:VAR|NobleFavor|1
+17	BONUS:VAR|NobleConfidenceUses|1	BONUS:VAR|NobleGreatnessAllies|1
+18	BONUS:VAR|NobleCoordinate|1
+20	BONUS:VAR|NobleCoordinate|1	BONUS:VAR|NobleGreatnessAllies|1

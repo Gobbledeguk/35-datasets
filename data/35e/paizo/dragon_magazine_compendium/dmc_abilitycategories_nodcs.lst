@@ -1,0 +1,7 @@
+# Dragon Magazine Compendium - Mystic categories (loaded only without the Dragonlance Campaign Setting).
+
+ABILITYCATEGORY:Mystic Class Feature	CATEGORY:Special Ability	TYPE:Mystic Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Mystic Domain	CATEGORY:Special Ability	TYPE:MysticDomain	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	PLURAL:Mystic Domains	DISPLAYLOCATION:Class Features
+
+###Block: Noble
+ABILITYCATEGORY:Noble Class Feature	CATEGORY:Special Ability	TYPE:Noble Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
