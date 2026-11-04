@@ -138,3 +138,10 @@ classes would add up differently from the PHB's. Adding the missing parts is der
 
 Note: races in a file can legitimately lack tokens they get from a template or `.MOD` elsewhere; the PHB itself
 has skills without USEUNTRAINED (optional token) and templates without SOURCEPAGE, so those are not listed.
+
+## Unearthed Arcana: Battle Sorcerer – spells per day and known (your decision)
+BahamutDragon's battle sorcerer used the plain sorcerer's tables. The variant (Unearthed Arcana, open content) has one
+spell per day less at each spell level (minimum 0) and one spell known less at each spell level (minimum 1). Both tables
+derived from the PHB sorcerer's data in the repository (20 level lines, CAST and KNOWN only). Matches the rule's examples:
+1st level 4/2 per day; 4th level 5/2/1 known; 5th level 5/3/1. Verified in PCGen (Cha 19): known and per day at levels
+1/4/5/20 exactly as derived (+ Charisma bonus spells per day). The spell list itself (SPELLLIST:1|Sorcerer) was already right.
