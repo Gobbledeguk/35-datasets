@@ -960,8 +960,8 @@ and Cleric: cure light wounds and bless 1st level, fireball not available. A law
 Animal, Sun, not Chaos or Evil; Magic is not offered. Animal domain: spells known 4/3 at 1st (2+d), 9/6/5/4/3/2 at 10th (the
 table's +d), calm animals known at 1st, hold animal not before 4th, commune with nature at 10th, antilife shell not yet;
 speak with animals granted. Sun domain: turn undead at level 10, 3 uses, no greater turning. No load messages.
-Note: the Dragonlance Campaign Setting's own mystic (dcs_classes.lst) has no spell list at all (no SPELLLIST, no class
-spells) - it could get the same fix.
+Note: the Dragonlance Campaign Setting's own mystic (dcs_classes.lst) had no spell list (no SPELLLIST, no MEMORIZE:NO) -
+fixed in the main review (see OBJECT_TYPES_NOTES.md); its domain spells are not added as known spells.
 
 SHA'IR (pp. 535-541) - built by shair_build.py
 - Class lines as the Master: HD d4, 1/2 BAB, good Will, poor Fort/Reflex (with the alternate/fractional switches), 2 skill
@@ -981,18 +981,168 @@ spells per day incl. Charisma bonus spells (L1 4/3, L5 5/5/4/2, L9 5/6/6/5/-/1, 
 Sha'ir: magic missile 1, fireball 3, aid 2, chaos hammer 4, cure light wounds not available; elemental travel 0/0/1/2/2 per
 day; all four gens selectable; descriptions show the values. No load messages.
 
-STILL TO BUILD (status 03/11/2026)
-- Postponed - spell lists not in the compendium (the class pages mention them, nothing else does): Death Master (pp. 184-188,
-  "death master spells list"), Savant (pp. 523-527, "savant arcane spell list" and "savant divine spell list"). Both were
-  printed in Dragon Compendium Volume 1 (Paizo, 2005), which should contain the lists. The Jester's list is missing as well.
-- Savant table misprint: the 18th-level row reads "Deceptive attack +5d6" - a Mountebank feature, apparently copied from
-  the neighboring class; the savant's sneak attack progression is +1d6 at 3rd, +2d6 at 9th, +3d6 at 15th.
-- Postponed - Nightstalker (pp. 389-391): its "nightstalker spell list" (orisons to 6th level, known automatically) is not in
-  the compendium. It is the base-class version of Age of Mortals' Kender Nightstalker prestige class (aom_classes.lst):
-  shared concept and signature abilities (death sight, whispers of the dead, spirit companions, spectral symbiosis), but
-  different mechanics (20 levels, any race, rebuke undead at 4th, Charisma casting, trapfinding, spiritual resilience,
-  advanced learning). The prestige class's list (17 spells, 1st-4th level) is likely a subset of the base class's list.
-- Still to rebuild: Jester (spell list missing too), Shaman, Sohei, Urban Druid.
+SAVANT (pp. 523-527) - built by savant_build.py (spell lists: srd.dndtools.org, savantSpells; your decision: one class,
+combined list)
+- Class lines as the Master: HD d8, 3/4 BAB, good Will, poor Fort/Reflex (with the alternate/fractional switches), 6 skill
+  points, all skills as class skills (CSKILL:ALL). Simple and martial weapons, light armor, shields except tower.
+- Spells: the arcane (16/13/10/10) and divine (10/8/8/6, the Chaos/Evil/Good/Law spells as four each) savant lists form one
+  savant list of 87 spells (SPELLLEVEL:CLASS); Comprehend Languages, Locate Object and Tongues are on both and listed at
+  their lower level. Spells per day = both progressions added (arcane from 5th, divine from 10th; ranger-style 0 = bonus
+  spells only). Prepared, without spellbook (MEMORIZE:YES, SPELLBOOK:NO); caster level half the savant level.
+  Intelligence for casting and bonus spells; the divine-only spells' save DCs use Wisdom (BONUS:DC|SPELL.x|WIS-INT).
+  Deviations from the book (accepted): arcane and divine slots are one pool, divine spells need Intelligence (not Wisdom)
+  to cast and give no Wisdom bonus spells; the "two new spells per level" learning rule is text. The DC shift applies to
+  those spells whenever the character has savant levels (a cleric/savant would see it on his cleric spells too).
+- Sneak attack through the PHB rogue's SneakAttackDice (+1d6 at 3rd, 9th, 15th; stacks with rogue dice); trapfinding with
+  the rogue's type; talent lore = free bonus feats at 2nd, 7th, 12th, 17th; skill assistance = a choice ("Savant Skill
+  Assistance") at 1st, 4th, 8th, 12th, 16th, 20th of the 9 listed skills with at least 1 rank, range 5 ft per choice.
+- The table's 18th-level "Deceptive attack +5d6" is a misprint (a Mountebank feature) and ignored.
+Verified in PCGen 6.08 (35e; human, Int 16, Wis 14): levels 5/10/20 - BAB and base saves exactly the table; spells per day
+1 / 3,1 / 6,6,5,3 (tables + Intelligence bonus spells); caster level 2/5/10; sneak attack 1/2/3 d6; academic lore 8/13/23;
+skill assistance range 10/15/30 ft; spell list: alarm, acid arrow, bless, tongues (3rd), locate object (2nd), magic circle
+against evil yes, fireball and cure serious wounds no; DCs alarm 14 (Int), bless 13 (Wis), comprehend languages 14. No load
+messages.
+
+DEATH MASTER (pp. 184-188) - built by death_master_build.py (spell list: srd.dndtools.org, deathMasterSpells)
+- Class lines as the Master: HD d8, 3/4 BAB, good Will, poor Fort/Reflex (with the alternate/fractional switches), 2 skill
+  points, PREALIGN for any evil, the book's class skills. Club, crossbows, dagger, scimitar, scythe, sickle, quarterstaff
+  (PHB druid form), light armor, no shields. Abyssal as a known language (AUTO:LANG).
+- Spells as the PHB wizard: Intelligence, prepared, spellbook, all 0-level spells known (KNOWNSPELLS:LEVEL=0); the class's own
+  list of 204 spells, 0 to 9th level (SPELLLEVEL:CLASS; names resolved to PHB keys: e.g. Restoration Lesser -> Restoration
+  (Lesser), Mass Inflict Light Wounds -> Inflict Light Wounds (Mass), Tasha's Hideous Laughter -> Hideous Laughter, Evard's Black
+  Tentacles -> Black Tentacles, Unhallow M -> Unhallow, Detect Chaos/Evil/Good/Law -> four spells); CAST per the table; the
+  repo's caster-level variables (arcane).
+- Rebuke undead as the PHB cleric's turning (Basic Turning + Rebuke Undead; level = death master level, 3 + Cha per day); the
+  +2 for 5 ranks in Knowledge (religion) comes from the repo's turning system already.
+- Undead minion, master of the dead, sustenance of the dead: descriptions with their values (minion bonus HD and Str/Dex +2 per
+  four levels after 1st, DC 10 + half level + Cha). Aspect of the dead: darkvision 60 ft (VISION) and the immunities as text.
+  Lichdom: description (the template isn't applied automatically). OPEN: the minion as a companion creature.
+Verified in PCGen 6.08 (35e; human, Int 16, Cha 14, neutral evil, 5 ranks Knowledge (religion)): levels 1/5/10/15/20 - BAB and
+base saves exactly the table; caster level = level; spells per day = table + Intelligence bonus spells (Int 16: none above 6th
+level, as the rule requires); rebuke level = level, 5 per day, check +4 (Cha + synergy); minion +0/2/4/6/8; DC 14/17/19/22;
+darkvision 60 ft from 15th; spell list: disrupt undead 0, chill touch 1, animate dead 2, hideous laughter 2, inflict light wounds
+(mass) 5, wail of the banshee 9, fireball and cure light wounds no; scythe, quarterstaff, heavy crossbow, leather yes, longsword,
+breastplate, shields no; Abyssal known. No load messages.
+
+JESTER (pp. 318-322) - built by jester_build.py (spell list: srd.dndtools.org, jesterSpells)
+- Class lines as the Master: HD d6, 3/4 BAB, good Reflex and Will, poor Fort (with the alternate/fractional switches), 6 skill
+  points, PREALIGN for any chaotic, the book's class skills (Perform by type). Simple weapons plus rapier, sap, short sword,
+  shortbow, whip; light armor, shields except tower.
+- Spells as the PHB bard/sorcerer: Charisma, spontaneous; the class's own list of 93 spells, 0 to 6th level (SPELLLEVEL:CLASS;
+  Tasha's Hideous Laughter -> Hideous Laughter, Otto's Irresistible Dance -> Irresistible Dance, Mass Reduce Person -> Reduce
+  Person (Mass), ...). The list gives Bestow Curse at 3rd and 4th level - kept once, at 3rd. CAST and KNOWN per the tables (the
+  starred known entries, which need a Charisma bonus spell, are plain numbers, as in the PHB bard's data).
+- Jester's audacity: dodge bonus to AC, +1 at 1st and +1 per five levels, capped by the Charisma bonus. Jester's performance:
+  uses = jester level, save DC 10 + half level + Cha. Fascinate, inspiring quip, taunt (3 ranks), calming performance (9),
+  buffoonery (12), vicious lampoon (15), vexing dialogue (18), scathing wit (21) are granted at their level only with the Perform
+  (Comedy) ranks the text requires; Deflect Arrows (2nd, 5 ranks) and Snatch Arrows (6th, 9 ranks) as automatic bonus feats.
+  Bone rattler: text.
+Verified in PCGen 6.08 (35e; human, Cha 16, chaotic neutral): levels 1/5/12/20 - BAB and base saves exactly the table; audacity
++1/+2/+3/+3 (capped by Cha +3 at 20th); DC 13/15/19/23; known and per day exactly the tables (+ Charisma bonus spells); a 12th-level
+jester with 15 ranks has everything up to vicious lampoon and both bonus feats, one with 3 ranks only fascinate, quip, taunt (and
+bone rattler); spell list and proficiencies checked. No load messages.
+
+NIGHTSTALKER (pp. 389-392) - built by nightstalker_build.py (spell list: srd.dndtools.org, nightstalkerSpells)
+- Class lines as the Master: HD d6, 3/4 BAB, good Reflex and Will, poor Fort (with the alternate/fractional switches), 4 skill
+  points, any alignment, the book's class skills. Simple weapons plus hand crossbow, rapier, shortbow, short sword; light armor,
+  shields except tower. Not the same class as Age of Mortals' Kender Nightstalker prestige class (different key, no clash).
+- Spells like the Mystic (spontaneous, divine) but Charisma to cast and for DCs, bonus spells from Wisdom (SPELLSTAT:CHA,
+  BONUSSPELLSTAT:WIS); the whole nightstalker list known (KNOWNSPELLS, as the PHB cleric/druid): 84 spells, 0 to 6th level
+  (SPELLLEVEL:CLASS; Rary's Telepathic Bond -> Telepathic Bond, Lesser/Greater/Mass forms resolved). Spirit Walk (6th) is a
+  Dragonlance Campaign Setting spell: in dmc_classes_dcs.lst, loaded only with that book (PCC: PRECAMPAIGN:1,INCLUDES=...).
+- Death sight: detect undead at will (SPELLS:Innate). Trapfinding with the rogue's type. Rebuke undead (4th) as the PHB cleric's
+  turning at nightstalker level - 3, 3 + Cha per day - also for good nightstalkers (the automatic grant overrides the rebuke
+  ability's alignment requirement, as the text demands). Spiritual resilience (+1/+2/+3), whispers of the dead (+2/+4/+6) and
+  spirit companions (1/2/3 ghost cohorts, max Hit Dice computed) are descriptions with their values; advanced learning (three
+  chosen necromancy/divination spells) and spectral symbiosis are text.
+Verified in PCGen 6.08 (35e; human, Cha 16, Wis 14): levels 1/4/6/12/20 - BAB and base saves exactly the table; spells per day =
+table + Wisdom bonus spells (L4 3,3,1; L12 3,4,4,3,2; L20 4,5,5,4,4,4,4); caster level = level; rebuke level 1/3/9/17, 6 per day,
+also for a neutral good nightstalker; resilience 1/1/1/2/3, whispers 0/2/2/4/6, companions 0/0/1/2/3; death sight on the sheet;
+spell list checked, fireball not available; Spirit Walk a 6th-level nightstalker spell with the Dragonlance Campaign Setting and
+absent without it. No load messages.
+
+URBAN DRUID (pp. 629-633) - built by urban_druid_build.py (spell list: srd.dndtools.org, urbanDruidSpells)
+- Class lines as the Master: HD d8, 3/4 BAB, good Fort and Will, poor Reflex (with the alternate/fractional switches), 4 skill
+  points, PREALIGN:NG,TN,LN,NE, the book's class skills. Club, all crossbows, dagger, quarterstaff, rapier, sap, short sword;
+  padded, leather and studded leather armor (AUTO:ARMORPROF by name); bucklers.
+- Spells as the PHB druid (prepared from the whole list, KNOWNSPELLS) but Charisma-based (casting, DCs, bonus spells); the class's
+  own list of 165 spells, 0 to 9th level, incl. the compendium's Citygate, Susurrus of the City and the four mass repair spells.
+  The single-target repair spells and Scatterspray are left out of the compendium's data as reprints, so they are on the list only
+  with a book that defines them: dmc_classes_urbandruid_opt1.lst (repair light/moderate/serious/critical damage; Eberron Campaign
+  Setting, Spell Compendium or Complete Arcane), _opt2 (repair minor damage; Spell Compendium or Complete Arcane), _opt3
+  (scatterspray; Spell Compendium or Forgotten Realms Campaign Setting (3.5)). Spontaneous repair casting as text.
+- Urban companion through the PHB druid's animal companion (Animal Companion, AnimalCompanionLVL = urban druid level,
+  COMPANIONLIST): bat, dire rat, rat, cat, dog, riding dog, light and heavy horse, Medium monstrous centipede, Small monstrous
+  scorpion and spider, mule, owl, pony, raven, Small and Medium viper, light warhorse, Small animated object; alternatives Medium,
+  Large and Huge animated object at level -3/-6/-9 (the book's further alternatives are illegible in the PDF).
+- City sense: +2 Gather Information and Knowledge (local). Favored cities (count), urban shape (uses 1/2/3/4/5/6 at 5th/6th/7th/
+  10th/14th/18th, animated object 1/2/3 at 16th/18th/20th, counted on the level lines), information network: descriptions with
+  their values. Crowdwalk, alley fighting, disease immunity: text.
+Verified in PCGen 6.08 (35e; human, Cha 16, Wis 14, neutral): levels 1/5/20 - BAB and base saves exactly the table; spells per day =
+table + Charisma bonus spells (Cha 16: none above 6th); Gather Information +5, Knowledge (local) +2; urban shape 0/1/6 and 0/0/3;
+favored cities 1/2/6; companion level = level, all 19 companion creatures resolve; spell list checked (entangle not on it); with
+the Eberron Campaign Setting repair light damage 1st and repair critical damage 4th level, repair minor damage and scatterspray
+absent; padded/leather/studded leather, buckler, rapier, sap yes, chain shirt, light shield, longsword no. No load messages.
+
+SOHEI (DMC) (pp. 557-559) - built by sohei_build.py (spell list: the Oriental Adventures sohei list, as on realmshelps.net)
+- The 3.5 update of Oriental Adventures' sohei. The repository's Oriental Adventures sohei ("Sohei (OA)") follows the 3.0
+  progression (deflect arrows at 3rd, remain conscious, DR from 11th), so this one is keyed "Sohei (DMC)" and coexists (checked).
+- Class lines as the Master: HD d10, 3/4 BAB, good Fort and Will, poor Reflex (with the alternate/fractional switches), 2 skill
+  points, PREALIGN for any lawful, the book's class skills (Iaijutsu Focus only with Oriental Adventures). Simple and martial
+  weapons, all armor, no shields.
+- Spells as the PHB cleric (Wisdom, prepared from the whole list) from 4th level; spells per day per the table (0 = bonus spells
+  only); caster level half the class level. List: 33 core spells (SPELLLEVEL:CLASS) plus the 9 Oriental Adventures spells
+  (attraction, weapon bless, warning, castigate, mental strength, discern shapechanger, fatigue, remove fatigue, sustain) in
+  dmc_classes_oa.lst, loaded only with Oriental Adventures v.3.5.
+- Ki frenzy: uses 1-6 per day counted on the level lines (1st, 4th, 8th, 12th, 16th, 20th); its description shows the current
+  Str/Dex bonus (+2/+4/+6), speed (+10/+20/+30 ft) and flurry penalty (-2/-1/0), duration 3 + Con. Weapon Focus through the PHB
+  "Weapon Focus" pool; Deflect Arrows (2nd) and Diehard (3rd) automatic feats; Defensive Strike (6th) as the feat only with a book
+  defining it (dmc_abilities_defstrike.lst: Oriental Adventures v.3.5 or Complete Warrior), otherwise a description. Damage
+  reduction 1/- to 5/- (DR token, PHB barbarian form). Strength of mind, mettle, tireless frenzy: text.
+Verified in PCGen 6.08 (35e; human, Wis 14, Con 14, lawful neutral): levels 1/4/7/11/20 - BAB and base saves exactly the table; ki
+frenzy 1/2/2/3/6 per day, +2/+2/+2/+4/+6 Str/Dex; DR -/-/1/2/5; caster level 2/3/5/10 (4th+); spells per day 0,1 / 0,2 / 0,2,2 /
+0,4,4,3,3 (table + Wisdom bonus spells); Weapon Focus, Deflect Arrows, Diehard; with Oriental Adventures attraction 1st, mental
+strength 3rd, sustain 4th level and the Defensive Strike feat, without it those spells absent; cure light wounds not on the list.
+No load messages, with or without Oriental Adventures.
+
+SHAMAN (DMC) (pp. 548-551) - built by shaman_build.py (spell list and the 19 shaman domains: realmshelps.net, Oriental
+Adventures; data in review_tools/shaman_spells.txt and shaman_domains.txt)
+- Not the same class as Oriental Adventures' shaman ("Shaman (OA)"), so keyed "Shaman (DMC)"; both coexist.
+- Class lines as the Master: HD d6, 3/4 BAB, good Fort and Will, poor Reflex (with the alternate/fractional switches), 4 skill
+  points, any alignment, the book's class skills. Simple weapons, light armor.
+- Spells as the PHB cleric: Wisdom, prepared from the whole list, the cleric's PROHIBITSPELL alignment lines. List: 179 spells,
+  0 to 9th level - 143 PHB spells (SPELLLEVEL:CLASS) and 36 spells existing only in other books, which are on the list only
+  with a book defining them (dmc_shaman_classes_opt*.lst; Oriental Adventures, Complete Arcane, Spell Compendium, Complete
+  Divine, Book of Exalted Deeds, Player's Guide to Faerun, Races of Eberron, Draconomicon, Heroes of Horror). Attraction and
+  Detect Disease count only with Oriental Adventures (the Expanded Psionics Handbook's attraction is a psionic power).
+  The 3.0 name "protection from elements" is protection from energy.
+- Domains: the 19 shaman domains as PCGen domains (dmc_domains_shaman.lst: Ancestor, Celestial, Community, Divination, Flame,
+  Fortune, Fury, Grave, Guardian, Hero, Knowledge, Metal, Nature, River, Stone, Travel, Trickery, War, Wood - keyed
+  "<name> (Shaman)") with their spells (non-PHB spells via dmc_shaman_domains_opt*.lst) and granted powers (Domain-category
+  abilities: Community +2 Diplomacy and calm emotions 1/day, Knowledge/Travel/Trickery class skills, War the Weapon Focus pool,
+  the others as text). Granted as the cleric's (BONUS:DOMAIN|NUMBER: 2, a third at 11th). PCGen offers domains only through a
+  deity, so a pseudo-deity "Shaman Spirits" (dmc_deities_shaman.lst) lists the 19 domains, available only to the Shaman (DMC), as
+  the Dragonlance Campaign Setting's "Mystic" deity does. PCGen supplies one domain slot per spell level; the second domain slot
+  from 11th level (the table's "+2") is an additional spell of that level (BONUS:SPELLCAST) - simplification.
+- Unarmed strike: Improved Unarmed Strike and the PHB monk's unarmed damage fed with the shaman's progression (1d6/1d8/1d10/2d6
+  at 1st/6th/12th/18th = monk levels 1/4/8/12); Small sizes match the book, Large follows the monk's size table. Animal companion
+  as the PHB druid (own list of 18 + the druid's 10 alternative lists). Turn or rebuke undead as the PHB cleric at shaman level
+  - 2. Bonus feats (4th, 8th, ...): category "Shaman (DMC) Bonus Feat" in three variants by the books loaded (core feats; + Freezing
+  the Lifeblood, Pain Touch with Complete Warrior; + Falling Star Strike, Great Ki Shout, Ki Shout, Unbalancing Strike with
+  Oriental Adventures). Spirits' favor: Charisma bonus on all saves (paladin's divine grace form). Spirit sight, spontaneous
+  cure/inflict casting: text.
+Verified in PCGen 6.08 (35e; human, Wis 16, Cha 14, neutral good, deity Shaman Spirits): all 19 domains offered, 2 selections at 1st
+(without the pseudo-deity: none); levels 1/5/11/20 - BAB and base saves exactly the table; spells per day = table + Wisdom bonus
+spells + the extra domain slots (L11 6,6,5,5,3,2,1); Will total incl. spirits' favor; turning level 3, 5/day at 5th; unarmed 1d6/
+1d8/2d6 steps; companion level = level; Community Diplomacy +2; domain spells: status 4 (Community), dispel chaos/evil/good/law 5
+and antipathy 9 (Guardian), transformation 7 (Hero), power word kill 9 (War); with Oriental Adventures ancestral vengeance 2,
+weapon bless 1, lesser spirit ally 4 and the OA spells on the class list (trance, ancestral vengeance); fireball not on the list.
+No load messages - core only, with Oriental Adventures, and with Complete Warrior.
+
+STATUS (04/11/2026)
+- All 14 base classes of the classes section are rebuilt and verified: Master, Battle Dancer, Mariner, Mountebank (DMC), Noble,
+  Mystic, Sha'ir, Savant, Death Master, Jester, Nightstalker, Urban Druid, Sohei (DMC), Shaman (DMC).
+- Open: the gen familiar (Sha'ir) and undead minion (Death Master) as companion creatures.
 
 ======================================================================
 FILE LAYOUT (consolidated)
@@ -1009,6 +1159,14 @@ whole file under one condition, so files with different conditions or object typ
 - dmc_feats_nolott.lst <- Lucky, Quick-Thinking (Legends of the Twins), loaded only without that book
 - dmc_classes_nodcs.lst, dmc_abilities_nodcs.lst, dmc_abilitycategories_nodcs.lst <- the Mystic, loaded only without the
   Dragonlance Campaign Setting
+- dmc_classes_dcs.lst <- Spirit Walk on the Nightstalker's list, loaded only with the Dragonlance Campaign Setting
+- dmc_classes_urbandruid_opt1-3.lst <- reprinted repair spells and scatterspray on the Urban Druid's list, loaded only with a
+  book that defines them
+- dmc_classes_oa.lst <- Oriental Adventures spells and Iaijutsu Focus for the Sohei (DMC), loaded only with that book
+- dmc_abilities_defstrike.lst <- the Defensive Strike feat for the Sohei (DMC), with Oriental Adventures or Complete Warrior
+- dmc_domains_shaman.lst, dmc_deities_shaman.lst <- the 19 shaman domains and the "Shaman Spirits" pseudo-deity
+- dmc_shaman_classes_opt*.lst, dmc_shaman_domains_opt*.lst <- Shaman (DMC) class/domain spells from other books, loaded with them
+- dmc_abilitycategories_shamanfeat_core/oa/cw.lst <- the Shaman (DMC) bonus feat list, one variant by the books loaded
 - one file per optional book where content depends on it: _xph (Expanded Psionics: racial, domain, feat additions), _sc,
   _bovd, _cadv, _ca, _rs, _rw, vestiges (Tome of Magic), flaws (Unearthed Arcana), feats_nocw (only without Complete Warrior)
 - separate by type as in the repo: races, templates, languages, domains, spells + class/domain spell lists (like the PHB's

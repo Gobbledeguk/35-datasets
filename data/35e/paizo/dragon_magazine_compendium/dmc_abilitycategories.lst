@@ -30,3 +30,25 @@ ABILITYCATEGORY:Mountebank (DMC) Class Feature	CATEGORY:Special Ability	TYPE:Mou
 ###Block: Sha'ir
 ABILITYCATEGORY:Sha'ir Class Feature	CATEGORY:Special Ability	TYPE:Sha'ir Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
 ABILITYCATEGORY:Sha'ir Gen	CATEGORY:Special Ability	TYPE:ShairGen	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Class Features
+
+###Block: Savant
+ABILITYCATEGORY:Savant Class Feature	CATEGORY:Special Ability	TYPE:Savant Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Savant Skill Assistance	CATEGORY:Special Ability	TYPE:SavantSkillAssistance	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Class Features
+
+###Block: Death Master
+ABILITYCATEGORY:Death Master Class Feature	CATEGORY:Special Ability	TYPE:Death Master Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Jester
+ABILITYCATEGORY:Jester Class Feature	CATEGORY:Special Ability	TYPE:Jester Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Nightstalker
+ABILITYCATEGORY:Nightstalker Class Feature	CATEGORY:Special Ability	TYPE:Nightstalker Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Urban Druid
+ABILITYCATEGORY:Urban Druid Class Feature	CATEGORY:Special Ability	TYPE:Urban Druid Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Sohei (DMC)
+ABILITYCATEGORY:Sohei (DMC) Class Feature	CATEGORY:Special Ability	TYPE:Sohei (DMC) Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Shaman (DMC)
+ABILITYCATEGORY:Shaman (DMC) Class Feature	CATEGORY:Special Ability	TYPE:Shaman (DMC) Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO

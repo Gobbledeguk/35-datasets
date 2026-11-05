@@ -1,0 +1,3 @@
+# Shaman (DMC) spells existing only in other books, loaded with: PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
+
+CLASS:Shaman (DMC).MOD	SPELLLEVEL:CLASS|Shaman (DMC)=0|Detect Disease|Shaman (DMC)=1|Attraction,Trance,Weapon Bless|Shaman (DMC)=2|Ancestral Vengeance,Create Spring,Invisibility to Spirits,Know Motivation,Protection from Spirits|Shaman (DMC)=3|Detect Curse,Invisibility to Enemies,Mental Strength,Mental Weakness,Substitution|Shaman (DMC)=4|Fatigue,Lesser Spirit Ally,Snake Barrier|Shaman (DMC)=5|Advice,Blood of Fire,Possess|Shaman (DMC)=6|Spirit Ally|Shaman (DMC)=8|Compel,Greater Spirit Ally

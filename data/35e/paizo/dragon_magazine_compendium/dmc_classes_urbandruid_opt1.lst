@@ -1,0 +1,4 @@
+# Dragon Magazine Compendium - urban druid list spells the compendium data leaves out as reprints of Eberron Campaign Setting, Spell Compendium, Complete Arcane;
+# loaded only with at least one of those books (PCC line).
+
+CLASS:Urban Druid.MOD	SPELLLEVEL:CLASS|Urban Druid=1|Repair Light Damage	SPELLLEVEL:CLASS|Urban Druid=2|Repair Moderate Damage	SPELLLEVEL:CLASS|Urban Druid=3|Repair Serious Damage	SPELLLEVEL:CLASS|Urban Druid=4|Repair Critical Damage

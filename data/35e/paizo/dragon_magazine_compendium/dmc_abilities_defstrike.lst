@@ -1,0 +1,4 @@
+# Dragon Magazine Compendium - the Defensive Strike feat for the Sohei (DMC), loaded with a book that defines it
+# (Oriental Adventures v.3.5 or Complete Warrior).
+
+CATEGORY=Special Ability|Sohei (DMC) ~ Defensive Strike.MOD	ABILITY:FEAT|AUTOMATIC|Defensive Strike

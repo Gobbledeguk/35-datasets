@@ -1,0 +1,5 @@
+# Shaman (DMC) spells existing only in other books, loaded with: PRECAMPAIGN:1,INCLUDES=Complete Arcane,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Spell Compendium
+
+Flame (Shaman).MOD	SPELLLEVEL:DOMAIN|Flame (Shaman)=3|Animate Fire
+River (Shaman).MOD	SPELLLEVEL:DOMAIN|River (Shaman)=2|Animate Water
+Wood (Shaman).MOD	SPELLLEVEL:DOMAIN|Wood (Shaman)=1|Animate Wood

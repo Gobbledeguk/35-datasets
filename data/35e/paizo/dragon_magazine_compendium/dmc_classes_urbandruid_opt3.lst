@@ -1,0 +1,4 @@
+# Dragon Magazine Compendium - urban druid list spells the compendium data leaves out as reprints of Spell Compendium, Forgotten Realms Campaign Setting (3.5);
+# loaded only with at least one of those books (PCC line).
+
+CLASS:Urban Druid.MOD	SPELLLEVEL:CLASS|Urban Druid=1|Scatterspray

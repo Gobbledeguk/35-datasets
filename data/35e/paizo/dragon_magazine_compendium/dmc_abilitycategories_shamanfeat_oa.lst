@@ -1,0 +1,3 @@
+# Shaman (DMC) bonus feat list - variant loaded with: PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
+
+ABILITYCATEGORY:Shaman (DMC) Bonus Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	CATEGORY:FEAT	ABILITYLIST:Blind-Fight|Combat Reflexes|Falling Star Strike|Freezing the Lifeblood|Great Ki Shout|Iron Will|Ki Shout|Pain Touch|Stunning Fist|Unbalancing Strike	DISPLAYLOCATION:Feats

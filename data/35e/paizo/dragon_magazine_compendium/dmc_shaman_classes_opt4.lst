@@ -1,0 +1,3 @@
+# Shaman (DMC) spells existing only in other books, loaded with: PRECAMPAIGN:1,INCLUDES=Complete Arcane,INCLUDES=Oriental Adventures v.3.5
+
+CLASS:Shaman (DMC).MOD	SPELLLEVEL:CLASS|Shaman (DMC)=2|Commune with Lesser Spirit|Shaman (DMC)=4|Reanimation|Shaman (DMC)=5|Commune with Greater Spirit

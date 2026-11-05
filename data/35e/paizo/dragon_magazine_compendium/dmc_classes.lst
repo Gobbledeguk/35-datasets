@@ -74,3 +74,178 @@ CLASS:Sha'ir	SPELLSTAT:CHA	BONUSSPELLSTAT:CHA	FACT:SpellType|Arcane	MEMORIZE:NO	
 18	CAST:5,5,5,5,5,5,5,4,4,3	KNOWN:9,9,9,8,7,6,5,4,3,2
 19	CAST:5,5,5,5,5,5,5,5,4,4	KNOWN:9,9,9,9,8,7,6,5,4,3
 20	CAST:5,5,5,5,5,5,5,5,5,5	KNOWN:9,9,9,9,8,7,6,5,4,3
+
+###Block: Savant (PDF pp. 523-527)
+CLASS:Savant	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Sav	MAXLEVEL:20	SOURCEPAGE:p.524	DEFINE:SavantLVL|0	BONUS:VAR|SavantLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Savant	STARTSKILLPTS:6	CSKILL:ALL
+CLASS:Savant	SPELLSTAT:INT	BONUSSPELLSTAT:INT	FACT:SpellType|Arcane	MEMORIZE:YES	SPELLBOOK:NO	BONUS:CASTERLEVEL|Savant|floor(CL/2)	BONUS:DC|SPELL.Align Weapon,SPELL.Augury,SPELL.Bane,SPELL.Bless,SPELL.Calm Emotions,SPELL.Create Food and Water,SPELL.Cure Light Wounds,SPELL.Cure Moderate Wounds,SPELL.Detect Chaos,SPELL.Detect Evil,SPELL.Detect Good,SPELL.Detect Law,SPELL.Discern Lies,SPELL.Divination,SPELL.Divine Power,SPELL.Endure Elements,SPELL.Entropic Shield,SPELL.Freedom of Movement,SPELL.Gentle Repose,SPELL.Helping Hand,SPELL.Invisibility Purge,SPELL.Magic Circle against Chaos,SPELL.Magic Circle against Evil,SPELL.Magic Circle against Good,SPELL.Magic Circle against Law,SPELL.Magic Vestment,SPELL.Make Whole,SPELL.Protection from Chaos,SPELL.Protection from Evil,SPELL.Protection from Good,SPELL.Protection from Law,SPELL.Sanctuary,SPELL.Sending,SPELL.Shield Other,SPELL.Shield of Faith,SPELL.Speak with Dead,SPELL.Water Breathing,SPELL.Zone of Truth|WIS-INT	SPELLLEVEL:CLASS|Savant=1|Alarm,Bane,Bless,Comprehend Languages,Cure Light Wounds,Detect Chaos,Detect Evil,Detect Good,Detect Law,Detect Secret Doors,Detect Undead,Disguise Self,Endure Elements,Entropic Shield,Erase,Expeditious Retreat,Feather Fall,Grease,Hold Portal,Identify,Jump,Mount,Protection from Chaos,Protection from Evil,Protection from Good,Protection from Law,Sanctuary,Shield,Shield of Faith,True Strike,Unseen Servant	SPELLLEVEL:CLASS|Savant=2|Acid Arrow,Align Weapon,Alter Self,Arcane Lock,Augury,Calm Emotions,Cure Moderate Wounds,Darkvision,Detect Thoughts,False Life,Gentle Repose,Glitterdust,Knock,Levitate,Locate Object,Make Whole,See Invisibility,Shield Other,Touch of Idiocy,Whispering Wind,Zone of Truth	SPELLLEVEL:CLASS|Savant=3|Arcane Sight,Clairaudience/Clairvoyance,Create Food and Water,Flame Arrow,Helping Hand,Illusory Script,Invisibility Purge,Magic Circle against Chaos,Magic Circle against Evil,Magic Circle against Good,Magic Circle against Law,Magic Vestment,Phantom Steed,Secret Page,Sepia Snake Sigil,Shrink Item,Sleet Storm,Speak with Dead,Tongues,Water Breathing	SPELLLEVEL:CLASS|Savant=4|Arcane Eye,Detect Scrying,Dimension Door,Dimensional Anchor,Discern Lies,Divination,Divine Power,Freedom of Movement,Ice Storm,Locate Creature,Minor Creation,Mnemonic Enhancer,Remove Curse,Scrying,Sending
+1	ABILITY:Savant Class Feature|AUTOMATIC|Savant ~ Weapon and Armor Proficiency	ABILITY:Savant Class Feature|AUTOMATIC|Savant ~ Academic Lore	ABILITY:Savant Class Feature|AUTOMATIC|Savant ~ Skill Assistance	ABILITY:Savant Class Feature|AUTOMATIC|Savant ~ Trapfinding	BONUS:ABILITYPOOL|Savant Skill Assistance|1
+2	ABILITY:Savant Class Feature|AUTOMATIC|Savant ~ Talent Lore	BONUS:ABILITYPOOL|FEAT|1
+3	ABILITY:Savant Class Feature|AUTOMATIC|Savant ~ Sneak Attack
+4	BONUS:ABILITYPOOL|Savant Skill Assistance|1
+5	CAST:0,0	ABILITY:Savant Class Feature|AUTOMATIC|Savant ~ Arcane Lore
+6	CAST:0,0
+7	CAST:0,1	BONUS:ABILITYPOOL|FEAT|1
+8	CAST:0,1	BONUS:ABILITYPOOL|Savant Skill Assistance|1
+9	CAST:0,1,0
+10	CAST:0,2,0	ABILITY:Savant Class Feature|AUTOMATIC|Savant ~ Divine Lore
+11	CAST:0,2,1
+12	CAST:0,2,1,0	BONUS:ABILITYPOOL|Savant Skill Assistance|1	BONUS:ABILITYPOOL|FEAT|1
+13	CAST:0,2,1,1
+14	CAST:0,2,2,1
+15	CAST:0,3,2,1,0
+16	CAST:0,3,2,2,1	BONUS:ABILITYPOOL|Savant Skill Assistance|1
+17	CAST:0,3,3,2,1	BONUS:ABILITYPOOL|FEAT|1
+18	CAST:0,4,3,3,1
+19	CAST:0,5,3,3,2
+20	CAST:0,5,5,4,3	BONUS:ABILITYPOOL|Savant Skill Assistance|1
+
+###Block: Death Master (PDF pp. 184-188)
+CLASS:Death Master	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|DtM	MAXLEVEL:20	SOURCEPAGE:p.186	PREALIGN:LE,NE,CE	DEFINE:DeathMasterLVL|0	BONUS:VAR|DeathMasterLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Death Master	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Decipher Script|Heal|Intimidate|Knowledge (Arcana)|Knowledge (Religion)|Knowledge (The Planes)|TYPE=Profession|Spellcraft
+CLASS:Death Master	SPELLSTAT:INT	BONUSSPELLSTAT:INT	FACT:SpellType|Arcane	MEMORIZE:YES	SPELLBOOK:YES	KNOWNSPELLS:LEVEL=0	BONUS:CASTERLEVEL|Death Master|Caster_Level_DeathMaster	DEFINE:Caster_Level_DeathMaster|0	BONUS:VAR|Caster_Level_DeathMaster|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLDeathMaster|0	BONUS:VAR|CasterLevelBLDeathMaster|charbonusto("PCLEVEL","Death Master")	BONUS:VAR|Caster_Level_Highest__Arcane|Caster_Level_DeathMaster+CasterLevelBLDeathMaster|TYPE=Base	SPELLLEVEL:CLASS|Death Master=0|Arcane Mark,Dancing Lights,Daze,Detect Magic,Detect Poison,Disrupt Undead,Flare,Ghost Sound,Inflict Minor Wounds,Light,Mage Hand,Mending,Prestidigitation,Ray of Frost,Read Magic,Resistance,Touch of Fatigue,Virtue	SPELLLEVEL:CLASS|Death Master=1|Alarm,Bane,Cause Fear,Chill Touch,Command,Comprehend Languages,Curse Water,Deathwatch,Detect Chaos,Detect Evil,Detect Good,Detect Law,Detect Undead,Doom,Entropic Shield,Expeditious Retreat,Grease,Hide from Undead,Identify,Inflict Light Wounds,Magic Fang,Magic Stone,Magic Weapon,Obscuring Mist,Protection from Good,Ray of Enfeeblement,Sanctuary,Shield,Shocking Grasp,Unseen Servant	SPELLLEVEL:CLASS|Death Master=2|Align Weapon,Alter Self,Animate Dead,Blindness/Deafness,Blur,Chill Metal,Command Undead,Darkness,Darkvision,Daze Monster,Death Knell,Desecrate,Detect Thoughts,False Life,Fog Cloud,Gentle Repose,Ghoul Touch,Hideous Laughter,Hold Person,Inflict Moderate Wounds,Locate Object,Make Whole,Misdirection,Resist Energy,Restoration (Lesser),Scare,See Invisibility,Shatter,Silence,Soften Earth and Stone,Spectral Hand,Spider Climb,Summon Swarm,Touch of Idiocy,Undetectable Alignment,Web	SPELLLEVEL:CLASS|Death Master=3|Arcane Sight,Bestow Curse,Contagion,Deep Slumber,Deeper Darkness,Diminish Plants,Dispel Magic,Gaseous Form,Halt Undead,Inflict Serious Wounds,Magic Circle against Good,Magic Fang (Greater),Magic Weapon (Greater),Meld into Stone,Phantom Steed,Poison,Protection from Energy,Ray of Exhaustion,Remove Curse,Slow,Speak with Dead,Stinking Cloud,Stone Shape,Vampiric Touch,Wind Wall	SPELLLEVEL:CLASS|Death Master=4|Arcane Eye,Black Tentacles,Charm Monster,Crushing Despair,Death Ward,Detect Scrying,Dimension Door,Dimensional Anchor,Enervation,Fear,Giant Vermin,Globe of Invulnerability (Lesser),Ice Storm,Inflict Critical Wounds,Phantasmal Killer,Scrying,Solid Fog,Stoneskin,Tongues,Wall of Ice	SPELLLEVEL:CLASS|Death Master=5|Baleful Polymorph,Blight,Cloudkill,Command (Greater),Cone of Cold,Create Undead,Dispel Good,Dominate Person,Hold Monster,Inflict Light Wounds (Mass),Insect Plague,Magic Jar,Nightmare,Slay Living,Symbol of Pain,Unhallow,Wall of Stone,Waves of Fatigue	SPELLLEVEL:CLASS|Death Master=6|Acid Fog,Antilife Shell,Blade Barrier,Circle of Death,Control Undead,Dispel Magic (Greater),Eyebite,Harm,Inflict Moderate Wounds (Mass),Move Earth,Shadow Walk,Symbol of Fear,Undeath to Death,Word of Recall	SPELLLEVEL:CLASS|Death Master=7|Arcane Sight (Greater),Blasphemy,Creeping Doom,Destruction,Ethereal Jaunt,Finger of Death,Hold Person (Mass),Inflict Serious Wounds (Mass),Power Word Blind,Repulsion,Scrying (Greater),Symbol of Stunning,Symbol of Weakness,True Seeing,Waves of Exhaustion,Word of Chaos	SPELLLEVEL:CLASS|Death Master=8|Antimagic Field,Antipathy,Charm Monster (Mass),Clone,Create Greater Undead,Discern Location,Inflict Critical Wounds (Mass),Iron Body,Maze,Mind Blank,Power Word Stun,Symbol of Death,Temporal Stasis,Trap the Soul,Unholy Aura	SPELLLEVEL:CLASS|Death Master=9|Astral Projection,Dominate Monster,Energy Drain,Etherealness,Foresight,Hold Monster (Mass),Implosion,Power Word Kill,Shapechange,Soul Bind,Wail of the Banshee,Weird
+1	CAST:3,1	ABILITY:Death Master Class Feature|AUTOMATIC|Death Master ~ Weapon and Armor Proficiency	ABILITY:Death Master Class Feature|AUTOMATIC|Death Master ~ Bonus Language	ABILITY:Death Master Class Feature|AUTOMATIC|Death Master ~ Rebuke Undead	ABILITY:Death Master Class Feature|AUTOMATIC|Death Master ~ Spells	ABILITY:Death Master Class Feature|AUTOMATIC|Death Master ~ Undead Minion
+2	CAST:4,2
+3	CAST:4,2,1
+4	CAST:4,3,2
+5	CAST:4,3,2,1	ABILITY:Death Master Class Feature|AUTOMATIC|Death Master ~ Master of the Dead
+6	CAST:4,3,3,2
+7	CAST:4,4,3,2,1
+8	CAST:4,4,3,3,2
+9	CAST:4,4,4,3,2,1
+10	CAST:4,4,4,3,3,2	ABILITY:Death Master Class Feature|AUTOMATIC|Death Master ~ Sustenance of the Dead
+11	CAST:4,4,4,4,3,2,1
+12	CAST:4,4,4,4,3,3,2
+13	CAST:4,4,4,4,4,3,2,1
+14	CAST:4,4,4,4,4,3,3,2
+15	CAST:4,4,4,4,4,4,3,2,1	ABILITY:Death Master Class Feature|AUTOMATIC|Death Master ~ Aspect of the Dead
+16	CAST:4,4,4,4,4,4,3,3,2
+17	CAST:4,4,4,4,4,4,4,3,2,1
+18	CAST:4,4,4,4,4,4,4,3,3,2
+19	CAST:4,4,4,4,4,4,4,4,3,3
+20	CAST:4,4,4,4,4,4,4,4,4,4	ABILITY:Death Master Class Feature|AUTOMATIC|Death Master ~ Lichdom
+
+###Block: Jester (PDF pp. 318-322)
+CLASS:Jester	HD:6	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Jes	MAXLEVEL:20	SOURCEPAGE:p.319	PREALIGN:CG,CN,CE	DEFINE:JesterLVL|0	BONUS:VAR|JesterLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Jester	STARTSKILLPTS:6	CSKILL:Balance|Bluff|Climb|Disable Device|Disguise|Escape Artist|Gather Information|Hide|Intimidate|Jump|Knowledge (Local)|Knowledge (Nobility and Royalty)|Move Silently|Open Lock|TYPE=Perform|Search|Sense Motive|Sleight of Hand|Speak Language|Tumble|Use Magic Device|Use Rope
+CLASS:Jester	SPELLSTAT:CHA	BONUSSPELLSTAT:CHA	FACT:SpellType|Arcane	MEMORIZE:NO	BONUS:CASTERLEVEL|Jester|Caster_Level_Jester	DEFINE:Caster_Level_Jester|0	BONUS:VAR|Caster_Level_Jester|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLJester|0	BONUS:VAR|CasterLevelBLJester|charbonusto("PCLEVEL","Jester")	BONUS:VAR|Caster_Level_Highest__Arcane|Caster_Level_Jester+CasterLevelBLJester|TYPE=Base	SPELLLEVEL:CLASS|Jester=0|Create Water,Dancing Lights,Daze,Detect Magic,Flare,Light,Mage Hand,Mending,Open/Close,Prestidigitation	SPELLLEVEL:CLASS|Jester=1|Animate Rope,Bane,Cause Fear,Charm Person,Color Spray,Command,Disguise Self,Doom,Entropic Shield,Expeditious Retreat,Feather Fall,Grease,Hideous Laughter,Hypnotism,Jump,Magic Aura,Obscuring Mist,Reduce Person,Sanctuary,Shocking Grasp,Silent Image,Sleep,Unseen Servant,Ventriloquism	SPELLLEVEL:CLASS|Jester=2|Alter Self,Blur,Darkvision,Daze Monster,Eagle's Splendor,Enthrall,Find Traps,Fog Cloud,Fox's Cunning,Glitterdust,Hypnotic Pattern,Invisibility,Levitate,Minor Image,Mirror Image,Misdirection,Pyrotechnics,Rope Trick,Scare,Sound Burst,Spider Climb,Touch of Idiocy,Undetectable Alignment	SPELLLEVEL:CLASS|Jester=3|Bestow Curse,Confusion,Crushing Despair,Displacement,Gaseous Form,Haste,Invisibility Sphere,Rage,Shrink Item,Slow,Stinking Cloud,Suggestion,Tongues	SPELLLEVEL:CLASS|Jester=4|Charm Monster,Dimension Door,Fear,Freedom of Movement,Invisibility (Greater),Minor Creation,Polymorph,Rainbow Pattern,Reduce Person (Mass),Shout	SPELLLEVEL:CLASS|Jester=5|Break Enchantment,Command (Greater),Feeblemind,Hold Monster,Mind Fog,Persistent Image,Seeming	SPELLLEVEL:CLASS|Jester=6|Animate Objects,Eagle's Splendor (Mass),Ethereal Jaunt,Insanity,Irresistible Dance,Mislead
+1	CAST:2	KNOWN:4	ABILITY:Jester Class Feature|AUTOMATIC|Jester ~ Weapon and Armor Proficiency	ABILITY:Jester Class Feature|AUTOMATIC|Jester ~ Spells	ABILITY:Jester Class Feature|AUTOMATIC|Jester ~ Jester's Audacity	ABILITY:Jester Class Feature|AUTOMATIC|Jester ~ Jester's Performance	ABILITY:Jester Class Feature|AUTOMATIC|Jester ~ Fascinate|PRESKILL:1,Perform (Comedy)=3	ABILITY:Jester Class Feature|AUTOMATIC|Jester ~ Inspiring Quip|PRESKILL:1,Perform (Comedy)=3
+2	CAST:3,0	KNOWN:5,2	ABILITY:FEAT|AUTOMATIC|Deflect Arrows|PRESKILL:1,Perform (Comedy)=5
+3	CAST:3,1	KNOWN:6,3	ABILITY:Jester Class Feature|AUTOMATIC|Jester ~ Taunt|PRESKILL:1,Perform (Comedy)=3
+4	CAST:3,2,0	KNOWN:6,3,2
+5	CAST:3,3,1	KNOWN:6,4,3
+6	CAST:3,3,2	KNOWN:6,4,3	ABILITY:Jester Class Feature|AUTOMATIC|Jester ~ Calming Performance|PRESKILL:1,Perform (Comedy)=9	ABILITY:FEAT|AUTOMATIC|Snatch Arrows|PRESKILL:1,Perform (Comedy)=9
+7	CAST:3,3,2,0	KNOWN:6,4,4,2
+8	CAST:3,3,3,1	KNOWN:6,4,4,3
+9	CAST:3,3,3,2	KNOWN:6,4,4,3	ABILITY:Jester Class Feature|AUTOMATIC|Jester ~ Buffoonery|PRESKILL:1,Perform (Comedy)=12
+10	CAST:3,3,3,2,0	KNOWN:6,4,4,4,2	ABILITY:Jester Class Feature|AUTOMATIC|Jester ~ Bone Rattler
+11	CAST:3,3,3,3,1	KNOWN:6,4,4,4,3
+12	CAST:3,3,3,3,2	KNOWN:6,4,4,4,3	ABILITY:Jester Class Feature|AUTOMATIC|Jester ~ Vicious Lampoon|PRESKILL:1,Perform (Comedy)=15
+13	CAST:3,3,3,3,2,0	KNOWN:6,4,4,4,4,2
+14	CAST:4,3,3,3,3,1	KNOWN:6,4,4,4,4,3
+15	CAST:4,4,3,3,3,2	KNOWN:6,4,4,4,4,3	ABILITY:Jester Class Feature|AUTOMATIC|Jester ~ Vexing Dialogue|PRESKILL:1,Perform (Comedy)=18
+16	CAST:4,4,4,3,3,2,0	KNOWN:6,5,4,4,4,4,2
+17	CAST:4,4,4,4,3,3,1	KNOWN:6,5,5,4,4,4,3
+18	CAST:4,4,4,4,4,3,2	KNOWN:6,5,5,5,4,4,3	ABILITY:Jester Class Feature|AUTOMATIC|Jester ~ Scathing Wit|PRESKILL:1,Perform (Comedy)=21
+19	CAST:4,4,4,4,4,4,3	KNOWN:6,5,5,5,5,4,4
+20	CAST:4,4,4,4,4,4,4	KNOWN:6,5,5,5,5,5,4
+
+###Block: Nightstalker (PDF pp. 389-392)
+CLASS:Nightstalker	HD:6	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Nst	MAXLEVEL:20	SOURCEPAGE:p.390	DEFINE:NightstalkerLVL|0	BONUS:VAR|NightstalkerLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Nightstalker	STARTSKILLPTS:4	CSKILL:Balance|Bluff|Concentration|TYPE=Craft|Diplomacy|Disable Device|Escape Artist|Gather Information|Hide|Knowledge (Arcana)|Knowledge (Local)|Knowledge (Religion)|Listen|Move Silently|Open Lock|TYPE=Profession|Search|Sleight of Hand|Spellcraft|Spot|Survival|Use Magic Device|Use Rope
+CLASS:Nightstalker	SPELLSTAT:CHA	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:NO	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6	BONUS:CASTERLEVEL|Nightstalker|Caster_Level_Nightstalker	DEFINE:Caster_Level_Nightstalker|0	BONUS:VAR|Caster_Level_Nightstalker|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLNightstalker|0	BONUS:VAR|CasterLevelBLNightstalker|charbonusto("PCLEVEL","Nightstalker")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_Nightstalker+CasterLevelBLNightstalker|TYPE=Base	SPELLLEVEL:CLASS|Nightstalker=0|Cure Minor Wounds,Detect Magic,Disrupt Undead,Ghost Sound,Inflict Minor Wounds,Mage Hand,Touch of Fatigue	SPELLLEVEL:CLASS|Nightstalker=1|Cause Fear,Chill Touch,Comprehend Languages,Cure Light Wounds,Darkness,Deathwatch,Detect Secret Doors,Detect Undead,Doom,Hide from Undead,Identify,Inflict Light Wounds,Ray of Enfeeblement,Remove Fear,Unseen Servant	SPELLLEVEL:CLASS|Nightstalker=2|Augury,Calm Emotions,Command Undead,Cure Moderate Wounds,Death Knell,Detect Thoughts,False Life,Gentle Repose,Ghoul Touch,Inflict Moderate Wounds,Restoration (Lesser),Scare,See Invisibility,Spectral Hand	SPELLLEVEL:CLASS|Nightstalker=3|Animate Dead,Arcane Sight,Cure Serious Wounds,Daylight,Deeper Darkness,Halt Undead,Helping Hand,Inflict Serious Wounds,Locate Object,Ray of Exhaustion,Searing Light,Speak with Dead,Tongues,Vampiric Touch	SPELLLEVEL:CLASS|Nightstalker=4|Bestow Curse,Break Enchantment,Cure Critical Wounds,Death Ward,Detect Scrying,Discern Lies,Dismissal,Enervation,Fear,Inflict Critical Wounds,Locate Creature,Remove Curse,Restoration	SPELLLEVEL:CLASS|Nightstalker=5|Atonement,Blight,Commune,Cure Light Wounds (Mass),Inflict Light Wounds (Mass),Raise Dead,Slay Living,Telekinesis,Telepathic Bond,True Seeing,Waves of Fatigue	SPELLLEVEL:CLASS|Nightstalker=6|Banishment,Circle of Death,Create Undead,Cure Moderate Wounds (Mass),Find the Path,Harm,Heal,Inflict Moderate Wounds (Mass),Restoration (Greater),Undeath to Death
+1	CAST:2	ABILITY:Nightstalker Class Feature|AUTOMATIC|Nightstalker ~ Weapon and Armor Proficiency	ABILITY:Nightstalker Class Feature|AUTOMATIC|Nightstalker ~ Spells	ABILITY:Nightstalker Class Feature|AUTOMATIC|Nightstalker ~ Death Sight	ABILITY:Nightstalker Class Feature|AUTOMATIC|Nightstalker ~ Trapfinding	ABILITY:Nightstalker Class Feature|AUTOMATIC|Nightstalker ~ Spiritual Resilience
+2	CAST:3,0
+3	CAST:3,1	ABILITY:Nightstalker Class Feature|AUTOMATIC|Nightstalker ~ Whispers of the Dead
+4	CAST:3,2,0	ABILITY:Nightstalker Class Feature|AUTOMATIC|Nightstalker ~ Rebuke Undead
+5	CAST:3,3,1	ABILITY:Nightstalker Class Feature|AUTOMATIC|Nightstalker ~ Advanced Learning
+6	CAST:3,3,2	ABILITY:Nightstalker Class Feature|AUTOMATIC|Nightstalker ~ Spirit Companion
+7	CAST:3,3,2,0
+8	CAST:3,3,3,1
+9	CAST:3,3,3,2
+10	CAST:3,3,3,2,0
+11	CAST:3,3,3,3,1
+12	CAST:3,3,3,3,2
+13	CAST:3,3,3,3,2,0
+14	CAST:4,3,3,3,3,1
+15	CAST:4,4,3,3,3,2
+16	CAST:4,4,4,3,3,2,0
+17	CAST:4,4,4,4,3,3,1
+18	CAST:4,4,4,4,4,3,2
+19	CAST:4,4,4,4,4,4,3
+20	CAST:4,4,4,4,4,4,4	ABILITY:Nightstalker Class Feature|AUTOMATIC|Nightstalker ~ Spectral Symbiosis
+
+###Block: Urban Druid (PDF pp. 629-633)
+CLASS:Urban Druid	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|UDr	MAXLEVEL:20	SOURCEPAGE:p.630	PREALIGN:NG,TN,LN,NE	DEFINE:UrbanDruidLVL|0	DEFINE:UrbanShapeUses|0	DEFINE:UrbanShapeObject|0	BONUS:VAR|UrbanDruidLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Urban Druid	STARTSKILLPTS:4	CSKILL:Bluff|Concentration|TYPE=Craft|Diplomacy|Gather Information|Intimidate|Knowledge (Architecture and Engineering)|Knowledge (History)|Knowledge (Local)|TYPE=Perform|TYPE=Profession|Sense Motive|Speak Language|Spellcraft|Survival
+CLASS:Urban Druid	SPELLSTAT:CHA	BONUSSPELLSTAT:CHA	FACT:SpellType|Divine	MEMORIZE:YES	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	BONUS:CASTERLEVEL|Urban Druid|Caster_Level_UrbanDruid	DEFINE:Caster_Level_UrbanDruid|0	BONUS:VAR|Caster_Level_UrbanDruid|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLUrbanDruid|0	BONUS:VAR|CasterLevelBLUrbanDruid|charbonusto("PCLEVEL","Urban Druid")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_UrbanDruid+CasterLevelBLUrbanDruid|TYPE=Base	SPELLLEVEL:CLASS|Urban Druid=0|Create Water,Cure Minor Wounds,Detect Magic,Detect Poison,Guidance,Know Direction,Light,Mending,Purify Food and Drink,Read Magic,Resistance,Virtue	SPELLLEVEL:CLASS|Urban Druid=1|Alarm,Animate Rope,Charm Person,Comprehend Languages,Cure Light Wounds,Detect Secret Doors,Detect Undead,Endure Elements,Faerie Fire,Hold Portal,Jump,Longstrider,Magic Fang,Magic Stone,Obscure Object,Obscuring Mist,Pass without Trace	SPELLLEVEL:CLASS|Urban Druid=2|Barkskin,Bear's Endurance,Bull's Strength,Calm Emotions,Cat's Grace,Chill Metal,Delay Poison,Detect Thoughts,Eagle's Splendor,Enthrall,Fog Cloud,Heat Metal,Hold Person,Knock,Locate Object,Misdirection,Owl's Wisdom,Resist Energy,Restoration (Lesser),Rope Trick,Spider Climb,Suggestion,Summon Swarm,Warp Wood,Wood Shape	SPELLLEVEL:CLASS|Urban Druid=3|Call Lightning,Charm Monster,Contagion,Cure Moderate Wounds,Daylight,Diminish Plants,Glibness,Halt Undead,Keen Edge,Magic Fang (Greater),Neutralize Poison,Nondetection,Poison,Protection from Energy,Quench,Remove Disease,Shrink Item,Speak with Dead,Stinking Cloud,Tiny Hut,Tongues	SPELLLEVEL:CLASS|Urban Druid=4|Antiplant Shell,Blight,Cure Serious Wounds,Dispel Magic,Dominate Person,Freedom of Movement,Giant Vermin,Hold Monster,Legend Lore,Locate Creature,Minor Creation,Repel Vermin,Rusting Grasp,Scrying,Secure Shelter	SPELLLEVEL:CLASS|Urban Druid=5|Animate Objects,Atonement,Call Lightning Storm,Control Winds,Cure Critical Wounds,Death Ward,Fabricate,Hallow,Mage's Private Sanctum,Major Creation,Passwall,Repair Light Damage (Mass),Secret Chest,Stoneskin,Susurrus of the City,Transmute Mud to Rock,Transmute Rock to Mud,Unhallow,Wall of Stone	SPELLLEVEL:CLASS|Urban Druid=6|Antilife Shell,Bear's Endurance (Mass),Bull's Strength (Mass),Cat's Grace (Mass),Cure Light Wounds (Mass),Dispel Magic (Greater),Eagle's Splendor (Mass),Find the Path,Flesh to Stone,Guards and Wards,Move Earth,Owl's Wisdom (Mass),Repair Moderate Damage (Mass),Repel Wood,Spellstaff,Stone Tell,Stone to Flesh,Suggestion (Mass),Undeath to Death,Wall of Iron	SPELLLEVEL:CLASS|Urban Druid=7|Control Weather,Creeping Doom,Cure Moderate Wounds (Mass),Disintegrate,Heal,Mage's Magnificent Mansion,Phase Door,Repair Serious Damage (Mass),Scrying (Greater),Sequester,Statue,Transmute Metal to Wood,True Seeing,Wind Walk	SPELLLEVEL:CLASS|Urban Druid=8|Cure Serious Wounds (Mass),Dimensional Lock,Discern Location,Earthquake,Finger of Death,Iron Body,Maze,Polymorph Any Object,Repair Critical Damage (Mass),Repel Metal or Stone,Reverse Gravity,Word of Recall	SPELLLEVEL:CLASS|Urban Druid=9|Antipathy,Citygate,Cure Critical Wounds (Mass),Foresight,Freedom,Imprisonment,Regenerate,Shapechange,Storm of Vengeance,Sympathy
+1	CAST:3,1	ABILITY:Urban Druid Class Feature|AUTOMATIC|Urban Druid ~ Weapon and Armor Proficiency	ABILITY:Urban Druid Class Feature|AUTOMATIC|Urban Druid ~ Spells	ABILITY:Urban Druid Class Feature|AUTOMATIC|Urban Druid ~ Spontaneous Casting	ABILITY:Urban Druid Class Feature|AUTOMATIC|Urban Druid ~ City Sense	ABILITY:Urban Druid Class Feature|AUTOMATIC|Urban Druid ~ Favored City	ABILITY:Urban Druid Class Feature|AUTOMATIC|Urban Druid ~ Urban Companion
+2	CAST:4,2	ABILITY:Urban Druid Class Feature|AUTOMATIC|Urban Druid ~ Crowdwalk
+3	CAST:4,2,1	ABILITY:Urban Druid Class Feature|AUTOMATIC|Urban Druid ~ Alley Fighting
+4	CAST:5,3,2	ABILITY:Urban Druid Class Feature|AUTOMATIC|Urban Druid ~ Disease Immunity
+5	CAST:5,3,2,1	ABILITY:Urban Druid Class Feature|AUTOMATIC|Urban Druid ~ Urban Shape	BONUS:VAR|UrbanShapeUses|1
+6	CAST:5,3,3,2	BONUS:VAR|UrbanShapeUses|1
+7	CAST:6,4,3,2,1	BONUS:VAR|UrbanShapeUses|1
+8	CAST:6,4,3,3,2
+9	CAST:6,4,4,3,2,1	ABILITY:Urban Druid Class Feature|AUTOMATIC|Urban Druid ~ Information Network
+10	CAST:6,4,4,3,3,2	BONUS:VAR|UrbanShapeUses|1
+11	CAST:6,5,4,4,3,2,1
+12	CAST:6,5,4,4,3,3,2
+13	CAST:6,5,5,4,4,3,2,1
+14	CAST:6,5,5,4,4,3,3,2	BONUS:VAR|UrbanShapeUses|1
+15	CAST:6,5,5,5,4,4,3,2,1
+16	CAST:6,5,5,5,4,4,3,3,2	BONUS:VAR|UrbanShapeObject|1
+17	CAST:6,5,5,5,5,4,4,3,2,1
+18	CAST:6,5,5,5,5,4,4,3,3,2	BONUS:VAR|UrbanShapeUses|1	BONUS:VAR|UrbanShapeObject|1
+19	CAST:6,5,5,5,5,5,4,4,3,3
+20	CAST:6,5,5,5,5,5,4,4,4,4	BONUS:VAR|UrbanShapeObject|1
+
+###Block: Sohei (DMC) (PDF pp. 557-559)
+CLASS:Sohei (DMC)	HD:10	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Soh	MAXLEVEL:20	SOURCEPAGE:p.558	PREALIGN:LG,LN,LE	DEFINE:SoheiDMCLVL|0	DEFINE:SoheiKiFrenzyUses|0	DEFINE:SoheiDR|0	BONUS:VAR|SoheiDMCLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Sohei (DMC)	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (Religion)|TYPE=Profession
+CLASS:Sohei (DMC)	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	BONUS:CASTERLEVEL|Sohei (DMC)|floor(CL/2)	SPELLLEVEL:CLASS|Sohei (DMC)=1|Bane,Bless,Detect Chaos,Detect Law,Divine Favor,Doom,Endure Elements,Magic Weapon,Protection from Chaos,Resistance,Shield of Faith,Virtue	SPELLLEVEL:CLASS|Sohei (DMC)=2|Animal Messenger,Bull's Strength,Delay Poison,Remove Paralysis,Resist Energy,Restoration (Lesser),Shield Other	SPELLLEVEL:CLASS|Sohei (DMC)=3|Discern Lies,Dispel Magic,Magic Circle against Chaos,Magic Weapon (Greater),Prayer,Protection from Energy	SPELLLEVEL:CLASS|Sohei (DMC)=4|Death Ward,Dispel Chaos,Divine Power,Freedom of Movement,Neutralize Poison,Order's Wrath,Restoration,Spell Immunity
+1	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Weapon and Armor Proficiency	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Ki Frenzy	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Weapon Focus	BONUS:VAR|SoheiKiFrenzyUses|1	BONUS:ABILITYPOOL|Weapon Focus|1
+2	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Deflect Arrows	ABILITY:FEAT|AUTOMATIC|Deflect Arrows
+3	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Diehard	ABILITY:FEAT|AUTOMATIC|Diehard
+4	CAST:0,0	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Spells	BONUS:VAR|SoheiKiFrenzyUses|1
+5	CAST:0,0	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Strength of Mind
+6	CAST:0,1	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Defensive Strike
+7	CAST:0,1	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Damage Reduction	BONUS:VAR|SoheiDR|1
+8	CAST:0,1,0	BONUS:VAR|SoheiKiFrenzyUses|1
+9	CAST:0,1,0	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Mettle
+10	CAST:0,1,1	BONUS:VAR|SoheiDR|1
+11	CAST:0,1,1,0	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Greater Ki Frenzy
+12	CAST:0,1,1,1	BONUS:VAR|SoheiKiFrenzyUses|1
+13	CAST:0,1,1,1	BONUS:VAR|SoheiDR|1
+14	CAST:0,2,1,1,0
+15	CAST:0,2,1,1,1
+16	CAST:0,2,2,1,1	BONUS:VAR|SoheiKiFrenzyUses|1	BONUS:VAR|SoheiDR|1
+17	CAST:0,2,2,2,1	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Tireless Frenzy
+18	CAST:0,3,2,2,1
+19	CAST:0,3,3,3,2	BONUS:VAR|SoheiDR|1
+20	CAST:0,3,3,3,3	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Whirlwind Frenzy	BONUS:VAR|SoheiKiFrenzyUses|1
+
+###Block: Shaman (DMC) (PDF pp. 548-551)
+CLASS:Shaman (DMC)	HD:6	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Shm	MAXLEVEL:20	SOURCEPAGE:p.549	DEITY:Shaman Spirits	DEFINE:ShamanDMCLVL|0	DEFINE:ShamanDMCDomainCount|0	BONUS:VAR|ShamanDMCLVL|CL	BONUS:DOMAIN|NUMBER|ShamanDMCDomainCount	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Shaman (DMC)	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (Religion)|TYPE=Profession|Spellcraft
+CLASS:Shaman (DMC)	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Shaman (DMC)|Caster_Level_ShamanDMC	DEFINE:Caster_Level_ShamanDMC|0	BONUS:VAR|Caster_Level_ShamanDMC|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLShamanDMC|0	BONUS:VAR|CasterLevelBLShamanDMC|charbonusto("PCLEVEL","Shaman (DMC)")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_ShamanDMC+CasterLevelBLShamanDMC|TYPE=Base	SPELLLEVEL:CLASS|Shaman (DMC)=0|Cure Minor Wounds,Detect Magic,Detect Poison,Guidance,Inflict Minor Wounds,Mending,Purify Food and Drink,Read Magic,Resistance,Virtue|Shaman (DMC)=1|Bane,Bless,Bless Water,Calm Animals,Cure Light Wounds,Curse Water,Deathwatch,Detect Chaos,Detect Evil,Detect Good,Detect Law,Detect Undead,Doom,Endure Elements,Entropic Shield,Hide from Undead,Inflict Light Wounds,Obscuring Mist,Protection from Chaos,Protection from Evil,Protection from Good,Protection from Law,Shield of Faith,Speak with Animals,Summon Nature's Ally I|Shaman (DMC)=2|Aid,Animal Messenger,Augury,Bull's Strength,Calm Emotions,Cure Moderate Wounds,Delay Poison,Enthrall,Ghoul Touch,Hold Person,Inflict Moderate Wounds,Remove Paralysis,Restoration (Lesser),Speak with Plants,Summon Nature's Ally II|Shaman (DMC)=3|Bestow Curse,Blindness/Deafness,Contagion,Cure Serious Wounds,Dispel Magic,Inflict Serious Wounds,Levitate,Locate Object,Magic Circle against Chaos,Magic Circle against Evil,Magic Circle against Good,Magic Circle against Law,Magic Vestment,Prayer,Protection from Energy,Remove Blindness/Deafness,Remove Curse,Remove Disease,Speak with Dead,Summon Nature's Ally III,Tongues|Shaman (DMC)=4|Air Walk,Chaos Hammer,Cure Critical Wounds,Discern Lies,Dismissal,Divination,Holy Smite,Inflict Critical Wounds,Neutralize Poison,Order's Wrath,Polymorph,Reincarnate,Restoration,Spell Immunity,Summon Nature's Ally IV,Unholy Blight|Shaman (DMC)=5|Atonement,Break Enchantment,Control Winds,Cure Light Wounds (Mass),Dispel Chaos,Dispel Evil,Dispel Good,Dispel Law,Dream,Ethereal Jaunt,Inflict Light Wounds (Mass),Nightmare,Raise Dead,Scrying,Slay Living,Summon Nature's Ally V,True Seeing|Shaman (DMC)=6|Animate Objects,Dispel Magic (Greater),Etherealness,Find the Path,Geas/Quest,Harm,Heal,Plane Shift,Stoneskin,Summon Nature's Ally VI,Wind Walk|Shaman (DMC)=7|Blasphemy,Control Weather,Dictum,Holy Word,Refuge,Regenerate,Repulsion,Restoration (Greater),Resurrection,Scrying (Greater),Summon Nature's Ally VII,Sunbeam,Word of Chaos|Shaman (DMC)=8|Antimagic Field,Cloak of Chaos,Discern Location,Earthquake,Heal (Mass),Holy Aura,Shield of Law,Summon Nature's Ally VIII,Unholy Aura|Shaman (DMC)=9|Astral Projection,Gate,Miracle,Soul Bind,Summon Nature's Ally IX,True Resurrection
+1	CAST:3,1	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Weapon and Armor Proficiency	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Spells	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Domains	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Spontaneous Casting	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Unarmed Strike	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Animal Companion	BONUS:VAR|ShamanDMCDomainCount|2
+2	CAST:4,2	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Spirit Sight
+3	CAST:4,2,1	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Turn or Rebuke Undead
+4	CAST:5,3,2	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Bonus Feat	BONUS:ABILITYPOOL|Shaman (DMC) Bonus Feat|1
+5	CAST:5,3,2,1	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Spirits' Favor
+6	CAST:5,3,3,2
+7	CAST:6,4,3,2,1
+8	CAST:6,4,3,3,2	BONUS:ABILITYPOOL|Shaman (DMC) Bonus Feat|1
+9	CAST:6,4,4,3,2,1
+10	CAST:6,4,4,3,3,2
+11	CAST:6,4,4,4,3,2,1	BONUS:VAR|ShamanDMCDomainCount|1	BONUS:SPELLCAST|CLASS=Shaman (DMC);LEVEL=1|1
+12	CAST:6,4,4,4,3,3,2	BONUS:ABILITYPOOL|Shaman (DMC) Bonus Feat|1
+13	CAST:6,4,4,4,4,3,2,1	BONUS:SPELLCAST|CLASS=Shaman (DMC);LEVEL=2|1
+14	CAST:6,4,4,4,4,3,3,2
+15	CAST:6,4,4,4,4,4,3,2,1	BONUS:SPELLCAST|CLASS=Shaman (DMC);LEVEL=3|1
+16	CAST:6,4,4,4,4,4,3,3,2	BONUS:ABILITYPOOL|Shaman (DMC) Bonus Feat|1
+17	CAST:6,4,4,4,4,4,4,3,2,1	BONUS:SPELLCAST|CLASS=Shaman (DMC);LEVEL=4|1
+18	CAST:6,4,4,4,4,4,4,3,3,2
+19	CAST:6,4,4,4,4,4,4,4,3,3	BONUS:SPELLCAST|CLASS=Shaman (DMC);LEVEL=5|1
+20	CAST:6,4,4,4,4,4,4,4,4,4	BONUS:ABILITYPOOL|Shaman (DMC) Bonus Feat|1

@@ -1,0 +1,8 @@
+# Shaman (DMC) spells existing only in other books, loaded with: PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
+
+Ancestor (Shaman).MOD	SPELLLEVEL:DOMAIN|Ancestor (Shaman)=2|Ancestral Vengeance|Ancestor (Shaman)=8|Compel
+Celestial (Shaman).MOD	SPELLLEVEL:DOMAIN|Celestial (Shaman)=3|Substitution|Celestial (Shaman)=4|Lesser Spirit Ally|Celestial (Shaman)=6|Spirit Ally|Celestial (Shaman)=8|Greater Spirit Ally
+Fortune (Shaman).MOD	SPELLLEVEL:DOMAIN|Fortune (Shaman)=3|Substitution
+Fury (Shaman).MOD	SPELLLEVEL:DOMAIN|Fury (Shaman)=1|Weapon Bless
+Guardian (Shaman).MOD	SPELLLEVEL:DOMAIN|Guardian (Shaman)=3|Substitution|Guardian (Shaman)=4|Snake Barrier
+Nature (Shaman).MOD	SPELLLEVEL:DOMAIN|Nature (Shaman)=1|Trance

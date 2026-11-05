@@ -20,6 +20,9 @@ ABILITYCATEGORY:dmc_abilitycategories.lst
 ABILITYCATEGORY:dmc_abilitycategories_cadv.lst|PRECAMPAIGN:1,INCLUDES=Complete Adventurer
 ABILITYCATEGORY:dmc_abilitycategories_nodcs.lst|!PRECAMPAIGN:1,INCLUDES=Dragonlance Campaign Setting
 ABILITYCATEGORY:dmc_abilitycategories_nolott.lst|!PRECAMPAIGN:1,INCLUDES=Legends of the Twins
+ABILITYCATEGORY:dmc_abilitycategories_shamanfeat_core.lst|!PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Complete Warrior
+ABILITYCATEGORY:dmc_abilitycategories_shamanfeat_oa.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
+ABILITYCATEGORY:dmc_abilitycategories_shamanfeat_cw.lst|PRECAMPAIGN:1,INCLUDES=Complete Warrior|!PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
 ABILITY:dmc_abilities.lst
 ABILITY:dmc_abilities_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
 ABILITY:dmc_feats.lst
@@ -35,7 +38,17 @@ ABILITY:dmc_abilities_sc.lst|PRECAMPAIGN:1,INCLUDES=Spell Compendium
 ABILITY:dmc_abilities_bovd.lst|PRECAMPAIGN:1,INCLUDES=Book of Vile Darkness
 ABILITY:dmc_abilities_nodcs.lst|!PRECAMPAIGN:1,INCLUDES=Dragonlance Campaign Setting
 ABILITY:dmc_abilities_nolott.lst|!PRECAMPAIGN:1,INCLUDES=Legends of the Twins
+ABILITY:dmc_abilities_defstrike.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Complete Warrior
 DOMAIN:dmc_domains.lst
+DOMAIN:dmc_domains_shaman.lst
+DOMAIN:dmc_shaman_domains_opt2.lst|PRECAMPAIGN:1,INCLUDES=35e ~ Ghostwalk,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Sandstorm
+DOMAIN:dmc_shaman_domains_opt4.lst|PRECAMPAIGN:1,INCLUDES=Complete Arcane,INCLUDES=Oriental Adventures v.3.5
+DOMAIN:dmc_shaman_domains_opt5.lst|PRECAMPAIGN:1,INCLUDES=Complete Arcane,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Spell Compendium
+DOMAIN:dmc_shaman_domains_opt6.lst|PRECAMPAIGN:1,INCLUDES=Complete Arcane,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Spell Compendium,INCLUDES=Underdark
+DOMAIN:dmc_shaman_domains_opt7.lst|PRECAMPAIGN:1,INCLUDES=Complete Divine,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Spell Compendium
+DOMAIN:dmc_shaman_domains_opt8.lst|PRECAMPAIGN:1,INCLUDES=Complete Divine,INCLUDES=Spell Compendium
+DOMAIN:dmc_shaman_domains_opt10.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
+DOMAIN:dmc_shaman_domains_opt11.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Player's Guide to Faerun
 SPELL:dmc_spells.lst
 SPELL:dmc_spells_class.lst
 SPELL:dmc_spells_domains_sc.lst|PRECAMPAIGN:1,INCLUDES=Spell Compendium
@@ -43,6 +56,21 @@ SPELL:dmc_spells_domains_bovd.lst|PRECAMPAIGN:1,INCLUDES=Book of Vile Darkness
 CLASS:dmc_classes.lst
 CLASS:dmc_classes_nodcs.lst|!PRECAMPAIGN:1,INCLUDES=Dragonlance Campaign Setting
 CLASS:dmc_classes_nolott.lst|!PRECAMPAIGN:1,INCLUDES=Legends of the Twins
+CLASS:dmc_classes_dcs.lst|PRECAMPAIGN:1,INCLUDES=Dragonlance Campaign Setting
+CLASS:dmc_classes_urbandruid_opt1.lst|PRECAMPAIGN:1,INCLUDES=Eberron Campaign Setting,INCLUDES=Spell Compendium,INCLUDES=Complete Arcane
+CLASS:dmc_classes_urbandruid_opt2.lst|PRECAMPAIGN:1,INCLUDES=Spell Compendium,INCLUDES=Complete Arcane
+CLASS:dmc_classes_urbandruid_opt3.lst|PRECAMPAIGN:1,INCLUDES=Spell Compendium,INCLUDES=Forgotten Realms Campaign Setting (3.5)
+CLASS:dmc_classes_oa.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
+CLASS:dmc_shaman_classes_opt1.lst|PRECAMPAIGN:1,INCLUDES=3.5e ~ Heroes of Horror,INCLUDES=Complete Divine,INCLUDES=Oriental Adventures v.3.5
+CLASS:dmc_shaman_classes_opt3.lst|PRECAMPAIGN:1,INCLUDES=Book of Exalted Deeds,INCLUDES=Oriental Adventures v.3.5
+CLASS:dmc_shaman_classes_opt4.lst|PRECAMPAIGN:1,INCLUDES=Complete Arcane,INCLUDES=Oriental Adventures v.3.5
+CLASS:dmc_shaman_classes_opt5.lst|PRECAMPAIGN:1,INCLUDES=Complete Arcane,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Spell Compendium
+CLASS:dmc_shaman_classes_opt7.lst|PRECAMPAIGN:1,INCLUDES=Complete Divine,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Spell Compendium
+CLASS:dmc_shaman_classes_opt9.lst|PRECAMPAIGN:1,INCLUDES=Draconomicon,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Spell Compendium
+CLASS:dmc_shaman_classes_opt10.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
+CLASS:dmc_shaman_classes_opt11.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Player's Guide to Faerun
+CLASS:dmc_shaman_classes_opt12.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Races of Eberron
+CLASS:dmc_shaman_classes_opt13.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Spell Compendium
 LANGUAGE:dmc_languages.lst
 WEAPONPROF:dmc_profs_weapon.lst
 ARMORPROF:dmc_profs_armor.lst
@@ -61,3 +89,5 @@ TEMPLATE:dmc_templates.lst
 # Built for PCGen Version: 6.04.01
 # MINVER:6.4
 # COMMENTS: Races (pp. 3-74), new base classes (pp. 75-708), Feats, Flaws & Styles (pp. 1058-1176), Arms & Equipment (pp. 1198-1270), Spells & Domains (pp. 1280-1362), Vestiges (pp. 1371-1419) and Magic Items (pp. 1420-1595). Class variants, prestige classes and psionic classes not yet converted.
+
+DEITY:dmc_deities_shaman.lst

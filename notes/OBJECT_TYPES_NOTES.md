@@ -145,3 +145,11 @@ spell per day less at each spell level (minimum 0) and one spell known less at e
 derived from the PHB sorcerer's data in the repository (20 level lines, CAST and KNOWN only). Matches the rule's examples:
 1st level 4/2 per day; 4th level 5/2/1 known; 5th level 5/3/1. Verified in PCGen (Cha 19): known and per day at levels
 1/4/5/20 exactly as derived (+ Charisma bonus spells per day). The spell list itself (SPELLLIST:1|Sorcerer) was already right.
+
+## Dragonlance Campaign Setting: Mystic – spell list and spontaneous casting (your decision)
+Rule: a mystic casts divine spells chosen from the cleric spell list; Wisdom 10 + spell level to cast; bonus spells and save DC
+from Wisdom. The class had SPELLSTAT:WIS and SpellType Divine but no spell list (PCGen never offered one, so no spells) and
+no MEMORIZE:NO (treated as a preparing caster despite its spells-known table). Added SPELLLIST:1|Cleric, MEMORIZE:NO,
+BONUSSPELLSTAT:WIS (as the compendium's reprint). Verified in PCGen: the class now carries these tokens; a 10th-level mystic
+with Wisdom 12 has the cleric list (cure light wounds, bless, prayer; no fireball) and casts only up to 2nd level, as the rule
+requires. Not changed: its domain spells ("+d") are not added as known spells - the compendium's reprint does that.

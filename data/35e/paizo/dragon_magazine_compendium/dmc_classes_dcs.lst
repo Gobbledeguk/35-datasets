@@ -1,0 +1,4 @@
+# Dragon Magazine Compendium - spells of the Dragonlance Campaign Setting on compendium class lists,
+# loaded only with that book (the PCC line has PRECAMPAIGN:1,INCLUDES=Dragonlance Campaign Setting).
+
+CLASS:Nightstalker.MOD	SPELLLEVEL:CLASS|Nightstalker=6|Spirit Walk

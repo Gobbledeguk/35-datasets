@@ -1,0 +1,9 @@
+# Shaman (DMC) spells existing only in other books, loaded with: PRECAMPAIGN:1,INCLUDES=Complete Arcane,INCLUDES=Oriental Adventures v.3.5
+
+Celestial (Shaman).MOD	SPELLLEVEL:DOMAIN|Celestial (Shaman)=2|Commune with Lesser Spirit|Celestial (Shaman)=5|Commune with Greater Spirit
+Divination (Shaman).MOD	SPELLLEVEL:DOMAIN|Divination (Shaman)=5|Commune with Greater Spirit
+Flame (Shaman).MOD	SPELLLEVEL:DOMAIN|Flame (Shaman)=5|Fire Breath|Flame (Shaman)=9|Internal Fire
+Grave (Shaman).MOD	SPELLLEVEL:DOMAIN|Grave (Shaman)=1|Ghost Light|Grave (Shaman)=4|Wall of Bones
+Hero (Shaman).MOD	SPELLLEVEL:DOMAIN|Hero (Shaman)=8|Giant Size
+Metal (Shaman).MOD	SPELLLEVEL:DOMAIN|Metal (Shaman)=1|Iron Scarf|Metal (Shaman)=3|Magnetism
+Nature (Shaman).MOD	SPELLLEVEL:DOMAIN|Nature (Shaman)=2|Commune with Lesser Spirit|Nature (Shaman)=4|Elemental Ward|Nature (Shaman)=5|Commune with Greater Spirit

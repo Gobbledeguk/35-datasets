@@ -1,0 +1,3 @@
+# Shaman (DMC) spells existing only in other books, loaded with: PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Races of Eberron
+
+CLASS:Shaman (DMC).MOD	SPELLLEVEL:CLASS|Shaman (DMC)=6|Force Shapechange

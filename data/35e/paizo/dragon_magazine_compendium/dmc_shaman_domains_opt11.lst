@@ -1,0 +1,4 @@
+# Shaman (DMC) spells existing only in other books, loaded with: PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Player's Guide to Faerun
+
+Guardian (Shaman).MOD	SPELLLEVEL:DOMAIN|Guardian (Shaman)=2|Warning
+Nature (Shaman).MOD	SPELLLEVEL:DOMAIN|Nature (Shaman)=3|Possess Animal
