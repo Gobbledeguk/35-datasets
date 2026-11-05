@@ -83,6 +83,7 @@ RACE:dmc_races.lst
 RACE:dmc_races_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
 RACE:dmc_races_ca.lst|PRECAMPAIGN:1,INCLUDES=Complete Arcane
 RACE:dmc_races_cadv.lst|PRECAMPAIGN:1,INCLUDES=Complete Adventurer
+RACE:dmc_races_companions.lst
 TEMPLATE:dmc_templates.lst
 
 # ENTRY DATE: 2026-10
@@ -91,3 +92,4 @@ TEMPLATE:dmc_templates.lst
 # COMMENTS: Races (pp. 3-74), new base classes (pp. 75-708), Feats, Flaws & Styles (pp. 1058-1176), Arms & Equipment (pp. 1198-1270), Spells & Domains (pp. 1280-1362), Vestiges (pp. 1371-1419) and Magic Items (pp. 1420-1595). Class variants, prestige classes and psionic classes not yet converted.
 
 DEITY:dmc_deities_shaman.lst
+COMPANIONMOD:dmc_companionmods.lst

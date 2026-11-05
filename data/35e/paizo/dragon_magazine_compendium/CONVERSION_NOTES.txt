@@ -1139,10 +1139,32 @@ and antipathy 9 (Guardian), transformation 7 (Hero), power word kill 9 (War); wi
 weapon bless 1, lesser spirit ally 4 and the OA spells on the class list (trance, ancestral vengeance); fireball not on the list.
 No load messages - core only, with Oriental Adventures, and with Complete Warrior.
 
+COMPANION CREATURES (04/11/2026) - built by companions_build.py
+- Gens (PDF pp. 539-541): dmc_races_companions.lst - Air, Earth, Fire and Water Gen as the repository's familiar races
+  ("Companion ~ Air Gen", ...): Tiny outsiders (subtype + Extraplanar), 1 outsider HD, the book's ability scores, speeds (fly,
+  perfect; water gen swim 20 ft.), natural armor, two slams (fire gen +1 fire, as text), darkvision 60 ft., Combat Casting and Weapon
+  Finesse, the MM's Immunity to/Vulnerability to abilities, elemental travel as plane shift at will (caster level 13); traits
+  (air/earth mastery, heat, amphibious, elemental endurance, fetch spells, elemental travel) as "Gen ~ ..." abilities.
+  The sha'ir's Summon Gen Familiar gives one familiar (FOLLOWERS:Familiar|1, FamiliarLVL = sha'ir level, declared there), and
+  each gen choice offers only its gen (COMPANIONLIST:Familiar). It advances with the PHB familiar companion mods; the gen's
+  Intelligence increase is not suppressed (the book says it doesn't increase).
+- Undead minion (PDF pp. 187-188): a companion type "Undead Minion" (FOLLOWERS:Undead Minion|1, UndeadMinionLVL = death master
+  level): the Monster Manual's Skeleton (Wolf) and Zombie (Troglodyte), plus the book's alternative lists at level -3 (bugbear
+  zombie, ghoul, owlbear skeleton), -6 (chimera skeleton, minotaur/ogre/wyvern zombie), -9 (allip, ettin skeleton, ghast, gray
+  render zombie, wight), -12 (cloud giant skeleton, mummy, wraith), -15 (spectre). dmc_companionmods.lst: +2 HD and +2 Str/Dex
+  per step (5th, 9th, 13th, 17th) and turn resistance +4, unholy might, persistent corruption, link of the grave, relentless undead
+  (fast healing 3) as "Undead Minion ~ ..." abilities.
+Verified in PCGen 6.08 (35e): a 1st-level sha'ir with the air gen chosen has one familiar slot offering only the Air Gen; familiar
+level 1. A death master has one minion slot: wolf skeleton and troglodyte zombie at 1st; at 10th also the -3/-6/-9 lists (14
+creatures), not the -12/-15 ones; minion level 10. An air gen (race + 1 outsider HD, base scores 10): AC 15 (touch 14, flat-footed
+13), BAB +1, saves +3/+4/+4, Str 7 Dex 14 Con 12 Int 13 Wis 15 Cha 10, walk 20/fly 70 ft., darkvision 60 ft., Tiny outsider, 1d8+1;
+slams, immunity to electricity, vulnerability to acid, air mastery, plane shift, Weapon Finesse, Combat Casting, Auran on the
+sheet. No load messages. (Found and fixed while testing: FamiliarLVL and UndeadMinionLVL needed their own DEFINE.)
+
 STATUS (04/11/2026)
 - All 14 base classes of the classes section are rebuilt and verified: Master, Battle Dancer, Mariner, Mountebank (DMC), Noble,
   Mystic, Sha'ir, Savant, Death Master, Jester, Nightstalker, Urban Druid, Sohei (DMC), Shaman (DMC).
-- Open: the gen familiar (Sha'ir) and undead minion (Death Master) as companion creatures.
+- The gen familiar (Sha'ir) and the undead minion (Death Master) are available as companions (see COMPANION CREATURES).
 
 ======================================================================
 FILE LAYOUT (consolidated)
@@ -1167,6 +1189,7 @@ whole file under one condition, so files with different conditions or object typ
 - dmc_domains_shaman.lst, dmc_deities_shaman.lst <- the 19 shaman domains and the "Shaman Spirits" pseudo-deity
 - dmc_shaman_classes_opt*.lst, dmc_shaman_domains_opt*.lst <- Shaman (DMC) class/domain spells from other books, loaded with them
 - dmc_abilitycategories_shamanfeat_core/oa/cw.lst <- the Shaman (DMC) bonus feat list, one variant by the books loaded
+- dmc_races_companions.lst, dmc_companionmods.lst <- the gens (sha'ir familiars) and the undead minion's progression
 - one file per optional book where content depends on it: _xph (Expanded Psionics: racial, domain, feat additions), _sc,
   _bovd, _cadv, _ca, _rs, _rw, vestiges (Tome of Magic), flaws (Unearthed Arcana), feats_nocw (only without Complete Warrior)
 - separate by type as in the repo: races, templates, languages, domains, spells + class/domain spell lists (like the PHB's

@@ -1,0 +1,8 @@
+# Dragon Magazine Compendium - the death master's undead minion (PDF p.187): bonus Hit Dice and Str/Dex +2 per four
+# death master levels after 1st, and its special abilities (as the PHB companion mods).
+
+FOLLOWER:UndeadMinionLVL=1	TYPE:Undead Minion	ABILITY:Special Ability|AUTOMATIC|Undead Minion ~ Turn Resistance
+FOLLOWER:UndeadMinionLVL=5	TYPE:Undead Minion	HD:2	BONUS:STAT|STR|2	BONUS:STAT|DEX|2	ABILITY:Special Ability|AUTOMATIC|Undead Minion ~ Unholy Might
+FOLLOWER:UndeadMinionLVL=9	TYPE:Undead Minion	HD:2	BONUS:STAT|STR|2	BONUS:STAT|DEX|2	ABILITY:Special Ability|AUTOMATIC|Undead Minion ~ Persistent Corruption
+FOLLOWER:UndeadMinionLVL=13	TYPE:Undead Minion	HD:2	BONUS:STAT|STR|2	BONUS:STAT|DEX|2	ABILITY:Special Ability|AUTOMATIC|Undead Minion ~ Link of the Grave
+FOLLOWER:UndeadMinionLVL=17	TYPE:Undead Minion	HD:2	BONUS:STAT|STR|2	BONUS:STAT|DEX|2	ABILITY:Special Ability|AUTOMATIC|Undead Minion ~ Relentless Undead
