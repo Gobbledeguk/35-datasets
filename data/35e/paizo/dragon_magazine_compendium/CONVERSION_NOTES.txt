@@ -1161,6 +1161,27 @@ creatures), not the -12/-15 ones; minion level 10. An air gen (race + 1 outsider
 slams, immunity to electricity, vulnerability to acid, air mastery, plane shift, Weapon Finesse, Combat Casting, Auran on the
 sheet. No load messages. (Found and fixed while testing: FamiliarLVL and UndeadMinionLVL needed their own DEFINE.)
 
+TEMPLATES FROM SIDEBARS (04/11/2026) - built by templates_build.py
+- A scan of the whole PDF for statistics blocks found no monsters besides the four gens; the playable races (para-genasi,
+  exiled dwarf, declining elf, giff, insectare) and the Remade template were already converted. But two templates printed as
+  sidebars on magic-item pages had been converted as wondrous items (cost 0) in dmc_equip_magic.lst - both removed there and
+  built as templates in dmc_templates.lst (read from the page images where the text extraction was garbled):
+- Hiveblood Creature (p.1529, Dungeon 127): giants and humanoids; type aberration (augmented subtype); natural armor +2; bite by
+  size (the sidebar's table, Medium 1d6) through hidden sub-templates chosen by TEMPLATE:CHOOSE and PRESIZEEQ (the MM Half-Fiend's
+  form); darkvision 60 ft.; limited hive mind; immunity to poison; resistance cold 10, electricity/fire/sonic 5; Str +4, Dex +2,
+  Con +2, Int -4 (minimum 3), Cha -4; CR +1; level adjustment +2; PREALIGN:LN (always lawful neutral). The print omits the hive
+  mind's distance ("within in miles") - noted in the description.
+- Savage Creature (p.1553, Dungeon 140): intelligent corporeal aberrations, animals, dragons, fey, giants, humanoids, magical
+  beasts, monstrous humanoids; chaotic subtype; natural armor +2; speed +10 ft.; bite (Medium 1d8, scaled one step above the
+  standard by size); death throes, disease (savage fever), afflicted, ferocity; DR 5/magic; darkvision 60 ft.; immunity to disease,
+  mind-affecting and stunning (abilities) and to exhaustion, fatigue and pain (text); acid resistance 10; Str +4, Con +4, Int -6;
+  +4 Escape Artist/Intimidate/Listen/Spot, -4 Disguise/Diplomacy/Gather Information; CR +1; level adjustment +3; PREALIGN:CE.
+Verified in PCGen 6.08 (35e; human fighter 3, scores 10): Hiveblood - aberration, AC 13 (natural +2), Str 14 Dex 12 Con 12 Int 6
+Wis 10 Cha 6, darkvision 60 ft., cold resistance 10, CR 4, poison immunity and limited hive mind on the sheet. Savage - humanoid,
+AC 12, Str 14 Con 14 Int 4, speed 40 ft., darkvision, DR 5/magic, CR 4, Escape Artist +4, Diplomacy -4, acid resistance 10,
+immunities, death throes, savage fever, afflicted, ferocity on the sheet. No load messages. (The bite sub-template is chosen when
+a template is applied in PCGen; hand-written test characters skip that step - the MM Half-Fiend behaves the same.)
+
 STATUS (04/11/2026)
 - All 14 base classes of the classes section are rebuilt and verified: Master, Battle Dancer, Mariner, Mountebank (DMC), Noble,
   Mystic, Sha'ir, Savant, Death Master, Jester, Nightstalker, Urban Druid, Sohei (DMC), Shaman (DMC).
