@@ -226,9 +226,9 @@ CLASS:Sohei (DMC)	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZ
 20	CAST:0,3,3,3,3	ABILITY:Sohei (DMC) Class Feature|AUTOMATIC|Sohei (DMC) ~ Whirlwind Frenzy	BONUS:VAR|SoheiKiFrenzyUses|1
 
 ###Block: Shaman (DMC) (PDF pp. 548-551)
-CLASS:Shaman (DMC)	HD:6	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Shm	MAXLEVEL:20	SOURCEPAGE:p.549	DEITY:Shaman Spirits	DEFINE:ShamanDMCLVL|0	DEFINE:ShamanDMCDomainCount|0	BONUS:VAR|ShamanDMCLVL|CL	BONUS:DOMAIN|NUMBER|ShamanDMCDomainCount	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Shaman (DMC)	HD:6	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Shm	MAXLEVEL:20	SOURCEPAGE:p.549	DEFINE:ShamanDMCLVL|0	DEFINE:ShamanDMCDomainCount|0	BONUS:VAR|ShamanDMCLVL|CL	BONUS:DOMAIN|NUMBER|ShamanDMCDomainCount	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
 CLASS:Shaman (DMC)	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (Religion)|TYPE=Profession|Spellcraft
-CLASS:Shaman (DMC)	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Shaman (DMC)|Caster_Level_ShamanDMC	DEFINE:Caster_Level_ShamanDMC|0	BONUS:VAR|Caster_Level_ShamanDMC|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLShamanDMC|0	BONUS:VAR|CasterLevelBLShamanDMC|charbonusto("PCLEVEL","Shaman (DMC)")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_ShamanDMC+CasterLevelBLShamanDMC|TYPE=Base	SPELLLEVEL:CLASS|Shaman (DMC)=0|Cure Minor Wounds,Detect Magic,Detect Poison,Guidance,Inflict Minor Wounds,Mending,Purify Food and Drink,Read Magic,Resistance,Virtue|Shaman (DMC)=1|Bane,Bless,Bless Water,Calm Animals,Cure Light Wounds,Curse Water,Deathwatch,Detect Chaos,Detect Evil,Detect Good,Detect Law,Detect Undead,Doom,Endure Elements,Entropic Shield,Hide from Undead,Inflict Light Wounds,Obscuring Mist,Protection from Chaos,Protection from Evil,Protection from Good,Protection from Law,Shield of Faith,Speak with Animals,Summon Nature's Ally I|Shaman (DMC)=2|Aid,Animal Messenger,Augury,Bull's Strength,Calm Emotions,Cure Moderate Wounds,Delay Poison,Enthrall,Ghoul Touch,Hold Person,Inflict Moderate Wounds,Remove Paralysis,Restoration (Lesser),Speak with Plants,Summon Nature's Ally II|Shaman (DMC)=3|Bestow Curse,Blindness/Deafness,Contagion,Cure Serious Wounds,Dispel Magic,Inflict Serious Wounds,Levitate,Locate Object,Magic Circle against Chaos,Magic Circle against Evil,Magic Circle against Good,Magic Circle against Law,Magic Vestment,Prayer,Protection from Energy,Remove Blindness/Deafness,Remove Curse,Remove Disease,Speak with Dead,Summon Nature's Ally III,Tongues|Shaman (DMC)=4|Air Walk,Chaos Hammer,Cure Critical Wounds,Discern Lies,Dismissal,Divination,Holy Smite,Inflict Critical Wounds,Neutralize Poison,Order's Wrath,Polymorph,Reincarnate,Restoration,Spell Immunity,Summon Nature's Ally IV,Unholy Blight|Shaman (DMC)=5|Atonement,Break Enchantment,Control Winds,Cure Light Wounds (Mass),Dispel Chaos,Dispel Evil,Dispel Good,Dispel Law,Dream,Ethereal Jaunt,Inflict Light Wounds (Mass),Nightmare,Raise Dead,Scrying,Slay Living,Summon Nature's Ally V,True Seeing|Shaman (DMC)=6|Animate Objects,Dispel Magic (Greater),Etherealness,Find the Path,Geas/Quest,Harm,Heal,Plane Shift,Stoneskin,Summon Nature's Ally VI,Wind Walk|Shaman (DMC)=7|Blasphemy,Control Weather,Dictum,Holy Word,Refuge,Regenerate,Repulsion,Restoration (Greater),Resurrection,Scrying (Greater),Summon Nature's Ally VII,Sunbeam,Word of Chaos|Shaman (DMC)=8|Antimagic Field,Cloak of Chaos,Discern Location,Earthquake,Heal (Mass),Holy Aura,Shield of Law,Summon Nature's Ally VIII,Unholy Aura|Shaman (DMC)=9|Astral Projection,Gate,Miracle,Soul Bind,Summon Nature's Ally IX,True Resurrection
+CLASS:Shaman (DMC)	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	ADDDOMAINS:Ancestor (Shaman)|Celestial (Shaman)|Community (Shaman)|Divination (Shaman)|Flame (Shaman)|Fortune (Shaman)|Fury (Shaman)|Grave (Shaman)|Guardian (Shaman)|Hero (Shaman)|Knowledge (Shaman)|Metal (Shaman)|Nature (Shaman)|River (Shaman)|Stone (Shaman)|Travel (Shaman)|Trickery (Shaman)|War (Shaman)|Wood (Shaman)	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Shaman (DMC)|Caster_Level_ShamanDMC	DEFINE:Caster_Level_ShamanDMC|0	BONUS:VAR|Caster_Level_ShamanDMC|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLShamanDMC|0	BONUS:VAR|CasterLevelBLShamanDMC|charbonusto("PCLEVEL","Shaman (DMC)")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_ShamanDMC+CasterLevelBLShamanDMC|TYPE=Base	SPELLLEVEL:CLASS|Shaman (DMC)=0|Cure Minor Wounds,Detect Magic,Detect Poison,Guidance,Inflict Minor Wounds,Mending,Purify Food and Drink,Read Magic,Resistance,Virtue|Shaman (DMC)=1|Bane,Bless,Bless Water,Calm Animals,Cure Light Wounds,Curse Water,Deathwatch,Detect Chaos,Detect Evil,Detect Good,Detect Law,Detect Undead,Doom,Endure Elements,Entropic Shield,Hide from Undead,Inflict Light Wounds,Obscuring Mist,Protection from Chaos,Protection from Evil,Protection from Good,Protection from Law,Shield of Faith,Speak with Animals,Summon Nature's Ally I|Shaman (DMC)=2|Aid,Animal Messenger,Augury,Bull's Strength,Calm Emotions,Cure Moderate Wounds,Delay Poison,Enthrall,Ghoul Touch,Hold Person,Inflict Moderate Wounds,Remove Paralysis,Restoration (Lesser),Speak with Plants,Summon Nature's Ally II|Shaman (DMC)=3|Bestow Curse,Blindness/Deafness,Contagion,Cure Serious Wounds,Dispel Magic,Inflict Serious Wounds,Levitate,Locate Object,Magic Circle against Chaos,Magic Circle against Evil,Magic Circle against Good,Magic Circle against Law,Magic Vestment,Prayer,Protection from Energy,Remove Blindness/Deafness,Remove Curse,Remove Disease,Speak with Dead,Summon Nature's Ally III,Tongues|Shaman (DMC)=4|Air Walk,Chaos Hammer,Cure Critical Wounds,Discern Lies,Dismissal,Divination,Holy Smite,Inflict Critical Wounds,Neutralize Poison,Order's Wrath,Polymorph,Reincarnate,Restoration,Spell Immunity,Summon Nature's Ally IV,Unholy Blight|Shaman (DMC)=5|Atonement,Break Enchantment,Control Winds,Cure Light Wounds (Mass),Dispel Chaos,Dispel Evil,Dispel Good,Dispel Law,Dream,Ethereal Jaunt,Inflict Light Wounds (Mass),Nightmare,Raise Dead,Scrying,Slay Living,Summon Nature's Ally V,True Seeing|Shaman (DMC)=6|Animate Objects,Dispel Magic (Greater),Etherealness,Find the Path,Geas/Quest,Harm,Heal,Plane Shift,Stoneskin,Summon Nature's Ally VI,Wind Walk|Shaman (DMC)=7|Blasphemy,Control Weather,Dictum,Holy Word,Refuge,Regenerate,Repulsion,Restoration (Greater),Resurrection,Scrying (Greater),Summon Nature's Ally VII,Sunbeam,Word of Chaos|Shaman (DMC)=8|Antimagic Field,Cloak of Chaos,Discern Location,Earthquake,Heal (Mass),Holy Aura,Shield of Law,Summon Nature's Ally VIII,Unholy Aura|Shaman (DMC)=9|Astral Projection,Gate,Miracle,Soul Bind,Summon Nature's Ally IX,True Resurrection
 1	CAST:3,1	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Weapon and Armor Proficiency	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Spells	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Domains	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Spontaneous Casting	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Unarmed Strike	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Animal Companion	BONUS:VAR|ShamanDMCDomainCount|2
 2	CAST:4,2	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Spirit Sight
 3	CAST:4,2,1	ABILITY:Shaman (DMC) Class Feature|AUTOMATIC|Shaman (DMC) ~ Turn or Rebuke Undead
@@ -249,3 +249,378 @@ CLASS:Shaman (DMC)	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORI
 18	CAST:6,4,4,4,4,4,4,3,3,2
 19	CAST:6,4,4,4,4,4,4,4,3,3	BONUS:SPELLCAST|CLASS=Shaman (DMC);LEVEL=5|1
 20	CAST:6,4,4,4,4,4,4,4,4,4	BONUS:ABILITYPOOL|Shaman (DMC) Bonus Feat|1
+
+###Block: Anarch (paladin variant, PDF p.405)
+CLASS:Anarch	HD:10	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Anr	MAXLEVEL:20	SOURCEPAGE:p.405	PREALIGN:CN	DEFINE:AnarchLVL|0	BONUS:VAR|AnarchLVL|CL	DEFINE:AnarchSmite|0	DEFINE:AnarchDispel|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABFull|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Anarch	STARTSKILLPTS:2	CSKILL:Bluff|Concentration|TYPE=Craft|Disable Device|Intimidate|Knowledge (Architecture and Engineering)|Knowledge (Religion)|TYPE=Profession|Sense Motive|Survival
+CLASS:Anarch	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	BONUS:CASTERLEVEL|Anarch|floor(CL/2)	SPELLLEVEL:CLASS|Anarch=1|Bane,Bless Weapon,Cause Fear,Confusion (Lesser),Cure Light Wounds,Detect Poison,Divine Favor,Doom,Endure Elements,Entropic Shield,Magic Weapon,Obscuring Mist,Protection from Law	SPELLLEVEL:CLASS|Anarch=2|Align Weapon,Bear's Endurance,Blur,Darkness,Eagle's Splendor,Mirror Image,Misdirection,Scare,Shatter,Touch of Idiocy,Undetectable Alignment	SPELLLEVEL:CLASS|Anarch=3|Blindness/Deafness,Contagion,Cure Moderate Wounds,Deeper Darkness,Dispel Magic,Magic Circle against Law,Magic Weapon (Greater),Rage,Slow	SPELLLEVEL:CLASS|Anarch=4|Break Enchantment,Chaos Hammer,Confusion,Cure Serious Wounds,Dispel Law,Freedom of Movement,Planar Ally (Lesser),Poison,Shout
+1	ABILITY:Anarch Class Feature|AUTOMATIC|Anarch ~ Aura of Chaos	ABILITY:Anarch Class Feature|AUTOMATIC|Anarch ~ Detect Law	ABILITY:Anarch Class Feature|AUTOMATIC|Anarch ~ Smite Law	ABILITY:Anarch Class Feature|AUTOMATIC|Anarch ~ Code of Conduct	BONUS:VAR|AnarchSmite|1	ABILITY:Internal|AUTOMATIC|Anarch ~ Weapon and Armor Proficiency
+2	ABILITY:Anarch Class Feature|AUTOMATIC|Anarch ~ Divine Grace	ABILITY:Anarch Class Feature|AUTOMATIC|Anarch ~ Destructive Strike
+3	ABILITY:Anarch Class Feature|AUTOMATIC|Anarch ~ Aura of Courage	ABILITY:Anarch Class Feature|AUTOMATIC|Anarch ~ Slippery Mind
+4	CAST:0,0	ABILITY:Anarch Class Feature|AUTOMATIC|Anarch ~ Turn Construct	ABILITY:Anarch Class Feature|AUTOMATIC|Anarch ~ Spells
+5	CAST:0,0	ABILITY:Anarch Class Feature|AUTOMATIC|Anarch ~ Special Mount	BONUS:VAR|AnarchSmite|1
+6	CAST:0,1
+7	CAST:0,1
+8	CAST:0,1,0	ABILITY:Anarch Class Feature|AUTOMATIC|Anarch ~ Dispel Law	BONUS:VAR|AnarchDispel|1
+9	CAST:0,1,0
+10	CAST:0,1,1	BONUS:VAR|AnarchSmite|1
+11	CAST:0,1,1,0
+12	CAST:0,1,1,1	BONUS:VAR|AnarchDispel|1
+13	CAST:0,1,1,1
+14	CAST:0,2,1,1,0
+15	CAST:0,2,1,1,1	BONUS:VAR|AnarchSmite|1
+16	CAST:0,2,2,1,1	BONUS:VAR|AnarchDispel|1
+17	CAST:0,2,2,2,1
+18	CAST:0,3,2,2,1
+19	CAST:0,3,3,3,2
+20	CAST:0,3,3,3,3	BONUS:VAR|AnarchSmite|1	BONUS:VAR|AnarchDispel|1
+
+###Block: Anti-Paladin (paladin variant, PDF p.407)
+CLASS:Anti-Paladin	HD:10	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|APl	MAXLEVEL:20	SOURCEPAGE:p.407	PREALIGN:CE	DEFINE:AntiPaladinLVL|0	BONUS:VAR|AntiPaladinLVL|CL	DEFINE:AntiPaladinSmite|0	DEFINE:AntiPaladinDeathKnell|0	DEFINE:AntiPaladinContagion|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABFull|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Anti-Paladin	STARTSKILLPTS:2	CSKILL:Bluff|Climb|Concentration|Hide|Intimidate|Jump|Knowledge (Religion)|Knowledge (The Planes)|Ride|Survival
+CLASS:Anti-Paladin	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	BONUS:CASTERLEVEL|Anti-Paladin|floor(CL/2)	SPELLLEVEL:CLASS|Anti-Paladin=1|Bane,Cause Fear,Curse Water,Deathwatch,Doom,Inflict Light Wounds,Magic Weapon,Profane Weapon,Protection from Good,Protection from Law,Ray of Enfeeblement,Read Magic,Summon Monster I	SPELLLEVEL:CLASS|Anti-Paladin=2|Bull's Strength,Darkness,Desecrate,Shatter,Summon Monster II,Undetectable Alignment	SPELLLEVEL:CLASS|Anti-Paladin=3|Bestow Curse,Blindness/Deafness,Deeper Darkness,Heal Mount,Inflict Moderate Wounds,Magic Circle against Good,Magic Circle against Law,Magic Weapon (Greater),Summon Monster III	SPELLLEVEL:CLASS|Anti-Paladin=4|Death Ward,Dispel Good,Dispel Law,Fear,Inflict Serious Wounds,Poison
+1	ABILITY:Anti-Paladin Class Feature|AUTOMATIC|Anti-Paladin ~ Aura of Evil	ABILITY:Anti-Paladin Class Feature|AUTOMATIC|Anti-Paladin ~ Detect Good	ABILITY:Anti-Paladin Class Feature|AUTOMATIC|Anti-Paladin ~ Smite Good	ABILITY:Anti-Paladin Class Feature|AUTOMATIC|Anti-Paladin ~ Code of Conduct	BONUS:VAR|AntiPaladinSmite|1	ABILITY:Internal|AUTOMATIC|Anti-Paladin ~ Weapon and Armor Proficiency
+2	ABILITY:Anti-Paladin Class Feature|AUTOMATIC|Anti-Paladin ~ Divine Grace	ABILITY:Anti-Paladin Class Feature|AUTOMATIC|Anti-Paladin ~ Slaughter the Weak
+3	ABILITY:Anti-Paladin Class Feature|AUTOMATIC|Anti-Paladin ~ Aura of Fear	ABILITY:Anti-Paladin Class Feature|AUTOMATIC|Anti-Paladin ~ Death Knell	BONUS:VAR|AntiPaladinDeathKnell|1
+4	CAST:0,0	ABILITY:Anti-Paladin Class Feature|AUTOMATIC|Anti-Paladin ~ Turn or Rebuke Outsider	ABILITY:Anti-Paladin Class Feature|AUTOMATIC|Anti-Paladin ~ Spells
+5	CAST:0,0	ABILITY:Anti-Paladin Class Feature|AUTOMATIC|Anti-Paladin ~ Fiendish Mount	BONUS:VAR|AntiPaladinSmite|1
+6	CAST:0,1	ABILITY:Anti-Paladin Class Feature|AUTOMATIC|Anti-Paladin ~ Contagion	BONUS:VAR|AntiPaladinContagion|1
+7	CAST:0,1
+8	CAST:0,1,0	BONUS:VAR|AntiPaladinDeathKnell|1
+9	CAST:0,1,0	BONUS:VAR|AntiPaladinContagion|1
+10	CAST:0,1,1	BONUS:VAR|AntiPaladinSmite|1
+11	CAST:0,1,1,0
+12	CAST:0,1,1,1	BONUS:VAR|AntiPaladinContagion|1
+13	CAST:0,1,1,1	BONUS:VAR|AntiPaladinDeathKnell|1
+14	CAST:0,2,1,1,0
+15	CAST:0,2,1,1,1	BONUS:VAR|AntiPaladinSmite|1	BONUS:VAR|AntiPaladinContagion|1
+16	CAST:0,2,2,1,1
+17	CAST:0,2,2,2,1
+18	CAST:0,3,2,2,1	BONUS:VAR|AntiPaladinDeathKnell|1	BONUS:VAR|AntiPaladinContagion|1
+19	CAST:0,3,3,3,2
+20	CAST:0,3,3,3,3	BONUS:VAR|AntiPaladinSmite|1
+
+###Block: Avenger (paladin variant, PDF p.409)
+CLASS:Avenger	HD:10	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Avg	MAXLEVEL:20	SOURCEPAGE:p.409	PREALIGN:CG	DEFINE:AvengerLVL|0	BONUS:VAR|AvengerLVL|CL	DEFINE:AvengerSmite|0	DEFINE:AvengerBreak|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABFull|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Avenger	STARTSKILLPTS:2	CSKILL:Bluff|Concentration|TYPE=Craft|Diplomacy|Hide|Intimidate|Knowledge (Local)|Knowledge (Religion)|Move Silently|Sense Motive
+CLASS:Avenger	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	BONUS:CASTERLEVEL|Avenger|floor(CL/2)	SPELLLEVEL:CLASS|Avenger=1|Bless,Bless Water,Bless Weapon,Cure Light Wounds,Detect Poison,Disguise Self,Divine Favor,Endure Elements,Magic Stone,Magic Weapon,Mending,Protection from Evil,Protection from Law,Read Magic,Restoration (Lesser),Shield of Faith	SPELLLEVEL:CLASS|Avenger=2|Align Weapon,Alter Self,Cat's Grace,Cure Moderate Wounds,Eagle's Splendor,Fox's Cunning,Invisibility,Make Whole,Misdirection,Resist Energy,Shield Other,Undetectable Alignment	SPELLLEVEL:CLASS|Avenger=3|Dispel Magic,Flame Arrow,Magic Circle against Evil,Magic Circle against Law,Magic Vestment,Magic Weapon (Greater),Nondetection,Obscure Object	SPELLLEVEL:CLASS|Avenger=4|Cure Serious Wounds,Detect Scrying,Dispel Evil,Dispel Law,Freedom of Movement,Holy Sword,Invisibility (Greater),Neutralize Poison,Restoration,Stone Shape
+1	ABILITY:Avenger Class Feature|AUTOMATIC|Avenger ~ Aura of Chaos	ABILITY:Avenger Class Feature|AUTOMATIC|Avenger ~ Detect Law	ABILITY:Avenger Class Feature|AUTOMATIC|Avenger ~ Smite Law	ABILITY:Avenger Class Feature|AUTOMATIC|Avenger ~ Code of Conduct	BONUS:VAR|AvengerSmite|1	ABILITY:Internal|AUTOMATIC|Avenger ~ Weapon and Armor Proficiency
+2	ABILITY:Avenger Class Feature|AUTOMATIC|Avenger ~ Divine Grace	ABILITY:Avenger Class Feature|AUTOMATIC|Avenger ~ Lay on Hands
+3	ABILITY:Avenger Class Feature|AUTOMATIC|Avenger ~ Aura of Courage	ABILITY:Avenger Class Feature|AUTOMATIC|Avenger ~ Slippery Mind
+4	CAST:0,0	ABILITY:Avenger Class Feature|AUTOMATIC|Avenger ~ Turn Undead	ABILITY:Avenger Class Feature|AUTOMATIC|Avenger ~ Spells
+5	CAST:0,0	ABILITY:Avenger Class Feature|AUTOMATIC|Avenger ~ Animal Minion	BONUS:VAR|AvengerSmite|1
+6	CAST:0,1	ABILITY:Avenger Class Feature|AUTOMATIC|Avenger ~ Break Enchantment	BONUS:VAR|AvengerBreak|1
+7	CAST:0,1
+8	CAST:0,1,0
+9	CAST:0,1,0	BONUS:VAR|AvengerBreak|1
+10	CAST:0,1,1	BONUS:VAR|AvengerSmite|1
+11	CAST:0,1,1,0
+12	CAST:0,1,1,1	BONUS:VAR|AvengerBreak|1
+13	CAST:0,1,1,1
+14	CAST:0,2,1,1,0
+15	CAST:0,2,1,1,1	BONUS:VAR|AvengerSmite|1	BONUS:VAR|AvengerBreak|1
+16	CAST:0,2,2,1,1
+17	CAST:0,2,2,2,1
+18	CAST:0,3,2,2,1	BONUS:VAR|AvengerBreak|1
+19	CAST:0,3,3,3,2
+20	CAST:0,3,3,3,3	BONUS:VAR|AvengerSmite|1
+
+###Block: Corrupter (paladin variant, PDF p.413)
+CLASS:Corrupter	HD:10	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Crp	MAXLEVEL:20	SOURCEPAGE:p.413	PREALIGN:NE	DEFINE:CorrupterLVL|0	BONUS:VAR|CorrupterLVL|CL	DEFINE:CorrupterSmite|0	DEFINE:CorrupterFallen|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABFull|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Corrupter	STARTSKILLPTS:2	CSKILL:Bluff|Concentration|TYPE=Craft|Diplomacy|Disguise|Forgery|Hide|Knowledge (History)|Knowledge (Religion)|Sense Motive
+CLASS:Corrupter	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	BONUS:CASTERLEVEL|Corrupter|floor(CL/2)	SPELLLEVEL:CLASS|Corrupter=1|Bane,Cause Fear,Charm Person,Cure Light Wounds,Curse Water,Divine Favor,Doom,Endure Elements,Inflict Light Wounds,Magic Weapon,Profane Weapon,Protection from Good,Read Magic,Resistance,Sanctuary,Undetectable Alignment	SPELLLEVEL:CLASS|Corrupter=2|Calm Emotions,Cat's Grace,Desecrate,Detect Thoughts,Eagle's Splendor,Enthrall,Owl's Wisdom,Silence,Tongues	SPELLLEVEL:CLASS|Corrupter=3|Clairaudience/Clairvoyance,Cure Moderate Wounds,Dispel Magic,Glibness,Inflict Moderate Wounds,Magic Circle against Good,Magic Weapon (Greater),Nondetection,Obscure Object,Scrying	SPELLLEVEL:CLASS|Corrupter=4|Break Enchantment,Command (Greater),Cure Serious Wounds,Dispel Good,Dominate Person,Dream,Inflict Serious Wounds,Locate Creature,Unhallow
+1	ABILITY:Corrupter Class Feature|AUTOMATIC|Corrupter ~ Aura of Evil	ABILITY:Corrupter Class Feature|AUTOMATIC|Corrupter ~ Detect Good	ABILITY:Corrupter Class Feature|AUTOMATIC|Corrupter ~ Smite Heathen	ABILITY:Corrupter Class Feature|AUTOMATIC|Corrupter ~ Code of Conduct	BONUS:VAR|CorrupterSmite|1	ABILITY:Internal|AUTOMATIC|Corrupter ~ Weapon and Armor Proficiency
+2	ABILITY:Corrupter Class Feature|AUTOMATIC|Corrupter ~ Divine Grace	ABILITY:Corrupter Class Feature|AUTOMATIC|Corrupter ~ Hidden Faith
+3	ABILITY:Corrupter Class Feature|AUTOMATIC|Corrupter ~ Aura of Fear	ABILITY:Corrupter Class Feature|AUTOMATIC|Corrupter ~ Disguise Self
+4	CAST:0,0	ABILITY:Corrupter Class Feature|AUTOMATIC|Corrupter ~ Intercession	ABILITY:Corrupter Class Feature|AUTOMATIC|Corrupter ~ Spells
+5	CAST:0,0	BONUS:VAR|CorrupterSmite|1
+6	CAST:0,1	ABILITY:Corrupter Class Feature|AUTOMATIC|Corrupter ~ Fiendish Familiar
+7	CAST:0,1
+8	CAST:0,1,0	ABILITY:Corrupter Class Feature|AUTOMATIC|Corrupter ~ Fallen Soul	BONUS:VAR|CorrupterFallen|1
+9	CAST:0,1,0
+10	CAST:0,1,1	BONUS:VAR|CorrupterSmite|1
+11	CAST:0,1,1,0
+12	CAST:0,1,1,1	BONUS:VAR|CorrupterFallen|1
+13	CAST:0,1,1,1
+14	CAST:0,2,1,1,0
+15	CAST:0,2,1,1,1	BONUS:VAR|CorrupterSmite|1
+16	CAST:0,2,2,1,1	BONUS:VAR|CorrupterFallen|1
+17	CAST:0,2,2,2,1
+18	CAST:0,3,2,2,1
+19	CAST:0,3,3,3,2
+20	CAST:0,3,3,3,3	BONUS:VAR|CorrupterSmite|1	BONUS:VAR|CorrupterFallen|1
+
+###Block: Despot (paladin variant, PDF p.417)
+CLASS:Despot	HD:10	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Dsp	MAXLEVEL:20	SOURCEPAGE:p.417	PREALIGN:LE	DEFINE:DespotLVL|0	BONUS:VAR|DespotLVL|CL	DEFINE:DespotSmite|0	DEFINE:DespotMark|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABFull|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Despot	STARTSKILLPTS:2	CSKILL:Bluff|Concentration|TYPE=Craft|Diplomacy|Intimidate|Knowledge (Nobility and Royalty)|Knowledge (Religion)|TYPE=Profession|Search|Sense Motive
+CLASS:Despot	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	BONUS:CASTERLEVEL|Despot|floor(CL/2)	SPELLLEVEL:CLASS|Despot=1|Alarm,Bane,Bless,Command,Cure Light Wounds,Curse Water,Detect Poison,Divine Favor,Endure Elements,Magic Weapon,Profane Weapon,Protection from Chaos,Protection from Good,Resistance,Virtue	SPELLLEVEL:CLASS|Despot=2|Bull's Strength,Eagle's Splendor,Enthrall,Fox's Cunning,Hold Person,Resist Energy,Status,Zone of Truth	SPELLLEVEL:CLASS|Despot=3|Crushing Despair,Cure Moderate Wounds,Discern Lies,Geas (Lesser),Helping Hand,Magic Circle against Chaos,Magic Circle against Good,Prayer,Suggestion	SPELLLEVEL:CLASS|Despot=4|Break Enchantment,Charm Monster,Command (Greater),Cure Serious Wounds,Dispel Chaos,Dispel Good,Dominate Person,Geas/Quest,Hold Monster
+1	ABILITY:Despot Class Feature|AUTOMATIC|Despot ~ Aura of Law	ABILITY:Despot Class Feature|AUTOMATIC|Despot ~ Detect Chaos	ABILITY:Despot Class Feature|AUTOMATIC|Despot ~ Smite Chaos	ABILITY:Despot Class Feature|AUTOMATIC|Despot ~ Code of Conduct	BONUS:VAR|DespotSmite|1	ABILITY:Internal|AUTOMATIC|Despot ~ Weapon and Armor Proficiency
+2	ABILITY:Despot Class Feature|AUTOMATIC|Despot ~ Divine Grace	ABILITY:Despot Class Feature|AUTOMATIC|Despot ~ Slippery Mind
+3	ABILITY:Despot Class Feature|AUTOMATIC|Despot ~ Aura of Fear	ABILITY:Despot Class Feature|AUTOMATIC|Despot ~ Indomitable Will
+4	CAST:0,0	ABILITY:Despot Class Feature|AUTOMATIC|Despot ~ Oppression	ABILITY:Despot Class Feature|AUTOMATIC|Despot ~ Spells
+5	CAST:0,0	ABILITY:Despot Class Feature|AUTOMATIC|Despot ~ Leadership	BONUS:VAR|DespotSmite|1
+6	CAST:0,1
+7	CAST:0,1	ABILITY:Despot Class Feature|AUTOMATIC|Despot ~ Mark of Justice	BONUS:VAR|DespotMark|1
+8	CAST:0,1,0
+9	CAST:0,1,0
+10	CAST:0,1,1	BONUS:VAR|DespotSmite|1
+11	CAST:0,1,1,0	BONUS:VAR|DespotMark|1
+12	CAST:0,1,1,1
+13	CAST:0,1,1,1
+14	CAST:0,2,1,1,0
+15	CAST:0,2,1,1,1	BONUS:VAR|DespotSmite|1	BONUS:VAR|DespotMark|1
+16	CAST:0,2,2,1,1
+17	CAST:0,2,2,2,1
+18	CAST:0,3,2,2,1
+19	CAST:0,3,3,3,2	BONUS:VAR|DespotMark|1
+20	CAST:0,3,3,3,3	BONUS:VAR|DespotSmite|1
+
+###Block: Enforcer (paladin variant, PDF p.423)
+CLASS:Enforcer	HD:10	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Enf	MAXLEVEL:20	SOURCEPAGE:p.423	PREALIGN:LN	DEFINE:EnforcerLVL|0	BONUS:VAR|EnforcerLVL|CL	DEFINE:EnforcerSmite|0	DEFINE:EnforcerSuggestion|0	DEFINE:EnforcerDominate|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABFull|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Enforcer	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Gather Information|Intimidate|Knowledge (History)|Knowledge (Religion)|TYPE=Profession|Search|Sense Motive
+CLASS:Enforcer	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	BONUS:CASTERLEVEL|Enforcer|floor(CL/2)	SPELLLEVEL:CLASS|Enforcer=1|Alarm,Bless,Bless Water,Bless Weapon,Command,Cure Light Wounds,Detect Poison,Divine Favor,Endure Elements,Hold Portal,Magic Weapon,Protection from Chaos,Resistance,Sleep,Virtue	SPELLLEVEL:CLASS|Enforcer=2|Bull's Strength,Eagle's Splendor,Fox's Cunning,Hold Person,Resist Energy,Shield Other,Status,Zone of Truth	SPELLLEVEL:CLASS|Enforcer=3|Cure Moderate Wounds,Discern Lies,Magic Circle against Chaos,Prayer,Remove Blindness/Deafness,Remove Curse,Remove Disease	SPELLLEVEL:CLASS|Enforcer=4|Break Enchantment,Command (Greater),Cure Serious Wounds,Dispel Chaos,Hold Monster,Mark of Justice,Neutralize Poison,Restoration
+1	ABILITY:Enforcer Class Feature|AUTOMATIC|Enforcer ~ Aura of Law	ABILITY:Enforcer Class Feature|AUTOMATIC|Enforcer ~ Detect Chaos	ABILITY:Enforcer Class Feature|AUTOMATIC|Enforcer ~ Smite Chaos	ABILITY:Enforcer Class Feature|AUTOMATIC|Enforcer ~ Code of Conduct	BONUS:VAR|EnforcerSmite|1	ABILITY:Internal|AUTOMATIC|Enforcer ~ Weapon and Armor Proficiency
+2	ABILITY:Enforcer Class Feature|AUTOMATIC|Enforcer ~ Divine Grace	ABILITY:Enforcer Class Feature|AUTOMATIC|Enforcer ~ Subdue
+3	ABILITY:Enforcer Class Feature|AUTOMATIC|Enforcer ~ Aura of Courage	ABILITY:Enforcer Class Feature|AUTOMATIC|Enforcer ~ Suggestion	BONUS:VAR|EnforcerSuggestion|1
+4	CAST:0,0	ABILITY:Enforcer Class Feature|AUTOMATIC|Enforcer ~ Rebuke Undead	ABILITY:Enforcer Class Feature|AUTOMATIC|Enforcer ~ Spells
+5	CAST:0,0	ABILITY:Enforcer Class Feature|AUTOMATIC|Enforcer ~ Leadership	BONUS:VAR|EnforcerSmite|1
+6	CAST:0,1
+7	CAST:0,1	ABILITY:Enforcer Class Feature|AUTOMATIC|Enforcer ~ Dominate Person	BONUS:VAR|EnforcerDominate|1
+8	CAST:0,1,0	BONUS:VAR|EnforcerSuggestion|1
+9	CAST:0,1,0
+10	CAST:0,1,1	BONUS:VAR|EnforcerSmite|1
+11	CAST:0,1,1,0	BONUS:VAR|EnforcerDominate|1
+12	CAST:0,1,1,1
+13	CAST:0,1,1,1	BONUS:VAR|EnforcerSuggestion|1
+14	CAST:0,2,1,1,0
+15	CAST:0,2,1,1,1	BONUS:VAR|EnforcerSmite|1	BONUS:VAR|EnforcerDominate|1
+16	CAST:0,2,2,1,1
+17	CAST:0,2,2,2,1
+18	CAST:0,3,2,2,1	BONUS:VAR|EnforcerSuggestion|1
+19	CAST:0,3,3,3,2	BONUS:VAR|EnforcerDominate|1
+20	CAST:0,3,3,3,3	BONUS:VAR|EnforcerSmite|1
+
+###Block: Incarnate (Paladin) (paladin variant, PDF p.431)
+CLASS:Incarnate (Paladin)	HD:10	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|IcP	MAXLEVEL:20	SOURCEPAGE:p.431	PREALIGN:TN	DEFINE:IncarnatePaladinLVL|0	BONUS:VAR|IncarnatePaladinLVL|CL	DEFINE:IncarnatePaladinSmite|0	DEFINE:IncarnatePaladinCommune|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABFull|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Incarnate (Paladin)	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Knowledge (Nature)|Knowledge (Religion)|Listen|TYPE=Profession|Search|Spot|Survival
+CLASS:Incarnate (Paladin)	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	BONUS:CASTERLEVEL|Incarnate (Paladin)|floor(CL/2)	SPELLLEVEL:CLASS|Incarnate (Paladin)=1|Bless,Bless Water,Bless Weapon,Charm Animal,Cure Light Wounds,Detect Poison,Divine Favor,Endure Elements,Entangle,Longstrider,Magic Fang,Magic Weapon,Pass without Trace,Protection from Chaos,Protection from Evil,Protection from Good,Protection from Law,Speak with Animals	SPELLLEVEL:CLASS|Incarnate (Paladin)=2|Animal Messenger,Barkskin,Bear's Endurance,Bull's Strength,Eagle's Splendor,Hold Person,Owl's Wisdom,Resist Energy,Restoration (Lesser),Shield Other,Spike Growth,Tree Shape	SPELLLEVEL:CLASS|Incarnate (Paladin)=3|Cure Moderate Wounds,Diminish Plants,Dominate Animal,Magic Circle against Chaos,Magic Circle against Evil,Magic Circle against Good,Magic Circle against Law,Magic Fang (Greater),Plant Growth,Prayer,Speak with Plants	SPELLLEVEL:CLASS|Incarnate (Paladin)=4|Break Enchantment,Command Plants,Cure Serious Wounds,Dismissal,Dispel Chaos,Dispel Evil,Dispel Good,Dispel Law,Freedom of Movement,Tree Stride
+1	ABILITY:Incarnate (Paladin) Class Feature|AUTOMATIC|Incarnate (Paladin) ~ Detect Imbalance	ABILITY:Incarnate (Paladin) Class Feature|AUTOMATIC|Incarnate (Paladin) ~ Elemental Affinity	ABILITY:Incarnate (Paladin) Class Feature|AUTOMATIC|Incarnate (Paladin) ~ Smite Extremist	ABILITY:Incarnate (Paladin) Class Feature|AUTOMATIC|Incarnate (Paladin) ~ Code of Conduct	BONUS:VAR|IncarnatePaladinSmite|1	ABILITY:Internal|AUTOMATIC|Incarnate (Paladin) ~ Weapon and Armor Proficiency	BONUS:ABILITYPOOL|Incarnate (Paladin) Elemental Affinity|1
+2	ABILITY:Incarnate (Paladin) Class Feature|AUTOMATIC|Incarnate (Paladin) ~ Divine Grace	ABILITY:Incarnate (Paladin) Class Feature|AUTOMATIC|Incarnate (Paladin) ~ Elemental Burst
+3	ABILITY:Incarnate (Paladin) Class Feature|AUTOMATIC|Incarnate (Paladin) ~ Aura of Courage	ABILITY:Incarnate (Paladin) Class Feature|AUTOMATIC|Incarnate (Paladin) ~ Energy Resistance
+4	CAST:0,0	ABILITY:Incarnate (Paladin) Class Feature|AUTOMATIC|Incarnate (Paladin) ~ Rebuke Outsider	ABILITY:Incarnate (Paladin) Class Feature|AUTOMATIC|Incarnate (Paladin) ~ Spells
+5	CAST:0,0	ABILITY:Incarnate (Paladin) Class Feature|AUTOMATIC|Incarnate (Paladin) ~ Elemental Minion	BONUS:VAR|IncarnatePaladinSmite|1
+6	CAST:0,1
+7	CAST:0,1
+8	CAST:0,1,0	ABILITY:Incarnate (Paladin) Class Feature|AUTOMATIC|Incarnate (Paladin) ~ Commune with Nature	BONUS:VAR|IncarnatePaladinCommune|1
+9	CAST:0,1,0
+10	CAST:0,1,1	BONUS:VAR|IncarnatePaladinSmite|1
+11	CAST:0,1,1,0
+12	CAST:0,1,1,1	BONUS:VAR|IncarnatePaladinCommune|1
+13	CAST:0,1,1,1
+14	CAST:0,2,1,1,0
+15	CAST:0,2,1,1,1	BONUS:VAR|IncarnatePaladinSmite|1
+16	CAST:0,2,2,1,1	BONUS:VAR|IncarnatePaladinCommune|1
+17	CAST:0,2,2,2,1
+18	CAST:0,3,2,2,1
+19	CAST:0,3,3,3,2
+20	CAST:0,3,3,3,3	BONUS:VAR|IncarnatePaladinSmite|1	BONUS:VAR|IncarnatePaladinCommune|1
+
+###Block: Sentinel (paladin variant, PDF p.443)
+CLASS:Sentinel	HD:10	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Snt	MAXLEVEL:20	SOURCEPAGE:p.443	PREALIGN:NG	DEFINE:SentinelLVL|0	BONUS:VAR|SentinelLVL|CL	DEFINE:SentinelSmite|0	DEFINE:SentinelDispel|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABFull|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Sentinel	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Knowledge (Religion)|Knowledge (The Planes)|Listen|TYPE=Profession|Search|Sense Motive|Spot|Survival
+CLASS:Sentinel	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	BONUS:CASTERLEVEL|Sentinel|floor(CL/2)	SPELLLEVEL:CLASS|Sentinel=1|Bless,Bless Water,Bless Weapon,Cure Light Wounds,Detect Poison,Divine Favor,Endure Elements,Hold Portal,Magic Weapon,Protection from Evil,Protection from Good,Remove Fear,Shield of Faith,Summon Monster I	SPELLLEVEL:CLASS|Sentinel=2|Align Weapon,Bear's Endurance,Bull's Strength,Consecrate,Eagle's Splendor,Restoration (Lesser),Shield Other,Spiritual Weapon,Summon Monster II	SPELLLEVEL:CLASS|Sentinel=3|Cure Moderate Wounds,Daylight,Dispel Magic,Invisibility Purge,Magic Circle against Evil,Prayer,Remove Blindness/Deafness,Remove Curse,Remove Disease,Summon Monster III	SPELLLEVEL:CLASS|Sentinel=4|Break Enchantment,Cure Serious Wounds,Death Ward,Dimensional Anchor,Dismissal,Freedom of Movement,Holy Sword,Neutralize Poison,Restoration,Summon Monster IV
+1	ABILITY:Sentinel Class Feature|AUTOMATIC|Sentinel ~ Aura of Good	ABILITY:Sentinel Class Feature|AUTOMATIC|Sentinel ~ Detect Evil	ABILITY:Sentinel Class Feature|AUTOMATIC|Sentinel ~ Smite Evil	ABILITY:Sentinel Class Feature|AUTOMATIC|Sentinel ~ Code of Conduct	BONUS:VAR|SentinelSmite|1	ABILITY:Internal|AUTOMATIC|Sentinel ~ Weapon and Armor Proficiency
+2	ABILITY:Sentinel Class Feature|AUTOMATIC|Sentinel ~ Divine Grace	ABILITY:Sentinel Class Feature|AUTOMATIC|Sentinel ~ Resist Fiendish Lure
+3	ABILITY:Sentinel Class Feature|AUTOMATIC|Sentinel ~ Aura of Courage	ABILITY:Sentinel Class Feature|AUTOMATIC|Sentinel ~ Celestial Fortitude
+4	CAST:0,0	ABILITY:Sentinel Class Feature|AUTOMATIC|Sentinel ~ Turn Outsider	ABILITY:Sentinel Class Feature|AUTOMATIC|Sentinel ~ Spells
+5	CAST:0,0	ABILITY:Sentinel Class Feature|AUTOMATIC|Sentinel ~ Celestial Minion	BONUS:VAR|SentinelSmite|1
+6	CAST:0,1
+7	CAST:0,1
+8	CAST:0,1,0	ABILITY:Sentinel Class Feature|AUTOMATIC|Sentinel ~ Dispel Evil	BONUS:VAR|SentinelDispel|1
+9	CAST:0,1,0
+10	CAST:0,1,1	BONUS:VAR|SentinelSmite|1
+11	CAST:0,1,1,0
+12	CAST:0,1,1,1	BONUS:VAR|SentinelDispel|1
+13	CAST:0,1,1,1
+14	CAST:0,2,1,1,0
+15	CAST:0,2,1,1,1	BONUS:VAR|SentinelSmite|1
+16	CAST:0,2,2,1,1	BONUS:VAR|SentinelDispel|1
+17	CAST:0,2,2,2,1
+18	CAST:0,3,2,2,1
+19	CAST:0,3,3,3,2
+20	CAST:0,3,3,3,3	BONUS:VAR|SentinelSmite|1	BONUS:VAR|SentinelDispel|1
+
+###Block: Metal Master (druid variant, PDF p.229)
+CLASS:Metal Master	HD:10	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|MtM	MAXLEVEL:20	SOURCEPAGE:p.229	DEFINE:MetalMasterLVL|0	BONUS:VAR|MetalMasterLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Metal Master	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (Architecture and Engineering)|Knowledge (Dungeoneering)|Knowledge (Nature)|Listen|TYPE=Profession|Spellcraft|Spot|Survival|Swim	LANGBONUS:Druidic	AUTO:LANG|Terran
+CLASS:Metal Master	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Druid	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Metal Master|Caster_Level_MetalMaster	DEFINE:Caster_Level_MetalMaster|0	BONUS:VAR|Caster_Level_MetalMaster|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLMetalMaster|0	BONUS:VAR|CasterLevelBLMetalMaster|charbonusto("PCLEVEL","Metal Master")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_MetalMaster+CasterLevelBLMetalMaster|TYPE=Base
+1	CAST:3,1	ABILITY:Metal Master Class Feature|AUTOMATIC|Metal Master ~ Spells	ABILITY:Metal Master Class Feature|AUTOMATIC|Metal Master ~ Languages	ABILITY:Metal Master Class Feature|AUTOMATIC|Metal Master ~ Mine Sense	ABILITY:Internal|AUTOMATIC|Metal Master ~ Weapon and Armor Proficiency
+2	CAST:4,2
+3	CAST:4,2,1	ABILITY:Metal Master Class Feature|AUTOMATIC|Metal Master ~ Metal Sense
+4	CAST:5,3,2
+5	CAST:5,3,2,1
+6	CAST:5,3,3,2	ABILITY:Metal Master Class Feature|AUTOMATIC|Metal Master ~ Damage Reduction
+7	CAST:6,4,3,2,1
+8	CAST:6,4,3,3,2
+9	CAST:6,4,4,3,2,1
+10	CAST:6,4,4,3,3,2
+11	CAST:6,5,4,4,3,2,1	ABILITY:Metal Master Class Feature|AUTOMATIC|Metal Master ~ Major Creation
+12	CAST:6,5,4,4,3,3,2
+13	CAST:6,5,5,4,4,3,2,1
+14	CAST:6,5,5,4,4,3,3,2
+15	CAST:6,5,5,5,4,4,3,2,1	ABILITY:Metal Master Class Feature|AUTOMATIC|Metal Master ~ Timeless Body
+16	CAST:6,5,5,5,4,4,3,3,2
+17	CAST:6,5,5,5,5,4,4,3,2,1
+18	CAST:6,5,5,5,5,4,4,3,3,2
+19	CAST:6,5,5,5,5,5,4,4,3,3	ABILITY:Metal Master Class Feature|AUTOMATIC|Metal Master ~ Iron Body
+20	CAST:6,5,5,5,5,5,4,4,4,4
+
+###Block: Sidhe Scholar (druid variant, PDF p.237)
+CLASS:Sidhe Scholar	HD:6	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Sid	MAXLEVEL:20	SOURCEPAGE:p.237	PREALIGN:LN,NG,TN,NE,CN	DEFINE:SidheScholarLVL|0	BONUS:VAR|SidheScholarLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Sidhe Scholar	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Knowledge (Arcana)|Knowledge (Nature)|Listen|TYPE=Profession|Ride|Spellcraft|Spot|Survival|Swim	LANGBONUS:Druidic
+CLASS:Sidhe Scholar	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Druid	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Sidhe Scholar|Caster_Level_SidheScholar	DEFINE:Caster_Level_SidheScholar|0	BONUS:VAR|Caster_Level_SidheScholar|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLSidheScholar|0	BONUS:VAR|CasterLevelBLSidheScholar|charbonusto("PCLEVEL","Sidhe Scholar")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_SidheScholar+CasterLevelBLSidheScholar|TYPE=Base
+1	CAST:3,1	ABILITY:Sidhe Scholar Class Feature|AUTOMATIC|Sidhe Scholar ~ Spells	ABILITY:Sidhe Scholar Class Feature|AUTOMATIC|Sidhe Scholar ~ Intelligentsia	ABILITY:Sidhe Scholar Class Feature|AUTOMATIC|Sidhe Scholar ~ Nature Sense	ABILITY:Sidhe Scholar Class Feature|AUTOMATIC|Sidhe Scholar ~ Wild One	ABILITY:Internal|AUTOMATIC|Sidhe Scholar ~ Weapon and Armor Proficiency
+2	CAST:4,2	ABILITY:Sidhe Scholar Class Feature|AUTOMATIC|Sidhe Scholar ~ Blessing of the Fey
+3	CAST:4,2,1
+4	CAST:5,3,2	ABILITY:Sidhe Scholar Class Feature|AUTOMATIC|Sidhe Scholar ~ Sylvan Gifts
+5	CAST:5,3,2,1	ABILITY:Sidhe Scholar Class Feature|AUTOMATIC|Sidhe Scholar ~ Wild Shape	ABILITY:Sidhe Scholar Class Feature|AUTOMATIC|Sidhe Scholar ~ Otherworldly Shifting
+6	CAST:5,3,3,2	ABILITY:Sidhe Scholar Class Feature|AUTOMATIC|Sidhe Scholar ~ Dark Moon's Secret
+7	CAST:6,4,3,2,1
+8	CAST:6,4,3,3,2
+9	CAST:6,4,4,3,2,1	ABILITY:Sidhe Scholar Class Feature|AUTOMATIC|Sidhe Scholar ~ Venom Immunity
+10	CAST:6,4,4,3,3,2
+11	CAST:6,5,4,4,3,2,1
+12	CAST:6,5,4,4,3,3,2	ABILITY:Sidhe Scholar Class Feature|AUTOMATIC|Sidhe Scholar ~ Sylvan Craft
+13	CAST:6,5,5,4,4,3,2,1	ABILITY:Sidhe Scholar Class Feature|AUTOMATIC|Sidhe Scholar ~ A Thousand Faces
+14	CAST:6,5,5,4,4,3,3,2
+15	CAST:6,5,5,5,4,4,3,2,1	ABILITY:Sidhe Scholar Class Feature|AUTOMATIC|Sidhe Scholar ~ Timeless Body
+16	CAST:6,5,5,5,4,4,3,3,2
+17	CAST:6,5,5,5,5,4,4,3,2,1
+18	CAST:6,5,5,5,5,4,4,3,3,2
+19	CAST:6,5,5,5,5,5,4,4,3,3
+20	CAST:6,5,5,5,5,5,4,4,4,4
+
+###Block: Storm Druid (druid variant, PDF p.240)
+CLASS:Storm Druid	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|StD	MAXLEVEL:20	SOURCEPAGE:p.240	PREALIGN:LN,NG,TN,NE,CN	DEFINE:StormDruidLVL|0	BONUS:VAR|StormDruidLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Storm Druid	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Knowledge (Nature)|Listen|TYPE=Profession|Ride|Spellcraft|Spot|Survival|Swim	LANGBONUS:Druidic
+CLASS:Storm Druid	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Druid	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Storm Druid|Caster_Level_StormDruid	DEFINE:Caster_Level_StormDruid|0	BONUS:VAR|Caster_Level_StormDruid|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLStormDruid|0	BONUS:VAR|CasterLevelBLStormDruid|charbonusto("PCLEVEL","Storm Druid")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_StormDruid+CasterLevelBLStormDruid|TYPE=Base
+1	CAST:3,1	ABILITY:Storm Druid Class Feature|AUTOMATIC|Storm Druid ~ Spells	ABILITY:Storm Druid Class Feature|AUTOMATIC|Storm Druid ~ Nature Sense	ABILITY:Storm Druid Class Feature|AUTOMATIC|Storm Druid ~ Deafness Immunity	ABILITY:Internal|AUTOMATIC|Storm Druid ~ Weapon and Armor Proficiency
+2	CAST:4,2	ABILITY:Storm Druid Class Feature|AUTOMATIC|Storm Druid ~ Frightful Presence	ABILITY:Storm Druid Class Feature|AUTOMATIC|Storm Druid ~ Thunder Strike	BONUS:VAR|StormDruidThunder|1
+3	CAST:4,2,1	ABILITY:Storm Druid Class Feature|AUTOMATIC|Storm Druid ~ Wind Sense
+4	CAST:5,3,2	ABILITY:Storm Druid Class Feature|AUTOMATIC|Storm Druid ~ Resist Nature's Lure
+5	CAST:5,3,2,1	ABILITY:Storm Druid Class Feature|AUTOMATIC|Storm Druid ~ Electricity Resistance
+6	CAST:5,3,3,2	BONUS:VAR|StormDruidThunder|1
+7	CAST:6,4,3,2,1
+8	CAST:6,4,3,3,2
+9	CAST:6,4,4,3,2,1	ABILITY:Storm Druid Class Feature|AUTOMATIC|Storm Druid ~ Venom Immunity
+10	CAST:6,4,4,3,3,2
+11	CAST:6,5,4,4,3,2,1	BONUS:VAR|StormDruidThunder|1
+12	CAST:6,5,4,4,3,3,2	ABILITY:Storm Druid Class Feature|AUTOMATIC|Storm Druid ~ Improved Initiative
+13	CAST:6,5,5,4,4,3,2,1	ABILITY:Storm Druid Class Feature|AUTOMATIC|Storm Druid ~ A Thousand Faces
+14	CAST:6,5,5,4,4,3,3,2	ABILITY:Storm Druid Class Feature|AUTOMATIC|Storm Druid ~ Timeless Body
+15	CAST:6,5,5,5,4,4,3,2,1	BONUS:VAR|StormDruidThunder|1
+16	CAST:6,5,5,5,4,4,3,3,2
+17	CAST:6,5,5,5,5,4,4,3,2,1
+18	CAST:6,5,5,5,5,4,4,3,3,2
+19	CAST:6,5,5,5,5,5,4,4,3,3
+20	CAST:6,5,5,5,5,5,4,4,4,4	BONUS:VAR|StormDruidThunder|1
+
+###Block: Totem Druid (druid variant, PDF p.241)
+CLASS:Totem Druid	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|TtD	MAXLEVEL:20	SOURCEPAGE:p.241	PREALIGN:LN,NG,TN,NE,CN	DEFINE:TotemDruidLVL|0	BONUS:VAR|TotemDruidLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Totem Druid	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Knowledge (Nature)|Listen|TYPE=Profession|Ride|Spellcraft|Spot|Survival|Swim	LANGBONUS:Druidic
+CLASS:Totem Druid	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Druid	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Totem Druid|Caster_Level_TotemDruid	DEFINE:Caster_Level_TotemDruid|0	BONUS:VAR|Caster_Level_TotemDruid|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLTotemDruid|0	BONUS:VAR|CasterLevelBLTotemDruid|charbonusto("PCLEVEL","Totem Druid")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_TotemDruid+CasterLevelBLTotemDruid|TYPE=Base
+1	CAST:3,1	ABILITY:Totem Druid Class Feature|AUTOMATIC|Totem Druid ~ Spells	ABILITY:Totem Druid Class Feature|AUTOMATIC|Totem Druid ~ Nature Sense	ABILITY:Totem Druid Class Feature|AUTOMATIC|Totem Druid ~ Wild Empathy	ABILITY:Totem Druid Class Feature|AUTOMATIC|Totem Druid ~ Totem Animal Companion	ABILITY:Totem Druid Class Feature|AUTOMATIC|Totem Druid ~ Totem Shape	BONUS:VAR|TotemDruidShape|1	ABILITY:Internal|AUTOMATIC|Totem Druid ~ Weapon and Armor Proficiency	BONUS:ABILITYPOOL|Totem Druid Totem Animal|1
+2	CAST:4,2	ABILITY:Totem Druid Class Feature|AUTOMATIC|Totem Druid ~ Natural Spell	ABILITY:Totem Druid Class Feature|AUTOMATIC|Totem Druid ~ Woodland Stride
+3	CAST:4,2,1	ABILITY:Totem Druid Class Feature|AUTOMATIC|Totem Druid ~ Trackless Step	BONUS:VAR|TotemDruidShape|1
+4	CAST:5,3,2	ABILITY:Totem Druid Class Feature|AUTOMATIC|Totem Druid ~ Resist Nature's Lure
+5	CAST:5,3,2,1	BONUS:VAR|TotemDruidShape|1
+6	CAST:5,3,3,2	BONUS:VAR|TotemDruidDire|1
+7	CAST:6,4,3,2,1	BONUS:VAR|TotemDruidShape|1
+8	CAST:6,4,3,3,2	ABILITY:Totem Druid Class Feature|AUTOMATIC|Totem Druid ~ Totem Speech
+9	CAST:6,4,4,3,2,1	ABILITY:Totem Druid Class Feature|AUTOMATIC|Totem Druid ~ Venom Immunity
+10	CAST:6,4,4,3,3,2
+11	CAST:6,5,4,4,3,2,1	BONUS:VAR|TotemDruidShape|1
+12	CAST:6,5,4,4,3,3,2	BONUS:VAR|TotemDruidDire|1
+13	CAST:6,5,5,4,4,3,2,1
+14	CAST:6,5,5,4,4,3,3,2	BONUS:VAR|TotemDruidShape|1
+15	CAST:6,5,5,5,4,4,3,2,1	ABILITY:Totem Druid Class Feature|AUTOMATIC|Totem Druid ~ Timeless Body
+16	CAST:6,5,5,5,4,4,3,3,2
+17	CAST:6,5,5,5,5,4,4,3,2,1	BONUS:VAR|TotemDruidShape|1
+18	CAST:6,5,5,5,5,4,4,3,3,2	BONUS:VAR|TotemDruidDire|1
+19	CAST:6,5,5,5,5,5,4,4,3,3	ABILITY:Totem Druid Class Feature|AUTOMATIC|Totem Druid ~ A Thousand Faces
+20	CAST:6,5,5,5,5,5,4,4,4,4	BONUS:VAR|TotemDruidShape|1
+
+###Block: Wild Reaper (druid variant, PDF p.245)
+CLASS:Wild Reaper	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|WRp	MAXLEVEL:20	SOURCEPAGE:p.245	DEFINE:WildReaperLVL|0	BONUS:VAR|WildReaperLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Wild Reaper	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Intimidate|Knowledge (Nature)|Listen|TYPE=Profession|Ride|Spellcraft|Spot|Survival|Swim	LANGBONUS:Druidic
+CLASS:Wild Reaper	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Druid	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Wild Reaper|Caster_Level_WildReaper	DEFINE:Caster_Level_WildReaper|0	BONUS:VAR|Caster_Level_WildReaper|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLWildReaper|0	BONUS:VAR|CasterLevelBLWildReaper|charbonusto("PCLEVEL","Wild Reaper")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_WildReaper+CasterLevelBLWildReaper|TYPE=Base
+1	CAST:3,1	ABILITY:Wild Reaper Class Feature|AUTOMATIC|Wild Reaper ~ Spells	ABILITY:Wild Reaper Class Feature|AUTOMATIC|Wild Reaper ~ Animal Companion	ABILITY:Wild Reaper Class Feature|AUTOMATIC|Wild Reaper ~ Nature Sense	ABILITY:Internal|AUTOMATIC|Wild Reaper ~ Weapon and Armor Proficiency
+2	CAST:4,2	ABILITY:Wild Reaper Class Feature|AUTOMATIC|Wild Reaper ~ Woodland Stride
+3	CAST:4,2,1	ABILITY:Wild Reaper Class Feature|AUTOMATIC|Wild Reaper ~ Spontaneous Casting
+4	CAST:5,3,2	ABILITY:Wild Reaper Class Feature|AUTOMATIC|Wild Reaper ~ Resist Nature's Lure
+5	CAST:5,3,2,1	ABILITY:Wild Reaper Class Feature|AUTOMATIC|Wild Reaper ~ Wild Shape	BONUS:VAR|WildReaperShape|1
+6	CAST:5,3,3,2	BONUS:VAR|WildReaperShape|1
+7	CAST:6,4,3,2,1	BONUS:VAR|WildReaperShape|1
+8	CAST:6,4,3,3,2
+9	CAST:6,4,4,3,2,1	ABILITY:Wild Reaper Class Feature|AUTOMATIC|Wild Reaper ~ Disease Immunity
+10	CAST:6,4,4,3,3,2	BONUS:VAR|WildReaperShape|1
+11	CAST:6,5,4,4,3,2,1
+12	CAST:6,5,4,4,3,3,2	ABILITY:Wild Reaper Class Feature|AUTOMATIC|Wild Reaper ~ Turn Undead
+13	CAST:6,5,5,4,4,3,2,1	ABILITY:Wild Reaper Class Feature|AUTOMATIC|Wild Reaper ~ Resist Death's Lure
+14	CAST:6,5,5,4,4,3,3,2	BONUS:VAR|WildReaperShape|1
+15	CAST:6,5,5,5,4,4,3,2,1
+16	CAST:6,5,5,5,4,4,3,3,2	ABILITY:Wild Reaper Class Feature|AUTOMATIC|Wild Reaper ~ Fast Healing
+17	CAST:6,5,5,5,5,4,4,3,2,1	ABILITY:Wild Reaper Class Feature|AUTOMATIC|Wild Reaper ~ Ability Damage Healing
+18	CAST:6,5,5,5,5,4,4,3,3,2	BONUS:VAR|WildReaperShape|1
+19	CAST:6,5,5,5,5,5,4,4,3,3	ABILITY:Wild Reaper Class Feature|AUTOMATIC|Wild Reaper ~ Timeless Body
+20	CAST:6,5,5,5,5,5,4,4,4,4
+
+###Block: Wind Walker (druid variant, PDF p.247)
+CLASS:Wind Walker	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|WWk	MAXLEVEL:20	SOURCEPAGE:p.247	DEFINE:WindWalkerLVL|0	BONUS:VAR|WindWalkerLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Wind Walker	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Knowledge (Nature)|Listen|TYPE=Profession|Ride|Spellcraft|Spot|Survival|Swim	LANGBONUS:Druidic	AUTO:LANG|Auran
+CLASS:Wind Walker	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Druid	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Wind Walker|Caster_Level_WindWalker	DEFINE:Caster_Level_WindWalker|0	BONUS:VAR|Caster_Level_WindWalker|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLWindWalker|0	BONUS:VAR|CasterLevelBLWindWalker|charbonusto("PCLEVEL","Wind Walker")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_WindWalker+CasterLevelBLWindWalker|TYPE=Base
+1	CAST:3,1	ABILITY:Wind Walker Class Feature|AUTOMATIC|Wind Walker ~ Spells	ABILITY:Wind Walker Class Feature|AUTOMATIC|Wind Walker ~ Aerial Companion	ABILITY:Wind Walker Class Feature|AUTOMATIC|Wind Walker ~ Aerial Empathy	ABILITY:Wind Walker Class Feature|AUTOMATIC|Wind Walker ~ Zephyr Spellcasting	ABILITY:Internal|AUTOMATIC|Wind Walker ~ Weapon and Armor Proficiency
+2	CAST:4,2	ABILITY:Wind Walker Class Feature|AUTOMATIC|Wind Walker ~ Feather Fall	BONUS:VAR|WindWalkerFeather|1
+3	CAST:4,2,1	ABILITY:Wind Walker Class Feature|AUTOMATIC|Wind Walker ~ Whispering Wind	BONUS:VAR|WindWalkerWhisper|1
+4	CAST:5,3,2	ABILITY:Wind Walker Class Feature|AUTOMATIC|Wind Walker ~ Air Mastery
+5	CAST:5,3,2,1	BONUS:VAR|WindWalkerFeather|1
+6	CAST:5,3,3,2	ABILITY:Wind Walker Class Feature|AUTOMATIC|Wind Walker ~ Friend of the Winds
+7	CAST:6,4,3,2,1	ABILITY:Wind Walker Class Feature|AUTOMATIC|Wind Walker ~ Fly	BONUS:VAR|WindWalkerWhisper|1	BONUS:VAR|WindWalkerFly|1
+8	CAST:6,4,3,3,2	BONUS:VAR|WindWalkerFeather|1
+9	CAST:6,4,4,3,2,1	ABILITY:Wind Walker Class Feature|AUTOMATIC|Wind Walker ~ Air Spell Immunity
+10	CAST:6,4,4,3,3,2	BONUS:VAR|WindWalkerFly|1
+11	CAST:6,5,4,4,3,2,1	BONUS:VAR|WindWalkerWhisper|1
+12	CAST:6,5,4,4,3,3,2	ABILITY:Wind Walker Class Feature|AUTOMATIC|Wind Walker ~ Air Domain
+13	CAST:6,5,5,4,4,3,2,1	BONUS:VAR|WindWalkerFly|1
+14	CAST:6,5,5,4,4,3,3,2	DOMAIN:Air
+15	CAST:6,5,5,5,4,4,3,2,1	ABILITY:Wind Walker Class Feature|AUTOMATIC|Wind Walker ~ Timeless Body
+16	CAST:6,5,5,5,4,4,3,3,2	ABILITY:Wind Walker Class Feature|AUTOMATIC|Wind Walker ~ Elemental Shape	BONUS:VAR|WindWalkerElemental|1
+17	CAST:6,5,5,5,5,4,4,3,2,1
+18	CAST:6,5,5,5,5,4,4,3,3,2	BONUS:VAR|WindWalkerElemental|1
+19	CAST:6,5,5,5,5,5,4,4,3,3
+20	CAST:6,5,5,5,5,5,4,4,4,4	BONUS:VAR|WindWalkerElemental|1
+
+###Block: Winter Warden (druid variant, PDF p.249)
+CLASS:Winter Warden	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|WiW	MAXLEVEL:20	SOURCEPAGE:p.249	DEFINE:WinterWardenLVL|0	BONUS:VAR|WinterWardenLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Winter Warden	STARTSKILLPTS:4	CSKILL:Balance|Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Knowledge (Geography)|Knowledge (Nature)|Listen|TYPE=Profession|Ride|Spellcraft|Spot|Survival|Swim	LANGBONUS:Druidic
+CLASS:Winter Warden	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Druid	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Winter Warden|Caster_Level_WinterWarden	DEFINE:Caster_Level_WinterWarden|0	BONUS:VAR|Caster_Level_WinterWarden|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLWinterWarden|0	BONUS:VAR|CasterLevelBLWinterWarden|charbonusto("PCLEVEL","Winter Warden")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_WinterWarden+CasterLevelBLWinterWarden|TYPE=Base
+1	CAST:3,1	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Spells	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Animal Companion	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Cold Casting	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Nature Sense	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Wild Empathy	ABILITY:Internal|AUTOMATIC|Winter Warden ~ Weapon and Armor Proficiency
+2	CAST:4,2	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Ray of Frost
+3	CAST:4,2,1	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Drift Stride
+4	CAST:5,3,2	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Trackless Step
+5	CAST:5,3,2,1	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Ice Stride
+6	CAST:5,3,3,2	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Wild Shape	BONUS:VAR|WinterWardenShape|1
+7	CAST:6,4,3,2,1	BONUS:VAR|WinterWardenShape|1
+8	CAST:6,4,3,3,2	BONUS:VAR|WinterWardenShape|1
+9	CAST:6,4,4,3,2,1	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Resistance to Cold
+10	CAST:6,4,4,3,3,2
+11	CAST:6,5,4,4,3,2,1	BONUS:VAR|WinterWardenShape|1
+12	CAST:6,5,4,4,3,3,2
+13	CAST:6,5,5,4,4,3,2,1	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Wall of Ice
+14	CAST:6,5,5,4,4,3,3,2	BONUS:VAR|WinterWardenShape|1
+15	CAST:6,5,5,5,4,4,3,2,1
+16	CAST:6,5,5,5,4,4,3,3,2
+17	CAST:6,5,5,5,5,4,4,3,2,1	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Otiluke's Freezing Sphere
+18	CAST:6,5,5,5,5,4,4,3,3,2	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Immunity to Cold
+19	CAST:6,5,5,5,5,5,4,4,3,3	BONUS:VAR|WinterWardenShape|1
+20	CAST:6,5,5,5,5,5,4,4,4,4	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Polar Ray

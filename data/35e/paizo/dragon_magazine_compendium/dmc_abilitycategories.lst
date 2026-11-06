@@ -52,3 +52,50 @@ ABILITYCATEGORY:Sohei (DMC) Class Feature	CATEGORY:Special Ability	TYPE:Sohei (D
 
 ###Block: Shaman (DMC)
 ABILITYCATEGORY:Shaman (DMC) Class Feature	CATEGORY:Special Ability	TYPE:Shaman (DMC) Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Anarch
+ABILITYCATEGORY:Anarch Class Feature	CATEGORY:Special Ability	TYPE:Anarch Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Anti-Paladin
+ABILITYCATEGORY:Anti-Paladin Class Feature	CATEGORY:Special Ability	TYPE:Anti-Paladin Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Avenger
+ABILITYCATEGORY:Avenger Class Feature	CATEGORY:Special Ability	TYPE:Avenger Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Corrupter
+ABILITYCATEGORY:Corrupter Class Feature	CATEGORY:Special Ability	TYPE:Corrupter Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Despot
+ABILITYCATEGORY:Despot Class Feature	CATEGORY:Special Ability	TYPE:Despot Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Enforcer
+ABILITYCATEGORY:Enforcer Class Feature	CATEGORY:Special Ability	TYPE:Enforcer Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Incarnate (Paladin) Elemental Affinity	CATEGORY:Special Ability	TYPE:IncarnatePaladinElementalAffinity	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Class Features
+
+###Block: Incarnate (Paladin)
+ABILITYCATEGORY:Incarnate (Paladin) Class Feature	CATEGORY:Special Ability	TYPE:Incarnate (Paladin) Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Sentinel
+ABILITYCATEGORY:Sentinel Class Feature	CATEGORY:Special Ability	TYPE:Sentinel Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Metal Master
+ABILITYCATEGORY:Metal Master Class Feature	CATEGORY:Special Ability	TYPE:Metal Master Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Sidhe Scholar
+ABILITYCATEGORY:Sidhe Scholar Class Feature	CATEGORY:Special Ability	TYPE:Sidhe Scholar Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Storm Druid
+ABILITYCATEGORY:Storm Druid Class Feature	CATEGORY:Special Ability	TYPE:Storm Druid Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Totem Druid Totem Animal	CATEGORY:Special Ability	TYPE:TotemDruidTotemAnimal	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Class Features
+
+###Block: Totem Druid
+ABILITYCATEGORY:Totem Druid Class Feature	CATEGORY:Special Ability	TYPE:Totem Druid Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Wild Reaper
+ABILITYCATEGORY:Wild Reaper Class Feature	CATEGORY:Special Ability	TYPE:Wild Reaper Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Wind Walker
+ABILITYCATEGORY:Wind Walker Class Feature	CATEGORY:Special Ability	TYPE:Wind Walker Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Winter Warden
+ABILITYCATEGORY:Winter Warden Class Feature	CATEGORY:Special Ability	TYPE:Winter Warden Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO

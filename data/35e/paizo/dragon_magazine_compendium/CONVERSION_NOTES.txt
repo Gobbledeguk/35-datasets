@@ -1120,9 +1120,9 @@ Adventures; data in review_tools/shaman_spells.txt and shaman_domains.txt)
   Fortune, Fury, Grave, Guardian, Hero, Knowledge, Metal, Nature, River, Stone, Travel, Trickery, War, Wood - keyed
   "<name> (Shaman)") with their spells (non-PHB spells via dmc_shaman_domains_opt*.lst) and granted powers (Domain-category
   abilities: Community +2 Diplomacy and calm emotions 1/day, Knowledge/Travel/Trickery class skills, War the Weapon Focus pool,
-  the others as text). Granted as the cleric's (BONUS:DOMAIN|NUMBER: 2, a third at 11th). PCGen offers domains only through a
-  deity, so a pseudo-deity "Shaman Spirits" (dmc_deities_shaman.lst) lists the 19 domains, available only to the Shaman (DMC), as
-  the Dragonlance Campaign Setting's "Mystic" deity does. PCGen supplies one domain slot per spell level; the second domain slot
+  the others as text). Chosen like a cleric's (BONUS:DOMAIN|NUMBER: 2, a third at 11th) from the 19 shaman domains,
+  offered by ADDDOMAINS on the class (domain choices regardless of deity - no deity needed). (First built with a pseudo-deity
+  "Shaman Spirits" offering the domains; replaced - it showed as one deity entity instead of selectable domains.) PCGen supplies one domain slot per spell level; the second domain slot
   from 11th level (the table's "+2") is an additional spell of that level (BONUS:SPELLCAST) - simplification.
 - Unarmed strike: Improved Unarmed Strike and the PHB monk's unarmed damage fed with the shaman's progression (1d6/1d8/1d10/2d6
   at 1st/6th/12th/18th = monk levels 1/4/8/12); Small sizes match the book, Large follows the monk's size table. Animal companion
@@ -1131,8 +1131,9 @@ Adventures; data in review_tools/shaman_spells.txt and shaman_domains.txt)
   the Lifeblood, Pain Touch with Complete Warrior; + Falling Star Strike, Great Ki Shout, Ki Shout, Unbalancing Strike with
   Oriental Adventures). Spirits' favor: Charisma bonus on all saves (paladin's divine grace form). Spirit sight, spontaneous
   cure/inflict casting: text.
-Verified in PCGen 6.08 (35e; human, Wis 16, Cha 14, neutral good, deity Shaman Spirits): all 19 domains offered, 2 selections at 1st
-(without the pseudo-deity: none); levels 1/5/11/20 - BAB and base saves exactly the table; spells per day = table + Wisdom bonus
+Verified in PCGen 6.08 (35e; human, Wis 16, Cha 14, neutral good): without any deity all 19 domains offered, 2 selections at 1st;
+adding Community and Ancestor through PCGen's interface leaves exactly those two (0 selections left), with Community's +2
+Diplomacy and its domain spell status (4th); levels 1/5/11/20 - BAB and base saves exactly the table; spells per day = table + Wisdom bonus
 spells + the extra domain slots (L11 6,6,5,5,3,2,1); Will total incl. spirits' favor; turning level 3, 5/day at 5th; unarmed 1d6/
 1d8/2d6 steps; companion level = level; Community Diplomacy +2; domain spells: status 4 (Community), dispel chaos/evil/good/law 5
 and antipathy 9 (Guardian), transformation 7 (Hero), power word kill 9 (War); with Oriental Adventures ancestral vengeance 2,
@@ -1182,6 +1183,53 @@ AC 12, Str 14 Con 14 Int 4, speed 40 ft., darkvision, DR 5/magic, CR 4, Escape A
 immunities, death throes, savage fever, afflicted, ferocity on the sheet. No load messages. (The bite sub-template is chosen when
 a template is applied in PCGen; hand-written test characters skip that step - the MM Half-Fiend behaves the same.)
 
+PALADIN VARIANT CLASSES (pp. 405-452) - built by paladin_variants_build.py (one data block per variant)
+- Anarch (CN), Anti-Paladin (CE), Avenger (CG), Corrupter (NE), Despot (LE), Enforcer (LN), Incarnate (Paladin) (N; keyed so,
+  Magic of Incarnum has a different Incarnate), Sentinel (NG): HD d10, full BAB, the good save of each table (anarch/corrupter
+  Reflex, anti-paladin/incarnate/sentinel Fortitude, avenger/despot/enforcer Will), 2 skill points, PREALIGN, the book's class
+  skills; martial weapons, all armor, shields except tower; spells as the PHB paladin (Wisdom, prepared from the class's own
+  list, the paladin's spells-per-day table, caster level 1/2); smites and per-day/per-week abilities counted on the level lines
+  and shown in the descriptions; at-will detections and the spell-like abilities as SPELLS:Innate (TIMEUNIT=Week).
+- Companions: anarch special mount, anti-paladin fiendish mount (the PHB special mount, SpecialMountLVL); avenger animal minion,
+  sentinel celestial minion (the special mount type with RACETYPE=Animal; size limit/template not enforced); incarnate elemental
+  minion (Medium air/earth or fire/water elementals by the elemental affinity chosen at 1st, which also gives resistance 5 to
+  its two energies from 3rd); corrupter fiendish familiar (Improved Familiar + imp/quasit; the core rules' alignment condition on
+  the imp hides it from a neutral evil corrupter - noted). Despot and enforcer: Leadership feat + 1 Leadership score. Enforcer:
+  rebuke undead through the repo's turning system.
+- Spells not in the PHB or the compendium go on a list only with a book defining them (dmc_classes_variants_<book>.lst: unholy
+  sword - Unearthed Arcana - for the anti-paladin). Misprints: avenger cure moderate wounds at 2nd and 3rd (kept at 2nd); sentinel
+  dispel evil 1/week at 12th (2/week per the text).
+- Not classes: Inquisitor and Wyrmslayer are feature swaps for the standard paladin, Lion Legionnaire, Mystic Fire Knight etc.
+  substitution levels - for the alternative class features task. Paladin of Freedom/Slaughter/Tyranny exist in Unearthed
+  Arcana. Warrior Paladin (p.450) is Complete Warrior's "Variant Paladin Without Spellcasting" (same features and text: no
+  spells, blessed weapon 6th, divine might 11th, tend to mount 13th, holy sword 16th), which the repository implements as an
+  option on the PHB paladin (cw_classes/cw_abilities) - a WotC reprint, not repeated.
+Verified in PCGen 6.08 (35e; Cha 14, Wis 14): every variant's BAB, base saves, uses per day/week and spells per day exactly the
+table at the tested levels (anarch 1/8/20, anti-paladin 6/18, avenger 5/12, corrupter 8, despot 7/19, enforcer 13, incarnate 8,
+sentinel 12); companions offered as described; spell lists checked; no load messages.
+
+DRUID VARIANT CLASSES (pp. 216-251) - built by druid_variants_build.py (one data block per variant)
+- Metal Master (d10, good Fort; metal sense; DR 1/bludgeoning -> 5/adamantine, one DR entry per type with a level-dependent
+  amount; major creation, iron body), Sidhe Scholar (d6; reuses the PHB druid's wild shape, nature sense, companion etc. -
+  she can't multiclass with the druid; Skill Focus/Craft Staff; Evil domain spells from 6th), Storm Druid (no wild shape or
+  companion; thunder strike, wind sense, electricity resistance 5-20), Totem Druid (totem animal choice - its companion list
+  is the PHB druid's entries for that animal, companion level +2; totem shape), Wild Reaper (2 skill points; animal-only
+  wild shape; turn undead; fast healing 1/3), Wind Walker (good Ref/Will; aerial companion with its own list - the giant owl
+  only with Dungeonscape, dmc_abilities_dungeonscape.lst; feather fall/whispering wind/fly; Air domain power at 12th, the
+  domain with spells and slot at 14th; +1 caster level/DC for air spells), Winter Warden (4 skill points; ray of frost on the
+  list; +1 caster level/DC for cold spells; cold resistance 5-20, immunity at 18th; wall of ice, freezing sphere, polar ray).
+  All: the PHB druid's spellcasting (SPELLLIST:1|Druid, the druid's table, the alignment PROHIBITSPELL lines), the class's own
+  skills and proficiencies, reused PHB druid abilities where the text says "same as the druid".
+- Not built: Druidic Avenger (Unearthed Arcana - in the repository), Huntsman (a feature swap - alternative features task).
+- Fixes found while testing: (1) the shared Animal Companion ability brings the PHB druid's whole list unless the character
+  has an Internal ability of type AnimalCompanionAlternate - the Urban Druid and Shaman (DMC) offered the druid's list on top of
+  their own; a shared "DMC ~ Animal Companion Alternate" ability is now granted by the urban druid, shaman, totem druid and wind
+  walker companions. (2) FastHealing needs its own DEFINE (wild reaper, and the undead minion's relentless undead).
+Verified in PCGen 6.08 (35e; Wis 14): every variant's BAB and saves per its table at 2-5 tested levels, per-day abilities, DR
+(metal master at 6/14/16/18/20), resistances, wild shape counts (the sidhe scholar's through the druid's own variables),
+companion lists (totem wolf at 1/4/5: wolf, then dire wolf from 5th; wind walker eagle/hawk/owl + dire bat/hippogriff at 4th;
+urban druid exactly its own 20 at 5th), the Air domain spells at 14th, spell lists; no load messages.
+
 STATUS (04/11/2026)
 - All 14 base classes of the classes section are rebuilt and verified: Master, Battle Dancer, Mariner, Mountebank (DMC), Noble,
   Mystic, Sha'ir, Savant, Death Master, Jester, Nightstalker, Urban Druid, Sohei (DMC), Shaman (DMC).
@@ -1207,10 +1255,12 @@ whole file under one condition, so files with different conditions or object typ
   book that defines them
 - dmc_classes_oa.lst <- Oriental Adventures spells and Iaijutsu Focus for the Sohei (DMC), loaded only with that book
 - dmc_abilities_defstrike.lst <- the Defensive Strike feat for the Sohei (DMC), with Oriental Adventures or Complete Warrior
-- dmc_domains_shaman.lst, dmc_deities_shaman.lst <- the 19 shaman domains and the "Shaman Spirits" pseudo-deity
+- dmc_domains_shaman.lst <- the 19 shaman domains (offered to the Shaman (DMC) by ADDDOMAINS)
 - dmc_shaman_classes_opt*.lst, dmc_shaman_domains_opt*.lst <- Shaman (DMC) class/domain spells from other books, loaded with them
 - dmc_abilitycategories_shamanfeat_core/oa/cw.lst <- the Shaman (DMC) bonus feat list, one variant by the books loaded
 - dmc_races_companions.lst, dmc_companionmods.lst <- the gens (sha'ir familiars) and the undead minion's progression
+- dmc_classes_variants_<book>.lst <- variant class spells existing only in another book, loaded with it
+- dmc_abilities_dungeonscape.lst <- the giant owl as the wind walker's aerial companion, with Dungeonscape
 - one file per optional book where content depends on it: _xph (Expanded Psionics: racial, domain, feat additions), _sc,
   _bovd, _cadv, _ca, _rs, _rw, vestiges (Tome of Magic), flaws (Unearthed Arcana), feats_nocw (only without Complete Warrior)
 - separate by type as in the repo: races, templates, languages, domains, spells + class/domain spell lists (like the PHB's
