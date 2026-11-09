@@ -1,4 +1,0 @@
-# Dragon Magazine Compendium - pseudo-deity offering the shaman domains (PCGen grants domains through a deity), as the
-# Dragonlance Campaign Setting's "Mystic" deity. Only for the Shaman (DMC).
-
-Shaman Spirits	DOMAINS:Ancestor (Shaman),Celestial (Shaman),Community (Shaman),Divination (Shaman),Flame (Shaman),Fortune (Shaman),Fury (Shaman),Grave (Shaman),Guardian (Shaman),Hero (Shaman),Knowledge (Shaman),Metal (Shaman),Nature (Shaman),River (Shaman),Stone (Shaman),Travel (Shaman),Trickery (Shaman),War (Shaman),Wood (Shaman)|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE	FACT:Symbol|None	FACTSET:Pantheon|Spirits	PRECLASS:1,Shaman (DMC)=1	SOURCEPAGE:p.550	DESC:The spirits a shaman deals with - spirits of the dead, animal spirits and nature spirits. Choose this to select the shaman domains.
