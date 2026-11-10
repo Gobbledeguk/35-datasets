@@ -142,3 +142,12 @@ ABILITYCATEGORY:Soul Reaper Bonus Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	
 
 ###Block: Soul Reaper
 ABILITYCATEGORY:Soul Reaper Class Feature	CATEGORY:Special Ability	TYPE:Soul Reaper Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Wild Defender
+ABILITYCATEGORY:Wild Defender Class Feature	CATEGORY:Special Ability	TYPE:Wild Defender Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Horselord
+ABILITYCATEGORY:Horselord Class Feature	CATEGORY:Special Ability	TYPE:Horselord Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Implacable
+ABILITYCATEGORY:Implacable Class Feature	CATEGORY:Special Ability	TYPE:Implacable Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO

@@ -1271,6 +1271,37 @@ Verified in PCGen 6.08 (35e): every variant's BAB and saves at 3 levels; spells 
 magic missile, silent image prohibited; charm person, ray of enfeeblement allowed); bardic knowledge bard 3 / filidh 5 = 8;
 spiritual vassal AC 14/13/13, Str 8 Dex 12 Con - Int 10 Wis 12 Cha 10, fly 30 ft., Tiny undead; no load messages.
 
+RANGER VARIANT CLASSES (pp. 476-502) - built by cleric_variants_build.py (it now takes a spell list and caster level formula)
+- Wild Defender (variant ranger; NG/LN/N/CN; full BAB, good Fort/Ref, 6 skill points, the ranger's skills and proficiencies;
+  without favored enemy, bonus feats/combat style, camouflage, hide in plain sight): smite evil through the PHB paladin's own
+  ability and PaladinSmiteEvilLVL - stacks with paladin levels as the text says; natural lore; the ranger's wild empathy,
+  woodland stride (2nd), animal companion (5th, companion level half its level), evasion (11th); the druid's trackless step and
+  resist nature's lure; rebuke nature (animals ... elementals) as text with its values; spells by its own table from 1st level.
+  The compendium's text breaks off (p.500 starts the rogue section) before the spellcasting rules: the ranger list, Wisdom and
+  half-level caster level are assumed.
+- Not built: Mystic Ranger (Dragon 336 - in the repository), Planewalker Ranger = Unearthed Arcana's Planar Ranger and Urban
+  Ranger = Unearthed Arcana's Urban Ranger (in the repository as "Ranger (Planar Ranger)" / "Ranger (Urban Ranger)"), Warrior
+  Ranger = Complete Warrior's Variant Ranger Without Spellcasting (in the repository as a ranger option), Predator and Arcane
+  Hunter (feature swaps - alternative class features task).
+Verified in PCGen 6.08 (35e; Wis 14): BAB/saves at 1/10/20 exactly the table; spells per day 0,1 / 0,3,3,1 / 0,6,5,4,4 (table +
+Wisdom bonus spells); ranger list (entangle 1, cure light wounds 2, tree stride 4; no fireball); companion level 0/5/10; smite level
+= its level, paladin 3 / wild defender 5 = 8, "Smite Evil 5/day" at 20th; no load messages.
+
+BARBARIAN VARIANT CLASSES (pp. 95-117) - built by barbarian_variants_build.py
+- Horselord and Implacable (variant barbarians: the PHB barbarian's chassis - d12, full BAB, good Fort, 4 skill points, its
+  skills, nonlawful - and its uncanny dodge, trap sense, improved uncanny dodge, indomitable will, tireless rage and illiteracy,
+  fed with the variant's level; damage reduction as an own DR entry with the barbarian's formula - the barbarian's ability
+  subtracts one without barbarian levels). Horselord: no fast movement or trap sense; battle ecstasy instead of rage (uses as
+  rage, +4 Dex/Con, DR 1/-); riding bonuses; a horse animal companion from 4th (light or heavy horse, companion level half his
+  level, the alternate-list hook); Improved Mounted Archery at 6th - only with Complete Warrior, the book defining it
+  (dmc_abilities_horselord_cw.lst; the core entry is in the unloaded the_mess.lst). Implacable: no fast movement; all armor;
+  resilient rage (+4/+6/+8 Dex and Con, +2 Will, DR 1/2/3) instead of the rage bonuses.
+- Not built: Totem Barbarian (Unearthed Arcana - in the repository as the totem abilities), Hunter (a feature swap; not the
+  repository's Hunter class).
+Verified in PCGen 6.08 (35e): BAB/saves at 3 levels each; DR 1/- at 7th, 2/- at 11th, 5/- at 20th; trap sense +3/+6 (implacable),
+none (horselord); companion offers only the two horses (level 2/3/10); full plate only for the implacable; the feat only with
+Complete Warrior; no load messages.
+
 STATUS (04/11/2026)
 - All 14 base classes of the classes section are rebuilt and verified: Master, Battle Dancer, Mariner, Mountebank (DMC), Noble,
   Mystic, Sha'ir, Savant, Death Master, Jester, Nightstalker, Urban Druid, Sohei (DMC), Shaman (DMC).
@@ -1302,6 +1333,7 @@ whole file under one condition, so files with different conditions or object typ
 - dmc_races_companions.lst, dmc_companionmods.lst <- the gens (sha'ir familiars) and the undead minion's progression
 - dmc_classes_variants_<book>.lst <- variant class spells existing only in another book, loaded with it
 - dmc_abilities_dungeonscape.lst <- the giant owl as the wind walker's aerial companion, with Dungeonscape
+- dmc_abilities_horselord_cw.lst <- the horselord's Improved Mounted Archery, with Complete Warrior
 - one file per optional book where content depends on it: _xph (Expanded Psionics: racial, domain, feat additions), _sc,
   _bovd, _cadv, _ca, _rs, _rw, vestiges (Tome of Magic), flaws (Unearthed Arcana), feats_nocw (only without Complete Warrior)
 - separate by type as in the repo: races, templates, languages, domains, spells + class/domain spell lists (like the PHB's

@@ -1,0 +1,4 @@
+# Dragon Magazine Compendium - the horselord's Improved Mounted Archery bonus feat, loaded only with Complete Warrior (the book
+# defining the feat; the core entry is in the unloaded the_mess.lst).
+
+CATEGORY=Special Ability|Horselord ~ Improved Mounted Archery.MOD	ABILITY:FEAT|AUTOMATIC|Improved Mounted Archery

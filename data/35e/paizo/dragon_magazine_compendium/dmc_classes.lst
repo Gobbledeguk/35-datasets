@@ -924,3 +924,76 @@ CLASS:Soul Reaper	SPELLSTAT:INT	FACT:SpellType|Arcane	MEMORIZE:YES	SPELLBOOK:YES
 18	CAST:5,5,5,5,5,5,5,4,4,3
 19	CAST:5,5,5,5,5,5,5,5,4,4
 20	CAST:5,5,5,5,5,5,5,5,5,5	BONUS:ABILITYPOOL|Soul Reaper Bonus Feat|1
+
+###Block: Wild Defender (cleric variant, PDF p.498)
+CLASS:Wild Defender	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|WDf	MAXLEVEL:20	SOURCEPAGE:p.498	PREALIGN:NG,LN,TN,CN	DEFINE:WildDefenderLVL|0	BONUS:VAR|WildDefenderLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABFull|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Wild Defender	STARTSKILLPTS:6	CSKILL:Climb|Concentration|TYPE=Craft|Handle Animal|Heal|Hide|Jump|Knowledge (Dungeoneering)|Knowledge (Geography)|Knowledge (Nature)|Listen|Move Silently|TYPE=Profession|Ride|Search|Spot|Survival|Swim|Use Rope
+CLASS:Wild Defender	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Ranger	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Wild Defender|Caster_Level_WildDefender	DEFINE:Caster_Level_WildDefender|0	BONUS:VAR|Caster_Level_WildDefender|floor(CL/2)+Caster_Level_Bonus	DEFINE:CasterLevelBLWildDefender|0	BONUS:VAR|CasterLevelBLWildDefender|charbonusto("PCLEVEL","Wild Defender")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_WildDefender+CasterLevelBLWildDefender|TYPE=Base
+1	CAST:0,0	ABILITY:Wild Defender Class Feature|AUTOMATIC|Wild Defender ~ Spells	ABILITY:Wild Defender Class Feature|AUTOMATIC|Wild Defender ~ Smite Evil	ABILITY:Wild Defender Class Feature|AUTOMATIC|Wild Defender ~ Natural Lore	ABILITY:Wild Defender Class Feature|AUTOMATIC|Wild Defender ~ Wild Empathy	ABILITY:Internal|AUTOMATIC|Wild Defender ~ Weapon and Armor Proficiency
+2	CAST:0,0	ABILITY:Wild Defender Class Feature|AUTOMATIC|Wild Defender ~ Woodland Stride
+3	CAST:0,1	ABILITY:Wild Defender Class Feature|AUTOMATIC|Wild Defender ~ Trackless Step
+4	CAST:0,1,0	ABILITY:Wild Defender Class Feature|AUTOMATIC|Wild Defender ~ Resist Nature's Lure
+5	CAST:0,1,0	ABILITY:Wild Defender Class Feature|AUTOMATIC|Wild Defender ~ Animal Companion
+6	CAST:0,1,1	ABILITY:Wild Defender Class Feature|AUTOMATIC|Wild Defender ~ Rebuke Nature
+7	CAST:0,2,1,0
+8	CAST:0,2,1,0
+9	CAST:0,2,1,1
+10	CAST:0,2,2,1,0
+11	CAST:0,3,2,1,0	ABILITY:Wild Defender Class Feature|AUTOMATIC|Wild Defender ~ Evasion
+12	CAST:0,3,2,1,1
+13	CAST:0,3,2,2,1
+14	CAST:0,3,3,2,1
+15	CAST:0,4,3,2,1
+16	CAST:0,4,3,2,2
+17	CAST:0,4,3,3,2
+18	CAST:0,4,4,3,3
+19	CAST:0,5,4,3,3
+20	CAST:0,5,4,4,4
+
+###Block: Horselord (barbarian variant, PDF p.103)
+CLASS:Horselord	HD:12	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Hrs	MAXLEVEL:20	SOURCEPAGE:p.103	PREALIGN:NG,TN,NE,CG,CN,CE	DEFINE:HorselordLVL|0	BONUS:VAR|HorselordLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABFull|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Horselord	STARTSKILLPTS:4	CSKILL:Climb|TYPE=Craft|Handle Animal|Intimidate|Jump|Listen|Ride|Survival|Swim
+1	ABILITY:Horselord Class Feature|AUTOMATIC|Horselord ~ Battle Ecstasy	ABILITY:Horselord Class Feature|AUTOMATIC|Horselord ~ Horseman	ABILITY:Horselord Class Feature|AUTOMATIC|Horselord ~ Illiteracy	ABILITY:Internal|AUTOMATIC|Horselord ~ Proficiencies
+2	ABILITY:Horselord Class Feature|AUTOMATIC|Horselord ~ Uncanny Dodge
+3
+4	ABILITY:Horselord Class Feature|AUTOMATIC|Horselord ~ Animal Companion
+5	ABILITY:Horselord Class Feature|AUTOMATIC|Horselord ~ Improved Uncanny Dodge
+6	ABILITY:Horselord Class Feature|AUTOMATIC|Horselord ~ Improved Mounted Archery
+7	ABILITY:Horselord Class Feature|AUTOMATIC|Horselord ~ Damage Reduction
+8
+9
+10
+11
+12
+13
+14	ABILITY:Horselord Class Feature|AUTOMATIC|Horselord ~ Indomitable Will
+15
+16
+17	ABILITY:Horselord Class Feature|AUTOMATIC|Horselord ~ Tireless Rage
+18
+19
+20
+
+###Block: Implacable (barbarian variant, PDF p.104)
+CLASS:Implacable	HD:12	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Imp	MAXLEVEL:20	SOURCEPAGE:p.104	PREALIGN:NG,TN,NE,CG,CN,CE	DEFINE:ImplacableLVL|0	BONUS:VAR|ImplacableLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABFull|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Implacable	STARTSKILLPTS:4	CSKILL:Climb|TYPE=Craft|Handle Animal|Intimidate|Jump|Listen|Ride|Survival|Swim
+1	ABILITY:Implacable Class Feature|AUTOMATIC|Implacable ~ Resilient Rage	ABILITY:Implacable Class Feature|AUTOMATIC|Implacable ~ Weapon and Armor Proficiency	ABILITY:Implacable Class Feature|AUTOMATIC|Implacable ~ Illiteracy	ABILITY:Internal|AUTOMATIC|Implacable ~ Proficiencies
+2	ABILITY:Implacable Class Feature|AUTOMATIC|Implacable ~ Uncanny Dodge
+3	ABILITY:Implacable Class Feature|AUTOMATIC|Implacable ~ Trap Sense
+4
+5	ABILITY:Implacable Class Feature|AUTOMATIC|Implacable ~ Improved Uncanny Dodge
+6
+7	ABILITY:Implacable Class Feature|AUTOMATIC|Implacable ~ Damage Reduction
+8
+9
+10
+11
+12
+13
+14	ABILITY:Implacable Class Feature|AUTOMATIC|Implacable ~ Indomitable Will
+15
+16
+17	ABILITY:Implacable Class Feature|AUTOMATIC|Implacable ~ Tireless Rage
+18
+19
+20
