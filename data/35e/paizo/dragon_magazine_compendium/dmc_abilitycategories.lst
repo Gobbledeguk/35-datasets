@@ -123,3 +123,22 @@ ABILITYCATEGORY:Evangelist (Cleric) Class Feature	CATEGORY:Special Ability	TYPE:
 
 ###Block: Rage Cleric
 ABILITYCATEGORY:Rage Cleric Class Feature	CATEGORY:Special Ability	TYPE:Rage Cleric Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Anagakok
+ABILITYCATEGORY:Anagakok Class Feature	CATEGORY:Special Ability	TYPE:Anagakok Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Deathwalker Prohibited School	CATEGORY:Special Ability	TYPE:DeathwalkerProhibitedSchool	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Class Features
+
+###Block: Deathwalker
+ABILITYCATEGORY:Deathwalker Class Feature	CATEGORY:Special Ability	TYPE:Deathwalker Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Filidh
+ABILITYCATEGORY:Filidh Class Feature	CATEGORY:Special Ability	TYPE:Filidh Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Fleshcrafter Prohibited School	CATEGORY:Special Ability	TYPE:FleshcrafterProhibitedSchool	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Class Features
+
+###Block: Fleshcrafter
+ABILITYCATEGORY:Fleshcrafter Class Feature	CATEGORY:Special Ability	TYPE:Fleshcrafter Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Soul Reaper Prohibited School	CATEGORY:Special Ability	TYPE:SoulReaperProhibitedSchool	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Soul Reaper Bonus Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	CATEGORY:FEAT	TYPE:Metamagic.ItemCreation	ABILITYLIST:Spell Focus|Greater Spell Focus	PLURAL:Soul Reaper Bonus Feats	DISPLAYLOCATION:Feats
+
+###Block: Soul Reaper
+ABILITYCATEGORY:Soul Reaper Class Feature	CATEGORY:Special Ability	TYPE:Soul Reaper Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO

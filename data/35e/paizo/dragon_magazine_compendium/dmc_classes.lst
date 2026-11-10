@@ -799,3 +799,128 @@ CLASS:Rage Cleric	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZ
 18	CAST:6,5,5,5,5,4,4,3,3,2
 19	CAST:6,5,5,5,5,5,4,4,3,3
 20	CAST:6,5,5,5,5,5,4,4,4,4	ABILITY:Rage Cleric Class Feature|AUTOMATIC|Rage Cleric ~ Mighty Rage
+
+###Block: Anagakok (cleric variant, PDF p.658)
+CLASS:Anagakok	HD:4	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Ana	MAXLEVEL:20	SOURCEPAGE:p.658	DEFINE:AnagakokLVL|0	BONUS:VAR|AnagakokLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")/2|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABPoor|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Anagakok	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Decipher Script|TYPE=Knowledge|TYPE=Profession|Spellcraft|Survival
+CLASS:Anagakok	SPELLSTAT:INT	FACT:SpellType|Arcane	MEMORIZE:YES	SPELLBOOK:YES	KNOWNSPELLS:LEVEL=0	SPELLLIST:1|Wizard	PROHIBITSPELL:SCHOOL.Illusion	PROHIBITSPELL:SCHOOL.Necromancy	BONUS:CASTERLEVEL|Anagakok|Caster_Level_Anagakok	DEFINE:Caster_Level_Anagakok|0	BONUS:VAR|Caster_Level_Anagakok|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLAnagakok|0	BONUS:VAR|CasterLevelBLAnagakok|charbonusto("PCLEVEL","Anagakok")	BONUS:VAR|Caster_Level_Highest__Arcane|Caster_Level_Anagakok+CasterLevelBLAnagakok|TYPE=Base	SPELLLEVEL:CLASS|Anagakok=0|Create Water,Know Direction,Purify Food and Drink	SPELLLEVEL:CLASS|Anagakok=1|Calm Animals,Charm Animal,Detect Animals or Plants,Detect Snares and Pits,Longstrider,Pass without Trace	SPELLLEVEL:CLASS|Anagakok=2|Animal Trance,Hold Animal,Reduce Animal,Wood Shape	SPELLLEVEL:CLASS|Anagakok=3|Diminish Plants,Dominate Animal,Neutralize Poison,Quench,Snare	SPELLLEVEL:CLASS|Anagakok=4|Antiplant Shell,Command Plants,Repel Vermin,Rusting Grasp	SPELLLEVEL:CLASS|Anagakok=5|Awaken,Commune with Nature,Control Winds,Tree Stride	SPELLLEVEL:CLASS|Anagakok=6|Find the Path,Repel Wood,Stone Tell,Transport via Plants	SPELLLEVEL:CLASS|Anagakok=7|Animate Plants,Transmute Metal to Wood,Wind Walk	SPELLLEVEL:CLASS|Anagakok=8|Animal Shapes,Control Plants,Repel Metal or Stone	SPELLLEVEL:CLASS|Anagakok=9|Elemental Swarm,Regenerate,Shambler
+1	CAST:4,2	ABILITY:Anagakok Class Feature|AUTOMATIC|Anagakok ~ Spells	ABILITY:Anagakok Class Feature|AUTOMATIC|Anagakok ~ Illiteracy	ABILITY:Anagakok Class Feature|AUTOMATIC|Anagakok ~ Spontaneous Casting	ABILITY:Anagakok Class Feature|AUTOMATIC|Anagakok ~ Wilderness Lore	ABILITY:Anagakok Class Feature|AUTOMATIC|Anagakok ~ Good Fortune	BONUS:VAR|AnagakokFortune|2	ABILITY:Internal|AUTOMATIC|Anagakok ~ Weapon and Armor Proficiency
+2	CAST:5,3
+3	CAST:5,3,2
+4	CAST:5,4,3
+5	CAST:5,4,3,2	BONUS:VAR|AnagakokFortune|2
+6	CAST:5,4,4,3
+7	CAST:5,5,4,3,2
+8	CAST:5,5,4,4,3
+9	CAST:5,5,5,4,3,2
+10	CAST:5,5,5,4,4,3	BONUS:VAR|AnagakokFortune|2
+11	CAST:5,5,5,5,4,3,2
+12	CAST:5,5,5,5,4,4,3
+13	CAST:5,5,5,5,5,4,3,2
+14	CAST:5,5,5,5,5,4,4,3
+15	CAST:5,5,5,5,5,5,4,3,2	BONUS:VAR|AnagakokFortune|2
+16	CAST:5,5,5,5,5,5,4,4,3
+17	CAST:5,5,5,5,5,5,5,4,3,2
+18	CAST:5,5,5,5,5,5,5,4,4,3
+19	CAST:5,5,5,5,5,5,5,5,4,4
+20	CAST:5,5,5,5,5,5,5,5,5,5	BONUS:VAR|AnagakokFortune|2
+
+###Block: Deathwalker (cleric variant, PDF p.662)
+CLASS:Deathwalker	HD:4	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Dth	MAXLEVEL:20	SOURCEPAGE:p.662	PREALIGN:LE,NE,CE	DEFINE:DeathwalkerLVL|0	BONUS:VAR|DeathwalkerLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")/2|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABPoor|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Deathwalker	STARTSKILLPTS:2	CSKILL:Bluff|Concentration|TYPE=Craft|TYPE=Knowledge|TYPE=Profession|Spellcraft
+CLASS:Deathwalker	SPELLSTAT:INT	FACT:SpellType|Arcane	MEMORIZE:YES	SPELLBOOK:YES	KNOWNSPELLS:LEVEL=0	SPELLLIST:1|Wizard	DEFINE:DeathwalkerProhibitAbjuration|0	PROHIBITSPELL:SCHOOL.Abjuration|PREVARGTEQ:DeathwalkerProhibitAbjuration,1	DEFINE:DeathwalkerProhibitConjuration|0	PROHIBITSPELL:SCHOOL.Conjuration|PREVARGTEQ:DeathwalkerProhibitConjuration,1	DEFINE:DeathwalkerProhibitEnchantment|0	PROHIBITSPELL:SCHOOL.Enchantment|PREVARGTEQ:DeathwalkerProhibitEnchantment,1	DEFINE:DeathwalkerProhibitEvocation|0	PROHIBITSPELL:SCHOOL.Evocation|PREVARGTEQ:DeathwalkerProhibitEvocation,1	DEFINE:DeathwalkerProhibitIllusion|0	PROHIBITSPELL:SCHOOL.Illusion|PREVARGTEQ:DeathwalkerProhibitIllusion,1	DEFINE:DeathwalkerProhibitTransmutation|0	PROHIBITSPELL:SCHOOL.Transmutation|PREVARGTEQ:DeathwalkerProhibitTransmutation,1	BONUS:CASTERLEVEL|Deathwalker|Caster_Level_Deathwalker	DEFINE:Caster_Level_Deathwalker|0	BONUS:VAR|Caster_Level_Deathwalker|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLDeathwalker|0	BONUS:VAR|CasterLevelBLDeathwalker|charbonusto("PCLEVEL","Deathwalker")	BONUS:VAR|Caster_Level_Highest__Arcane|Caster_Level_Deathwalker+CasterLevelBLDeathwalker|TYPE=Base
+1	CAST:4,2	ABILITY:Deathwalker Class Feature|AUTOMATIC|Deathwalker ~ Spells	ABILITY:Deathwalker Class Feature|AUTOMATIC|Deathwalker ~ Master of the Dead	ABILITY:Deathwalker Class Feature|AUTOMATIC|Deathwalker ~ Undead Familiar	ABILITY:Internal|AUTOMATIC|Deathwalker ~ Weapon and Armor Proficiency	BONUS:ABILITYPOOL|Deathwalker Prohibited School|2
+2	CAST:5,3
+3	CAST:5,3,2
+4	CAST:5,4,3
+5	CAST:5,4,3,2	ABILITY:Deathwalker Class Feature|AUTOMATIC|Deathwalker ~ Aura of the Grave
+6	CAST:5,4,4,3
+7	CAST:5,5,4,3,2
+8	CAST:5,5,4,4,3
+9	CAST:5,5,5,4,3,2
+10	CAST:5,5,5,4,4,3	ABILITY:Deathwalker Class Feature|AUTOMATIC|Deathwalker ~ Shroud of Death
+11	CAST:5,5,5,5,4,3,2
+12	CAST:5,5,5,5,4,4,3
+13	CAST:5,5,5,5,5,4,3,2
+14	CAST:5,5,5,5,5,4,4,3
+15	CAST:5,5,5,5,5,5,4,3,2	ABILITY:Deathwalker Class Feature|AUTOMATIC|Deathwalker ~ Mastery of Undeath
+16	CAST:5,5,5,5,5,5,4,4,3
+17	CAST:5,5,5,5,5,5,5,4,3,2
+18	CAST:5,5,5,5,5,5,5,4,4,3
+19	CAST:5,5,5,5,5,5,5,5,4,4
+20	CAST:5,5,5,5,5,5,5,5,5,5	ABILITY:Deathwalker Class Feature|AUTOMATIC|Deathwalker ~ Mantle of Undeath
+
+###Block: Filidh (cleric variant, PDF p.679)
+CLASS:Filidh	HD:4	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Fil	MAXLEVEL:20	SOURCEPAGE:p.679	DEFINE:FilidhLVL|0	BONUS:VAR|FilidhLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")/2|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABPoor|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Filidh	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Decipher Script|Gather Information|Intimidate|TYPE=Knowledge|Sense Motive|Spellcraft|Survival
+CLASS:Filidh	SPELLSTAT:INT	FACT:SpellType|Arcane	MEMORIZE:YES	SPELLBOOK:YES	KNOWNSPELLS:LEVEL=0	SPELLLIST:1|Wizard	BONUS:CASTERLEVEL|Filidh|Caster_Level_Filidh	DEFINE:Caster_Level_Filidh|0	BONUS:VAR|Caster_Level_Filidh|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLFilidh|0	BONUS:VAR|CasterLevelBLFilidh|charbonusto("PCLEVEL","Filidh")	BONUS:VAR|Caster_Level_Highest__Arcane|Caster_Level_Filidh+CasterLevelBLFilidh|TYPE=Base
+1	CAST:3,1	ABILITY:Filidh Class Feature|AUTOMATIC|Filidh ~ Spells	ABILITY:Filidh Class Feature|AUTOMATIC|Filidh ~ Filidh Knowledge	ABILITY:Internal|AUTOMATIC|Filidh ~ Weapon and Armor Proficiency
+2	CAST:4,2
+3	CAST:4,2,1
+4	CAST:4,3,2
+5	CAST:4,3,2,1	ABILITY:Filidh Class Feature|AUTOMATIC|Filidh ~ Greater Divining
+6	CAST:4,3,3,2
+7	CAST:4,4,3,2,1
+8	CAST:4,4,3,3,2
+9	CAST:4,4,4,3,2,1
+10	CAST:4,4,4,3,3,2
+11	CAST:4,4,4,4,3,2,1
+12	CAST:4,4,4,4,3,3,2
+13	CAST:4,4,4,4,4,3,2,1
+14	CAST:4,4,4,4,4,3,3,2
+15	CAST:4,4,4,4,4,4,3,2,1
+16	CAST:4,4,4,4,4,4,3,3,2
+17	CAST:4,4,4,4,4,4,4,3,2,1
+18	CAST:4,4,4,4,4,4,4,3,3,2
+19	CAST:4,4,4,4,4,4,4,4,3,3
+20	CAST:4,4,4,4,4,4,4,4,4,4
+
+###Block: Fleshcrafter (cleric variant, PDF p.679)
+CLASS:Fleshcrafter	HD:4	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Flc	MAXLEVEL:20	SOURCEPAGE:p.679	PREALIGN:LE,NE,CE	DEFINE:FleshcrafterLVL|0	BONUS:VAR|FleshcrafterLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")/2|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABPoor|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Fleshcrafter	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Heal|TYPE=Knowledge|Spellcraft
+CLASS:Fleshcrafter	SPELLSTAT:INT	FACT:SpellType|Arcane	MEMORIZE:YES	SPELLBOOK:YES	KNOWNSPELLS:LEVEL=0	SPELLLIST:1|Wizard	DEFINE:FleshcrafterProhibitAbjuration|0	PROHIBITSPELL:SCHOOL.Abjuration|PREVARGTEQ:FleshcrafterProhibitAbjuration,1	DEFINE:FleshcrafterProhibitConjuration|0	PROHIBITSPELL:SCHOOL.Conjuration|PREVARGTEQ:FleshcrafterProhibitConjuration,1	DEFINE:FleshcrafterProhibitEnchantment|0	PROHIBITSPELL:SCHOOL.Enchantment|PREVARGTEQ:FleshcrafterProhibitEnchantment,1	DEFINE:FleshcrafterProhibitEvocation|0	PROHIBITSPELL:SCHOOL.Evocation|PREVARGTEQ:FleshcrafterProhibitEvocation,1	DEFINE:FleshcrafterProhibitIllusion|0	PROHIBITSPELL:SCHOOL.Illusion|PREVARGTEQ:FleshcrafterProhibitIllusion,1	DEFINE:FleshcrafterProhibitTransmutation|0	PROHIBITSPELL:SCHOOL.Transmutation|PREVARGTEQ:FleshcrafterProhibitTransmutation,1	BONUS:CASTERLEVEL|Fleshcrafter|Caster_Level_Fleshcrafter	DEFINE:Caster_Level_Fleshcrafter|0	BONUS:VAR|Caster_Level_Fleshcrafter|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLFleshcrafter|0	BONUS:VAR|CasterLevelBLFleshcrafter|charbonusto("PCLEVEL","Fleshcrafter")	BONUS:VAR|Caster_Level_Highest__Arcane|Caster_Level_Fleshcrafter+CasterLevelBLFleshcrafter|TYPE=Base
+1	CAST:4,2	ABILITY:Fleshcrafter Class Feature|AUTOMATIC|Fleshcrafter ~ Spells	ABILITY:Fleshcrafter Class Feature|AUTOMATIC|Fleshcrafter ~ Craft Construct	ABILITY:Fleshcrafter Class Feature|AUTOMATIC|Fleshcrafter ~ Stitched Flesh Familiar	ABILITY:Fleshcrafter Class Feature|AUTOMATIC|Fleshcrafter ~ Reaper's Touch	ABILITY:Internal|AUTOMATIC|Fleshcrafter ~ Weapon and Armor Proficiency	BONUS:ABILITYPOOL|Fleshcrafter Prohibited School|2
+2	CAST:5,3
+3	CAST:5,3,2
+4	CAST:5,4,3
+5	CAST:5,4,3,2	ABILITY:Fleshcrafter Class Feature|AUTOMATIC|Fleshcrafter ~ Brink of Life and Death
+6	CAST:5,4,4,3
+7	CAST:5,5,4,3,2
+8	CAST:5,5,4,4,3
+9	CAST:5,5,5,4,3,2
+10	CAST:5,5,5,4,4,3	ABILITY:Fleshcrafter Class Feature|AUTOMATIC|Fleshcrafter ~ Forge Flesh
+11	CAST:5,5,5,5,4,3,2
+12	CAST:5,5,5,5,4,4,3
+13	CAST:5,5,5,5,5,4,3,2
+14	CAST:5,5,5,5,5,4,4,3
+15	CAST:5,5,5,5,5,5,4,3,2	ABILITY:Fleshcrafter Class Feature|AUTOMATIC|Fleshcrafter ~ Master of Life and Death
+16	CAST:5,5,5,5,5,5,4,4,3
+17	CAST:5,5,5,5,5,5,5,4,3,2
+18	CAST:5,5,5,5,5,5,5,4,4,3
+19	CAST:5,5,5,5,5,5,5,5,4,4
+20	CAST:5,5,5,5,5,5,5,5,5,5	ABILITY:Fleshcrafter Class Feature|AUTOMATIC|Fleshcrafter ~ Forge Life
+
+###Block: Soul Reaper (cleric variant, PDF p.696)
+CLASS:Soul Reaper	HD:4	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|SRp	MAXLEVEL:20	SOURCEPAGE:p.696	PREALIGN:LE,NE,CE	DEFINE:SoulReaperLVL|0	BONUS:VAR|SoulReaperLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")/2|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABPoor|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Soul Reaper	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|TYPE=Knowledge|TYPE=Profession|Spellcraft
+CLASS:Soul Reaper	SPELLSTAT:INT	FACT:SpellType|Arcane	MEMORIZE:YES	SPELLBOOK:YES	KNOWNSPELLS:LEVEL=0	SPELLLIST:1|Wizard	DEFINE:SoulReaperProhibitAbjuration|0	PROHIBITSPELL:SCHOOL.Abjuration|PREVARGTEQ:SoulReaperProhibitAbjuration,1	DEFINE:SoulReaperProhibitConjuration|0	PROHIBITSPELL:SCHOOL.Conjuration|PREVARGTEQ:SoulReaperProhibitConjuration,1	DEFINE:SoulReaperProhibitEnchantment|0	PROHIBITSPELL:SCHOOL.Enchantment|PREVARGTEQ:SoulReaperProhibitEnchantment,1	DEFINE:SoulReaperProhibitEvocation|0	PROHIBITSPELL:SCHOOL.Evocation|PREVARGTEQ:SoulReaperProhibitEvocation,1	DEFINE:SoulReaperProhibitIllusion|0	PROHIBITSPELL:SCHOOL.Illusion|PREVARGTEQ:SoulReaperProhibitIllusion,1	DEFINE:SoulReaperProhibitTransmutation|0	PROHIBITSPELL:SCHOOL.Transmutation|PREVARGTEQ:SoulReaperProhibitTransmutation,1	BONUS:CASTERLEVEL|Soul Reaper|Caster_Level_SoulReaper	DEFINE:Caster_Level_SoulReaper|0	BONUS:VAR|Caster_Level_SoulReaper|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLSoulReaper|0	BONUS:VAR|CasterLevelBLSoulReaper|charbonusto("PCLEVEL","Soul Reaper")	BONUS:VAR|Caster_Level_Highest__Arcane|Caster_Level_SoulReaper+CasterLevelBLSoulReaper|TYPE=Base
+1	CAST:4,2	ABILITY:Soul Reaper Class Feature|AUTOMATIC|Soul Reaper ~ Spells	ABILITY:Soul Reaper Class Feature|AUTOMATIC|Soul Reaper ~ Inquisitor of the Grave	ABILITY:Soul Reaper Class Feature|AUTOMATIC|Soul Reaper ~ Spiritual Vassal	ABILITY:Internal|AUTOMATIC|Soul Reaper ~ Weapon and Armor Proficiency	BONUS:ABILITYPOOL|Soul Reaper Prohibited School|2
+2	CAST:5,3
+3	CAST:5,3,2
+4	CAST:5,4,3
+5	CAST:5,4,3,2	ABILITY:Soul Reaper Class Feature|AUTOMATIC|Soul Reaper ~ Ancestral Knowledge	ABILITY:Soul Reaper Class Feature|AUTOMATIC|Soul Reaper ~ Bind Spirit	BONUS:VAR|SoulReaperAncestral|1
+6	CAST:5,4,4,3
+7	CAST:5,5,4,3,2
+8	CAST:5,5,4,4,3
+9	CAST:5,5,5,4,3,2	BONUS:VAR|SoulReaperAncestral|1
+10	CAST:5,5,5,4,4,3	ABILITY:Soul Reaper Class Feature|AUTOMATIC|Soul Reaper ~ Bonus Feat	BONUS:ABILITYPOOL|Soul Reaper Bonus Feat|1
+11	CAST:5,5,5,5,4,3,2
+12	CAST:5,5,5,5,4,4,3
+13	CAST:5,5,5,5,5,4,3,2	BONUS:VAR|SoulReaperAncestral|1
+14	CAST:5,5,5,5,5,4,4,3
+15	CAST:5,5,5,5,5,5,4,3,2	ABILITY:Soul Reaper Class Feature|AUTOMATIC|Soul Reaper ~ Spawn Undead Servitor
+16	CAST:5,5,5,5,5,5,4,4,3
+17	CAST:5,5,5,5,5,5,5,4,3,2	BONUS:VAR|SoulReaperAncestral|1
+18	CAST:5,5,5,5,5,5,5,4,4,3
+19	CAST:5,5,5,5,5,5,5,5,4,4
+20	CAST:5,5,5,5,5,5,5,5,5,5	BONUS:ABILITYPOOL|Soul Reaper Bonus Feat|1

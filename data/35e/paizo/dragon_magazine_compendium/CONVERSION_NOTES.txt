@@ -1252,6 +1252,25 @@ Verified in PCGen 6.08 (35e; Wis 14): every variant's BAB and saves at 2-4 level
 number of domains at every castable level (L4/10/11), per day unchanged, heat metal known; rage cleric: barbarian rage level =
 its level, barbarian 3 / rage cleric 8 = 11 (greater rage, 3/day on the sheet); no load messages.
 
+WIZARD VARIANT CLASSES (pp. 657-701) - built by wizard_variants_build.py (one data block per variant)
+- Anagakok (variant wizard; specialist of his own wilderness school: its 33 spells on his list, the +1 slot, illusion and
+  necromancy prohibited; wilderness lore; good fortune 2-10 points), Deathwalker, Fleshcrafter and Soul Reaper (any evil;
+  necromancer specialists: the +1 slot and two prohibited schools chosen at 1st - not divination - via their own categories;
+  deathwalker: undead familiar on the wizard's familiar mechanism, rebuke undead from 15th, mantle of undeath as text;
+  fleshcrafter: Craft Construct, the stitched flesh familiar as text with its table's values (no statistics in the text);
+  soul reaper: speak with dead 1/day, ancestral knowledge 1-4/day, bonus feats - metamagic/item creation + Spell Focus and
+  Greater Spell Focus - at 10th/20th, and the spiritual vassal as a real familiar - "Companion ~ Spiritual Vassal" in
+  dmc_races_companions.lst, the only familiar offered; its higher Intelligence than the standard familiar table by hand),
+  Filidh (variant wizard; no Scribe Scroll, bonus feats or familiar; filidh knowledge through the bard's BardicKnowledgeLVL -
+  stacks with bard levels; greater divining +1..+4 caster level for divination; school specialization not offered).
+  All: the PHB wizard's casting (Intelligence, spellbook, KNOWNSPELLS:LEVEL=0, the wizard's table, SPELLLIST:1|Wizard,
+  PROHIBITSPELL by school).
+- Not built: Domain Wizard (Unearthed Arcana - in the repository), Combat Wizard (a feature swap).
+Verified in PCGen 6.08 (35e): every variant's BAB and saves at 3 levels; spells per day = wizard table (+1 for the specialists)
++ Intelligence bonus spells; prohibited schools checked through PCGen's own SpellProhibitor (e.g. evocation/illusion: fireball,
+magic missile, silent image prohibited; charm person, ray of enfeeblement allowed); bardic knowledge bard 3 / filidh 5 = 8;
+spiritual vassal AC 14/13/13, Str 8 Dex 12 Con - Int 10 Wis 12 Cha 10, fly 30 ft., Tiny undead; no load messages.
+
 STATUS (04/11/2026)
 - All 14 base classes of the classes section are rebuilt and verified: Master, Battle Dancer, Mariner, Mountebank (DMC), Noble,
   Mystic, Sha'ir, Savant, Death Master, Jester, Nightstalker, Urban Druid, Sohei (DMC), Shaman (DMC).
