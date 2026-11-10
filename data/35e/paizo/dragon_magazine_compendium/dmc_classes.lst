@@ -624,3 +624,178 @@ CLASS:Winter Warden	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMOR
 18	CAST:6,5,5,5,5,4,4,3,3,2	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Immunity to Cold
 19	CAST:6,5,5,5,5,5,4,4,3,3	BONUS:VAR|WinterWardenShape|1
 20	CAST:6,5,5,5,5,5,4,4,4,4	ABILITY:Winter Warden Class Feature|AUTOMATIC|Winter Warden ~ Polar Ray
+
+###Block: Ancestral Speaker (cleric variant, PDF p.148)
+CLASS:Ancestral Speaker	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|AnS	MAXLEVEL:20	SOURCEPAGE:p.148	DEFINE:AncestralSpeakerLVL|0	BONUS:VAR|AncestralSpeakerLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Ancestral Speaker	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (History)|Knowledge (Local)|Knowledge (Religion)|TYPE=Perform|TYPE=Profession|Sense Motive|Spellcraft
+CLASS:Ancestral Speaker	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Cleric	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Ancestral Speaker|Caster_Level_AncestralSpeaker	DEFINE:Caster_Level_AncestralSpeaker|0	BONUS:VAR|Caster_Level_AncestralSpeaker|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLAncestralSpeaker|0	BONUS:VAR|CasterLevelBLAncestralSpeaker|charbonusto("PCLEVEL","Ancestral Speaker")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_AncestralSpeaker+CasterLevelBLAncestralSpeaker|TYPE=Base
+1	CAST:3,1	ABILITY:Ancestral Speaker Class Feature|AUTOMATIC|Ancestral Speaker ~ Spells	ABILITY:Ancestral Speaker Class Feature|AUTOMATIC|Ancestral Speaker ~ Bonus Class Skills	ABILITY:Ancestral Speaker Class Feature|AUTOMATIC|Ancestral Speaker ~ Ancestral Communion	ABILITY:Ancestral Speaker Class Feature|AUTOMATIC|Ancestral Speaker ~ Holy Presence	BONUS:VAR|AncestralSpeakerCommunion|1	ADD:CLASSSKILLS|2|ANY	ABILITY:Internal|AUTOMATIC|Ancestral Speaker ~ Weapon and Armor Proficiency
+2	CAST:4,2
+3	CAST:4,2,1
+4	CAST:5,3,2	ABILITY:Ancestral Speaker Class Feature|AUTOMATIC|Ancestral Speaker ~ Death Talker
+5	CAST:5,3,2,1	BONUS:VAR|AncestralSpeakerCommunion|1
+6	CAST:5,3,3,2
+7	CAST:6,4,3,2,1
+8	CAST:6,4,3,3,2
+9	CAST:6,4,4,3,2,1	ABILITY:Ancestral Speaker Class Feature|AUTOMATIC|Ancestral Speaker ~ Improved Resurrection
+10	CAST:6,4,4,3,3,2	BONUS:VAR|AncestralSpeakerCommunion|1
+11	CAST:6,5,4,4,3,2,1
+12	CAST:6,5,4,4,3,3,2
+13	CAST:6,5,5,4,4,3,2,1
+14	CAST:6,5,5,4,4,3,3,2
+15	CAST:6,5,5,5,4,4,3,2,1	BONUS:VAR|AncestralSpeakerCommunion|1
+16	CAST:6,5,5,5,4,4,3,3,2
+17	CAST:6,5,5,5,5,4,4,3,2,1
+18	CAST:6,5,5,5,5,4,4,3,3,2
+19	CAST:6,5,5,5,5,5,4,4,3,3
+20	CAST:6,5,5,5,5,5,4,4,4,4	BONUS:VAR|AncestralSpeakerCommunion|1
+
+###Block: Arcane Disciple (cleric variant, PDF p.149)
+CLASS:Arcane Disciple	HD:6	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|ArD	MAXLEVEL:20	SOURCEPAGE:p.149	DEFINE:ArcaneDiscipleLVL|0	BONUS:VAR|ArcaneDiscipleLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Arcane Disciple	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Decipher Script|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (History)|Knowledge (Religion)|Knowledge (The Planes)|TYPE=Profession|Spellcraft|Use Magic Device
+CLASS:Arcane Disciple	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Cleric	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Arcane Disciple|Caster_Level_ArcaneDisciple	DEFINE:Caster_Level_ArcaneDisciple|0	BONUS:VAR|Caster_Level_ArcaneDisciple|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLArcaneDisciple|0	BONUS:VAR|CasterLevelBLArcaneDisciple|charbonusto("PCLEVEL","Arcane Disciple")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_ArcaneDisciple+CasterLevelBLArcaneDisciple|TYPE=Base
+1	CAST:3,1	ABILITY:Arcane Disciple Class Feature|AUTOMATIC|Arcane Disciple ~ Spells	ABILITY:Arcane Disciple Class Feature|AUTOMATIC|Arcane Disciple ~ Arcane to Divine	ABILITY:Arcane Disciple Class Feature|AUTOMATIC|Arcane Disciple ~ Bonus Feats	BONUS:ABILITYPOOL|Arcane Disciple Bonus Feat|1	ABILITY:Internal|AUTOMATIC|Arcane Disciple ~ Weapon and Armor Proficiency
+2	CAST:4,2
+3	CAST:4,2,1
+4	CAST:5,3,2
+5	CAST:5,3,2,1	BONUS:ABILITYPOOL|Arcane Disciple Bonus Feat|1
+6	CAST:5,3,3,2
+7	CAST:6,4,3,2,1
+8	CAST:6,4,3,3,2
+9	CAST:6,4,4,3,2,1
+10	CAST:6,4,4,3,3,2	BONUS:ABILITYPOOL|Arcane Disciple Bonus Feat|1
+11	CAST:6,5,4,4,3,2,1
+12	CAST:6,5,4,4,3,3,2
+13	CAST:6,5,5,4,4,3,2,1
+14	CAST:6,5,5,4,4,3,3,2
+15	CAST:6,5,5,5,4,4,3,2,1	BONUS:ABILITYPOOL|Arcane Disciple Bonus Feat|1
+16	CAST:6,5,5,5,4,4,3,3,2
+17	CAST:6,5,5,5,5,4,4,3,2,1
+18	CAST:6,5,5,5,5,4,4,3,3,2
+19	CAST:6,5,5,5,5,5,4,4,3,3
+20	CAST:6,5,5,5,5,5,4,4,4,4	BONUS:ABILITYPOOL|Arcane Disciple Bonus Feat|1
+
+###Block: Aspirant (cleric variant, PDF p.150)
+CLASS:Aspirant	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Asp	MAXLEVEL:20	SOURCEPAGE:p.150	DEFINE:AspirantLVL|0	BONUS:VAR|AspirantLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Aspirant	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (History)|Knowledge (Religion)|Knowledge (The Planes)|TYPE=Profession|Spellcraft
+CLASS:Aspirant	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Cleric	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Aspirant|Caster_Level_Aspirant	DEFINE:Caster_Level_Aspirant|0	BONUS:VAR|Caster_Level_Aspirant|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLAspirant|0	BONUS:VAR|CasterLevelBLAspirant|charbonusto("PCLEVEL","Aspirant")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_Aspirant+CasterLevelBLAspirant|TYPE=Base
+1	CAST:3,1	ABILITY:Aspirant Class Feature|AUTOMATIC|Aspirant ~ Spells	ABILITY:Aspirant Class Feature|AUTOMATIC|Aspirant ~ Spontaneous Casting	ABILITY:Aspirant Class Feature|AUTOMATIC|Aspirant ~ Shield of the Divine	BONUS:VAR|AspirantSpontaneous|1	ABILITY:Internal|AUTOMATIC|Aspirant ~ Weapon and Armor Proficiency
+2	CAST:4,2
+3	CAST:4,2,1	ABILITY:Aspirant Class Feature|AUTOMATIC|Aspirant ~ Divine Counterspell
+4	CAST:5,3,2	BONUS:VAR|AspirantSpontaneous|1
+5	CAST:5,3,2,1
+6	CAST:5,3,3,2
+7	CAST:6,4,3,2,1
+8	CAST:6,4,3,3,2	BONUS:VAR|AspirantSpontaneous|1
+9	CAST:6,4,4,3,2,1
+10	CAST:6,4,4,3,3,2
+11	CAST:6,5,4,4,3,2,1
+12	CAST:6,5,4,4,3,3,2	BONUS:VAR|AspirantSpontaneous|1
+13	CAST:6,5,5,4,4,3,2,1
+14	CAST:6,5,5,4,4,3,3,2
+15	CAST:6,5,5,5,4,4,3,2,1
+16	CAST:6,5,5,5,4,4,3,3,2	BONUS:VAR|AspirantSpontaneous|1
+17	CAST:6,5,5,5,5,4,4,3,2,1
+18	CAST:6,5,5,5,5,4,4,3,3,2
+19	CAST:6,5,5,5,5,5,4,4,3,3
+20	CAST:6,5,5,5,5,5,4,4,4,4	ABILITY:Aspirant Class Feature|AUTOMATIC|Aspirant ~ Perfect Self
+
+###Block: Benevolent (cleric variant, PDF p.153)
+CLASS:Benevolent	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Bnv	MAXLEVEL:20	SOURCEPAGE:p.153	DEFINE:BenevolentLVL|0	BONUS:VAR|BenevolentLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Benevolent	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (History)|Knowledge (Religion)|Knowledge (The Planes)|TYPE=Profession|Spellcraft
+CLASS:Benevolent	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Cleric	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Benevolent|Caster_Level_Benevolent	DEFINE:Caster_Level_Benevolent|0	BONUS:VAR|Caster_Level_Benevolent|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLBenevolent|0	BONUS:VAR|CasterLevelBLBenevolent|charbonusto("PCLEVEL","Benevolent")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_Benevolent+CasterLevelBLBenevolent|TYPE=Base
+1	CAST:3,1	ABILITY:Benevolent Class Feature|AUTOMATIC|Benevolent ~ Spells	ABILITY:Benevolent Class Feature|AUTOMATIC|Benevolent ~ Spontaneous Casting	ABILITY:Internal|AUTOMATIC|Benevolent ~ Weapon and Armor Proficiency
+2	CAST:4,2
+3	CAST:4,2,1
+4	CAST:5,3,2	ABILITY:Benevolent Class Feature|AUTOMATIC|Benevolent ~ Luck of the Gods	BONUS:VAR|BenevolentLuck|1
+5	CAST:5,3,2,1
+6	CAST:5,3,3,2
+7	CAST:6,4,3,2,1
+8	CAST:6,4,3,3,2	BONUS:VAR|BenevolentLuck|1
+9	CAST:6,4,4,3,2,1
+10	CAST:6,4,4,3,3,2
+11	CAST:6,5,4,4,3,2,1
+12	CAST:6,5,4,4,3,3,2	BONUS:VAR|BenevolentLuck|1
+13	CAST:6,5,5,4,4,3,2,1
+14	CAST:6,5,5,4,4,3,3,2
+15	CAST:6,5,5,5,4,4,3,2,1
+16	CAST:6,5,5,5,4,4,3,3,2	BONUS:VAR|BenevolentLuck|1
+17	CAST:6,5,5,5,5,4,4,3,2,1
+18	CAST:6,5,5,5,5,4,4,3,3,2
+19	CAST:6,5,5,5,5,5,4,4,3,3
+20	CAST:6,5,5,5,5,5,4,4,4,4	BONUS:VAR|BenevolentLuck|1
+
+###Block: Crusader (Cleric) (cleric variant, PDF p.155)
+CLASS:Crusader (Cleric)	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|CrC	MAXLEVEL:20	SOURCEPAGE:p.155	DEFINE:CrusaderClericLVL|0	BONUS:VAR|CrusaderClericLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Crusader (Cleric)	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Handle Animal|Heal|Intimidate|Knowledge (Arcana)|Knowledge (History)|Knowledge (Religion)|TYPE=Profession|Ride|Spellcraft
+CLASS:Crusader (Cleric)	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Cleric	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Crusader (Cleric)|Caster_Level_CrusaderCleric	DEFINE:Caster_Level_CrusaderCleric|0	BONUS:VAR|Caster_Level_CrusaderCleric|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLCrusaderCleric|0	BONUS:VAR|CasterLevelBLCrusaderCleric|charbonusto("PCLEVEL","Crusader (Cleric)")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_CrusaderCleric+CasterLevelBLCrusaderCleric|TYPE=Base
+1	CAST:3,1	ABILITY:Crusader (Cleric) Class Feature|AUTOMATIC|Crusader (Cleric) ~ Spells	ABILITY:Crusader (Cleric) Class Feature|AUTOMATIC|Crusader (Cleric) ~ Deific Foe	ABILITY:Crusader (Cleric) Class Feature|AUTOMATIC|Crusader (Cleric) ~ Turn Foe's Followers	BONUS:ABILITYPOOL|Martial Weapon Proficiency|1	BONUS:VAR|CrusaderClericFoes|1	ABILITY:Internal|AUTOMATIC|Crusader (Cleric) ~ Weapon and Armor Proficiency
+2	CAST:4,2
+3	CAST:4,2,1	ABILITY:Crusader (Cleric) Class Feature|AUTOMATIC|Crusader (Cleric) ~ Bonus Feats	BONUS:ABILITYPOOL|Crusader (Cleric) Bonus Feat|1
+4	CAST:5,3,2
+5	CAST:5,3,2,1	ABILITY:Crusader (Cleric) Class Feature|AUTOMATIC|Crusader (Cleric) ~ Smite	BONUS:VAR|CrusaderClericSmite|1
+6	CAST:5,3,3,2	BONUS:VAR|CrusaderClericFoes|1
+7	CAST:6,4,3,2,1
+8	CAST:6,4,3,3,2	BONUS:ABILITYPOOL|Crusader (Cleric) Bonus Feat|1
+9	CAST:6,4,4,3,2,1
+10	CAST:6,4,4,3,3,2	BONUS:VAR|CrusaderClericSmite|1
+11	CAST:6,5,4,4,3,2,1	BONUS:VAR|CrusaderClericFoes|1
+12	CAST:6,5,4,4,3,3,2
+13	CAST:6,5,5,4,4,3,2,1	BONUS:ABILITYPOOL|Crusader (Cleric) Bonus Feat|1
+14	CAST:6,5,5,4,4,3,3,2
+15	CAST:6,5,5,5,4,4,3,2,1	BONUS:VAR|CrusaderClericSmite|1
+16	CAST:6,5,5,5,4,4,3,3,2	BONUS:VAR|CrusaderClericFoes|1
+17	CAST:6,5,5,5,5,4,4,3,2,1
+18	CAST:6,5,5,5,5,4,4,3,3,2	BONUS:ABILITYPOOL|Crusader (Cleric) Bonus Feat|1
+19	CAST:6,5,5,5,5,5,4,4,3,3
+20	CAST:6,5,5,5,5,5,4,4,4,4	BONUS:VAR|CrusaderClericSmite|1
+
+###Block: Evangelist (Cleric) (cleric variant, PDF p.161)
+CLASS:Evangelist (Cleric)	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Evg	MAXLEVEL:20	SOURCEPAGE:p.161	DEFINE:EvangelistClericLVL|0	BONUS:VAR|EvangelistClericLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Evangelist (Cleric)	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Gather Information|Heal|Knowledge (Local)|Knowledge (Religion)|TYPE=Profession|Spellcraft
+CLASS:Evangelist (Cleric)	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:NO	SPELLLIST:1|Cleric	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Evangelist (Cleric)|Caster_Level_EvangelistCleric	DEFINE:Caster_Level_EvangelistCleric|0	BONUS:VAR|Caster_Level_EvangelistCleric|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLEvangelistCleric|0	BONUS:VAR|CasterLevelBLEvangelistCleric|charbonusto("PCLEVEL","Evangelist (Cleric)")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_EvangelistCleric+CasterLevelBLEvangelistCleric|TYPE=Base
+1	CAST:5,3	KNOWN:4,2	ABILITY:Evangelist (Cleric) Class Feature|AUTOMATIC|Evangelist (Cleric) ~ Spells	ABILITY:Evangelist (Cleric) Class Feature|AUTOMATIC|Evangelist (Cleric) ~ Domains	BONUS:ABILITYPOOL|Evangelist (Cleric) Domain|2	ABILITY:Internal|AUTOMATIC|Evangelist (Cleric) ~ Weapon and Armor Proficiency
+2	CAST:6,4	KNOWN:5,2
+3	CAST:6,5	KNOWN:5,3
+4	CAST:6,6,3	KNOWN:6,3,1
+5	CAST:6,6,4	KNOWN:6,4,2	BONUS:ABILITYPOOL|Evangelist (Cleric) Domain|1
+6	CAST:6,6,5,3	KNOWN:7,4,2,1
+7	CAST:6,6,6,4	KNOWN:7,5,3,2
+8	CAST:6,6,6,5,3	KNOWN:8,5,3,2,1
+9	CAST:6,6,6,6,4	KNOWN:8,5,4,3,2
+10	CAST:6,6,6,6,5,3	KNOWN:9,5,4,3,2,1	BONUS:ABILITYPOOL|Evangelist (Cleric) Domain|1
+11	CAST:6,6,6,6,6,4	KNOWN:9,5,5,4,3,2
+12	CAST:6,6,6,6,6,5,3	KNOWN:9,5,5,4,3,2,1
+13	CAST:6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,3,2
+14	CAST:6,6,6,6,6,6,5,3	KNOWN:9,5,5,4,4,3,2,1
+15	CAST:6,6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,4,3,2	BONUS:ABILITYPOOL|Evangelist (Cleric) Domain|1
+16	CAST:6,6,6,6,6,6,6,5,3	KNOWN:9,5,5,4,4,4,3,2,1
+17	CAST:6,6,6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,4,3,3,2
+18	CAST:6,6,6,6,6,6,6,6,5,3	KNOWN:9,5,5,4,4,4,3,3,2,1
+19	CAST:6,6,6,6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,4,3,3,3,2
+20	CAST:6,6,6,6,6,6,6,6,6,6	KNOWN:9,5,5,4,4,4,3,3,3,2	BONUS:ABILITYPOOL|Evangelist (Cleric) Domain|1
+
+###Block: Rage Cleric (cleric variant, PDF p.172)
+CLASS:Rage Cleric	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|RgC	MAXLEVEL:20	SOURCEPAGE:p.172	PREALIGN:NG,TN,NE,CG,CN,CE	DEFINE:RageClericLVL|0	BONUS:VAR|RageClericLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Rage Cleric	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (History)|Knowledge (Religion)|Knowledge (The Planes)|TYPE=Profession|Spellcraft
+CLASS:Rage Cleric	SPELLSTAT:WIS	BONUSSPELLSTAT:WIS	FACT:SpellType|Divine	MEMORIZE:YES	SPELLLIST:1|Cleric	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	BONUS:CASTERLEVEL|Rage Cleric|Caster_Level_RageCleric	DEFINE:Caster_Level_RageCleric|0	BONUS:VAR|Caster_Level_RageCleric|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLRageCleric|0	BONUS:VAR|CasterLevelBLRageCleric|charbonusto("PCLEVEL","Rage Cleric")	BONUS:VAR|Caster_Level_Highest__Divine|Caster_Level_RageCleric+CasterLevelBLRageCleric|TYPE=Base
+1	CAST:3,1	ABILITY:Rage Cleric Class Feature|AUTOMATIC|Rage Cleric ~ Spells	ABILITY:Rage Cleric Class Feature|AUTOMATIC|Rage Cleric ~ Rage	ABILITY:Internal|AUTOMATIC|Rage Cleric ~ Weapon and Armor Proficiency
+2	CAST:4,2
+3	CAST:4,2,1
+4	CAST:5,3,2
+5	CAST:5,3,2,1
+6	CAST:5,3,3,2
+7	CAST:6,4,3,2,1
+8	CAST:6,4,3,3,2
+9	CAST:6,4,4,3,2,1
+10	CAST:6,4,4,3,3,2
+11	CAST:6,5,4,4,3,2,1	ABILITY:Rage Cleric Class Feature|AUTOMATIC|Rage Cleric ~ Greater Rage
+12	CAST:6,5,4,4,3,3,2
+13	CAST:6,5,5,4,4,3,2,1
+14	CAST:6,5,5,4,4,3,3,2	ABILITY:Rage Cleric Class Feature|AUTOMATIC|Rage Cleric ~ Indomitable Will
+15	CAST:6,5,5,5,4,4,3,2,1
+16	CAST:6,5,5,5,4,4,3,3,2
+17	CAST:6,5,5,5,5,4,4,3,2,1	ABILITY:Rage Cleric Class Feature|AUTOMATIC|Rage Cleric ~ Tireless Rage
+18	CAST:6,5,5,5,5,4,4,3,3,2
+19	CAST:6,5,5,5,5,5,4,4,3,3
+20	CAST:6,5,5,5,5,5,4,4,4,4	ABILITY:Rage Cleric Class Feature|AUTOMATIC|Rage Cleric ~ Mighty Rage

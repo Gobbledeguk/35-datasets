@@ -99,3 +99,27 @@ ABILITYCATEGORY:Wind Walker Class Feature	CATEGORY:Special Ability	TYPE:Wind Wal
 
 ###Block: Winter Warden
 ABILITYCATEGORY:Winter Warden Class Feature	CATEGORY:Special Ability	TYPE:Winter Warden Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Ancestral Speaker
+ABILITYCATEGORY:Ancestral Speaker Class Feature	CATEGORY:Special Ability	TYPE:Ancestral Speaker Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Arcane Disciple Bonus Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	CATEGORY:FEAT	TYPE:Metamagic.ItemCreation	PLURAL:Arcane Disciple Bonus Feats	DISPLAYLOCATION:Feats
+
+###Block: Arcane Disciple
+ABILITYCATEGORY:Arcane Disciple Class Feature	CATEGORY:Special Ability	TYPE:Arcane Disciple Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Aspirant
+ABILITYCATEGORY:Aspirant Class Feature	CATEGORY:Special Ability	TYPE:Aspirant Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Benevolent
+ABILITYCATEGORY:Benevolent Class Feature	CATEGORY:Special Ability	TYPE:Benevolent Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Crusader (Cleric) Bonus Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	CATEGORY:FEAT	TYPE:Fighter	ABILITYLIST:Combat Casting	PLURAL:Crusader Bonus Feats	DISPLAYLOCATION:Feats
+
+###Block: Crusader (Cleric)
+ABILITYCATEGORY:Crusader (Cleric) Class Feature	CATEGORY:Special Ability	TYPE:Crusader (Cleric) Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Evangelist (Cleric) Domain	CATEGORY:Special Ability	TYPE:EvangelistClericDomain	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	PLURAL:Evangelist Domains	DISPLAYLOCATION:Class Features
+
+###Block: Evangelist (Cleric)
+ABILITYCATEGORY:Evangelist (Cleric) Class Feature	CATEGORY:Special Ability	TYPE:Evangelist (Cleric) Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Rage Cleric
+ABILITYCATEGORY:Rage Cleric Class Feature	CATEGORY:Special Ability	TYPE:Rage Cleric Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO

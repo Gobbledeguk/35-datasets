@@ -1230,6 +1230,28 @@ Verified in PCGen 6.08 (35e; Wis 14): every variant's BAB and saves per its tabl
 companion lists (totem wolf at 1/4/5: wolf, then dire wolf from 5th; wind walker eagle/hawk/owl + dire bat/hippogriff at 4th;
 urban druid exactly its own 20 at 5th), the Air domain spells at 14th, spell lists; no load messages.
 
+CLERIC VARIANT CLASSES (pp. 148-173) - built by cleric_variants_build.py (one data block per variant) and evangelist_domains_build.py
+- Ancestral Speaker (all saves good; two free class skills; ancestral communion; the text names no spell list - the cleric list,
+  without domains or turning, is assumed), Arcane Disciple (cleric list + the Magic domain's spells; one arcane spell per level
+  by hand; metamagic/item creation bonus feats in its own category), Aspirant (shield of the divine +1..+5 AC, also flat-footed;
+  spontaneous swaps; Perfect Self = the PHB monk's ability), Benevolent (tower shields; luck of the gods), Crusader (Cleric) (keyed
+  so - Tome of Battle's crusader is different; one martial weapon via the Martial Weapon Proficiency pool; deific foes; fighter
+  bonus feats + Combat Casting; smite), Evangelist (Cleric) (keyed so - Complete Divine's evangelist prestige class and the APM's
+  class are different; spontaneous from the cleric list, own per-day and known tables), Rage Cleric (variant cleric: not lawful;
+  the PHB barbarian's rage fed with the rage cleric level - stacks with barbarian levels as the text says; no domains/turning).
+  All: the PHB cleric's spellcasting (SPELLLIST:1|Cleric, the alignment PROHIBITSPELL lines).
+- Evangelist domains: NOT PCGen domains. PCGen gives a class with domains a built-in "one domain spell per spell level"; for a
+  spontaneous caster that is +1 spell known, but only where the other known count is above 0 - no compensation can be right at
+  every level (tested at levels 4, 10, 11). Instead, as the Mystic: category "Evangelist (Cleric) Domain" (2 at 1st, +1 at 5th,
+  10th, 15th, 20th), one ability per PHB domain requiring the deity's domain (PREDEITYDOMAIN), granting the domain power and its
+  spells as spells known from the level he can cast them. Domains of other books are not covered.
+- Not built: Cloistered Cleric (Unearthed Arcana - in the repository as "Cleric (Cloistered Cleric)"); Champion (a feature swap)
+  and the Azurin/Raptoran cleric etc. (substitution levels) - for the alternative class features task.
+Verified in PCGen 6.08 (35e; Wis 14): every variant's BAB and saves at 2-4 levels, per-day counters, AC, pools (arcane disciple
+1/3/5, crusader feats 1/2/4), category contents, spell lists; evangelist (Pelor): only his 4 domains offered, spells known = table +
+number of domains at every castable level (L4/10/11), per day unchanged, heat metal known; rage cleric: barbarian rage level =
+its level, barbarian 3 / rage cleric 8 = 11 (greater rage, 3/day on the sheet); no load messages.
+
 STATUS (04/11/2026)
 - All 14 base classes of the classes section are rebuilt and verified: Master, Battle Dancer, Mariner, Mountebank (DMC), Noble,
   Mystic, Sha'ir, Savant, Death Master, Jester, Nightstalker, Urban Druid, Sohei (DMC), Shaman (DMC).
