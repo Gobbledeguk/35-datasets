@@ -1330,6 +1330,31 @@ Verified in PCGen 6.08 (35e): both variants at 9th identical to a PHB monk 9 in 
 sidewinder sneak attack +3d6/+6d6, Bluff bonus, Improved Feint granted virtually without Combat Expertise; wild monk wild shape
 1/2/6 (+2 elemental at 20th), druid wild shape untouched; no load messages.
 
+ROGUE AND SORCERER VARIANTS (pp. 503-582)
+- Rogue: nothing to build - Adventurer is a feature swap (lose sneak attack, gain fighter bonus feats; not the repository's
+  Adventurer class), Wilderness Rogue is Unearthed Arcana's (in the repository as "Rogue (Wilderness Rogue)").
+- Sorcerer: Battle Sorcerer (Unearthed Arcana - in the repository). Witch (p.578) built by witch_build.py: "casts spells as a
+  sorcerer, using the sorcerer's Spells per Day table ... based on Charisma" with her own list - the PHB sorcerer's chassis, class
+  skills and CAST/KNOWN tables read from its data, its proficiency ability, the familiar through the shared Familiar ability;
+  107 spells of her own list (3.0 names mapped: change self = disguise self, Leomund's tiny hut = tiny hut, Tenser's
+  transformation = transformation; "shadow image" is a misprint for project image - on her list at 6th level), plus the one magic circle she chooses when she
+  gains 3rd-level spells (choice of four at 6th level).
+Verified in PCGen 6.08 (35e): witch 20 spells known and per day identical to a PHB sorcerer 20; charm person, disguise self,
+polymorph, shapechange on her list, fireball not; magic circle against evil chosen - only it on her list; familiar level = her
+level; no load messages.
+
+VARIANT CLASSES - SUMMARY (10/11/2026)
+- 34 variant classes built and verified: paladin 8, druid 7, cleric 7, wizard 5, ranger 1, barbarian 2, bard 1, monk 2, sorcerer 1.
+- Already in the repository (not repeated): Paladin of Freedom/Slaughter/Tyranny, Totem Barbarian, Bardic Sage, Divine Bard, Savage
+  Bard, Cloistered Cleric, Druidic Avenger, Planar (= Planewalker) and Urban Ranger, Wilderness Rogue, Battle Sorcerer, Domain
+  Wizard (Unearthed Arcana); Warrior Paladin and Warrior Ranger (Complete Warrior's variants without spellcasting); Mystic Ranger
+  (Dragon 336), Chaos Monk (Dragon 335).
+- Feature swaps, substitution levels and rule changes for the alternative class features task: Inquisitor, Wyrmslayer
+  (paladin); Huntsman (druid); Champion (cleric); Combat Wizard; Predator, Arcane Hunter (ranger); Hunter (barbarian); Fey Bard;
+  Holy, Hunter, Martial, Raging, Steadfast, Vigilant Monk; Adventurer (rogue); Mantled Warrior (psychic warrior); Marshal of
+  Battle (Heroes of Battle adjustments to the marshal) - plus each base class's alternative class features and substitution
+  levels.
+
 STATUS (04/11/2026)
 - All 14 base classes of the classes section are rebuilt and verified: Master, Battle Dancer, Mariner, Mountebank (DMC), Noble,
   Mystic, Sha'ir, Savant, Death Master, Jester, Nightstalker, Urban Druid, Sohei (DMC), Shaman (DMC).

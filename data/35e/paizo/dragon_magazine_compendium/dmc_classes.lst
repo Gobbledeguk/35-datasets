@@ -1070,3 +1070,28 @@ CLASS:Wild Monk	STARTSKILLPTS:4	CSKILL:Balance|Climb|Concentration|TYPE=Craft|Hi
 18	BONUS:VAR|WildMonkShape|1
 19	BONUS:VAR|WildMonkElemental|1
 20	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Perfect Self	BONUS:VAR|WildMonkShape|1	BONUS:VAR|WildMonkElemental|1
+
+###Block: Witch (sorcerer variant, PDF p.578) - chassis, skills and spell tables read from the PHB sorcerer
+CLASS:Witch	HD:4	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Wch	MAXLEVEL:20	SOURCEPAGE:p.578	DEFINE:WitchLVL|0	BONUS:VAR|WitchLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")/2|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABPoor|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude,BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude,ClassSavePoor_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Witch	STARTSKILLPTS:2	CSKILL:Bluff|Concentration|TYPE=Craft|Knowledge (Arcana)|TYPE=Profession|Spellcraft
+CLASS:Witch	SPELLSTAT:CHA	FACT:SpellType|Arcane	MEMORIZE:NO	BONUS:CASTERLEVEL|Witch|Caster_Level_Witch	DEFINE:Caster_Level_Witch|0	BONUS:VAR|Caster_Level_Witch|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLWitch|0	BONUS:VAR|CasterLevelBLWitch|charbonusto("PCLEVEL","Witch")	BONUS:VAR|Caster_Level_Highest__Arcane|Caster_Level_Witch+CasterLevelBLWitch|TYPE=Base	SPELLLEVEL:CLASS|Witch=0|Arcane Mark,Cure Minor Wounds,Dancing Lights,Daze,Detect Magic,Detect Poison,Flare,Ghost Sound,Light,Mending,Read Magic,Resistance,Virtue	SPELLLEVEL:CLASS|Witch=1|Cause Fear,Disguise Self,Charm Person,Command,Comprehend Languages,Cure Light Wounds,Doom,Endure Elements,Hypnotism,Identify,Silent Image,Sleep,Speak with Animals,Ventriloquism	SPELLLEVEL:CLASS|Witch=2|Alter Self,Blindness/Deafness,Calm Emotions,Cure Moderate Wounds,Delay Poison,Detect Thoughts,Enthrall,Invisibility,Locate Object,Minor Image,Scare,Whispering Wind	SPELLLEVEL:CLASS|Witch=3|Bestow Curse,Clairaudience/Clairvoyance,Contagion,Create Food and Water,Dispel Magic,Tiny Hut,Major Image,Rage,Remove Blindness/Deafness,Suggestion,Tongues	SPELLLEVEL:CLASS|Witch=4|Charm Monster,Crushing Despair,Discern Lies,Divination,Fear,Giant Vermin,Good Hope,Locate Creature,Minor Creation,Neutralize Poison,Polymorph,Remove Curse,Scrying	SPELLLEVEL:CLASS|Witch=5|Baleful Polymorph,Dream,False Vision,Feeblemind,Command (Greater),Magic Jar,Major Creation,Mirage Arcana,Nightmare,Seeming,Sending	SPELLLEVEL:CLASS|Witch=6|Animate Objects,Control Weather,Eyebite,Find the Path,Geas/Quest,Scrying (Greater),Heroes' Feast,Legend Lore,Suggestion (Mass),Mislead,Repulsion,Transformation,True Seeing,Project Image	SPELLLEVEL:CLASS|Witch=7|Creeping Doom,Finger of Death,Insanity,Liveoak,Repel Wood,Transport via Plants	SPELLLEVEL:CLASS|Witch=8|Antipathy,Demand,Discern Location,Horrid Wilting,Polymorph Any Object,Sympathy,Trap the Soul	SPELLLEVEL:CLASS|Witch=9|Earthquake,Foresight,Refuge,Shapechange,Wail of the Banshee,Weird
+1	CAST:5,3	KNOWN:4,2	ABILITY:Sorcerer Class Feature|AUTOMATIC|Sorcerer ~ Weapon and Armor Proficiency	ABILITY:Witch Class Feature|AUTOMATIC|Witch ~ Spells	ABILITY:Witch Class Feature|AUTOMATIC|Witch ~ Familiar
+2	CAST:6,4	KNOWN:5,2
+3	CAST:6,5	KNOWN:5,3
+4	CAST:6,6,3	KNOWN:6,3,1
+5	CAST:6,6,4	KNOWN:6,4,2
+6	CAST:6,6,5,3	KNOWN:7,4,2,1	BONUS:ABILITYPOOL|Witch Magic Circle|1
+7	CAST:6,6,6,4	KNOWN:7,5,3,2
+8	CAST:6,6,6,5,3	KNOWN:8,5,3,2,1
+9	CAST:6,6,6,6,4	KNOWN:8,5,4,3,2
+10	CAST:6,6,6,6,5,3	KNOWN:9,5,4,3,2,1
+11	CAST:6,6,6,6,6,4	KNOWN:9,5,5,4,3,2
+12	CAST:6,6,6,6,6,5,3	KNOWN:9,5,5,4,3,2,1
+13	CAST:6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,3,2
+14	CAST:6,6,6,6,6,6,5,3	KNOWN:9,5,5,4,4,3,2,1
+15	CAST:6,6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,4,3,2
+16	CAST:6,6,6,6,6,6,6,5,3	KNOWN:9,5,5,4,4,4,3,2,1
+17	CAST:6,6,6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,4,3,3,2
+18	CAST:6,6,6,6,6,6,6,6,5,3	KNOWN:9,5,5,4,4,4,3,3,2,1
+19	CAST:6,6,6,6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,4,3,3,3,2
+20	CAST:6,6,6,6,6,6,6,6,6,6	KNOWN:9,5,5,4,4,4,3,3,3,3
