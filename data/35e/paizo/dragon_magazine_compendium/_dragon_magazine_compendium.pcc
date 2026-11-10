@@ -92,6 +92,6 @@ TEMPLATE:dmc_templates.lst
 # ENTRY DATE: 2026-10
 # Built for PCGen Version: 6.04.01
 # MINVER:6.4
-# COMMENTS: Races (pp. 3-74), new base classes (pp. 75-708), Feats, Flaws & Styles (pp. 1058-1176), Arms & Equipment (pp. 1198-1270), Spells & Domains (pp. 1280-1362), Vestiges (pp. 1371-1419) and Magic Items (pp. 1420-1595). Class variants partly converted (paladin, druid, cleric, wizard, ranger and barbarian variants); prestige classes (scanned pages) not yet converted.
+# COMMENTS: Races (pp. 3-74), new base classes (pp. 75-708), Feats, Flaws & Styles (pp. 1058-1176), Arms & Equipment (pp. 1198-1270), Spells & Domains (pp. 1280-1362), Vestiges (pp. 1371-1419) and Magic Items (pp. 1420-1595). Class variants partly converted (paladin, druid, cleric, wizard, ranger, barbarian and bard variants); prestige classes (scanned pages) not yet converted.
 
 COMPANIONMOD:dmc_companionmods.lst

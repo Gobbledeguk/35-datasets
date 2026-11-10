@@ -997,3 +997,28 @@ CLASS:Implacable	STARTSKILLPTS:4	CSKILL:Climb|TYPE=Craft|Handle Animal|Intimidat
 18
 19
 20
+
+###Block: Harbinger (bard variant, PDF p.122) - spell tables and skills read from the PHB bard
+CLASS:Harbinger	HD:6	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Hrb	MAXLEVEL:20	SOURCEPAGE:p.122	PREALIGN:TN,NE,CN,CE	DEFINE:HarbingerLVL|0	BONUS:VAR|HarbingerLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Harbinger	STARTSKILLPTS:6	CSKILL:Appraise|Balance|Bluff|Climb|Concentration|TYPE=Craft|Decipher Script|Diplomacy|Disguise|Escape Artist|Gather Information|Hide|Jump|TYPE=Knowledge|Listen|Move Silently|TYPE=Perform|TYPE=Profession|Sense Motive|Sleight of Hand|Speak Language|Spellcraft|Swim|Tumble|Use Magic Device
+CLASS:Harbinger	SPELLSTAT:CHA	FACT:SpellType|Arcane	MEMORIZE:NO	SPELLLIST:1|Bard	BONUS:CASTERLEVEL|Harbinger|Caster_Level_Harbinger	DEFINE:Caster_Level_Harbinger|0	BONUS:VAR|Caster_Level_Harbinger|CL+Caster_Level_Bonus	DEFINE:CasterLevelBLHarbinger|0	BONUS:VAR|CasterLevelBLHarbinger|charbonusto("PCLEVEL","Harbinger")	BONUS:VAR|Caster_Level_Highest__Arcane|Caster_Level_Harbinger+CasterLevelBLHarbinger|TYPE=Base
+1	CAST:2	KNOWN:4	ABILITY:Harbinger Class Feature|AUTOMATIC|Harbinger ~ Spells	ABILITY:Harbinger Class Feature|AUTOMATIC|Harbinger ~ Bardic Knowledge	ABILITY:Harbinger Class Feature|AUTOMATIC|Harbinger ~ Bardic Music	ABILITY:Harbinger Class Feature|AUTOMATIC|Harbinger ~ Instill Fear	ABILITY:Bard Class Feature|AUTOMATIC|Bard ~ Weapon and Armor Proficiency
+2	CAST:3,0	KNOWN:5,2
+3	CAST:3,1	KNOWN:6,3	ABILITY:Harbinger Class Feature|AUTOMATIC|Harbinger ~ Encourage Failure
+4	CAST:3,2,0	KNOWN:6,3,2
+5	CAST:3,3,1	KNOWN:6,4,3
+6	CAST:3,3,2	KNOWN:6,4,3
+7	CAST:3,3,2,0	KNOWN:6,4,4,2
+8	CAST:3,3,3,1	KNOWN:6,4,4,3
+9	CAST:3,3,3,2	KNOWN:6,4,4,3	ABILITY:Harbinger Class Feature|AUTOMATIC|Harbinger ~ Dishearten
+10	CAST:3,3,3,2,0	KNOWN:6,4,4,4,2
+11	CAST:3,3,3,3,1	KNOWN:6,4,4,4,3
+12	CAST:3,3,3,3,2	KNOWN:6,4,4,4,3	ABILITY:Harbinger Class Feature|AUTOMATIC|Harbinger ~ Dirge of Binding
+13	CAST:3,3,3,3,2,0	KNOWN:6,4,4,4,4,2
+14	CAST:4,3,3,3,3,1	KNOWN:6,4,4,4,4,3
+15	CAST:4,4,3,3,3,2	KNOWN:6,4,4,4,4,3
+16	CAST:4,4,4,3,3,2,0	KNOWN:6,5,4,4,4,4,2
+17	CAST:4,4,4,4,3,3,1	KNOWN:6,5,5,4,4,4,3
+18	CAST:4,4,4,4,4,3,2	KNOWN:6,5,5,5,4,4,3	ABILITY:Harbinger Class Feature|AUTOMATIC|Harbinger ~ Drain Prowess
+19	CAST:4,4,4,4,4,4,3	KNOWN:6,5,5,5,5,4,4
+20	CAST:4,4,4,4,4,4,4	KNOWN:6,5,5,5,5,5,4

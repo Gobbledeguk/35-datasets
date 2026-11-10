@@ -1302,6 +1302,16 @@ Verified in PCGen 6.08 (35e): BAB/saves at 3 levels each; DR 1/- at 7th, 2/- at 
 none (horselord); companion offers only the two horses (level 2/3/10); full plate only for the implacable; the feat only with
 Complete Warrior; no load messages.
 
+BARD VARIANT CLASSES (pp. 118-136) - built by harbinger_build.py
+- Harbinger (variant bard; any nonlawful and nongood): the bard's spellcasting, skills and spell tables read from the PHB bard's
+  own data (its "Bard (Standard)" subclass and per-level CAST/KNOWN lines), so exactly the bard's; the PHB bard's proficiencies;
+  bardic knowledge through the shared ability (stacks with bard levels); its reversed bardic music (once per level per day):
+  instill fear (-1/-2/-3/-4 at 1st/8th/14th/20th), encourage failure, dishearten, dirge of binding, drain prowess - descriptions
+  with DC and values.
+- Not built: Bardic Sage, Divine Bard, Savage Bard (Unearthed Arcana - in the repository), Fey Bard (a feature swap).
+Verified in PCGen 6.08 (35e): BAB/saves at 1/9/20; spells known and per day at 20th identical to a PHB bard 20; bardic knowledge
+bard 3 / harbinger 5 = 8; instill fear -1/-2/-4 at 1/9/20; no load messages.
+
 STATUS (04/11/2026)
 - All 14 base classes of the classes section are rebuilt and verified: Master, Battle Dancer, Mariner, Mountebank (DMC), Noble,
   Mystic, Sha'ir, Savant, Death Master, Jester, Nightstalker, Urban Druid, Sohei (DMC), Shaman (DMC).

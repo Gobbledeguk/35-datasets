@@ -151,3 +151,6 @@ ABILITYCATEGORY:Horselord Class Feature	CATEGORY:Special Ability	TYPE:Horselord 
 
 ###Block: Implacable
 ABILITYCATEGORY:Implacable Class Feature	CATEGORY:Special Ability	TYPE:Implacable Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Harbinger
+ABILITYCATEGORY:Harbinger Class Feature	CATEGORY:Special Ability	TYPE:Harbinger Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
