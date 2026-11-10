@@ -154,3 +154,12 @@ ABILITYCATEGORY:Implacable Class Feature	CATEGORY:Special Ability	TYPE:Implacabl
 
 ###Block: Harbinger
 ABILITYCATEGORY:Harbinger Class Feature	CATEGORY:Special Ability	TYPE:Harbinger Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+
+###Block: Sidewinder Monk
+ABILITYCATEGORY:Sidewinder Monk Class Feature	CATEGORY:Special Ability	TYPE:Sidewinder Monk Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO
+ABILITYCATEGORY:Sidewinder Monk Bonus Feat (1st)	CATEGORY:Special Ability	TYPE:SidewinderMonkBonusFeat1st	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Sidewinder Monk Bonus Feat (2nd)	CATEGORY:Special Ability	TYPE:SidewinderMonkBonusFeat2nd	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Sidewinder Monk Bonus Feat (6th)	CATEGORY:Special Ability	TYPE:SidewinderMonkBonusFeat6th	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Feats
+
+###Block: Wild Monk
+ABILITYCATEGORY:Wild Monk Class Feature	CATEGORY:Special Ability	TYPE:Wild Monk Class Feature	VISIBLE:QUALIFY	EDITABLE:NO	EDITPOOL:NO

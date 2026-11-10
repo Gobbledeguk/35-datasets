@@ -1022,3 +1022,51 @@ CLASS:Harbinger	SPELLSTAT:CHA	FACT:SpellType|Arcane	MEMORIZE:NO	SPELLLIST:1|Bard
 18	CAST:4,4,4,4,4,3,2	KNOWN:6,5,5,5,4,4,3	ABILITY:Harbinger Class Feature|AUTOMATIC|Harbinger ~ Drain Prowess
 19	CAST:4,4,4,4,4,4,3	KNOWN:6,5,5,5,5,4,4
 20	CAST:4,4,4,4,4,4,4	KNOWN:6,5,5,5,5,5,4
+
+###Block: Sidewinder Monk (monk variant, PDF p.374)
+CLASS:Sidewinder Monk	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Sdw	MAXLEVEL:20	SOURCEPAGE:p.374	PREALIGN:LG,LN,LE	DEFINE:SidewinderMonkLVL|0	BONUS:VAR|SidewinderMonkLVL|CL	DEFINE:MonkLVL|0	BONUS:VAR|MonkLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude,BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude,ClassSaveGood_Reflex,ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Sidewinder Monk	STARTSKILLPTS:4	CSKILL:Balance|Climb|Concentration|TYPE=Craft|Diplomacy|Escape Artist|Hide|Jump|Knowledge (Arcana)|Knowledge (Religion)|Listen|Move Silently|TYPE=Perform|TYPE=Profession|Sense Motive|Spot|Swim|Tumble
+1	ABILITY:Internal|AUTOMATIC|Monk ~ Unarmed Damage	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Weapon and Armor Proficiency	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ AC Bonus	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Flurry of Blows	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Unarmed Strike	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Evasion	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Fast Movement	ABILITY:Sidewinder Monk Class Feature|AUTOMATIC|Sidewinder Monk ~ Sidewinder Monk	BONUS:ABILITYPOOL|Sidewinder Monk Bonus Feat (1st)|1
+2	ABILITY:Sidewinder Monk Class Feature|AUTOMATIC|Sidewinder Monk ~ Silver Tongue	BONUS:ABILITYPOOL|Sidewinder Monk Bonus Feat (2nd)|1
+3	ABILITY:Sidewinder Monk Class Feature|AUTOMATIC|Sidewinder Monk ~ Sneak Attack
+4	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Ki Strike	ABILITY:Sidewinder Monk Class Feature|AUTOMATIC|Sidewinder Monk ~ Earthbound	ABILITY:Sidewinder Monk Class Feature|AUTOMATIC|Sidewinder Monk ~ Fangs	BONUS:VAR|SidewinderMonkFangs|1
+5
+6	BONUS:ABILITYPOOL|Sidewinder Monk Bonus Feat (6th)|1
+7	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Wholeness of Body
+8	ABILITY:Sidewinder Monk Class Feature|AUTOMATIC|Sidewinder Monk ~ Intimidating Stance	BONUS:VAR|SidewinderMonkFangs|1
+9	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Improved Evasion
+10
+11	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Diamond Body
+12	BONUS:VAR|SidewinderMonkFangs|1
+13	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Diamond Soul
+14
+15
+16	BONUS:VAR|SidewinderMonkFangs|1
+17	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Timeless Body	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Tongue of the Sun and Moon
+18
+19
+20	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Perfect Self	BONUS:VAR|SidewinderMonkFangs|1
+
+###Block: Wild Monk (monk variant, PDF p.379)
+CLASS:Wild Monk	HD:8	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|WMk	MAXLEVEL:20	SOURCEPAGE:p.379	PREALIGN:LN	DEFINE:WildMonkLVL|0	BONUS:VAR|WildMonkLVL|CL	DEFINE:MonkLVL|0	BONUS:VAR|MonkLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude,BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSaveGood_Fortitude,ClassSaveGood_Reflex,ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1
+CLASS:Wild Monk	STARTSKILLPTS:4	CSKILL:Balance|Climb|Concentration|TYPE=Craft|Hide|Jump|Knowledge (Nature)|Listen|Move Silently|TYPE=Profession|Spot|Survival|Swim|Tumble
+1	ABILITY:Internal|AUTOMATIC|Monk ~ Unarmed Damage	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Weapon and Armor Proficiency	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ AC Bonus	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Flurry of Blows	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Unarmed Strike	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Evasion	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Fast Movement	ABILITY:Wild Monk Class Feature|AUTOMATIC|Wild Monk ~ Wild Monk
+2
+3	ABILITY:Wild Monk Class Feature|AUTOMATIC|Wild Monk ~ Resist Nature's Lure
+4	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Ki Strike
+5	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Purity of Body
+6	ABILITY:Wild Monk Class Feature|AUTOMATIC|Wild Monk ~ Wild Shape	BONUS:VAR|WildMonkShape|1
+7	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Wholeness of Body
+8	BONUS:VAR|WildMonkShape|1
+9	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Improved Evasion
+10	BONUS:VAR|WildMonkShape|1
+11	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Diamond Body
+12
+13	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Diamond Soul
+14	BONUS:VAR|WildMonkShape|1
+15
+16
+17	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Timeless Body	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Tongue of the Sun and Moon
+18	BONUS:VAR|WildMonkShape|1
+19	BONUS:VAR|WildMonkElemental|1
+20	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Perfect Self	BONUS:VAR|WildMonkShape|1	BONUS:VAR|WildMonkElemental|1

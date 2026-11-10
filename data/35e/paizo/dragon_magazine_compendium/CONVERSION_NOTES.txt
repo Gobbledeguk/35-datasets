@@ -1312,6 +1312,24 @@ BARD VARIANT CLASSES (pp. 118-136) - built by harbinger_build.py
 Verified in PCGen 6.08 (35e): BAB/saves at 1/9/20; spells known and per day at 20th identical to a PHB bard 20; bardic knowledge
 bard 3 / harbinger 5 = 8; instill fear -1/-2/-4 at 1/9/20; no load messages.
 
+MONK VARIANT CLASSES (pp. 354-381) - built by monk_variants_build.py
+- Sidewinder Monk and Wild Monk (variant monks; standalone classes with the PHB monk's chassis and the PHB monk's own feature
+  abilities they keep - unarmed damage, AC bonus, flurry/greater flurry, fast movement, ki strike, ... - granted at their levels
+  with MonkLVL declared and fed from the variant's level, as the PHB monk's Standard Monk selection does; they can never
+  multiclass with the monk). Sidewinder: fixed bonus feat pairs (Persuasive/Stealthy, Improved Feint/Mobility, Improved
+  Disarm/Improved Trip) granted virtually - no prerequisites, as the PHB monk's bonus feats; silver tongue; sneak attack (the
+  shared SneakAttackDice - stacks); earthbound; fangs 1-5/day; intimidating stance; no still mind, slow fall, purity of body,
+  abundant step, quivering palm or empty body. Wild Monk (lawful neutral; own class skills): resist nature's lure (the druid's);
+  her own wild shape 1-6/day, elemental 1-2/day - independent of druid wild shape as the text requires; keeps purity of body;
+  no bonus feats, still mind, slow fall, abundant step, quivering palm or empty body.
+- The repository's AltMonkClass hook (used by Dragon 335's Chaos Monk) has no selection mechanism - the Chaos Monk class
+  selection is never granted (BahamutDragon data, not changed here).
+- Not built: Chaos Monk (Dragon 335 - in the repository); Holy, Hunter, Martial, Raging, Steadfast and Vigilant Monk (feature
+  swaps - alternative class features task).
+Verified in PCGen 6.08 (35e): both variants at 9th identical to a PHB monk 9 in BAB, saves, AC, speed and unarmed damage;
+sidewinder sneak attack +3d6/+6d6, Bluff bonus, Improved Feint granted virtually without Combat Expertise; wild monk wild shape
+1/2/6 (+2 elemental at 20th), druid wild shape untouched; no load messages.
+
 STATUS (04/11/2026)
 - All 14 base classes of the classes section are rebuilt and verified: Master, Battle Dancer, Mariner, Mountebank (DMC), Noble,
   Mystic, Sha'ir, Savant, Death Master, Jester, Nightstalker, Urban Druid, Sohei (DMC), Shaman (DMC).
