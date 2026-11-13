@@ -1355,6 +1355,20 @@ VARIANT CLASSES - SUMMARY (10/11/2026)
   Battle (Heroes of Battle adjustments to the marshal) - plus each base class's alternative class features and substitution
   levels.
 
+REMADE TEMPLATES REVIEWED (10/11/2026) - fixes by remade_fix.py
+- The Remade family (pp. 67-69, original conversion: the inherited base template, level adjustment +1, and 23 enhancement and
+  defect templates requiring it) checked against the book: bonuses and penalties correct (armored integument, consummate eyes,
+  night vision, olfactory enhancers/scent, spring-loaded jumper, supernumerary arms/legs, clumsy, dulled faculties - "choose two
+  of the three" in their descriptions - hideous deformity, slow, stiff jointed, wheels); situational or DM-chosen ones as
+  descriptions (metaclockwork, boiler, crippled limb, malfunctioning memories, poor healing). Fixed: Aquatic Prosthesis
+  (swim 10 ft. OR +10 to an existing swim speed - MOVE:Swim,0 + BONUS:MOVEADD|TYPE.Swim|10; MOVE:Swim,10 left an existing swim
+  speed unchanged), Unnatural Weapon (damage by size from the book's table through hidden size sub-templates, as the Hiveblood
+  bite; it had a fixed 1d4), Wakeful Engine (requires the Boiler defect - PRETEMPLATE).
+Verified in PCGen 6.08 (35e): human with remade + aquatic prosthesis, night vision, unnatural weapon, slow: walk 20, swim 10,
+darkvision 60, the weapon on the sheet; merfolk (swim 50) with aquatic prosthesis: swim 60; wakeful engine qualifies only with
+the boiler; no load messages. (Templates are applied by key in character files - "Remade ~ ..."; in PCGen they are picked
+from the list by name.)
+
 STATUS (04/11/2026)
 - All 14 base classes of the classes section are rebuilt and verified: Master, Battle Dancer, Mariner, Mountebank (DMC), Noble,
   Mystic, Sha'ir, Savant, Death Master, Jester, Nightstalker, Urban Druid, Sohei (DMC), Shaman (DMC).

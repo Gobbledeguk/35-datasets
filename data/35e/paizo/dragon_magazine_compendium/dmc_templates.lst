@@ -5,7 +5,7 @@
 ###Block: Remade
 
 Remade	KEY:Remade	VISIBLE:YES	SOURCEPAGE:p.67	LEVELADJUSTMENT:1	ABILITY:Special Ability|AUTOMATIC|Remade
-Remade: Aquatic Prosthesis	KEY:Remade ~ Aquatic Prosthesis	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	MOVE:Swim,10	ABILITY:Special Ability|AUTOMATIC|Remade ~ Aquatic Prosthesis
+Remade: Aquatic Prosthesis	KEY:Remade ~ Aquatic Prosthesis	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	ABILITY:Special Ability|AUTOMATIC|Remade ~ Aquatic Prosthesis	MOVE:Swim,0	BONUS:MOVEADD|TYPE.Swim|10
 Remade: Armored Integument	KEY:Remade ~ Armored Integument	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK	ABILITY:Special Ability|AUTOMATIC|Remade ~ Armored Integument
 Remade: Consummate Eyes	KEY:Remade ~ Consummate Eyes	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	BONUS:SKILL|Search,Spot|4|TYPE=Racial	ABILITY:Special Ability|AUTOMATIC|Remade ~ Consummate Eyes
 Remade: Metaclockwork	KEY:Remade ~ Metaclockwork	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	ABILITY:Special Ability|AUTOMATIC|Remade ~ Metaclockwork
@@ -14,8 +14,8 @@ Remade: Olfactory Enhancers	KEY:Remade ~ Olfactory Enhancers	VISIBLE:YES	SOURCEP
 Remade: Spring-Loaded Jumper	KEY:Remade ~ Spring-Loaded Jumper	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	BONUS:SKILL|Balance,Jump|4	ABILITY:Special Ability|AUTOMATIC|Remade ~ Spring-Loaded Jumper
 Remade: Supernumerary Arms	KEY:Remade ~ Supernumerary Arms	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	BONUS:SKILL|Climb|2	ABILITY:Special Ability|AUTOMATIC|Remade ~ Supernumerary Arms
 Remade: Supernumerary Legs	KEY:Remade ~ Supernumerary Legs	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	BONUS:MOVEADD|TYPE.Walk|5	ABILITY:Special Ability|AUTOMATIC|Remade ~ Supernumerary Legs
-Remade: Unnatural Weapon	KEY:Remade ~ Unnatural Weapon	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	NATURALATTACKS:Unnatural Weapon,Weapon.Natural.Melee.Slashing,*1,1d4	ABILITY:Special Ability|AUTOMATIC|Remade ~ Unnatural Weapon
-Remade: Wakeful Engine	KEY:Remade ~ Wakeful Engine	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	ABILITY:Special Ability|AUTOMATIC|Remade ~ Wakeful Engine
+Remade: Unnatural Weapon	KEY:Remade ~ Unnatural Weapon	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	ABILITY:Special Ability|AUTOMATIC|Remade ~ Unnatural Weapon	TEMPLATE:CHOOSE:Remade Unnatural Weapon (Diminutive)|Remade Unnatural Weapon (Tiny)|Remade Unnatural Weapon (Small)|Remade Unnatural Weapon (Medium)|Remade Unnatural Weapon (Large)|Remade Unnatural Weapon (Huge)|Remade Unnatural Weapon (Gargantuan)|Remade Unnatural Weapon (Colossal)
+Remade: Wakeful Engine	KEY:Remade ~ Wakeful Engine	VISIBLE:YES	SOURCEPAGE:p.68	PRETEMPLATE:1,Remade	ABILITY:Special Ability|AUTOMATIC|Remade ~ Wakeful Engine	PRETEMPLATE:1,Remade ~ Boiler
 Remade: Boiler	KEY:Remade ~ Boiler	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	ABILITY:Special Ability|AUTOMATIC|Remade ~ Boiler
 Remade: Clumsy	KEY:Remade ~ Clumsy	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	BONUS:STAT|DEX|-2	ABILITY:Special Ability|AUTOMATIC|Remade ~ Clumsy
 Remade: Crippled Limb	KEY:Remade ~ Crippled Limb	VISIBLE:YES	SOURCEPAGE:p.69	PRETEMPLATE:1,Remade	ABILITY:Special Ability|AUTOMATIC|Remade ~ Crippled Limb
@@ -52,3 +52,13 @@ Savage Bite (Large)	VISIBLE:NO	PRESIZEEQ:L	NATURALATTACKS:Bite,Weapon.Natural.Me
 Savage Bite (Huge)	VISIBLE:NO	PRESIZEEQ:H	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,1,3d6
 Savage Bite (Gargantuan)	VISIBLE:NO	PRESIZEEQ:G	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,1,4d6
 Savage Bite (Colossal)	VISIBLE:NO	PRESIZEEQ:C	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,1,6d6
+
+###Block: Remade unnatural weapon by size (chosen automatically)
+Remade Unnatural Weapon (Diminutive)	VISIBLE:NO	PRESIZEEQ:D	NATURALATTACKS:Unnatural Weapon,Weapon.Natural.Melee.Slashing,*1,1
+Remade Unnatural Weapon (Tiny)	VISIBLE:NO	PRESIZEEQ:T	NATURALATTACKS:Unnatural Weapon,Weapon.Natural.Melee.Slashing,*1,1d2
+Remade Unnatural Weapon (Small)	VISIBLE:NO	PRESIZEEQ:S	NATURALATTACKS:Unnatural Weapon,Weapon.Natural.Melee.Slashing,*1,1d3
+Remade Unnatural Weapon (Medium)	VISIBLE:NO	PRESIZEEQ:M	NATURALATTACKS:Unnatural Weapon,Weapon.Natural.Melee.Slashing,*1,1d4
+Remade Unnatural Weapon (Large)	VISIBLE:NO	PRESIZEEQ:L	NATURALATTACKS:Unnatural Weapon,Weapon.Natural.Melee.Slashing,*1,1d6
+Remade Unnatural Weapon (Huge)	VISIBLE:NO	PRESIZEEQ:H	NATURALATTACKS:Unnatural Weapon,Weapon.Natural.Melee.Slashing,*1,1d8
+Remade Unnatural Weapon (Gargantuan)	VISIBLE:NO	PRESIZEEQ:G	NATURALATTACKS:Unnatural Weapon,Weapon.Natural.Melee.Slashing,*1,2d6
+Remade Unnatural Weapon (Colossal)	VISIBLE:NO	PRESIZEEQ:C	NATURALATTACKS:Unnatural Weapon,Weapon.Natural.Melee.Slashing,*1,3d6
