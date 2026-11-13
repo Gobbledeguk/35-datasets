@@ -47,7 +47,7 @@ CLASS:Mountebank (DMC)	STARTSKILLPTS:6	CSKILL:Appraise|Balance|Bluff|Concentrati
 10	ABILITY:Mountebank (DMC) Class Feature|AUTOMATIC|Mountebank (DMC) ~ Infernal Jaunt
 12	ABILITY:Mountebank (DMC) Class Feature|AUTOMATIC|Mountebank (DMC) ~ Infernal Influence
 16	ABILITY:Mountebank (DMC) Class Feature|AUTOMATIC|Mountebank (DMC) ~ Infernal Escape
-20	ABILITY:Mountebank (DMC) Class Feature|AUTOMATIC|Mountebank (DMC) ~ Infernal Deception
+20	ABILITY:Mountebank (DMC) Class Feature|AUTOMATIC|Mountebank (DMC) ~ Infernal Deception	TEMPLATE:Half-Fiend
 20	ABILITY:Mountebank (DMC) Class Feature|AUTOMATIC|Mountebank (DMC) ~ Aspect of the Damned
 
 ###Block: Sha'ir (PDF pp. 535-541)
@@ -123,7 +123,7 @@ CLASS:Death Master	SPELLSTAT:INT	BONUSSPELLSTAT:INT	FACT:SpellType|Arcane	MEMORI
 17	CAST:4,4,4,4,4,4,4,3,2,1
 18	CAST:4,4,4,4,4,4,4,3,3,2
 19	CAST:4,4,4,4,4,4,4,4,3,3
-20	CAST:4,4,4,4,4,4,4,4,4,4	ABILITY:Death Master Class Feature|AUTOMATIC|Death Master ~ Lichdom
+20	CAST:4,4,4,4,4,4,4,4,4,4	ABILITY:Death Master Class Feature|AUTOMATIC|Death Master ~ Lichdom	TEMPLATE:Lich
 
 ###Block: Jester (PDF pp. 318-322)
 CLASS:Jester	HD:6	TYPE:PC.Base	FACT:ClassType|PC	FACT:Abb|Jes	MAXLEVEL:20	SOURCEPAGE:p.319	PREALIGN:CG,CN,CE	DEFINE:JesterLVL|0	BONUS:VAR|JesterLVL|CL	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|ClassBABModerate|classlevel()|PREVAREQ:UseFractionalBAB,1	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2|PREVAREQ:UseAlternateSaveProgression,0	BONUS:VAR|ClassSavePoor_Fortitude|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel()|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel()|PREVAREQ:UseFractionalSave,1

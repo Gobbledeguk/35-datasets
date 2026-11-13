@@ -23,6 +23,7 @@ ABILITYCATEGORY:dmc_abilitycategories_nolott.lst|!PRECAMPAIGN:1,INCLUDES=Legends
 ABILITYCATEGORY:dmc_abilitycategories_shamanfeat_core.lst|!PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Complete Warrior
 ABILITYCATEGORY:dmc_abilitycategories_shamanfeat_oa.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
 ABILITYCATEGORY:dmc_abilitycategories_shamanfeat_cw.lst|PRECAMPAIGN:1,INCLUDES=Complete Warrior|!PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
+ABILITYCATEGORY:dmc_acf_categories.lst
 ABILITY:dmc_abilities.lst
 ABILITY:dmc_abilities_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
 ABILITY:dmc_feats.lst
@@ -41,6 +42,7 @@ ABILITY:dmc_abilities_nolott.lst|!PRECAMPAIGN:1,INCLUDES=Legends of the Twins
 ABILITY:dmc_abilities_defstrike.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Complete Warrior
 ABILITY:dmc_abilities_dungeonscape.lst|PRECAMPAIGN:1,INCLUDES=Dungeonscape
 ABILITY:dmc_abilities_horselord_cw.lst|PRECAMPAIGN:1,INCLUDES=Complete Warrior
+ABILITY:dmc_acf.lst
 DOMAIN:dmc_domains.lst
 DOMAIN:dmc_domains_shaman.lst
 DOMAIN:dmc_shaman_domains_opt2.lst|PRECAMPAIGN:1,INCLUDES=35e ~ Ghostwalk,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Sandstorm

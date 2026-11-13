@@ -1,0 +1,6 @@
+# Dragon Magazine Compendium - selection categories of alternative class features with options (acf_build.py).
+
+ABILITYCATEGORY:Paladin ACF Aura of Sanctity	CATEGORY:Special Ability	TYPE:PaladinACFAuraofSanctity	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Paladin ACF Dead Levels (Righteous Cause)	CATEGORY:Special Ability	TYPE:PaladinACFDeadLevelsRighteousCause	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Paladin ACF Domain Paladin	CATEGORY:Special Ability	TYPE:PaladinACFDomainPaladin	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Paladin ACF Power of the Self Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	FRACTIONALPOOL:NO	CATEGORY:FEAT	TYPE:Fighter	PLURAL:Power of the Self Bonus Feats	DISPLAYLOCATION:Feats

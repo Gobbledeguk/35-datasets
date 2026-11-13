@@ -1369,6 +1369,65 @@ darkvision 60, the weapon on the sheet; merfolk (swim 50) with aquatic prosthesi
 the boiler; no load messages. (Templates are applied by key in character files - "Remade ~ ..."; in PCGen they are picked
 from the list by name.)
 
+ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built by acf_build.py; inventory in review_tools/acf_inventory.md
+- Scale: about 314 alternative class features and far more substitution sets than the indexes first parsed (the paladin alone: 25
+  + 24); many are WotC reprints already in the repository. Each class is inventoried from its index page (ACF and substitution
+  columns read by position), every entry located on its page, and every repository match checked by key and book.
+- Pattern (the repository's): an ACF ability (CATEGORY:ACF, COST:0, TYPE:ACF.<Class>ACF.<guard>, PRECLASS at the feature's level)
+  granting a Special Ability with the effects; the base class's feature carries !PREABILITY:1,CATEGORY=ACF,TYPE.<guard>. Keys end
+  in "(DMC)". Options through selection categories (dmc_acf_categories.lst); repeatable options (MULT:YES) need keys without
+  parentheses. Files: dmc_acf.lst, dmc_acf_categories.lst.
+- PALADIN ACFs (16 built; 9 in the repository - Charging Smite, Curse Breaker, Divine Counterspell, Divine Spirit, Dragonscale
+  Husk, Drakkensteed Mount, Holy Warrior, Stand Fast, Underdark Knight - plus the unlisted Rebuke Dragons, Dragon Magic):
+  Angel's Sight (divine health -> darkvision 60/low-light), Aura of Banishment (remove disease), Aura of Sanctity (turn undead;
+  choice of compulsion/death/petrification immunity), Dead Levels (Righteous Cause: a pool of 1-8 by level with repeatable
+  inspiring presence - needs Leadership - or discerning insight; replaces nothing), Detect Undead (detect evil -> at-will detect
+  undead), Domain Paladin (turn undead -> one of seven paladin domains of the deity, PREDEITYDOMAIN), Gaze of Truth (detect evil ->
+  discern lies 1+Cha/day; detect evil on the paladin list), Gnome Paladin (gnomes; Perform (comedy); dire badger, black bear,
+  boar, dire weasel, wolverine as mounts), Golarion Paladin (remove disease -> light of purity), Hunter of Fiends (smite evil ->
+  favored enemy evil outsiders at half level, Track, two class skills), Pelor's Blessing (divine health), Power of the Self
+  (divine grace, divine health and mount -> fighter bonus feats 4th/8th/...), Smiting Arrow (heavy armor and shields), Special
+  Mounts (the compendium's mount list by minimum level and adjustment - the creatures in the core data), Sword of Celestia
+  (mount), Warded Special Mount (one remove disease use - by hand). The divine grace guard is spelled PaladinDivineGrave in the
+  repository.
+Verified in PCGen 6.08 (35e): taking an ACF removes the replaced feature (divine health, remove disease, turn undead, detect evil,
+smite evil, special mount; divine grace - saves drop by the Charisma bonus; full plate no longer proficient with smiting arrow);
+ACFs qualify only from their level and race (none at 2nd; gnome paladin not for a human); options, pools (dead levels 4 at 13th,
+power of the self 2 at 8th), domain choice by deity (Heironeous: War yes, Death no), mounts by minimum level (5th vs 8th), values
+in the descriptions; no load messages. Also fixed: a bare "%" in the Deathwalker's shroud of death description (PCGen wants "%%").
+
+DEATH MASTER RE-EXAMINED (13/11/2026)
+- Checked again against pp. 184-188: Hit Die, 3/4 BAB, only Will good, alignment, skills, proficiencies, Abyssal, all 20 rows of
+  spells per day, rebuke undead (3 + Cha at class level; the +2 for 5 ranks of Knowledge (religion) comes from the repository's
+  turning system itself), master of the dead and sustenance of the dead (DC 10 + 1/2 level + Cha), the undead minion and its
+  companion mods (+2 HD and +2 Str/Dex per step, five abilities) - all as the book.
+- Two features strengthened: Aspect of the Dead (15th) now grants darkvision through DarkvisionRange and the seven immunities
+  as the repository's immunity abilities (mind-affecting, poison, sleep, paralysis, stunning, disease, death effects) instead
+  of text; Lichdom (20th) now applies the Monster Manual's Lich template automatically (TEMPLATE:Lich on the 20th-level line - its
+  only prerequisite is an evil alignment).
+Verified in PCGen 6.08: level 14 unchanged; level 15 darkvision 60 ft. and seven immunities on the sheet; level 20 type Undead,
+DR 15/bludgeoning and magic, d12 Hit Dice, template Lich; no load messages.
+
+ALL CLASSES DOUBLE-CHECKED (13/11/2026) - fixes by class_feature_fixes.py
+- Pass 1, mechanics that were only text: every class feature whose description mentions an immunity, sense, energy resistance,
+  damage reduction, fast healing, spell resistance, template/type change, natural armor or speed was checked for the matching
+  token (71 hits, most of them conditional, temporary, or about targets and familiars). The PHB's own paladin aura of courage,
+  druid venom immunity and monk purity of body are text-only too, but the repository has standard immunity abilities, so the
+  permanent, unconditional benefits now use them: Immunity to Fear (aura of courage - anarch, avenger, enforcer, incarnate
+  (paladin), sentinel; aura of fear - anti-paladin, corrupter, despot), Immunity to Charm (despot's indomitable will), Immunity to
+  Disease (urban druid, wild reaper), Immunity to Sleep and Disease (deathwalker's aura of the grave), Immunity to Stunning and
+  Sleep (sohei's strength of mind), Immunity to Energy Drain and Necromantic Effects (nightstalker's spectral symbiosis); the
+  sha'ir's elemental protection gives real resistance acid/cold/electricity/fire 2, and 4 to his gen's energy; the
+  Mountebank (DMC)'s aspect of the damned applies the MM Half-Fiend template at 20th level (alignment to evil by hand).
+  Left as text: the storm druid's deafness immunity (no such ability), conditional and temporary effects.
+- Pass 2, class tables: for every class with a "Table: The ..." in the PDF, all 20 rows of base attack and saves were read and
+  compared with the data's formulas - 42 tables, all agreeing. One misprint in the book: the Avenger, Despot and Enforcer tables
+  print Will +2 at 2nd level (the good save is +3 there; rows 1, 3 and 4 are +2, +3, +4) - the data keeps the standard
+  progression. The six classes without their own table (Rage Cleric, Filidh, Horselord, Implacable, Harbinger, Witch) advance as
+  their base class from PHB data.
+Verified in PCGen 6.08: the immunities on the sheets of a despot, sohei, nightstalker, urban druid and deathwalker; sha'ir 6 with a
+fire gen - acid 2, cold 2, fire 4; mountebank 20 - type Outsider, template Half-Fiend; no load messages.
+
 STATUS (04/11/2026)
 - All 14 base classes of the classes section are rebuilt and verified: Master, Battle Dancer, Mariner, Mountebank (DMC), Noble,
   Mystic, Sha'ir, Savant, Death Master, Jester, Nightstalker, Urban Druid, Sohei (DMC), Shaman (DMC).
@@ -1401,6 +1460,7 @@ whole file under one condition, so files with different conditions or object typ
 - dmc_classes_variants_<book>.lst <- variant class spells existing only in another book, loaded with it
 - dmc_abilities_dungeonscape.lst <- the giant owl as the wind walker's aerial companion, with Dungeonscape
 - dmc_abilities_horselord_cw.lst <- the horselord's Improved Mounted Archery, with Complete Warrior
+- dmc_acf.lst, dmc_acf_categories.lst <- alternative class features and their selection categories
 - one file per optional book where content depends on it: _xph (Expanded Psionics: racial, domain, feat additions), _sc,
   _bovd, _cadv, _ca, _rs, _rw, vestiges (Tome of Magic), flaws (Unearthed Arcana), feats_nocw (only without Complete Warrior)
 - separate by type as in the repo: races, templates, languages, domains, spells + class/domain spell lists (like the PHB's
