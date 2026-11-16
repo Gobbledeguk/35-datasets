@@ -1,0 +1,42 @@
+# Dragon Magazine Compendium - paladin substitution levels (subst_build.py; the Champions of Valor pattern).
+
+CLASS:Paladin.MOD
+SUBSTITUTIONCLASS:Elf Paladin	PRERACE:1,Elf%	SOURCEPAGE:p.422
+SUBSTITUTIONLEVEL:1	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Weapon and Armor Proficiency	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Aura of Good	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Detect Evil	ABILITY:Special Ability|AUTOMATIC|Elf Paladin ~ Ranged Smite Evil	ABILITY:Special Ability|AUTOMATIC|Elf Paladin ~ Substitution Levels	CSKILL:Survival
+SUBSTITUTIONLEVEL:3	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Divine Health	ABILITY:Special Ability|AUTOMATIC|Elf Paladin ~ Aura of Freedom	CSKILL:Survival
+SUBSTITUTIONLEVEL:5	ABILITY:Special Ability|AUTOMATIC|Elf Paladin ~ Unicorn Mount	CSKILL:Survival	CAST:0,0
+SUBSTITUTIONCLASS:Half-Orc Paladin	PRERACE:1,Half-Orc%	SOURCEPAGE:p.428
+SUBSTITUTIONLEVEL:1	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Weapon and Armor Proficiency	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Aura of Good	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Detect Evil	ABILITY:Special Ability|AUTOMATIC|Half-Orc Paladin ~ Righteous Fury	ABILITY:Special Ability|AUTOMATIC|Half-Orc Paladin ~ Substitution Levels	CSKILL:Intimidate	HITDIE:12
+SUBSTITUTIONLEVEL:3	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Divine Health	ABILITY:Special Ability|AUTOMATIC|Half-Orc Paladin ~ Aura of Awe	CSKILL:Intimidate	HITDIE:12
+SUBSTITUTIONLEVEL:6	ABILITY:Special Ability|AUTOMATIC|Half-Orc Paladin ~ Remove Fatigue	CSKILL:Intimidate	HITDIE:12	CAST:0,1
+SUBSTITUTIONCLASS:Harmonious Knight	PREDEITY:1,Milil	PRESKILL:1,Knowledge (Religion)=1	SOURCEPAGE:p.429
+SUBSTITUTIONLEVEL:1	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Weapon and Armor Proficiency	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Aura of Good	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Smite Evil	ABILITY:Special Ability|AUTOMATIC|Harmonious Knight ~ Inspire Courage	ABILITY:Special Ability|AUTOMATIC|Harmonious Knight ~ Substitution Levels	CSKILL:TYPE=Perform
+SUBSTITUTIONLEVEL:6	ABILITY:Special Ability|AUTOMATIC|Harmonious Knight ~ Inspire Competence	CSKILL:TYPE=Perform	CAST:0,1
+SUBSTITUTIONLEVEL:9	ABILITY:Special Ability|AUTOMATIC|Harmonious Knight ~ Inspire Greatness	CSKILL:TYPE=Perform	CAST:0,1,0
+SUBSTITUTIONCLASS:Paladin of Light	SOURCEPAGE:p.439
+SUBSTITUTIONLEVEL:1	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Weapon and Armor Proficiency	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Aura of Good	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Smite Evil	ABILITY:Special Ability|AUTOMATIC|Paladin of Light ~ Detect Night Creature	ABILITY:Special Ability|AUTOMATIC|Paladin of Light ~ Substitution Levels
+SUBSTITUTIONLEVEL:2	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Divine Grace	ABILITY:Special Ability|AUTOMATIC|Paladin of Light ~ Cooling Touch
+SUBSTITUTIONLEVEL:6	ABILITY:Special Ability|AUTOMATIC|Paladin of Light ~ Remove Curse	CAST:0,1
+SUBSTITUTIONCLASS:Planar Paladin	PREMULT:1,[PRESKILL:1,Knowledge (The Planes)=1],[PRERACE:1,RACESUBTYPE=Extraplanar],[PRETEXT:Has a heritage feat or has visited another plane]	SOURCEPAGE:p.440
+SUBSTITUTIONLEVEL:4	ABILITY:Special Ability|AUTOMATIC|Planar Paladin ~ Smite Evil Outsider	ABILITY:Special Ability|AUTOMATIC|Planar Paladin ~ Substitution Levels	CSKILL:Knowledge (The Planes)	CAST:0,0
+SUBSTITUTIONLEVEL:6	ABILITY:Special Ability|AUTOMATIC|Planar Paladin ~ Celestial Mount	CSKILL:Knowledge (The Planes)	CAST:0,1
+SUBSTITUTIONLEVEL:10	ABILITY:Special Ability|AUTOMATIC|Planar Paladin ~ Alignment Purity	CSKILL:Knowledge (The Planes)	CAST:0,1,1
+SUBSTITUTIONCLASS:Shadow Cloak Knight	PRERACE:1,Gnome%	PRESKILL:1,Knowledge (Religion)=1	SOURCEPAGE:p.445
+SUBSTITUTIONLEVEL:4	ABILITY:Special Ability|AUTOMATIC|Shadow Cloak Knight ~ Favored Enemy	ABILITY:Special Ability|AUTOMATIC|Shadow Cloak Knight ~ Substitution Levels	CSKILL:Hide|Move Silently	CAST:0,0
+SUBSTITUTIONLEVEL:6	ABILITY:Special Ability|AUTOMATIC|Shadow Cloak Knight ~ Hide in Plain Sight	CSKILL:Hide|Move Silently	CAST:0,1
+SUBSTITUTIONLEVEL:9	ABILITY:Special Ability|AUTOMATIC|Shadow Cloak Knight ~ One with the Darkness	CSKILL:Hide|Move Silently	CAST:0,1,0
+SUBSTITUTIONCLASS:Solstice Knight	SOURCEPAGE:p.445
+SUBSTITUTIONLEVEL:3	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Aura of Courage	ABILITY:Special Ability|AUTOMATIC|Solstice Knight ~ Blessed Radiance	ABILITY:Special Ability|AUTOMATIC|Solstice Knight ~ Substitution Levels
+SUBSTITUTIONLEVEL:5	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Special Mount	ABILITY:Special Ability|AUTOMATIC|Solstice Knight ~ Darkvision	ABILITY:Special Ability|AUTOMATIC|Solstice Knight ~ Strike of the Faithful	CAST:0,0
+SUBSTITUTIONCLASS:Vigilant Eye of Helm	PREDEITY:1,Helm	PRESKILL:1,Knowledge (Religion)=1	SOURCEPAGE:p.448
+SUBSTITUTIONLEVEL:1	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Weapon and Armor Proficiency	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Aura of Good	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Smite Evil	ABILITY:Special Ability|AUTOMATIC|Vigilant Eye of Helm (DMC) ~ Know Greatest Enemy	ABILITY:Special Ability|AUTOMATIC|Vigilant Eye of Helm (DMC) ~ Expanded Spell List	ABILITY:Special Ability|AUTOMATIC|Vigilant Eye of Helm (DMC) ~ Substitution Levels
+SUBSTITUTIONLEVEL:3	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Aura of Courage	ABILITY:Special Ability|AUTOMATIC|Vigilant Eye of Helm (DMC) ~ Vigilant Aid
+SUBSTITUTIONLEVEL:4	ABILITY:Special Ability|AUTOMATIC|Vigilant Eye of Helm (DMC) ~ Awesome Smite	CAST:0,0
+SUBSTITUTIONCLASS:Warforged Paladin	PRERACE:1,Warforged%	SOURCEPAGE:p.449
+SUBSTITUTIONLEVEL:1	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Weapon and Armor Proficiency	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Aura of Good	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Detect Evil	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Smite Evil	ABILITY:Special Ability|AUTOMATIC|Warforged Paladin ~ Smite Construct	ABILITY:Special Ability|AUTOMATIC|Warforged Paladin ~ Substitution Levels	CSKILL:Concentration|TYPE=Craft|Knowledge (Nobility and Royalty)|Knowledge (Religion)|TYPE=Profession|Ride
+SUBSTITUTIONLEVEL:2	ABILITY:Special Ability|AUTOMATIC|Warforged Paladin ~ Durable Will	ABILITY:Special Ability|AUTOMATIC|Warforged Paladin ~ Repair Damage	CSKILL:Concentration|TYPE=Craft|Knowledge (Nobility and Royalty)|Knowledge (Religion)|TYPE=Profession|Ride
+SUBSTITUTIONLEVEL:3	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Aura of Courage	ABILITY:Special Ability|AUTOMATIC|Warforged Paladin ~ Immunity to Stunning	CSKILL:Concentration|TYPE=Craft|Knowledge (Nobility and Royalty)|Knowledge (Religion)|TYPE=Profession|Ride
+SUBSTITUTIONCLASS:Wayward Warden	PRERACE:1,Halfling%	PRESKILL:1,Knowledge (Religion)=1	SOURCEPAGE:p.451
+SUBSTITUTIONLEVEL:3	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Divine Health	ABILITY:Special Ability|AUTOMATIC|Wayward Warden ~ Distracting Presence	ABILITY:Special Ability|AUTOMATIC|Wayward Warden ~ Substitution Levels
+SUBSTITUTIONLEVEL:5	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Special Mount	ABILITY:Special Ability|AUTOMATIC|Wayward Warden ~ Use Your Allies	CAST:0,0
+SUBSTITUTIONLEVEL:10	ABILITY:Special Ability|AUTOMATIC|Wayward Warden ~ Commanding Presence	CAST:0,1,1

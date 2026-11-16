@@ -43,6 +43,7 @@ ABILITY:dmc_abilities_defstrike.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v
 ABILITY:dmc_abilities_dungeonscape.lst|PRECAMPAIGN:1,INCLUDES=Dungeonscape
 ABILITY:dmc_abilities_horselord_cw.lst|PRECAMPAIGN:1,INCLUDES=Complete Warrior
 ABILITY:dmc_acf.lst
+ABILITY:dmc_substitution.lst
 DOMAIN:dmc_domains.lst
 DOMAIN:dmc_domains_shaman.lst
 DOMAIN:dmc_shaman_domains_opt2.lst|PRECAMPAIGN:1,INCLUDES=35e ~ Ghostwalk,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Sandstorm
@@ -76,6 +77,7 @@ CLASS:dmc_shaman_classes_opt11.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.
 CLASS:dmc_shaman_classes_opt12.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Races of Eberron
 CLASS:dmc_shaman_classes_opt13.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Spell Compendium
 CLASS:dmc_classes_variants_unearthed_arcana_complete.lst|PRECAMPAIGN:1,INCLUDES=Unearthed Arcana (Complete)
+CLASS:dmc_classes_substitution.lst
 LANGUAGE:dmc_languages.lst
 WEAPONPROF:dmc_profs_weapon.lst
 ARMORPROF:dmc_profs_armor.lst
@@ -94,6 +96,6 @@ TEMPLATE:dmc_templates.lst
 # ENTRY DATE: 2026-10
 # Built for PCGen Version: 6.04.01
 # MINVER:6.4
-# COMMENTS: Races (pp. 3-74), new base classes (pp. 75-708), Feats, Flaws & Styles (pp. 1058-1176), Arms & Equipment (pp. 1198-1270), Spells & Domains (pp. 1280-1362), Vestiges (pp. 1371-1419) and Magic Items (pp. 1420-1595). Variant classes converted (feature swaps and substitution levels not yet); prestige classes (scanned pages) not yet converted.
+# COMMENTS: Races (pp. 3-74), new base classes (pp. 75-708), Feats, Flaws & Styles (pp. 1058-1176), Arms & Equipment (pp. 1198-1270), Spells & Domains (pp. 1280-1362), Vestiges (pp. 1371-1419) and Magic Items (pp. 1420-1595). Variant classes converted; alternative class features and substitution levels in progress (paladin done); prestige classes (scanned pages) not yet converted.
 
 COMPANIONMOD:dmc_companionmods.lst
