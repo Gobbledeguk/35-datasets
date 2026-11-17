@@ -1,0 +1,3 @@
+# Dragon Magazine Compendium - base class modifications for alternative class features (acf_build.py).
+
+CLASS:Druid.MOD	ADDDOMAINS:Air.Animal.Earth.Fire.Plant.Sun.Water	BONUS:DOMAIN|NUMBER|1|PREABILITY:1,CATEGORY=ACF,Druid ACF ~ Domain Druid (DMC)

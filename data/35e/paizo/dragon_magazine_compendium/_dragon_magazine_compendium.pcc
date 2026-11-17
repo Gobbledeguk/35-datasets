@@ -78,6 +78,7 @@ CLASS:dmc_shaman_classes_opt12.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.
 CLASS:dmc_shaman_classes_opt13.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Spell Compendium
 CLASS:dmc_classes_variants_unearthed_arcana_complete.lst|PRECAMPAIGN:1,INCLUDES=Unearthed Arcana (Complete)
 CLASS:dmc_classes_substitution.lst
+CLASS:dmc_classes_acf.lst
 LANGUAGE:dmc_languages.lst
 WEAPONPROF:dmc_profs_weapon.lst
 ARMORPROF:dmc_profs_armor.lst
@@ -91,6 +92,7 @@ RACE:dmc_races_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
 RACE:dmc_races_ca.lst|PRECAMPAIGN:1,INCLUDES=Complete Arcane
 RACE:dmc_races_cadv.lst|PRECAMPAIGN:1,INCLUDES=Complete Adventurer
 RACE:dmc_races_companions.lst
+RACE:dmc_races_acf.lst
 TEMPLATE:dmc_templates.lst
 
 # ENTRY DATE: 2026-10

@@ -1405,6 +1405,28 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   HD/natural armor/Strength, removed class skills; remove fatigue is text (the spell is not in core data).
   Verified in PCGen 6.08: spells per day of every set identical to a plain paladin of the same level; every new feature present
   and every replaced standard feature gone (43 checks); half-orc 6 Hit Dice (3d12)+(3d10); unicorn offered; no load messages.
+- DRUID ACFs (13 built, 16/11/2026; 15 in the repository - Cityscape's eight incl. Skilled City-Dweller, Dragon Magic, Complete
+  Mage, Dungeonscape, Player's Handbook II's Spontaneous Rejuvenation; Player's Handbook II's Shapeshift there is an unfinished
+  stub - TYPE ACF.XXXX - so ours is built): Animal Companions (the compendium's list of eligible companions by level, 63 core
+  creatures resolved to repository keys, with adjustments -3 ... -15; horrid/legendary animals are not dire ones), Aquatic
+  Druid (woodland stride for aquatic terrain; needs a racial swim speed), Aspect of Nature (wild shape -> 14 aspects, uses and
+  simultaneous aspects computed), Dead Levels (woodland sprint 17th, repel nature's lure SR level+10 at 19th), Domain Druid
+  (one of Air/Animal/Earth/Fire/Plant/Sun/Water through CLASS:Druid.MOD ADDDOMAINS + BONUS:DOMAIN gated by the ACF -
+  dmc_classes_acf.lst; real domain spells and one domain slot per spell level; Animal/Plant -> Skill Focus (Knowledge
+  (nature)); Sun -> turn undead 1/day), Drow Druid (spider shape; drow = MM elf subrace "Elf ~ Drow", template "Drow Elf", or
+  FR race "Elf (Drow)"), Focused Animal (companion level +2 - availability still by druid level, as the book requires),
+  Golarion Druid (mountain stride), Plant Companion (a real companion creature - dmc_races_acf.lst - matching its stat block,
+  the only option offered; 23 natural-selection evolutions described), Shapeshift (five forms by level, enhancement 1/4 level;
+  no companion slot), Spontaneous Affliction, Wasteland Druid (Sandstorm's feats Sandskimmer/Heat Endurance are not in the
+  repository - by hand), Weapon Proficiencies (six regional weapon lists, armor proficiencies kept). Druid Dead Levels and the
+  substitution sets: see the inventory.
+  Note: CSKILL:.CLEAR.<skill> on an ability (as Cityscape uses) does not remove a class's own class skill in PCGen 6.08, so
+  "replaced" class skills stay class skills (stated in the descriptions).
+  Verified in PCGen 6.08: each replaced druid feature gone (woodland stride, wild shape, animal companion, resist nature's lure,
+  spontaneous casting, proficiencies); companion lists by level (druid 1: 22 options, druid 7: 49); Domain Druid - no domain
+  without the ACF, Air chosen -> obscuring mist on her domain list and one slot at each castable level, Sun -> turn 7/1 per day,
+  Animal -> Skill Focus; drow/elf, merfolk/human qualification; plant companion AC 13/10/13, 12/10/14/2/10/10, saves +4/+0/+0;
+  desert druid's weapons; no load messages.
 Verified in PCGen 6.08 (35e): taking an ACF removes the replaced feature (divine health, remove disease, turn undead, detect evil,
 smite evil, special mount; divine grace - saves drop by the Charisma bonus; full plate no longer proficient with smiting arrow);
 ACFs qualify only from their level and race (none at 2nd; gnome paladin not for a human); options, pools (dead levels 4 at 13th,
@@ -1477,6 +1499,7 @@ whole file under one condition, so files with different conditions or object typ
 - dmc_abilities_horselord_cw.lst <- the horselord's Improved Mounted Archery, with Complete Warrior
 - dmc_acf.lst, dmc_acf_categories.lst <- alternative class features and their selection categories
 - dmc_classes_substitution.lst, dmc_substitution.lst <- substitution levels (CLASS:<base>.MOD) and their features
+- dmc_classes_acf.lst, dmc_races_acf.lst <- base class changes for ACFs (druid domains) and ACF companion creatures (plant companion)
 - one file per optional book where content depends on it: _xph (Expanded Psionics: racial, domain, feat additions), _sc,
   _bovd, _cadv, _ca, _rs, _rw, vestiges (Tome of Magic), flaws (Unearthed Arcana), feats_nocw (only without Complete Warrior)
 - separate by type as in the repo: races, templates, languages, domains, spells + class/domain spell lists (like the PHB's
