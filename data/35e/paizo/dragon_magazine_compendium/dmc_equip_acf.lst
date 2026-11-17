@@ -1,0 +1,3 @@
+# Dragon Magazine Compendium - items for alternative class features (acf_build.py).
+
+Devoted Symbol	TYPE:Magic.Wondrous.Amulet	COST:20000	WT:0.5	BONUS:ABILITYPOOL|Improved Domain Power|1	SOURCEPAGE:p.164	SPROP:Aura moderate divination; CL 7th; Slot Throat; grants one improved granted power while worn	DESC:A rare holy symbol tied to one specific domain and deity: while worn (amulet slot) it grants that domain's improved granted power, only if the wearer has the domain and follows the same deity (choose it in the Improved Domain Power category). It can serve as a holy symbol for turning and as a spell focus. Craft Wondrous Item, divination; price 20,000 gp.

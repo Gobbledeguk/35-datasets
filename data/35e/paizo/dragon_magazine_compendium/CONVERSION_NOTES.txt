@@ -1405,7 +1405,8 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   HD/natural armor/Strength, removed class skills; remove fatigue is text (the spell is not in core data).
   Verified in PCGen 6.08: spells per day of every set identical to a plain paladin of the same level; every new feature present
   and every replaced standard feature gone (43 checks); half-orc 6 Hit Dice (3d12)+(3d10); unicorn offered; no load messages.
-- DRUID ACFs (13 built, 16/11/2026; 15 in the repository - Cityscape's eight incl. Skilled City-Dweller, Dragon Magic, Complete
+- DRUID ACFs (12 built, 16/11/2026; 16 in the repository - incl. Drow of the Underdark's "Drow Druid (Spider Shape)", found later
+  under its suffixed name, so our duplicate was removed; - Cityscape's eight incl. Skilled City-Dweller, Dragon Magic, Complete
   Mage, Dungeonscape, Player's Handbook II's Spontaneous Rejuvenation; Player's Handbook II's Shapeshift there is an unfinished
   stub - TYPE ACF.XXXX - so ours is built): Animal Companions (the compendium's list of eligible companions by level, 63 core
   creatures resolved to repository keys, with adjustments -3 ... -15; horrid/legendary animals are not dire ones), Aquatic
@@ -1413,8 +1414,7 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   simultaneous aspects computed), Dead Levels (woodland sprint 17th, repel nature's lure SR level+10 at 19th), Domain Druid
   (one of Air/Animal/Earth/Fire/Plant/Sun/Water through CLASS:Druid.MOD ADDDOMAINS + BONUS:DOMAIN gated by the ACF -
   dmc_classes_acf.lst; real domain spells and one domain slot per spell level; Animal/Plant -> Skill Focus (Knowledge
-  (nature)); Sun -> turn undead 1/day), Drow Druid (spider shape; drow = MM elf subrace "Elf ~ Drow", template "Drow Elf", or
-  FR race "Elf (Drow)"), Focused Animal (companion level +2 - availability still by druid level, as the book requires),
+  (nature)); Sun -> turn undead 1/day), Focused Animal (companion level +2 - availability still by druid level, as the book requires),
   Golarion Druid (mountain stride), Plant Companion (a real companion creature - dmc_races_acf.lst - matching its stat block,
   the only option offered; 23 natural-selection evolutions described), Shapeshift (five forms by level, enhancement 1/4 level;
   no companion slot), Spontaneous Affliction, Wasteland Druid (Sandstorm's feats Sandskimmer/Heat Endurance are not in the
@@ -1430,6 +1430,23 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   Verified in PCGen 6.08: every set's spells per day identical to a plain druid of the same level; 26 feature checks; goliath 12
   companion level 9 (plain 12); shifter 5 no companion, initiative +2, Reflex +2, Will -2, Handle Animal +4, Alertness; no load
   messages.
+- CLERIC ACFs (13 built, 16/11/2026; 8 in the repository - Complete Mage, Dungeonscape, Dragon Magic, Complete Champion, Player's
+  Handbook II's Spontaneous Domain Casting (complete), Drow of the Underdark's "Drow Cleric (Master of Spiders)"): Blasphemous
+  Incantation (evil only), Champion (swap: the PHB paladin's smite evil and aura of courage by cleric level, immunity to fear),
+  Dead Levels (undead intuition), Destroy Undead, Domain Focus (DomainCount -1: one domain selection), Golarion Cleric (no
+  domains - DomainCount -2; full BAB through an untyped BONUS:COMBAT|BASEAB - a Base-typed one does not stack; d10 by hand),
+  Improved Domain Powers (a selection category with the improved powers of 21 PHB domains - Plant has none in the text - each
+  requiring that domain, or for a paladin her deity's domain; routes: the Improved Power feat, the devoted symbol item -
+  dmc_equip_acf.lst -, a cleric ACF instead of turning, One Power, a paladin ACF instead of turning at 4th), No Turning (14
+  callings - cultist ... weaponmaster, two of them hidden in the PDF text under others' headings - with their skill bonuses,
+  spell-like abilities, feats, class skills and the shaman's companion at half level), Peripheral Beliefs (two of five),
+  Planar Banishment, Positive Healing, True Daylight, Turning Presence.
+  Drow of the Underdark also has drow ACFs for the bard, fighter, rogue, swashbuckler and wizard (suffixed names - the inventory
+  script now matches suffixes).
+  Verified in PCGen 6.08: turning replaced where it should be; Domain Focus 1 and Golarion 0 domain selections (plain 2); Golarion
+  BAB +8 at 8th (+8/+3); Champion "+3 to hit and +5 damage against Evil (Smite Evil 2/day)" at 5th and immunity to fear;
+  Blasphemous Incantation only for evil clerics; improved powers offered only for the character's own (or a paladin's deity's)
+  domains; evangelist +2 Diplomacy and its spell-like abilities, shaman companion level 3 at 7th; no load messages.
   Note: CSKILL:.CLEAR.<skill> on an ability (as Cityscape uses) does not remove a class's own class skill in PCGen 6.08, so
   "replaced" class skills stay class skills (stated in the descriptions).
   Verified in PCGen 6.08: each replaced druid feature gone (woodland stride, wild shape, animal companion, resist nature's lure,
@@ -1509,7 +1526,7 @@ whole file under one condition, so files with different conditions or object typ
 - dmc_abilities_horselord_cw.lst <- the horselord's Improved Mounted Archery, with Complete Warrior
 - dmc_acf.lst, dmc_acf_categories.lst <- alternative class features and their selection categories
 - dmc_classes_substitution.lst, dmc_substitution.lst <- substitution levels (CLASS:<base>.MOD) and their features
-- dmc_classes_acf.lst, dmc_races_acf.lst <- base class changes for ACFs (druid domains) and ACF companion creatures (plant companion)
+- dmc_classes_acf.lst, dmc_races_acf.lst, dmc_equip_acf.lst <- base class changes for ACFs (druid domains), ACF companion creatures (plant companion) and ACF items (devoted symbol)
 - one file per optional book where content depends on it: _xph (Expanded Psionics: racial, domain, feat additions), _sc,
   _bovd, _cadv, _ca, _rs, _rw, vestiges (Tome of Magic), flaws (Unearthed Arcana), feats_nocw (only without Complete Warrior)
 - separate by type as in the repo: races, templates, languages, domains, spells + class/domain spell lists (like the PHB's

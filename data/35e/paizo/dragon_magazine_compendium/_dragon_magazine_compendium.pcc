@@ -86,6 +86,7 @@ EQUIPMENT:dmc_equip_weapons_armor.lst
 EQUIPMENT:dmc_equip.lst
 EQUIPMENT:dmc_equip_power_components.lst
 EQUIPMENT:dmc_equip_magic.lst
+EQUIPMENT:dmc_equip_acf.lst
 EQUIPMOD:dmc_equipmods.lst
 RACE:dmc_races.lst
 RACE:dmc_races_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook

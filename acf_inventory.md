@@ -90,7 +90,7 @@ DruidSpontaneousCasting, DruidTimelessBody, DruidTracklessStep, DruidVenomImmuni
 | Crowd-Walker | 221 | repo (Cityscape) |
 | Dead Levels | 221 | done |
 | Domain Druid | 222 | done |
-| Drow Druid | 223 | done |
+| Drow Druid | 223 | repo (Drow of the Underdark, as "Drow Druid (Spider Shape)" - found 16/11/2026; our duplicate removed) |
 | Elemental Companion | 224 | repo (Complete Mage) |
 | Focused Animal | 225 | done |
 | Go to Ground | 225 | repo (Cityscape) |
@@ -113,10 +113,51 @@ DruidSpontaneousCasting, DruidTimelessBody, DruidTracklessStep, DruidVenomImmuni
 | Entry | Page | Status |
 |---|---|---|
 | Fangshields Druid | 224 | repo (Champions of Valor, as "Fangshield Druid") |
-| Goliath Druid | 226 | build |
-| Half-Orc Druid | 227 | build |
-| Halfling Druid | 227 | build |
-| Planar Druid | 231 | build |
-| Shifter Druid | 236 | build |
+| Goliath Druid | 226 | done |
+| Half-Orc Druid | 227 | done |
+| Halfling Druid | 227 | done |
+| Planar Druid | 231 | done |
+| Shifter Druid | 236 | done |
 
-Druid totals: 13 ACFs (all done 16/11/2026) + 5 substitution sets to build; 15 ACFs (incl. Skilled City-Dweller) and 1 set in the repository.
+Druid totals: 12 ACFs + 5 substitution sets built - DRUID COMPLETE (16/11/2026; Drow Druid found in Drow of the Underdark); 15 ACFs (incl. Skilled City-Dweller) and 1 set in the repository.
+
+## Cleric (index p.148; sections pp. 148-192) - verified 16/11/2026
+PHB cleric guards: ClericAura, ClericProficiences (sic), ClericSpontaneousCasting, ClericTurnUndead.
+(The index column's last six lines are the Ancestral Speaker's table beside it, not entries.)
+
+### Alternative class features (20) + the Champion swap
+| Entry | Page | Status |
+|---|---|---|
+| Blasphemous Incantation | 154 | done |
+| Champion (swap from the variant classes column) | 154 | done |
+| Dead Levels | 156 | done |
+| Destroy Undead | 157 | done |
+| Divine Counterspell | 157 | repo (Complete Mage) |
+| Divine Magician | 158 | repo (Complete Mage) |
+| Divine Restoration | 158 | repo (Dungeonscape) |
+| Domain Focus | 158 | done |
+| Dragonscale Husk | 160 | repo (Dragon Magic) |
+| Drow Cleric | 160 | repo (Drow of the Underdark, as "Drow Cleric (Master of Spiders)") |
+| Golarion Cleric | 163 | done |
+| Improved Domain Powers | 163 | done (21 domains; feat, devoted symbol, cleric/paladin turning route, One Power) |
+| No Turning | 166 | done (14 callings) |
+| Peripheral Beliefs | 168 | done |
+| Planar Banishment | 169 | done |
+| Pool of Healing | 171 | repo (Complete Champion) |
+| Positive Healing | 171 | done |
+| Rebuke Dragons | 174 | repo (Dragon Magic) |
+| Spontaneous Domain Casting | - | repo (Player's Handbook II - complete, not a stub) |
+| True Daylight | 175 | done |
+| Turning Presence | 175 | done |
+
+### Substitution levels (6)
+| Entry | Page | Status |
+|---|---|---|
+| Azurin Cleric | 152 | build |
+| Dragonblood Cleric | 159 | repo (Races of the Dragon, on Cleric.MOD) |
+| Dwarf Cleric | 161 | repo (Races of Stone, on Cleric.MOD) |
+| Planar Cleric | 170 | build |
+| Purple Staff Cleric | 172 | build |
+| Raptoran Cleric | 173 | build |
+
+Cleric totals: 13 ACFs built (all done 16/11/2026) + 4 substitution sets to build; 8 ACFs (incl. Drow of the Underdark's Drow Cleric) and 2 sets in the repository.
