@@ -1441,12 +1441,41 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   callings - cultist ... weaponmaster, two of them hidden in the PDF text under others' headings - with their skill bonuses,
   spell-like abilities, feats, class skills and the shaman's companion at half level), Peripheral Beliefs (two of five),
   Planar Banishment, Positive Healing, True Daylight, Turning Presence.
+- CLERIC SUBSTITUTION LEVELS (16/11/2026) - four sets under CLASS:Cleric.MOD: Azurin Cleric (aligned spells, channel incarnum,
+  soultouched weapon, distribute incarnum; Knowledge (the planes)), Planar Cleric (planar dismissal - turning level -3 applied;
+  planar domain and spontaneous banishment described), Purple Staff Cleric (Chauntea/Helm/Lathander/Nobanion/Selune/Sune,
+  Knowledge (religion); spontaneous faith healing, imbue with spell ability, turn invader), Raptoran Cleric (raptoran with the
+  Air or Sky domain; air mastery - proficiencies without heavy armor -, Auran as a bonus language, air summoning talent, open
+  the wind-gate). By hand: lost spell slots (azurin, purple staff - a permanent loss cannot sit on one level's CAST line), lost
+  spontaneous casting of high levels, the planar domains (Planar Handbook), the raptoran's earth spell removal.
+  Verified in PCGen 6.08: every set's spells per day identical to a plain cleric of the same level; 15 feature checks; planar
+  cleric 11 turning level 8 (plain 11); raptoran cleric no full plate proficiency, breastplate and heavy mace kept, Auran known;
+  no load messages.
   Drow of the Underdark also has drow ACFs for the bard, fighter, rogue, swashbuckler and wizard (suffixed names - the inventory
   script now matches suffixes).
   Verified in PCGen 6.08: turning replaced where it should be; Domain Focus 1 and Golarion 0 domain selections (plain 2); Golarion
   BAB +8 at 8th (+8/+3); Champion "+3 to hit and +5 damage against Evil (Smite Evil 2/day)" at 5th and immunity to fear;
   Blasphemous Incantation only for evil clerics; improved powers offered only for the character's own (or a paladin's deity's)
   domains; evangelist +2 Diplomacy and its spell-like abilities, shaman companion level 3 at 7th; no load messages.
+- RANGER ACFs (11 built, 16/11/2026; 14 in the repository - Cityscape, Complete Mage, Complete Champion, Player's Handbook II,
+  Dragon Magic, Dungeonscape): Animal Companions (the druid's list for rangers), Aquatic Ranger (track in water; aquatic woodland
+  stride with a racial swim speed), Celestial Slayer (evil), Combat Styles (five new options of the PHB "Ranger Combat Style"
+  category - beast-wrestling, mounted-combat, piscator, strong-arm, throwing - virtual feats by tier, not in medium or heavy armor,
+  like the PHB styles), Dead Levels (12th-19th), Favored Environment (10 environments instead of favored enemies, 1 + level/5
+  selections), Feign Death (ranger 9th, and the monk's and rogue's 2nd-level versions; the monk's improved evasion becomes
+  evasion), Golarion Ranger (companion at ranger level - 2), Natural Born Ranger (six racial variants: half-elf skills, gnome
+  spell-like abilities, halfling luck bonus removed via HalflingSaveBonus, half-orc extra favored enemy; dwarf/elf situational),
+  Solitary Hunting (no companion), Wasteland Ranger (Sandstorm feats by hand; favored enemy -1 from 10th).
+  Verified in PCGen 6.08: favored enemy/evasion/companion replaced where stated; beast-wrestling feats by tier (2 at 6th, 3 at
+  11th, none in full plate); piscator net proficiency and Improved Critical (Trident); 3 environment selections at 10th;
+  companion level 6 for a Golarion ranger 8 (plain 4); half-elf Diplomacy -2, Handle Animal and Hide +2; halfling saves -1 with
+  the racial trait present; favored enemy selections 2 for a natural-born half-orc, 2 for a wasteland ranger 10 (plain 3);
+  companion options 0 (solitary) and 37 (list) at 8th (plain 32); no load messages.
+- KEY FIX (16/11/2026): ACF features of the same name in several classes (Dead Levels - druid, cleric, ranger; Improved Domain
+  Power (instead of turning) - cleric, paladin; Feign Death - ranger, monk, rogue) had shared one feature key, so PCGen kept only
+  one definition (e.g. the cleric's Dead Levels showed the druid's text). Such features now have class-specific keys ("ACF ~ Cleric
+  Dead Levels (DMC)"); keys used by one class only are unchanged. The whole compendium was checked: no duplicate keys within any
+  object type. Verified: each Dead Levels shows its own class's text; the monk's Feign Death re-grants evasion at 9th.
   Note: CSKILL:.CLEAR.<skill> on an ability (as Cityscape uses) does not remove a class's own class skill in PCGen 6.08, so
   "replaced" class skills stay class skills (stated in the descriptions).
   Verified in PCGen 6.08: each replaced druid feature gone (woodland stride, wild shape, animal companion, resist nature's lure,
