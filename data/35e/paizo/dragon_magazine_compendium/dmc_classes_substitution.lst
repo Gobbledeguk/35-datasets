@@ -1,4 +1,4 @@
-# Dragon Magazine Compendium - paladin substitution levels (subst_build.py; the Champions of Valor pattern).
+# Dragon Magazine Compendium - substitution levels (subst_build.py; the Champions of Valor pattern).
 
 CLASS:Paladin.MOD
 SUBSTITUTIONCLASS:Elf Paladin	PRERACE:1,Elf%	SOURCEPAGE:p.422
@@ -40,3 +40,25 @@ SUBSTITUTIONCLASS:Wayward Warden	PRERACE:1,Halfling%	PRESKILL:1,Knowledge (Relig
 SUBSTITUTIONLEVEL:3	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Divine Health	ABILITY:Special Ability|AUTOMATIC|Wayward Warden ~ Distracting Presence	ABILITY:Special Ability|AUTOMATIC|Wayward Warden ~ Substitution Levels
 SUBSTITUTIONLEVEL:5	ABILITY:Paladin Class Feature|AUTOMATIC|Paladin ~ Special Mount	ABILITY:Special Ability|AUTOMATIC|Wayward Warden ~ Use Your Allies	CAST:0,0
 SUBSTITUTIONLEVEL:10	ABILITY:Special Ability|AUTOMATIC|Wayward Warden ~ Commanding Presence	CAST:0,1,1
+
+CLASS:Druid.MOD
+SUBSTITUTIONCLASS:Goliath Druid	PRERACE:1,Goliath%	SOURCEPAGE:p.226
+SUBSTITUTIONLEVEL:1	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Weapon and Armor Proficiency	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Spells	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Spontaneous Casting	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Animal Companion	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Nature Sense	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Wild Empathy	ABILITY:Special Ability|AUTOMATIC|Goliath Druid ~ Elemental Bond	ABILITY:Special Ability|AUTOMATIC|Goliath Druid ~ Substitution Levels	CAST:3,1
+SUBSTITUTIONLEVEL:6	ABILITY:Special Ability|AUTOMATIC|Goliath Druid ~ Earth Companion	CAST:5,3,3,2
+SUBSTITUTIONLEVEL:12	ABILITY:Special Ability|AUTOMATIC|Goliath Druid ~ Wild Shape (Earth)	CAST:6,5,4,4,3,3,2
+SUBSTITUTIONCLASS:Half-Orc Druid	PRERACE:1,Half-Orc%	SOURCEPAGE:p.227
+SUBSTITUTIONLEVEL:1	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Weapon and Armor Proficiency	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Spells	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Spontaneous Casting	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Animal Companion	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Nature Sense	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Wild Empathy	ABILITY:Special Ability|AUTOMATIC|Half-Orc Druid ~ Tough Animal Companion	ABILITY:Special Ability|AUTOMATIC|Half-Orc Druid ~ Substitution Levels	CSKILL:Intimidate	CAST:3,1
+SUBSTITUTIONLEVEL:4	ABILITY:Special Ability|AUTOMATIC|Half-Orc Druid ~ Bully Animal	CSKILL:Intimidate	CAST:5,3,2
+SUBSTITUTIONLEVEL:6	ABILITY:Special Ability|AUTOMATIC|Half-Orc Druid ~ Augmented Nature's Allies	CSKILL:Intimidate	CAST:5,3,3,2
+SUBSTITUTIONCLASS:Halfling Druid	PRERACE:1,Halfling%	SOURCEPAGE:p.227
+SUBSTITUTIONLEVEL:1	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Weapon and Armor Proficiency	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Spells	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Animal Companion	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Nature Sense	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Wild Empathy	ABILITY:Special Ability|AUTOMATIC|Halfling Druid ~ Spontaneous Casting (Halfling)	ABILITY:Special Ability|AUTOMATIC|Halfling Druid ~ Enhanced Link	ABILITY:Special Ability|AUTOMATIC|Halfling Druid ~ Substitution Levels	CSKILL:Climb|Hide|Jump|Move Silently	CAST:3,1
+SUBSTITUTIONLEVEL:5	ABILITY:Special Ability|AUTOMATIC|Halfling Druid ~ Undersized Wild Shape	CSKILL:Climb|Hide|Jump|Move Silently	CAST:5,3,2,1
+SUBSTITUTIONLEVEL:13	ABILITY:Special Ability|AUTOMATIC|Halfling Druid ~ Camouflage	CSKILL:Climb|Hide|Jump|Move Silently	CAST:6,5,5,4,4,3,2,1
+SUBSTITUTIONCLASS:Planar Druid	PREMULT:1,[PRESKILL:1,Knowledge (The Planes)=1],[PRERACE:1,RACESUBTYPE=Extraplanar],[PRETEXT:Has a heritage feat or has visited another plane]	SOURCEPAGE:p.231
+SUBSTITUTIONLEVEL:4	ABILITY:Special Ability|AUTOMATIC|Planar Druid ~ Resist Extraplanar Might	ABILITY:Special Ability|AUTOMATIC|Planar Druid ~ Substitution Levels	CSKILL:Knowledge (The Planes)	CAST:5,3,2
+SUBSTITUTIONLEVEL:9	ABILITY:Special Ability|AUTOMATIC|Planar Druid ~ Planar Tolerance	CSKILL:Knowledge (The Planes)	CAST:6,4,4,3,2,1
+SUBSTITUTIONLEVEL:13	ABILITY:Special Ability|AUTOMATIC|Planar Druid ~ Counter Summoning	CSKILL:Knowledge (The Planes)	CAST:6,5,5,4,4,3,2,1
+SUBSTITUTIONCLASS:Shifter Druid	PRERACE:1,Shifter%	SOURCEPAGE:p.236
+SUBSTITUTIONLEVEL:1	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Weapon and Armor Proficiency	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Spells	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Spontaneous Casting	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Nature Sense	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Wild Empathy	ABILITY:Special Ability|AUTOMATIC|Shifter Druid ~ Beast Spirit	ABILITY:Special Ability|AUTOMATIC|Shifter Druid ~ Substitution Levels	CSKILL:Balance|Climb|Jump	CAST:3,1
+SUBSTITUTIONLEVEL:4	ABILITY:Special Ability|AUTOMATIC|Shifter Druid ~ Reckless Nature	CSKILL:Balance|Climb|Jump	CAST:5,3,2
+SUBSTITUTIONLEVEL:5	ABILITY:Special Ability|AUTOMATIC|Shifter Druid ~ Wild Shifting	CSKILL:Balance|Climb|Jump	CAST:5,3,2,1
