@@ -1,4 +1,4 @@
-# 35-datasets – reviewed D&D 3.5 data for PCGen (overlay)
+# 35-datasets – reviewed D&D 3.5 data for OpenSheet / PCGen
 
 **This repository is an overlay, not a stand-alone data set.** It contains only the files that were changed or added
 on top of the BahamutDragon PCGen data; it needs that data underneath to work.
