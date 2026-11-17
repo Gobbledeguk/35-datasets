@@ -1,9 +1,6 @@
 # 35-datasets – reviewed D&D 3.5 data for OpenSheet / PCGen
 
-**This repository is an overlay, not a stand-alone data set.** It contains only the files that were changed or added
-on top of the BahamutDragon PCGen data; it needs that data underneath to work.
-
-## Requirements
+## Requirements for just data files - not the merged zip
 - **BahamutDragon PCGen data**: https://github.com/bahamutdragon/pcgen – tested against commit **d353e9b**.
   BahamutDragon also provides the Bahamut35e game mode (`system/gameModes`) and the shared `data/_universal` files,
   which this repository does not contain.
