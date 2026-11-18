@@ -1502,6 +1502,38 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   Shot/Manyshot/Improved Precise Shot and 3 favored enemies; cold resistance 6 at 9th; natural-born skill swaps and elf
   initiative -2; unholy fury only for chaotic evil; goliath 13 DR 6/adamantine, half-orc 10 and planar 11 DR 1/- (plain 2/-),
   halfling 6 Intimidate +2, planar trap sense -1; 23 substitution feature checks; no load messages.
+- ROGUE (16/11/2026) - ACFs: Adventurer (swap: fighter bonus feats in the PHB "Fighter Feat" category, 1 + level/2, instead of
+  sneak attack), Criminal Specialist (seven specialties - beggar, blackmailer, fence, goon, kidnapper, lookout, pickpocket - each
+  requiring its Skill Focus and level; forbidden skills and maximum ranks by hand), Dead Levels (14th/20th), Golarion Rogue
+  (poison master), Lightbringer Strike, Mimic (disguise self 1/day; Charisma 12), Special Abilities (18 new options of the PHB
+  "Rogue Special Ability" category, story prerequisites as PRETEXT; Cartilaginous Skeleton +4 Escape Artist), Feign Death (built
+  with the ranger). Eight substitution sets under CLASS:Rogue.MOD: Changeling (minor lore +1 Knowledge per three levels),
+  Dwarf (each substitution level one sneak attack die fewer), Golden Hand of Vergadain (Reflex -1 and BAB -1 as the text says;
+  Track), Goliath (d8 Hit Die on its levels, +4 Fortitude), Halfling, Lunar, Planar (trap sense -1; blink), Rilkan (sneak attack
+  one die lower; bardic knowledge by rogue level; bonus feat choice). Substitution levels replacing a later special ability
+  keep the rogue's special ability feature and remove one selection. In the repository: 12 ACFs (the inventory's "Mimic" match
+  was the bard's "Mimicking Song" - matching is now exact or "Name (suffix)") and Races of the Dragon's Kobold Rogue.
+  Verified in PCGen 6.08: adventurer 6 no sneak attack, 4 fighter feats; Beggar offered only with Skill Focus (Disguise); the 18
+  options offered at 10th with Crippling Strike; mimic disguise self, no trapfinding; dwarf 5 sneak 0d6 (plain 3d6), golden hand
+  6 BAB +3 and Reflex +4 (plain +4/+5), goliath 8 HD 5d6+3d8 and Fort +5 (plain +1), rilkan 10 sneak 4d6 and bardic knowledge 10,
+  special ability selections 0 (halfling, lunar, rilkan at 10th; plain 1) and 1 (planar 16th; plain 3); 36 feature checks; no load
+  messages.
+- BARD (16/11/2026) - 8 ACFs: Dead Levels (rally/refine performance), Fey Bard (swap: the druid's nature sense, wild empathy,
+  animal companion and resist nature's lure by bard level, instead of bardic knowledge and four inspire forms), Golarion Bard,
+  Inspire Hatred, Inspire Turning, Music of Creation (described - the Eberron bardic music feats), Repel Domination, Undead
+  Bardic Knowledge. Three substitution sets under CLASS:Bard.MOD: Gnome Bard (gnome cantrips and trickery spells added to spells
+  known; counter fear, inspire defiance, phantasmal song), Half-Elf Bard (soothing voice, command, diplomat spells known),
+  Planar Bard (planar inspiration, portal dissonance, planar discordance). The bard's music forms are switched off through
+  hidden ACF markers ("DMC Substitution Marker ~ BardSuggestion" ...) that the PHB Bardic Music guards already check.
+- SUBSTITUTION BUILDER IMPROVED (16/11/2026): substitution levels now re-grant the base class's own PHB grant tokens, with their
+  ACF guards, and copy that level's spell tables (CAST/KNOWN, class or subclass lines) from the PHB data. A substitution level
+  also replaces subclass lines (the bard's features and tables are there). Combining an ACF with a substitution level on the
+  same feature now works (before, the substitution level re-granted a feature the ACF had replaced). Regression run on
+  paladin, cleric, druid, ranger, barbarian and rogue sets - unchanged results.
+  Verified in PCGen 6.08: fey bard - bardic knowledge 0, wild empathy and companion by bard level, nature sense +2, no inspire
+  courage/competence with Perform ranks; gnome bard 6 keeps bardic knowledge, fascinate, inspire courage and spells per day,
+  countersong/competence/suggestion replaced, cantrips known +3; half-elf bard 8 spells known +1 at 1st and 2nd; planar bard 12
+  competence, suggestion and song of freedom replaced; no load messages.
 - KEY FIX (16/11/2026): ACF features of the same name in several classes (Dead Levels - druid, cleric, ranger; Improved Domain
   Power (instead of turning) - cleric, paladin; Feign Death - ranger, monk, rogue) had shared one feature key, so PCGen kept only
   one definition (e.g. the cleric's Dead Levels showed the druid's text). Such features now have class-specific keys ("ACF ~ Cleric

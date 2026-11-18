@@ -153,11 +153,184 @@ PHB cleric guards: ClericAura, ClericProficiences (sic), ClericSpontaneousCastin
 ### Substitution levels (6)
 | Entry | Page | Status |
 |---|---|---|
-| Azurin Cleric | 152 | build |
+| Azurin Cleric | 152 | done |
 | Dragonblood Cleric | 159 | repo (Races of the Dragon, on Cleric.MOD) |
 | Dwarf Cleric | 161 | repo (Races of Stone, on Cleric.MOD) |
-| Planar Cleric | 170 | build |
-| Purple Staff Cleric | 172 | build |
-| Raptoran Cleric | 173 | build |
+| Planar Cleric | 170 | done |
+| Purple Staff Cleric | 172 | done |
+| Raptoran Cleric | 173 | done |
 
-Cleric totals: 13 ACFs built (all done 16/11/2026) + 4 substitution sets to build; 8 ACFs (incl. Drow of the Underdark's Drow Cleric) and 2 sets in the repository.
+Cleric totals: 13 ACFs + 4 substitution sets built - CLERIC COMPLETE (16/11/2026); 8 ACFs (incl. Drow of the Underdark's Drow Cleric) and 2 sets in the repository.
+
+## Ranger (index p.476; sections pp. 476-502) - verified 16/11/2026
+PHB ranger guards: RangerAnimalCompanion, RangerCamouflage, RangerCombatStyleMastery, RangerCombatTree, RangerEndurance, RangerEvasion,
+RangerFavoredEnemy, RangerHideInPlainSight, RangerImprovedCombatStyle, RangerProficiencies, RangerSpellcasting, RangerSwiftTracker,
+RangerTrack, RangerWildEmpathy, RangerWoodlandStride.
+
+### Alternative class features (25)
+| Entry | Page | Status |
+|---|---|---|
+| Animal Companions (the druid's list, p.216, for rangers) | 216 | done |
+| Arcane Hunter | 476 | repo (Complete Mage) |
+| Aquatic Ranger | 477 | done |
+| Celestial Slayer | 477 | done |
+| Champion of the Wild | 477 | repo (Complete Champion) |
+| Combat Styles | 478 | done |
+| Crowd-Walker | 479 | repo (Cityscape) |
+| Dead Levels | 479 | done |
+| Distracting Attack | 480 | repo (Player's Handbook II) |
+| Favored Environment | 482 | done |
+| Feign Death | 482 | done (also built for the monk and rogue, 2nd level - mark done when those classes are inventoried) |
+| Golarion Ranger (enhanced companion) | 484 | done |
+| Hidden Stalker | 485 | repo (Cityscape) |
+| Natural Born Ranger | 487 | done |
+| Phynxkin Companion | 488 | repo (Dragon Magic) |
+| Rival Organization | 490 | repo (Cityscape) |
+| Solitary Hunting | 493 | done |
+| Spell Reflection | 494 | repo (Complete Mage) |
+| Spiritual Connection | 494 | repo (Complete Champion) |
+| Spiritual Guide | 494 | repo (Complete Champion) |
+| Trap Expert | 495 | repo (Dungeonscape) |
+| Urban Companion | 495 | repo (Cityscape) |
+| Urban Tracker | 497 | repo (Cityscape) |
+| Voice of the City | 497 | repo (Cityscape) |
+| Wasteland Ranger | 498 | done |
+
+### Substitution levels (10)
+| Entry | Page | Status |
+|---|---|---|
+| Elf Ranger | 480 | done |
+| Fangshields Ranger | 481 | done |
+| Gnome Ranger | 483 | done |
+| Half-Elf Ranger | 484 | done |
+| Kobold Ranger | 485 | repo (Races of the Dragon, on Ranger.MOD) |
+| Moon-Warded Ranger | 486 | done |
+| Planar Ranger | 489 | done |
+| Shadow Sword | 491 | repo (Champions of Valor, on Ranger.MOD) |
+| Shifter Ranger | 491 | done |
+| Shooting Star | 492 | repo (Champions of Valor, on Ranger.MOD) |
+
+Ranger totals: 11 ACFs + 7 substitution sets built - RANGER COMPLETE (16/11/2026; Aquatic Ranger as two ACFs); 14 ACFs and 3 sets in the repository.
+
+## Barbarian (index p.95; sections pp. 95-117) - verified 16/11/2026
+PHB barbarian guards: BarbarianDamageReduction, BarbarianFastMovement, BarbarianGreaterRage, BarbarianImprovedUncannyDodge,
+BarbarianIndomitableWill, BarbarianMightyRage, BarbarianProficiencies, BarbarianRage, BarbarianTirelessRage, BarbarianTrapSense,
+BarbarianUncannyDodge. (Cityscape's Streetfighter uses the guard BarbarianDR, which the PHB barbarian does not use - so it
+probably does not remove damage reduction; BahamutDragon data, not changed.)
+
+### Alternative class features (21) + the Hunter swap
+| Entry | Page | Status |
+|---|---|---|
+| Aquatic Barbarian | 96 | done |
+| Berserker Strength | 96 | done |
+| City Brawler | 97 | done |
+| Dashing Step | 97 | done |
+| Devil's Luck | 97 | done |
+| Fearsome Gaze | 99 | done |
+| Ferocity | 100 | repo (Cityscape) |
+| Frostfell Barbarian | 100 | done |
+| Golarion Barbarian (cold resistance) | 100 | done |
+| Hunter (swap from the variant classes column) | 104 | done |
+| Natural Born Barbarian | 104 | done |
+| Relentless Smash | 107 | done |
+| Roof-Dweller | 107 | repo (Cityscape) |
+| Skilled City-Dweller | 107 | repo (Cityscape) |
+| Spell Sense | 107 | repo (Complete Mage) |
+| Spiritual Totem | 108 | repo (Complete Champion) |
+| Streetfighter | 108 | repo (Cityscape) |
+| Totem Manifestation | 110 | repo (Complete Champion) |
+| Trapkiller | 111 | repo (Dungeonscape) |
+| Uncanny Bravery | 111 | repo (Dragon Magic) |
+| Unholy Fury | 111 | done |
+| Unshakable | 111 | done |
+| View the Spirit World (not in the index) | 112 | repo (Complete Champion) |
+
+### Substitution levels (6)
+| Entry | Page | Status |
+|---|---|---|
+| Duskling Barbarian | 98 | done |
+| Fangshields Barbarian | 99 | repo (Champions of Valor, as "Fangshield Barbarian", on Barbarian.MOD) |
+| Goliath Barbarian | 101 | done |
+| Half-Orc Barbarian | 101 | done |
+| Halfling Barbarian | 102 | done |
+| Planar Barbarian | 105 | done |
+
+Barbarian totals: 13 ACFs + 5 substitution sets built - BARBARIAN COMPLETE (16/11/2026); 10 ACFs (incl. View the Spirit World) and 1 set in the repository.
+
+## Rogue (index p.503; sections pp. 503-521) - verified 16/11/2026
+PHB rogue guards: RogueEvasion, RogueImprovedUncannyDodge, RogueProficiencies, RogueSneakAttack, RogueSpecialAbilities, RogueTrapSense,
+RogueTrapfinding, RogueUncannyDodge.
+
+### Alternative class features (19) + the Adventurer swap
+| Entry | Page | Status |
+|---|---|---|
+| Adventurer (swap from the variant classes column) | 503 | done |
+| Antiquarian | 503 | repo (Complete Champion) |
+| Breathstealer | 503 | repo (Dragon Magic) |
+| Criminal Specialist | 504 | done |
+| Dead Levels | 506 | done |
+| Death's Ruin | 506 | repo (Complete Champion) |
+| Disruptive Attack | 507 | repo (Player's Handbook II - complete) |
+| Drow Rogue | 507 | repo (Drow of the Underdark, as "Drow Rogue (Poison Use)") |
+| Feign Death | 508 | done (built with the ranger, 16/11/2026) |
+| Friend's Evasion | 509 | repo (Complete Champion) |
+| Golarion Rogue (poison master) | 509 | done |
+| Holy Stalker | 511 | repo (Complete Champion) |
+| Lightbringer Strike | 512 | done |
+| Mimic | 513 | done |
+| Penetrating Strike | 514 | repo (Dungeonscape) |
+| Quick Fingers | 515 | repo (Dungeonscape) |
+| Special Abilities | 516 | done (18 new options of the PHB Rogue Special Ability category) |
+| Spell Reflection | 518 | repo (Complete Mage) |
+| Spell Sense | 519 | repo (Complete Mage) |
+| Uncanny Bravery | 519 | repo (Dragon Magic) |
+
+### Substitution levels (9)
+| Entry | Page | Status |
+|---|---|---|
+| Changeling Rogue | 504 | done |
+| Dwarf Rogue | 507 | done |
+| Golden Hand of Vergadain | 509 | done |
+| Goliath Rogue | 510 | done |
+| Halfling Rogue | 511 | done |
+| Kobold Rogue | 512 | repo (Races of the Dragon, on Rogue.MOD) |
+| Lunar Rogue | 513 | done |
+| Planar Rogue | 514 | done |
+| Rilkan Rogue | 515 | done |
+
+Rogue totals: 7 ACFs + 8 substitution sets built - ROGUE COMPLETE (16/11/2026); Feign Death built with the ranger; 12 ACFs and 1 set in the repository.
+
+## Bard (index p.118; sections pp. 118-136) - verified 16/11/2026
+PHB bard guards: BardBardicKnowledge, BardBardicMusic, BardCountersong, BardFascinate, BardInspireCompetence, BardInspireCourage,
+BardInspireGreatness, BardInspireHeroics, BardMassSuggestion, BardProficiencies, BardSongOfFreedom, BardSuggestion, BardWeaponProficiencies.
+(All bard features and spell tables sit on its "Bard (Standard)" subclass lines.)
+
+### Alternative class features (15) + the Fey Bard swap
+| Entry | Page | Status |
+|---|---|---|
+| Bardic Knack | 118 | repo (Player's Handbook II - complete) |
+| Dead Levels | 119 | done |
+| Drow Bard | 120 | repo (Drow of the Underdark, as "Drow Bard (Deadly Knowledge)") |
+| Fey Bard (swap from the variant classes column) | 120 | done |
+| Golarion Bard (specialized training) | 122 | done |
+| Healing Hymn | 123 | repo (Complete Champion) |
+| Hymn of Fortification | 124 | repo (Complete Champion) |
+| Inspire Awe | 124 | repo (Dragon Magic) |
+| Inspire Hatred | 124 | done |
+| Inspire Turning | 124 | done |
+| Lore Song | 125 | repo (Dungeonscape) |
+| Mimicking Song | 125 | repo (Dungeonscape) |
+| Music of Creation | 125 | done (described; Eberron feats) |
+| Repel Domination | 126 | done |
+| Spellbreaker Song | 127 | repo (Complete Mage) |
+| Undead Bardic Knowledge | 128 | done |
+
+### Substitution levels (4)
+| Entry | Page | Status |
+|---|---|---|
+| Gnome Bard | 120 | done |
+| Half-Elf Bard | 122 | done |
+| Planar Bard | 125 | done |
+| Spellscale Bard | 127 | repo (Races of the Dragon, on Bard.MOD) |
+
+Bard totals: 8 ACFs + 3 substitution sets built - BARD COMPLETE (16/11/2026); 8 ACFs and 1 set in the repository.
