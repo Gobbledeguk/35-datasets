@@ -59,6 +59,58 @@ SUBSTITUTIONLEVEL:1	ABILITY:Cleric Class Feature|AUTOMATIC|Cleric ~ Aura	ABILITY
 SUBSTITUTIONLEVEL:3	ABILITY:Special Ability|AUTOMATIC|Raptoran Cleric ~ Air Summoning Talent	CAST:4,2,1
 SUBSTITUTIONLEVEL:7	ABILITY:Special Ability|AUTOMATIC|Raptoran Cleric ~ Open the Wind-Gate	CAST:6,4,3,2,1
 
+CLASS:Ranger.MOD
+SUBSTITUTIONCLASS:Elf Ranger	PRERACE:1,Elf%	SOURCEPAGE:p.480
+SUBSTITUTIONLEVEL:1	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Weapon and Armor Proficiency	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Track	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Wild Empathy	ABILITY:Special Ability|AUTOMATIC|Elf Ranger ~ Elf Favored Enemy	ABILITY:Special Ability|AUTOMATIC|Elf Ranger ~ Substitution Levels	CSKILL:Balance
+SUBSTITUTIONLEVEL:4	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Animal Companion	ABILITY:Special Ability|AUTOMATIC|Elf Ranger ~ Elven Hound Companion	CSKILL:Balance	CAST:0,0
+SUBSTITUTIONLEVEL:10	ABILITY:Special Ability|AUTOMATIC|Elf Ranger ~ Strongheart Slayer	CSKILL:Balance	CAST:0,1,1
+SUBSTITUTIONCLASS:Fangshields Ranger	!PRERACE:1,RACETYPE=Humanoid	PRESKILL:1,Knowledge (Religion)=1	SOURCEPAGE:p.481
+SUBSTITUTIONLEVEL:2	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Combat Style	ABILITY:Special Ability|AUTOMATIC|Fangshields Ranger ~ Natural Attack Style	ABILITY:Special Ability|AUTOMATIC|Fangshields Ranger ~ Substitution Levels	CSKILL:Diplomacy
+SUBSTITUTIONLEVEL:4	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Animal Companion	ABILITY:Special Ability|AUTOMATIC|Fangshields Ranger ~ Bonded Animal Companion	CSKILL:Diplomacy	CAST:0,0
+SUBSTITUTIONLEVEL:5	ABILITY:Special Ability|AUTOMATIC|Fangshields Ranger ~ Lion and the Unicorn	CSKILL:Diplomacy	CAST:0,0
+SUBSTITUTIONCLASS:Gnome Ranger	PRERACE:1,Gnome%	SOURCEPAGE:p.483
+SUBSTITUTIONLEVEL:1	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Weapon and Armor Proficiency	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Track	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Wild Empathy	ABILITY:Special Ability|AUTOMATIC|Gnome Ranger ~ Gnome Favored Enemy	ABILITY:Special Ability|AUTOMATIC|Gnome Ranger ~ Substitution Levels
+SUBSTITUTIONLEVEL:4	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Animal Companion	ABILITY:Special Ability|AUTOMATIC|Gnome Ranger ~ Burrowing Animal Companion	CAST:0,0
+SUBSTITUTIONLEVEL:8	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Swift Tracker	ABILITY:Special Ability|AUTOMATIC|Gnome Ranger ~ Gnome Ranger Spells	CAST:0,1,0
+SUBSTITUTIONCLASS:Half-Elf Ranger	PRERACE:1,Half-Elf%	SOURCEPAGE:p.484
+SUBSTITUTIONLEVEL:1	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Weapon and Armor Proficiency	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Favored Enemy	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Wild Empathy	ABILITY:Special Ability|AUTOMATIC|Half-Elf Ranger ~ Urban Tracking	ABILITY:Special Ability|AUTOMATIC|Half-Elf Ranger ~ Substitution Levels	CSKILL:Gather Information|Speak Language
+SUBSTITUTIONLEVEL:4	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Animal Companion	ABILITY:Special Ability|AUTOMATIC|Half-Elf Ranger ~ Street Magic	CSKILL:Gather Information|Speak Language	CAST:0,0
+SUBSTITUTIONLEVEL:13	ABILITY:Special Ability|AUTOMATIC|Half-Elf Ranger ~ Skill Mastery	CSKILL:Gather Information|Speak Language	CAST:0,1,1,1
+SUBSTITUTIONCLASS:Moon-Warded Ranger	PRETEXT:Worships the moon	SOURCEPAGE:p.486
+SUBSTITUTIONLEVEL:2	ABILITY:Special Ability|AUTOMATIC|Moon-Warded Ranger ~ Armor of the Senses	ABILITY:Special Ability|AUTOMATIC|Moon-Warded Ranger ~ Substitution Levels
+SUBSTITUTIONLEVEL:6	ABILITY:Special Ability|AUTOMATIC|Moon-Warded Ranger ~ Skin of the Moon	CAST:0,1
+SUBSTITUTIONLEVEL:11	ABILITY:Special Ability|AUTOMATIC|Moon-Warded Ranger ~ Indomitable Mind	CAST:0,1,1,0
+SUBSTITUTIONCLASS:Planar Ranger	PREMULT:1,[PRESKILL:1,Knowledge (The Planes)=1],[PRERACE:1,RACESUBTYPE=Extraplanar],[PRETEXT:Has a heritage feat or has visited another plane]	SOURCEPAGE:p.489
+SUBSTITUTIONLEVEL:4	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Animal Companion	ABILITY:Special Ability|AUTOMATIC|Planar Ranger ~ Planar Animal Companion	ABILITY:Special Ability|AUTOMATIC|Planar Ranger ~ Substitution Levels	CAST:0,0
+SUBSTITUTIONLEVEL:8	ABILITY:Special Ability|AUTOMATIC|Planar Ranger ~ Portal Intuition	CAST:0,1,0
+SUBSTITUTIONLEVEL:13	ABILITY:Special Ability|AUTOMATIC|Planar Ranger ~ Planar Tracking	CAST:0,1,1,1
+SUBSTITUTIONCLASS:Shifter Ranger	PRERACE:1,Shifter%	SOURCEPAGE:p.491
+SUBSTITUTIONLEVEL:1	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Weapon and Armor Proficiency	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Favored Enemy	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Track	ABILITY:Special Ability|AUTOMATIC|Shifter Ranger ~ Wild Empathy (Wisdom)	ABILITY:Special Ability|AUTOMATIC|Shifter Ranger ~ Substitution Levels	CSKILL:Balance
+SUBSTITUTIONLEVEL:4	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Animal Companion	ABILITY:Special Ability|AUTOMATIC|Shifter Ranger ~ Share Shifting	CSKILL:Balance	CAST:0,0
+SUBSTITUTIONLEVEL:9	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Evasion	ABILITY:Special Ability|AUTOMATIC|Shifter Ranger ~ Enhanced Shifting	CSKILL:Balance	CAST:0,1,0
+
+CLASS:Barbarian.MOD
+SUBSTITUTIONCLASS:Duskling Barbarian	PRERACE:1,Duskling	SOURCEPAGE:p.98
+SUBSTITUTIONLEVEL:1	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Weapon and Armor Proficiency	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Illiteracy	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Rage	ABILITY:Special Ability|AUTOMATIC|Duskling Barbarian ~ Incarnum Speed	ABILITY:Special Ability|AUTOMATIC|Duskling Barbarian ~ Substitution Levels	CSKILL:Knowledge (The Planes)
+SUBSTITUTIONLEVEL:7	ABILITY:Special Ability|AUTOMATIC|Duskling Barbarian ~ Incarnum Defense	CSKILL:Knowledge (The Planes)
+SUBSTITUTIONLEVEL:11	ABILITY:Special Ability|AUTOMATIC|Duskling Barbarian ~ Incarnum Rage	CSKILL:Knowledge (The Planes)
+SUBSTITUTIONCLASS:Goliath Barbarian	PRERACE:1,Goliath	SOURCEPAGE:p.101
+SUBSTITUTIONLEVEL:1	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Weapon and Armor Proficiency	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Fast Movement	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Illiteracy	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Rage	ABILITY:Special Ability|AUTOMATIC|Goliath Barbarian ~ Mountain Rage	ABILITY:Special Ability|AUTOMATIC|Goliath Barbarian ~ Substitution Levels	CSKILL:Knowledge (Nature)
+SUBSTITUTIONLEVEL:5	ABILITY:Special Ability|AUTOMATIC|Goliath Barbarian ~ Fortification	CSKILL:Knowledge (Nature)
+SUBSTITUTIONLEVEL:7	ABILITY:Special Ability|AUTOMATIC|Goliath Barbarian ~ Skin of Stone	CSKILL:Knowledge (Nature)
+SUBSTITUTIONCLASS:Half-Orc Barbarian	PRERACE:1,Half-Orc%	SOURCEPAGE:p.101
+SUBSTITUTIONLEVEL:2	ABILITY:Special Ability|AUTOMATIC|Half-Orc Barbarian ~ Reckless Charge	ABILITY:Special Ability|AUTOMATIC|Half-Orc Barbarian ~ Substitution Levels
+SUBSTITUTIONLEVEL:5	ABILITY:Special Ability|AUTOMATIC|Half-Orc Barbarian ~ Insightful Rage
+SUBSTITUTIONLEVEL:7	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Damage Reduction	ABILITY:Special Ability|AUTOMATIC|Half-Orc Barbarian ~ Two-Handed Strike
+SUBSTITUTIONCLASS:Halfling Barbarian	PRERACE:1,Halfling%	SOURCEPAGE:p.102
+SUBSTITUTIONLEVEL:1	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Weapon and Armor Proficiency	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Fast Movement	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Illiteracy	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Rage	ABILITY:Special Ability|AUTOMATIC|Halfling Barbarian ~ Halfling Rage	ABILITY:Special Ability|AUTOMATIC|Halfling Barbarian ~ Substitution Levels
+SUBSTITUTIONLEVEL:3	ABILITY:Special Ability|AUTOMATIC|Halfling Barbarian ~ Intimidating Presence
+SUBSTITUTIONLEVEL:5	ABILITY:Special Ability|AUTOMATIC|Halfling Barbarian ~ Bigger Than Life
+SUBSTITUTIONCLASS:Planar Barbarian	PREMULT:1,[PRESKILL:1,Knowledge (The Planes)=1],[PRERACE:1,RACESUBTYPE=Extraplanar],[PRETEXT:Has a heritage feat or has visited another plane]	SOURCEPAGE:p.105
+SUBSTITUTIONLEVEL:3	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Trap Sense	ABILITY:Special Ability|AUTOMATIC|Planar Barbarian ~ Portal Sense	ABILITY:Special Ability|AUTOMATIC|Planar Barbarian ~ Substitution Levels
+SUBSTITUTIONLEVEL:7	ABILITY:Barbarian Class Feature|AUTOMATIC|Barbarian ~ Damage Reduction	ABILITY:Special Ability|AUTOMATIC|Planar Barbarian ~ Planar Damage Reduction
+SUBSTITUTIONLEVEL:11	ABILITY:Special Ability|AUTOMATIC|Planar Barbarian ~ Menacing Rage
+
 CLASS:Druid.MOD
 SUBSTITUTIONCLASS:Goliath Druid	PRERACE:1,Goliath%	SOURCEPAGE:p.226
 SUBSTITUTIONLEVEL:1	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Weapon and Armor Proficiency	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Spells	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Spontaneous Casting	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Animal Companion	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Nature Sense	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Wild Empathy	ABILITY:Special Ability|AUTOMATIC|Goliath Druid ~ Elemental Bond	ABILITY:Special Ability|AUTOMATIC|Goliath Druid ~ Substitution Levels	CAST:3,1

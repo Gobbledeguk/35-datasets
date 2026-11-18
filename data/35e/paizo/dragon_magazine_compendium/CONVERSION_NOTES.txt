@@ -1471,6 +1471,37 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   companion level 6 for a Golarion ranger 8 (plain 4); half-elf Diplomacy -2, Handle Animal and Hide +2; halfling saves -1 with
   the racial trait present; favored enemy selections 2 for a natural-born half-orc, 2 for a wasteland ranger 10 (plain 3);
   companion options 0 (solitary) and 37 (list) at 8th (plain 32); no load messages.
+- RANGER SUBSTITUTION LEVELS (16/11/2026) - seven sets under CLASS:Ranger.MOD: Elf Ranger (elf favored enemy, elven hound,
+  strongheart slayer - favored enemy and bonus selections -1 from 10th), Fangshields Ranger (nonhumanoid, Knowledge (religion);
+  the natural-attack combat style as an option of the PHB "Ranger Combat Style" category for these rangers only; companion +2;
+  lion and the unicorn - favored enemy -1 from 5th; Champions of Valor has its abilities but no ranger substitution class), Gnome
+  Ranger (gnome favored enemy, burrowing companion, five spells added to her ranger list), Half-Elf Ranger (Urban Tracking
+  instead of Track - granted by dmc_substitution_urbantracking.lst only with Unearthed Arcana, Cityscape, Races of Destiny,
+  Dungeonscape or Eberron; street magic - seven spells added; skill mastery instead of camouflage), Moon-Warded Ranger (armor of
+  the senses - Wisdom to AC in light or no armor; skin of the moon; indomitable mind - immunity to mind-affecting), Planar Ranger
+  (planar companion -1, portal intuition instead of swift tracker, planar tracking - plane shift 1/day - instead of camouflage),
+  Shifter Ranger (wild empathy with Wisdom, share shifting, enhanced shifting). By hand: the +3 favored enemy bonuses, spell
+  removals, conditional companion bonuses, situational DR.
+  Verified in PCGen 6.08: every set's spells per day identical to a plain ranger of the same level; 28 feature checks; favored
+  enemy selections elf 10 = 2, fangshields 5 = 1 (plain 3 and 2); companion levels fangshields 4 (plain 2), planar 5 (plain 6);
+  gnome blur 2nd and invisibility (greater) 4th, half-elf comprehend languages 1st on their ranger lists; moon-warded AC +2 (Wis
+  14); Urban Tracking only with Unearthed Arcana loaded; no load messages.
+- BARBARIAN (16/11/2026) - 13 ACFs: Aquatic Barbarian (fast movement +10 to swim speed), Berserker Strength (Player's Handbook
+  II's repository entry is a stub - TYPE ACF.XXXX), City Brawler (Improved Unarmed Strike; proficiencies re-granted as simple
+  weapons and light armor - in this data the martial/medium proficiency types include the lower tiers), Dashing Step, Devil's
+  Luck (the DR value as a luck bonus on saves), Fearsome Gaze (+4 Intimidate, Strength instead of Charisma, trap sense -1),
+  Frostfell Barbarian, Golarion Barbarian (cold resistance 2-12), Hunter (swap: the ranger's favored enemy and the PHB
+  "Combat Style ~ Archery" option by barbarian level), Natural Born Barbarian (six racial variants), Relentless Smash, Unholy
+  Fury (chaotic evil), Unshakable (immunity to fear). Five substitution sets under CLASS:Barbarian.MOD: Duskling, Goliath (skin
+  of stone - DR 2-8/adamantine instead of the barbarian's DR), Half-Orc (barbarian DR -1 from 7th), Halfling (Intimidate +1 per
+  trap sense step), Planar (trap sense -1, barbarian DR -1). In the repository: 9 ACFs + View the Spirit World (unlisted,
+  Complete Champion) and Champions of Valor's Fangshield Barbarian. Note: Cityscape's Streetfighter uses the guard BarbarianDR,
+  which the PHB barbarian does not use (BahamutDragon data).
+  Verified in PCGen 6.08: replaced features gone (rage, greater rage, trap sense, DR, fast movement, improved uncanny dodge);
+  saves +2 luck at 11th (Devil's Luck); city brawler club/leather yes, longsword/breastplate no; merfolk swim 60; hunter 11 Rapid
+  Shot/Manyshot/Improved Precise Shot and 3 favored enemies; cold resistance 6 at 9th; natural-born skill swaps and elf
+  initiative -2; unholy fury only for chaotic evil; goliath 13 DR 6/adamantine, half-orc 10 and planar 11 DR 1/- (plain 2/-),
+  halfling 6 Intimidate +2, planar trap sense -1; 23 substitution feature checks; no load messages.
 - KEY FIX (16/11/2026): ACF features of the same name in several classes (Dead Levels - druid, cleric, ranger; Improved Domain
   Power (instead of turning) - cleric, paladin; Feign Death - ranger, monk, rogue) had shared one feature key, so PCGen kept only
   one definition (e.g. the cleric's Dead Levels showed the druid's text). Such features now have class-specific keys ("ACF ~ Cleric
@@ -1555,6 +1586,7 @@ whole file under one condition, so files with different conditions or object typ
 - dmc_abilities_horselord_cw.lst <- the horselord's Improved Mounted Archery, with Complete Warrior
 - dmc_acf.lst, dmc_acf_categories.lst <- alternative class features and their selection categories
 - dmc_classes_substitution.lst, dmc_substitution.lst <- substitution levels (CLASS:<base>.MOD) and their features
+- dmc_substitution_urbantracking.lst <- the half-elf ranger's Urban Tracking, with a book defining the feat
 - dmc_classes_acf.lst, dmc_races_acf.lst, dmc_equip_acf.lst <- base class changes for ACFs (druid domains), ACF companion creatures (plant companion) and ACF items (devoted symbol)
 - one file per optional book where content depends on it: _xph (Expanded Psionics: racial, domain, feat additions), _sc,
   _bovd, _cadv, _ca, _rs, _rw, vestiges (Tome of Magic), flaws (Unearthed Arcana), feats_nocw (only without Complete Warrior)

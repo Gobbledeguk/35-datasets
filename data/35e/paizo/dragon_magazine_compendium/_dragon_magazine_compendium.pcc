@@ -44,6 +44,7 @@ ABILITY:dmc_abilities_dungeonscape.lst|PRECAMPAIGN:1,INCLUDES=Dungeonscape
 ABILITY:dmc_abilities_horselord_cw.lst|PRECAMPAIGN:1,INCLUDES=Complete Warrior
 ABILITY:dmc_acf.lst
 ABILITY:dmc_substitution.lst
+ABILITY:dmc_substitution_urbantracking.lst|PRECAMPAIGN:1,INCLUDES=Unearthed Arcana (Complete),INCLUDES=Cityscape (WotC),INCLUDES=Races of Destiny,INCLUDES=Dungeonscape,INCLUDES=Eberron Campaign Setting
 DOMAIN:dmc_domains.lst
 DOMAIN:dmc_domains_shaman.lst
 DOMAIN:dmc_shaman_domains_opt2.lst|PRECAMPAIGN:1,INCLUDES=35e ~ Ghostwalk,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Sandstorm
@@ -99,6 +100,6 @@ TEMPLATE:dmc_templates.lst
 # ENTRY DATE: 2026-10
 # Built for PCGen Version: 6.04.01
 # MINVER:6.4
-# COMMENTS: Races (pp. 3-74), new base classes (pp. 75-708), Feats, Flaws & Styles (pp. 1058-1176), Arms & Equipment (pp. 1198-1270), Spells & Domains (pp. 1280-1362), Vestiges (pp. 1371-1419) and Magic Items (pp. 1420-1595). Variant classes converted; alternative class features and substitution levels in progress (paladin, druid and cleric done); prestige classes (scanned pages) not yet converted.
+# COMMENTS: Races (pp. 3-74), new base classes (pp. 75-708), Feats, Flaws & Styles (pp. 1058-1176), Arms & Equipment (pp. 1198-1270), Spells & Domains (pp. 1280-1362), Vestiges (pp. 1371-1419) and Magic Items (pp. 1420-1595). Variant classes converted; alternative class features and substitution levels in progress (paladin, druid, cleric, ranger and barbarian done); prestige classes (scanned pages) not yet converted.
 
 COMPANIONMOD:dmc_companionmods.lst
