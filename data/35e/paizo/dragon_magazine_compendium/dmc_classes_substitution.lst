@@ -50,10 +50,6 @@ SUBSTITUTIONCLASS:Planar Cleric	PREMULT:1,[PRESKILL:1,Knowledge (The Planes)=1],
 SUBSTITUTIONLEVEL:4	ABILITY:Special Ability|AUTOMATIC|Planar Cleric ~ Planar Dismissal	ABILITY:Special Ability|AUTOMATIC|Planar Cleric ~ Substitution Levels	CAST:5,3,2
 SUBSTITUTIONLEVEL:7	ABILITY:Special Ability|AUTOMATIC|Planar Cleric ~ Planar Domain	CAST:6,4,3,2,1
 SUBSTITUTIONLEVEL:11	ABILITY:Special Ability|AUTOMATIC|Planar Cleric ~ Planar Banishment (Spontaneous)	CAST:6,5,4,4,3,2,1
-SUBSTITUTIONCLASS:Purple Staff Cleric	PREDEITY:1,Chauntea,Helm,Lathander,Nobanion,Selune,Sune	PRESKILL:1,Knowledge (Religion)=1	SOURCEPAGE:p.172
-SUBSTITUTIONLEVEL:4	ABILITY:Special Ability|AUTOMATIC|Purple Staff Cleric ~ Spontaneous Faith Healing	ABILITY:Special Ability|AUTOMATIC|Purple Staff Cleric ~ Substitution Levels	CAST:5,3,2
-SUBSTITUTIONLEVEL:6	ABILITY:Special Ability|AUTOMATIC|Purple Staff Cleric ~ Imbue with Spell Ability	CAST:5,3,3,2
-SUBSTITUTIONLEVEL:9	ABILITY:Special Ability|AUTOMATIC|Purple Staff Cleric ~ Turn Invader	CAST:6,4,4,3,2,1
 SUBSTITUTIONCLASS:Raptoran Cleric	PRERACE:1,Raptoran	PREMULT:1,[PREDOMAIN:1,Air],[PREDOMAIN:1,Sky]	SOURCEPAGE:p.173
 SUBSTITUTIONLEVEL:1	ABILITY:Cleric Class Feature|AUTOMATIC|Cleric ~ Aura|!PREABILITY:1,CATEGORY=ACF,TYPE.ClericAura|!PREABILITY:1,CATEGORY=Special Ability,Ex-Cleric	ABILITY:Cleric Class Feature|AUTOMATIC|Cleric ~ Spells|!PREABILITY:1,CATEGORY=Special Ability,Ex-Cleric	ABILITY:Cleric Class Feature|AUTOMATIC|Cleric ~ Spontaneous Casting|!PREABILITY:1,CATEGORY=ACF,TYPE.ClericSpontaneousCasting|!PREABILITY:1,CATEGORY=Special Ability,Ex-Cleric	ABILITY:Cleric Class Feature|AUTOMATIC|Cleric ~ Turn or Rebuke Undead|!PREABILITY:1,CATEGORY=ACF,TYPE.ClericTurnUndead|!PREABILITY:1,CATEGORY=Special Ability,Ex-Cleric	ABILITY:Special Ability|AUTOMATIC|Raptoran Cleric ~ Air Mastery	ABILITY:Special Ability|AUTOMATIC|Raptoran Cleric ~ Empathy of the Winds	ABILITY:Special Ability|AUTOMATIC|Raptoran Cleric ~ Substitution Levels	CAST:3,1
 SUBSTITUTIONLEVEL:3	ABILITY:Special Ability|AUTOMATIC|Raptoran Cleric ~ Air Summoning Talent	CAST:4,2,1
@@ -159,6 +155,36 @@ SUBSTITUTIONCLASS:Planar Bard	PREMULT:1,[PRESKILL:1,Knowledge (The Planes)=1],[P
 SUBSTITUTIONLEVEL:3	ABILITY:Special Ability|AUTOMATIC|Planar Bard ~ Planar Inspiration	ABILITY:Special Ability|AUTOMATIC|Planar Bard ~ Substitution Levels	CAST:3,1	KNOWN:6,3
 SUBSTITUTIONLEVEL:6	ABILITY:Special Ability|AUTOMATIC|Planar Bard ~ Portal Dissonance	CAST:3,3,2	KNOWN:6,4,3
 SUBSTITUTIONLEVEL:12	ABILITY:Special Ability|AUTOMATIC|Planar Bard ~ Planar Discordance	CAST:3,3,3,3,2	KNOWN:6,4,4,4,3
+
+CLASS:Monk.MOD
+SUBSTITUTIONCLASS:Dark Moon Disciple	PREDEITY:1,Shar	PRESKILL:1,Knowledge (Religion)=1	SOURCEPAGE:p.358
+SUBSTITUTIONLEVEL:3	ABILITY:Special Ability|AUTOMATIC|Dark Moon Disciple ~ Darkvision	ABILITY:Special Ability|AUTOMATIC|Dark Moon Disciple ~ Substitution Levels
+SUBSTITUTIONLEVEL:7	ABILITY:Special Ability|AUTOMATIC|Dark Moon Disciple ~ Shadow Blend
+SUBSTITUTIONLEVEL:12	ABILITY:Special Ability|AUTOMATIC|Dark Moon Disciple ~ Walk the Shadows
+SUBSTITUTIONCLASS:Halfling Monk	PRERACE:1,Halfling%	SOURCEPAGE:p.367
+SUBSTITUTIONLEVEL:1	ABILITY:Class|AUTOMATIC|Monk	ABILITY:Special Ability|AUTOMATIC|Halfling Monk ~ Skirmish	ABILITY:Special Ability|AUTOMATIC|Halfling Monk ~ Substitution Levels
+SUBSTITUTIONLEVEL:2	ABILITY:Special Ability|AUTOMATIC|Halfling Monk ~ Weapon Finesse
+SUBSTITUTIONLEVEL:7	ABILITY:Special Ability|AUTOMATIC|Halfling Monk ~ Size Matters Not
+SUBSTITUTIONCLASS:Hin Disciple	PRERACE:1,Halfling%	PRESKILL:1,Knowledge (Religion)=1	SOURCEPAGE:p.368
+SUBSTITUTIONLEVEL:1	ABILITY:Class|AUTOMATIC|Monk	ABILITY:Special Ability|AUTOMATIC|Hin Disciple ~ Hin Bonus Feats	ABILITY:Special Ability|AUTOMATIC|Hin Disciple ~ Substitution Levels
+SUBSTITUTIONLEVEL:6	ABILITY:Special Ability|AUTOMATIC|Hin Disciple ~ Blur of Motion
+SUBSTITUTIONLEVEL:9	ABILITY:Special Ability|AUTOMATIC|Hin Disciple ~ The Harder They Fall
+SUBSTITUTIONCLASS:Illuminated Monk	PRETEXT:Comes from a sun-centered society or worships a sun deity	SOURCEPAGE:p.369
+SUBSTITUTIONLEVEL:1	ABILITY:Class|AUTOMATIC|Monk	ABILITY:Special Ability|AUTOMATIC|Illuminated Monk ~ Illuminated Bonus Feat (1st)	ABILITY:Special Ability|AUTOMATIC|Illuminated Monk ~ Substitution Levels
+SUBSTITUTIONLEVEL:2	ABILITY:Special Ability|AUTOMATIC|Illuminated Monk ~ Illuminated Bonus Feat (2nd)
+SUBSTITUTIONLEVEL:6	ABILITY:Special Ability|AUTOMATIC|Illuminated Monk ~ Meditative Focus
+SUBSTITUTIONCLASS:Kalashtar Monk	PRERACE:1,Kalashtar	SOURCEPAGE:p.370
+SUBSTITUTIONLEVEL:1	ABILITY:Class|AUTOMATIC|Monk	ABILITY:Special Ability|AUTOMATIC|Kalashtar Monk ~ Psychic Insight	ABILITY:Special Ability|AUTOMATIC|Kalashtar Monk ~ Substitution Levels
+SUBSTITUTIONLEVEL:2	ABILITY:Special Ability|AUTOMATIC|Kalashtar Monk ~ Psionic Bonus Feat
+SUBSTITUTIONLEVEL:7	ABILITY:Special Ability|AUTOMATIC|Kalashtar Monk ~ Psionic Wholeness of Body
+SUBSTITUTIONCLASS:Planar Monk	PREMULT:1,[PRESKILL:1,Knowledge (The Planes)=1],[PRERACE:1,RACESUBTYPE=Extraplanar],[PRETEXT:Has a heritage feat or has visited another plane]	SOURCEPAGE:p.373
+SUBSTITUTIONLEVEL:5	ABILITY:Special Ability|AUTOMATIC|Planar Monk ~ Resistant Body	ABILITY:Special Ability|AUTOMATIC|Planar Monk ~ Substitution Levels
+SUBSTITUTIONLEVEL:13	ABILITY:Special Ability|AUTOMATIC|Planar Monk ~ Axiomatic Soul
+SUBSTITUTIONLEVEL:16	ABILITY:Special Ability|AUTOMATIC|Planar Monk ~ Ki Strike (Cold Iron)
+SUBSTITUTIONCLASS:Skarn Monk	PRERACE:1,Skarn	SOURCEPAGE:p.376
+SUBSTITUTIONLEVEL:1	ABILITY:Class|AUTOMATIC|Monk	ABILITY:Special Ability|AUTOMATIC|Skarn Monk ~ Spine Strike	ABILITY:Special Ability|AUTOMATIC|Skarn Monk ~ Substitution Levels	CSKILL:Intimidate
+SUBSTITUTIONLEVEL:5	ABILITY:Special Ability|AUTOMATIC|Skarn Monk ~ Defensive Insight	CSKILL:Intimidate
+SUBSTITUTIONLEVEL:10	ABILITY:Special Ability|AUTOMATIC|Skarn Monk ~ Shape Soulmeld	CSKILL:Intimidate
 
 CLASS:Druid.MOD
 SUBSTITUTIONCLASS:Goliath Druid	PRERACE:1,Goliath%	SOURCEPAGE:p.226

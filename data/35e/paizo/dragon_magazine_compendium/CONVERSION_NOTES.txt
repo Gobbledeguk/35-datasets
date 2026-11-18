@@ -1443,8 +1443,7 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   Planar Banishment, Positive Healing, True Daylight, Turning Presence.
 - CLERIC SUBSTITUTION LEVELS (16/11/2026) - four sets under CLASS:Cleric.MOD: Azurin Cleric (aligned spells, channel incarnum,
   soultouched weapon, distribute incarnum; Knowledge (the planes)), Planar Cleric (planar dismissal - turning level -3 applied;
-  planar domain and spontaneous banishment described), Purple Staff Cleric (Chauntea/Helm/Lathander/Nobanion/Selune/Sune,
-  Knowledge (religion); spontaneous faith healing, imbue with spell ability, turn invader), Raptoran Cleric (raptoran with the
+  planar domain and spontaneous banishment described), Raptoran Cleric (raptoran with the
   Air or Sky domain; air mastery - proficiencies without heavy armor -, Auran as a bonus language, air summoning talent, open
   the wind-gate). By hand: lost spell slots (azurin, purple staff - a permanent loss cannot sit on one level's CAST line), lost
   spontaneous casting of high levels, the planar domains (Planar Handbook), the raptoran's earth spell removal.
@@ -1534,6 +1533,28 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   courage/competence with Perform ranks; gnome bard 6 keeps bardic knowledge, fascinate, inspire courage and spells per day,
   countersong/competence/suggestion replaced, cantrips known +3; half-elf bard 8 spells known +1 at 1st and 2nd; planar bard 12
   competence, suggestion and song of freedom replaced; no load messages.
+- MONK (16/11/2026) - ACFs: Aquatic Monk (fast movement on swim speed; water step instead of slow fall), Bane of the Clockwork,
+  Decisive Strike (Player's Handbook II's repository entry is a stub), Eberron Monk (Whirling Steel Strike / Flensing Strike
+  offered in the monk's 2nd- and 6th-level bonus feat choices by alignment, with the Eberron Campaign Setting - dmc_acf_eberron.lst), Fighting Styles (the compendium's
+  15 styles - bonus feats at 1st/2nd/6th, +2 skill, 6th-level ability; Unearthed Arcana's 8 are in the repository), Golarion Monk
+  (three per-level bonus feat pairs, virtual; "Rapid Fire" read as Rapid Shot), Invisible Fist, Sacred Strike, Unwavering
+  Dedication, Weapon Proficiencies (three real-world styles - Ghurka, Arnis/Kali/Escrima, Krabi-Krabong - each dropping kama,
+  nunchaku, sai, shuriken and siangham and adding its weapons), Wholeness of Others, the six swaps (Holy - the paladin's aura,
+  smite and turning; Hunter - favored enemy and swift tracker; Martial - fighter bonus feats; Raging - barbarian rage; Steadfast -
+  barbarian DR, Wisdom AC kept; Vigilant - detect chaos and the barbarian's uncanny dodges), Feign Death (built with the ranger).
+  Seven substitution sets under CLASS:Monk.MOD (Dark Moon Disciple, Halfling, Hin Disciple, Illuminated, Kalashtar, Planar,
+  Skarn); a 1st-level substitution re-grants the Standard Monk set; single tiers of ki strike (Planar 16th, Skarn 10th) are
+  described. Some of these monk entries were drafts from an earlier part of the session: each was checked against the PDF -
+  duplicates removed, Weapon Proficiencies rebuilt (the draft had one fixed list), Unearthed Arcana's styles excluded.
+  In the repository: 7 ACFs, Champions of Valor's Broken One and Phoenix Disciple.
+  Verified in PCGen 6.08: replaced monk features gone, the rest of the Standard Monk set kept (also with 1st-level
+  substitutions); merfolk swim 70 at 6th; Golarion feats; Ghurka weapons; Holy smite 6 and turning 3; Martial 3 fighter feats;
+  Steadfast AC 11 (plain 13), speed 30, DR 2/-; Vigilant uncanny dodges; Raging rage/greater rage; Wushu style feats and Tumble
+  +2; seven substitution sets 32 feature checks, skarn AC keeps Wisdom; no load messages.
+- DUPLICATE REMOVED (16/11/2026): the Purple Staff Cleric substitution set exists in Champions of Valor as "Purple Staff"
+  (on Cleric.MOD) - our copy was removed; all our substitution sets were then checked against the repository's on the same base
+  class with class words stripped - no other duplicates. (Champions of Valor also has the fighter's Darksong Knight and the
+  wizard's Dukar.)
 - KEY FIX (16/11/2026): ACF features of the same name in several classes (Dead Levels - druid, cleric, ranger; Improved Domain
   Power (instead of turning) - cleric, paladin; Feign Death - ranger, monk, rogue) had shared one feature key, so PCGen kept only
   one definition (e.g. the cleric's Dead Levels showed the druid's text). Such features now have class-specific keys ("ACF ~ Cleric
@@ -1619,6 +1640,7 @@ whole file under one condition, so files with different conditions or object typ
 - dmc_acf.lst, dmc_acf_categories.lst <- alternative class features and their selection categories
 - dmc_classes_substitution.lst, dmc_substitution.lst <- substitution levels (CLASS:<base>.MOD) and their features
 - dmc_substitution_urbantracking.lst <- the half-elf ranger's Urban Tracking, with a book defining the feat
+- dmc_acf_eberron.lst <- the Eberron Monk's bonus feat options, with the Eberron Campaign Setting
 - dmc_classes_acf.lst, dmc_races_acf.lst, dmc_equip_acf.lst <- base class changes for ACFs (druid domains), ACF companion creatures (plant companion) and ACF items (devoted symbol)
 - one file per optional book where content depends on it: _xph (Expanded Psionics: racial, domain, feat additions), _sc,
   _bovd, _cadv, _ca, _rs, _rw, vestiges (Tome of Magic), flaws (Unearthed Arcana), feats_nocw (only without Complete Warrior)
