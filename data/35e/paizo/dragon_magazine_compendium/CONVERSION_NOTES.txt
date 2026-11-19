@@ -1551,6 +1551,52 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   substitutions); merfolk swim 70 at 6th; Golarion feats; Ghurka weapons; Holy smite 6 and turning 3; Martial 3 fighter feats;
   Steadfast AC 11 (plain 13), speed 30, DR 2/-; Vigilant uncanny dodges; Raging rage/greater rage; Wushu style feats and Tumble
   +2; seven substitution sets 32 feature checks, skarn AC keeps Wisdom; no load messages.
+- FIGHTER VARIANT CLASSES (16/11/2026; missed in the variant class phase - the fighter's index continues on p.275) - fv_build.py,
+  dmc_classes_fighter_variants.lst, dmc_abilities_fighter_variants.lst, dmc_abilitycategories_fighter_variants.lst. Pattern of
+  Unearthed Arcana's Fighter (Thug): full classes "Fighter (<Name>)" - d10, full BAB, the fighter's saves, SERVESAS Fighter,
+  FighterLVL, the fighter's weapon feat trackers; their own class skills and proficiencies; bonus feats at 1st, 2nd and every even
+  level from their own list (category "<Name> Fighter Feat"), where their special abilities - "in place of a bonus feat" - are
+  offered as feats (keys "<Name> Fighter ~ <ability>", no parentheses because some are repeatable).
+  Bodyguard, Commander, Corsair (two free special abilities at 1st/2nd; repeatable slow fall), Exoticist (four exotic weapon
+  proficiencies), Fencer (abilities from 4th), Horseman, Janissary (the compendium prints only its class skill changes: normal
+  fighter feats; two chosen Knowledge class skills), Kensai (no 1st-level feat: chosen weapon - martial or exotic weapon
+  proficiency - and +1 per five levels; not Complete Warrior's prestige class), Knight (staggered gait requires Trample; not PHB
+  II's knight), Pugilist (Improved Unarmed Strike and Endurance, unarmed 1d4/1d3 via UDAM; repeatable combo, heavy hitting,
+  shake it off), Shield Bearer (Improved Shield Bash as the first bonus feat; four repeatable armor abilities; shield strike
+  serves as Improved Unarmed Strike), Survivalist (no special abilities in the text), Targetteer (ranged martial weapons only -
+  TYPE=Martial.Ranged; two exotic ranged proficiencies; arrow swarm requires Rapid Shot), Thane (normal fighter feats; Aura of
+  Bravery, Improved Aid Another and Stalwart are not in the repository - by hand; thane's vow). Thug: Unearthed Arcana (repo).
+  Verified in PCGen 6.08: BAB +6 and saves +5/+2/+2 at 6th, FighterLVL 6; bonus feat selections 4 at 6th (kensai 2 at 5th,
+  shield bearer 3 plus Improved Shield Bash); special abilities offered in each category and outside feats not; prerequisites
+  (fencer 4th, storm of blows, staggered gait); class skills (bodyguard, janissary); proficiencies of every variant (e.g.
+  targetteer longbow yes/longsword no, kensai only simple weapons and the chosen weapon, pugilist no shields); pugilist unarmed 1d4;
+  all 120+ listed feat keys exist; no load messages.
+- FIGHTER SUBSTITUTION LEVELS (16/11/2026) - six sets under CLASS:Fighter.MOD: Dwarf (axe focus, racial foes, heavy armor
+  expertise), Half-Elf (blade focus, main-gauche, confusing banter), Planar (planar study, align puissance, aura of stability),
+  Raptoran (encumbered flight instead of heavy armor proficiency; airborne strike; fast flight), Warforged (battle hardened +3
+  initiative; a warforged feat as the 2nd-level bonus feat; body as weapon), Zhentarim Soldier (Skill Focus (Intimidate),
+  extended intimidation, swift demoralization - on the fighter's featureless odd levels). Replaced bonus feats: Pool_FighterFeat
+  -1 each. The substitution builder now re-grants every ability token of the PHB level line (class or subclass) except the
+  replaced features - the fighter's 1st-level trackers, the monk's class set; regression on monk, ranger, druid and bard sets
+  unchanged. Verified: fighter feat selections dwarf 8 = 2 (plain 5), half-elf 6 = 1 (4), planar 12 = 4 (7), raptoran 8 = 3 (5),
+  warforged 4 = 1 (3) with initiative +3, zhentarim 9 = 5 (5) with Skill Focus (Intimidate); raptoran no full plate; no load
+  messages. Remaining for the fighter: its 14 variant classes.
+- FIGHTER ACFs (16/11/2026): Armored Savant, Bonded Armor, Eldritch Grace, Eldritch Juggernaut, Fortification and Golarion Fighter
+  (six class skills) remove bonus feats through Pool_FighterFeat -1 per replaced feat, as Player's Handbook II's fighter ACFs do;
+  Dead Levels (physical prowess, repeatable from 3rd); Dirty Fighter (swap: sneak attack as the rogue instead of all bonus feats);
+  Warriors of Air, Earth, Fire and Water (energy resistance 5/10/20, spell-like abilities at 6th/12th/20th, bonus feats at 2nd,
+  6th, 12th and 20th removed). Verified: fighter feat selections 7 for a warrior of water 20 and a fortification fighter 18
+  (plain 11 and 10), 0 for a dirty fighter 6 with sneak attack 3d6; cold resistance 20; water breathing at 20th; Golarion class
+  skills; no load messages. The fighter's substitution sets and its 14 variant classes are next.
+- INDEX RE-SCAN (16/11/2026): every class variants index was re-read, following indexes that continue onto the next page (the
+  fighter's, hexblade's and shugenja's do). Findings: the fighter's variant classes (14 specialist fighter classes) had been
+  missed in the variant class phase - now in the inventory, to build; two swaps from variant columns had fallen between the
+  phases and are now built: Huntsman (druid: the monk's AC bonus and fast movement, the ranger's favored enemy, swift tracker
+  and Track, instead of armor/shield proficiency and wild shape) and Predator (ranger: wild shape from 5th as a druid, the
+  barbarian's fast movement, instead of the combat style tree). 30 non-core classes (Archivist ... Wu Jen) have their own
+  alternative feature sections - future work.
+  Verified: huntsman 8 AC 13 (Wis 2 + 1), walk 50, favored enemy level 8, Track, no wild shape, druid weapons kept but no hide,
+  leather or shield; predator 5 walk 40, wild shape 1/day; no load messages.
 - DUPLICATE REMOVED (16/11/2026): the Purple Staff Cleric substitution set exists in Champions of Valor as "Purple Staff"
   (on Cleric.MOD) - our copy was removed; all our substitution sets were then checked against the repository's on the same base
   class with class words stripped - no other duplicates. (Champions of Valor also has the fighter's Darksong Knight and the

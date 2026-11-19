@@ -108,6 +108,7 @@ DruidSpontaneousCasting, DruidTimelessBody, DruidTracklessStep, DruidVenomImmuni
 | Voice of the City | 243 | repo (Cityscape) |
 | Wasteland Druid | 244 | done |
 | Weapon Proficiencies | 244 | done |
+| Huntsman (swap from the variant classes column - missed earlier, added 16/11/2026) | 228 | done |
 
 ### Substitution levels (6)
 | Entry | Page | Status |
@@ -157,10 +158,10 @@ PHB cleric guards: ClericAura, ClericProficiences (sic), ClericSpontaneousCastin
 | Dragonblood Cleric | 159 | repo (Races of the Dragon, on Cleric.MOD) |
 | Dwarf Cleric | 161 | repo (Races of Stone, on Cleric.MOD) |
 | Planar Cleric | 170 | done |
-| Purple Staff Cleric | 172 | done |
+| Purple Staff Cleric | 172 | repo (Champions of Valor, as "Purple Staff" on Cleric.MOD - found 16/11/2026; our duplicate removed) |
 | Raptoran Cleric | 173 | done |
 
-Cleric totals: 13 ACFs + 4 substitution sets built - CLERIC COMPLETE (16/11/2026); 8 ACFs (incl. Drow of the Underdark's Drow Cleric) and 2 sets in the repository.
+Cleric totals: 13 ACFs + 3 substitution sets built - CLERIC COMPLETE (16/11/2026; Purple Staff found in Champions of Valor); 8 ACFs (incl. Drow of the Underdark's Drow Cleric) and 2 sets in the repository.
 
 ## Ranger (index p.476; sections pp. 476-502) - verified 16/11/2026
 PHB ranger guards: RangerAnimalCompanion, RangerCamouflage, RangerCombatStyleMastery, RangerCombatTree, RangerEndurance, RangerEvasion,
@@ -195,6 +196,7 @@ RangerTrack, RangerWildEmpathy, RangerWoodlandStride.
 | Urban Tracker | 497 | repo (Cityscape) |
 | Voice of the City | 497 | repo (Cityscape) |
 | Wasteland Ranger | 498 | done |
+| Predator (swap from the variant classes column - missed earlier, added 16/11/2026) | 488 | done |
 
 ### Substitution levels (10)
 | Entry | Page | Status |
@@ -334,3 +336,122 @@ BardInspireGreatness, BardInspireHeroics, BardMassSuggestion, BardProficiencies,
 | Spellscale Bard | 127 | repo (Races of the Dragon, on Bard.MOD) |
 
 Bard totals: 8 ACFs + 3 substitution sets built - BARD COMPLETE (16/11/2026); 8 ACFs and 1 set in the repository.
+
+## Monk (index p.355; sections pp. 355-395) - verified 16/11/2026
+PHB monk guards: MonkACBonus, MonkAbundantStep, MonkBonusFeat, MonkBonusFeats, MonkDiamondBody, MonkDiamondSoul, MonkEmptyBody, MonkEvasion,
+MonkFastMovement, MonkFlurryOfBlows, MonkGreaterFlurry, MonkImprovedEvasion, MonkImprovedUnarmedStrike, MonkKiStrike, MonkPerfectSelf,
+MonkProficiencies, MonkPurityOfBody, MonkQuiveringPalm, MonkSlowFall, MonkStillMind, MonkTimelessBody, MonkTongueOfTheSunAndMoon,
+MonkUnarmedStrike, MonkWholenessOfBody.
+
+### Alternative class features (19) + six swaps from the variant classes column
+| Entry | Page | Status |
+|---|---|---|
+| Aquatic Monk | 355 | done |
+| Bane of the Clockwork | 355 | done |
+| Decisive Strike | 358 | done (Player's Handbook II has only a stub) |
+| Draconic Fist | 359 | repo (Dragon Magic) |
+| Eberron Monk | 359 | done |
+| Feign Death | 359 | done (built with the ranger, 16/11/2026) |
+| Fighting Styles | 360 | done (23 styles) |
+| Golarion Monk (bonus feat choices) | 366 | done |
+| Holy Strike | 369 | repo (Complete Champion) |
+| Invisible Fist | 370 | done |
+| Prayerful Meditation | 372 | repo (Complete Champion) |
+| Sacred Strike | 374 | done |
+| Soulwarp Strike | 375 | repo (Complete Mage) |
+| Spell Reflection | 377 | repo (Complete Mage) |
+| Standing Jump | 377 | repo (Dungeonscape) |
+| Unwavering Dedication | 378 | done |
+| Wall Walker | 378 | repo (Dungeonscape) |
+| Weapon Proficiencies | 378 | done |
+| Wholeness of Others | 379 | done |
+| Holy Monk (swap) | 368 | done |
+| Hunter Monk (swap) | 369 | done |
+| Martial Monk (swap) | 371 | done |
+| Raging Monk (swap) | 374 | done |
+| Steadfast Monk (swap) | 378 | done |
+| Vigilant Monk (swap) | 378 | done |
+
+### Substitution levels (9)
+| Entry | Page | Status |
+|---|---|---|
+| Broken One | 355 | repo (Champions of Valor, on Monk.MOD) |
+| Dark Moon Disciple | 358 | done |
+| Halfling Monk | 367 | done |
+| Hin Disciple | 368 | done |
+| Illuminated Monk | 369 | done |
+| Kalashtar Monk | 370 | done |
+| Phoenix Disciple | 372 | repo (Champions of Valor, on Monk.MOD) |
+| Planar Monk | 373 | done |
+| Skarn Monk | 376 | done |
+
+Monk totals: 17 ACFs + 7 substitution sets = 24 to build (7 ACFs and 2 sets in the repository; Feign Death already built).
+
+## Fighter (index p.274, continued on p.275; sections pp. 274-303) - verified 16/11/2026
+PHB fighter guards: FighterBonusFeat, FighterBonusFeats, FighterGreaterWeaponFocus, FighterGreaterWeaponSpecialization,
+FighterProficiencies, FighterWeaponSpecialization.
+NOTE: the fighter's index continues onto p.275, so its whole variant classes column was missed in the variant class phase. Those
+are specialist fighter classes ("a thane is a specialist fighter, much like an evoker is a specialist wizard"): to build as
+variant classes - Bodyguard, Commander, Corsair, Exoticist, Fencer, Horseman, Janissary, Kensai (key "Kensai (Fighter)" - Complete
+Warrior has a Kensai prestige class), Knight, Pugilist, Shield Bearer, Survivalist, Targetteer, Thane; Thug is Unearthed Arcana's
+"Fighter (Thug)" (repo); Dirty Fighter is a swap (ACF, below).
+
+### Alternative class features (21)
+| Entry | Page | Status |
+|---|---|---|
+| Aligned Strike | 275 | repo (complete_champion) |
+| Armor of God | 275 | repo (complete_champion) |
+| Armored Mage | 275 | repo (complete_mage) |
+| Armored Savant | 276 | done |
+| Bonded Armor | 276 | done |
+| Counterattack | 278 | repo (players_handbook_2) |
+| Dead Levels | 279 | done |
+| Dragonscale Husk | 279 | repo (dragon_magic) |
+| Drow Fighter | 280 | repo (drow_of_the_underdark) |
+| Dungeon Crasher | 280 | repo (dungeonscape) |
+| Eldritch Grace | 281 | done |
+| Eldritch Juggernaut | 281 | done |
+| Elusive Attack | 282 | repo (players_handbook_2) |
+| Fortification | 283 | done |
+| Golarion Fighter | 283 | done |
+| Overpowering Attack | 287 | repo (players_handbook_2) |
+| Resolute | 290 | repo (complete_champion) |
+| Warrior of Air | 293 | done |
+| Warrior of Earth | 293 | done |
+| Warrior of Fire | 294 | done |
+| Warrior of Water | 294 | done |
+
+### Substitution levels (8)
+| Entry | Page | Status |
+|---|---|---|
+| Darksong Knight | 278 | repo (champions_of_valor (on Fighter.MOD)) |
+| Dwarf Fighter | 280 | done |
+| Half-Elf Fighter | 283 | done |
+| Kobold Fighter | 286 | repo (races_of_the_dragon (on Fighter.MOD)) |
+| Planar Fighter | 287 | done |
+| Raptoran Fighter | 289 | done |
+| Warforged Fighter | 292 | done |
+| Zhentarim Soldier | 294 | done |
+
+| Dirty Fighter (swap) | 279 | done |
+
+### Fighter variant classes (missed in the variant class phase)
+| Entry | Page | Status |
+|---|---|---|
+| Bodyguard | 276 | done |
+| Commander | 276 | done |
+| Corsair | 277 | done |
+| Exoticist | 282 | done |
+| Fencer | 282 | done |
+| Horseman | 284 | done |
+| Janissary | 285 | done |
+| Kensai | 285 | done |
+| Knight | 286 | done |
+| Pugilist | 288 | done |
+| Shield Bearer | 290 | done |
+| Survivalist | 290 | done |
+| Targetteer | 291 | done |
+| Thane | 291 | done |
+| Thug | 292 | repo (Unearthed Arcana, as Fighter (Thug)) |
+
+Fighter totals: 12 ACFs + 6 substitution sets + 14 variant classes built - FIGHTER COMPLETE (16/11/2026); 10 ACFs, 2 sets and the Thug in the repository.

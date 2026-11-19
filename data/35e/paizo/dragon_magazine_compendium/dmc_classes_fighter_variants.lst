@@ -1,0 +1,166 @@
+# Dragon Magazine Compendium - fighter variant classes (fv_build.py; the pattern of Unearthed Arcana's Fighter (Thug)).
+
+###Block: Fighter (Bodyguard) (p.276)
+CLASS:Fighter (Bodyguard)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.276	DEFINE:FighterLVL|0	DEFINE:Bodyguard_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Bodyguard_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Bodyguard)	STARTSKILLPTS:2	CSKILL:Diplomacy|Gather Information|Handle Animal|Intimidate|Listen|Ride|Search|Sense Motive|Spot
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Bodyguard) ~ Class Description
+1	ABILITY:Fighter Class Feature|AUTOMATIC|Fighter ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Bodyguard) ~ Bonus Feats
+
+###Block: Fighter (Commander) (p.276)
+CLASS:Fighter (Commander)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.276	DEFINE:FighterLVL|0	DEFINE:Commander_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Commander_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Commander)	STARTSKILLPTS:2	CSKILL:TYPE=Craft|Diplomacy|Handle Animal|Intimidate|Knowledge (Architecture and Engineering)|TYPE=Profession|Ride|Sense Motive|Spot
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Commander) ~ Class Description
+1	ABILITY:Fighter Class Feature|AUTOMATIC|Fighter ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Commander) ~ Bonus Feats
+
+###Block: Fighter (Corsair) (p.277)
+CLASS:Fighter (Corsair)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.277	DEFINE:FighterLVL|0	DEFINE:Corsair_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Corsair_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Corsair)	STARTSKILLPTS:2	CSKILL:Appraise|Balance|Climb|TYPE=Craft|TYPE=Profession|Use Rope|Spot|Swim|Jump
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Corsair) ~ Class Description
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Corsair) ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Corsair) ~ Bonus Feats
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Corsair) ~ Corsair Free Special Ability
+
+###Block: Fighter (Exoticist) (p.282)
+CLASS:Fighter (Exoticist)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.282	DEFINE:FighterLVL|0	DEFINE:Exoticist_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Exoticist_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Exoticist)	STARTSKILLPTS:2	CSKILL:Climb|TYPE=Craft|Intimidate|Jump|Swim|Tumble
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Exoticist) ~ Class Description
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Exoticist) ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Exoticist) ~ Bonus Feats
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Exoticist) ~ Exoticist Exotic Weapons
+
+###Block: Fighter (Fencer) (p.282)
+CLASS:Fighter (Fencer)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.282	DEFINE:FighterLVL|0	DEFINE:Fencer_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Fencer_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Fencer)	STARTSKILLPTS:2	CSKILL:Bluff|Diplomacy|Gather Information|Handle Animal|Intimidate|Ride|Tumble
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Fencer) ~ Class Description
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Fencer) ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Fencer) ~ Bonus Feats
+
+###Block: Fighter (Horseman) (p.284)
+CLASS:Fighter (Horseman)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.284	DEFINE:FighterLVL|0	DEFINE:Horseman_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Horseman_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Horseman)	STARTSKILLPTS:2	CSKILL:Balance|TYPE=Craft|Handle Animal|Jump|Ride|Tumble
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Horseman) ~ Class Description
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Horseman) ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Horseman) ~ Bonus Feats
+
+###Block: Fighter (Janissary) (p.285)
+CLASS:Fighter (Janissary)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.285	DEFINE:FighterLVL|0	DEFINE:Janissary_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Janissary_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Janissary)	STARTSKILLPTS:2	CSKILL:Climb|TYPE=Craft|Jump|Ride|Speak Language
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Janissary) ~ Class Description
+1	ABILITY:Fighter Class Feature|AUTOMATIC|Fighter ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Fighter Class Feature|AUTOMATIC|Fighter ~ Bonus Feats|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterBonusFeat,TYPE.FighterBonusFeats
+1	ABILITY:Special Ability|AUTOMATIC|Janissary Fighter ~ Janissary Knowledge Skills
+
+###Block: Fighter (Kensai) (p.285)
+CLASS:Fighter (Kensai)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.285	DEFINE:FighterLVL|0	DEFINE:Kensai_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Kensai_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Kensai)	STARTSKILLPTS:2	CSKILL:Balance|Concentration|TYPE=Craft|Jump|Tumble|Swim
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Kensai) ~ Class Description
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Kensai) ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Kensai) ~ Bonus Feats
+1	ABILITY:Special Ability|AUTOMATIC|Kensai Fighter ~ Chosen Weapon Bonus
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Kensai) ~ Kensai Chosen Weapon
+
+###Block: Fighter (Knight) (p.286)
+CLASS:Fighter (Knight)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.286	DEFINE:FighterLVL|0	DEFINE:Knight_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Knight_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Knight)	STARTSKILLPTS:2	CSKILL:TYPE=Craft|Diplomacy|Handle Animal|Heal|Jump|Ride
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Knight) ~ Class Description
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Knight) ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Knight) ~ Bonus Feats
+
+###Block: Fighter (Pugilist) (p.288)
+CLASS:Fighter (Pugilist)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.288	DEFINE:FighterLVL|0	DEFINE:Pugilist_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Pugilist_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Pugilist)	STARTSKILLPTS:2	CSKILL:Bluff|Climb|Intimidate|Sense Motive|Spot|Swim
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Pugilist) ~ Class Description
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Pugilist) ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Pugilist) ~ Bonus Feats
+1	UDAM:1d1,1d1,1d2,1d3,1d4,1d6,1d8,2d6,3d6
+1	ABILITY:Special Ability|AUTOMATIC|Pugilist Fighter ~ Pugilist Training
+
+###Block: Fighter (Shield Bearer) (p.290)
+CLASS:Fighter (Shield Bearer)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.290	DEFINE:FighterLVL|0	DEFINE:ShieldBearer_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|ShieldBearer_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Shield Bearer)	STARTSKILLPTS:2	CSKILL:Climb|TYPE=Craft|Diplomacy|Handle Animal|Intimidate|Jump|Ride
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Shield Bearer) ~ Class Description
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Shield Bearer) ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Shield Bearer) ~ Bonus Feats
+1	ABILITY:Special Ability|AUTOMATIC|Shield Bearer Fighter ~ Shield Bash Training
+
+###Block: Fighter (Survivalist) (p.290)
+CLASS:Fighter (Survivalist)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.290	DEFINE:FighterLVL|0	DEFINE:Survivalist_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Survivalist_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Survivalist)	STARTSKILLPTS:2	CSKILL:Balance|Climb|TYPE=Craft|Hide|Jump|Move Silently|Survival|Swim|Use Rope
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Survivalist) ~ Class Description
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Survivalist) ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Survivalist) ~ Bonus Feats
+
+###Block: Fighter (Targetteer) (p.291)
+CLASS:Fighter (Targetteer)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.291	DEFINE:FighterLVL|0	DEFINE:Targetteer_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Targetteer_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Targetteer)	STARTSKILLPTS:2	CSKILL:Climb|TYPE=Craft|Hide|Move Silently|TYPE=Profession|Ride
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Targetteer) ~ Class Description
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Targetteer) ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Targetteer) ~ Bonus Feats
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Targetteer) ~ Targetteer Exotic Weapons
+
+###Block: Fighter (Thane) (p.291)
+CLASS:Fighter (Thane)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.291	DEFINE:FighterLVL|0	DEFINE:Thane_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Thane_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Fighter (Thane)	STARTSKILLPTS:2	CSKILL:Climb|TYPE=Craft|Diplomacy|Handle Animal|Jump|Ride|Swim
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Thane) ~ Class Description
+1	ABILITY:Fighter Class Feature|AUTOMATIC|Fighter ~ Weapon and Armor Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1	ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterWeaponSpecialization
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
+1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
+1	ABILITY:Fighter Class Feature|AUTOMATIC|Fighter ~ Bonus Feats|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterBonusFeat,TYPE.FighterBonusFeats
+1	ABILITY:Special Ability|AUTOMATIC|Thane Fighter ~ Thane's Vow
+

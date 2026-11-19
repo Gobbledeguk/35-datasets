@@ -24,6 +24,7 @@ ABILITYCATEGORY:dmc_abilitycategories_shamanfeat_core.lst|!PRECAMPAIGN:1,INCLUDE
 ABILITYCATEGORY:dmc_abilitycategories_shamanfeat_oa.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
 ABILITYCATEGORY:dmc_abilitycategories_shamanfeat_cw.lst|PRECAMPAIGN:1,INCLUDES=Complete Warrior|!PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.3.5
 ABILITYCATEGORY:dmc_acf_categories.lst
+ABILITYCATEGORY:dmc_abilitycategories_fighter_variants.lst
 ABILITY:dmc_abilities.lst
 ABILITY:dmc_abilities_xph.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
 ABILITY:dmc_feats.lst
@@ -46,6 +47,7 @@ ABILITY:dmc_acf.lst
 ABILITY:dmc_substitution.lst
 ABILITY:dmc_substitution_urbantracking.lst|PRECAMPAIGN:1,INCLUDES=Unearthed Arcana (Complete),INCLUDES=Cityscape (WotC),INCLUDES=Races of Destiny,INCLUDES=Dungeonscape,INCLUDES=Eberron Campaign Setting
 ABILITY:dmc_acf_eberron.lst|PRECAMPAIGN:1,INCLUDES=Eberron Campaign Setting
+ABILITY:dmc_abilities_fighter_variants.lst
 DOMAIN:dmc_domains.lst
 DOMAIN:dmc_domains_shaman.lst
 DOMAIN:dmc_shaman_domains_opt2.lst|PRECAMPAIGN:1,INCLUDES=35e ~ Ghostwalk,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Sandstorm
@@ -81,6 +83,7 @@ CLASS:dmc_shaman_classes_opt13.lst|PRECAMPAIGN:1,INCLUDES=Oriental Adventures v.
 CLASS:dmc_classes_variants_unearthed_arcana_complete.lst|PRECAMPAIGN:1,INCLUDES=Unearthed Arcana (Complete)
 CLASS:dmc_classes_substitution.lst
 CLASS:dmc_classes_acf.lst
+CLASS:dmc_classes_fighter_variants.lst
 LANGUAGE:dmc_languages.lst
 WEAPONPROF:dmc_profs_weapon.lst
 ARMORPROF:dmc_profs_armor.lst
