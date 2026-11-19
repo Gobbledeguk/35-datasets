@@ -500,3 +500,46 @@ Variant classes: Battle Sorcerer (Unearthed Arcana - repo), Witch (built in the 
 | Raptoran Sorcerer | 575 | done |
 
 Sorcerer totals: 19 ACFs + 3 substitution sets built - SORCERER COMPLETE (16/11/2026); 6 ACFs and 1 set in the repository.
+
+## Wizard (index p.657, continued on p.658; sections pp. 657-702) - verified 16/11/2026
+PHB wizard guards: WizardBonusFeats, WizardFamiliar, WizardProficiencies, WizardScribeScroll, WizardSummonFamiliar.
+Variant classes: Anagakok, Deathwalker, Filidh, Fleshcrafter, Soul Reaper (built), Domain Wizard (Unearthed Arcana - repo);
+Combat Wizard is a swap (below).
+
+### Alternative class features (20) + the Combat Wizard swap
+| Entry | Page | Status |
+|---|---|---|
+| Aligned Spellcaster | 658 | done |
+| Arcane Reabsorption | 660 | done |
+| Beleaguered Spellcaster | 660 | done |
+| Combat Wizard (swap from the variant classes column) | 662 | done |
+| Dead Levels | 662 | done |
+| Disciple of Boccob | 664 | done |
+| Domain Granted Power | 664 | repo (Complete Champion) |
+| Drakken Familiar | 668 | repo (Dragon Magic - hexblade, sorcerer, wizard) |
+| Drow Wizard | 669 | repo (Drow of the Underdark, as "Drow Wizard (Abyssal Specialist)") |
+| Eidetic Spellcaster | 670 | done |
+| Familiars | 671 | done |
+| Focus Caster | 682 | done |
+| Focused Specialist | 683 | repo (Complete Mage) |
+| Golarion Wizard (arcane duelist) | 684 | done |
+| Imbued Staff | 692 | done |
+| Immediate Magic | 693 | repo (Player's Handbook II - complete) |
+| Impromptu Metamagic | 694 | done |
+| School Mastery | 695 | done |
+| Spontaneous Divination | 699 | repo (Complete Champion) |
+| Wilderness Companion | 699 | done |
+| Wizard of Sun and Moon | 699 | done |
+
+### Substitution levels (7)
+| Entry | Page | Status |
+|---|---|---|
+| Changeling Wizard | 661 | done |
+| Dukar | 669 | repo (Champions of Valor, on Wizard.MOD) |
+| Elf Wizard | 671 | repo (Races of the Wild, as "Elven Wizard" - same levels 1st/3rd/5th and Search; the repository's version does not describe natural link) |
+| Gnome Illusionist | 683 | done |
+| Halfling Wizard | 685 | done |
+| High One Warrior-Wizard | 685 | done |
+| Planar Wizard | 694 | done |
+
+Wizard totals: 15 ACFs (10 shared with the sorcerer) + 5 substitution sets built - WIZARD COMPLETE (16/11/2026); 6 ACFs and 2 sets in the repository.

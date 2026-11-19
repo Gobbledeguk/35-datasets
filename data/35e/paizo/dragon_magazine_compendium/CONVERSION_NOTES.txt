@@ -1551,6 +1551,22 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   substitutions); merfolk swim 70 at 6th; Golarion feats; Ghurka weapons; Holy smite 6 and turning 3; Martial 3 fighter feats;
   Steadfast AC 11 (plain 13), speed 30, DR 2/-; Vigilant uncanny dodges; Raging rage/greater rage; Wushu style feats and Tumble
   +2; seven substitution sets 32 feature checks, skarn AC keeps Wisdom; no load messages.
+- WIZARD COMPLETE (16/11/2026) - ACFs: the ten shared arcane ACFs as wizard versions, derived from the sorcerer entries by the
+  builder (Aligned Spellcaster, Arcane Reabsorption, Beleaguered Spellcaster, Disciple of Boccob, Familiars - with the Complete Mage
+  line -, Focus Caster, Imbued Staff, Impromptu Metamagic, School Mastery, Wilderness Companion); Combat Wizard (swap: fighter bonus
+  feats at 1st and every five levels instead of Scribe Scroll and the wizard bonus feats), Dead Levels (animated script), Eidetic
+  Spellcaster, Golarion Wizard (arcane duelist), Wizard of Sun and Moon. As shared names now exist for two classes, their feature
+  keys are class-specific ("ACF ~ Sorcerer School Mastery (DMC)"): sorcerer characters saved with the earlier upload must re-pick
+  those choices. Substitution sets under CLASS:Wizard.MOD: Changeling Wizard, Gnome Illusionist (nine illusions at lower levels -
+  Leomund's trap is the repository's "Trap"), Halfling Wizard (bardic-knowledge lore), High One Warrior-Wizard (smite evil with
+  wizard levels stacking, -20% arcane spell failure), Planar Wizard. Lost spell slots: BONUS:SPELLCAST|CLASS=Wizard;LEVEL=n|-1;
+  replaced bonus feats: BONUS:ABILITYPOOL|Wizard Feat|-1. In the repository: 6 ACFs, Champions of Valor's Dukar and Races of the
+  Wild's "Elven Wizard" (= the compendium's Elf Wizard; it does not describe natural link).
+  Verified: wizard familiars 11 with Familiars, companion with Wilderness Companion, familiar gone with School Mastery; combat
+  wizard 10 no Scribe Scroll, wizard feats 0, fighter feats 3; eidetic no familiar or Scribe Scroll; spells per day high one 5
+  1st 3/2nd 2 (plain 4/3), planar 14 3rd 4/7th 1 (5/2), others identical; wizard feats changeling 10 and gnome 10 = 0, halfling
+  12 and planar 14 = 1 (plain 2), high one 5 = 0 (1); halfling bardic knowledge 12; high one smite level 5; gnome illusion spells
+  at their lowered levels; no load messages.
 - SORCERER COMPLETE (16/11/2026) - ACFs part 2: Githyanki Sorcerer (githyanki only; the duthka'ariy table read from the page images
   - Improved Unarmed Strike and Alertness at 1st, natural armor +1 at 5th, darkvision 120 ft at 9th, fire spells +1 caster level
   at 13th, fire resistance 10 at 17th; the table prints no level for natural weapons, read as 1st), Golarion Sorcerer (hidden

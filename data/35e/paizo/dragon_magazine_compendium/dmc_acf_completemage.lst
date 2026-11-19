@@ -2,3 +2,4 @@
 
 CATEGORY=Special Ability|Raptoran Sorcerer ~ Elemental Familiar.MOD	COMPANIONLIST:Familiar|Companion ~ Elemental (Air/Small)
 CATEGORY=ACF|Sorcerer ACF ~ Familiars (DMC).MOD	COMPANIONLIST:Familiar|Companion ~ Elemental (Air/Small),Companion ~ Elemental (Earth/Small),Companion ~ Elemental (Fire/Small),Companion ~ Elemental (Water/Small)|PREABILITY:1,CATEGORY=FEAT,Improved Familiar|PRECLASS:1,SPELLCASTER.Arcane=5
+CATEGORY=ACF|Wizard ACF ~ Familiars (DMC).MOD	COMPANIONLIST:Familiar|Companion ~ Elemental (Air/Small),Companion ~ Elemental (Earth/Small),Companion ~ Elemental (Fire/Small),Companion ~ Elemental (Water/Small)|PREABILITY:1,CATEGORY=FEAT,Improved Familiar|PRECLASS:1,SPELLCASTER.Arcane=5
