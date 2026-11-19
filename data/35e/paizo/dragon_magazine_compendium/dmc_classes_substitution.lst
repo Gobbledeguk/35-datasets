@@ -212,6 +212,20 @@ SUBSTITUTIONLEVEL:3	ABILITY:Special Ability|AUTOMATIC|Zhentarim Soldier ~ Skill 
 SUBSTITUTIONLEVEL:5	ABILITY:Special Ability|AUTOMATIC|Zhentarim Soldier ~ Extended Intimidation	CSKILL:Bluff|Diplomacy
 SUBSTITUTIONLEVEL:9	ABILITY:Special Ability|AUTOMATIC|Zhentarim Soldier ~ Swift Demoralization	CSKILL:Bluff|Diplomacy
 
+CLASS:Sorcerer.MOD
+SUBSTITUTIONCLASS:Dwarf Sorcerer	PRERACE:1,Dwarf%	SOURCEPAGE:p.568
+SUBSTITUTIONLEVEL:1	ABILITY:Sorcerer Class Feature|AUTOMATIC|Sorcerer ~ Weapon and Armor Proficiency|!PREABILITY:1,CATEGORY=ACF,TYPE.SorcererProficiencies	ABILITY:Sorcerer Class Feature|AUTOMATIC|Sorcerer ~ Familiar|!PREABILITY:1,CATEGORY=ACF,TYPE.SorcererFamiliar	ABILITY:Sorcerer Class Feature|AUTOMATIC|Sorcerer ~ Spells	ABILITY:Special Ability|AUTOMATIC|Dwarf Sorcerer ~ Arcane Earthbond	ABILITY:Special Ability|AUTOMATIC|Dwarf Sorcerer ~ Substitution Levels	CSKILL:Knowledge (Dungeoneering)	CAST:5,3	KNOWN:4,2
+SUBSTITUTIONLEVEL:5	ABILITY:Special Ability|AUTOMATIC|Dwarf Sorcerer ~ Power of Stone	CSKILL:Knowledge (Dungeoneering)	CAST:6,6,4	KNOWN:6,4,2
+SUBSTITUTIONLEVEL:9	ABILITY:Special Ability|AUTOMATIC|Dwarf Sorcerer ~ Earth Meditation	CSKILL:Knowledge (Dungeoneering)	CAST:6,6,6,6,4	KNOWN:8,5,4,3,2
+SUBSTITUTIONCLASS:Planar Sorcerer	PREMULT:1,[PRESKILL:1,Knowledge (The Planes)=1],[PRERACE:1,RACESUBTYPE=Extraplanar],[PRETEXT:Has a heritage feat or has visited another plane]	SOURCEPAGE:p.573
+SUBSTITUTIONLEVEL:5	ABILITY:Special Ability|AUTOMATIC|Planar Sorcerer ~ Force-Charged Energy	ABILITY:Special Ability|AUTOMATIC|Planar Sorcerer ~ Substitution Levels	CAST:6,6,4	KNOWN:6,4,2
+SUBSTITUTIONLEVEL:9	ABILITY:Special Ability|AUTOMATIC|Planar Sorcerer ~ Extraplanar Spell Penetration	CAST:6,6,6,6,4	KNOWN:8,5,4,3,2
+SUBSTITUTIONLEVEL:13	ABILITY:Special Ability|AUTOMATIC|Planar Sorcerer ~ Spontaneous Planar Summoning	CAST:6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,3,2
+SUBSTITUTIONCLASS:Raptoran Sorcerer	PRERACE:1,Raptoran	SOURCEPAGE:p.575
+SUBSTITUTIONLEVEL:1	ABILITY:Sorcerer Class Feature|AUTOMATIC|Sorcerer ~ Weapon and Armor Proficiency|!PREABILITY:1,CATEGORY=ACF,TYPE.SorcererProficiencies	ABILITY:Sorcerer Class Feature|AUTOMATIC|Sorcerer ~ Familiar|!PREABILITY:1,CATEGORY=ACF,TYPE.SorcererFamiliar	ABILITY:Sorcerer Class Feature|AUTOMATIC|Sorcerer ~ Spells	ABILITY:Special Ability|AUTOMATIC|Raptoran Sorcerer ~ Elemental Familiar	ABILITY:Special Ability|AUTOMATIC|Raptoran Sorcerer ~ Substitution Levels	CAST:5,3	KNOWN:4,2
+SUBSTITUTIONLEVEL:5	ABILITY:Special Ability|AUTOMATIC|Raptoran Sorcerer ~ Command the Winds	CAST:6,6,4	KNOWN:6,4,2
+SUBSTITUTIONLEVEL:11	ABILITY:Special Ability|AUTOMATIC|Raptoran Sorcerer ~ Spell on the Wing	CAST:6,6,6,6,6,4	KNOWN:9,5,5,4,3,2
+
 CLASS:Druid.MOD
 SUBSTITUTIONCLASS:Goliath Druid	PRERACE:1,Goliath%	SOURCEPAGE:p.226
 SUBSTITUTIONLEVEL:1	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Weapon and Armor Proficiency|!PREABILITY:1,CATEGORY=ACF,TYPE.DruidProficiencies	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Spells	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Spontaneous Casting|!PREABILITY:1,CATEGORY=ACF,TYPE.DruidSpontaneousCasting	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Animal Companion|!PREABILITY:1,CATEGORY=ACF,TYPE.DruidAnimalCompanion	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Nature Sense|!PREABILITY:1,CATEGORY=ACF,TYPE.DruidNatureSense	ABILITY:Druid Class Feature|AUTOMATIC|Druid ~ Wild Empathy|!PREABILITY:1,CATEGORY=ACF,TYPE.DruidWildEmpathy	ABILITY:Special Ability|AUTOMATIC|Goliath Druid ~ Elemental Bond	ABILITY:Special Ability|AUTOMATIC|Goliath Druid ~ Substitution Levels	CAST:3,1

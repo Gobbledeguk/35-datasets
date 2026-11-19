@@ -479,24 +479,24 @@ Variant classes: Battle Sorcerer (Unearthed Arcana - repo), Witch (built in the 
 | Drakken Familiar | 568 | repo (Dragon Magic - hexblade, sorcerer, wizard) |
 | Familiars | 672 | done (the compilation in the wizard section, pp. 672-678: dog; leopard, wolverine, Medium viper for Huge+ masters; badger, Medium/Large viper with Improved Familiar; Small elementals with Complete Mage) |
 | Focus Caster | 569 | done |
-| Githyanki Sorcerer | 570 | build (the duthka'ariy path instead of a familiar) |
-| Golarion Sorcerer | 571 | build |
-| Imbued Staff | 571 | build |
-| Impromptu Metamagic | 572 | build |
+| Githyanki Sorcerer | 570 | done |
+| Golarion Sorcerer | 571 | done |
+| Imbued Staff | 571 | done |
+| Impromptu Metamagic | 572 | done |
 | Metamagic Specialist | 573 | repo (Player's Handbook II - complete) |
-| Poltergeists | 574 | build |
-| School Mastery | 576 | build |
-| Sorcerer Spheres | 576 | build |
+| Poltergeists | 574 | done |
+| School Mastery | 576 | done |
+| Sorcerer Spheres | 576 | done |
 | Spell Shield | 577 | repo (Dungeonscape) |
 | Stalwart Sorcerer | 577 | repo (Complete Mage) |
-| Wilderness Companion | 577 | build |
+| Wilderness Companion | 577 | done |
 
 ### Substitution levels (4)
 | Entry | Page | Status |
 |---|---|---|
 | Dragonblood Sorcerer | 567 | repo (Races of the Dragon, on Sorcerer.MOD) |
-| Dwarf Sorcerer | 568 | build |
-| Planar Sorcerer | 573 | build |
-| Raptoran Sorcerer | 575 | build (index continued on p.563) |
+| Dwarf Sorcerer | 568 | done |
+| Planar Sorcerer | 573 | done |
+| Raptoran Sorcerer | 575 | done |
 
-Sorcerer totals: 19 ACFs + 3 substitution sets to build (6 ACFs and 1 set in the repository).
+Sorcerer totals: 19 ACFs + 3 substitution sets built - SORCERER COMPLETE (16/11/2026); 6 ACFs and 1 set in the repository.

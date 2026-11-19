@@ -1551,6 +1551,20 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   substitutions); merfolk swim 70 at 6th; Golarion feats; Ghurka weapons; Holy smite 6 and turning 3; Martial 3 fighter feats;
   Steadfast AC 11 (plain 13), speed 30, DR 2/-; Vigilant uncanny dodges; Raging rage/greater rage; Wushu style feats and Tumble
   +2; seven substitution sets 32 feature checks, skarn AC keeps Wisdom; no load messages.
+- SORCERER COMPLETE (16/11/2026) - ACFs part 2: Githyanki Sorcerer (githyanki only; the duthka'ariy table read from the page images
+  - Improved Unarmed Strike and Alertness at 1st, natural armor +1 at 5th, darkvision 120 ft at 9th, fire spells +1 caster level
+  at 13th, fire resistance 10 at 17th; the table prints no level for natural weapons, read as 1st), Golarion Sorcerer (hidden
+  reserve), Imbued Staff (hardness, hit points and enhancement by level), Impromptu Metamagic, Poltergeists (four, from the
+  text), School Mastery (eight schools, +1 caster level applied), Sorcerer Spheres (by hand), Wilderness Companion (swap:
+  animal companion at half level). Substitution sets under CLASS:Sorcerer.MOD: Dwarf (arcane earthbond instead of the familiar;
+  -1 2nd- and 4th-level spells known), Planar (-1 2nd-, 4th- and 6th-level spells known), Raptoran (air magic spells on his
+  list; the Small air elemental familiar - with Complete Mage, in dmc_acf_completemage.lst; command the winds - three spells
+  known, wind wall as 2nd level; -1 2nd- and 5th-level spells known). Lost spells known: BONUS:SPELLKNOWN|CLASS=Sorcerer;LEVEL=n|-1
+  on the substitution feature, so the loss persists at later levels.
+  Verified: githyanki 17 AC +1, darkvision 120, fire resistance 10, feats; not for humans; wilderness companion 17 options, no
+  familiar; school mastery and poltergeists choices; spells known dwarf 9 2nd 3/4th 1 (plain 4/2), planar 13 2nd 4/4th 3/6th 1
+  (5/4/2), raptoran 11 2nd 7/5th 1 (5/2); spells per day identical; dwarf and raptoran no familiar, raptoran air elemental only
+  with Complete Mage; no load messages.
 - SORCERER ACFs, part 1 (16/11/2026): Aligned Spellcaster (non-neutral only), Arcane Reabsorption, Beleaguered Spellcaster, Blood of
   Eberron (animal companion at half level; new class skills added - Bluff's removal by hand, as an ACF cannot remove class skills),
   Blood of Khyber (+1 caster level for conjuration (summoning) and transmutation, -1 for abjuration and divination -
