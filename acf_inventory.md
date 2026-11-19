@@ -543,3 +543,23 @@ Combat Wizard is a swap (below).
 | Planar Wizard | 694 | done |
 
 Wizard totals: 15 ACFs (10 shared with the sorcerer) + 5 substitution sets built - WIZARD COMPLETE (16/11/2026); 6 ACFs and 2 sets in the repository.
+
+## Hexblade (Complete Warrior; index p.304, continued on p.305; sections pp. 304-314) - verified 16/11/2026
+Hexblade guards (Complete Warrior): HexbladeFamiliar (4th), HexbladeProficiencies, HexbladeCurse, HexbladeArcaneResistance, HexbladeMettle,
+HexbladeBonusFeat, HexbladeGreaterCurse, HexbladeAuraofUnluck, HexbladeDireCurse.
+
+### Alternative class features (10)
+| Entry | Page | Status |
+|---|---|---|
+| Aligned Spellcaster | 305 | done (hexblade version of the shared arcane ACF, 4th level) |
+| Arcane Reabsorption | 305 | done (shared) |
+| Beleaguered Spellcaster | 305 | done (shared; 3 x hexblade caster level) |
+| Dark Companion | 306 | repo (Player's Handbook II - complete) |
+| Dead Levels | 306 | done (forced omens: prestidigitation known from 6th, at will at 18th) |
+| Disciple of Boccob | 307 | done (shared) |
+| Drakken Familiar | 307 | repo (Dragon Magic) |
+| Focus Caster | 307 | done (shared) |
+| Impromptu Metamagic | 308 | done (shared) |
+| School Mastery | 309 | done (shared) |
+
+Hexblade totals: 8 ACFs built - HEXBLADE COMPLETE (16/11/2026; in dmc_acf_completewarrior.lst, loaded only with Complete Warrior); 2 in the repository.

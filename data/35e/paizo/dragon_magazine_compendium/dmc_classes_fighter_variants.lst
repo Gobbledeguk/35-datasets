@@ -78,7 +78,7 @@ CLASS:Fighter (Janissary)	STARTSKILLPTS:2	CSKILL:Climb|TYPE=Craft|Jump|Ride|Spea
 1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponFocus
 1	ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterGreaterWeaponSpecialization
 1	ABILITY:Fighter Class Feature|AUTOMATIC|Fighter ~ Bonus Feats|!PREABILITY:1,CATEGORY=ACF,TYPE.FighterBonusFeat,TYPE.FighterBonusFeats
-1	ABILITY:Special Ability|AUTOMATIC|Janissary Fighter ~ Janissary Knowledge Skills
+1	ABILITY:Special Ability|AUTOMATIC|Fighter (Janissary) ~ Janissary Knowledge Class Skills
 
 ###Block: Fighter (Kensai) (p.285)
 CLASS:Fighter (Kensai)	HD:10	TYPE:Base.PC	FACT:ClassType|PC	SERVESAS:CLASS|Fighter	FACT:Abb|Ftr	MAXLEVEL:20	SOURCEPAGE:p.285	DEFINE:FighterLVL|0	DEFINE:Kensai_FVLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|FighterLVL|CL	BONUS:VAR|Kensai_FVLVL|CL	ROLE:Combat	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
