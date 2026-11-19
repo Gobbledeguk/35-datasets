@@ -245,7 +245,9 @@ probably does not remove damage reduction; BahamutDragon data, not changed.)
 | Uncanny Bravery | 111 | repo (Dragon Magic) |
 | Unholy Fury | 111 | done |
 | Unshakable | 111 | done |
-| View the Spirit World (not in the index) | 112 | repo (Complete Champion) |
+| View the Spirit World (index continued on p.96) | 112 | repo (Complete Champion) |
+| Wasteland Barbarian (index continued on p.96 - missed earlier, added 16/11/2026) | 112 | done |
+| Whirling Frenzy (index continued on p.96) | 112 | repo (Unearthed Arcana, as the rage choice "Rage Choice ~ Whirling Frenzy") |
 
 ### Substitution levels (6)
 | Entry | Page | Status |
@@ -455,3 +457,46 @@ Warrior has a Kensai prestige class), Knight, Pugilist, Shield Bearer, Survivali
 | Thug | 292 | repo (Unearthed Arcana, as Fighter (Thug)) |
 
 Fighter totals: 12 ACFs + 6 substitution sets + 14 variant classes built - FIGHTER COMPLETE (16/11/2026); 10 ACFs, 2 sets and the Thug in the repository.
+
+## Sorcerer (index p.562, continued on p.563; sections pp. 562-582) - verified 16/11/2026
+PHB sorcerer guards: SorcererFamiliar, SorcererProficiencies, SorcererSummonFamiliar.
+Variant classes: Battle Sorcerer (Unearthed Arcana - repo), Witch (built in the variant class phase).
+
+### Alternative class features (25)
+| Entry | Page | Status |
+|---|---|---|
+| Aligned Spellcaster | 563 | build (also hexblade, 4th) |
+| Arcane Reabsorption | 563 | build (also hexblade, 4th) |
+| Beleaguered Spellcaster | 564 | build |
+| Blood of Eberron | 564 | build |
+| Blood of Khyber | 565 | build |
+| Blood of Siberys | 565 | build |
+| Dead Levels | 565 | build |
+| Disciple of Boccob | 565 | build |
+| Divine Companion | 565 | repo (Complete Champion) |
+| Domain Access | 566 | repo (Complete Champion) |
+| Draconic Ray | 566 | build |
+| Drakken Familiar | 568 | repo (Dragon Magic - hexblade, sorcerer, wizard) |
+| Familiars | ? | build (index entry; section to locate - no heading of that name in the sorcerer pages) |
+| Focus Caster | 569 | build |
+| Githyanki Sorcerer | 570 | build (the duthka'ariy path instead of a familiar) |
+| Golarion Sorcerer | 571 | build |
+| Imbued Staff | 571 | build |
+| Impromptu Metamagic | 572 | build |
+| Metamagic Specialist | 573 | repo (Player's Handbook II - complete) |
+| Poltergeists | 574 | build |
+| School Mastery | 576 | build |
+| Sorcerer Spheres | 576 | build |
+| Spell Shield | 577 | repo (Dungeonscape) |
+| Stalwart Sorcerer | 577 | repo (Complete Mage) |
+| Wilderness Companion | 577 | build |
+
+### Substitution levels (4)
+| Entry | Page | Status |
+|---|---|---|
+| Dragonblood Sorcerer | 567 | repo (Races of the Dragon, on Sorcerer.MOD) |
+| Dwarf Sorcerer | 568 | build |
+| Planar Sorcerer | 573 | build |
+| Raptoran Sorcerer | 575 | build (index continued on p.563) |
+
+Sorcerer totals: 19 ACFs + 3 substitution sets to build (6 ACFs and 1 set in the repository).

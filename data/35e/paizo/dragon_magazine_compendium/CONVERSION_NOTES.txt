@@ -1551,6 +1551,14 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   substitutions); merfolk swim 70 at 6th; Golarion feats; Ghurka weapons; Holy smite 6 and turning 3; Martial 3 fighter feats;
   Steadfast AC 11 (plain 13), speed 30, DR 2/-; Vigilant uncanny dodges; Raging rage/greater rage; Wushu style feats and Tumble
   +2; seven substitution sets 32 feature checks, skarn AC keeps Wisdom; no load messages.
+- INDEX CONTINUATION FIX (16/11/2026): an index starting low on a page can continue at the top of the next page even when its
+  first lines are on the first page (the earlier check only followed empty columns). All completed classes re-checked: only the
+  barbarian lost entries - Wasteland Barbarian (now built: wasteland trap sense, a bonus feat at 5th instead of improved uncanny
+  dodge - Endurance, Great Fortitude or Self-Sufficient, the Sandstorm feats by hand -, wasteland DR at 8th costing one daily rage;
+  verified: barbarian 8 rages 2 (plain 3), no improved uncanny dodge, one feat selection) and Whirling Frenzy (already in Unearthed
+  Arcana as a rage choice). The sorcerer's index also continues (22 more ACFs and the Raptoran Sorcerer).
+  Also checked: no class-section page (75-702) hides rules in images - all 125 images are artwork, the small ones 4-point bullets;
+  the seven pages with little text are section endings. Only the prestige class section (703-1057) is scanned.
 - FIGHTER VARIANT CLASSES (16/11/2026; missed in the variant class phase - the fighter's index continues on p.275) - fv_build.py,
   dmc_classes_fighter_variants.lst, dmc_abilities_fighter_variants.lst, dmc_abilitycategories_fighter_variants.lst. Pattern of
   Unearthed Arcana's Fighter (Thug): full classes "Fighter (<Name>)" - d10, full BAB, the fighter's saves, SERVESAS Fighter,
