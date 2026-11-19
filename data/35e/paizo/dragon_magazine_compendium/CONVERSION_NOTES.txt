@@ -1561,6 +1561,12 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   opposition), Tiefling (telepathy instead of share incarnum radiance; Bluff, Hide). Verified with Magic of Incarnum: essentia pool
   7 and chakra binds 2 at 7th as for a plain incarnate; the replaced features gone, the others kept; no messages with or without
   the book.
+- SOULBORN AND TOTEMIST (Magic of Incarnum, 16/11/2026): no ACFs. Dwarf Soulborn (stoneborn insight instead of the 3rd-level
+  bonus feat - the repository's soulborn bonus feats are descriptive only, so kept and noted), Elf Soulborn (immunity to charm with
+  incarnum defense; vigilance of the ancestors instead of the 7th-level bonus feat), Halfling Totemist (wild vigor instead of
+  totem's protection; fast movement +10 ft instead of rebind totem soulmeld at 8th, which comes at 12th). Verified with Magic of
+  Incarnum: totemist 8 speed 40 (plain 30), totem's protection and rebinding gone, essentia unchanged; elf soulborn immunity to
+  charm; dwarf soulborn stoneborn insight with share incarnum defense kept; no messages.
 - HEXBLADE (16/11/2026; the first non-core class - Complete Warrior): the seven shared arcane ACFs at 4th level instead of the
   hexblade's familiar (derived from the sorcerer entries; caster level = Caster_Level_Hexblade), and Dead Levels (forced omens).
   All hexblade ACF lines are in dmc_acf_completewarrior.lst, loaded only with Complete Warrior (without it the Hexblade spell

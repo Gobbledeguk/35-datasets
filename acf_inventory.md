@@ -576,3 +576,22 @@ are granted without ACF guards (several per token on its level lines).
 | Tiefling Incarnate | 316 | done |
 
 Incarnate totals: 3 substitution sets built - INCARNATE COMPLETE (16/11/2026; in dmc_*substitution_magic_of_incarnum.lst, loaded only with Magic of Incarnum).
+
+## Soulborn (Magic of Incarnum; index p.583) - verified 16/11/2026
+No alternative class features. The repository's soulborn bonus feats are descriptive (no selection pool).
+
+### Substitution levels (2)
+| Entry | Page | Status |
+|---|---|---|
+| Dwarf Soulborn | 583 | done |
+| Elf Soulborn | 584 | done |
+
+## Totemist (Magic of Incarnum; index p.621) - verified 16/11/2026
+No alternative class features.
+
+### Substitution levels (1)
+| Entry | Page | Status |
+|---|---|---|
+| Halfling Totemist | 621 | done |
+
+Magic of Incarnum totals: 6 substitution sets (incarnate 3, soulborn 2, totemist 1) - MAGIC OF INCARNUM COMPLETE (16/11/2026).
