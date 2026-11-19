@@ -595,3 +595,30 @@ No alternative class features.
 | Halfling Totemist | 621 | done |
 
 Magic of Incarnum totals: 6 substitution sets (incarnate 3, soulborn 2, totemist 1) - MAGIC OF INCARNUM COMPLETE (16/11/2026).
+
+## Psion (Expanded Psionics Handbook; index p.457, continued on p.458) - verified 16/11/2026
+No ACF guards in the repository's psion; its bonus feats are the pool "Psion Feat"; disciplines are subclasses.
+Variant class column: Erudite (a Complete Psionic class, in the repository).
+
+### Alternative class features (13)
+| Entry | Page | Status |
+|---|---|---|
+| Change Shape (Egoist) | 457 | done |
+| Energy Snap (Kineticist) | 457 | done |
+| Fate Points (Seer) | 457 | done |
+| Greater Animator (Kineticist) | 457 | done |
+| Harbinger (Telepath) | 457 | done |
+| Personal Construct (Shaper) | 457 | done |
+| Personal Space (Nomad) | 457 | done |
+| Psicrystal Enhancement | 457 | done |
+| Psychic Knowledge (Seer) | 457 | done |
+| Telepathic Communication (Telepath) | 457 | done |
+| Temporal Grace (Nomad) | 457 | done |
+| Trinkets (Shaper) | 457 | done |
+| True Healer (Egoist) | 457 | done |
+
+### Substitution levels (2)
+| Entry | Page | Status |
+|---|---|---|
+| Changeling Egoist | 458 | build |
+| Kalashtar Telepath | 460 | build |

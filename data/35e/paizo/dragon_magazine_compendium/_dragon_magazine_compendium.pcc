@@ -51,6 +51,7 @@ ABILITY:dmc_abilities_fighter_variants.lst
 ABILITY:dmc_acf_completemage.lst|PRECAMPAIGN:1,INCLUDES=Complete Mage
 ABILITY:dmc_acf_completewarrior.lst|PRECAMPAIGN:1,INCLUDES=Complete Warrior
 ABILITY:dmc_substitution_magic_of_incarnum.lst|PRECAMPAIGN:1,INCLUDES=Magic of Incarnum
+ABILITY:dmc_acf_expandedpsionics.lst|PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
 DOMAIN:dmc_domains.lst
 DOMAIN:dmc_domains_shaman.lst
 DOMAIN:dmc_shaman_domains_opt2.lst|PRECAMPAIGN:1,INCLUDES=35e ~ Ghostwalk,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Sandstorm
