@@ -50,6 +50,7 @@ ABILITY:dmc_acf_eberron.lst|PRECAMPAIGN:1,INCLUDES=Eberron Campaign Setting
 ABILITY:dmc_abilities_fighter_variants.lst
 ABILITY:dmc_acf_completemage.lst|PRECAMPAIGN:1,INCLUDES=Complete Mage
 ABILITY:dmc_acf_completewarrior.lst|PRECAMPAIGN:1,INCLUDES=Complete Warrior
+ABILITY:dmc_substitution_magic_of_incarnum.lst|PRECAMPAIGN:1,INCLUDES=Magic of Incarnum
 DOMAIN:dmc_domains.lst
 DOMAIN:dmc_domains_shaman.lst
 DOMAIN:dmc_shaman_domains_opt2.lst|PRECAMPAIGN:1,INCLUDES=35e ~ Ghostwalk,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Sandstorm
@@ -86,6 +87,7 @@ CLASS:dmc_classes_variants_unearthed_arcana_complete.lst|PRECAMPAIGN:1,INCLUDES=
 CLASS:dmc_classes_substitution.lst
 CLASS:dmc_classes_acf.lst
 CLASS:dmc_classes_fighter_variants.lst
+CLASS:dmc_classes_substitution_magic_of_incarnum.lst|PRECAMPAIGN:1,INCLUDES=Magic of Incarnum
 LANGUAGE:dmc_languages.lst
 WEAPONPROF:dmc_profs_weapon.lst
 ARMORPROF:dmc_profs_armor.lst

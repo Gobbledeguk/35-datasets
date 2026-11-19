@@ -563,3 +563,16 @@ HexbladeBonusFeat, HexbladeGreaterCurse, HexbladeAuraofUnluck, HexbladeDireCurse
 | School Mastery | 309 | done (shared) |
 
 Hexblade totals: 8 ACFs built - HEXBLADE COMPLETE (16/11/2026; in dmc_acf_completewarrior.lst, loaded only with Complete Warrior); 2 in the repository.
+
+## Incarnate (Magic of Incarnum; index p.315; sections pp. 315-317) - verified 16/11/2026
+No alternative class features (the index's ACF column is empty; the lines read beside it are the class table). Incarnate features
+are granted without ACF guards (several per token on its level lines).
+
+### Substitution levels (3)
+| Entry | Page | Status |
+|---|---|---|
+| Aasimar Incarnate | 315 | done |
+| Gnome Incarnate | 316 | done |
+| Tiefling Incarnate | 316 | done |
+
+Incarnate totals: 3 substitution sets built - INCARNATE COMPLETE (16/11/2026; in dmc_*substitution_magic_of_incarnum.lst, loaded only with Magic of Incarnum).

@@ -1551,6 +1551,16 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   substitutions); merfolk swim 70 at 6th; Golarion feats; Ghurka weapons; Holy smite 6 and turning 3; Martial 3 fighter feats;
   Steadfast AC 11 (plain 13), speed 30, DR 2/-; Vigilant uncanny dodges; Raging rage/greater rage; Wushu style feats and Tumble
   +2; seven substitution sets 32 feature checks, skarn AC keeps Wisdom; no load messages.
+- SUBSTITUTION BUILDER, non-core classes (16/11/2026): (1) a substituted level now re-grants every token of the base class's
+  level line - abilities, BONUS, DEFINE ... - except the replaced features (before, only abilities and spell tables were kept: the
+  cleric's 1st-level line also carries its "Cleric Standing" selection and the ex-cleric rules, so the Azurin and Raptoran Cleric
+  lacked them; now verified present); (2) level lines are read from the class's own book; (3) grants naming several features in one
+  token are split, so one feature can be replaced; (4) sets on classes from other books go to dmc_classes_substitution_<book>.lst
+  and dmc_substitution_<book>.lst, loaded only with that book.
+- INCARNATE (Magic of Incarnum): no ACFs; substitution sets Aasimar (augments only), Gnome (racial defense instead of detect
+  opposition), Tiefling (telepathy instead of share incarnum radiance; Bluff, Hide). Verified with Magic of Incarnum: essentia pool
+  7 and chakra binds 2 at 7th as for a plain incarnate; the replaced features gone, the others kept; no messages with or without
+  the book.
 - HEXBLADE (16/11/2026; the first non-core class - Complete Warrior): the seven shared arcane ACFs at 4th level instead of the
   hexblade's familiar (derived from the sorcerer entries; caster level = Caster_Level_Hexblade), and Dead Levels (forced omens).
   All hexblade ACF lines are in dmc_acf_completewarrior.lst, loaded only with Complete Warrior (without it the Hexblade spell
@@ -1762,6 +1772,7 @@ whole file under one condition, so files with different conditions or object typ
 - dmc_acf_eberron.lst <- the Eberron Monk's bonus feat options, with the Eberron Campaign Setting
 - dmc_acf_completemage.lst <- familiars defined in Complete Mage (Small elementals), with Complete Mage
 - dmc_acf_completewarrior.lst <- the hexblade's alternative class features, with Complete Warrior
+- dmc_classes_substitution_<book>.lst, dmc_substitution_<book>.lst <- substitution levels of classes from other books, with that book
 - dmc_classes_acf.lst, dmc_races_acf.lst, dmc_equip_acf.lst <- base class changes for ACFs (druid domains), ACF companion creatures (plant companion) and ACF items (devoted symbol)
 - one file per optional book where content depends on it: _xph (Expanded Psionics: racial, domain, feat additions), _sc,
   _bovd, _cadv, _ca, _rs, _rw, vestiges (Tome of Magic), flaws (Unearthed Arcana), feats_nocw (only without Complete Warrior)
