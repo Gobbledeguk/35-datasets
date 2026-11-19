@@ -465,20 +465,20 @@ Variant classes: Battle Sorcerer (Unearthed Arcana - repo), Witch (built in the 
 ### Alternative class features (25)
 | Entry | Page | Status |
 |---|---|---|
-| Aligned Spellcaster | 563 | build (also hexblade, 4th) |
-| Arcane Reabsorption | 563 | build (also hexblade, 4th) |
-| Beleaguered Spellcaster | 564 | build |
-| Blood of Eberron | 564 | build |
-| Blood of Khyber | 565 | build |
-| Blood of Siberys | 565 | build |
-| Dead Levels | 565 | build |
-| Disciple of Boccob | 565 | build |
+| Aligned Spellcaster | 563 | done |
+| Arcane Reabsorption | 563 | done |
+| Beleaguered Spellcaster | 564 | done |
+| Blood of Eberron | 564 | done |
+| Blood of Khyber | 565 | done |
+| Blood of Siberys | 565 | done |
+| Dead Levels | 565 | done |
+| Disciple of Boccob | 565 | done |
 | Divine Companion | 565 | repo (Complete Champion) |
 | Domain Access | 566 | repo (Complete Champion) |
-| Draconic Ray | 566 | build |
+| Draconic Ray | 566 | done |
 | Drakken Familiar | 568 | repo (Dragon Magic - hexblade, sorcerer, wizard) |
-| Familiars | ? | build (index entry; section to locate - no heading of that name in the sorcerer pages) |
-| Focus Caster | 569 | build |
+| Familiars | 672 | done (the compilation in the wizard section, pp. 672-678: dog; leopard, wolverine, Medium viper for Huge+ masters; badger, Medium/Large viper with Improved Familiar; Small elementals with Complete Mage) |
+| Focus Caster | 569 | done |
 | Githyanki Sorcerer | 570 | build (the duthka'ariy path instead of a familiar) |
 | Golarion Sorcerer | 571 | build |
 | Imbued Staff | 571 | build |

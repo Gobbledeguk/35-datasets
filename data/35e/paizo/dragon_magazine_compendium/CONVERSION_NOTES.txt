@@ -1551,6 +1551,23 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   substitutions); merfolk swim 70 at 6th; Golarion feats; Ghurka weapons; Holy smite 6 and turning 3; Martial 3 fighter feats;
   Steadfast AC 11 (plain 13), speed 30, DR 2/-; Vigilant uncanny dodges; Raging rage/greater rage; Wushu style feats and Tumble
   +2; seven substitution sets 32 feature checks, skarn AC keeps Wisdom; no load messages.
+- SORCERER ACFs, part 1 (16/11/2026): Aligned Spellcaster (non-neutral only), Arcane Reabsorption, Beleaguered Spellcaster, Blood of
+  Eberron (animal companion at half level; new class skills added - Bluff's removal by hand, as an ACF cannot remove class skills),
+  Blood of Khyber (+1 caster level for conjuration (summoning) and transmutation, -1 for abjuration and divination -
+  BONUS:CASTERLEVEL|SUBSCHOOL.Summoning works), Blood of Siberys (+4 effective Charisma for bonus spells by hand), Dead Levels
+  (magical affinity), Disciple of Boccob, Draconic Ray (10 ancestral dragons; damage, DC and range by level), Focus Caster (8
+  schools; divination and illusion +1 caster level, enchantment +2 DC from 15th applied), Familiars (see above). All replace the
+  familiar except Dead Levels; the shared arcane ACFs (also wizard, hexblade at 4th) will get their wizard versions with the wizard.
+  Verified: eberron companion level 2 at 5th and no familiar; khyber/eberron class skills; aligned spellcaster unavailable to a
+  true neutral sorcerer; draconic ray at 15th range 60 ft, 1d4+15, DC 20; focus caster present, familiar gone; no load messages.
+- SORCERER FAMILIARS (16/11/2026): the compendium's familiar compilation (pp. 672-678, in the wizard section; listed in the sorcerer
+  and wizard indexes) has 140 creatures; the table was extracted by column position and checked against the page images. Creatures
+  already familiars in the repository are not repeated; added through the sorcerer's Familiars ACF: dog (1st), leopard, wolverine
+  and Medium viper (1st, Huge or larger master - PRESIZEGTEQ:H), badger, Medium and Large viper (3rd, Improved Familiar), and the
+  Small elementals (5th, Improved Familiar) from dmc_acf_completemage.lst, loaded only with Complete Mage (which defines them).
+  Equivalent-statistics creatures and creatures not in the repository: described. Verified: familiar options 10 (plain sorcerer
+  5) / 11 with the ACF / with Improved Familiar badger and vipers, plus the four elementals with Complete Mage; leopard absent for
+  a Medium master; no load messages with or without Complete Mage.
 - INDEX CONTINUATION FIX (16/11/2026): an index starting low on a page can continue at the top of the next page even when its
   first lines are on the first page (the earlier check only followed empty columns). All completed classes re-checked: only the
   barbarian lost entries - Wasteland Barbarian (now built: wasteland trap sense, a bonus feat at 5th instead of improved uncanny
@@ -1695,6 +1712,7 @@ whole file under one condition, so files with different conditions or object typ
 - dmc_classes_substitution.lst, dmc_substitution.lst <- substitution levels (CLASS:<base>.MOD) and their features
 - dmc_substitution_urbantracking.lst <- the half-elf ranger's Urban Tracking, with a book defining the feat
 - dmc_acf_eberron.lst <- the Eberron Monk's bonus feat options, with the Eberron Campaign Setting
+- dmc_acf_completemage.lst <- familiars defined in Complete Mage (Small elementals), with Complete Mage
 - dmc_classes_acf.lst, dmc_races_acf.lst, dmc_equip_acf.lst <- base class changes for ACFs (druid domains), ACF companion creatures (plant companion) and ACF items (devoted symbol)
 - one file per optional book where content depends on it: _xph (Expanded Psionics: racial, domain, feat additions), _sc,
   _bovd, _cadv, _ca, _rs, _rw, vestiges (Tome of Magic), flaws (Unearthed Arcana), feats_nocw (only without Complete Warrior)

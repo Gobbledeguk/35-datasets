@@ -48,6 +48,7 @@ ABILITY:dmc_substitution.lst
 ABILITY:dmc_substitution_urbantracking.lst|PRECAMPAIGN:1,INCLUDES=Unearthed Arcana (Complete),INCLUDES=Cityscape (WotC),INCLUDES=Races of Destiny,INCLUDES=Dungeonscape,INCLUDES=Eberron Campaign Setting
 ABILITY:dmc_acf_eberron.lst|PRECAMPAIGN:1,INCLUDES=Eberron Campaign Setting
 ABILITY:dmc_abilities_fighter_variants.lst
+ABILITY:dmc_acf_completemage.lst|PRECAMPAIGN:1,INCLUDES=Complete Mage
 DOMAIN:dmc_domains.lst
 DOMAIN:dmc_domains_shaman.lst
 DOMAIN:dmc_shaman_domains_opt2.lst|PRECAMPAIGN:1,INCLUDES=35e ~ Ghostwalk,INCLUDES=Oriental Adventures v.3.5,INCLUDES=Sandstorm
