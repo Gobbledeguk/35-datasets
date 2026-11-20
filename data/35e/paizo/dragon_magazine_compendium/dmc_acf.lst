@@ -455,6 +455,42 @@ Wizard of Sun and Moon	KEY:ACF ~ Wizard of Sun and Moon (DMC)	CATEGORY:Special A
 
 ###Block: Psion alternative class features
 
+###Block: Psychic Warrior alternative class features
+
+###Block: Soulknife alternative class features
+
+###Block: Wilder alternative class features
+
+###Block: Ardent alternative class features
+
+###Block: Divine Mind alternative class features
+
+###Block: Erudite alternative class features
+
+###Block: Lurk alternative class features
+
+###Block: Beguiler alternative class features
+
+###Block: Dragon Shaman alternative class features
+
+###Block: Duskblade alternative class features
+
+###Block: Knight alternative class features
+
+###Block: Ninja alternative class features
+
+###Block: Scout alternative class features
+
+###Block: Spellthief alternative class features
+
+###Block: Warmage alternative class features
+
+###Block: Wu Jen alternative class features
+
+###Block: Samurai alternative class features
+
+###Block: Swashbuckler alternative class features
+
 ###Block: Wizard alternative class features
 Familiars	KEY:Wizard ACF ~ Familiars (DMC)	CATEGORY:ACF	COST:0	TYPE:ACF.WizardACF.WizardFamiliarList	PRECLASS:1,Wizard=1	ABILITY:Special Ability|AUTOMATIC|ACF ~ Wizard Familiars (DMC)	SOURCEPAGE:p.672	DESC:Alternative class feature (wizard, 1st level). The compendium's compilation of all creatures eligible as familiars (pp. 672-678, by minimum spellcaster level, with equivalent statistics, requirements and master benefits). Offered here in addition to the familiars already in the repository: dog (1st; master +3 on Sense Motive checks); leopard, wolverine and Medium viper (1st, for a Huge or larger master; master +2 on Move Silently, +2 on Reflex saves, +3 on Bluff checks); with Improved Familiar: badger, Medium and Large viper (3rd), Small air, earth, fire and water elementals (5th - with Complete Mage, which defines them: dmc_acf_completemage.lst). Master benefits of these creatures by hand. Creatures with equivalent statistics (caterpillar as mouse, rabbit as cat, vulture as hawk ...) use their equivalent's familiar entry; creatures not in the repository (albatross, arctic fox, ferret, lynx, worg ...) by hand. Replaces nothing.
 Familiars	KEY:ACF ~ Wizard Familiars (DMC)	CATEGORY:Special Ability	TYPE:SpecialQuality.Wizard Class Feature	COMPANIONLIST:Familiar|Companion ~ Dog	COMPANIONLIST:Familiar|Companion ~ Leopard,Companion ~ Wolverine,Companion ~ Snake (Viper/Medium)|PRESIZEGTEQ:H	COMPANIONLIST:Familiar|Companion ~ Badger,Companion ~ Snake (Viper/Medium),Companion ~ Snake (Viper/Large)|PREABILITY:1,CATEGORY=FEAT,Improved Familiar|PRECLASS:1,SPELLCASTER.Arcane=3	SOURCEPAGE:p.672	DESC:The compendium's compilation of all creatures eligible as familiars (pp. 672-678, by minimum spellcaster level, with equivalent statistics, requirements and master benefits). Offered here in addition to the familiars already in the repository: dog (1st; master +3 on Sense Motive checks); leopard, wolverine and Medium viper (1st, for a Huge or larger master; master +2 on Move Silently, +2 on Reflex saves, +3 on Bluff checks); with Improved Familiar: badger, Medium and Large viper (3rd), Small air, earth, fire and water elementals (5th - with Complete Mage, which defines them: dmc_acf_completemage.lst). Master benefits of these creatures by hand. Creatures with equivalent statistics (caterpillar as mouse, rabbit as cat, vulture as hawk ...) use their equivalent's familiar entry; creatures not in the repository (albatross, arctic fox, ferret, lynx, worg ...) by hand. Replaces nothing.

@@ -620,5 +620,96 @@ Variant class column: Erudite (a Complete Psionic class, in the repository).
 ### Substitution levels (2)
 | Entry | Page | Status |
 |---|---|---|
-| Changeling Egoist | 458 | build |
-| Kalashtar Telepath | 460 | build |
+| Changeling Egoist | 458 | done |
+| Kalashtar Telepath | 460 | done |
+
+Psion totals: 13 ACFs + 2 substitution sets built - PSION COMPLETE (16/11/2026; Expanded Psionics Handbook files).
+
+## Psychic Warrior, Soulknife, Wilder (Expanded Psionics Handbook) - verified 16/11/2026
+These classes grant their features without ACF guards: an ACF cannot remove them (an ACF prerequisite on the feature itself does not
+block an automatic grant - tested), so such removals are by hand; substitution levels can (they replace the level line).
+
+| Class | Entry | Kind | Page | Status |
+|---|---|---|---|---|
+| Psychic Warrior | Mantled Warrior | ACF | 471 | done |
+| Psychic Warrior | Soulbound Weapon | ACF | 471 | done |
+| Soulknife | Bonus Feats | ACF | 589 | done |
+| Soulknife | Hidden Talent | ACF | 590 | done |
+| Soulknife | Kalashtar Soulknife | substitution | 590 | done |
+| Soulknife | Shadow Soulknife | substitution | 591 | done |
+| Wilder | Educated Wilder | ACF | 651 | done |
+| Wilder | Mantled Wilder | ACF | 652 | done |
+| Wilder | Shifter Wilder | substitution | 652 | done |
+
+Expanded Psionics Handbook totals: 19 ACFs + 5 substitution sets (psion 13 + 2) - COMPLETE (16/11/2026).
+
+## Ardent, Divine Mind, Erudite, Lurk (Complete Psionic) - verified 16/11/2026
+No substitution levels. Divine mind features have no ACF guards (removals by hand); the erudite's bonus feats are a pool
+(EruditeBonusFeatCount); the lurk's augments and the ardent's mantle options are described.
+
+| Class | Entry | Page | Status |
+|---|---|---|---|
+| Ardent | Dominant Ideal | 83 | done |
+| Ardent | Elemental Mantles | 83 | done |
+| Ardent | Substitute Powers | 84 | done |
+| Divine Mind | Ectopic Ally | 194 | done |
+| Divine Mind | Hidden Talent | 194 | done |
+| Divine Mind | Stygian Path | 195 | done |
+| Erudite | Convert Spell to Power | 261 | done |
+| Erudite | Favored Discipline | 262 | done |
+| Erudite | Mantled Erudite | 262 | done |
+| Lurk | Tracker | 334 | done |
+| Lurk | True Thief | 335 | done |
+
+Complete Psionic totals: 11 ACFs - COMPLETE (16/11/2026; dmc_acf_completepsionic.lst, loaded only with Complete Psionic).
+
+## Beguiler, Dragon Shaman, Duskblade, Knight (Player's Handbook II) - verified 16/11/2026
+| Class | Entry | Page | Status |
+|---|---|---|---|
+| Beguiler | Dead Levels | 137 | done |
+| Dragon Shaman | Shamanic Invocation | 200 | done (DraconicAuras -1 from 5th) |
+| Duskblade | Dead Levels | 256 | done |
+| Knight | Dead Levels | 329 | done |
+
+Player's Handbook II totals: 4 ACFs - COMPLETE (16/11/2026; dmc_acf_playershandbook2.lst).
+
+## Ninja, Scout, Spellthief (Complete Adventurer) - verified 16/11/2026
+The scout has ACF guards (not for skirmish); the ninja and spellthief have none (removals by hand).
+
+| Class | Entry | Status |
+|---|---|---|
+| Ninja | Blinding Flash | done |
+| Ninja | Deceptive Mist | done |
+| Ninja | One with the Earth | done |
+| Scout | Aquatic Scout | done |
+| Scout | Dungeon Specialist | repo (Player's Handbook II) |
+| Scout | Go to Ground | repo (Cityscape) |
+| Scout | Hidden Stalker | repo (Cityscape) |
+| Scout | Light Cavalry | done |
+| Scout | Riposte | repo (Cityscape) |
+| Scout | Skilled City-Dweller | done (no scout version in the repository) |
+| Scout | Sniper | done |
+| Scout | Spell Reflection | repo (Complete Mage) |
+| Spellthief | Cursed Blow | done |
+| Spellthief | Hamper Magic | done |
+| Spellthief | Spelleater | done |
+| Spellthief | Spellskill | done |
+| Spellthief | Trickster | done |
+
+Complete Adventurer totals: 12 ACFs built - COMPLETE (16/11/2026; dmc_acf_completeadventurer.lst); 5 scout ACFs in the repository.
+
+## Warlock, Warmage, Wu Jen (Complete Arcane); Samurai, Swashbuckler (Complete Warrior) - verified 16/11/2026
+| Class | Entry | Status |
+|---|---|---|
+| Warlock | Drow Warlock | repo (Drow of the Underdark, as "Warlock (Venomous Blood)") |
+| Warlock | Fiendish Flamewreath | repo (Player's Handbook II) |
+| Warmage | Dead Levels | done |
+| Warmage | Eclectic Learning | done (Player's Handbook II has only a stub) |
+| Wu Jen | Dead Levels | done |
+| Samurai | Dead Levels | done |
+| Swashbuckler | Arcane Stunt | repo (Complete Mage) |
+| Swashbuckler | Dead Levels | done |
+| Swashbuckler | Drow Swashbuckler | repo (Drow of the Underdark) |
+| Swashbuckler | Shield of Blades | repo (Player's Handbook II) |
+
+Totals: 5 ACFs built - COMPLETE (16/11/2026; dmc_acf_completearcane.lst, dmc_acf_completewarrior.lst); 5 in the repository.

@@ -1561,6 +1561,48 @@ ALTERNATIVE CLASS FEATURES AND SUBSTITUTION LEVELS (started 13/11/2026) - built 
   opposition), Tiefling (telepathy instead of share incarnum radiance; Bluff, Hide). Verified with Magic of Incarnum: essentia pool
   7 and chakra binds 2 at 7th as for a plain incarnate; the replaced features gone, the others kept; no messages with or without
   the book.
+- COMPLETE ARCANE AND COMPLETE WARRIOR CLASSES (16/11/2026): Warmage Dead Levels (evocation sense, verified +4 at 9th) and
+  Eclectic Learning (Player's Handbook II's repository entry is a stub; advanced learning replaced by hand), Wu Jen Dead Levels
+  (intuitive spirit, elemental bond), Samurai Dead Levels (breaking stare, interrogator), Swashbuckler Dead Levels (seduction) - in
+  dmc_acf_completearcane.lst and dmc_acf_completewarrior.lst. In the repository: Drow Warlock (Drow of the Underdark's "Warlock
+  (Venomous Blood)"), Fiendish Flamewreath, Arcane Stunt, Drow Swashbuckler, Shield of Blades. No messages with or without the books.
+- COMPLETE ADVENTURER CLASSES (16/11/2026): Ninja (blinding flash, deceptive mist, one with the earth - each replacing ghost step,
+  removed by hand: no guards), Scout (aquatic scout - fast movement on swim speed; light cavalry - the paladin's special mount at
+  scout level instead of fast movement, camouflage, hide in plain sight and free movement; sniper - instead of skirmish (by hand)
+  and fast movement; skilled city-dweller - skill swaps, by hand), Spellthief (cursed blow - one sneak attack die fewer from 5th;
+  hamper magic, spelleater, spellskill, trickster - replaced features by hand: no guards), in dmc_acf_completeadventurer.lst.
+  Already in the repository for the scout: Dungeon Specialist, Go to Ground, Hidden Stalker, Riposte, Spell Reflection.
+  Verified: spellthief 5 sneak dice one fewer; light cavalry scout 5 speed 30 (plain 40) and special mount level 5; sniper speed
+  30; no messages with or without the book.
+- PLAYER'S HANDBOOK II CLASSES (16/11/2026): Beguiler, Duskblade and Knight Dead Levels (clever wording / lively discourse /
+  piqued hearing; elven insight; gallant nature) and the Dragon Shaman's Shamanic Invocation (a least dragonfire adept invocation
+  instead of the 5th-level aura - DraconicAuras -1, verified 5 -> 4 at 5th), in dmc_acf_playershandbook2.lst; no messages with or
+  without the book.
+- COMPLETE PSIONIC (16/11/2026): 11 ACFs in dmc_acf_completepsionic.lst (loaded only with Complete Psionic): Ardent (dominant ideal,
+  elemental mantles, substitute powers - mantle options, described), Divine Mind (ectopic ally, Hidden Talent - the feat granted,
+  stygian path - turn undead 3 + Cha per day; wild talent, divine grace and the 1st-level psychic aura removed by hand: no ACF
+  guards), Erudite (convert spell to power - Spellcraft as class skill, favored discipline, mantled erudite - each removes the
+  1st-level erudite bonus feat via EruditeBonusFeatCount), Lurk (tracker, true thief - alternative augment lists, described).
+  Verified: erudite 1 bonus feats 0 (plain 1); Spellcraft a class skill; divine mind Hidden Talent granted; no messages with or
+  without the psionic books.
+- PSYCHIC WARRIOR, SOULKNIFE, WILDER (Expanded Psionics Handbook, 16/11/2026): ACFs Mantled Warrior and Soulbound Weapon (psychic
+  warrior bonus feat -1), Bonus Feats (soulknife: feat selections at 3rd/7th/11th/15th/19th), Hidden Talent (the feat granted),
+  Educated Wilder (Expanded Knowledge at 5th/9th/13th/17th), Mantled Wilder. The repository grants these classes' features without
+  ACF guards; a prerequisite added to the feature ability itself does not block its automatic grant (tested with volatile mind),
+  so the replaced features (psychic strike, wild talent, volatile mind, elude touch) must be removed by hand when taken as ACFs.
+  Substitution sets Kalashtar Soulknife (align mind blade, purifying strike - psychic strike regained at 7th, stand fast), Shadow
+  Soulknife (Stealthy, shadow bow, improved shadow bow) and Shifter Wilder (savage renewal instead of elude touch) replace the
+  features for real. Verified: educated wilder 9 Expanded Knowledge x2; soulknife 7 feat selections 4 (plain 2); mantled warrior
+  2 psychic warrior feats 1 (plain 2); kalashtar soulknife 7 without Wild Talent and Speed of Thought, with psychic strike;
+  shadow soulknife 9 Stealthy, no bladewind, Greater Weapon Focus kept; shifter wilder 6 without elude touch; no messages.
+- PSION SUBSTITUTION LEVELS (16/11/2026): Changeling Egoist (changeling egoist; body control; everchanging psicrystal; chameleon,
+  hustle, metamorphosis and thicken skin added to powers known) and Kalashtar Telepath (kalashtar telepath; telepathic talent and
+  mindlink; compound psicrystal; two extra telepathy powers by hand), in dmc_*substitution_expanded_psionics_handbook.lst. Replaced
+  bonus feats: Psion Feat -1; "one less power known" (a total in the book, per level in PCGen): BONUS:SPELLKNOWN at 1st level, to be
+  moved by hand. Fixed on the way: the substitution builder excluded the PHB file with endswith('ph_classes.lst'), which also
+  matched xph_classes.lst - the psion's book was skipped and its sets landed in the main file; now the exact PHB path is compared.
+  Verified: changeling egoist 5 bonus feats 0 (plain 2), powers known 0/5/5/3 (plain 0/5/4/2: -1 and +thicken skin at 1st,
+  +chameleon, +hustle), manifester level 5 as plain; no messages.
 - PSION ACFs (Expanded Psionics Handbook, 16/11/2026): 13 ACFs, all replacing the 1st-level psion bonus feat (Psion Feat -1)
   and, except Psicrystal Enhancement, limited to their discipline (PRESUBCLASS): Change Shape and True Healer (egoist), Energy Snap
   and Greater Animator (kineticist), Fate Points and Psychic Knowledge (seer - bardic knowledge by psion level), Harbinger and
